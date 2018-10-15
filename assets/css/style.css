@@ -328,8 +328,8 @@ fieldset.attend input.radio {
 }
 .footer-icons{
 	margin-top: 35px;
-	padding-left: 20px;
-	text-align: center;
+	padding-left: 50px;
+	text-align: left;
 }
 .footer .footer-icon{
 	color: #aaaaaa;
@@ -421,6 +421,10 @@ fieldset.attend input.radio {
 	background-color: #F4F4F4;
 	padding: 20px;
 	text-align: center;
+}
+
+.company-2 ul {
+	text-align: left;
 }
 .contact-badge.company-research{
 	background-image: url('../img/neahtid-photo-279753.jpg');
