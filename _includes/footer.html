@@ -1,36 +1,49 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-            <li><a class="u-email" href="/contact/">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
+<section class="section-6">
+        <h2>Subscribe and stay updated</h2>
+        <p>Be the first to know about our new products and releases</p>
+        <form class="nea-subscribe nea-form">
+          <div class="col-12 col-md-4 offset-md-4 animated-hidden-right" id="home_form">
+            <input type="text" placeholder="Email Address" id="form-field-nea_email" required>
+            <div><button class="loadbtn" type="submit"><i class="fa fa-circle-notch fa-spin fa-inactive"></i> Subscribe</button></div>
+          </div>
+        </form>
+      </section>
+      <section class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5">
+              <div><img src="assets/img/neahtid-logo-720x300-gray.png" alt="Neahtid"></div>
+              <div class="footer-icons">
+                <a class="footer-icon twitter" href="https://www.twitter.com/neahtid" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="footer-icon facebook" href="https://www.facebook.com/Neahtid/" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a class="footer-icon youtube" href="https://www.youtube.com/neahtid" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a class="footer-icon instagram" href="https://www.instagram.com/neahtid/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a class="footer-icon googleplus" href="https://plus.google.com/+Neahtid" target="_blank">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a class="footer-icon pinterest" href="https://www.pinterest.cl/neahtid/" target="_blank">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <ul class="footer-list">
+                <li><a href="./contact-us.html">Support</a></li>
+                <li><a href="./research-program.html">Research Programs</a></li>
+                <li><a href="./investor-relations.html">Investor Relations</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
 </footer>

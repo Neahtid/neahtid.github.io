@@ -24,12 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Carl Sagan
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.neahtid.com" # the base hostname & protocol for your site, e.g. http://example.com
-rss: https://feeds.feedburner.com/coto
-rss_name: RSS Subscribe
 twitter_username: neahtid
-
-disqus:
-  shortname: coto
 
 # Build settings
 markdown: kramdown
@@ -40,7 +35,7 @@ plugins:
 #permalink: /:categories/:year/:month/:day/:title:output_ext
 
 
-google_analytics: "UA-47489500-1"
+google_analytics: "UA-100761415-1"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
