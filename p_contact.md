@@ -25,9 +25,8 @@ permalink: /contact-us
 						<label for="form-field-nea_message">Message</label>
 						<div><textarea placeholder="Message" id="form-field-nea_message" rows="5" required></textarea></div>
 					</div>
-					<div id="s_but"><button type="submit"><i class="fa fa-circle-notch fa-spin fa-inactive"></i> <i class="fas fa-paper-plane"></i> Send</button></div>
-					<div class="contact-input">	
-						<div id="n-recaptcha"></div>
+					<div>
+						<button type="submit"><i class="fa fa-circle-notch fa-spin fa-inactive"></i> <i class="fas fa-paper-plane"></i> Send</button>
 					</div>
 				</form>
 			</div>
