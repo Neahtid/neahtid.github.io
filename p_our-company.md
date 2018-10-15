@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Our Company
 permalink: /our-company
 ---
 <!-- first section -->

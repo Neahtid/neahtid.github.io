@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Research Program
 permalink: /research-program
 ---
 <!-- first section -->

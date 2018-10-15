@@ -16,12 +16,10 @@
 title: Innocuous Wireless Energy
 author: Neahtid
 description: >- # this means to ignore newlines until "baseurl:"
-  Who are we? We find that we live on an insignificant 
-  planet of a humdrum star lost in a galaxy tucked away 
-  in some forgotten corner of a universe in which 
-  there are far more galaxies than people. 
-  -
-  Carl Sagan
+  Harmless Wireless Charging Solutions. Experience real wireless energy and 
+  charge electrical devices through the air. We carefully create the 
+  technology and also design and build wireless charging solutions to keep 
+  electrical devices charged, at all times, regardless of where you are.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.neahtid.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: neahtid

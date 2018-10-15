@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Innocuous Wireless Charging Solutions
 ---
 <header class="section-1">
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>

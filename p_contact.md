@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Contact Us
 permalink: /contact-us
 ---
 <!-- first section -->

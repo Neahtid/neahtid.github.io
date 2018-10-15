@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Investor Relations
 permalink: /investor-relations
 ---
 <!-- first section -->

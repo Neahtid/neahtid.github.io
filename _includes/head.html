@@ -1,4 +1,4 @@
-<!-- icons -->
+  <!-- icons -->
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" href="assets/img/icon-16x16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="assets/img/icon-32x32.png" type="image/png" sizes="32x32">
@@ -15,17 +15,17 @@
       <meta name="theme-color" content="#ffffff">
 
   <!-- Facebook Open Graph -->
-  <meta property="og:locale" content="en_US">
+  <meta property="og:locale" content="{{ page.lang | default: site.lang | default: "en-US" }}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Wireless Energy - Neahtid">
-  <meta property="og:description" content="Harmless Wireless Charging Solutions. Experience real wireless energy and charge electrical devices through the air. We carefully create the technology and also design and build wireless charging solutions to keep electrical devices charged, at all times, regardless of where you are">
+  <meta property="og:title" content="{{ page.title }} - Neahtid">
+  <meta property="og:description" content="{{ site.description }}">
   <meta property="og:url" content="https://www.neahtid.com/">
   <meta property="og:site_name" content="Neahtid">
   
   <!-- twitter card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Wireless Energy - Neahtid">
-  <meta name="twitter:description" content="Harmless Wireless Charging Solutions. Experience real wireless energy and charge electrical devices through the air. We carefully create the technology and also design and build wireless charging solutions to keep electrical devices charged, at all times, regardless of where you are">
+  <meta name="twitter:title" content="{{ page.title }} - Neahtid">
+  <meta name="twitter:description" content="{{ site.description }}">
   <meta name="twitter:site" content="@neahtid">
   <meta name="twitter:image" content="https://storage.googleapis.com/neahtid-web.appspot.com/1/elementor/thumbs/neahtid-logo-320x132-nr45ccquchf9ycd48dm9sraqmlftewtc3asjkdf2x0.png">
   <meta name="twitter:creator" content="@neahtid">
