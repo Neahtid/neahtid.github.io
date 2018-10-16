@@ -24,6 +24,16 @@ permalink: /our-company
 			<div class="col-12 col-md-12 mt-12">
 				<h1>Applying to Neahtid</h1>
 			</div>
+			<div class="flex-btn-container container">
+				<div class="row">
+					<div class="col-12 col-md-6 centered mt-1 mb-1">
+						<a class="btn btn-success" href="https://goo.gl/forms/KymqcRJKFebiGfaJ3" target="_blank">Internship Application</a>
+					</div>
+					<div class="col-12 col-md-6 centered mt-1 mb-1">
+						<a class="btn btn-info" href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank">Full Time Application</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-6 col-md-6 mt-3">
@@ -48,16 +58,6 @@ permalink: /our-company
 			<div class="col-6 col-md-6 mt-3">
 				<div class="container">
 					<p>If you don’t understand a question, ask your interviewers for clarification and take the time you need with responses.</p>
-					<div class="flex-btn-container container">
-						<div class="row">
-							<div class="col-12 col-md-6 centered mt-1 mb-1">
-								<a class="btn btn-success" href="https://goo.gl/forms/KymqcRJKFebiGfaJ3" target="_blank">Internship Application</a>
-							</div>
-							<div class="col-12 col-md-6 centered mt-1 mb-1">
-								<a class="btn btn-info" href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank">Full Time Application</a>
-							</div>
-						</div>
-					</div>
 					<h2>Prepare for the interview process</h2>
 					<ul>
 						<li>Once you’ve submitted your application online, our staffing team will review your resume</li>
@@ -79,17 +79,13 @@ permalink: /our-company
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="col-4 col-md-4 lg-4">
+			<div class="col-12 col-md-4">
 				<a href="./research-program.html" class="contact-badge company-research">
 					<h2>Research Programs</h2>
 				</a>
-			</div>
-			<div class="col-4 col-md-4 lg-4">
 				<a href="./investor-relations.html" class="contact-badge company-relations">
 					<h2>Investor Relations</h2>
 				</a>
-			</div>
-			<div class="col-4 col-md-4 lg-4">
 				<a href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank" class="contact-badge company-work">
 					<h2>Work with Us</h2>
 				</a>
