@@ -83,9 +83,13 @@ permalink: /our-company
 				<a href="./research-program.html" class="contact-badge company-research">
 					<h2>Research Programs</h2>
 				</a>
+			</div>
+			<div class="col-12 col-md-4">
 				<a href="./investor-relations.html" class="contact-badge company-relations">
 					<h2>Investor Relations</h2>
 				</a>
+			</div>
+			<div class="col-12 col-md-4">
 				<a href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank" class="contact-badge company-work">
 					<h2>Work with Us</h2>
 				</a>
