@@ -6,7 +6,7 @@ title: Innocuous Wireless Charging Solutions
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <div class="container">
     <h2>"Innocuous Wireless Charging Solutions"</h2>
-    <h3 id="section_1_h3" class="animated-hidden">We offer Wireless Energy solutions to solve charging issues in different industries.</h3>
+    <h3 id="section_1_h3" class="animated-hidden">We transform the problem of cable charging into different efficient and innovative wireless charging solutions.</h3>
   </div>
 </header>
 <section class="section-2">
