@@ -6,7 +6,7 @@ title: Innocuous Wireless Charging Solutions
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <div class="container">
     <h2>"Innocuous Wireless Charging Solutions"</h2>
-    <h3 id="section_1_h3" class="animated-hidden">Wireless Energy for different industries.</h3>
+    <h3 id="section_1_h3" class="animated-hidden">We offer Wireless Energy solutions to solve charging issues in different industries.</h3>
   </div>
 </header>
 <section class="section-2">
@@ -22,7 +22,7 @@ title: Innocuous Wireless Charging Solutions
       </div>
       <div class="col-12 col-md-6 infoblock">
         <h2>Carefully Designed and Engineered for you.</h2>
-        <p>We carefully design and build wireless charging solutions and technologies to keep  electrical devices used in different industries like mining, medical devices, electric cars, smarthome, among other charged all the time. Our purpose is summarized in these principles and values:</p>
+        <p>We carefully design and build wireless charging solutions, products and technologies to keep electrical devices used in different industries like mining, medical devices, electric cars, smarthome, among other charged all the time. Our values and purpose are:</p>
         <p class="plist"><i class="fa fa-leaf"></i>Harmless for People and Environment</p>
         <p class="plist"><i class="fa fa-battery-full"></i>Good Charging Experience</p>
         <p class="plist"><i class="far fa-clock"></i>Improved distance and charging speed</p>
@@ -32,7 +32,7 @@ title: Innocuous Wireless Charging Solutions
 </section>
 <section class="section-4">
   <h2>Where it will be available</h2>
-  <p>Our technology match different use-cases and can be applied to different kind of industries like:</p>
+  <p>Our technology match different use-cases and can be applied to different kind of electrical products among other, in:</p>
   <div class="container badges">
     <div class="row">
       <div class="col-12 col-md-4 badge">
