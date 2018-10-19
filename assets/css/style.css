@@ -56,7 +56,8 @@ body{
 	top: 300px;
 }
 h2{
-	font-size: 2vw;
+	max-width: 45vw;
+	font-size: 3vw;
 	font-weight: bold;
 }
 p{
