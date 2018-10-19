@@ -56,7 +56,7 @@ body{
 	top: 300px;
 }
 h2{
-	font-size: 30px;
+	font-size: 2vw;
 	font-weight: bold;
 }
 p{
@@ -142,7 +142,7 @@ a.btn{
 	color: #54595f;
 }
 .section-1 .container{
-    padding: 190px 60px;
+    padding: 190px 90px;
 }
 .section-1 h3{
 	margin-top: 100px;
@@ -521,6 +521,7 @@ fieldset.attend input.radio {
 }
 .flex-btn-container a{
 }
+
 /* Smartphone Porttrait */
 @media only screen and (max-width: 600px) {	
 	.section-1 .section-arrow{
@@ -528,7 +529,7 @@ fieldset.attend input.radio {
 		top: 450px;
 	}
 	.section-1 .container {
-		padding: 120px 110px 0 20px;
+		padding: 120px 120px 0 20px;
 	}
 	.section-3 .section-arrow{
 		right: 10px;
@@ -572,5 +573,14 @@ fieldset.attend input.radio {
 	}
 	section.section-6 {
 		padding: 50px 20px;
+	}
+}
+/* Smartphone Porttrait */
+@media only screen and (max-width: 359px) {	
+	.section-1 {
+		background-position: -600px center;
+	}
+	.section-1 .container {
+		padding: 120px 120px 0 20px;
 	}
 }
