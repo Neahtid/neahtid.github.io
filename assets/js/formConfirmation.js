@@ -32,7 +32,7 @@ function postForm(form) {
 		var thanks = "Thanks for subscribing. We will be in touch soon.";
 	} else if ($(form).hasClass("nea-investor")) {
 		var URL = "https://docs.google.com/forms/d/1js4c8uf---mPzKOpfOQR-8rYkR-DQu9FPJgIEgzDOhk/formResponse";
-		var thanks = "Thanks for contacting Us. We will be in touch soon.";
+		var thanks = "Thank you! We will be in touch soon.";
 	} else if ($(form).hasClass("nea-contact")) {
 		var URL = "https://docs.google.com/forms/d/1CpamEupan42CHwtJN1VqJnjgoQGud8SI2WAb9XCVqPU/formResponse";
 		var thanks = "Thanks for contacting us. We will be in touch soon.";
