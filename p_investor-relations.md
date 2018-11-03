@@ -12,9 +12,9 @@ permalink: /investor-relations
 		<div class="row">
 			<div class="col-12 col-md-8">
 				<div class="white-island">
-					<h3>Series Seed Venture Round</h3>
-					<p>Neahtid is a R&D company in the Wireless Energy Industry, in a $10MM Market for 2022.</p>
-					<p>We are looking for an Angel Investor who is able to understand how profitable Neahtid will become in long term, and how a Research and Developments company runs. We trully beleive Neahtid is able to achive huge things working with the smart and kind partners.</p>
+					<h3>Series Seed Venture Round Open</h3>
+					<p>We are looking for an Angel Investor who is able to understand how profitable Neahtid will become in long term, and how a Research and Developments company runs. We trully beleive that Neahtid is able to achive huge things working with the smart and kind partners and collaborators.</p>
+					<p>Neahtid is a R&D company in the Wireless Energy Industry, in a $10MM Market for 2022 and is seeking for one or two Angel Investors for Series Seed Round of $1MM with a Pre-Money valuation of $2.5MM.</p>
 					<p>We will provide investors having an interest in partnering Neahtid with Proformas, financial statements and details about current Round of Investment.</p>
 					<button href="javascript:void(0);"  data-toggle="modal" data-target="#modal">Become a Partner</button>
 				</div>
@@ -44,7 +44,7 @@ permalink: /investor-relations
 		<div class="modal-body">
 			<div class="relations-modal">
 				<h2>Invest in Series Seed Round</h2>
-				<p style="text-align: left;">Leave us your information. We will contact you back.</p>
+				<p style="text-align: left;">Leave us your information. We will contact you back with more information about our offer.</p>
 				<div class="left-aligned">
 					<form class="nea-investor nea-form">
 						<div class="contact-input">
@@ -57,7 +57,7 @@ permalink: /investor-relations
 						</div>
 						<div class="contact-input">
 							<label for="form-field-nea_message">Comments <span class="required">*</span></label>
-							<div><textarea placeholder="Please describe what type of investor you are and your offer offer or question." id="form-field-nea_message" rows="5" required></textarea></div>
+							<div><textarea placeholder="Please describe what type of investor you are, your offer or question." id="form-field-nea_message" rows="5" required></textarea></div>
 						</div>
 						<div><button type="submit"><i class="fa fa-circle-notch fa-spin fa-inactive"></i> <i class="fas fa-paper-plane"></i> Send</button></div>
 					</form>

@@ -395,7 +395,7 @@ fieldset.attend input.radio {
 	margin-top: 5px;
 }
 
-.contact-input .required{
+.contact-input label .required{
 	color: red;
 }
 
