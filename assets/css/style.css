@@ -394,6 +394,12 @@ fieldset.attend input.radio {
 	margin: 0;
 	margin-top: 5px;
 }
+
+.contact-input .required{
+	color: red;
+}
+
+
 .contact-badge, .contact-badge:link, .contact-badge:visited{
 	display: block;
 	height: 200px;
