@@ -48,12 +48,16 @@ body{
 	animation: arrows 1s ease-in;
 }
 .section-1 .section-arrow{
-	right: 20px;
-	top: 220px;
+	right: 150px;
+	top: 380px;
 }
 .section-3 .section-arrow{
 	right: 150px;
 	top: 300px;
+}
+.section-4 .section-arrow{
+	right: 150px;
+	top: 40px;
 }
 h2{
 	font-size: 2.2vw;
@@ -204,12 +208,13 @@ p.plist{
 }
 /* section 4 */
 .section-4{
+	position: relative;
 	background-color: #F4F4F4;
 	text-align: center;
 	padding: 50px;
 }
 .section-4 .badges, .section-5 .badges{
-	margin-top: 70px;
+	/*margin-top: 70px;*/
 }
 .section-4 .badges .badge-inner{
 	width: 80%;
@@ -218,7 +223,7 @@ p.plist{
 .section-4 .badges .badge h2{
 	background-color: #E2E2E2;
 	padding: 5% 0;
-	font-size: 2.0vw;
+	font-size: 1.6em;
 }
 .section-4 .badges .badge img{
 	width: 100%;
@@ -534,15 +539,19 @@ fieldset.attend input.radio {
 /* Smartphone Porttrait */
 @media only screen and (max-width: 600px) {	
 	.section-1 .section-arrow{
-		right: 10px;
+		right: 150px;
 		top: 450px;
 	}
 	.section-1 .container {
 		padding: 120px 120px 0 20px;
 	}
 	.section-3 .section-arrow{
-		right: 10px;
-		top: 580px;
+		right: 150px;
+		top: 670px;
+	}
+	.section-4 .section-arrow{
+		right: 150px;
+		top: 830px;
 	}
 	.navbar-brand img{
 		height: 74px;

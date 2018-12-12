@@ -14,7 +14,7 @@ title: Innocuous Wireless Charging Solutions
   <p>Experience real wireless energy and charge electrical devices through the air.</p>
 </section>
 <section class="section-3" id="section-3">
-  <div class="section-arrow"><div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
+  <div class="section-arrow"><div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 centered">
@@ -30,30 +30,29 @@ title: Innocuous Wireless Charging Solutions
     </div>
   </div>
 </section>
-<section class="section-4">
+<section class="section-4" id="section-4">
+  <div class="section-arrow"><div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <h2>Where it will be available</h2>
   <p>Our technology match different use-cases and can be applied to different kind of electrical products among other, in:</p>
-  <div class="container badges">
-    <div class="row">
-      <div class="col-12 col-md-4 badge">
+  <div class="row badges">
+      <div class="col-md-4 col-xs-12 badge">
         <div class="badge-inner">
           <h2>Medical Devices</h2>
           <img src="assets/img/neah-medical.jpg" alt="Neahtid Medical Devices">
         </div>
       </div>
-      <div class="col-12 col-md-4 badge">
+      <div class="col-md-4 col-xs-12 badge">
         <div class="badge-inner">
           <h2>Electric Transport</h2>
           <img src="assets/img/neah-cars.jpg" alt="Neahtid malls">
         </div>
       </div>
-      <div class="col-12 col-md-4 badge">
+      <div class="col-md-4 col-xs-12 badge">
         <div class="badge-inner">
           <h2>Mining</h2>
           <img src="assets/img/neah-mining.jpg" alt="Neahtid Aerospace">
         </div>
       </div>
-    </div>
   </div>
 </section>
 <section class="section-5" id="section-5">
