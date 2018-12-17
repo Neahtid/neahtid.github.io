@@ -13,7 +13,7 @@ permalink: /investor-relations
 			<div class="col-12 col-md-8">
 				<div class="white-island">
 					<h3>Series Seed Venture Round Open</h3>
-					<p>Neahtid is a R&D company in the Wireless Energy Industry, in a $10MM Market for 2022 and already has the support of the <a href="http://www.startupchile.org/startups/neahtid/" target="_blank">Chilean Government through the accelerator program StartUp Chile</a>, and a collaboration agreement with one of <a href="http://bit.ly/noticia-acuerdo-usm-neahtid" target="_blank">the most prestigus Science and Enginering University</a> in LatinAmerica and the world. </p>
+					<p>Neahtid is a R&D company in the Wireless Energy Industry, in a $10MM Market for 2022 and already has the support of the <a href="http://www.startupchile.org/startups/neahtid/" target="_blank">Chilean Government through the accelerator program Start-Up Chile</a>, and a collaboration agreement with one of <a href="http://bit.ly/noticia-acuerdo-usm-neahtid" target="_blank">the most prestigus Science and Enginering University</a> in LatinAmerica and the world. </p>
 					<p>We are looking for an Investor to invest 50% of the round and is able to understand how profitable Neahtid will become in long term, and how a Research and Developments company runs. We trully beleive that our company will achive huge things working with smart partners and collaborators.</p>
 					<p>We will provide investors having an interest in partnering Neahtid with Proformas, Business Plan, Financial proyections and details about current Round of Investment.</p>
 					<button href="http://bit.ly/2SSTP0x">Schedule a meeting</button>
