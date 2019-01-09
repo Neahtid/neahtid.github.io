@@ -35,24 +35,29 @@ title: Innocuous Wireless Charging Solutions
   <h2>Where it will be available</h2>
   <p>Our technology match different use-cases and can be applied to different kind of electrical products among other, in:</p>
   <div class="row badges">
-      <div class="col-md-4 col-xs-12 badge">
-        <div class="badge-inner">
-          <h2>Medical Devices</h2>
-          <img src="assets/img/neah-medical.jpg" alt="Neahtid Medical Devices Wireless Charging">
-        </div>
+    <div class="col-md-4 col-xs-12 badge">
+      <div class="badge-inner">
+        <h2>Medical Devices</h2>
+        <img src="assets/img/neah-medical.jpg" alt="Neahtid Medical Devices Wireless Charging">
       </div>
-      <div class="col-md-4 col-xs-12 badge">
-        <div class="badge-inner">
-          <h2>Electric Transport</h2>
-          <img src="assets/img/neah-cars-2.jpg" alt="Neahtid Electric Car Wireless Charging">
-        </div>
+    </div>
+    <div class="col-md-4 col-xs-12 badge">
+      <div class="badge-inner">
+        <h2>Electric Transport</h2>
+        <img src="assets/img/neah-cars-2.jpg" alt="Neahtid Electric Car Wireless Charging">
       </div>
-      <div class="col-md-4 col-xs-12 badge">
-        <div class="badge-inner">
-          <h2>Mining</h2>
-          <img src="assets/img/neah-mining.jpg" alt="Neahtid Aerospace Wireless Charging">
-        </div>
+    </div>
+    <div class="col-md-4 col-xs-12 badge">
+      <div class="badge-inner">
+        <h2>Mining</h2>
+        <img src="assets/img/neah-mining.jpg" alt="Neahtid Aerospace Wireless Charging">
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="text-align: center; padding-top: 4%;">
+      <a href="http://bit.ly/2LXlevV" target="_blank" class="btn btn-primary"  style="margin: 0 auto; text-align: center;">Ask for your solution</a>
+    </div>
   </div>
 </section>
 <section class="section-5" id="section-5">
@@ -77,5 +82,5 @@ title: Innocuous Wireless Charging Solutions
     </div>
   </div>
 </section>
-      
+
 
