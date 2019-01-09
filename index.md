@@ -21,11 +21,11 @@ title: Innocuous Wireless Charging Solutions
         <img src="assets/img/neahtid-v2.png" alt="Carefully Designed and Engineered for you">
       </div>
       <div class="col-12 col-md-6 infoblock">
-        <h2>Carefully Designed and Engineered for you.</h2>
-        <p>We carefully design and build wireless charging solutions, products and technologies to keep electrical devices used in different industries like mining, medical devices, electric cars, smarthome, among other charged all the time. Our values and purpose are:</p>
-        <p class="plist"><i class="fa fa-leaf"></i>Harmless for People and Environment</p>
-        <p class="plist"><i class="fa fa-battery-full"></i>Good Charging Experience</p>
-        <p class="plist"><i class="far fa-clock"></i>Improved distance and charging speed</p>
+        <h2>We research, design and engineer for Wireless Energy.</h2>
+        <p>We research, design and build wireless charging solutions, products and technologies to keep electrical devices charged all the time. We focus our research and development for mining industry, medical devices, electric cars, smarthome, among other. Our strong values and purpose are create solutions that:</p>
+        <p class="plist"><i class="fa fa-leaf"></i>Are Harmless for People and Environment</p>
+        <p class="plist"><i class="fa fa-battery-full"></i>Provide Good Charging Experience</p>
+        <p class="plist"><i class="far fa-clock"></i>Reach good distances and charging speed</p>
       </div>
     </div>
   </div>
@@ -38,19 +38,19 @@ title: Innocuous Wireless Charging Solutions
       <div class="col-md-4 col-xs-12 badge">
         <div class="badge-inner">
           <h2>Medical Devices</h2>
-          <img src="assets/img/neah-medical.jpg" alt="Neahtid Medical Devices">
+          <img src="assets/img/neah-medical.jpg" alt="Neahtid Medical Devices Wireless Charging">
         </div>
       </div>
       <div class="col-md-4 col-xs-12 badge">
         <div class="badge-inner">
           <h2>Electric Transport</h2>
-          <img src="assets/img/neah-cars.jpg" alt="Neahtid malls">
+          <img src="assets/img/neah-cars-2.jpg" alt="Neahtid Electric Car Wireless Charging">
         </div>
       </div>
       <div class="col-md-4 col-xs-12 badge">
         <div class="badge-inner">
           <h2>Mining</h2>
-          <img src="assets/img/neah-mining.jpg" alt="Neahtid Aerospace">
+          <img src="assets/img/neah-mining.jpg" alt="Neahtid Aerospace Wireless Charging">
         </div>
       </div>
   </div>
