@@ -32,7 +32,7 @@ title: Innocuous Wireless Charging Solutions
 </section>
 <section class="section-4" id="section-4">
   <div class="section-arrow"><div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
-  <h2>Where it will be available</h2>
+  <h2>Different Industries Applications</h2>
   <p>Our technology match different use-cases and can be applied to different kind of electrical products among other, in:</p>
   <div class="row badges">
     <div class="col-md-4 col-xs-12 badge">
