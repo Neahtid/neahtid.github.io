@@ -5,7 +5,7 @@ permalink: /contact-us
 ---
 <!-- first section -->
 <header class="headblock contact-1">
-	<h1>We are here to help you</h1>
+	<h1>We are here to help you!</h1>
 </header>
 <section class="contact-2">
 	<div class="container">
