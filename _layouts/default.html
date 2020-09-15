@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang='{{ page.lang | default: site.lang | default: "en-US" }}'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%- if page.title -%}
+        <title>{{ page.title }} - Neahtid</title>
+    {%- else -%}
+        <title>Innocuous Wireless Energy - Neahtid</title>
+    {%- endif -%}
+   
+
+    {%- include google-analytics.html -%}
+
+    {%- include head.html -%}
+    
+  </head>
+  <body>
+    <div class="wrapper">
+
+      {%- include header.html -%}
+      
+      {{ content }}
+
+      {%- include footer.html -%}
+    </div>
+    
+    <!-- scripts -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery.viewportchecker.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/formConfirmation.js"></script>
+    <script src="assets/js/script.js?v=201810111111"></script>
+  </body>
+</html>
