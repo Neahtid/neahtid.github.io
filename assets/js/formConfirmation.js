@@ -75,7 +75,7 @@ function postForm(form) {
 		dataType: "xml",
 		statusCode: {
 			0: function() {
-				$(form).html('<p class="nea-form-error">' + error + '</p>');
+				$(form).html('<p class="nea-form-sent">' + thanks + '</p>');
 				console.warn("statusCode: 0");
 				$('button[type=submit]', form).disabled = false;
 				$('.fa-inactive', form).removeClass('fa-active');
