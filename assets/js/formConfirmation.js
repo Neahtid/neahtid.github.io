@@ -27,6 +27,7 @@ var onloadCallback = function() {
 };
 
 function postForm(form) {
+	var error = "Contact no valid! The form was not sent."
 	if ($(form).hasClass("nea-subscribe")) {
 		var URL = "https://docs.google.com/forms/d/1uKJWGaSlhsAd9DXm8opzyIFnicwscYdenYhCyNB-KWY/formResponse";
 		var thanks = "Thanks for subscribing. We will be in touch soon.";
@@ -74,7 +75,7 @@ function postForm(form) {
 		dataType: "xml",
 		statusCode: {
 			0: function() {
-				$(form).html('<p class="nea-form-sent">' + thanks + '</p>');
+				$(form).html('<p class="nea-form-error">' + error + '</p>');
 				console.warn("statusCode: 0");
 				$('button[type=submit]', form).disabled = false;
 				$('.fa-inactive', form).removeClass('fa-active');
