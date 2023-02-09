@@ -1,21 +1,20 @@
 ---
 layout: page
-title: Investor Relations
+title: Software Solutions
 permalink: /investor-relations
 ---
 <!-- first section -->
 <header class="headblock relations-1">
-	<h1>Neahtid Investor</h1>
+	<h1>Software Solutions</h1>
 </header>
 <section class="contact-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-8">
 				<div class="white-island">
-					<h3>Series Seed Venture Round Open</h3>
-					<p>Neahtid is a R&D company in the Wireless Energy Industry, in a $10MM Market for 2022 and already has the support of the <a href="http://www.startupchile.org/startups/neahtid/" target="_blank">Chilean Government through the accelerator program Start-Up Chile</a>, and a collaboration agreement with one of <a href="http://bit.ly/noticia-acuerdo-usm-neahtid" target="_blank">the most prestigus Science and Enginering University</a> in LatinAmerica and the world. </p>
-					<p>We already have lined up 50% of the round and are  looking for the remaining 50%. The investor should be able to understand how profitable Neahtid will become in long term, and how a Research and Developments company runs. We trully beleive that our company will achive huge things working with smart partners and collaborators.</p>
-					<p>Please fill in this form in order to schedule a meeting, after the proper due dillingence we will be able to provide more details about the company and current Round of Investment.</p>
+					<h3>PWA and beyond</h3>
+					<p>Neahtid has more than 20 years of experience developing web applications.</p>
+					<p>We are working with the future of installed applications called Progressive Web Applications since the begging mixed with experience in Python, SQL and noSQL Databases, and years of experience with Google Cloud and Azure infraestructures.</p>
 					<a href="http://bit.ly/2SSTP0x" target="_blank" class="btn btn-primary">Schedule a meeting</a>
 				</div>
 			</div>
