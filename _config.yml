@@ -32,7 +32,8 @@ theme: minima
 #permalink: /:categories/:year/:month/:day/:title:output_ext
 
 
-google_analytics: "UA-100761415-1"
+google_analytics: "G-GPW5FKMJWZ"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
