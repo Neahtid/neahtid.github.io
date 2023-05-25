@@ -48,6 +48,7 @@ function postForm(form) {
 	var name = $("input#form-field-nea_name", form).val();
 	var attend = $("input[name='investor-sub']:checked", form).val();
 	var message = $("#form-field-nea_message", form).val();
+	var source = "neahtid.com";
 
 	if (email == "") {
 		alert("Insert your email addrees before sending.");
@@ -69,7 +70,8 @@ function postForm(form) {
 			"entry.1155430950": email,
 			"entry.545860963": name,
 			"entry.512963360": attend,
-			"entry.1997542075": message
+			"entry.1997542075": message,
+			"entry.26006045": source
 		},
 		type: "POST",
 		dataType: "xml",
