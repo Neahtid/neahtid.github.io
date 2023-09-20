@@ -38,10 +38,10 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>SysOp</h2>
-        <ul>
-          <li>Azure, GCP, Shopify cloud</li>
-          <li>CD/CI</li>
-          <li>Azure, GCP, Shopify cloud</li>
+        <ul style="adding-left: 1.3em; text-align: left;">
+          <li>Azure, GCP, Shopify cloud.</li>
+          <li>CD/CI.</li>
+          <li>DBA.</li>
         </ul>
         <img src="assets/img/neah-medical.jpg" alt="Neahtid Medical Devices Wireless Charging">
       </div>
@@ -49,11 +49,12 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>Software</h2>
-        <ul>
-          <li>PWA: Progressive Web Applications</li>
-          <li>Python, PHP, Node.js, C#</li>
-          <li>Tyscript / JavaScript / ECMAScrit6</li>
-          <li>SQL and no-SQL Databases</li>
+        <ul style="adding-left: 1.3em; text-align: left;">
+          <li>PWA: Progressive Web Applications.</li>
+          <li>Payment integrations apps.</li>
+          <li>Python, PHP, Node.js, C#.</li>
+          <li>Tyscript / JavaScript / ECMAScrit6.</li>
+          <li>SQL and no-SQL Databases.</li>
         </ul>
         <img src="assets/img/neah-cars-2.jpg" alt="Neahtid Electric Car Wireless Charging">
       </div>
@@ -61,10 +62,11 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>Hardware</h2>
-        <ul>
-          <li>Remote Hardware Controlling</li>
-          <li>Microcontroller programming</li>
-          <li>TX/RX signal analysis</li>
+        <ul style="adding-left: 1.3em; text-align: left;">
+          <li>Remote Hardware Controlling.</li>
+          <li>Microcontroller programming.</li>
+          <li>TX/RX signal analysis.</li>
+          <li>Wireless charging solutions.</li>
         </ul>
         <img src="assets/img/neah-mining.jpg" alt="Neahtid Aerospace Wireless Charging">
       </div>
@@ -72,7 +74,7 @@ title: Innocuous Wireless Charging Solutions
   </div>
   <div class="row">
     <div class="col-sm-12" style="text-align: center; padding-top: 4%;">
-      <a href="http://bit.ly/2LXlevV" target="_blank" class="btn btn-primary"  style="margin: 0 auto; text-align: center;">Ask for your solution</a>
+      <a href="http://bit.ly/2LXlevV" target="_blank" class="btn btn-primary"  style="margin: 0 auto; text-align: center;">Ask for your application</a>
     </div>
   </div>
 </section>
