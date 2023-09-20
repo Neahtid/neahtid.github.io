@@ -5,13 +5,13 @@ title: Innocuous Wireless Charging Solutions
 <header class="section-1">
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <div class="container">
-    <h2>"Innocuous Wireless Charging Solutions"</h2>
-    <h3 id="section_1_h3" class="animated-hidden">We transform cable charging problems into different and efficient wireless charging solutions.</h3>
+    <h2>"Creating Software and Hardware applications that break the technology barrier"</h2>
+    <h3 id="section_1_h3" class="animated-hidden">We research and develop hardware and software applications.</h3>
   </div>
 </header>
 <section class="section-2">
-  <h2>Uninterrupted Energy</h2>
-  <p>Experience real wireless energy and charge electrical devices through the air.</p>
+  <h2>Research and Development</h2>
+  <p>Where ideas become reality.</p>
 </section>
 <section class="section-3" id="section-3">
   <div class="section-arrow"><div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
@@ -21,11 +21,11 @@ title: Innocuous Wireless Charging Solutions
         <img src="assets/img/neahtid-v2.png" alt="Carefully Designed and Engineered for you">
       </div>
       <div class="col-12 col-md-6 infoblock">
-        <h2>We research, design and perform engineering for Wireless Energy</h2>
-        <p>We research, design and build wireless charging solutions, products and technologies to keep electrical devices charged all the time. We focus our research and development for mining industry, medical devices, electric cars, smarthome, among other. Our strong values and purpose are create solutions that:</p>
-        <p class="plist"><i class="fa fa-leaf"></i>Are Harmless for People and Environment</p>
-        <p class="plist"><i class="fa fa-battery-full"></i>Provide Good Charging Experience</p>
-        <p class="plist"><i class="far fa-clock"></i>Reach good distances and charging speed</p>
+        <h2>We are expert with Software and Harware engineering</h2>
+        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a Progressive Web Application that, for example,  allows controlling hardware such as cameras, motors remotely, or just a payment integration application. Our quality philosophy: </p>
+        <p class="plist"><i class="fa fa-leaf"></i>Build Harmless for People and Environment products.</p>
+        <p class="plist"><i class="fa fa-battery-full"></i>Provide awesome User Experience design.</p>
+        <p class="plist"><i class="far fa-clock"></i>To use the latest sustainable technology over time and on budget.</p>
       </div>
     </div>
   </div>
