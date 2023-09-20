@@ -22,7 +22,7 @@ title: Innocuous Wireless Charging Solutions
       </div>
       <div class="col-12 col-md-6 infoblock">
         <h2>We are expert with Software and Harware engineering</h2>
-        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a Progressive Web Application that, for example,  allows controlling hardware such as cameras, motors remotely, or just a payment integration application. Our quality philosophy: </p>
+        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a Progressive Web Application that allows remote controlling of hrdware,  to a <a href ="https://jingo.store">payment integration application</a>. Our quality philosophy: </p>
         <p class="plist"><i class="fa fa-leaf"></i>Build Harmless for People and Environment products.</p>
         <p class="plist"><i class="fa fa-battery-full"></i>Provide awesome User Experience design.</p>
         <p class="plist"><i class="far fa-clock"></i>To use the latest sustainable technology over time and on budget.</p>
