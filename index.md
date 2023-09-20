@@ -6,7 +6,7 @@ title: Innocuous Wireless Charging Solutions
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <div class="container">
     <h2>"Creating Software and Hardware applications that break the technology barrier"</h2>
-    <h3 id="section_1_h3" class="animated-hidden">We research and develop hardware and software applications.</h3>
+    <h3 id="section_1_h3" class="animated-hidden">We research and develop hardware and software applications for high demand infrastructure deployments.</h3>
   </div>
 </header>
 <section class="section-2">
@@ -37,19 +37,35 @@ title: Innocuous Wireless Charging Solutions
   <div class="row badges">
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
-        <h2>Medical Devices</h2>
+        <h2>SysOp</h2>
+        <ul>
+          <li>Azure, GCP, Shopify cloud</li>
+          <li>CD/CI</li>
+          <li>Azure, GCP, Shopify cloud</li>
+        </ul>
         <img src="assets/img/neah-medical.jpg" alt="Neahtid Medical Devices Wireless Charging">
       </div>
     </div>
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
-        <h2>Electric Transport</h2>
+        <h2>Software</h2>
+        <ul>
+          <li>PWA: Progressive Web Applications</li>
+          <li>Python, PHP, Node.js, C#</li>
+          <li>Tyscript / JavaScript / ECMAScrit6</li>
+          <li>SQL and no-SQL Databases</li>
+        </ul>
         <img src="assets/img/neah-cars-2.jpg" alt="Neahtid Electric Car Wireless Charging">
       </div>
     </div>
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
-        <h2>Mining</h2>
+        <h2>Hardware</h2>
+        <ul>
+          <li>Remote Hardware Controlling</li>
+          <li>Microcontroller programming</li>
+          <li>TX/RX signal analysis</li>
+        </ul>
         <img src="assets/img/neah-mining.jpg" alt="Neahtid Aerospace Wireless Charging">
       </div>
     </div>
