@@ -71,7 +71,9 @@ title: Innocuous Wireless Charging Solutions
           <li>TX/RX signal analysis.</li>
           <li>Wireless charging solutions.</li>
         </ul>
-        <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/16c7a6f5-556e-4762-bb24-d67802a258b9" alt="Neahtid Hardware Development">
+        ![bh1](https://github.com/Neahtid/neahtid.github.io/assets/135855332/ec420294-e2fc-4d8e-a976-b56e58651131)
+
+        <img src="[https://github.com/Neahtid/neahtid.github.io/assets/135855332/16c7a6f5-556e-4762-bb24-d67802a258b9](https://github.com/Neahtid/neahtid.github.io/assets/135855332/ec420294-e2fc-4d8e-a976-b56e58651131)" alt="Neahtid Hardware Development">
       </div>
     </div>
   </div>
