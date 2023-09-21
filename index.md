@@ -11,7 +11,7 @@ title: Innocuous Wireless Charging Solutions
 </header>
 <section class="section-2">
   <h2>Research and Development</h2>
-  <p>Where ideas become reality.</p>
+  <p>Where ideas become reality</p>
 </section>
 <section class="section-3" id="section-3">
   <div class="section-arrow"><div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
@@ -22,7 +22,7 @@ title: Innocuous Wireless Charging Solutions
       </div>
       <div class="col-12 col-md-6 infoblock">
         <h2>We are expert with Software and Harware engineering</h2>
-        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a Progressive Web Application that allows remote controlling of hrdware,  to a <a href ="https://jingo.store">payment integration application</a>. Our quality philosophy: </p>
+        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a Progressive Web Application that allows remote hardware controlling to monitoring payment integration applications, our quality philosophy: </p>
         <p class="plist"><i class="fa fa-leaf"></i>Build Harmless for People and Environment products.</p>
         <p class="plist"><i class="fa fa-battery-full"></i>Provide awesome User Experience design.</p>
         <p class="plist"><i class="far fa-clock"></i>To use the latest sustainable technology over time and on budget.</p>
@@ -32,15 +32,17 @@ title: Innocuous Wireless Charging Solutions
 </section>
 <section class="section-4" id="section-4">
   <div class="section-arrow"><div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
-  <h2>Different Industries Applications</h2>
-  <p>Our technology match different use-cases and can be applied to different kind of electrical products among other, in:</p>
+  <h1>On the cutting edge of technology</h1>
+  <p>We cover all areas for the development of highly technological products and applications</p>
   <div class="row badges">
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>SysOp</h2>
-        <ul style="adding-left: 1.3em; text-align: left;">
-          <li>Azure, GCP, Shopify cloud.</li>
+        <ul style="padding-left: 3rem; text-align: left;">
+          <li>Azure, GCP, Shopify cli.</li>
           <li>CD/CI.</li>
+          <li>Containerized applications.</li>
+          <li>Payment Gateways / Integrations.</li>
           <li>DBA.</li>
         </ul>
         <img src="assets/img/neah-medical.jpg" alt="Neahtid Medical Devices Wireless Charging">
@@ -49,12 +51,13 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>Software</h2>
-        <ul style="adding-left: 1.3em; text-align: left;">
+        <ul style="padding-left: 3rem; text-align: left;">
           <li>PWA: Progressive Web Applications.</li>
           <li>Payment integrations apps.</li>
           <li>Python, PHP, Node.js, C#.</li>
           <li>Tyscript / JavaScript / ECMAScrit6.</li>
-          <li>SQL and no-SQL Databases.</li>
+          <li>Prisma, SQL and no-SQL Databases.</li>
+          <li>UX/UI / SASS / CSS / HTML.</li>
         </ul>
         <img src="assets/img/neah-cars-2.jpg" alt="Neahtid Electric Car Wireless Charging">
       </div>
@@ -62,7 +65,7 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>Hardware</h2>
-        <ul style="adding-left: 1.3em; text-align: left;">
+        <ul style="padding-left: 3rem; text-align: left;">
           <li>Remote Hardware Controlling.</li>
           <li>Microcontroller programming.</li>
           <li>TX/RX signal analysis.</li>
@@ -74,7 +77,7 @@ title: Innocuous Wireless Charging Solutions
   </div>
   <div class="row">
     <div class="col-sm-12" style="text-align: center; padding-top: 4%;">
-      <a href="http://bit.ly/2LXlevV" target="_blank" class="btn btn-primary"  style="margin: 0 auto; text-align: center;">Ask for your application</a>
+      <a href="http://bit.ly/2LXlevV" target="_blank" class="btn btn-primary"  style="margin: 0 auto; text-align: center;">Ask for help</a>
     </div>
   </div>
 </section>
