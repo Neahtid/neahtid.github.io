@@ -18,11 +18,13 @@ title: Innocuous Wireless Charging Solutions
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 centered">
+        ![b1](https://github.com/Neahtid/neahtid.github.io/assets/135855332/2169d70d-4426-4a6a-811f-457d4b6f4e8a)
+
         <img src="assets/img/neahtid-v2.png" alt="Carefully Designed and Engineered for you">
       </div>
       <div class="col-12 col-md-6 infoblock">
         <h2>We are expert with Software and Harware engineering</h2>
-        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a Progressive Web Application that allows remote hardware controlling to monitoring payment integration applications, our quality philosophy: </p>
+        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a <b>Progressive Web Application</b> that allows remote hardware controlling to monitoring <b>Payment Integration Applications</b>, our quality philosophy: </p>
         <p class="plist"><i class="fa fa-leaf"></i>Build Harmless for People and Environment products.</p>
         <p class="plist"><i class="fa fa-battery-full"></i>Provide awesome User Experience design.</p>
         <p class="plist"><i class="far fa-clock"></i>To use the latest sustainable technology over time and on budget.</p>
