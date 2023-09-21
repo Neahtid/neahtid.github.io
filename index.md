@@ -21,7 +21,7 @@ title: Innocuous Wireless Charging Solutions
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/ca902947-c4c1-4324-8930-3f62ee2fa15f" alt="Carefully Design and Engineer for you"/>
       </div>
       <div class="col-12 col-md-6 infoblock">
-        <h2>We are expert with Software and Harware engineering</h2>
+        <h2>Experts in Software and Harware engineering</h2>
         <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a <b>Progressive Web Application</b> that allows remote hardware controlling to monitoring <b>Payment Integration Applications</b>, our quality philosophy: </p>
         <p class="plist"><i class="fa fa-leaf"></i>Build Harmless for People and Environment products.</p>
         <p class="plist"><i class="fa fa-battery-full"></i>Provide awesome User Experience design.</p>
