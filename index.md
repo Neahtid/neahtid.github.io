@@ -18,9 +18,7 @@ title: Innocuous Wireless Charging Solutions
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 centered">
-        ![b1](https://github.com/Neahtid/neahtid.github.io/assets/135855332/2169d70d-4426-4a6a-811f-457d4b6f4e8a)
-
-        <img src="assets/img/neahtid-v2.png" alt="Carefully Designed and Engineered for you">
+        <img src="assets/135855332/2169d70d-4426-4a6a-811f-457d4b6f4e8a" alt="Carefully Design and Engineer for you">
       </div>
       <div class="col-12 col-md-6 infoblock">
         <h2>We are expert with Software and Harware engineering</h2>
@@ -47,7 +45,8 @@ title: Innocuous Wireless Charging Solutions
           <li>Payment Gateways / Integrations.</li>
           <li>DBA.</li>
         </ul>
-        <img src="assets/img/neah-medical.jpg" alt="Neahtid Medical Devices Wireless Charging">
+
+        <img src="assets/135855332/7327b4d6-24b4-40b0-b09a-2aa0ed2c86ba" alt="Neahtid SysOp Development">
       </div>
     </div>
     <div class="col-md-4 col-xs-12 badge">
@@ -61,7 +60,8 @@ title: Innocuous Wireless Charging Solutions
           <li>Prisma, SQL and no-SQL Databases.</li>
           <li>UX/UI / SASS / CSS / HTML.</li>
         </ul>
-        <img src="assets/img/neah-cars-2.jpg" alt="Neahtid Electric Car Wireless Charging">
+
+        <img src="assets/135855332/6c28b7f6-5a4c-46ff-a7b0-7018382b0a58" alt="Neahtid Software Development">
       </div>
     </div>
     <div class="col-md-4 col-xs-12 badge">
@@ -73,7 +73,8 @@ title: Innocuous Wireless Charging Solutions
           <li>TX/RX signal analysis.</li>
           <li>Wireless charging solutions.</li>
         </ul>
-        <img src="assets/img/neah-mining.jpg" alt="Neahtid Aerospace Wireless Charging">
+
+        <img src="assets/135855332/16c7a6f5-556e-4762-bb24-d67802a258b9" alt="Neahtid Hardware Development">
       </div>
     </div>
   </div>
