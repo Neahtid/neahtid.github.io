@@ -59,8 +59,7 @@ title: Innocuous Wireless Charging Solutions
           <li>Prisma, SQL and no-SQL Databases.</li>
           <li>UX/UI / SASS / CSS / HTML.</li>
         </ul>
-
-        <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/6c28b7f6-5a4c-46ff-a7b0-7018382b0a58" alt="Neahtid Software Development">
+        <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/6c28b7f6-5a4c-46ff-a7b0-7018382b0a58" alt="Neahtid Software Development"/>
       </div>
     </div>
     <div class="col-md-4 col-xs-12 badge">
@@ -72,8 +71,7 @@ title: Innocuous Wireless Charging Solutions
           <li>TX/RX signal analysis.</li>
           <li>Wireless charging solutions.</li>
         </ul>
-
-        <img src="assets/135855332/16c7a6f5-556e-4762-bb24-d67802a258b9" alt="Neahtid Hardware Development">
+        <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/16c7a6f5-556e-4762-bb24-d67802a258b9" alt="Neahtid Hardware Development">
       </div>
     </div>
   </div>
