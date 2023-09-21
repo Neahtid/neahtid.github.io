@@ -18,7 +18,9 @@ title: Innocuous Wireless Charging Solutions
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 centered">
-        <img src="assets/135855332/2169d70d-4426-4a6a-811f-457d4b6f4e8a" alt="Carefully Design and Engineer for you">
+        ![b1](https://github.com/Neahtid/neahtid.github.io/assets/135855332/ca902947-c4c1-4324-8930-3f62ee2fa15f)
+
+        <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/ca902947-c4c1-4324-8930-3f62ee2fa15f" alt="Carefully Design and Engineer for you">
       </div>
       <div class="col-12 col-md-6 infoblock">
         <h2>We are expert with Software and Harware engineering</h2>
