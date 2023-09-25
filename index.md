@@ -78,7 +78,7 @@ title: Innocuous Wireless Charging Solutions
   </div>
   <div class="row">
     <div class="col-sm-12" style="text-align: center; padding-top: 4%;">
-      <a href="http://bit.ly/2LXlevV" target="_blank" class="btn btn-primary"  style="margin: 0 auto; text-align: center;">Ask for help</a>
+      <a href="/contact-us" class="btn btn-primary"  style="margin: 0 auto; text-align: center;">Ask for help</a>
     </div>
   </div>
 </section>
