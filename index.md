@@ -33,16 +33,16 @@ title: Innocuous Wireless Charging Solutions
 <section class="section-4" id="section-4">
   <div class="section-arrow"><div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <h1>On the cutting edge of technology</h1>
-  <p>We cover all areas for the development of highly technological products and applications</p>
+  <p>We cover software and hardware development of highly technological products and applications</p>
   <div class="row badges">
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>SysOp</h2>
         <ul style="padding-left: 3rem; text-align: left;">
-          <li>Azure, GCP, Shopify cli.</li>
-          <li>CD/CI.</li>
-          <li>Containerized applications.</li>
-          <li>Payment Gateways / Integrations.</li>
+          <li>Cloud CD/CI deployments.</li>
+          <li>Firewalls.</li>
+          <li>CDN.</li>
+          <li>Host to Host Payment Gateways.</li>
           <li>DBA.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/b54d1ac4-728d-492b-8df5-efbf6ae4b2b7" alt="Neahtid SysOp Development"/>
@@ -55,7 +55,7 @@ title: Innocuous Wireless Charging Solutions
           <li>PWA: Progressive Web Applications.</li>
           <li>Payment integrations apps.</li>
           <li>Python, PHP, Node.js, C#.</li>
-          <li>Tyscript / JavaScript / ECMAScrit6.</li>
+          <li>Tyscript / JavaScript / ECMAScript.</li>
           <li>Prisma, SQL and no-SQL Databases.</li>
           <li>UX/UI / SASS / CSS / HTML.</li>
         </ul>
@@ -66,6 +66,7 @@ title: Innocuous Wireless Charging Solutions
       <div class="badge-inner">
         <h2>Hardware</h2>
         <ul style="padding-left: 3rem; text-align: left;">
+          <li>Low and high resolution MVP.</li>
           <li>Remote Hardware Controlling.</li>
           <li>Microcontroller programming.</li>
           <li>TX/RX signal analysis.</li>
