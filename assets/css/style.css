@@ -544,6 +544,18 @@ fieldset.attend input.radio {
 }
 
 /* Smartphone Porttrait */
+@media only screen and (max-width: 450px) {	
+	div.section-arrow{
+		right: 0!important;
+	}
+	.section-4, .footer, .section-5 {
+		padding: 11px 9px!important;
+	}
+
+}
+
+/* Smartphone Porttrait */
+
 @media only screen and (max-width: 600px) {	
 	.section-1 .section-arrow{
 		right: 150px;
