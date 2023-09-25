@@ -38,7 +38,7 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>SysOp</h2>
-        <ul style="padding-left: 3rem; text-align: left;">
+        <ul style="padding-left: 25px; text-align: left; font-size: 16px;">
           <li>Cloud CD/CI deployments.</li>
           <li>Firewalls.</li>
           <li>CDN.</li>
@@ -51,7 +51,7 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>Software</h2>
-        <ul style="padding-left: 3rem; text-align: left;">
+        <ul style="padding-left: 25px; text-align: left; font-size: 16px;">
           <li>PWA: Progressive Web Applications.</li>
           <li>Payment integrations apps.</li>
           <li>Python, PHP, Node.js, C#.</li>
@@ -65,7 +65,7 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>Hardware</h2>
-        <ul style="padding-left: 3rem; text-align: left;">
+        <ul style="padding-left: 25px; text-align: left; font-size: 16px;">
           <li>Low and high resolution MVP.</li>
           <li>Remote Hardware Controlling.</li>
           <li>Microcontroller programming.</li>
