@@ -551,6 +551,10 @@ fieldset.attend input.radio {
 	.section-4, .footer, .section-5 {
 		padding: 11px 9px!important;
 	}
+	.badges .badge img {
+
+	    margin-bottom: 30px;
+	}
 
 }
 
