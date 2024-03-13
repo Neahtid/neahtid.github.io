@@ -18,7 +18,7 @@ title: Hardware/Software Research and Development
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 centered">
-        <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/ca902947-c4c1-4324-8930-3f62ee2fa15f" alt="Carefully Design and Engineer for you"/>
+        <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/ca902947-c4c1-4324-8930-3f62ee2fa15f" alt="Carefully Designed and Engineered for you"/>
       </div>
       <div class="col-12 col-md-6 infoblock">
         <h2>Software and Harware Engineering</h2>
@@ -48,7 +48,7 @@ title: Hardware/Software Research and Development
           <li>CDN & DBA.</li>
           <li>Host to Host Payment Gateways.</li>
         </ul>
-        <img src="https://github.com/Neahtid/neahtid.github.io/assets/img/sysop.jpeg" alt="Neahtid SysOp Development">
+        <img src="https://github.com/Neahtid/neahtid.github.io/blob/master/assets/img/sysop.jpeg" alt="Neahtid SysOp Development">
       </div>
     </div>
     <div class="col-md-4 col-xs-12 badge">
