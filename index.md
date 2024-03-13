@@ -5,7 +5,7 @@ title: Hardware/Software Research and Development
 <header class="section-1">
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <div class="container">
-    <h2>"Creating Software and Hardware applications that break the technology barrier"</h2>
+    <h2>"Breaking technology barriers with Software and Hardware solutions"</h2>
     <h3 id="section_1_h3" class="animated-hidden">We research and develop hardware and software applications for high demand infrastructure deployments.</h3>
   </div>
 </header>
