@@ -10,11 +10,10 @@ permalink: /our-company
 <section class="company-2">
 	<div class="container">
 		<div class="row">
-			<p>Neahtid is the company that creates the technology for remote electrical charging. Our company is composed of highly trained professionals. We not only work with the latest technology, we create it at the same time.</p>
+			<p>Neahtid is the company that Research and Development in the Software and Hardware industry, provinding technology solutions for Home Automation, Remote electrical charging. Our company is composed of highly trained professionals. We not only work with the latest technology, we create it at the same time.</p>
 			<p>Neahtid offers wireless charger solutions to businesses seeking to provide their customers and guests with easy, quick and efficient charging solutions for electrical devices.</p>
-			<p>Our solutions are based on the principle of electromagnetic induction described in centuries-old mathematical formulas that consider equations of great scientists such as Nikola Tesla, James Clerk Maxwell, André-Marie Ampere, Carl Friedrich Gauss, among others. Some of our solutions, especially those for short distance are based – not exclusively – on the <a href="https://en.wikipedia.org/wiki/Qi_(standard)" target="_blank" rel="noopener">Qi Standard</a> from the <a href="https://en.wikipedia.org/wiki/Wireless_Power_Consortium" target="_blank" rel="noopener">Wireless Power Consortium</a>, and our own studies of the wireless transfer of energy, especially in those that reach a greater distance of charge.</p>
-			<p>Our <b>Products</b> are wireless energy chargers solutions for medical devices, smartphones, smartwatches, tablets and any low consumption device that use electricity, covering enough radius to provide good charging expirience.</p>
-			<p>Our <b>added value</b> is to offer faster charging experience, harmless for people and environment, larger range of charge and provide an easy access to low consumption energy avoiding that the user plug the device to the electricity frecuently.</p>
+			<p>Our solutions are based on the principle of electromagnetic induction, especially those for short distance are based – not exclusively – on the <a href="https://en.wikipedia.org/wiki/Qi_(standard)" target="_blank" rel="noopener">Qi Standard</a> from the <a href="https://en.wikipedia.org/wiki/Wireless_Power_Consortium" target="_blank" rel="noopener">Wireless Power Consortium</a>, and our own studies of the wireless transfer of energy.</p>
+			<p>Nowadays, Our <b>Products</b> for wireless energy chargers solutions aim to satisfy low consumption electric devices, covering enough radius to provide good charging experience.</p>
 			</div>
 		</div>
 </section>
