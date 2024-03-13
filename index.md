@@ -48,7 +48,7 @@ title: Hardware/Software Research and Development
           <li>CDN & DBA.</li>
           <li>Host to Host Payment Gateways.</li>
         </ul>
-        <img src="https://github.com/Neahtid/neahtid.github.io/blob/master/assets/img/sysop.jpeg" alt="Neahtid SysOp Development">
+        <img src="https://raw.githubusercontent.com/Neahtid/neahtid.github.io/76c1a05e6fcc58efd03ec67aa2133e7175bd2e2a/assets/img/sysop.jpeg" alt="Neahtid SysOp Development">
       </div>
     </div>
     <div class="col-md-4 col-xs-12 badge">
