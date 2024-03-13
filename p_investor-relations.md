@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software Solutions
-permalink: /investor-relations
+permalink: /software-solutions
 ---
 <!-- first section -->
 <header class="headblock relations-1">
@@ -15,6 +15,8 @@ permalink: /investor-relations
 					<h3>PWA and beyond</h3>
 					<p>Neahtid has more than 20 years of experience developing web applications.</p>
 					<p>We are working with the future of installed applications called Progressive Web Applications since the begging mixed with experience in Python, SQL and noSQL Databases, and years of experience with Google Cloud and Azure infraestructures.</p>
+					<p>Integrating PWA into Hardware solutions, like Home Automation, has many advantages in Security and Scalability.</p>
+					<p>schedule a meeting if you are lloking for PWA or Home Automation Solutions.</p>
 					<a href="http://bit.ly/2SSTP0x" target="_blank" class="btn btn-primary">Schedule a meeting</a>
 				</div>
 			</div>
