@@ -10,7 +10,7 @@ permalink: /our-company
 <section class="company-2">
 	<div class="container">
 		<div class="row">
-			<p>Neahtid is the company that Research and Development in the Software and Hardware industry, provinding technology solutions for Home Automation, Remote electrical charging. Our company is composed of highly trained professionals. We not only work with the latest technology, we create it at the same time.</p>
+			<p>Neahtid is the company that Research and Development in the Software and Hardware industry, provinding technology solutions for Home Automation, Remote Electrical Charging, among other Hardware and Software solutions. Our company is composed of trained professionals (Electronic, Electrical and Software Engineering). We not only work with the latest technology, we also create it.</p>
 			<p>Neahtid offers wireless charger solutions to businesses seeking to provide their customers and guests with easy, quick and efficient charging solutions for electrical devices.</p>
 			<p>Our solutions are based on the principle of electromagnetic induction, especially those for short distance are based – not exclusively – on the <a href="https://en.wikipedia.org/wiki/Qi_(standard)" target="_blank" rel="noopener">Qi Standard</a> from the <a href="https://en.wikipedia.org/wiki/Wireless_Power_Consortium" target="_blank" rel="noopener">Wireless Power Consortium</a>, and our own studies of the wireless transfer of energy.</p>
 			<p>Nowadays, Our <b>Products</b> for wireless energy chargers solutions aim to satisfy low consumption electric devices, covering enough radius to provide good charging experience.</p>
