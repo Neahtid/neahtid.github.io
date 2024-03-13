@@ -1,6 +1,6 @@
 ---
 layout: page
-title: hardware/Software Research and Development
+title: Hardware/Software Research and Development
 ---
 <header class="section-1">
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
@@ -11,7 +11,7 @@ title: hardware/Software Research and Development
 </header>
 <section class="section-2">
   <h2>Where ideas become reality</h2>
-  <p>We have the skills to Research and Development Software and Hardware projects with the standard of financial industries.</p>
+  <p>We have the skills to Research and Development Software and Hardware projects with quality and security standards of financial industries.</p>
 </section>
 <section class="section-3" id="section-3">
   <div class="section-arrow"><div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
@@ -21,12 +21,12 @@ title: hardware/Software Research and Development
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/ca902947-c4c1-4324-8930-3f62ee2fa15f" alt="Carefully Design and Engineer for you"/>
       </div>
       <div class="col-12 col-md-6 infoblock">
-        <h2>Experts in Software and Harware engineering</h2>
-        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a <b>Progressive Web Application</b> that allows remote hardware controlling to monitoring <b>Payment Integration Applications</b></p>
+        <h2>Software and Harware Engineering</h2>
+        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from <b>Progressive Web Applications for Home Automation</b> for Hardware controlling and monitoring, <b>Payment Integration Applications</b>, among others.</p>
         <p>Our quality philosophy: </p>
-        <p class="plist"><i class="fa fa-leaf"></i>Build Harmless for People and Environment products.</p>
-        <p class="plist"><i class="fa fa-battery-full"></i>Provide awesome Design & User Experience.</p>
-        <p class="plist"><i class="far fa-clock"></i>Use the latest sustainable technology over time and on budget.</p>
+        <p class="plist"><i class="fa fa-leaf"></i>Developing Eco-Friendly Innovations for a Safer World.</p>
+        <p class="plist"><i class="fa fa-battery-full"></i>Delivinring Inspiring Designs & Enhancing User Experiences.</p>
+        <p class="plist"><i class="far fa-clock"></i>Elevate Efficiency, within Budget, with Sustainable Innovations.</p>
       </div>
     </div>
   </div>
