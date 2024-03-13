@@ -49,6 +49,8 @@ title: Hardware/Software Research and Development
           <li>Host to Host Payment Gateways.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/b54d1ac4-728d-492b-8df5-efbf6ae4b2b7" alt="Neahtid SysOp Development"/>
+                <img src="[https://github.com/Neahtid/neahtid.github.io/assets/135855332/b54d1ac4-728d-492b-8df5-efbf6ae4b2b7](https://github.com/Neahtid/neahtid.github.io/assets/135855332/a6291716-4ca7-4ec7-b0e3-81d046c43096)" alt="Neahtid SysOp Development"/>
+
         ![sysop](https://github.com/Neahtid/neahtid.github.io/assets/135855332/a6291716-4ca7-4ec7-b0e3-81d046c43096)
 
       </div>
