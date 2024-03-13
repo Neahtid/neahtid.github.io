@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Innocuous Wireless Charging Solutions
+title: hardware/Software Research and Development
 ---
 <header class="section-1">
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
@@ -10,8 +10,8 @@ title: Innocuous Wireless Charging Solutions
   </div>
 </header>
 <section class="section-2">
-  <h2>Research and Development</h2>
-  <p>Where ideas become reality</p>
+  <h2>Where ideas become reality</h2>
+  <p>We have the skills to Research and Development Software and Hardware projects with the standard of financial industries.</p>
 </section>
 <section class="section-3" id="section-3">
   <div class="section-arrow"><div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
@@ -22,10 +22,11 @@ title: Innocuous Wireless Charging Solutions
       </div>
       <div class="col-12 col-md-6 infoblock">
         <h2>Experts in Software and Harware engineering</h2>
-        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a <b>Progressive Web Application</b> that allows remote hardware controlling to monitoring <b>Payment Integration Applications</b>, our quality philosophy: </p>
+        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from a <b>Progressive Web Application</b> that allows remote hardware controlling to monitoring <b>Payment Integration Applications</b></p>
+        <p>Our quality philosophy: </p>
         <p class="plist"><i class="fa fa-leaf"></i>Build Harmless for People and Environment products.</p>
-        <p class="plist"><i class="fa fa-battery-full"></i>Provide awesome User Experience design.</p>
-        <p class="plist"><i class="far fa-clock"></i>To use the latest sustainable technology over time and on budget.</p>
+        <p class="plist"><i class="fa fa-battery-full"></i>Provide awesome Design & User Experience.</p>
+        <p class="plist"><i class="far fa-clock"></i>Use the latest sustainable technology over time and on budget.</p>
       </div>
     </div>
   </div>
@@ -38,12 +39,14 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>SysOp</h2>
-        <ul style="padding-left: 25px; text-align: left; font-size: 16px;">
-          <li>Cloud CD/CI deployments.</li>
+        <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
+          <li>Cloud Computing (Azure, GCP, Amazon).</li>
+          <li>Security Managment.</li>
+          <li>LLM Deployments.</li>
+          <li>CD/CI deployments.</li>
           <li>Firewalls.</li>
-          <li>CDN.</li>
+          <li>CDN & DBA.</li>
           <li>Host to Host Payment Gateways.</li>
-          <li>DBA.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/b54d1ac4-728d-492b-8df5-efbf6ae4b2b7" alt="Neahtid SysOp Development"/>
       </div>
@@ -51,12 +54,13 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>Software</h2>
-        <ul style="padding-left: 25px; text-align: left; font-size: 16px;">
+        <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
           <li>PWA: Progressive Web Applications.</li>
-          <li>Payment integrations apps.</li>
+          <li>Payment's Gateways integrations.</li>
+          <li>Fine-Tuning and LLM Reasoning</li>
           <li>Python, PHP, Node.js, C#.</li>
-          <li>Tyscript / JavaScript / ECMAScript.</li>
-          <li>Prisma, SQL and no-SQL Databases.</li>
+          <li>Typescript / JavaScript / ECMAScript.</li>
+          <li>SQL and no-SQL Databases.</li>
           <li>UX/UI / SASS / CSS / HTML.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/04e136f3-18ed-4b69-85f1-ff6d20d607ce" alt="Neahtid Software Development"/>
@@ -65,7 +69,9 @@ title: Innocuous Wireless Charging Solutions
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>Hardware</h2>
-        <ul style="padding-left: 25px; text-align: left; font-size: 16px;">
+        <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
+          <li>Hardware Security Systems.</li>
+          <li>Home automation.</li>
           <li>Low and high resolution MVP.</li>
           <li>Remote Hardware Controlling.</li>
           <li>Microcontroller programming.</li>
