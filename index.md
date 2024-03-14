@@ -21,12 +21,12 @@ title: Hardware/Software Research and Development
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/ca902947-c4c1-4324-8930-3f62ee2fa15f" alt="Carefully Designed and Engineered for you"/>
       </div>
       <div class="col-12 col-md-6 infoblock">
-        <h2>Software and Harware Engineering</h2>
-        <p>We research, design and build software and hardware solutions, products and technologies. Our solutions can range from <b>Progressive Web Applications for Home Automation</b> for Hardware controlling and monitoring, <b>Payment Integration Applications</b>, among others.</p>
+        <h2>Software and Hardware Engineering</h2>
+        <p>We research, design and build software and hardware solutions, products and technologies that can range from <b>Progressive Web Applications for Home Automation</b> with Hardware controlling and monitoring, <b>Home Automation</b>, <b>Payment Integration Applications</b>, among others.</p>
         <p>Our quality philosophy: </p>
-        <p class="plist"><i class="fa fa-leaf"></i>Developing Eco-Friendly Innovations for a Safer World.</p>
-        <p class="plist"><i class="fa fa-battery-full"></i>Delivinring Inspiring Designs & Enhancing User Experiences.</p>
-        <p class="plist"><i class="far fa-clock"></i>Elevate Efficiency, within Budget, with Sustainable Innovations.</p>
+        <p class="plist"><i class="fa fa-leaf"></i>Eco-Friendly Products for a Safer World.</p>
+        <p class="plist"><i class="fa fa-battery-full"></i>Inspiring Designs & Enhancing User Experiences.</p>
+        <p class="plist"><i class="far fa-clock"></i>Efficiency, within Budget, with Sustainable Innovations.</p>
       </div>
     </div>
   </div>
@@ -41,9 +41,9 @@ title: Hardware/Software Research and Development
         <h2>SysOp</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
           <li>Cloud Computing (Azure, GCP, Amazon).</li>
-          <li>Security Managment.</li>
+          <li>Security Management.</li>
           <li>LLM Deployments.</li>
-          <li>CD/CI deployments.</li>
+          <li>CD/CI</li>
           <li>Firewalls.</li>
           <li>CDN & DBA.</li>
           <li>Host to Host Payment Gateways.</li>
@@ -71,12 +71,12 @@ title: Hardware/Software Research and Development
         <h2>Hardware</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
           <li>Hardware Security Systems.</li>
-          <li>Home automation.</li>
-          <li>Low and high resolution MVP.</li>
+          <li>Home Automation.</li>
+          <li>Low and High resolution MVP.</li>
           <li>Remote Hardware Controlling.</li>
           <li>Microcontroller programming.</li>
           <li>TX/RX signal analysis.</li>
-          <li>Wireless charging solutions.</li>
+          <li>Wireless Charging solutions.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/c38970ed-44ed-4c8f-bcb1-5715aa0edd1d" alt="Neahtid Hardware Development"/>
       </div>
