@@ -84,7 +84,7 @@ permalink: /our-company
 				</a>
 			</div>
 			<div class="col-12 col-md-4">
-				<a href="./software-solutions" class="contact-badge company-research">
+				<a href="./software-solutions" class="contact-badge relations">
 					<h2>Software Solutions</h2>
 				</a>
 			</div>
