@@ -84,9 +84,7 @@ permalink: /our-company
 				</a>
 			</div>
 			<div class="col-12 col-md-4">
-				<a href="./investor-relations.html" class="contact-badge company-relations">
-					<h2>Investor Relations</h2>
-				</a>
+				<a href="./software-solutions">Software Solutions</a>
 			</div>
 			<div class="col-12 col-md-4">
 				<a href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank" class="contact-badge company-work">
