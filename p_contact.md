@@ -32,7 +32,9 @@ permalink: /contact-us
 				</form>
 			</div>
 			<div class="col-12 col-md-4">
-				<li><a href="./software-solutions">Software Solutions</a></li>
+				<a href="./software-solutions" class="contact-badge relations">
+					<h2>Software Solutions</h2>
+				</a>
 				<a href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" class="contact-badge work">
 					<h2>Work with Us</h2>
 				</a>
