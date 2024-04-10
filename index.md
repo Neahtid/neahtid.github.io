@@ -78,11 +78,8 @@ title: Hardware/Software Research and Development
           <li>TX/RX signal analysis.</li>
           <li>Wireless Charging solutions.</li>
         </ul>
-        ![hardware](https://github.com/Neahtid/neahtid.github.io/assets/135855332/057150a6-6c7d-4d5a-a586-40556dd09b39)
-![hardware-2](https://github.com/Neahtid/neahtid.github.io/assets/135855332/513cf2bb-b9f7-4069-8a19-97cf9ab1f0a2)
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/057150a6-6c7d-4d5a-a586-40556dd09b39" alt="Neahtid Hardware Development"/>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/513cf2bb-b9f7-4069-8a19-97cf9ab1f0a2" alt="Neahtid Hardware Development"/>
-
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/c38970ed-44ed-4c8f-bcb1-5715aa0edd1d" alt="Neahtid Hardware Development"/>
       </div>
     </div>
