@@ -47,7 +47,7 @@ title: Hardware/Software Research and Development
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
           <li>Security Management.</li>
           <li>GCP, Azure Cloud SysOp.</li>
-          <li>CD/CI</li>
+          <li>CD/CI.</li>
           <li>CDN & DBA.</li>
           <li>Firewalls.</li>
           <li>Payment Gateways.</li>
