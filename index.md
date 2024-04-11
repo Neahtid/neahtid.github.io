@@ -45,13 +45,13 @@ title: Hardware/Software Research and Development
       <div class="badge-inner">
         <h2>SysOp</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
-          <li>Cloud Computing (Azure, GCP).</li>
           <li>Security Management.</li>
-          <li>LLM Deployments.</li>
+          <li>GCP, Azure Cloud SysOp.</li>
           <li>CD/CI</li>
-          <li>Firewalls.</li>
           <li>CDN & DBA.</li>
+          <li>Firewalls.</li>
           <li>Payment Gateways.</li>
+          <li>LLM Deployments.</li>
         </ul>
         <img src="https://raw.githubusercontent.com/Neahtid/neahtid.github.io/76c1a05e6fcc58efd03ec67aa2133e7175bd2e2a/assets/img/sysop.jpeg" alt="Neahtid SysOp Development">
       </div>
@@ -60,11 +60,11 @@ title: Hardware/Software Research and Development
       <div class="badge-inner">
         <h2>Software</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
-          <li>PWA: Progressive Web Applications.</li>
+          <li>PWA Tablets and Smartphones.</li>
           <li>Payment integrations.</li>
-          <li>Fine-Tuning and LLM Reasoning</li>
+          <li>Fine-Tuning / LLM Reasoning.</li>
           <li>Python, PHP, Node.js, C#.</li>
-          <li>Typescript / JavaScript / ECMAScript.</li>
+          <li>Typescript / JavaScript.</li>
           <li>SQL and no-SQL Databases.</li>
           <li>UX/UI / SASS / CSS / HTML.</li>
         </ul>
