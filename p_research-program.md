@@ -21,7 +21,6 @@ permalink: /research-program
 							<a class="ha" href="http://www.noticias.usm.cl/2017/08/07/acuerdo-entre-la-usm-y-empresa-neahtid-permitira-que-alumnos-desarrollen-tecnologias-inalambricas/" target="_blank">Federico Santa Maria University Agreement</a>
 							<p>Federico Santa Maria University, one of the most prestigious University for Engineering, Science and Technology in LatinAmerica and in the world has signed with Neahtid a Collaboration Agreement.</p>
 							<p>This agreement has been fundamental in the development of our first investigations and have highly trained professionals</p>
-							<div class="research-readmore"><a href="http://www.noticias.usm.cl/2017/08/07/acuerdo-entre-la-usm-y-empresa-neahtid-permitira-que-alumnos-desarrollen-tecnologias-inalambricas/" target="_blnk">Read more</a></div>
 						</div>
 					</div>
 				</div>
@@ -48,7 +47,7 @@ permalink: /research-program
 						<li>A transcript from your university (unofficial is fine)</li>
 						<li>A cover letter, short essay, or additional information is optional</li>
 					</ul>
-					<h2>Focus on your resume</h2>
+					<!--h2>Focus on your resume</h2>
 					<p>Your resume is the first piece of information we’ll see about you. Here’s how to highlight your achievements:</p>
 					<ul>
 						<li>Align your skills and experience with the internship or job description</li>
@@ -68,7 +67,7 @@ permalink: /research-program
 						<li>What challenges have you faced at school or at work and how did you overcome them?</li>
 						<li>Which of your skills or experiences would be assets in the role and why?</li>
 					</ul>
-					<p>If you don’t understand a question, ask your interviewers for clarification and take the time you need with responses.</p>
+					<p>If you don’t understand a question, ask your interviewers for clarification and take the time you need with responses.</p-->
 				</div>
 			</div>
 		</div>
