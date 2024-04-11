@@ -5,13 +5,17 @@ title: Hardware/Software Research and Development
 <header class="section-1">
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <div class="container">
-    <h2>"Breaking technology barriers with Software and Hardware solutions"</h2>
-    <h3 id="section_1_h3" class="animated-hidden">We research and develop hardware and software applications for high demand infrastructure deployments.</h3>
+    <h2>"Software and Hardware Solutions that break technology barriers"</h2>
+    <h3 id="section_1_h3" class="animated-hidden">
+      We research and develop hardware and software applications with high demand infrastructure deployments for private and boutique partners.
+    </h3>
   </div>
 </header>
 <section class="section-2">
   <h2>Where ideas become reality</h2>
-  <p>We have the skills to Research and Development Software and Hardware projects with quality and security standards of financial industries.</p>
+  <p>
+    We have the skills for Research and Development of Software and Hardware projects with quality and security standards used in financial industries.
+  </p>
 </section>
 <section class="section-3" id="section-3">
   <div class="section-arrow"><div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
@@ -22,11 +26,12 @@ title: Hardware/Software Research and Development
       </div>
       <div class="col-12 col-md-6 infoblock">
         <h2>Software and Hardware Engineering</h2>
-        <p>We research, design and build software and hardware solutions, products and technologies that can range from <b>Progressive Web Applications for Home Automation</b> with Hardware controlling and monitoring, <b>Home Automation</b>, <b>Payment Integration Applications</b>, among others.</p>
+        <p>
+          We research, design and build software and hardware solutions, products and technologies that range from <b>Progressive Web Applications for Home Automation</b> to Hardware controlling and monitoring, <b>Home Automation</b>, <b>Payment Integration Applications</b>, among others.</p>
         <p>Our quality philosophy: </p>
         <p class="plist"><i class="fa fa-leaf"></i>Eco-Friendly Products for a Safer World.</p>
         <p class="plist"><i class="fa fa-battery-full"></i>Inspiring Designs & Enhancing User Experiences.</p>
-        <p class="plist"><i class="far fa-clock"></i>Efficiency, within Budget, with Sustainable Innovations.</p>
+        <p class="plist"><i class="far fa-clock"></i>Sustainable Innovations, with Efficiency nd within Budget.</p>
       </div>
     </div>
   </div>
@@ -34,19 +39,19 @@ title: Hardware/Software Research and Development
 <section class="section-4" id="section-4">
   <div class="section-arrow"><div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <h1>On the cutting edge of technology</h1>
-  <p>We cover software and hardware development of highly technological products and applications</p>
+  <p>We cover software and hardware development of highly technological products and applications requiered for our private and boutique partners.</p>
   <div class="row badges">
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
         <h2>SysOp</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
-          <li>Cloud Computing (Azure, GCP, Amazon).</li>
+          <li>Cloud Computing (Azure, GCP).</li>
           <li>Security Management.</li>
           <li>LLM Deployments.</li>
           <li>CD/CI</li>
           <li>Firewalls.</li>
           <li>CDN & DBA.</li>
-          <li>Host to Host Payment Gateways.</li>
+          <li>Payment Gateways.</li>
         </ul>
         <img src="https://raw.githubusercontent.com/Neahtid/neahtid.github.io/76c1a05e6fcc58efd03ec67aa2133e7175bd2e2a/assets/img/sysop.jpeg" alt="Neahtid SysOp Development">
       </div>
@@ -56,7 +61,7 @@ title: Hardware/Software Research and Development
         <h2>Software</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
           <li>PWA: Progressive Web Applications.</li>
-          <li>Payment's Gateways integrations.</li>
+          <li>Payment integrations.</li>
           <li>Fine-Tuning and LLM Reasoning</li>
           <li>Python, PHP, Node.js, C#.</li>
           <li>Typescript / JavaScript / ECMAScript.</li>
@@ -71,12 +76,12 @@ title: Hardware/Software Research and Development
         <h2>Hardware</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
           <li>Hardware Security Systems.</li>
+          <li>Wireless Charging solutions.</li>
           <li>Home Automation.</li>
           <li>Low and High resolution MVP.</li>
           <li>Remote Hardware Controlling.</li>
           <li>Microcontroller programming.</li>
           <li>TX/RX signal analysis.</li>
-          <li>Wireless Charging solutions.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/1a3cccc5-841d-477e-844c-4f4c04f0d6a8" alt="Neahtid Hardware Development"/>
       </div>
