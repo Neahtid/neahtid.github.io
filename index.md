@@ -7,7 +7,7 @@ title: Hardware/Software Research and Development
   <div class="container">
     <h2>"Software and Hardware Solutions that break technology barriers"</h2>
     <h3 id="section_1_h3" class="animated-hidden">
-      We research and develop hardware and software applications with high demand infrastructure deployments for private and boutique partners.
+      We research and develop hardware and software applications with high demand infrastructure deployments to help boutique partners.
     </h3>
   </div>
 </header>
@@ -39,7 +39,7 @@ title: Hardware/Software Research and Development
 <section class="section-4" id="section-4">
   <div class="section-arrow"><div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <h1>On the cutting edge of technology</h1>
-  <p>We cover software and hardware development of highly technological products and applications requiered for our private and boutique partners.</p>
+  <p>We cover software and hardware development of highly technological products and applications to help boutique partners.</p>
   <div class="row badges">
     <div class="col-md-4 col-xs-12 badge">
       <div class="badge-inner">
