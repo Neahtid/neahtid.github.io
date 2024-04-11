@@ -31,7 +31,7 @@ title: Hardware/Software Research and Development
         <p>Our quality philosophy: </p>
         <p class="plist"><i class="fa fa-leaf"></i>Eco-Friendly Products for a Safer World.</p>
         <p class="plist"><i class="fa fa-battery-full"></i>Inspiring Designs & Enhancing User Experiences.</p>
-        <p class="plist"><i class="far fa-clock"></i>Sustainable Innovations, with Efficiency nd within Budget.</p>
+        <p class="plist"><i class="far fa-clock"></i>Sustainable Innovations with Efficiency and within Budget.</p>
       </div>
     </div>
   </div>
