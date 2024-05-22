@@ -7,14 +7,14 @@ title: Hardware/Software Research and Development
   <div class="container">
     <h2>"Software and Hardware that break technology barriers"</h2>
     <h3 id="section_1_h3" class="animated-hidden">
-      We research and develop hardware and software applications with high demand infrastructure deployments. Helping boutique partners since 2001.
+      Helping our boutique partners since 2001 in research and developing Hardware and Software applications for high demand infrastructure deployments. 
     </h3>
   </div>
 </header>
 <section class="section-2">
   <h2>Where ideas become reality</h2>
   <p>
-    We have the skills for Research and Development of Software and Hardware projects with quality and security standards used in financial industries.
+    We have the skills for Research and Development in Software and Hardware projects with quality and security standards used in Big Techs and financial industries.
   </p>
 </section>
 <section class="section-3" id="section-3">
@@ -27,11 +27,12 @@ title: Hardware/Software Research and Development
       <div class="col-12 col-md-6 infoblock">
         <h2>Software and Hardware Engineering</h2>
         <p>
-          We research, design and build software and hardware solutions, products and technologies that range from <b>Progressive Web Applications for Home Automation</b> to Hardware controlling and monitoring, <b>Home Automation</b>, <b>Payment Integration Applications</b>, among others.</p>
-        <p>Our quality philosophy: </p>
-        <p class="plist"><i class="fa fa-leaf"></i>Eco-Friendly Products for a Safer World.</p>
-        <p class="plist"><i class="fa fa-battery-full"></i>Inspiring Designs & Enhancing User Experiences.</p>
-        <p class="plist"><i class="far fa-clock"></i>Sustainable Innovations with Efficiency and within Budget.</p>
+          We research, design and build software and hardware solutions, products and technologies that range from <b>Progressive Web Applications</b> for Payment Integrations to <b>Hardware</b> controlling and monitoring <b>Home Security and Automation</b>.</p>
+        <p>Neahtid quality philosophy: </p>
+        <p class="plist"><i class="fa fa-leaf"></i>Eco-Human-Friendly Solutions</p>
+        <p class="plist"><i class="fa fa-battery-full"></i>Inspiring Designs.</p>
+        <p class="plist"><i class="fa fa-battery-full"></i>Enhancing User Experiences.</p>
+        <p class="plist"><i class="far fa-clock"></i>Sustainable Innovations & Efficiency.</p>
       </div>
     </div>
   </div>
@@ -77,7 +78,7 @@ title: Hardware/Software Research and Development
           <li>Hardware Security Systems.</li>
           <li>Wireless Charging solutions.</li>
           <li>Home Automation.</li>
-          <li>Low and High resolution MVP.</li>
+          <li>Low and High resolution MVPs.</li>
           <li>Remote Hardware Controlling.</li>
           <li>Microcontroller programming.</li>
           <li>TX/RX signal analysis.</li>
