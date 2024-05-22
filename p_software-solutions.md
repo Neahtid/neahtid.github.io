@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Software Solutions
-permalink: /software-solutions
+title: Software and Hardware Solutions
+permalink: /software-hardware-solutions
 ---
 <!-- first section -->
 <header class="headblock relations-1">
-	<h1>Software Solutions</h1>
+	<h1>Software and Hardware Solutions</h1>
 </header>
 <section class="contact-2">
 	<div class="container">
