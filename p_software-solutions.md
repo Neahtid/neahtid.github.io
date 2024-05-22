@@ -13,8 +13,8 @@ permalink: /software-hardware-solutions
 			<div class="col-12 col-md-8">
 				<div class="white-island">
 					<h3>Talent Engineering</h3>
-					<p>Neahtid is a software and hardware engineering and IT talent solutions company with more than 20 years of experience helping to solve complex problems to our boutique partners since 2001.</p>
-					<p>Database Design and Administration, skills in Science language programing, and years of experience with  Cloud infraestructures.</p>
+					<p>Neahtid is a software and hardware engineering and IT talent solutions company with more than 20 years of experience helping to solve complex problems to boutique partners.</p>
+					<p>Database Design, Managment and Administration with strong skills in Science Language Programing and Cloud infraestructures.</p>
 					<p>From integrating Payment Gateways to Home Security and Automation in Hardware and Software applications.</p>
 					<ul style="margin-left: 20px;">
 						<li>24x7 Monitoring Alerts.</li>
