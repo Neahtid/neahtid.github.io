@@ -5,9 +5,9 @@ title: Hardware/Software Research and Development
 <header class="section-1">
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <div class="container">
-    <h2>"Software and Hardware Solutions that break technology barriers"</h2>
+    <h2>"Software and Hardware that break technology barriers"</h2>
     <h3 id="section_1_h3" class="animated-hidden">
-      We research and develop hardware and software applications with high demand infrastructure deployments to help boutique partners.
+      We research and develop hardware and software applications with high demand infrastructure deployments. Helping boutique partners since 2001.
     </h3>
   </div>
 </header>
@@ -46,7 +46,7 @@ title: Hardware/Software Research and Development
         <h2>SysOp</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
           <li>Security Management.</li>
-          <li>GCP, Azure Cloud SysOp.</li>
+          <li>Cloud SysOp.</li>
           <li>CD/CI.</li>
           <li>CDN & DBA.</li>
           <li>Firewalls.</li>
@@ -60,13 +60,12 @@ title: Hardware/Software Research and Development
       <div class="badge-inner">
         <h2>Software</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
-          <li>PWA Tablets and Smartphones.</li>
+          <li>UX/UI Tablets and Smartphones.</li>
+          <li>Progresive Web applications.</li>
           <li>Payment integrations.</li>
           <li>Fine-Tuning / LLM Reasoning.</li>
-          <li>Python, PHP, Node.js, C#.</li>
-          <li>Typescript / JavaScript.</li>
+          <li>Front and Backend Apps Programming.</li>
           <li>SQL and no-SQL Databases.</li>
-          <li>UX/UI / SASS / CSS / HTML.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/04e136f3-18ed-4b69-85f1-ff6d20d607ce" alt="Neahtid Software Development"/>
       </div>
