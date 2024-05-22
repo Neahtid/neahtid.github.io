@@ -12,11 +12,20 @@ permalink: /software-solutions
 		<div class="row">
 			<div class="col-12 col-md-8">
 				<div class="white-island">
-					<h3>PWA and beyond</h3>
-					<p>Neahtid has more than 20 years of experience developing web applications.</p>
-					<p>We are working with the future of installed applications called Progressive Web Applications since the begging mixed with experience in Python, SQL and noSQL Databases, and years of experience with Google Cloud and Azure infraestructures.</p>
-					<p>Integrating PWA into Hardware solutions, like Home Automation, has many advantages in Security and Scalability.</p>
-					<p>Schedule a meeting with us if you are looking for our solutions.</p>
+					<h3>Talent Engineering</h3>
+					<p>Neahtid is a software and hardware engineering and IT talent solutions company with more than 20 years of experience helping to solve complex problems</p>
+					<p>Database Design and Administration, skills in Science language programing, and years of experience with  Cloud infraestructures.</p>
+					<p>Since integrate Payment Gateways to Home Security and Automation with Hardware and Software applications.</p>
+					<ul>
+						<li>24x7 Monitoring Alerts</li>
+						<li>UX/UI Tablets and Smartphones.</li>
+						<li>Progresive Web applications (PWA).</li>
+						<li>Payment integrations.</li>
+						<li>Fine-Tuning / LLM Reasoning.</li>
+						<li>Front and Backend Apps Programming.</li>
+						<li>SQL and no-SQL Databases.</li>
+					</ul>
+					<p>Know more about our solutions.</p>
 					<a href="http://bit.ly/2SSTP0x" target="_blank" class="btn btn-primary">Schedule a meeting</a>
 				</div>
 			</div>
