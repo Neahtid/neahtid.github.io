@@ -7,7 +7,7 @@ title: Hardware/Software Research and Development
   <div class="container">
     <h2>"Software and Hardware solutions that break technology barriers"</h2>
     <h3 id="section_1_h3" class="animated-hidden">
-      Helping our boutique partners since 2001 in research and developing Hardware and Software applications for high demand infrastructures. 
+      Helping our boutique partners since 2001 to research and develop Hardware and Software applications for high demand infrastructures. 
     </h3>
   </div>
 </header>
@@ -65,7 +65,8 @@ title: Hardware/Software Research and Development
           <li>Progresive Web Applications (PWA).</li>
           <li>Payment integrations.</li>
           <li>Fine-Tuning / LLM Reasoning.</li>
-          <li>Javascript and Python Expirienced.</li>
+          <li>Javascript and Python</li>
+          <li>Data Science Analysis.</li>
           <li>SQL and no-SQL Databases.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/04e136f3-18ed-4b69-85f1-ff6d20d607ce" alt="Neahtid Software Development"/>
