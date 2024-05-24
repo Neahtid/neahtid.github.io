@@ -46,13 +46,14 @@ title: Hardware/Software Research and Development
       <div class="badge-inner">
         <h2>SysOp</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
-          <li>Security Management.</li>
+          <li>Full Security consultancy.</li>
           <li>Cloud SysOp.</li>
           <li>CD/CI.</li>
           <li>CDN & DBA.</li>
           <li>Firewalls.</li>
           <li>Payment Gateways.</li>
           <li>LLM Deployments.</li>
+          <li>Database Design, Deploy and Administration.</li>
         </ul>
         <img src="https://raw.githubusercontent.com/Neahtid/neahtid.github.io/76c1a05e6fcc58efd03ec67aa2133e7175bd2e2a/assets/img/sysop.jpeg" alt="Neahtid SysOp Development">
       </div>
