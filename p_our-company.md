@@ -10,9 +10,7 @@ permalink: /our-company
 <section class="company-2">
 	<div class="container">
 		<div class="row">
-			<p>Neahtid is a Hardware and Software Research and Development company, provinding technology solutions for Home Automation, Remote Electrical Charging, among other Hardware and Software solutions. Our company is composed of trained professionals (Electronic, Electrical and Software Engineering). We not only work with the latest technology, we also create it.</p>
-			<p>Neahtid offers solutions to businesses seeking to provide their customers and guests with easy, quick and efficient solutions.</p>
-			<p>Our experience cover from Progressive Web Applications, Payment integrations, expirienced Python and Javascript/Typescript programming, Data/charts science analysis.</p>
+			<p>Neahtid is a Hardware and Software Research and Development company, provinding technology solutions for Home Automation, Remote Electrical Charging, among other Hardware and Software solutions. Our company is composed of trained professionals (Electronic, Electrical and Software Engineering, Designers and Managers). We not only work with the latest technology, we build it.</p>
 		</div>
 	</div>
 </section>
