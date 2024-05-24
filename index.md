@@ -5,16 +5,16 @@ title: Hardware/Software Research and Development
 <header class="section-1">
   <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
   <div class="container">
-    <h2>"Software and Hardware that break technology barriers"</h2>
+    <h2>"Software and Hardware solutions that break technology barriers"</h2>
     <h3 id="section_1_h3" class="animated-hidden">
-      Helping our boutique partners since 2001 in research and developing Hardware and Software applications for high demand infrastructure deployments. 
+      Helping our boutique partners since 2001 in research and developing Hardware and Software applications for high demand infrastructures. 
     </h3>
   </div>
 </header>
 <section class="section-2">
   <h2>Where ideas become reality</h2>
   <p>
-    We have the skills for Research and Development in Software and Hardware projects with quality and security standards used in Big Techs and financial industries.
+    We have the skills for Research and Development in Software and Hardware projects with quality and security standards used by Big Techs and financial industries.
   </p>
 </section>
 <section class="section-3" id="section-3">
@@ -27,9 +27,9 @@ title: Hardware/Software Research and Development
       <div class="col-12 col-md-6 infoblock">
         <h2>Software and Hardware Engineering</h2>
         <p>
-          We research, design and build software and hardware solutions, products and technologies that range from <b>Progressive Web Applications</b> for Payment Integrations to <b>Hardware</b> controlling and monitoring <b>Home Security and Automation</b>.</p>
+          We research, design and build software and hardware solutions, products and technologies that range from <b>Progressive Web Applications (PWA) for Payment Integrations</b> in Software, to controlling and monitoring <b>Home Security and Automation</b> in Hardware.</p>
         <p>Neahtid quality philosophy: </p>
-        <p class="plist"><i class="fa fa-leaf"></i>Eco-Human-Friendly Solutions</p>
+        <p class="plist"><i class="fa fa-leaf"></i>Eco-Human-Friendly Solutions.</p>
         <p class="plist"><i class="fa fa-battery-full"></i>Inspiring Designs.</p>
         <p class="plist"><i class="fa fa-battery-full"></i>Enhancing User Experiences.</p>
         <p class="plist"><i class="far fa-clock"></i>Sustainable Innovations & Efficiency.</p>
@@ -62,10 +62,10 @@ title: Hardware/Software Research and Development
         <h2>Software</h2>
         <ul style="padding-left: 25px; text-align: left; font-size: 15px; font-weight: normal;">
           <li>UX/UI Tablets and Smartphones.</li>
-          <li>Progresive Web applications.</li>
+          <li>Progresive Web Applications (PWA).</li>
           <li>Payment integrations.</li>
           <li>Fine-Tuning / LLM Reasoning.</li>
-          <li>Front and Backend Apps Programming.</li>
+          <li>Javascript and Python Expirienced.</li>
           <li>SQL and no-SQL Databases.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/04e136f3-18ed-4b69-85f1-ff6d20d607ce" alt="Neahtid Software Development"/>
@@ -78,10 +78,10 @@ title: Hardware/Software Research and Development
           <li>Hardware Security Systems.</li>
           <li>Wireless Charging solutions.</li>
           <li>Home Automation.</li>
-          <li>Low and High resolution MVPs.</li>
+          <li>Low and High Resolution MVPs.</li>
           <li>Remote Hardware Controlling.</li>
-          <li>Microcontroller programming.</li>
-          <li>TX/RX signal analysis.</li>
+          <li>Microcontroller Rrogramming.</li>
+          <li>TX/RX Signal Analysis.</li>
         </ul>
         <img src="https://github.com/Neahtid/neahtid.github.io/assets/135855332/1a3cccc5-841d-477e-844c-4f4c04f0d6a8" alt="Neahtid Hardware Development"/>
       </div>
