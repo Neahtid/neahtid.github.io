@@ -19,12 +19,12 @@ permalink: /our-company
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-4">
-				<a href="./research-program.html" class="contact-badge company-research">
+				<a href="./research-program" class="contact-badge company-research">
 					<h2>Research Programs</h2>
 				</a>
 			</div>
 			<div class="col-12 col-md-4">
-				<a href="./software-solutions" class="contact-badge relations">
+				<a href="./software-hardware-solutions" class="contact-badge relations">
 					<h2>Software Solutions</h2>
 				</a>
 			</div>
