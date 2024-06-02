@@ -14,16 +14,39 @@ permalink: /software-hardware-solutions
 				<div class="white-island">
 					<h3>Talent Engineering</h3>
 					<p>Neahtid is a software and hardware engineering and IT talent solutions company with more than 20 years of experience helping to solve complex problems to boutique partners.</p>
-					<p>Database Design, Managment and Administration with strong skills in Science Language Programing and Cloud infraestructures.</p>
+					<p>Database Design, Managment and Administration with strong skills in Cloud infraestructures, Science Software and Hardware Development.</p>
 					<p>From integrating Payment Gateways to Home Security and Automation in Hardware and Software applications.</p>
+					<h2>Services:</h2>
+					<h3>Product Engineering:</h3>
+					<ul style="margin-left: 20px;">
+						<li>Custom hardware solutions.</li>
+						<li>Design and development of Hardware services.</li>
+						<li>Design and development of electronic prototypes.</li>
+						<li>Hardware Testing.</li>
+						<li>PCB Design, Fabrication and Assembly.</li>
+						<li>Environmental testing (temperature, humidity, etc.).</li>
+						<li>End-to-end product development from concept to production.</li>
+						<li>Design for manufacturability (DFM).</li>
+						<li>Design for testability (DFT).</li>
+						<li>Wireless communication protocols (Bluetooth, Wi-Fi, Zigbee, etc.)</li>
+					</ul>
+					<h3>Software Engineering:</h3>
 					<ul style="margin-left: 20px;">
 						<li>24x7 Monitoring Alerts.</li>
+						<li>Blockchain engineering</li>
+						<li>Fine-Tuning / LLM Reasoning.</li>
+						<li>DevOps Engineering.</li>
 						<li>UX/UI Tablets and Smartphones.</li>
 						<li>Progresive Web applications (PWA).</li>
 						<li>Payment integrations.</li>
-						<li>Fine-Tuning / LLM Reasoning.</li>
 						<li>Front and Backend Apps Programming.</li>
 						<li>SQL and no-SQL Databases.</li>
+					</ul>
+					<h3>Power Management:</h3>
+					<ul style="margin-left: 20px;">
+						<li>Power supply design.</li>
+						<li>Energy harvesting solutions.</li>
+						<li>Battery management systems.</li>
 					</ul>
 					<a href="http://bit.ly/2SSTP0x" target="_blank" class="btn btn-primary">Know more about our solutions</a>
 				</div>
