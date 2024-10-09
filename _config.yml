@@ -22,6 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   electrical devices charged, at all times, regardless of where you are.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.neahtid.com" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "https://neahtid.github.io/assets/img/header-logo.png"
 twitter_username: neahtid
 
 # Build settings
