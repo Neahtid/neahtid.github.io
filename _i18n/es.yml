@@ -1,0 +1,58 @@
+global:
+  tagline: Español
+  home: Inicio
+  about: Nosotros
+  hwhy: Por qué elegirnos
+  hgallery: Galería
+  hregitert: Reserva tu lugar Ahora
+  footrsssub: Subscribir RSS
+  imagen_corporate: Imagen Corporativa
+langs:
+  pt: Português
+  en: English
+  es: Español
+pages:
+  homeh1: Espacio de trabajo en Buenos Aires
+  homeh2: Trabajo ininterrumpido, privacidad, seguridad y comodidad para los trabajadores independientes, estudiantes, nuevas empresas y trabajadores remotos.
+  homecta: Reserve tu lugar
+  
+  whyT: ¿Por qué elegir nuestro espacio de coworking?
+  whyR: Nuestro espacio de coworking en el centro de Buenos Aires está diseñado para aquellos que necesitan un entorno profesional, una privacidad mejorada y un fácil acceso al transporte público, a pocos pasos de la estación de metro.
+  whyT1: Espacio de trabajo ininterrumpido
+  whyR1: Trabaje sin distracciones en un entorno insonorizado con Internet confiable de alta velocidad.
+  whyT2: Privacidad
+  whyR2: Estaciones de trabajo privadas y salas de reuniones aseguran que su trabajo confidencial se mantenga confidencial.
+  whyT3: Seguridad
+  whyR3: Seguridad y acceso controlado 24/7 mantienen a usted y sus pertenencias seguras en todo momento.
+  whyT4: Comodidad
+  whyR4: Muebles ergonómicos y un entorno totalmente equipado aseguran su comodidad mientras trabaja.
+
+  hclose: Cerrar
+  hregisterfn: Nombre
+  hregisterfe: Email
+  hregisterfp: Teléfono
+  hregisterfsub: Enviar
+
+  precents: Artículos recientes
+
+titles:
+  pagination: Paginación
+  next: Próximo
+
+jekyll_timeago:
+  today: 'hoy'
+  yesterday: 'ayer'
+  tomorrow: 'mañana'
+  and: 'y'
+  suffix: 'atrás'
+  prefix: ''
+  suffix_future: 'en'
+  prefix_future: ''
+  years: 'años'
+  year: 'año'
+  months: 'meses'
+  month: 'mes'
+  weeks: 'semanas'
+  week: 'semana'
+  days: 'días'
+  day: 'día'

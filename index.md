@@ -3,11 +3,11 @@ layout: page
 title: Hardware/Software Research and Development
 ---
 <header class="section-1">
-  <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
+  <div class="section-arrow"><div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png" alt="section-arrow"></div></div>
   <div class="container">
     <h2>"Software and Hardware solutions that break technology barriers"</h2>
     <h3 id="section_1_h3" class="animated-hidden">
-      Helping our boutique partners since 2001 to research and develop Hardware and Software applications for high demand infrastructures. 
+      Helping our boutique partners since 2001 to research and develop Hardware and Software applications for high demand infrastructures.
     </h3>
   </div>
 </header>
@@ -18,7 +18,7 @@ title: Hardware/Software Research and Development
   </p>
 </section>
 <section class="section-3" id="section-3">
-  <div class="section-arrow"><div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
+  <div class="section-arrow"><div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png" alt="section-arrow"></div></div>
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 centered">
@@ -38,7 +38,7 @@ title: Hardware/Software Research and Development
   </div>
 </section>
 <section class="section-4" id="section-4">
-  <div class="section-arrow"><div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"></div></div>
+  <div class="section-arrow"><div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png" alt="section-arrow"></div></div>
   <h1>On the cutting edge of technology</h1>
   <p>We cover software and hardware development of highly technological products and applications to help boutique partners.</p>
   <div class="row badges">
@@ -117,5 +117,3 @@ title: Hardware/Software Research and Development
     </div>
   </div>
 </section>
-
-

@@ -63,7 +63,6 @@ permalink: /software-hardware-solutions
 	</div>
 </section>
 
-
 <!-- modal -->
 <div class="modal fade bd-example-modal-lg" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg" role="document">

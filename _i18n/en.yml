@@ -1,0 +1,58 @@
+global:
+  tagline: English
+  home: Home
+  about: About Us
+  hwhy: Why Choose Us
+  hgallery: Gallery
+  hregitert: Register Now
+  footrsssub: RSS Subscribe
+  imagen_corporate: Corporate Image
+langs:
+  pt: Português
+  en: English
+  es: Español
+pages:
+  homeh1: Workspace in Buenos Aires
+  homeh2: Uninterrupted work, privacy, safety, and comfort for freelancers, students, startups, and remote workers.
+  homecta: Book Your Spot
+
+  whyT: Why Choose Our Coworking Space?
+  whyR: Our coworking space in downtown Buenos Aires is designed for those who need a professional environment, enhanced privacy, and easy access to public transportation, just steps from the subway station.
+  whyT1: Uninterrupted Workspace
+  whyR1: Work without distractions in a soundproof environment with reliable high-speed internet.
+  whyT2: Privacy
+  whyR2: Private workstations and meeting rooms ensure that your sensitive work stays confidential.
+  whyT3: Safety
+  whyR3: 24/7 security and controlled access keep you and your belongings safe at all times.
+  whyT4: Comfort
+  whyR4: Ergonomic furniture and a fully equipped environment ensure your comfort while you work.
+
+  hclose: Close
+  hregisterfn: Name
+  hregisterfe: Email
+  hregisterfp: Phone
+  hregisterfsub: Submit
+
+  precents: Recent Posts
+
+titles:
+  pagination: Pagination
+  next: Next
+
+jekyll_timeago:
+  today: 'today'
+  yesterday: 'yesterday'
+  tomorrow: 'tomorrow'
+  and: 'and'
+  suffix: 'ago'
+  prefix: ''
+  suffix_future: 'in'
+  prefix_future: ''
+  years: 'years'
+  year: 'year'
+  months: 'months'
+  month: 'month'
+  weeks: 'weeks'
+  week: 'week'
+  days: 'days'
+  day: 'day'

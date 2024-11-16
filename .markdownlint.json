@@ -1,0 +1,42 @@
+{
+  "default": true,
+  "MD004": {
+    "style": "dash"
+  },
+  "MD007": {
+    "indent": 2
+  },
+  "MD010": false,
+  "MD013": false,
+  "MD026": false,
+  "MD041": false,
+  "MD033": {
+    "allowed_elements": [
+      "img",
+      "div",
+      "hr",
+      "br",
+      "p",
+      "a",
+      "b",
+      "i",
+      "span",
+      "ul",
+      "ol",
+      "li",
+      "form",
+      "input",
+      "label",
+      "textarea",
+      "button",
+      "label",
+      "header",
+      "section",
+      "h1",
+      "h2",
+      "h3",
+      "embed"
+    ]
+  },
+  "no-hard-tabs": false
+}
