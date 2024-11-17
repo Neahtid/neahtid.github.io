@@ -39,6 +39,11 @@ pages:
 titles:
   pagination: Paginatura
   next: Prossima
+  language: Idioma
+  contactus: Fale Conosco
+  ourcompany: Nossa Companhia
+  portfolio: Portifolio
+  research: Pesquisa
 
 jekyll_timeago:
   today: 'hoje'

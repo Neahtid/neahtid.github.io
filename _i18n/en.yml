@@ -38,6 +38,11 @@ pages:
 titles:
   pagination: Pagination
   next: Next
+  language: Language
+  contactus: Contact Us
+  ourcompany: Our Company
+  portfolio: Portfolio
+  research: Research
 
 jekyll_timeago:
   today: 'today'

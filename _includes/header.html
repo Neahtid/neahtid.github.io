@@ -11,26 +11,47 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 ms-auto text-end">
           <li class="nav-item">
-            <a class="nav-link" href="./contact-us">Contact Us</a>
+            <a class="nav-link" href="./contact-us">{% t titles.contactus %}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./our-company">Our Company</a>
+            <a class="nav-link" href="./our-company">{% t titles.ourcompany %}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./software-hardware-solutions">Software Solutions</a>
+            <a class="nav-link" href="./software-hardware-solutions">{% t titles.portfolio %}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./research-program">Research</a>
+            <a class="nav-link" href="./research-program">{% t titles.research %}</a>
           </li>
         </ul>
         <div class="d-block btn-group text-end">
           <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
             data-bs-toggle="dropdown" aria-expanded="false">
-            Language
+            {% t titles.language %}
           </button>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Spanish</a></li>
+            {% for lang in site.languages %}
+            {% unless site.lang == lang %}
+            <li>
+              {% if page.namespace %}
+              <a class="dropdown-item" data-lang="{{ lang }}" href="{% tl {{ page.namespace }} {{ lang }} %}">
+                {% t langs.{{ lang }} %}
+              </a>
+              {% else %}
+              {% if lang == site.default_lang and site.default_locale_in_subfolder != true %}
+              <a class="dropdown-item" data-lang="{{ lang }}" href="{{ site.baseurl_root }}{{ page.url }}">
+                {% t langs.{{ lang }} %}
+              </a>
+              {% else %}
+              <a class="dropdown-item" data-lang="{{ lang }}" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">
+                {% t langs.{{ lang }} %}
+              </a>
+              {% endif %}
+              {% endif %}
+            </li>
+            {% assign next = forloop.index | plus: 1 %}
+
+            {% endunless %}
+            {% endfor %}
           </ul>
         </div>
       </div>
