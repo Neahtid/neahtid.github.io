@@ -1,5 +1,5 @@
 function ValidateEmail(email) {
-	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/.test(email)) {
+	if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
 		return (true)
 	}
 	alert(email + " is an invalid email address! Plese insert a valid one.");
