@@ -169,6 +169,10 @@ a.btn {
 	padding: 0;
 }
 
+.navbar .nav-item {
+	text-align: center;
+}
+
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .active>.nav-link {
 	font-size: 17px;
