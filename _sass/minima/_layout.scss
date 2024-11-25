@@ -69,11 +69,11 @@ header.site-header {
 a.post-link {
   display: inline;
 }
-
+// https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/flags/4x3/cl.svg
 em.esp {
   padding-right: 20px; 
   margin-right: 10px; 
-  background: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/flags/4x3/cl.svg") center right;
+  background: url("/assets/img/flags/4x3/cl.svg") center right;
   background-repeat: no-repeat;
   background-size: 16px 12px;
 }
@@ -81,7 +81,7 @@ em.esp {
 em.eng {
   padding-right: 20px; 
   margin-right: 10px; 
-  background: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/flags/4x3/gb.svg") center right;
+  background: url("/assets/img/flags/4x3/gb.svg") center right;
   background-repeat: no-repeat;
   background-size: 16px 12px;
 }
