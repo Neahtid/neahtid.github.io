@@ -1,33 +1,8 @@
 <!doctype html>
 <html lang='{{ page.lang | default: site.lang | default: "en-US" }}'>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <meta name="description" content="Software/Hardware Research and Development">
-    <meta name="keywords" content="software, hardware, Machine learning, LLM, cloud">
-  
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; frame-src https://www.google.com https://www.gstatic.com; connect-src 'self' https://docs.google.com;">
 
-    <meta name="msapplication-TileImage" content="assets/img/icon-270x270.png">
-    <meta name="msapplication-TileColor" content="#091C99">
-    <meta name="theme-color" content="#091C99">
-    <link rel="mask-icon" href="/favicon.svg" color="#091C99">
-    
-    {%- if page.title -%}
-        <title>{{ page.title }} - Neahtid</title>
-    {%- else -%}
-        <title>Software/Hardware Research and Development - Neahtid</title>
-    {%- endif -%}
-   
+  {%- include head.html -%}
 
-    {%- include google-analytics.html -%}
-
-    {%- include head.html -%}
-    
-  </head>
   <body>
     <div class="wrapper">
       {%- include header.html -%}

@@ -1,27 +1,28 @@
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: Innocuous Wireless Energy
+# neahtid site
 name: Neahtid
+author: Rodrigo Cancino (Coto)
+
+# ---- Main settings ----
+title: Solutions tailored to help your business grow
 description: >- # this means to ignore newlines until "baseurl:"
-  Harmless Wireless Charging Solutions. Experience real wireless energy and 
-  charge electrical devices through the air. We carefully create the 
-  technology and also design and build wireless charging solutions to keep 
-  electrical devices charged, at all times, regardless of where you are.
+  We specialize in Progressive Web Apps (PWA), Google Sheets connected applications, 
+  CI/CD integrations for Google Cloud and Azure, and Quality Assurance for Python & JavaScript. 
+  Our services also include web maintenance, landing page design, dropshipping stores, branding, 
+  logo creation, and social media banner design.
+keywords: "Progressive Web Applications, Google Sheets Connected Apps, CI/CD Integrations, Google Cloud, Azure DevOps, Quality Assurance, Python Development, JavaScript QA, Website Error Fix, Web Maintenance, Excel Spreadsheet Creation, Landing Page Design, Virtual Store, Dropshipping Store, Logo Creation, Corporate Branding, Personal Website, Social Media Banners"
+slogan: Progressive Web Apps, Google Sheets Apps, CI/CD, QA, Web & Branding Services
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.neahtid.com" # the base hostname & protocol for your site, e.g. http://example.com
-slogan: "Privacy, Security and Comfort."
-keywords: "coworking, Buenos Aires, remote work, freelancers, startups, students, private office, safety, comfort"
-logo: "https://neahtid.github.io/assets/img/header-logo.png"
-
-# Site Settings
-twitter_username: neahtid
+logo: "https://neahtid.github.io/assets/img/logo.png"
+color_main: "#091C99"
 google_analytics: "G-GPW5FKMJWZ"
 
-# Build settings
+
+# ---- Secondary settings ----
+twitter_username: neahtid
+
+
+# ---- Jekyll settings ----
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
@@ -40,18 +41,11 @@ jekyll_timeago:
     - 'es'
     - 'pt'
 
-# jekyll-multiple-languages-plugin settings:
+# jekyll-multiple-languages-plugin settings
 languages: ["pt", "en", "es"]
-
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico"]
 
-
-
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
