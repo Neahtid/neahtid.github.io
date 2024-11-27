@@ -313,10 +313,6 @@ p.plist {
 	padding: 50px;
 }
 
-.section-4 .badges,
-.section-5 .badges {
-	/*margin-top: 70px;*/
-}
 
 .section-4 .badges .badge-inner {
 	width: 80%;
@@ -692,7 +688,6 @@ fieldset.attend input.radio {
 	justify-content: center;
 }
 
-.flex-btn-container a {}
 
 /* Tablets (768px and below) */
 @media only screen and (max-width: 768px) {
@@ -701,6 +696,7 @@ fieldset.attend input.radio {
 	body {
 		background-color: #f9ffff;
 	}
+
 	div.section-arrow {
 		right: 50px;
 	}
@@ -781,6 +777,7 @@ fieldset.attend input.radio {
 	body {
 		background-color: #fffff9;
 	}
+
 	.section-1 {
 		background-position: -500px center;
 	}
