@@ -1,76 +1,9 @@
 --- 
 # Only the main Sass file needs front matter (the dashes are enough) 
---- 
-/* animations */
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes arrows {
-	0% {
-		top: 0px;
-	}
+---
 
-	16% {
-		top: 8px;
-	}
-
-	32% {
-		top: 0px;
-	}
-
-	50% {
-		top: 6px;
-	}
-
-	68% {
-		top: 0px;
-	}
-
-	80% {
-		top: 4px;
-	}
-
-	100% {
-		top: 0px;
-	}
-}
-
-/* Standard syntax */
-@keyframes arrows {
-	0% {
-		top: 0px;
-	}
-
-	16% {
-		top: 8px;
-	}
-
-	32% {
-		top: 0px;
-	}
-
-	50% {
-		top: 6px;
-	}
-
-	68% {
-		top: 0px;
-	}
-
-	80% {
-		top: 4px;
-	}
-
-	100% {
-		top: 0px;
-	}
-}
 
 /* css */
-* {
-	margin: 0;
-	padding: 0;
-	font-family: Roboto, Helvetica, Arial, sans-serif;
-}
-
 body {
 	color: #757575;
 }
