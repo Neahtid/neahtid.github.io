@@ -9,48 +9,212 @@ body {
 	
 	.wrapper {
 		padding-top: 6rem;
+
+		header {		
+			/* navigation */
+			.navbar {
+				padding: 0;
+			}
+
+			.navbar .nav-item {
+				text-align: center;
+			}
+
+			.navbar-light .navbar-nav .nav-link,
+			.navbar-light .navbar-nav .active>.nav-link {
+				font-size: 17px;
+				padding: 13px 20px;
+				position: relative;
+			}
+
+			.navbar-light .navbar-nav .nav-link {
+				-webkit-transition: .3s;
+				-o-transition: .3s;
+				transition: .3s;
+			}
+
+			.navbar-light .navbar-nav .nav-link:before {
+				display: block;
+				content: ' ';
+				position: absolute;
+				height: 3px;
+				top: 0;
+				background-color: #1f009f;
+
+				-webkit-transition: .3s;
+				-o-transition: .3s;
+				transition: .3s;
+				-webkit-transition-timing-function: cubic-bezier(.58, .3, .005, 1);
+				-o-transition-timing-function: cubic-bezier(.58, .3, .005, 1);
+				transition-timing-function: cubic-bezier(.58, .3, .005, 1);
+
+				width: 0;
+				left: -10px;
+				opacity: 0;
+			}
+
+			.navbar-light .navbar-nav .nav-link:hover,
+			.navbar-light .navbar-nav .nav-item.active .nav-link {
+				color: #1f009f;
+			}
+
+			.navbar-light .navbar-nav .nav-link:hover:before,
+			.navbar-light .navbar-nav .nav-item.active .nav-link:before {
+				width: 100%;
+				left: 0;
+				opacity: 1;
+			}
+		}
 	}
-}
 
-.header {
-	padding: 0 33px;
-}
+	&.scrolled {
+		header img.logo {
+			width: 120px;
+		}
+	}
+	
+	main.index {
+		/* section-arrow */
+		.section-arrow {
+			position: absolute;
+			z-index: 2;
+		}
+		
+		.section-arrow img {
+			height: 20px;
+		}
+		
+		.section-arrow-react {
+			position: relative;
+			cursor: pointer;
+			padding: 20px;
+		}
+		
+		.section-arrow-react:hover {
+			-webkit-animation: arrows 1s ease-in;
+			-moz-animation: arrows 1s ease-in;
+			-o-animation: arrows 1s ease-in;
+			animation: arrows 1s ease-in;
+		}
+		
+		.section-1 .section-arrow {
+			right: 12px;
+			top: 380px;
+		}
+		
+		.section-3 .section-arrow {
+			right: 12px;
+			top: 300px;
+		}
+		
+		.section-4 .section-arrow {
+			right: 12px;
+			top: 40px;
+		}
+		/* section 1*/
+		.section-1 {
+			position: relative;
+			background-color: #f2f2f2;
+			background-image: url('/assets/img/neahtid-home.png');
+			background-position: bottom center;
+			background-repeat: no-repeat;
+			min-height: 560px;
+	
+			text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+			color: #54595f;
 
-.section-arrow {
-	position: absolute;
-	z-index: 2;
-}
+			.container {
+				padding: 190px 90px;
+			}
+		
+			h2 {
+				max-width: 45vw;
+			}
+		
+			h3 {
+				margin-top: 100px;
+				font-size: 20px;
+				font-weight: 400;
+				max-width: 50vw;
+			}
+		}
+	
+	
+		/* section 2 */
+		.section-2 {
+			background-color: #F4F4F4;
+			text-align: center;
+			padding: 50px;
+			
+			p {
+				margin-top: 12px;
+			}
+		}
+	
+	
+		/* section 3 */
+		.section-3 {
+			position: relative;
+			background-color: #FAFAFA;
 
-.section-arrow img {
-	height: 20px;
-}
+			img {
+				max-width: 100%;
+			}
+		
+			.infoblock {
+				padding: 60px 20px;
+			}
+		}
+	
+	
+	
+		/* section 4 */
+		.section-4 {
+			position: relative;
+			background-color: #F4F4F4;
+			text-align: center;
+			padding: 50px;
 
-.section-arrow-react {
-	position: relative;
-	cursor: pointer;
-	padding: 20px;
-}
+			.badges .badge-inner {
+				width: 80%;
+				margin: 0 auto;
+			}
+		
+			.badges .badge h2 {
+				background-color: #E2E2E2;
+				padding: 5% 0;
+				font-size: 1.6em;
+			}
+		
+			.badges .badge img {
+				width: 100%;
+			}
+		}
+	
+		/* section 5 */
+		.section-5 {
+			background-color: #FAFAFA;
+			text-align: center;
+			padding: 50px;
 
-.section-arrow-react:hover {
-	-webkit-animation: arrows 1s ease-in;
-	-moz-animation: arrows 1s ease-in;
-	-o-animation: arrows 1s ease-in;
-	animation: arrows 1s ease-in;
-}
-
-.section-1 .section-arrow {
-	right: 12px;
-	top: 380px;
-}
-
-.section-3 .section-arrow {
-	right: 12px;
-	top: 300px;
-}
-
-.section-4 .section-arrow {
-	right: 12px;
-	top: 40px;
+			a {
+				font-size: 14px;
+			}
+		
+			p.large-i i {
+				font-size: 20px;
+			}
+		}
+	
+	
+		/* section 6 */
+		.section-6 {
+			background-color: #F4F4F4;
+			text-align: center;
+			padding: 50px;
+			overflow: hidden;
+		}
+	}
 }
 
 h2 {
@@ -60,14 +224,6 @@ h2 {
 
 p {
 	font-size: 17px;
-}
-
-.centered {
-	text-align: center;
-}
-
-.modal-header {
-	border: none;
 }
 
 .left-aligned {
@@ -100,88 +256,8 @@ p {
 	display: inherit;
 }
 
-/* navigation */
-.navbar {
-	padding: 0;
-}
 
-.navbar .nav-item {
-	text-align: center;
-}
-
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .active>.nav-link {
-	font-size: 17px;
-	padding: 13px 20px;
-	position: relative;
-}
-
-.navbar-light .navbar-nav .nav-link {
-	-webkit-transition: .3s;
-	-o-transition: .3s;
-	transition: .3s;
-}
-
-.navbar-light .navbar-nav .nav-link:before {
-	display: block;
-	content: ' ';
-	position: absolute;
-	height: 3px;
-	top: 0;
-	background-color: #1f009f;
-
-	-webkit-transition: .3s;
-	-o-transition: .3s;
-	transition: .3s;
-	-webkit-transition-timing-function: cubic-bezier(.58, .3, .005, 1);
-	-o-transition-timing-function: cubic-bezier(.58, .3, .005, 1);
-	transition-timing-function: cubic-bezier(.58, .3, .005, 1);
-
-	width: 0;
-	left: -10px;
-	opacity: 0;
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-item.active .nav-link {
-	color: #1f009f;
-}
-
-.navbar-light .navbar-nav .nav-link:hover:before,
-.navbar-light .navbar-nav .nav-item.active .nav-link:before {
-	width: 100%;
-	left: 0;
-	opacity: 1;
-}
-
-/* section 1*/
-.section-1 {
-	position: relative;
-	background-color: #f2f2f2;
-	background-image: url('/assets/img/neahtid-home.png');
-	background-position: bottom center;
-	background-repeat: no-repeat;
-	min-height: 560px;
-
-	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-	color: #54595f;
-}
-
-.section-1 .container {
-	padding: 190px 90px;
-}
-
-.section-1 h2 {
-	max-width: 45vw;
-}
-
-.section-1 h3 {
-	margin-top: 100px;
-	font-size: 20px;
-	font-weight: 400;
-	max-width: 50vw;
-}
-
+/* animated-hidden */
 .animated-hidden {
 	position: relative;
 	opacity: 0;
@@ -207,86 +283,7 @@ p {
 	left: 0;
 }
 
-/* section 2 */
-.section-2 {
-	background-color: #F4F4F4;
-	text-align: center;
-	padding: 50px;
-}
-
-.section-2 p {
-	margin-top: 12px;
-}
-
-/* section 3 */
-.section-3 {
-	position: relative;
-	background-color: #FAFAFA;
-}
-
-.section-3 img {
-	max-width: 100%;
-}
-
-.section-3 .infoblock {
-	padding: 60px 20px;
-}
-
-p.plist>i.fa,
-p.plist>i.far {
-	width: 30px;
-}
-
-p.plist {
-	font-size: 14px;
-}
-
-/* section 4 */
-.section-4 {
-	position: relative;
-	background-color: #F4F4F4;
-	text-align: center;
-	padding: 50px;
-}
-
-
-.section-4 .badges .badge-inner {
-	width: 80%;
-	margin: 0 auto;
-}
-
-.section-4 .badges .badge h2 {
-	background-color: #E2E2E2;
-	padding: 5% 0;
-	font-size: 1.6em;
-}
-
-.section-4 .badges .badge img {
-	width: 100%;
-}
-
-/* section 5 */
-.section-5 {
-	background-color: #FAFAFA;
-	text-align: center;
-	padding: 50px;
-}
-
-.section-5 a {
-	font-size: 14px;
-}
-
-.section-5 p.large-i i {
-	font-size: 20px;
-}
-
-/* section 6 */
-.section-6 {
-	background-color: #F4F4F4;
-	text-align: center;
-	padding: 50px;
-	overflow: hidden;
-}
+/* forms elements and section-6 */
 
 input,
 textarea {

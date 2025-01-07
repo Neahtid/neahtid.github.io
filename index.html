@@ -3,7 +3,7 @@ layout: page
 ---
 <style>
   .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/earth-earth-at-night-night-lights-41949.jpeg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -24,190 +24,207 @@ layout: page
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
 </style>
-<header class="section-1">
-  <div class="section-arrow">
-    <div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"
-        alt="section-arrow"></div>
-  </div>
-  <div class="container">
-    <h2>"{% t pages.homeh1 %}"</h2>
-    <h3 id="section_1_h3" class="animated-hidden">
-      {% t pages.homeh2 %}
-    </h3>
-  </div>
-</header>
-
-<!-- Hero Section -->
-<section class="hero-section text-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8" data-aos="fade-right">
-        <h1 class="display-4 fw-bold mb-4">Innovative IT Solutions for Your Business</h1>
-        <p class="lead mb-4">Empowering businesses with cutting-edge hardware, e-commerce, and cybersecurity solutions.
-        </p>
-        <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
-      </div>
+<main class="index">
+  <header class="section-1">
+    <div class="section-arrow">
+      <div onClick="scrollto('#section-3')" class="section-arrow-react"><img src="assets/img/arrow.png"
+          alt="section-arrow"></div>
     </div>
-  </div>
-</section>
+    <div class="container">
+      <h2>"{% t pages.homeh1 %}"</h2>
+      <h3 id="section_1_h3" class="animated-hidden">
+        {% t pages.homeh2 %}
+      </h3>
+    </div>
+  </header>
 
-<!-- Services Section -->
-<section id="services" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">Our Services</h2>
-    <div class="row g-4">
-      <!-- Web Applications & Digital Presence Card -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card service-card custom-shadow">
-          <img src="/assets/img/badge-software.jpeg" class="card-img-top" alt="Web Applications & Digital Presence">
-          <div class="card-body">
-            <h3 class="card-title h4">Web Applications & Digital Presence</h3>
-            <p class="card-text">Advanced business automation systems, energy-efficient controls, and smart security
-              solutions for various industries.</p>
-            <a href="/services/web-applications" class="btn btn-outline-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Business Intelligence & Data Analytics Card -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card service-card custom-shadow">
-          <img src="/assets/img/badge-dashboards.jpg" class="card-img-top" alt="Business Intelligence & Data Analytics">
-          <div class="card-body">
-            <h3 class="card-title h4">Business Intelligence & Data Analytics</h3>
-            <p class="card-text">Integrated e-commerce platforms with Business Intelligence dashboards for optimized
-              online operations.</p>
-            <a href="/services/business-intelligence-and-analytics" class="btn btn-outline-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- AI & Automation Card -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card service-card custom-shadow">
-          <img src="/assets/img/badge-ai.png" class="card-img-top" alt="Artificial Intelligence & Automation Solutions">
-          <div class="card-body">
-            <h3 class="card-title h4">Artificial Intelligence & Automation</h3>
-            <p class="card-text">State-of-the-art security solutions including penetration testing and ethical hacking
-              services.</p>
-            <a href="/services/ai-and-automation" class="btn btn-outline-primary">Learn More</a>
-          </div>
+  <!-- Hero Section -->
+  <section class="hero-section text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8" data-aos="fade-right">
+          <h1 class="display-4 fw-bold mb-4">Innovative IT Solutions for Your Business</h1>
+          <p class="lead mb-4">Empowering businesses with cutting-edge hardware, e-commerce, and cybersecurity
+            solutions.
+          </p>
+          <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
         </div>
       </div>
     </div>
-    <div class="row g-4 mt-4">
+  </section>
 
-      <!-- Cybersecurity Card -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card service-card custom-shadow">
-          <img src="/assets/img/badge-sysop.jpeg" class="card-img-top" alt="Cybersecurity Solutions">
-          <div class="card-body">
-            <h3 class="card-title h4">Cybersecurity & Advanced Software</h3>
-            <p class="card-text">State-of-the-art security solutions including penetration testing and ethical hacking
-              services.</p>
-            <a href="/services/cybersecurity" class="btn btn-outline-primary">Learn More</a>
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Our Services</h2>
+      <div class="row g-4">
+        <!-- Web Applications & Digital Presence Card -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card service-card custom-shadow">
+            <img src="/assets/img/badge-software.jpeg" class="card-img-top" alt="Web Applications & Digital Presence">
+            <div class="card-body">
+              <h3 class="card-title h4">Web Applications & Digital Presence</h3>
+              <p class="card-text">Advanced business automation systems, energy-efficient controls, and smart security
+                solutions for various industries.</p>
+              <p class="text-end">
+                <a href="/services/web-applications" class="btn btn-primary">Learn More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Intelligence & Data Analytics Card -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card service-card custom-shadow">
+            <img src="/assets/img/badge-dashboards.jpg" class="card-img-top"
+              alt="Business Intelligence & Data Analytics">
+            <div class="card-body">
+              <h3 class="card-title h4">Business Intelligence & Data Analytics</h3>
+              <p class="card-text">Integrated e-commerce platforms with Business Intelligence dashboards for optimized
+                online operations.</p>
+              <p class="text-end">
+                <a href="/services/business-intelligence-and-analytics" class="btn btn-primary">Learn More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Automation Card -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card service-card custom-shadow">
+            <img src="/assets/img/badge-ai.png" class="card-img-top"
+              alt="Artificial Intelligence & Automation Solutions">
+            <div class="card-body">
+              <h3 class="card-title h4">Artificial Intelligence & Automation</h3>
+              <p class="card-text">State-of-the-art security solutions including penetration testing and ethical hacking
+                services.</p>
+              <p class="text-end">
+                <a href="/services/ai-and-automation" class="btn btn-primary">Learn More</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="row g-4 mt-4">
 
-      <!-- Hardware Solutions Card -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card service-card custom-shadow">
-          <img src="/assets/img/badge-hardware.png" class="card-img-top" alt="Hardware Solutions">
-          <div class="card-body">
-            <h3 class="card-title h4">Hardware Solutions</h3>
-            <p class="card-text">Advanced business automation systems, energy-efficient controls, and smart security
-              solutions for various industries.</p>
-            <a href="/services/hardware" class="btn btn-outline-primary">Learn More</a>
+        <!-- Cybersecurity Card -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card service-card custom-shadow">
+            <img src="/assets/img/badge-sysop.jpeg" class="card-img-top" alt="Cybersecurity Solutions">
+            <div class="card-body">
+              <h3 class="card-title h4">Cybersecurity & Advanced Software</h3>
+              <p class="card-text">State-of-the-art security solutions including penetration testing and ethical hacking
+                services.</p>
+              <p class="text-end">
+                <a href="/services/cybersecurity" class="btn btn-primary">Learn More</a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- E-Commerce Solutions Card -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card service-card custom-shadow">
-          <img src="/assets/img/badge-ecommerce.jpg" class="card-img-top" alt="E-Commerce Solutions">
-          <div class="card-body">
-            <h3 class="card-title h4">E-Commerce Solutions</h3>
-            <p class="card-text">Integrated e-commerce platforms with Business Intelligence dashboards for optimized
-              online operations.</p>
-            <a href="/services/ecommerce" class="btn btn-outline-primary">Learn More</a>
+        <!-- Hardware Solutions Card -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card service-card custom-shadow">
+            <img src="/assets/img/badge-hardware.png" class="card-img-top" alt="Hardware Solutions">
+            <div class="card-body">
+              <h3 class="card-title h4">Hardware Solutions</h3>
+              <p class="card-text">Advanced business automation systems, energy-efficient controls, and smart security
+                solutions for various industries.</p>
+              <p class="text-end">
+                <a href="/services/hardware" class="btn btn-primary">Learn More</a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+
+        <!-- E-Commerce Solutions Card -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card service-card custom-shadow">
+            <img src="/assets/img/badge-ecommerce.jpg" class="card-img-top" alt="E-Commerce Solutions">
+            <div class="card-body">
+              <h3 class="card-title h4">E-Commerce Solutions</h3>
+              <p class="card-text">Integrated e-commerce platforms with Business Intelligence dashboards for optimized
+                online operations.</p>
+              <p class="text-end">
+                <a href="/services/ecommerce" class="btn btn-primary">Learn More</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
 
-    </div>
-  </div>
-</section>
-
-<section class="section-2">
-  <h2>Where ideas become reality</h2>
-  <p>
-    Empowering innovation with top-tier Research & Development in software
-    and hardware, backed by the quality and security standards of
-    Big Tech and the financial industry experience.
-  </p>
-</section>
-<section class="section-3" id="section-3">
-  <div class="section-arrow">
-    <div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png"
-        alt="section-arrow"></div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6 centered">
-        <img src="/assets/img/neahtid-design.jpeg" alt="Carefully Designed and Engineered for you" />
-      </div>
-      <div class="col-12 col-md-6 infoblock">
-        <h2>Software and Hardware Engineering</h2>
-        <p>
-          We research, design and build software and hardware solutions, products and technologies that range from
-          <b>Progressive Web Applications (PWA) for Payment Integrations</b> in Software, to controlling and monitoring
-          <b>Home Security and Automation</b> in Hardware.
-        </p>
-        <p>Neahtid quality philosophy: </p>
-        <ul>
-          <li><i class="fa fa-leaf"></i>Eco-Human-Friendly Solutions.</li>
-          <li><i class="fa fa-battery-full"></i>Inspiring Designs.</li>
-          <li><i class="fa fa-battery-full"></i>Enhancing User Experiences.</li>
-          <li><i class="far fa-clock"></i>Sustainable Innovations & Efficiency.</li>
-        </ul>
       </div>
     </div>
-  </div>
-</section>
-<section class="section-4" id="section-4">
-  <div class="section-arrow">
-    <div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"
-        alt="section-arrow"></div>
-  </div>
-  <h1>On the cutting edge of technology</h1>
-  <p>We cover software and hardware development of highly technological products and applications to help boutique
-    partners.</p>
+  </section>
 
-
-</section>
-<section class="section-5" id="section-5">
-  <h2>Have questions? We've got answers.</h2>
-  <div class="container badges">
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <p class="large-i"><i class="far fa-life-ring"></i></p>
-        <p>Find answers</p>
-        <p><a href="./contact-us.html">Help Center <i class="fa fa-arrow-right"></i></a></p>
-      </div>
-      <div class="col-12 col-md-4">
-        <p class="large-i"><i class="fa fa-university"></i></p>
-        <p>Apply your Knowledge</p>
-        <p><a href="./research-program.html">Research Programs <i class="fa fa-arrow-right"></i></a></p>
-      </div>
-      <div class="col-12 col-md-4">
-        <p class="large-i"><i class="fab fa-wpforms"></i></p>
-        <p>Break Technological Barriers</p>
-        <p><a href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank">Join Us <i
-              class="fa fa-arrow-right"></i></a></p>
+  <section class="section-2">
+    <h2>Where ideas become reality</h2>
+    <p>
+      Empowering innovation with top-tier Research & Development in software
+      and hardware, backed by the quality and security standards of
+      Big Tech and the financial industry experience.
+    </p>
+  </section>
+  <section class="section-3" id="section-3">
+    <div class="section-arrow">
+      <div onClick="scrollto('#section-4')" class="section-arrow-react"><img src="assets/img/arrow.png"
+          alt="section-arrow"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="/assets/img/neahtid-design.jpeg" alt="Carefully Designed and Engineered for you" />
+        </div>
+        <div class="col-12 col-md-6 infoblock">
+          <h2>Software and Hardware Engineering</h2>
+          <p>
+            We research, design and build software and hardware solutions, products and technologies that range from
+            <b>Progressive Web Applications (PWA) for Payment Integrations</b> in Software, to controlling and
+            monitoring
+            <b>Home Security and Automation</b> in Hardware.
+          </p>
+          <p>Neahtid quality philosophy: </p>
+          <ul>
+            <li><i class="fa fa-leaf"></i>Eco-Human-Friendly Solutions.</li>
+            <li><i class="fa fa-battery-full"></i>Inspiring Designs.</li>
+            <li><i class="fa fa-battery-full"></i>Enhancing User Experiences.</li>
+            <li><i class="far fa-clock"></i>Sustainable Innovations & Efficiency.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="section-4" id="section-4">
+    <div class="section-arrow">
+      <div onClick="scrollto('#section-5')" class="section-arrow-react"><img src="assets/img/arrow.png"
+          alt="section-arrow"></div>
+    </div>
+    <h1>On the cutting edge of technology</h1>
+    <p>We cover software and hardware development of highly technological products and applications to help boutique
+      partners.</p>
+  </section>
+  <section class="section-5" id="section-5">
+    <h2>Have questions? We've got answers.</h2>
+    <div class="container badges">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <p class="large-i"><i class="far fa-life-ring"></i></p>
+          <p>Find answers</p>
+          <p><a href="/contact-us">Help Center <i class="fa fa-arrow-right"></i></a></p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="large-i"><i class="fa fa-university"></i></p>
+          <p>Apply your Knowledge</p>
+          <p><a href="/research-program">Research Programs <i class="fa fa-arrow-right"></i></a></p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="large-i"><i class="fab fa-wpforms"></i></p>
+          <p>Break Technological Barriers</p>
+          <p><a href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank">Join Us <i
+                class="fa fa-arrow-right"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

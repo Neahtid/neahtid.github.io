@@ -24,3 +24,12 @@ function scrollto(el){
 		behavior: 'smooth' 
 	});
 }
+
+window.onscroll = function() {
+    var body = document.body;
+    if (window.scrollY > 0) {
+      body.classList.add('scrolled');
+    } else {
+      body.classList.remove('scrolled');
+    }
+  };
