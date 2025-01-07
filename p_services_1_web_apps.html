@@ -5,81 +5,78 @@ permalink: /services/web-applications
 ---
 <style>
   :root {
-      --primary-color: #2b6cb0;
-      --secondary-color: #4299e1;
-      --accent-color: #90cdf4;
+      --primary-color: #2d3436;
+      --accent-color: #6c5ce7;
+      --gradient-start: #a8c0ff;
+      --gradient-end: #3f2b96;
   }
-
+  
   .hero-section {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
       padding-top: 120px;
       padding-bottom: 80px;
       margin-top: 56px;
       position: relative;
       overflow: hidden;
   }
-
-  .hero-section::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  }
-
+  
   .service-card {
       border: none;
-      border-radius: 12px;
+      border-radius: 15px;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   }
-
+  
   .service-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
   }
-
+  
   .feature-icon {
-      width: 64px;
-      height: 64px;
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      border-radius: 12px;
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 1rem;
+      margin: 0 auto 1.5rem;
+      color: white;
   }
-
-  .tech-badge {
-      background-color: #f7fafc;
-      border-radius: 20px;
-      padding: 0.5rem 1rem;
-      margin: 0.25rem;
-      display: inline-block;
-      font-size: 0.9rem;
-      color: var(--primary-color);
-  }
-
+  
   .process-step {
       position: relative;
-      padding-bottom: 2rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   }
-
+  
   .process-step::after {
       content: '';
       position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
       width: 2px;
-      height: 2rem;
-      background-color: var(--accent-color);
-  }
-
-  .process-step:last-child::after {
+      height: 50px;
+      background: var(--accent-color);
+      bottom: -50px;
+      left: 50%;
       display: none;
+  }
+  
+  @media (min-width: 768px) {
+      .process-step::after {
+          display: block;
+      }
+      
+      .process-step:last-child::after {
+          display: none;
+      }
+  }
+  
+  .testimonial-card {
+      background: #f8f9fa;
+      border-radius: 15px;
+      padding: 2rem;
   }
 </style>
 
@@ -89,73 +86,127 @@ permalink: /services/web-applications
       <div class="row align-items-center">
           <div class="col-lg-6">
               <h1 class="display-4 fw-bold mb-4">Transform Your Digital Presence</h1>
-              <p class="lead mb-4">We create cutting-edge web applications and digital solutions tailored for B2B industries. From Progressive Web Apps to corporate websites, we help businesses thrive in the digital landscape.</p>
+              <p class="lead mb-4">Elevate your brand with cutting-edge web applications and comprehensive digital solutions tailored for B2B success.</p>
               <div class="d-flex gap-3">
-                  <a href="#contact" class="btn btn-light btn-lg">Start Your Project</a>
-                  <a href="#services" class="btn btn-outline-light btn-lg">Explore Services</a>
+                  <a href="#contact" class="btn btn-light btn-lg">Get Started</a>
+                  <a href="#services" class="btn btn-outline-light btn-lg">Our Services</a>
               </div>
           </div>
           <div class="col-lg-6">
-              <img src="/api/placeholder/600/400" alt="Web Development" class="img-fluid rounded shadow-lg">
+              <img src="/api/placeholder/600/400" alt="Digital Solutions" class="img-fluid rounded shadow">
           </div>
       </div>
   </div>
 </section>
 
-<!-- Core Services -->
+<!-- Services Section -->
 <section id="services" class="py-5">
   <div class="container">
       <h2 class="text-center mb-5">Our Digital Solutions</h2>
       <div class="row g-4">
           <!-- PWA Card -->
-          <div class="col-md-4">
-              <div class="card service-card h-100">
-                  <div class="card-body">
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                  <div class="card-body text-center">
                       <div class="feature-icon">
-                          <img src="/api/placeholder/32/32" alt="PWA Icon">
+                          <img src="/api/placeholder/40/40" alt="PWA Icon">
                       </div>
-                      <h3 class="h4 mb-3">Progressive Web Apps</h3>
-                      <p>Next-generation web applications with native app-like features, perfect for hospitality and booking systems.</p>
+                      <h3 class="h4">Progressive Web Apps</h3>
+                      <p>Advanced PWAs with seamless booking systems and secure payment integration.</p>
                       <ul class="list-unstyled mt-3">
                           <li>✓ Offline Functionality</li>
-                          <li>✓ Push Notifications</li>
-                          <li>✓ Seamless Payment Integration</li>
+                          <li>✓ Fast Loading Speed</li>
+                          <li>✓ Secure Payments</li>
                       </ul>
                   </div>
               </div>
           </div>
 
-          <!-- Corporate Websites Card -->
-          <div class="col-md-4">
-              <div class="card service-card h-100">
-                  <div class="card-body">
+          <!-- Automation Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                  <div class="card-body text-center">
                       <div class="feature-icon">
-                          <img src="/api/placeholder/32/32" alt="Website Icon">
+                          <img src="/api/placeholder/40/40" alt="Automation Icon">
                       </div>
-                      <h3 class="h4 mb-3">Corporate Websites</h3>
-                      <p>Professional websites that strengthen your brand identity and drive business growth.</p>
+                      <h3 class="h4">Spreadsheet Automation</h3>
+                      <p>Custom Google Sheets automation solutions for streamlined business processes.</p>
+                      <ul class="list-unstyled mt-3">
+                          <li>✓ Data Integration</li>
+                          <li>✓ Automated Reports</li>
+                          <li>✓ Custom Scripts</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Website Development Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                  <div class="card-body text-center">
+                      <div class="feature-icon">
+                          <img src="/api/placeholder/40/40" alt="Website Icon">
+                      </div>
+                      <h3 class="h4">Website Development</h3>
+                      <p>Professional websites that enhance brand visibility and drive engagement.</p>
                       <ul class="list-unstyled mt-3">
                           <li>✓ Responsive Design</li>
                           <li>✓ SEO Optimization</li>
-                          <li>✓ Content Management Systems</li>
+                          <li>✓ Content Management</li>
                       </ul>
                   </div>
               </div>
           </div>
 
-          <!-- Digital Marketing Card -->
-          <div class="col-md-4">
-              <div class="card service-card h-100">
-                  <div class="card-body">
+          <!-- Landing Pages Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                  <div class="card-body text-center">
                       <div class="feature-icon">
-                          <img src="/api/placeholder/32/32" alt="Marketing Icon">
+                          <img src="/api/placeholder/40/40" alt="Landing Page Icon">
                       </div>
-                      <h3 class="h4 mb-3">Landing Pages</h3>
-                      <p>High-converting landing pages designed for successful marketing campaigns.</p>
+                      <h3 class="h4">Marketing Landing Pages</h3>
+                      <p>High-converting landing pages designed for marketing success.</p>
                       <ul class="list-unstyled mt-3">
                           <li>✓ A/B Testing</li>
-                          <li>✓ Analytics Integration</li>
                           <li>✓ Conversion Optimization</li>
+                          <li>✓ Analytics Integration</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Corporate Identity Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                  <div class="card-body text-center">
+                      <div class="feature-icon">
+                          <img src="/api/placeholder/40/40" alt="Corporate Identity Icon">
+                      </div>
+                      <h3 class="h4">Corporate Identity</h3>
+                      <p>Comprehensive branding and web design solutions for businesses.</p>
+                      <ul class="list-unstyled mt-3">
+                          <li>✓ Brand Guidelines</li>
+                          <li>✓ Visual Identity</li>
+                          <li>✓ Design Systems</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Digital Strategy Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                  <div class="card-body text-center">
+                      <div class="feature-icon">
+                          <img src="/api/placeholder/40/40" alt="Strategy Icon">
+                      </div>
+                      <h3 class="h4">Digital Strategy</h3>
+                      <p>Strategic digital presence planning and implementation.</p>
+                      <ul class="list-unstyled mt-3">
+                          <li>✓ Market Analysis</li>
+                          <li>✓ Growth Planning</li>
+                          <li>✓ Performance Tracking</li>
                       </ul>
                   </div>
               </div>
@@ -164,79 +215,72 @@ permalink: /services/web-applications
   </div>
 </section>
 
-<!-- Technologies Section -->
+<!-- Process Section -->
 <section class="py-5 bg-light">
-  <div class="container">
-      <h2 class="text-center mb-5">Technologies We Use</h2>
-      <div class="text-center">
-          <span class="tech-badge">React.js</span>
-          <span class="tech-badge">Node.js</span>
-          <span class="tech-badge">Progressive Web Apps</span>
-          <span class="tech-badge">WordPress</span>
-          <span class="tech-badge">Google Workspace</span>
-          <span class="tech-badge">Payment Gateways</span>
-          <span class="tech-badge">Analytics</span>
-          <span class="tech-badge">SEO Tools</span>
-      </div>
-  </div>
-</section>
-
-<!-- Development Process -->
-<section id="process" class="py-5">
   <div class="container">
       <h2 class="text-center mb-5">Our Development Process</h2>
       <div class="row">
-          <div class="col-lg-8 mx-auto">
-              <div class="process-step text-center mb-4">
-                  <h3 class="h5">1. Discovery & Planning</h3>
-                  <p>Understanding your business needs and planning the perfect solution.</p>
-              </div>
-              <div class="process-step text-center mb-4">
-                  <h3 class="h5">2. Design & Prototyping</h3>
-                  <p>Creating intuitive designs and interactive prototypes.</p>
-              </div>
-              <div class="process-step text-center mb-4">
-                  <h3 class="h5">3. Development</h3>
-                  <p>Building your solution using cutting-edge technologies.</p>
-              </div>
+          <div class="col-md-3">
               <div class="process-step text-center">
-                  <h3 class="h5">4. Launch & Support</h3>
-                  <p>Deploying your solution and providing ongoing support.</p>
+                  <div class="feature-icon">1</div>
+                  <h3 class="h5">Discovery</h3>
+                  <p>Understanding your business needs and objectives</p>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="process-step text-center">
+                  <div class="feature-icon">2</div>
+                  <h3 class="h5">Planning</h3>
+                  <p>Strategic planning and solution design</p>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="process-step text-center">
+                  <div class="feature-icon">3</div>
+                  <h3 class="h5">Development</h3>
+                  <p>Agile development and testing</p>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="process-step text-center">
+                  <div class="feature-icon">4</div>
+                  <h3 class="h5">Launch</h3>
+                  <p>Deployment and ongoing support</p>
               </div>
           </div>
       </div>
   </div>
 </section>
 
-<!-- Portfolio Preview -->
-<section id="portfolio" class="py-5 bg-light">
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
   <div class="container">
-      <h2 class="text-center mb-5">Recent Projects</h2>
+      <h2 class="text-center mb-5">Featured Projects</h2>
       <div class="row g-4">
           <div class="col-md-4">
               <div class="card">
-                  <img src="/api/placeholder/400/300" class="card-img-top" alt="Hotel Booking PWA">
+                  <img src="/api/placeholder/400/300" class="card-img-top" alt="Project 1">
                   <div class="card-body">
-                      <h3 class="h5">Luxury Hotel Booking PWA</h3>
-                      <p class="text-muted">Progressive Web App with integrated payment system</p>
+                      <h3 class="h5">Hotel Booking PWA</h3>
+                      <p>Progressive Web App with integrated booking system</p>
                   </div>
               </div>
           </div>
           <div class="col-md-4">
               <div class="card">
-                  <img src="/api/placeholder/400/300" class="card-img-top" alt="Corporate Website">
+                  <img src="/api/placeholder/400/300" class="card-img-top" alt="Project 2">
                   <div class="card-body">
-                      <h3 class="h5">Manufacturing Company Website</h3>
-                      <p class="text-muted">Responsive corporate website with custom CMS</p>
+                      <h3 class="h5">Corporate Website</h3>
+                      <p>Modern website with custom CMS integration</p>
                   </div>
               </div>
           </div>
           <div class="col-md-4">
               <div class="card">
-                  <img src="/api/placeholder/400/300" class="card-img-top" alt="Marketing Campaign">
+                  <img src="/api/placeholder/400/300" class="card-img-top" alt="Project 3">
                   <div class="card-body">
-                      <h3 class="h5">Product Launch Campaign</h3>
-                      <p class="text-muted">High-converting landing page system</p>
+                      <h3 class="h5">Marketing Campaign</h3>
+                      <p>High-converting landing page system</p>
                   </div>
               </div>
           </div>
@@ -289,11 +333,11 @@ permalink: /services/web-applications
   <div class="container">
       <div class="row">
           <div class="col-md-6">
-              <h5>TechPro Solutions</h5>
+              <h5>Neahtid Solutions</h5>
               <p>Your Trusted Cybersecurity Partner</p>
           </div>
           <div class="col-md-6 text-md-end">
-              <p>© 2024 TechPro Solutions. All rights reserved.</p>
+              <p>© 2025 Neahtid Solutions. All rights reserved.</p>
           </div>
       </div>
   </div>
