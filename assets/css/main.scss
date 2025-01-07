@@ -6,6 +6,10 @@
 /* css */
 body {
 	color: #757575;
+	
+	.wrapper {
+		padding-top: 6rem;
+	}
 }
 
 .header {
@@ -620,6 +624,22 @@ fieldset.attend input.radio {
 	justify-content: center;
 }
 
+
+
+/* Menu responsive */
+@media only screen and (max-width: 999px) {
+	body {
+		nav ul.navbar-nav {
+			li {
+				width: 100%;
+
+				a {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
 
 /* Tablets (768px and below) */
 @media only screen and (max-width: 768px) {

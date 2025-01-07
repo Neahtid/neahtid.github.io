@@ -37,8 +37,8 @@ layout: default
     </div>
 
     <!-- Sidebar (List of Posts) -->
-    <div class="col-md-4">
-      <div class="sidebar">
+    <div class="col-md-4 bg-light">
+      <aside class="sidebar">
         <h3>{% t pages.precents %}</h3>
         <ul class="list-group">
           {%- assign posts = site.posts | sort: 'date' | reverse -%}
@@ -64,7 +64,7 @@ layout: default
           </li>
           {%- endfor -%}
         </ul>
-      </div>
+      </aside>
     </div>
   </div>
 </article>

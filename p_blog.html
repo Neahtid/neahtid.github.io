@@ -1,0 +1,32 @@
+---
+layout: post_sidebar
+permalink: /blog
+---
+
+<div class="blog-container">
+  <div class="main-content">
+    <!-- Display the latest post -->
+    {% assign last_post = site.posts.first %}
+    <article>
+      <h1>{{ last_post.title }}</h1>
+      <p><small>By {{ last_post.author }} on {{ last_post.date | date: "%B %d, %Y" }}</small></p>
+      <div class="content">
+        {{ last_post.content }}
+      </div>
+    </article>
+  </div>
+
+
+</div>
+
+<!-- Styling for layout -->
+<style>
+  .blog-container {
+    display: flex;
+    gap: 20px;
+  }
+  .main-content {
+    flex: 3;
+  }
+
+</style>
