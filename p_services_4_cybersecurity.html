@@ -1,0 +1,321 @@
+---
+layout: page
+title: Cybersecurity & Advanced Software Solutions
+permalink: /services/cybersecurity
+---
+
+<style>
+  :root {
+      --primary-dark: #1a1f3c;
+      --accent-color: #00ff9d;
+      --text-glow: 0 0 10px rgba(0, 255, 157, 0.5);
+  }
+  
+  .hero-section {
+      background: linear-gradient(rgba(26, 31, 60, 0.95), rgba(26, 31, 60, 0.95)), url('/api/placeholder/1920/600');
+      background-position: center;
+      background-size: cover;
+      padding-top: 120px;
+      padding-bottom: 80px;
+      margin-top: 56px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .hero-section::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent 45%, rgba(0, 255, 157, 0.1) 50%, transparent 55%);
+      animation: scan 3s linear infinite;
+  }
+  
+  @keyframes scan {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100%); }
+  }
+  
+  .security-card {
+      border: 1px solid rgba(0, 255, 157, 0.2);
+      background: rgba(26, 31, 60, 0.8);
+      transition: all 0.3s ease;
+  }
+  
+  .security-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 5px 15px rgba(0, 255, 157, 0.2);
+  }
+  
+  .feature-icon {
+      width: 80px;
+      height: 80px;
+      border: 2px solid var(--accent-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      transition: all 0.3s ease;
+  }
+  
+  .feature-icon:hover {
+      box-shadow: var(--text-glow);
+  }
+  
+  .dark-section {
+      background-color: var(--primary-dark);
+      color: white;
+  }
+  
+  .accent-text {
+      color: var(--accent-color);
+      text-shadow: var(--text-glow);
+  }
+  
+  .threat-card {
+      border: none;
+      border-left: 4px solid var(--accent-color);
+      transition: transform 0.3s ease;
+      background: rgba(26, 31, 60, 0.05);
+  }
+  
+  .threat-card:hover {
+      transform: translateY(-5px);
+  }
+</style>
+<!-- Hero Section -->
+<section class="hero-section text-white">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6">
+              <h1 class="display-4 fw-bold mb-4">Secure Your Digital Future</h1>
+              <p class="lead mb-4">Protect your business with state-of-the-art cybersecurity solutions and advanced software simulations. Our comprehensive approach ensures your digital assets remain safe from evolving threats.</p>
+              <div class="d-flex gap-3">
+                  <a href="#contact" class="btn btn-outline-light btn-lg">Get Security Assessment</a>
+                  <a href="#services" class="btn btn-success btn-lg">Explore Solutions</a>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <img src="/api/placeholder/600/400" alt="Cybersecurity Dashboard" class="img-fluid rounded shadow">
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+  <div class="container">
+      <h2 class="text-center mb-5">Comprehensive Security Services</h2>
+      <div class="row g-4">
+          <div class="col-md-4">
+              <div class="card security-card text-white h-100">
+                  <div class="card-body text-center">
+                      <div class="feature-icon">
+                          <img src="/api/placeholder/40/40" alt="Penetration Testing Icon">
+                      </div>
+                      <h3 class="h4 accent-text">Penetration Testing</h3>
+                      <p>Thorough security assessments to identify and address vulnerabilities before they can be exploited.</p>
+                      <ul class="list-unstyled mt-3">
+                          <li>✓ Network Security Testing</li>
+                          <li>✓ Application Security Assessment</li>
+                          <li>✓ Infrastructure Evaluation</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card security-card text-white h-100">
+                  <div class="card-body text-center">
+                      <div class="feature-icon">
+                          <img src="/api/placeholder/40/40" alt="Ethical Hacking Icon">
+                      </div>
+                      <h3 class="h4 accent-text">Ethical Hacking</h3>
+                      <p>Professional ethical hacking services to discover and fix security weaknesses in your systems.</p>
+                      <ul class="list-unstyled mt-3">
+                          <li>✓ Vulnerability Assessment</li>
+                          <li>✓ Security Auditing</li>
+                          <li>✓ Risk Mitigation</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card security-card text-white h-100">
+                  <div class="card-body text-center">
+                      <div class="feature-icon">
+                          <img src="/api/placeholder/40/40" alt="Software Simulation Icon">
+                      </div>
+                      <h3 class="h4 accent-text">Scientific Simulations</h3>
+                      <p>Advanced software solutions for complex scientific and engineering simulations.</p>
+                      <ul class="list-unstyled mt-3">
+                          <li>✓ Physics-based Modeling</li>
+                          <li>✓ Data Analysis</li>
+                          <li>✓ Performance Optimization</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Threat Protection Section -->
+<section class="dark-section py-5">
+  <div class="container">
+      <h2 class="text-center mb-5">Advanced Threat Protection</h2>
+      <div class="row g-4">
+          <div class="col-md-6">
+              <div class="threat-card p-4">
+                  <h3 class="h5 accent-text">Real-time Monitoring</h3>
+                  <p>24/7 security monitoring and threat detection to protect your systems around the clock.</p>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="threat-card p-4">
+                  <h3 class="h5 accent-text">Incident Response</h3>
+                  <p>Rapid response protocols to address and mitigate security incidents immediately.</p>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="threat-card p-4">
+                  <h3 class="h5 accent-text">Data Protection</h3>
+                  <p>Comprehensive data security measures including encryption and access control.</p>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="threat-card p-4">
+                  <h3 class="h5 accent-text">Compliance Management</h3>
+                  <p>Ensure compliance with industry standards and regulations (GDPR, HIPAA, PCI DSS).</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Solutions Process -->
+<section id="solutions" class="py-5">
+  <div class="container">
+      <h2 class="text-center mb-5">Our Security Process</h2>
+      <div class="row g-4">
+          <div class="col-md-3">
+              <div class="text-center">
+                  <div class="feature-icon">
+                      <span class="h4 mb-0">1</span>
+                  </div>
+                  <h3 class="h5">Assessment</h3>
+                  <p>Comprehensive evaluation of your current security posture.</p>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="text-center">
+                  <div class="feature-icon">
+                      <span class="h4 mb-0">2</span>
+                  </div>
+                  <h3 class="h5">Planning</h3>
+                  <p>Developing tailored security strategies and protocols.</p>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="text-center">
+                  <div class="feature-icon">
+                      <span class="h4 mb-0">3</span>
+                  </div>
+                  <h3 class="h5">Implementation</h3>
+                  <p>Deploying advanced security measures and solutions.</p>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="text-center">
+                  <div class="feature-icon">
+                      <span class="h4 mb-0">4</span>
+                  </div>
+                  <h3 class="h5">Monitoring</h3>
+                  <p>Continuous security monitoring and improvements.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-8">
+              <div class="card shadow">
+                  <div class="card-body p-5">
+                      <h2 class="text-center mb-4">Get Your Security Assessment</h2>
+                      <form id="contactForm">
+                          <div class="row g-3">
+                              <div class="col-md-6">
+                                  <input type="text" class="form-control" placeholder="Company Name" required>
+                              </div>
+                              <div class="col-md-6">
+                                  <input type="email" class="form-control" placeholder="Business Email" required>
+                              </div>
+                              <div class="col-12">
+                                  <select class="form-select">
+                                      <option selected>Select Service</option>
+                                      <option>Penetration Testing</option>
+                                      <option>Ethical Hacking</option>
+                                      <option>Scientific Simulations</option>
+                                      <option>Complete Security Assessment</option>
+                                  </select>
+                              </div>
+                              <div class="col-12">
+                                  <textarea class="form-control" rows="4" placeholder="Tell us about your security needs"></textarea>
+                              </div>
+                              <div class="col-12">
+                                  <button type="submit" class="btn btn-success w-100">Request Assessment</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <h5>TechPro Solutions</h5>
+              <p>Your Trusted Cybersecurity Partner</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+              <p>© 2024 TechPro Solutions. All rights reserved.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).ready(function() {
+      // Smooth scrolling
+      $('a[href^="#"]').on('click', function(event) {
+          event.preventDefault();
+          var target = $(this.getAttribute('href'));
+          if(target.length) {
+              $('html, body').animate({
+                  scrollTop: target.offset().top - 70
+              }, 1000);
+          }
+      });
+
+      // Form submission
+      $('#contactForm').on('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your inquiry. Our security team will contact you shortly.');
+          this.reset();
+      });
+  });
+</script>
