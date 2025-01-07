@@ -1,32 +1,76 @@
 ---
-layout: post_sidebar
+layout: default
 permalink: /blog
 ---
 
-<div class="blog-container">
-  <div class="main-content">
+
     <!-- Display the latest post -->
     {% assign last_post = site.posts.first %}
-    <article>
-      <h1>{{ last_post.title }}</h1>
-      <p><small>By {{ last_post.author }} on {{ last_post.date | date: "%B %d, %Y" }}</small></p>
-      <div class="content">
-        {{ last_post.content }}
+
+
+    <article class="container my-3 h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+      <div class="row">
+        <!-- Main Content (Post) -->
+        <div class="col-md-8">
+          <header class="post-header">
+            <h1 class="post-title p-name py-3 entry-title" itemprop="name headline">{{ last_post.title | escape }}</h1>
+            <p class="post-meta">
+              {%- assign date_format = site.minima.date_format | default: "%a %-d-%b-%Y %I:%M %p" -%}
+              <time class="dt-published" datetime="{{ last_post.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ last_post.date | date: date_format }}
+              </time>
+              {%- if last_post.modified_date -%}
+              ~
+              {%- assign mdate = last_post.modified_date | date_to_xmlschema -%}
+              <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+                {{ mdate | date: date_format }}
+              </time>
+              {%- endif -%}
+              {%- if last_post.author -%}
+              • {% for author in last_post.author %}
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+              {%- if forloop.last == false %}, {% endif -%}
+              {% endfor %}
+              {%- endif -%}
+            </p>
+          </header>
+    
+          <!-- Post Content -->
+          <div class="post-content" itemprop="articleBody">
+            {{ last_post.content }}
+          </div>
+        </div>
+    
+        <!-- Sidebar (List of Posts) -->
+        <div class="col-md-4 bg-light">
+          <aside class="sidebar">
+            <h3>{% t pages.precents %}</h3>
+            <ul class="list-group">
+              {%- assign posts = site.posts | sort: 'date' | reverse -%}
+              {%- for post in posts -%}
+              <li class="list-group-item">
+              {% if last_post.url == post.url %}
+                <span>{{ post.title | escape }} </span>
+              {% else %}
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                  {{ post.title | escape }} 
+                </a>
+              {% endif %}
+                <br>
+                <small class="text-secondary">
+                  {%- assign date_format = site.minima.date_format | default: "%a %-d-%b-%Y %I:%M %p" -%}
+                  {%- assign mdate = post.date | date_to_xmlschema -%}
+                  {% if site.lang == site.default_lang %}
+                    {{ post.date | timeago }}
+                  {% else %}
+                    {{ mdate | date: date_format }}
+                  {% endif %}
+                </small>
+              </li>
+              {%- endfor -%}
+            </ul>
+          </aside>
+        </div>
       </div>
     </article>
-  </div>
-
-
-</div>
-
-<!-- Styling for layout -->
-<style>
-  .blog-container {
-    display: flex;
-    gap: 20px;
-  }
-  .main-content {
-    flex: 3;
-  }
-
-</style>
