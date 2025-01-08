@@ -65,11 +65,26 @@ body {
 				opacity: 1;
 			}
 		}
+
+		article.post {
+			.post-content {
+				color: black;
+				line-height: 1.8rem;
+				font-size: 1.2rem;
+				.entry-header{
+					line-height: 1.9rem;
+					font-size: 1.3rem;
+					padding-bottom: 19px;
+					color: #1f009f;
+				}
+
+			}
+		}
 	}
 
 	&.scrolled {
 		header img.logo {
-			width: 120px;
+			height: 45px;
 		}
 	}
 	
@@ -686,6 +701,9 @@ fieldset.attend input.radio {
 	/* Your CSS styles for smartphones in portrait */
 	body {
 		background-color: #fff9ff;
+	}
+	li a {
+		padding-block: 1.5em; /* vertical padding to finger size */
 	}
 
 	.section-1 {
