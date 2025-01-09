@@ -3,6 +3,8 @@ layout: page
 title: E-Commerce Solutions
 permalink: /services/ecommerce
 slogan: Your Partner in E-Commerce Success
+custom_js:
+  - /assets/js/custom/p_services_6_ecommerce.js
 ---
 
 <style>
@@ -247,28 +249,3 @@ slogan: Your Partner in E-Commerce Success
       </div>
   </div>
 </section>
-
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  $(document).ready(function() {
-      // Smooth scrolling
-      $('a[href^="#"]').on('click', function(event) {
-          event.preventDefault();
-          var target = $(this.getAttribute('href'));
-          if(target.length) {
-              $('html, body').animate({
-                  scrollTop: target.offset().top - 70
-              }, 1000);
-          }
-      });
-
-      // Form submission
-      $('#contactForm').on('submit', function(e) {
-          e.preventDefault();
-          alert('Thank you for your message. We will contact you soon!');
-          this.reset();
-      });
-  });
-</script>

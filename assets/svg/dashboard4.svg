@@ -48,10 +48,10 @@
     <rect x="495" y="160" width="20" height="160" fill="#ef4444" rx="2" opacity="0.8"/>
 
     <!-- Legend -->
-    <rect x="380" y="80" width="12" height="12" fill="#3b82f6" rx="2"/>
-    <text x="400" y="90" font-family="Arial" font-size="12" fill="#64748b">Revenue</text>
-    <rect x="460" y="80" width="12" height="12" fill="#ef4444" rx="2"/>
-    <text x="480" y="90" font-family="Arial" font-size="12" fill="#64748b">Expenses</text>
+    <rect x="380" y="100" width="12" height="12" fill="#3b82f6" rx="2"/>
+    <text x="400" y="110" font-family="Arial" font-size="12" fill="#64748b">Revenue</text>
+    <rect x="460" y="100" width="12" height="12" fill="#ef4444" rx="2"/>
+    <text x="480" y="110" font-family="Arial" font-size="12" fill="#64748b">Expenses</text>
 
     <!-- Summary Stats -->
     <rect x="60" y="110" width="140" height="20" fill="#dbeafe" rx="4"/>

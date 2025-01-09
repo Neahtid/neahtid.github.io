@@ -3,6 +3,8 @@ layout: page
 title: Hardware Solutions
 permalink: /services/hardware
 slogan: Innovation in Hardware Solutions
+custom_js:
+  - /assets/js/custom/p_services_5_hardware.js
 ---
 <style>
   .hero-section {
@@ -195,30 +197,3 @@ slogan: Innovation in Hardware Solutions
       </div>
   </div>
 </div>
-
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  $(document).ready(function() {
-      // Smooth scrolling
-      $('a[href^="#"]').on('click', function(event) {
-          event.preventDefault();
-          var target = $(this.getAttribute('href'));
-          if(target.length) {
-              $('html, body').animate({
-                  scrollTop: target.offset().top - 70
-              }, 1000);
-          }
-      });
-
-      // Form submission
-      $('#contactForm').on('submit', function(e) {
-          e.preventDefault();
-          // Add form handling logic here
-          alert('Thank you for your message. We will contact you soon!');
-          $('#contactModal').modal('hide');
-          this.reset();
-      });
-  });
-</script>
