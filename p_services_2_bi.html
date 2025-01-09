@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Business Intelligence & Data Analytics Solutions
-permalink: /services/business-intelligence-and-analytics
+permalink: /services/business-intelligence-and-analytics 
 description: Transform your business data into actionable insights with our advanced Business Intelligence and Analytics solutions. Custom BI dashboards for real-time visualization and informed decision-making.
 custom_js:
   - /assets/js/custom/p_services_2_bi.js
@@ -121,8 +121,53 @@ custom_js:
                 <a href="#contact" class="btn btn-light btn-lg">Schedule a Demo</a>
             </div>
             <div class="col-lg-6">
-                <img src="/api/placeholder/600/400" alt="Business Intelligence Dashboard"
-                    class="img-fluid rounded shadow">
+                <div class="carousel-wrapper">
+                    <div id="dashboardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="/assets/svg/dashboard1.svg" class="d-block w-100" alt="Business Intelligence Dashboard">
+                                <div class="carousel-caption-below">
+                                    <p class="text-light fw-medium mb-0">Business Intelligence Dashboard</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/svg/dashboard2.svg" class="d-block w-100" alt="Market Analysis Dashboard">
+                                <div class="carousel-caption-below">
+                                    <p class="text-light fw-medium mb-0">Market Analysis Dashboard</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/svg/dashboard3.svg" class="d-block w-100" alt="Real-time Analytics Dashboard">
+                                <div class="carousel-caption-below">
+                                    <p class="text-light fw-medium mb-0">Real-time Analytics Dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dashboardCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#dashboardCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                        <!-- Carousel indicators moved below caption -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
