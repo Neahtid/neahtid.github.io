@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+    <!-- Background -->
+    <rect width="600" height="400" fill="#ecf0f1" rx="10"/>
+    
+    <!-- Dashboard Container -->
+    <rect x="40" y="30" width="520" height="340" fill="white" rx="15" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))"/>
+    
+    <!-- Header -->
+    <rect x="40" y="30" width="520" height="60" fill="#8e44ad" rx="15 15 0 0"/>
+    <text x="60" y="65" font-family="Arial" font-size="18" fill="white">Real-time Analytics</text>
+    
+    <!-- World Map -->
+    <rect x="60" y="110" width="300" height="180" fill="#f5f6fa" rx="8"/>
+    <path d="M100 200 Q150 180, 200 190 T300 170" stroke="#8e44ad" fill="none" stroke-width="2"/>
+    <circle cx="150" cy="180" r="4" fill="#8e44ad"/>
+    <circle cx="250" cy="190" r="4" fill="#8e44ad"/>
+    <text x="80" y="140" font-family="Arial" font-size="14" fill="#666">Global Distribution</text>
+    
+    <!-- Right Side Stats -->
+    <rect x="380" y="110" width="160" height="50" fill="#f5f6fa" rx="8"/>
+    <rect x="380" y="175" width="160" height="50" fill="#f5f6fa" rx="8"/>
+    <rect x="380" y="240" width="160" height="50" fill="#f5f6fa" rx="8"/>
+    
+    <!-- Progress Bars -->
+    <rect x="60" y="310" width="480" height="40" fill="#f5f6fa" rx="6"/>
+    <rect x="60" y="310" width="360" height="40" fill="#8e44ad" rx="6" opacity="0.8"/>
+    <text x="70" y="335" font-family="Arial" font-size="14" fill="white">75% Target Achieved</text>
+</svg>

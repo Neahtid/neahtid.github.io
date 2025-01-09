@@ -18,5 +18,12 @@
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/formConfirmation.js"></script>
     <script src="/assets/js/main.js"></script>
+
+    <!-- custom scripts -->
+    {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+      <script src="{{ js_file | relative_url }}"></script>
+    {% endfor %}
+    {% endif %}
   </body>
 </html>

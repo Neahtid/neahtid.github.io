@@ -2,12 +2,13 @@
 <footer class="bg-dark text-white py-4">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <div><img src="/assets/img/neahtid-logo-720x300-gray.png" alt="Neahtid"></div>
+      <div class="col-md-3 order-3 order-md-1">
+        <hr class="d-md-none">
+        <h3>Neahtid</h3>
         <p>{{ page.slogan | default: site.slogan | default: "en-US" }}</p>
-        <p>© 2025 Neahtid. All rights reserved.</p>
+        <p>© 2025 All rights reserved.</p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 order-1 order-md-2">
         <h5>Know Our Services</h5>
         <ul>
           <li><a href="/services/web-applications">Web Applications & Digital Presence</a></li>
@@ -18,9 +19,16 @@
           <li><a href="/services/cybersecurity">Cybersecurity & Advanced Software</a></li>
         </ul>
       </div>
-      <div class="col-md-3 text-md-end">
-        <a href="#" class="text-light me-3">Privacy Policy</a>
-        <a href="#" class="text-light">Terms of Service</a>
+      <div class="col-md-4 order-2 order-md-3">
+        <hr class="d-md-none">
+        <div class="row">
+          <div class="col-6">
+            <a href="#" class="text-light me-3">Privacy Policy</a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="text-light">Terms of Service</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
