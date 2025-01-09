@@ -1,0 +1,340 @@
+---
+layout: page
+title: PWA App
+permalink: /pwa-details
+description: Minions App - Enterprise-grade Progressive Web Applications with BI dashboards, AI integration, and hardware capabilities
+---
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, #6366f1 0%, #2563eb 100%);
+        padding: 120px 0 80px;
+        color: white;
+    }
+
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+        background-color: #f8f9fa;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-card {
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+        border: none;
+        background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .demo-cta {
+        background-color: #4f46e5;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .demo-cta:hover {
+        background-color: #4338ca;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .tech-badge {
+        background-color: rgba(79, 70, 229, 0.1);
+        color: #4f46e5;
+        border-radius: 20px;
+        padding: 8px 16px;
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .screenshot {
+        border-radius: 15px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+    }
+
+    .screenshot:hover {
+        transform: translateY(-5px);
+    }
+
+    .integration-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #4f46e5;
+    }
+
+    .tabs-wrapper {
+        position: sticky;
+        top: 70px;
+        z-index: 100;
+        background-color: white;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <span class="badge bg-white text-primary mb-3">Enterprise-Grade PWA Solution</span>
+                <h1 class="display-4 fw-bold mb-4">Transform Your Business with Advanced PWA Technology</h1>
+                <p class="lead mb-4">Create powerful Progressive Web Applications with built-in BI dashboards, AI
+                    capabilities, and seamless hardware integration.</p>
+                <div class="d-flex gap-3">
+                    <a href="#demo" class="btn demo-cta">Try Live Demo</a>
+                    <a href="#features" class="btn btn-outline-light">Explore Features</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="/api/placeholder/600/400" alt="PWA.app Dashboard" class="img-fluid rounded shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Navigation -->
+<div class="tabs-wrapper">
+    <div class="container">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#bi-dashboards">BI Dashboards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ai-integration">AI Integration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#hardware">Hardware</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#security">Security</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <!-- BI Dashboards -->
+        <div id="bi-dashboards" class="row align-items-center mb-5 py-5">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Interactive BI Dashboards</h2>
+                <p class="lead mb-4">Transform your data into actionable insights with our powerful business
+                    intelligence dashboards.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">✓ Real-time data visualization</li>
+                    <li class="mb-3">✓ Custom KPI tracking</li>
+                    <li class="mb-3">✓ Interactive reports</li>
+                    <li class="mb-3">✓ Data drill-down capabilities</li>
+                </ul>
+                <div class="mt-4">
+                    <span class="tech-badge">Power BI Integration</span>
+                    <span class="tech-badge">Custom Charts</span>
+                    <span class="tech-badge">Data Export</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="/api/placeholder/600/400" alt="BI Dashboard Screenshot" class="img-fluid screenshot">
+            </div>
+        </div>
+
+        <!-- AI Integration -->
+        <div id="ai-integration" class="row align-items-center mb-5 py-5">
+            <div class="col-lg-6 order-lg-2">
+                <h2 class="mb-4">AI-Powered Features</h2>
+                <p class="lead mb-4">Enhance user experience with intelligent chatbots and AI-driven analytics.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">✓ Intelligent chatbot support</li>
+                    <li class="mb-3">✓ Predictive analytics</li>
+                    <li class="mb-3">✓ Natural language processing</li>
+                    <li class="mb-3">✓ Automated insights</li>
+                </ul>
+                <div class="mt-4">
+                    <span class="tech-badge">OpenAI Integration</span>
+                    <span class="tech-badge">Custom ML Models</span>
+                    <span class="tech-badge">Voice Recognition</span>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <img src="/api/placeholder/600/400" alt="AI Chat Interface" class="img-fluid screenshot">
+            </div>
+        </div>
+
+        <!-- Hardware Integration -->
+        <div id="hardware" class="row align-items-center mb-5 py-5">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Hardware Integration</h2>
+                <p class="lead mb-4">Seamlessly connect with device hardware for enhanced functionality.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">✓ Camera access and QR scanning</li>
+                    <li class="mb-3">✓ Digital lock control</li>
+                    <li class="mb-3">✓ Biometric authentication</li>
+                    <li class="mb-3">✓ GPS and location services</li>
+                </ul>
+                <div class="mt-4">
+                    <span class="tech-badge">IoT Ready</span>
+                    <span class="tech-badge">Bluetooth LE</span>
+                    <span class="tech-badge">NFC Support</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="/api/placeholder/600/400" alt="Hardware Integration Demo" class="img-fluid screenshot">
+            </div>
+        </div>
+
+        <!-- Security Features -->
+        <div id="security" class="row align-items-center py-5">
+            <div class="col-lg-6 order-lg-2">
+                <h2 class="mb-4">Enterprise-Grade Security</h2>
+                <p class="lead mb-4">Protect your data with advanced security features.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">✓ End-to-end encryption</li>
+                    <li class="mb-3">✓ Multi-factor authentication</li>
+                    <li class="mb-3">✓ Role-based access control</li>
+                    <li class="mb-3">✓ Audit logging</li>
+                </ul>
+                <div class="mt-4">
+                    <span class="tech-badge">OAuth 2.0</span>
+                    <span class="tech-badge">GDPR Compliant</span>
+                    <span class="tech-badge">SOC 2 Certified</span>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <img src="/api/placeholder/600/400" alt="Security Features" class="img-fluid screenshot">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Integrations Section -->
+<section id="integrations" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Powerful Integrations</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body text-center">
+                        <div class="integration-icon">📊</div>
+                        <h4>Data Sources</h4>
+                        <p>Connect with databases, spreadsheets, and APIs</p>
+                        <div class="mt-3">
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Excel</span>
+                            <span class="tech-badge">REST API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body text-center">
+                        <div class="integration-icon">🤖</div>
+                        <h4>AI Services</h4>
+                        <p>Integrate with leading AI and ML platforms</p>
+                        <div class="mt-3">
+                            <span class="tech-badge">ChatGPT</span>
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">Custom AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body text-center">
+                        <div class="integration-icon">🔒</div>
+                        <h4>Security Systems</h4>
+                        <p>Connect with access control and security systems</p>
+                        <div class="mt-3">
+                            <span class="tech-badge">Smart Locks</span>
+                            <span class="tech-badge">CCTV</span>
+                            <span class="tech-badge">Biometrics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Screenshots Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Responsive Design</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <img src="/api/placeholder/400/800" alt="Mobile View" class="img-fluid screenshot">
+                <p class="text-center mt-3">Mobile Experience</p>
+            </div>
+            <div class="col-md-4">
+                <img src="/api/placeholder/400/800" alt="Tablet View" class="img-fluid screenshot">
+                <p class="text-center mt-3">Tablet Experience</p>
+            </div>
+            <div class="col-md-4">
+                <img src="/api/placeholder/400/800" alt="Desktop View" class="img-fluid screenshot">
+                <p class="text-center mt-3">Desktop Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Demo Section -->
+<section id="demo" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Experience PWA.app Today</h2>
+        <p class="lead mb-4">Try our fully-featured demo and discover the potential of progressive web applications.</p>
+        <a href="https://minions.neahtid.com" target="_blank" class="btn demo-cta btn-lg">Launch Demo Platform</a>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Smooth scrolling
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            var target = $(this.hash);
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 100
+                }, 1000);
+            }
+        });
+
+        // Active nav item handling
+        $(window).on('scroll', function () {
+            var scrollPosition = $(window).scrollTop();
+
+            // Check each section's position and update nav accordingly
+            $('section').each(function () {
+                var currentSection = $(this);
+                var sectionTop = currentSection.offset().top - 120;
+                var sectionBottom = sectionTop + currentSection.height();
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    $('.nav-link').removeClass('active');
+                    $('a[href="#' + currentSection.attr('id') + '"]').addClass('active');
+                }
+            });
+        });
+
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+    });
+</script>

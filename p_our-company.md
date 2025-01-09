@@ -13,7 +13,7 @@ permalink: /our-company
 		Neahtid is a Research and Development company specializing in both hardware and software solutions. Our mission is to tackle complex engineering challenges and deliver cutting-edge technology across various sectors, including Fine-Tuning / LLM Reasoning, Home Automation, Security, and Remote Electrical Charging.
 		</div>
 		<div class="row">
-				Our team is composed of highly skilled professionals in Electronic, Electrical, and Software Engineering, as well as expert designers and managers. At Neahtid, we don't just utilize the latest technology; we pioneer and create it.
+				Our team is composed of highly skilled professionals in Electronic, Electrical, and Software Engineering, as well as expert designers and project managers. At Neahtid, we don't just utilize the latest technology; we pioneer and create it.
 		</div>
 	</div>
 </section>
