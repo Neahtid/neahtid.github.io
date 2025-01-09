@@ -44,14 +44,6 @@ layout: default
           {%- assign posts = site.posts | sort: 'date' | reverse -%}
           {%- for post in posts -%}
           <li class="list-group-item">
-          {% if page.url == post.url %}
-            <span>{{ post.title | escape }} </span>
-          {% else %}
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              {{ post.title | escape }} 
-            </a>
-          {% endif %}
-            <br>
             <small class="text-secondary">
               {%- assign date_format = site.minima.date_format | default: "%a %-d-%b-%Y %I:%M %p" -%}
               {%- assign mdate = post.date | date_to_xmlschema -%}
@@ -61,6 +53,14 @@ layout: default
                 {{ mdate | date: date_format }}
               {% endif %}
             </small>
+            <br>
+          {% if page.url == post.url %}
+            <span class="fw-bold">{{ post.title | escape }} </span>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ post.url }}" class="fw-bold">
+              {{ post.title | escape }} 
+            </a>
+          {% endif %}
           </li>
           {%- endfor -%}
         </ul>

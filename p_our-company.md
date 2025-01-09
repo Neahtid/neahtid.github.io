@@ -27,7 +27,7 @@ permalink: /our-company
 				</a>
 			</div>
 			<div class="col-12 col-md-4">
-				<a href="./software-hardware-solutions" class="contact-badge relations">
+				<a href="/our-products" class="contact-badge relations">
 					<h2>Software Solutions</h2>
 				</a>
 			</div>
