@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 64">
-    <!-- Retail Icon -->
-    <circle cx="160" cy="32" r="30" fill="#10b981" opacity="0.1"/>
-    <path d="M145 27 L175 27 L170 42 L150 42 Z" fill="none" stroke="#10b981" stroke-width="2"/>
-    <path d="M155 27 L155 22 L165 22 L165 27" stroke="#10b981" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="128 0 64 64" width="64" height="64">
+      <!-- Retail Icon -->
+      <circle cx="160" cy="32" r="30" fill="#10b981" opacity="0.1"/>
+      <path d="M145 27 L175 27 L170 42 L150 42 Z" fill="none" stroke="#10b981" stroke-width="2"/>
+      <path d="M155 27 L155 22 L165 22 L165 27" stroke="#10b981" stroke-width="2"/>
 </svg>
