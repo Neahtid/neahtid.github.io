@@ -2,15 +2,15 @@
 # Only the main Sass file needs front matter (the dashes are enough) 
 ---
 
-
 /* css */
 body {
 	color: #757575;
-	
+
 	.wrapper {
 		padding-top: 6rem;
 
-		header {		
+		header {
+
 			/* navigation */
 			.navbar {
 				padding: 0;
@@ -71,12 +71,75 @@ body {
 				color: black;
 				line-height: 1.8rem;
 				font-size: 1.2rem;
-				.entry-header{
+
+				.entry-header {
 					line-height: 1.9rem;
 					font-size: 1.3rem;
 					padding-bottom: 19px;
 				}
 
+			}
+		}
+
+		article.page {
+
+			.carousel-wrapper {
+				position: relative;
+				padding: 0 50px;
+				/* Make space for outside controls */
+			}
+
+			/* Position controls outside */
+			.carousel-control-prev {
+				left: -50px;
+				width: 40px;
+				background-color: #f8f9fa;
+				border-radius: 50%;
+				opacity: 1;
+				height: 40px;
+				top: 45%;
+			}
+
+			.carousel-control-next {
+				right: -50px;
+				width: 40px;
+				background-color: #f8f9fa;
+				border-radius: 50%;
+				opacity: 1;
+				height: 40px;
+				top: 45%;
+			}
+
+			/* Style control icons */
+			.carousel-control-prev-icon {
+				background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+			}
+
+			.carousel-control-next-icon {
+				background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+			}
+
+			/* Style image caption */
+			.carousel-caption-below {
+				text-align: center;
+				color: #333;
+				padding: 10px 0;
+				margin-bottom: 10px;
+			}
+
+			/* Reposition indicators */
+			.carousel-indicators {
+				position: relative;
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+
+			.carousel-indicators [data-bs-target] {
+				background-color: #666;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				margin: 0 5px;
 			}
 		}
 	}
@@ -86,45 +149,47 @@ body {
 			height: 45px;
 		}
 	}
-	
+
 	main.index {
+
 		/* section-arrow */
 		.section-arrow {
 			position: absolute;
 			z-index: 2;
 		}
-		
+
 		.section-arrow img {
 			height: 20px;
 		}
-		
+
 		.section-arrow-react {
 			position: relative;
 			cursor: pointer;
 			padding: 20px;
 		}
-		
+
 		.section-arrow-react:hover {
 			-webkit-animation: arrows 1s ease-in;
 			-moz-animation: arrows 1s ease-in;
 			-o-animation: arrows 1s ease-in;
 			animation: arrows 1s ease-in;
 		}
-		
+
 		.section-1 .section-arrow {
 			right: 12px;
 			top: 380px;
 		}
-		
+
 		.section-3 .section-arrow {
 			right: 12px;
 			top: 300px;
 		}
-		
+
 		.section-4 .section-arrow {
 			right: 12px;
 			top: 40px;
 		}
+
 		/* section 1*/
 		.section-1 {
 			position: relative;
@@ -133,18 +198,18 @@ body {
 			background-position: bottom center;
 			background-repeat: no-repeat;
 			min-height: 560px;
-	
+
 			text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 			color: #54595f;
 
 			.container {
 				padding: 90px 90px;
 			}
-		
+
 			h2 {
 				max-width: 45vw;
 			}
-		
+
 			h3 {
 				margin-top: 100px;
 				font-size: 20px;
@@ -152,20 +217,20 @@ body {
 				max-width: 50vw;
 			}
 		}
-	
-	
+
+
 		/* section 2 */
 		.section-2 {
 			background-color: #F4F4F4;
 			text-align: center;
 			padding: 50px;
-			
+
 			p {
 				margin-top: 12px;
 			}
 		}
-	
-	
+
+
 		/* section 3 */
 		.section-3 {
 			position: relative;
@@ -174,14 +239,14 @@ body {
 			img {
 				max-width: 100%;
 			}
-		
+
 			.infoblock {
 				padding: 60px 20px;
 			}
 		}
-	
-	
-	
+
+
+
 		/* section 4 */
 		.section-4 {
 			position: relative;
@@ -193,18 +258,18 @@ body {
 				width: 80%;
 				margin: 0 auto;
 			}
-		
+
 			.badges .badge h2 {
 				background-color: #E2E2E2;
 				padding: 5% 0;
 				font-size: 1.6em;
 			}
-		
+
 			.badges .badge img {
 				width: 100%;
 			}
 		}
-	
+
 		/* section 5 */
 		.section-5 {
 			background-color: #FAFAFA;
@@ -214,13 +279,13 @@ body {
 			a {
 				font-size: 14px;
 			}
-		
+
 			p.large-i i {
 				font-size: 20px;
 			}
 		}
-	
-	
+
+
 		/* section 6 */
 		.section-6 {
 			background-color: #F4F4F4;
@@ -701,8 +766,10 @@ fieldset.attend input.radio {
 	body {
 		background-color: #fff9ff;
 	}
+
 	li a {
-		padding-block: 1.5em; /* vertical padding to finger size */
+		padding-block: 1.5em;
+		/* vertical padding to finger size */
 	}
 
 	.section-1 {

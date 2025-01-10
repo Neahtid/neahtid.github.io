@@ -13,5 +13,5 @@
     <rect x="60" y="80" width="180" height="30" fill="#f1f5f9" rx="4"/>
     <rect x="60" y="120" width="280" height="10" fill="#e2e8f0" rx="2"/>
     <rect x="60" y="140" width="240" height="10" fill="#e2e8f0" rx="2"/>
-    <rect x="60" y="180" width="120" height="40" fill="#2563eb" rx="6"/>
+    <rect x="60" y="180" width="120" height="40" fill="#1f009f" rx="6"/>
 </svg>
