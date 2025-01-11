@@ -1,0 +1,63 @@
+<svg viewBox="0 0 600 400"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#212529;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#343a40;stop-opacity:1" />
+        </linearGradient>
+        <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" style="stop-color:#0dcaf0;stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color:#0dcaf0;stop-opacity:0" />
+        </radialGradient>
+    </defs>
+
+    <!-- Dark Background -->
+    <rect width="600" height="400" fill="url(#darkBg)" rx="8"/>
+
+    <!-- Central Hub -->
+    <circle cx="300" cy="200" r="100" fill="url(#glowGradient)"/>
+
+    <!-- Connection Lines -->
+    <g stroke="#0dcaf0" stroke-width="1" opacity="0.5">
+        <line x1="300" y1="200" x2="150" y2="100">
+            <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/>
+        </line>
+        <line x1="300" y1="200" x2="450" y2="100">
+            <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+        </line>
+        <line x1="300" y1="200" x2="150" y2="300">
+            <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/>
+        </line>
+        <line x1="300" y1="200" x2="450" y2="300">
+            <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.5s" repeatCount="indefinite"/>
+        </line>
+    </g>
+
+    <!-- Data Nodes -->
+    <g fill="#0dcaf0">
+        <circle cx="150" cy="100" r="20"/>
+        <circle cx="450" cy="100" r="20"/>
+        <circle cx="150" cy="300" r="20"/>
+        <circle cx="450" cy="300" r="20"/>
+    </g>
+
+    <!-- Labels -->
+    <g fill="#ffffff" font-family="Arial" font-size="12">
+        <text x="130" y="95">Sales</text>
+        <text x="430" y="95">Users</text>
+        <text x="120" y="295">Orders</text>
+        <text x="420" y="295">Analytics</text>
+    </g>
+
+    <!-- Animated Rings -->
+    <g fill="none" stroke="#0dcaf0" stroke-width="1">
+        <circle cx="300" cy="200" r="80">
+            <animate attributeName="r" values="80;90;80" dur="4s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="300" cy="200" r="60">
+            <animate attributeName="r" values="60;70;60" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+</svg>
