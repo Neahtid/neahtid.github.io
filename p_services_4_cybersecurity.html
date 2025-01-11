@@ -102,7 +102,53 @@ custom_js:
               </div>
           </div>
           <div class="col-lg-6">
-              <img src="/api/placeholder/600/400" alt="Cybersecurity Dashboard" class="img-fluid rounded shadow">
+            <div class="carousel-wrapper">
+                <div id="dashboardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img src="/assets/svg/p_services_4_digital_shield.svg" class="d-block w-100" alt="Digital Shield Services">
+                            <div class="carousel-caption-below">
+                                <p class="text-light fw-medium mb-0">Digital Shield Services</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/svg/p_services_4_data_protection.svg" class="d-block w-100" alt="Data Protection Monitoring">
+                            <div class="carousel-caption-below">
+                                <p class="text-light fw-medium mb-0">Data Protection Monitoring</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/svg/p_services_4_cyber_defense.svg" class="d-block w-100" alt="Cyber Defense Counseling">
+                            <div class="carousel-caption-below">
+                                <p class="text-light fw-medium mb-0">Cyber Defense Counseling</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#dashboardCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#dashboardCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                    <!-- Carousel indicators moved below caption -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
           </div>
       </div>
   </div>
