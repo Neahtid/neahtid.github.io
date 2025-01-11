@@ -34,19 +34,19 @@
     </g>
 
     <!-- Data Nodes -->
-    <g fill="#0dcaf0">
-        <circle cx="150" cy="100" r="20"/>
-        <circle cx="450" cy="100" r="20"/>
-        <circle cx="150" cy="300" r="20"/>
-        <circle cx="450" cy="300" r="20"/>
+    <g fill="#3dfaf0">
+        <circle cx="150" cy="100" r="40"/>
+        <circle cx="450" cy="100" r="40"/>
+        <circle cx="150" cy="300" r="40"/>
+        <circle cx="450" cy="300" r="40"/>
     </g>
 
     <!-- Labels -->
-    <g fill="#ffffff" font-family="Arial" font-size="12">
-        <text x="130" y="95">Sales</text>
-        <text x="430" y="95">Users</text>
-        <text x="120" y="295">Orders</text>
-        <text x="420" y="295">Analytics</text>
+    <g fill="#1f009f" font-family="Arial" font-size="16">
+        <text x="130" y="105">Sales</text>
+        <text x="430" y="105">Users</text>
+        <text x="125" y="305">Orders</text>
+        <text x="420" y="305">Analytics</text>
     </g>
 
     <!-- Animated Rings -->
