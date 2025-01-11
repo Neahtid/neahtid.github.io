@@ -152,28 +152,48 @@ body {
 
 	main.index {
 
+		section#services {
+			.card {
+				.card-img-top {
+					border: 1px solid fuchsia;
+					max-height: 235px;
+				}
+				h3 {
+					min-height: 200px;
+				}
+				p { 
+					color : black;
+					text-decoration: none;
+				}
+				.text-end{
+					margin-top: 1em;
+				}
+			}
+		}
+
 		/* section-arrow */
 		.section-arrow {
 			position: absolute;
 			z-index: 2;
+
+			img {
+				height: 20px;
+			}
+			.section-arrow-react {
+				position: relative;
+				cursor: pointer;
+				padding: 20px;
+			}
+	
+			.section-arrow-react:hover {
+				-webkit-animation: arrows 1s ease-in;
+				-moz-animation: arrows 1s ease-in;
+				-o-animation: arrows 1s ease-in;
+				animation: arrows 1s ease-in;
+			}
 		}
 
-		.section-arrow img {
-			height: 20px;
-		}
 
-		.section-arrow-react {
-			position: relative;
-			cursor: pointer;
-			padding: 20px;
-		}
-
-		.section-arrow-react:hover {
-			-webkit-animation: arrows 1s ease-in;
-			-moz-animation: arrows 1s ease-in;
-			-o-animation: arrows 1s ease-in;
-			animation: arrows 1s ease-in;
-		}
 
 		.section-1 .section-arrow {
 			right: 12px;
