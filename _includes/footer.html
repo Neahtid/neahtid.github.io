@@ -13,61 +13,62 @@
         <!-- Services Navigation Menu -->
         <nav class="services-menu">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item p-0">
-              <a href="/services/web-applications" class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+            <li class="list-group-item p-0 {% if page.url == '/services/web-applications' %}active{% endif %}">
+              <a href="/services/web-applications"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Web Applications &amp; Digital Presence</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
-                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
               </a>
             </li>
 
-            <li class="list-group-item p-0">
+            <li class="list-group-item p-0 {% if page.url == '/services/business-intelligence-and-analytics' %}active{% endif %}">
               <a href="/services/business-intelligence-and-analytics"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Business Intelligence &amp; Data Analytics</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
-                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
               </a>
             </li>
 
-            <li class="list-group-item p-0">
+            <li class="list-group-item p-0 {% if page.url == '/services/ai-and-automation' %}active{% endif %}">
               <a href="/services/ai-and-automation"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Artificial Intelligence &amp; Automation</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
-                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
               </a>
             </li>
 
-            <li class="list-group-item p-0">
+            <li class="list-group-item p-0 {% if page.url == '/services/cybersecurity' %}active{% endif %}">
               <a href="/services/cybersecurity"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Cybersecurity &amp; Advanced Software</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
-                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
               </a>
             </li>
 
-            <li class="list-group-item p-0">
+            <li class="list-group-item p-0 {% if page.url == '/services/hardware' %}active{% endif %}">
               <a href="/services/hardware"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Hardware Solutions</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
-                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
               </a>
             </li>
 
-            <li class="list-group-item p-0">
+            <li class="list-group-item p-0 {% if page.url == '/services/ecommerce' %}active{% endif %}">
               <a href="/services/ecommerce"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>E-Commerce Solutions</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
-                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
               </a>
             </li>
@@ -75,26 +76,64 @@
         </nav>
 
         <style>
+          /* Base styles */
+          .services-menu .list-group-item {
+              transition: all 0.2s ease-in-out;
+              border-left: 4px solid transparent;
+          }
+          
+          .services-menu .list-group-item a {
+              position: relative;
+              min-height: 3.5rem;
+          }
+          
+          /* Hover state */
           .services-menu .list-group-item:hover,
           .services-menu .list-group-item:active {
-            background-color: rgba(0, 0, 0, 0.03);
+              background-color: rgba(var(--bs-primary-rgb), 0.03);
           }
-
-          .services-menu .list-group-item a:hover {
-            color: var(--bs-primary) !important;
+          
+          .services-menu .list-group-item:hover a {
+              color: var(--bs-primary) !important;
           }
-
-          /* Increase touch target size on mobile */
+          
+          /* Active state */
+          .services-menu .list-group-item.active {
+              background-color: rgba(var(--bs-primary-rgb), 0.05);
+              border-left-color: var(--bs-primary);
+          }
+          
+          .services-menu .list-group-item.active a {
+              color: var(--bs-primary) !important;
+              font-weight: 500;
+          }
+          
+          .services-menu .list-group-item.active .menu-arrow {
+              color: var(--bs-primary);
+          }
+          
+          /* Arrow styles */
+          .menu-arrow {
+              color: #6c757d;
+              flex-shrink: 0;
+              transition: transform 0.2s ease;
+          }
+          
+          .services-menu .list-group-item:hover .menu-arrow {
+              transform: translateX(3px);
+          }
+          
+          /* Mobile optimization */
           @media (max-width: 768px) {
-            .services-menu .list-group-item a {
-              min-height: 3.5rem;
-            }
-
-            .services-menu .fa-chevron-right {
-              font-size: 0.8rem;
-            }
+              .services-menu .list-group-item {
+                  border-left-width: 3px;
+              }
+              
+              .services-menu .list-group-item a {
+                  padding-left: calc(1rem - 3px);
+              }
           }
-        </style>
+          </style>
       </div>
       <div class="col-md-4 order-2 order-md-3">
         <hr class="d-md-none">
