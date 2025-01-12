@@ -13,7 +13,7 @@ keywords: "Progressive Web Applications, Google Sheets Connected Apps, CI/CD Int
 slogan: Empowering innovation
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.neahtid.com" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "https://neahtid.github.io/assets/img/logo.png"
+logo: "https://www.neahtid.com/assets/img/logo.png"
 color_main: "#091C99"
 google_analytics: "G-GPW5FKMJWZ"
 
