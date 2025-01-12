@@ -7,7 +7,7 @@ body {
 	color: #757575;
 
 	.wrapper {
-		padding-top: 6rem;
+		padding-top: 3.6rem;
 		background-color: fuchsia;
 
 		header {
@@ -782,12 +782,13 @@ fieldset.attend input.radio {
 	/* Your CSS styles for smartphones in portrait */
 	body {
 		background-color: #fff9ff;
+
+		.hero-section {
+			padding-top: 90px;
+			padding-bottom: 60px;
+		}
 	}
 
-	li a {
-		padding-block: 1.5em;
-		/* vertical padding to finger size */
-	}
 
 	.section-1 {
 		background-position: -700px center;

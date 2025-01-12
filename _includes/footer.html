@@ -10,14 +10,91 @@
       </div>
       <div class="col-md-5 order-1 order-md-2">
         <h5>Know Our Services</h5>
-        <ul>
-          <li><a href="/services/web-applications">Web Applications & Digital Presence</a></li>
-          <li><a href="/services/business-intelligence-and-analytics">Business Intelligence & Data Analytics</a></li>
-          <li><a href="/services/ai-and-automation">Artificial Intelligence & Automation</a></li>
-          <li><a href="/services/cybersecurity">Cybersecurity & Advanced Software</a></li>
-          <li><a href="/services/hardware">Hardware Solutions</a></li>
-          <li><a href="/services/ecommerce">E-Commerce Solutions</a></li>
-        </ul>
+        <!-- Services Navigation Menu -->
+        <nav class="services-menu">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item p-0">
+              <a href="/services/web-applications" class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Web Applications &amp; Digital Presence</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="list-group-item p-0">
+              <a href="/services/business-intelligence-and-analytics"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Business Intelligence &amp; Data Analytics</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="list-group-item p-0">
+              <a href="/services/ai-and-automation"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Artificial Intelligence &amp; Automation</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="list-group-item p-0">
+              <a href="/services/cybersecurity"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Cybersecurity &amp; Advanced Software</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="list-group-item p-0">
+              <a href="/services/hardware"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Hardware Solutions</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="list-group-item p-0">
+              <a href="/services/ecommerce"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>E-Commerce Solutions</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <style>
+          .services-menu .list-group-item:hover,
+          .services-menu .list-group-item:active {
+            background-color: rgba(0, 0, 0, 0.03);
+          }
+
+          .services-menu .list-group-item a:hover {
+            color: var(--bs-primary) !important;
+          }
+
+          /* Increase touch target size on mobile */
+          @media (max-width: 768px) {
+            .services-menu .list-group-item a {
+              min-height: 3.5rem;
+            }
+
+            .services-menu .fa-chevron-right {
+              font-size: 0.8rem;
+            }
+          }
+        </style>
       </div>
       <div class="col-md-4 order-2 order-md-3">
         <hr class="d-md-none">
