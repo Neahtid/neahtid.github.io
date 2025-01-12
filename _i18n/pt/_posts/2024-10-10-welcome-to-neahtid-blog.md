@@ -4,6 +4,7 @@ title: Bem-vindo(a) à Neahtid, Inovando o Futuro com Tecnologia
 cover: cover.jpg
 date:   2024-10-01 10:10:10
 categories: en posts
+type: article
 ---
 <header class="entry-header">
 Bem-vindo(a) ao blog oficial de <strong>Neahtid</strong>! Estamos entusiasmados em tê-lo(a) aqui, neste espaço onde exploraremos as últimas tendências, inovações e estratégias tecnológicas que estão transformando o mundo. Como líderes de mercado, nossa missão é capacitar empresas com soluções tecnológicas que impulsionam a eficiência, a segurança e o crescimento.

@@ -42,8 +42,8 @@
 
   <!-- Facebook Open Graph -->
   <meta property="og:locale" content="{{ page.lang | default: site.lang | default: ' en-US' }}">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ page.title }} - {{ site.name }}">
+  <meta property="og:type" content="{{ page.type | default: 'website' }}">
+  <meta property="og:title" content="{{ page.title | default: site.slogan }} - {{ site.name }}">
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:site_name" content="{{ site.name }}">
@@ -51,7 +51,7 @@
   <!-- twitter card -->
   {%- if site.twitter_username -%}
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ page.title }} - {{ site.name }}">
+  <meta name="twitter:title" content="{{ page.title | default: site.slogan }} - {{ site.name }}">
   <meta name="twitter:description" content="{{ site.description }}">
   <meta name="twitter:site" content="{{ site.twitter_username }}">
   <meta name="twitter:image" content="{{ site.logo }}">

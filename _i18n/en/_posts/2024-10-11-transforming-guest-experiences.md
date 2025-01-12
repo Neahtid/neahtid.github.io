@@ -4,6 +4,7 @@ title: Transforming Guest Experiences, The Rise of Smart Hospitality Solutions
 cover: cover.jpg
 date: 2024-10-11 13:06:00
 categories: en posts
+type: article
 ---
 
 <header class="entry-header">
