@@ -23,7 +23,8 @@
               </a>
             </li>
 
-            <li class="list-group-item p-0 {% if page.url == '/services/business-intelligence-and-analytics' %}active{% endif %}">
+            <li
+              class="list-group-item p-0 {% if page.url == '/services/business-intelligence-and-analytics' %}active{% endif %}">
               <a href="/services/business-intelligence-and-analytics"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Business Intelligence &amp; Data Analytics</span>
@@ -78,62 +79,62 @@
         <style>
           /* Base styles */
           .services-menu .list-group-item {
-              transition: all 0.2s ease-in-out;
-              border-left: 4px solid transparent;
+            transition: all 0.2s ease-in-out;
+            border-left: 4px solid transparent;
           }
-          
+
           .services-menu .list-group-item a {
-              position: relative;
-              min-height: 3.5rem;
+            position: relative;
+            min-height: 3.5rem;
           }
-          
+
           /* Hover state */
           .services-menu .list-group-item:hover,
           .services-menu .list-group-item:active {
-              background-color: rgba(var(--bs-primary-rgb), 0.03);
+            background-color: rgba(var(--bs-primary-rgb), 0.03);
           }
-          
+
           .services-menu .list-group-item:hover a {
-              color: var(--bs-primary) !important;
+            color: var(--bs-primary) !important;
           }
-          
+
           /* Active state */
           .services-menu .list-group-item.active {
-              background-color: rgba(var(--bs-primary-rgb), 0.05);
-              border-left-color: var(--bs-primary);
+            background-color: rgba(var(--bs-primary-rgb), 0.05);
+            border-left-color: var(--bs-primary);
           }
-          
+
           .services-menu .list-group-item.active a {
-              color: var(--bs-primary) !important;
-              font-weight: 500;
+            color: var(--bs-primary) !important;
+            font-weight: 500;
           }
-          
+
           .services-menu .list-group-item.active .menu-arrow {
-              color: var(--bs-primary);
+            color: var(--bs-primary);
           }
-          
+
           /* Arrow styles */
           .menu-arrow {
-              color: #6c757d;
-              flex-shrink: 0;
-              transition: transform 0.2s ease;
+            color: #6c757d;
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
           }
-          
+
           .services-menu .list-group-item:hover .menu-arrow {
-              transform: translateX(3px);
+            transform: translateX(3px);
           }
-          
+
           /* Mobile optimization */
           @media (max-width: 768px) {
-              .services-menu .list-group-item {
-                  border-left-width: 3px;
-              }
-              
-              .services-menu .list-group-item a {
-                  padding-left: calc(1rem - 3px);
-              }
+            .services-menu .list-group-item {
+              border-left-width: 3px;
+            }
+
+            .services-menu .list-group-item a {
+              padding-left: calc(1rem - 3px);
+            }
           }
-          </style>
+        </style>
       </div>
       <div class="col-md-4 order-2 order-md-3">
         <hr class="d-md-none">
