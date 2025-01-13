@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+    <!-- Background -->
+    <rect width="600" height="400" fill="#f0f3f8" rx="10"/>
+
+    <!-- Main Dashboard Container -->
+    <rect x="40" y="30" width="520" height="340" fill="white" rx="12" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))"/>
+
+    <!-- Side Navigation -->
+    <rect x="40" y="30" width="70" height="340" fill="#2c3e50" rx="12 0 0 12"/>
+
+    <!-- Nav Icons -->
+    <rect x="55" y="60" width="40" height="40" fill="#34495e" rx="8"/>
+    <rect x="55" y="120" width="40" height="40" fill="#34495e" rx="8"/>
+    <rect x="55" y="180" width="40" height="40" fill="#34495e" rx="8"/>
+
+    <!-- Pie Chart -->
+    <circle cx="200" cy="150" r="60" fill="none" stroke="#e74c3c" stroke-width="30" stroke-dasharray="280 100"/>
+    <circle cx="200" cy="150" r="60" fill="none" stroke="#3498db" stroke-width="30" stroke-dasharray="100 280" stroke-dashoffset="-100"/>
+    <text x="170" y="240" font-family="Arial" font-size="14" fill="#666">Market Share</text>
+
+    <!-- Donut Chart -->
+    <circle cx="400" cy="150" r="60" fill="none" stroke="#2ecc71" stroke-width="30" stroke-dasharray="250 130"/>
+    <circle cx="400" cy="150" r="60" fill="none" stroke="#f1c40f" stroke-width="30" stroke-dasharray="130 250" stroke-dashoffset="-250"/>
+    <circle cx="400" cy="150" r="40" fill="white"/>
+    <text x="370" y="240" font-family="Arial" font-size="14" fill="#666">Revenue Sources</text>
+
+    <!-- Bottom Stats -->
+    <rect x="130" y="260" width="400" height="100" fill="#f8f9fa" rx="8"/>
+    <line x1="130" y1="280" x2="530" y2="280" stroke="#ddd" stroke-width="1"/>
+    <text x="150" y="310" font-family="Arial" font-size="20" fill="#2c3e50">Weekly Stats</text>
+    <text x="150" y="330" font-family="Arial" font-size="14" fill="#666">+28% Growth</text>
+</svg>

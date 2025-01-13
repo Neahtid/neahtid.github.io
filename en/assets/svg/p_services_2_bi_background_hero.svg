@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f009f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3311bf;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="glow" />
+      <feComposite in="SourceGraphic" in2="glow" operator="over" />
+    </filter>
+
+    <!-- Animation definitions -->
+    <path id="wavePath" d="M0,100 Q480,0 960,100 T1920,100" />
+
+    <!-- Patterns -->
+    <pattern id="smallDots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#ffffff" fill-opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+
+  <!-- Dot pattern overlay -->
+  <rect width="100%" height="100%" fill="url(#smallDots)" />
+
+  <!-- Animated elements -->
+  <g>
+    <!-- Flowing data streams -->
+    <g opacity="0.2">
+      <path d="M0,150 Q480,50 960,150 T1920,150" fill="none" stroke="#ffffff" stroke-width="2">
+        <animate attributeName="d" dur="20s" repeatCount="indefinite" values="M0,150 Q480,50 960,150 T1920,150;
+                         M0,150 Q480,250 960,150 T1920,150;
+                         M0,150 Q480,50 960,150 T1920,150" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      </path>
+      <path d="M0,250 Q480,350 960,250 T1920,250" fill="none" stroke="#ffffff" stroke-width="2">
+        <animate attributeName="d" dur="15s" repeatCount="indefinite" values="M0,250 Q480,350 960,250 T1920,250;
+                         M0,250 Q480,150 960,250 T1920,250;
+                         M0,250 Q480,350 960,250 T1920,250" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      </path>
+    </g>
+
+    <!-- Animated chart elements -->
+    <g transform="translate(100,400)" opacity="0.15">
+      <rect x="0" y="0" width="20" height="60" fill="#ffffff">
+        <animate attributeName="height" values="60;40;60" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="30" y="0" width="20" height="40" fill="#ffffff">
+        <animate attributeName="height" values="40;60;40" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="60" y="0" width="20" height="50" fill="#ffffff">
+        <animate attributeName="height" values="50;30;50" dur="4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Floating particles -->
+    <g filter="url(#glow)">
+      <circle cx="300" cy="200" r="2" fill="#ffffff" opacity="0.6">
+        <animate attributeName="cy" values="200;180;200" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1600" cy="300" r="2" fill="#ffffff" opacity="0.6">
+        <animate attributeName="cy" values="300;280;300" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="800" cy="400" r="2" fill="#ffffff" opacity="0.6">
+        <animate attributeName="cy" values="400;380;400" dur="5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Data connection lines -->
+    <g opacity="0.1">
+      <line x1="200" y1="100" x2="400" y2="300" stroke="#ffffff" stroke-width="1">
+        <animate attributeName="x2" values="400;420;400" dur="6s" repeatCount="indefinite"/>
+      </line>
+      <line x1="1500" y1="200" x2="1700" y2="400" stroke="#ffffff" stroke-width="1">
+        <animate attributeName="x2" values="1700;1720;1700" dur="7s" repeatCount="indefinite"/>
+      </line>
+    </g>
+  </g>
+
+  <!-- Abstract shapes -->
+  <g opacity="0.05">
+    <circle cx="1800" cy="100" r="150" fill="#ffffff"/>
+    <circle cx="100" cy="500" r="100" fill="#ffffff"/>
+  </g>
+</svg>
