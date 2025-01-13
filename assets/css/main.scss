@@ -84,6 +84,24 @@ body {
 
 		article.page {
 
+			section#products {
+				.card {
+					.card-img-top {
+						max-height: 235px;
+					}
+					h3 {
+						min-height: 50px;
+					}
+					p { 
+						color : black;
+						text-decoration: none;
+					}
+					.text-end{
+						margin-top: 1em;
+					}
+				}
+			}
+
 			.carousel-wrapper {
 				position: relative;
 				padding: 0 50px;
