@@ -137,138 +137,6 @@ custom_js:
       transform: translateY(-2px);
   }
 </style>
-<style>
-  /* Custom styles */
-  :root {
-      --primary-color: #1a73e8;
-      --secondary-color: #34a853;
-      --dark-color: #202124;
-      --light-color: #f8f9fa;
-  }
-
-  .hero-section {
-      background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
-      min-height: 60vh;
-      display: flex;
-      align-items: center;
-      color: white;
-      position: relative;
-      overflow: hidden;
-  }
-
-  /* Hero Background Animation */
-  .hero-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-  }
-
-  .hero-bg circle {
-      fill: rgba(255, 255, 255, 0.03);
-      animation: pulse 4s infinite;
-  }
-
-  .hero-bg path {
-      stroke: rgba(255, 255, 255, 0.05);
-      stroke-width: 1;
-      fill: none;
-      animation: draw 15s infinite linear;
-  }
-
-  @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 0.3; }
-      50% { transform: scale(1.2); opacity: 0.5; }
-  }
-
-  @keyframes draw {
-      from { stroke-dashoffset: 1000; }
-      to { stroke-dashoffset: 0; }
-  }
-
-  /* Hero Illustration Animation */
-  .hero-illustration {
-      animation: float 6s infinite ease-in-out;
-  }
-
-  @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-  }
-
-  .hero-content {
-      position: relative;
-      z-index: 2;
-  }
-
-  .service-card {
-      border-radius: 15px;
-      transition: transform 0.3s ease;
-      background: white;
-      border: none;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      height: 100%;
-  }
-
-  .service-card:hover {
-      transform: translateY(-5px);
-  }
-
-  .service-icon {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 1rem;
-  }
-
-  .service-icon path {
-      fill: var(--primary-color);
-  }
-
-  /* Mobile Accordion Styles */
-  @media (max-width: 768px) {
-      .service-grid {
-          display: none;
-      }
-      
-      .service-accordion {
-          display: block !important;
-      }
-  }
-
-  @media (min-width: 769px) {
-      .service-accordion {
-          display: none !important;
-      }
-  }
-
-  .accordion-button:not(.collapsed) {
-      background-color: var(--primary-color);
-      color: white;
-  }
-
-  .accordion-collapse {
-      transition: height 0.35s ease;
-  }
-
-  .cta-button {
-      background: var(--primary-color);
-      color: white;
-      padding: 10px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      display: inline-block;
-      margin-top: 1rem;
-  }
-
-  .cta-button:hover {
-      background: var(--secondary-color);
-      color: white;
-      transform: translateY(-2px);
-  }
-</style>
 <!-- Hero Section -->
 <section class="hero-section">
   <!-- Animated Background -->
@@ -461,7 +329,7 @@ custom_js:
                   </svg>
                   <h3>Web Applications & Software Solutions</h3>
                   <p>Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success.</p>
-                  <a href="/en/web-applications-and-software-solutions" class="cta-button">Learn More</a>
+                  <a href="/services/web-applications-and-software-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -473,7 +341,7 @@ custom_js:
                   </svg>
                   <h3>Business Intelligence & Data Analytics</h3>
                   <p>Transform raw data into actionable insights with real-time dashboards for informed decision-making.</p>
-                  <a href="/en/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
+                  <a href="/services/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -485,7 +353,7 @@ custom_js:
                   </svg>
                   <h3>Artificial Intelligence & Automation</h3>
                   <p>Boost efficiency with chatbots and AI-powered automations that transform customer service and streamline operations.</p>
-                  <a href="/en/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
+                  <a href="/services/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -497,7 +365,7 @@ custom_js:
                   </svg>
                   <h3>Cybersecurity Solutions</h3>
                   <p>State-of-the-art security solutions including penetration testing, ethical hacking, and comprehensive security monitoring.</p>
-                  <a href="/en/cybersecurity-solutions" class="cta-button">Learn More</a>
+                  <a href="/services/cybersecurity-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -509,7 +377,7 @@ custom_js:
                   </svg>
                   <h3>Hardware Solutions</h3>
                   <p>Transform your business operations with custom automation systems, smart sensors/cameras monitoring and energy-efficient controls.</p>
-                  <a href="/en/hardware-solutions" class="cta-button">Learn More</a>
+                  <a href="/services/hardware-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -521,7 +389,7 @@ custom_js:
                   </svg>
                   <h3>E-Commerce Solutions</h3>
                   <p>Launch and scale your online business with white-label e-commerce solutions integrated with payment and inventory management.</p>
-                  <a href="/en/e-commerce-solutions" class="cta-button">Learn More</a>
+                  <a href="/services/e-commerce-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -541,7 +409,7 @@ custom_js:
           <div id="webAppAccordion" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success.</p>
-                  <a href="/en/web-applications-and-software-solutions" class="cta-button">Learn More</a>
+                  <a href="/services/web-applications-and-software-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -556,7 +424,7 @@ custom_js:
           <div id="biAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Transform raw data into actionable insights with real-time dashboards for informed decision-making.</p>
-                  <a href="/en/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
+                  <a href="/services/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -571,7 +439,7 @@ custom_js:
           <div id="aiAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Boost efficiency with chatbots and AI-powered automations that transform customer service and streamline operations.</p>
-                  <a href="/en/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
+                  <a href="/services/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -586,7 +454,7 @@ custom_js:
           <div id="securityAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>State-of-the-art security solutions including penetration testing, ethical hacking, and comprehensive security monitoring.</p>
-                  <a href="/en/cybersecurity-solutions" class="cta-button">Learn More</a>
+                  <a href="/services/cybersecurity-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -601,7 +469,7 @@ custom_js:
           <div id="hardwareAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Transform your business operations with custom automation systems, smart sensors/cameras monitoring and energy-efficient controls.</p>
-                  <a href="/en/hardware-solutions" class="cta-button">Learn More</a>
+                  <a href="/services/hardware-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -616,7 +484,7 @@ custom_js:
           <div id="ecommerceAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Launch and scale your online business with white-label e-commerce solutions integrated with payment and inventory management.</p>
-                  <a href="/en/e-commerce-solutions" class="cta-button">Learn More</a>
+                  <a href="/services/e-commerce-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
