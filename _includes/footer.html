@@ -8,6 +8,7 @@
         <p>{{ page.slogan | default: site.slogan | default: "en-US" }}</p>
         <p>© 2025 All rights reserved.</p>
       </div>
+      {% if page.url != '/services' %}
       <div class="col-md-5 order-1 order-md-2">
         <h5>Know Our Services</h5>
         <!-- Services Navigation Menu -->
@@ -136,11 +137,15 @@
           }
         </style>
       </div>
+      {% endif %}
       <div class="col-md-4 order-2 order-md-3">
         <hr class="d-md-none">
         <div class="row">
           <div class="col-6">
-            <a href="#" class="text-light me-3">Privacy Policy</a>
+            <a href="/{{ site.lang }}/privacy-policy/" class="text-light me-3">
+              Privacy Policy ({{ site.lang }})
+            </a>
+            <a href="/{{ site.baseurl }}/privacy-policy/">Privacy Policy ({{ site.lang }})</a>
           </div>
           <div class="col-6">
             <a href="#" class="text-light">Terms of Service</a>

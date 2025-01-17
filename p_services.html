@@ -2,311 +2,429 @@
 layout: page
 title: Services
 permalink: /services
+custom_js:
+- /assets/js/custom/p_services.js
 ---
-
-<!-- Custom CSS (optional) -->
 <style>
+  /* Custom styles */
+  :root {
+      --primary-color: #1a73e8;
+      --secondary-color: #34a853;
+      --dark-color: #202124;
+      --light-color: #f8f9fa;
+  }
+
+  .hero-section {
+      background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+  }
+
+  /* Hero Background Animation */
+  .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+  }
+
+  .hero-bg circle {
+      fill: rgba(255, 255, 255, 0.03);
+      animation: pulse 4s infinite;
+  }
+
+  .hero-bg path {
+      stroke: rgba(255, 255, 255, 0.05);
+      stroke-width: 1;
+      fill: none;
+      animation: draw 15s infinite linear;
+  }
+
+  @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.3; }
+      50% { transform: scale(1.2); opacity: 0.5; }
+  }
+
+  @keyframes draw {
+      from { stroke-dashoffset: 1000; }
+      to { stroke-dashoffset: 0; }
+  }
+
+  /* Hero Illustration Animation */
+  .hero-illustration {
+      animation: float 6s infinite ease-in-out;
+  }
+
+  @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+  }
+
+  .hero-content {
+      position: relative;
+      z-index: 2;
+  }
+
   .service-card {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      background: white;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      height: 100%;
   }
 
-  .service-card h4 {
-    color: #1f009f;
+  .service-card:hover {
+      transform: translateY(-5px);
   }
 
-  .service-card p {
-    font-size: 1.1rem;
+  .service-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
   }
 
-  .service-card .btn-primary {
-    background-color: #007bff;
-    border: none;
+  .service-icon path {
+      fill: var(--primary-color);
   }
 
-  .service-card .btn-primary:hover {
-    background-color: #1f009f;
+  /* Mobile Accordion Styles */
+  @media (max-width: 768px) {
+      .service-grid {
+          display: none;
+      }
+      
+      .service-accordion {
+          display: block !important;
+      }
+  }
+
+  @media (min-width: 769px) {
+      .service-accordion {
+          display: none !important;
+      }
+  }
+
+  .accordion-button:not(.collapsed) {
+      background-color: var(--primary-color);
+      color: white;
+  }
+
+  .accordion-collapse {
+      transition: height 0.35s ease;
+  }
+
+  .cta-button {
+      background: var(--primary-color);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+  }
+
+  .cta-button:hover {
+      background: var(--secondary-color);
+      color: white;
+      transform: translateY(-2px);
   }
 </style>
 
-<!-- Header -->
-<header class="bg-primary text-white text-center py-5">
-  <div class="container">
-    <h1 class="display-4">Our Services</h1>
-    <p class="lead">We offer a variety of IT solutions tailored to help your business grow</p>
+<!-- Hero Section -->
+<section class="hero-section">
+  <!-- Animated Background -->
+  <svg class="hero-bg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+      <circle cx="100" cy="100" r="50" />
+      <circle cx="900" cy="200" r="100" />
+      <circle cx="500" cy="500" r="150" />
+      <path d="M0,500 Q250,400 500,500 T1000,500" stroke-dasharray="1000" />
+      <path d="M0,600 Q250,500 500,600 T1000,600" stroke-dasharray="1000" />
+      <path d="M0,400 Q250,300 500,400 T1000,400" stroke-dasharray="1000" />
+  </svg>
+  
+  <div class="container py-5 hero-content">
+      <div class="row align-items-center">
+          <div class="col-lg-6">
+              <h1 class="display-4 fw-bold mb-4">Professional Services</h1>
+              <p class="lead mb-4">Empowering businesses with cutting-edge technology solutions for sustainable growth and innovation.</p>
+          </div>
+          <div class="col-lg-6">
+              <!-- Tech Illustration -->
+              <svg class="hero-illustration w-100" viewBox="0 0 500 400">
+                  <!-- Connected Nodes Illustration -->
+                  <g fill="none" stroke="white" stroke-width="2">
+                      <circle cx="250" cy="200" r="60" />
+                      <circle cx="150" cy="150" r="40" />
+                      <circle cx="350" cy="150" r="40" />
+                      <circle cx="150" cy="250" r="40" />
+                      <circle cx="350" cy="250" r="40" />
+                      
+                      <line x1="190" y1="150" x2="240" y2="175" />
+                      <line x1="310" y1="150" x2="260" y2="175" />
+                      <line x1="190" y1="250" x2="240" y2="225" />
+                      <line x1="310" y1="250" x2="260" y2="225" />
+                      
+                      <!-- Animated Data Points -->
+                      <circle cx="215" cy="162" r="3" fill="white">
+                          <animate attributeName="cx" values="190,240,190" dur="3s" repeatCount="indefinite" />
+                          <animate attributeName="cy" values="150,175,150" dur="3s" repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="285" cy="162" r="3" fill="white">
+                          <animate attributeName="cx" values="310,260,310" dur="4s" repeatCount="indefinite" />
+                          <animate attributeName="cy" values="150,175,150" dur="4s" repeatCount="indefinite" />
+                      </circle>
+                  </g>
+              </svg>
+          </div>
+      </div>
   </div>
-</header>
+</section>
 
-<main class="container py-5">
-  <section class="mb-5">
-    <h2>Web Applications & Digital Presence</h2>
-    <p>"Our web application and digital presence services are tailored to address the unique needs of B2B industries,
-      including hospitality. For hotels, we offer Progressive Web Applications (PWAs) that integrate seamless booking
-      systems and payment solutions. We also specialize in creating visually compelling and high-converting websites
-      that enhance brand visibility and drive customer engagement. These solutions ensure a robust digital presence,
-      optimized for efficiency and growth."</p>
-    <img src="https://source.unsplash.com/800x400/?web,development" class="img-fluid rounded mb-3"
-      alt="Web Application Creation">
+<!-- Services Grid Section -->
+<section class="service-grid py-5">
+  <div class="container">
+      <div class="row g-4">
+          <!-- Web Applications Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card p-4">
+                  <svg class="service-icon" viewBox="0 0 24 24">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
+                  </svg>
+                  <h3>Web Applications & Software Solutions</h3>
+                  <p>Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success.</p>
+                  <a href="/en/web-applications-and-software-solutions" class="cta-button">Learn More</a>
+              </div>
+          </div>
 
-    <div class="row">
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Creation of Virtual Store / Dropshipping Store</h4>
-          <p>We help you build robust and scalable e-commerce stores. Whether you're starting your online store or
-            looking for a dropshipping solution, we've got you covered.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Fully customizable design</li>
-            <li>Secure payment gateway integration</li>
-            <li>Optimized for fast sales growth</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
+          <!-- Business Intelligence Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card p-4">
+                  <svg class="service-icon" viewBox="0 0 24 24">
+                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                  </svg>
+                  <h3>Business Intelligence & Data Analytics</h3>
+                  <p>Transform raw data into actionable insights with real-time dashboards for informed decision-making.</p>
+                  <a href="/en/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
+              </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Creation of PWA Apps</h4>
-          <p>We build Progressive Web Apps (PWAs) that provide a native app-like experience on the web. PWAs combine the
-            best of web and mobile apps, delivering high performance and offline access.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Fast and reliable web apps</li>
-            <li>Offline functionality for users</li>
-            <li>Seamless integration with existing websites</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Creation of Apps Connected with Google Spreadsheets</h4>
-          <p>We develop custom applications that integrate with Google Spreadsheets, allowing you to automate workflows,
-            sync data, and manage operations more efficiently.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Streamlined data management through app integration</li>
-            <li>Real-time data syncing with Google Sheets</li>
-            <li>Custom solutions tailored to your business needs</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Cybersecurity and cryptography</h4>
-          <p>We offer Digital Security, pentesting, secure protocols, and behavioral pattern analysis.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>We use symmetric or asymmetric encryption systems.</li>
-            <li>Data anonymization.</li>
-            <li>Zero knowledge proff, openssl, pycrypto.</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
+          <!-- AI & Automation Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card p-4">
+                  <svg class="service-icon" viewBox="0 0 24 24">
+                      <path d="M21 11c0-4.97-4.03-9-9-9s-9 4.03-9 9c0 3.92 2.51 7.24 6 8.48V22h2v-2.06c.33.06.66.06 1 .06s.67 0 1-.06V22h2v-2.52c3.49-1.24 6-4.56 6-8.48zm-9 7c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
+                  </svg>
+                  <h3>Artificial Intelligence & Automation</h3>
+                  <p>Boost efficiency with chatbots and AI-powered automations that transform customer service and streamline operations.</p>
+                  <a href="/en/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
+              </div>
           </div>
-        </div>
+
+          <!-- Cybersecurity Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card p-4">
+                  <svg class="service-icon" viewBox="0 0 24 24">
+                      <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                  </svg>
+                  <h3>Cybersecurity Solutions</h3>
+                  <p>State-of-the-art security solutions including penetration testing, ethical hacking, and comprehensive security monitoring.</p>
+                  <a href="/en/cybersecurity-solutions" class="cta-button">Learn More</a>
+              </div>
+          </div>
+
+          <!-- Hardware Solutions Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card p-4">
+                  <svg class="service-icon" viewBox="0 0 24 24">
+                      <path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+                  </svg>
+                  <h3>Hardware Solutions</h3>
+                  <p>Transform your business operations with custom automation systems, smart sensors/cameras monitoring and energy-efficient controls.</p>
+                  <a href="/en/hardware-solutions" class="cta-button">Learn More</a>
+              </div>
+          </div>
+
+          <!-- E-Commerce Card -->
+          <div class="col-md-6 col-lg-4">
+              <div class="service-card p-4">
+                  <svg class="service-icon" viewBox="0 0 24 24">
+                      <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                  </svg>
+                  <h3>E-Commerce Solutions</h3>
+                  <p>Launch and scale your online business with white-label e-commerce solutions integrated with payment and inventory management.</p>
+                  <a href="/en/e-commerce-solutions" class="cta-button">Learn More</a>
+              </div>
+          </div>
       </div>
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Website Error Fix / Monthly Maintenance Service</h4>
-          <p>We offer ongoing support and maintenance to ensure that your website runs smoothly. Whether it's fixing
-            errors or monthly updates, we provide you with peace of mind.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Prompt error resolution and bug fixes</li>
-            <li>Regular updates and maintenance to keep your site secure</li>
-            <li>Dedicated support to ensure smooth operation</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
+  </div>
+</section>
+
+<!-- Mobile Accordion -->
+<section class="service-accordion container py-5">
+  <div class="accordion" id="servicesAccordion">
+      <!-- Web Applications Accordion Item -->
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#webAppAccordion" aria-expanded="true" aria-controls="webAppAccordion">
+                  Web Applications & Software Solutions
+              </button>
+          </h2>
+          <div id="webAppAccordion" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                  <p>Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success.</p>
+                  <a href="/en/web-applications-and-software-solutions" class="cta-button">Learn More</a>
+              </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Website Error Fix / Monthly Maintenance Service</h4>
-          <p>We offer ongoing support and maintenance to ensure that your website runs smoothly. Whether it's fixing
-            errors or monthly updates, we provide you with peace of mind.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Prompt error resolution and bug fixes</li>
-            <li>Regular updates and maintenance to keep your site secure</li>
-            <li>Dedicated support to ensure smooth operation</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Excel Spreadsheet Creation and Correction</h4>
-          <p>We provide professional Excel services, including creating spreadsheets for data analysis, calculations,
-            and
-            custom templates. We can also correct and optimize your existing spreadsheets.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Expert handling of complex formulas</li>
-            <li>Custom spreadsheets tailored to your needs</li>
-            <li>Optimization and error correction for existing files</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
+      <!-- Business Intelligence Accordion Item -->
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#biAccordion" aria-expanded="false" aria-controls="biAccordion">
+                  Business Intelligence & Data Analytics
+              </button>
+          </h2>
+          <div id="biAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                  <p>Transform raw data into actionable insights with real-time dashboards for informed decision-making.</p>
+                  <a href="/en/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
+              </div>
           </div>
-        </div>
       </div>
 
-    </div>
-  </section>
-  <hr>
-  <section class="mb-5">
-    <h2>Hardware Services</h2>
-    <p>IoT applications for security and automation.</p>
-    <img src="https://source.unsplash.com/800x400/?iot,devices" class="img-fluid rounded mb-3"
-      alt="IoT Hardware Solutions">
-
-    <div class="row">
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Software for robotics</h4>
-          <p>We help you with the programming of automated tasks, internal control systems, and land surveying with
-            drones.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>....</li>
-            <li>....</li>
-            <li>....</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
+      <!-- AI & Automation Accordion Item -->
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aiAccordion" aria-expanded="false" aria-controls="aiAccordion">
+                  Artificial Intelligence & Automation
+              </button>
+          </h2>
+          <div id="aiAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                  <p>Boost efficiency with chatbots and AI-powered automations that transform customer service and streamline operations.</p>
+                  <a href="/en/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
+              </div>
           </div>
-        </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Artificial Intelligence Models</h4>
-          <p>We create artificial intelligence models to help you interact with your customers, create business
-            intelligence dashboards that help you make business decisions.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Podemos crear algoritmos de visión por computador.</li>
-            <li>Experiencia en el control de motores, actuadores o sensores</li>
-            <li>Adaptamos modelos de inteligencia artificial a las necesidades de tu negocio.</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
+      <!-- Cybersecurity Accordion Item -->
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#securityAccordion" aria-expanded="false" aria-controls="securityAccordion">
+                  Cybersecurity Solutions
+              </button>
+          </h2>
+          <div id="securityAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                  <p>State-of-the-art security solutions including penetration testing, ethical hacking, and comprehensive security monitoring.</p>
+                  <a href="/en/cybersecurity-solutions" class="cta-button">Learn More</a>
+              </div>
           </div>
-        </div>
       </div>
 
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Scientific Software and Simulations</h4>
-          <p>Performing simulations of molecular behavior, astronomical simulations using Big Data.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
+      <!-- Hardware Solutions Accordion Item -->
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hardwareAccordion" aria-expanded="false" aria-controls="hardwareAccordion">
+                  Hardware Solutions
+              </button>
+          </h2>
+          <div id="hardwareAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                  <p>Transform your business operations with custom automation systems, smart sensors/cameras monitoring and energy-efficient controls.</p>
+                  <a href="/en/hardware-solutions" class="cta-button">Learn More</a>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
 
+      <!-- E-Commerce Accordion Item -->
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ecommerceAccordion" aria-expanded="false" aria-controls="ecommerceAccordion">
+                  E-Commerce Solutions
+              </button>
+          </h2>
+          <div id="ecommerceAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+              <div class="accordion-body">
+                  <p>Launch and scale your online business with white-label e-commerce solutions integrated with payment and inventory management.</p>
+                  <a href="/en/e-commerce-solutions" class="cta-button">Learn More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
-  </section>
-  <hr>
-  <section>
-    <h2>Corporate Image & Web Design</h2>
-    <p>Custom corporate image is the manner in which your corporation,
-      firm or business enterprise presents to the public.
-      Our corporate identity solutions include landing pages, banners, logos, and more.</p>
-    <img src="https://source.unsplash.com/800x400/?web,design" class="img-fluid rounded mb-3" alt="Web Design Services">
-
-    <div class="row">
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Corporate Image / Logo Creation / Branding</h4>
-          <p>Our team of expert designers will create a unique and professional logo that represents your brand
-            identity.
-            We focus on crafting a visual presence that makes a lasting impression.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Personalized design tailored to your business</li>
-            <li>High-quality graphics and branding materials</li>
-            <li>Experienced designers with a creative touch</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Creation of Institutional / Personal Website</h4>
-          <p>We specialize in creating responsive and professional websites that reflect your brand's personality. From
-            personal sites to business websites with features like appointment scheduling and WhatsApp redirection, we
-            do it all.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Custom designs for businesses and individuals</li>
-            <li>Appointment scheduling integration</li>
-            <li>Seamless WhatsApp integration for customer support</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Creation of Banners for Social Networks</h4>
-          <p>We design eye-catching banners for social media, boosting your brand's visibility and helping you reach a
-            wider audience through online advertising pieces.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Creative and attention-grabbing designs</li>
-            <li>Optimized for all social media platforms</li>
-            <li>Increased brand engagement and reach</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="service-card">
-          <h4>Landing Page Creation</h4>
-          <p>We create high-converting landing pages that capture leads and drive sales. Our designs are optimized for
-            user experience and effective marketing strategies.</p>
-          <p><strong>Advantages of working with us:</strong></p>
-          <ul>
-            <li>Conversion-focused design</li>
-            <li>Mobile-friendly and responsive pages</li>
-            <li>Fast loading times for better performance</li>
-          </ul>
-          <div class="d-flex justify-content-center">
-            <a href="/contact-us" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebPage",
+"name": "Professional IT Services",
+"description": "Comprehensive IT services including web development, business intelligence, AI solutions, cybersecurity, hardware solutions, and e-commerce platforms.",
+"provider": {
+  "@type": "Organization",
+  "name": "IT Company"
+},
+"offers": {
+  "@type": "AggregateOffer",
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Web Applications & Software Solutions",
+        "description": "Cutting-edge web applications and software solutions"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Business Intelligence & Data Analytics",
+        "description": "Real-time dashboards and data analysis solutions"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Artificial Intelligence & Automation",
+        "description": "AI-powered automation and chatbot solutions"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Cybersecurity Solutions",
+        "description": "Comprehensive security and protection services"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Hardware Solutions",
+        "description": "Custom automation and monitoring systems"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "E-Commerce Solutions",
+        "description": "Complete e-commerce and marketplace solutions"
+      }
+    }
+  ]
+}
+}
+</script>
