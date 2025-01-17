@@ -103,6 +103,8 @@ body {
 			}
 
 			section.hero-section {
+				padding-top: 90px;
+				padding-bottom: 60px;
 
 				.carousel-wrapper {
 					position: relative;
@@ -789,6 +791,14 @@ fieldset.attend input.radio {
 	/* Your CSS styles for smartphones in landscape */
 	body {
 		background-color: #fffff9;
+		.wrapper{
+			article.page {
+				section.hero-section {
+					padding-top: 60px;
+					padding-bottom: 30px;
+				}
+			}
+		}
 	}
 
 	.section-1 {
