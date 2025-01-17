@@ -137,7 +137,138 @@ custom_js:
       transform: translateY(-2px);
   }
 </style>
+<style>
+  /* Custom styles */
+  :root {
+      --primary-color: #1a73e8;
+      --secondary-color: #34a853;
+      --dark-color: #202124;
+      --light-color: #f8f9fa;
+  }
 
+  .hero-section {
+      background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+  }
+
+  /* Hero Background Animation */
+  .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+  }
+
+  .hero-bg circle {
+      fill: rgba(255, 255, 255, 0.03);
+      animation: pulse 4s infinite;
+  }
+
+  .hero-bg path {
+      stroke: rgba(255, 255, 255, 0.05);
+      stroke-width: 1;
+      fill: none;
+      animation: draw 15s infinite linear;
+  }
+
+  @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.3; }
+      50% { transform: scale(1.2); opacity: 0.5; }
+  }
+
+  @keyframes draw {
+      from { stroke-dashoffset: 1000; }
+      to { stroke-dashoffset: 0; }
+  }
+
+  /* Hero Illustration Animation */
+  .hero-illustration {
+      animation: float 6s infinite ease-in-out;
+  }
+
+  @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+  }
+
+  .hero-content {
+      position: relative;
+      z-index: 2;
+  }
+
+  .service-card {
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      background: white;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      height: 100%;
+  }
+
+  .service-card:hover {
+      transform: translateY(-5px);
+  }
+
+  .service-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+  }
+
+  .service-icon path {
+      fill: var(--primary-color);
+  }
+
+  /* Mobile Accordion Styles */
+  @media (max-width: 768px) {
+      .service-grid {
+          display: none;
+      }
+      
+      .service-accordion {
+          display: block !important;
+      }
+  }
+
+  @media (min-width: 769px) {
+      .service-accordion {
+          display: none !important;
+      }
+  }
+
+  .accordion-button:not(.collapsed) {
+      background-color: var(--primary-color);
+      color: white;
+  }
+
+  .accordion-collapse {
+      transition: height 0.35s ease;
+  }
+
+  .cta-button {
+      background: var(--primary-color);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+  }
+
+  .cta-button:hover {
+      background: var(--secondary-color);
+      color: white;
+      transform: translateY(-2px);
+  }
+</style>
 <!-- Hero Section -->
 <section class="hero-section">
   <!-- Animated Background -->
@@ -150,7 +281,7 @@ custom_js:
       <path d="M0,400 Q250,300 500,400 T1000,400" stroke-dasharray="1000" />
   </svg>
   
-  <div class="container hero-content">
+  <div class="container py-5 hero-content">
       <div class="row align-items-center">
           <div class="col-lg-6">
               <h1 class="display-4 fw-bold mb-4">Professional Services</h1>
@@ -160,26 +291,156 @@ custom_js:
               <!-- Tech Illustration -->
               <svg class="hero-illustration w-100" viewBox="0 0 500 400">
                   <!-- Connected Nodes Illustration -->
-                  <g fill="none" stroke="white" stroke-width="2">
-                      <circle cx="250" cy="200" r="60" />
-                      <circle cx="150" cy="150" r="40" />
-                      <circle cx="350" cy="150" r="40" />
-                      <circle cx="150" cy="250" r="40" />
-                      <circle cx="350" cy="250" r="40" />
+                  <defs>
+                      <!-- Gradient for nodes -->
+                      <radialGradient id="nodeGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                          <stop offset="0%" style="stop-color:white;stop-opacity:0.3"/>
+                          <stop offset="100%" style="stop-color:white;stop-opacity:0.1"/>
+                      </radialGradient>
                       
-                      <line x1="190" y1="150" x2="240" y2="175" />
-                      <line x1="310" y1="150" x2="260" y2="175" />
-                      <line x1="190" y1="250" x2="240" y2="225" />
-                      <line x1="310" y1="250" x2="260" y2="225" />
-                      
-                      <!-- Animated Data Points -->
-                      <circle cx="215" cy="162" r="3" fill="white">
-                          <animate attributeName="cx" values="190,240,190" dur="3s" repeatCount="indefinite" />
-                          <animate attributeName="cy" values="150,175,150" dur="3s" repeatCount="indefinite" />
+                      <!-- Gradient for connections -->
+                      <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" style="stop-color:white;stop-opacity:0.5"/>
+                          <stop offset="100%" style="stop-color:white;stop-opacity:0.2"/>
+                      </linearGradient>
+
+                      <!-- Pulsing animation -->
+                      <animate id="pulseAnim" 
+                          attributeName="r"
+                          values="38;42;38"
+                          dur="3s"
+                          repeatCount="indefinite"/>
+                  </defs>
+
+                  <!-- Background nodes -->
+                  <g>
+                      <!-- Center node -->
+                      <circle cx="250" cy="200" r="60" fill="url(#nodeGradient)">
+                          <animate attributeName="r" 
+                              values="58;62;58" 
+                              dur="4s" 
+                              repeatCount="indefinite"/>
                       </circle>
-                      <circle cx="285" cy="162" r="3" fill="white">
-                          <animate attributeName="cx" values="310,260,310" dur="4s" repeatCount="indefinite" />
-                          <animate attributeName="cy" values="150,175,150" dur="4s" repeatCount="indefinite" />
+
+                      <!-- Satellite nodes -->
+                      <circle cx="150" cy="150" r="40" fill="url(#nodeGradient)">
+                          <animate attributeName="r" 
+                              values="38;42;38" 
+                              dur="3s" 
+                              repeatCount="indefinite"/>
+                      </circle>
+                      <circle cx="350" cy="150" r="40" fill="url(#nodeGradient)">
+                          <animate attributeName="r" 
+                              values="38;42;38" 
+                              dur="3.5s" 
+                              repeatCount="indefinite"/>
+                      </circle>
+                      <circle cx="150" cy="250" r="40" fill="url(#nodeGradient)">
+                          <animate attributeName="r" 
+                              values="38;42;38" 
+                              dur="4.5s" 
+                              repeatCount="indefinite"/>
+                      </circle>
+                      <circle cx="350" cy="250" r="40" fill="url(#nodeGradient)">
+                          <animate attributeName="r" 
+                              values="38;42;38" 
+                              dur="4s" 
+                              repeatCount="indefinite"/>
+                      </circle>
+                  </g>
+
+                  <!-- Connection lines -->
+                  <g stroke="url(#lineGradient)" stroke-width="2">
+                      <line x1="190" y1="150" x2="240" y2="175">
+                          <animate attributeName="stroke-opacity"
+                              values="0.2;0.5;0.2"
+                              dur="3s"
+                              repeatCount="indefinite"/>
+                      </line>
+                      <line x1="310" y1="150" x2="260" y2="175">
+                          <animate attributeName="stroke-opacity"
+                              values="0.2;0.5;0.2"
+                              dur="3.5s"
+                              repeatCount="indefinite"/>
+                      </line>
+                      <line x1="190" y1="250" x2="240" y2="225">
+                          <animate attributeName="stroke-opacity"
+                              values="0.2;0.5;0.2"
+                              dur="4s"
+                              repeatCount="indefinite"/>
+                      </line>
+                      <line x1="310" y1="250" x2="260" y2="225">
+                          <animate attributeName="stroke-opacity"
+                              values="0.2;0.5;0.2"
+                              dur="4.5s"
+                              repeatCount="indefinite"/>
+                      </line>
+                  </g>
+
+                  <!-- Data flow animation -->
+                  <g>
+                      <!-- Top left to center -->
+                      <circle r="4" fill="white">
+                          <animate attributeName="cx" 
+                              values="190;240;190" 
+                              dur="3s" 
+                              repeatCount="indefinite"/>
+                          <animate attributeName="cy" 
+                              values="150;175;150" 
+                              dur="3s" 
+                              repeatCount="indefinite"/>
+                          <animate attributeName="opacity"
+                              values="1;0.5;1"
+                              dur="3s"
+                              repeatCount="indefinite"/>
+                      </circle>
+
+                      <!-- Top right to center -->
+                      <circle r="4" fill="white">
+                          <animate attributeName="cx" 
+                              values="310;260;310" 
+                              dur="3.5s" 
+                              repeatCount="indefinite"/>
+                          <animate attributeName="cy" 
+                              values="150;175;150" 
+                              dur="3.5s" 
+                              repeatCount="indefinite"/>
+                          <animate attributeName="opacity"
+                              values="1;0.5;1"
+                              dur="3.5s"
+                              repeatCount="indefinite"/>
+                      </circle>
+
+                      <!-- Bottom left to center -->
+                      <circle r="4" fill="white">
+                          <animate attributeName="cx" 
+                              values="190;240;190" 
+                              dur="4s" 
+                              repeatCount="indefinite"/>
+                          <animate attributeName="cy" 
+                              values="250;225;250" 
+                              dur="4s" 
+                              repeatCount="indefinite"/>
+                          <animate attributeName="opacity"
+                              values="1;0.5;1"
+                              dur="4s"
+                              repeatCount="indefinite"/>
+                      </circle>
+
+                      <!-- Bottom right to center -->
+                      <circle r="4" fill="white">
+                          <animate attributeName="cx" 
+                              values="310;260;310" 
+                              dur="4.5s" 
+                              repeatCount="indefinite"/>
+                          <animate attributeName="cy" 
+                              values="250;225;250" 
+                              dur="4.5s" 
+                              repeatCount="indefinite"/>
+                          <animate attributeName="opacity"
+                              values="1;0.5;1"
+                              dur="4.5s"
+                              repeatCount="indefinite"/>
                       </circle>
                   </g>
               </svg>
@@ -200,7 +461,7 @@ custom_js:
                   </svg>
                   <h3>Web Applications & Software Solutions</h3>
                   <p>Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success.</p>
-                  <a href="/services/web-applications-and-software-solutions" class="cta-button">Learn More</a>
+                  <a href="/en/web-applications-and-software-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -212,7 +473,7 @@ custom_js:
                   </svg>
                   <h3>Business Intelligence & Data Analytics</h3>
                   <p>Transform raw data into actionable insights with real-time dashboards for informed decision-making.</p>
-                  <a href="/services/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
+                  <a href="/en/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -224,7 +485,7 @@ custom_js:
                   </svg>
                   <h3>Artificial Intelligence & Automation</h3>
                   <p>Boost efficiency with chatbots and AI-powered automations that transform customer service and streamline operations.</p>
-                  <a href="/services/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
+                  <a href="/en/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -236,7 +497,7 @@ custom_js:
                   </svg>
                   <h3>Cybersecurity Solutions</h3>
                   <p>State-of-the-art security solutions including penetration testing, ethical hacking, and comprehensive security monitoring.</p>
-                  <a href="/services/cybersecurity-solutions" class="cta-button">Learn More</a>
+                  <a href="/en/cybersecurity-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -248,7 +509,7 @@ custom_js:
                   </svg>
                   <h3>Hardware Solutions</h3>
                   <p>Transform your business operations with custom automation systems, smart sensors/cameras monitoring and energy-efficient controls.</p>
-                  <a href="/services/hardware-solutions" class="cta-button">Learn More</a>
+                  <a href="/en/hardware-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
 
@@ -260,7 +521,7 @@ custom_js:
                   </svg>
                   <h3>E-Commerce Solutions</h3>
                   <p>Launch and scale your online business with white-label e-commerce solutions integrated with payment and inventory management.</p>
-                  <a href="/services/e-commerce-solutions" class="cta-button">Learn More</a>
+                  <a href="/en/e-commerce-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -280,7 +541,7 @@ custom_js:
           <div id="webAppAccordion" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success.</p>
-                  <a href="/services/web-applications-and-software-solutions" class="cta-button">Learn More</a>
+                  <a href="/en/web-applications-and-software-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -295,7 +556,7 @@ custom_js:
           <div id="biAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Transform raw data into actionable insights with real-time dashboards for informed decision-making.</p>
-                  <a href="/services/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
+                  <a href="/en/business-intelligence-and-data-analytics" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -310,7 +571,7 @@ custom_js:
           <div id="aiAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Boost efficiency with chatbots and AI-powered automations that transform customer service and streamline operations.</p>
-                  <a href="/services/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
+                  <a href="/en/artificial-intelligence-and-automation" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -325,7 +586,7 @@ custom_js:
           <div id="securityAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>State-of-the-art security solutions including penetration testing, ethical hacking, and comprehensive security monitoring.</p>
-                  <a href="/services/cybersecurity-solutions" class="cta-button">Learn More</a>
+                  <a href="/en/cybersecurity-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -340,7 +601,7 @@ custom_js:
           <div id="hardwareAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Transform your business operations with custom automation systems, smart sensors/cameras monitoring and energy-efficient controls.</p>
-                  <a href="/services/hardware-solutions" class="cta-button">Learn More</a>
+                  <a href="/en/hardware-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
@@ -355,7 +616,7 @@ custom_js:
           <div id="ecommerceAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
               <div class="accordion-body">
                   <p>Launch and scale your online business with white-label e-commerce solutions integrated with payment and inventory management.</p>
-                  <a href="/services/e-commerce-solutions" class="cta-button">Learn More</a>
+                  <a href="/en/e-commerce-solutions" class="cta-button">Learn More</a>
               </div>
           </div>
       </div>
