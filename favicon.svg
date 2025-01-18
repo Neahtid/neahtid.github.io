@@ -3,7 +3,7 @@
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0"
     xmlns="http://www.w3.org/2000/svg" width="270.000000pt" height="270.000000pt" viewBox="0 0 270.000000 270.000000" preserveAspectRatio="xMidYMid meet">
-    <g transform="translate(0.000000,270.000000) scale(0.100000,-0.100000)" fill="#1f009f" stroke="#1f009f">
+    <g transform="translate(0.000000,270.000000) scale(0.100000,-0.100000)" fill="#091C99" stroke="#091C99">
         <circle cx="1400" cy="1480" r="1180" fill="white"/>
         <path d="M1114 2655 c-543 -98 -975 -531 -1069 -1072 -20 -112 -20 -354 0
     -466 25 -144 80 -297 153 -422 196 -341 539 -584 917 -650 114 -20 355 -20

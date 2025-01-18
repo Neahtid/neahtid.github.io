@@ -10,12 +10,12 @@
     
     <!-- Data Line -->
     <path d="M70 200 C120 180, 150 100, 200 130 S280 60, 320 60" 
-          fill="none" stroke="#1f009f" stroke-width="3"/>
+          fill="none" stroke="#091C99" stroke-width="3"/>
     
     <!-- Data Points -->
-    <circle cx="170" cy="125" r="6" fill="#1f009f"/>
-    <circle cx="220" cy="135" r="6" fill="#1f009f"/>
-    <circle cx="285" cy="80" r="6" fill="#1f009f"/>
+    <circle cx="170" cy="125" r="6" fill="#091C99"/>
+    <circle cx="220" cy="135" r="6" fill="#091C99"/>
+    <circle cx="285" cy="80" r="6" fill="#091C99"/>
     
     <!-- Stats -->
     <rect x="70" y="225" width="80" height="20" fill="#d8e5f9" rx="4"/>

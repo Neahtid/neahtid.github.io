@@ -11,6 +11,6 @@
     
     <!-- Booking Interface -->
     <rect x="80" y="180" width="100" height="20" fill="#e2e8f0" rx="4"/>
-    <rect x="80" y="210" width="240" height="30" fill="#1f009f" rx="6"/>
-    <text x="175" y="230" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Book Now</text>
+    <rect x="80" y="210" width="240" height="30" fill="#091C99" rx="6"/>
+    <text x="205" y="230" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Book Now</text>
 </svg>
