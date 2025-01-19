@@ -48,6 +48,8 @@ $('#contactForm').on('submit', function (e) {
 const consultationOptions = {
 	WebApps: {
 		label: 'Select Solution',
+		title: 'Start Your Digital Journey',
+		submit: 'Get Started',
 		options: [
 			'Advanced Web Applications',
 			'Advanced Computing Software',
@@ -56,53 +58,69 @@ const consultationOptions = {
 			'High-Impact Landing Pages',
 			'Research Simulation Software',
 			'Brand Identity & Web Design',
-			'Website Maintenance & Support'
+			'Website Maintenance & Support',
+			'Other'
 		]
 	},
 	BI: {
 		label: 'Select Solution',
+		title: '',
+		submit: 'Get Started',
 		options: [
 			'Profit Analysis Dashboards',
 			'Advanced Financial Analytics',
 			'Revenue & Expense Platform',
-			'Excel & Spreadsheet Solutions'
+			'Excel & Spreadsheet Solutions',
+			'Other'
 		]
 	},
 	AI: {
 		label: 'Select Solution',
+		title: 'Request a Demo',
+		submit: 'Schedule Demo',
 		options: [
 			'Intelligent Virtual Assistants',
 			'Process Automation Systems',
 			'Smart Maintenance Platform',
-			'Custom AI Development'
+			'Custom AI Development',
+			'Other'
 		]
 	},
 	Cybersecurity: {
 		label: 'Select Solution',
+		title: 'Get Your Security Assessment',
+		submit: 'Request Assessment',
 		options: [
 			'Enterprise Security Assessment',
 			'Advanced Encryption Services',
 			'Security Monitoring Platform',
-			'Compliance & Security Protocols'
+			'Compliance & Security Protocols',
+			'Other'
 		]
 	},
 	Hardware: {
 		label: 'Select Solution',
+		title: '',
+		submit: '',
 		options: [
 			'Business Automation Hardware',
 			'Smart Security Infrastructure',
 			'Energy Management Systems',
-			'IoT & Robotics Integration'
+			'IoT & Robotics Integration',
+			'Other'
 		]
 	},
 	eCommerce: {
 		label: 'Select Service',
+		title: 'Start Your E-Commerce Journey',
+		submit: 'Send Message',
 		options: [
 			'E-commerce Platform Development',
 			'White-Label Marketplace Solutions',
 			'Analytics Integration',
 			'Dropshipping Systems',
-			'Platform Maintenance'
+			'Platform Maintenance',
+			'Other'
 		]
 	}
 };

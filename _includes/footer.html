@@ -1,17 +1,17 @@
 <!-- Contact Modal -->
-<div class="modal fade" id="contactModal" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
-  <form id="contactForm">
+<form id="contactForm">
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalTitle" aria-modal="true"
+  role="dialog">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Schedule a <span id="data-consultation"></span> Consultation</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <h4 class="modal-title text-black">Schedule a <span id="data-consultation"></span> Consultation</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
         <div class="modal-body">
           <div class="mb-3">
             <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
-            <input type="text" class="form-control form-control-lg" name="consultation">
+            <input type="hidden" class="form-control form-control-lg" name="consultation">
           </div>
           <div class="mb-3">
             <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
@@ -31,8 +31,8 @@
         </div>
       </div>
     </div>
-  </form>
 </div>
+</form>
 <!-- Footer -->
 <footer class="bg-dark text-white py-4">
   <div class="container">

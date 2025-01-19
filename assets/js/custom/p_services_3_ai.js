@@ -1,14 +1,4 @@
 $(document).ready(function () {
-    // Smooth scrolling
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        var target = this.hash;
-        var $target = $(target);
-        $('html, body').animate({
-            'scrollTop': $target.offset().top - 70
-        }, 800, 'swing');
-    });
-
     // Navbar scroll effect
     $(window).scroll(function () {
         if ($(window).scrollTop() > 50) {

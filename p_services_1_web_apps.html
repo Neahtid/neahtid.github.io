@@ -88,7 +88,8 @@ custom_js:
                 <p class="lead mb-4">Elevate your brand with cutting-edge web applications and comprehensive digital
                     solutions tailored for B2B success.</p>
                 <div class="d-flex gap-3">
-                    <a href="#contact" class="btn btn-light btn-lg">Get Started</a>
+                    <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
+                    data-bs-consultation="WebApps">Get Started</button>
                     <a href="#services" class="btn btn-outline-light btn-lg">Our Solutions</a>
                 </div>
             </div>
@@ -331,43 +332,16 @@ custom_js:
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-5">
+
+<!-- CTA Section -->
+<section class="cta-section py-5 bg-white">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card shadow">
-                    <div class="card-body p-5">
-                        <h2 class="text-center mb-4">Start Your Digital Journey</h2>
-                        <form id="contactForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select">
-                                        <option selected>Select Service</option>
-                                        <option>Progressive Web App</option>
-                                        <option>Corporate Website</option>
-                                        <option>Marketing Landing Page</option>
-                                        <option>Custom Web Application</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control" rows="4"
-                                        placeholder="Tell us about your project"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary w-100">Get Started</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="col-lg-8 text-center">
+                <h2 class="mb-4">Start Your Digital Journey</h2>
+                <p class="lead mb-4">Let's discuss how our solutions can enhance your operations.</p>
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
+                    data-bs-consultation="WebApps">Schedule a Consultation</button>
             </div>
         </div>
     </div>

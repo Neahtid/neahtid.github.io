@@ -72,7 +72,8 @@ custom_js:
                 <p class="lead mb-4">Our E-Commerce solutions seamlessly integrate with Business Intelligence
                     dashboards, providing detailed insights into customer behavior and sales trends.</p>
                 <div class="d-flex gap-3">
-                    <a href="#contact" class="btn btn-primary btn-lg">Request Demo</a>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
+                            data-bs-consultation="eCommerce">Request Demo</button>
                     <a href="#features" class="btn btn-outline-light btn-lg">Explore Solutions</a>
                 </div>
             </div>
@@ -265,33 +266,12 @@ custom_js:
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card shadow">
-                    <div class="card-body p-5">
-                        <h2 class="text-center mb-4">Start Your E-Commerce Journey</h2>
-                        <form id="contactForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select">
-                                        <option selected>Select Package</option>
-                                        <option>Starter</option>
-                                        <option>Professional</option>
-                                        <option>Enterprise</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control" rows="4"
-                                        placeholder="Tell us about your project"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="card-body p-5 text-center">
+                        <h2 class="mb-4">Start Your E-Commerce Journey</h2>
+                        <p class="lead mb-4">Let's discuss how our e-commerce solutions can enhance your operations.</p>
+
+                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
+                            data-bs-consultation="eCommerce">Schedule an e-Commerce Consultation</button>
                     </div>
                 </div>
             </div>

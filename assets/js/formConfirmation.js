@@ -11,7 +11,7 @@ function ValidateEmail(email) {
 function postForm(form) {
 	if ($(form).hasClass("nea-contact")) {
 		var URL = "https://docs.google.com/forms/d/1CpamEupan42CHwtJN1VqJnjgoQGud8SI2WAb9XCVqPU/formResponse";
-		var thanks = "Thanks for contacting us. We will be in touch soon.";
+		var thanks = "Thank you for your inquiry. Our team will contact you shortly.";
 	}
 
 	var email = $("input#form-field-nea_email", form).val();

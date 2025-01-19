@@ -101,8 +101,9 @@ custom_js:
                     software simulations. Our comprehensive approach ensures your digital assets remain safe from
                     evolving threats.</p>
                 <div class="d-flex gap-3">
-                    <a href="#contact" class="btn btn-outline-light btn-lg">Get Security Assessment</a>
-                    <a href="#services" class="btn btn-success btn-lg">Explore Solutions</a>
+                    <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
+                        data-bs-consultation="Cybersecurity">Get Security Assessment</button>
+                    <a href="#solutions" class="btn btn-success btn-lg">Explore Solutions</a>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -161,8 +162,8 @@ custom_js:
     </div>
 </section>
 
-<!-- Services Section -->
-<section id="services" class="py-5">
+<!-- solutions Section -->
+<section id="solutions" class="py-5">
     <div class="container">
         <h2 class="text-center mb-5">Comprehensive Security Services</h2>
         <div class="row g-4">
@@ -307,35 +308,13 @@ custom_js:
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card shadow">
-                    <div class="card-body p-5">
+                    <div class="card-body p-5 text-center">
                         <h2 class="text-center mb-4">Get Your Security Assessment</h2>
-                        <form id="contactForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Company Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Business Email" required>
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select">
-                                        <option selected>Select Service</option>
-                                        <option>Penetration Testing</option>
-                                        <option>Ethical Hacking</option>
-                                        <option>Scientific Simulations</option>
-                                        <option>Complete Security Assessment</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control" rows="4"
-                                        placeholder="Tell us about your security needs"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-success w-100">Request Assessment</button>
-                                </div>
-                            </div>
-                        </form>
+                        <p class="lead mb-4">Schedule a demo to see how our AI solutions can drive your business
+                            forward.</p>
+
+                        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
+                            data-bs-consultation="Cybersecurity">Request Assessment</button>
                     </div>
                 </div>
             </div>

@@ -92,7 +92,8 @@ custom_js:
                     Boost efficiency with chatbots and other AI-powered automations that transforms customer service and
                     streamlines operations.
                 </p>
-                <a href="#demo" class="btn btn-light btn-lg me-3">Get Started</a>
+                <button class="btn btn-light btn-lg me-3" data-bs-toggle="modal" data-bs-target="#contactModal"
+data-bs-consultation="AI">Get Started</button>
                 <a href="#solutions" class="btn btn-outline-light btn-lg">Learn More</a>
             </div>
             <div class="col-sm-6">
@@ -228,31 +229,17 @@ custom_js:
     </div>
 </section>
 
-<!-- Demo Section -->
-<section id="demo" class="py-5">
+
+<!-- CTA Section -->
+<section id="contact" class="cta-section bg-white py-5">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="demo-form">
-                    <h2 class="text-center mb-4">Request a Demo</h2>
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control form-control-lg" placeholder="Business Name">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control form-control-lg" placeholder="Email Address">
-                        </div>
-                        <div class="mb-3">
-                            <select class="form-select form-select-lg">
-                                <option selected>Select Solution</option>
-                                <option>AI Chatbots</option>
-                                <option>Automated Reservations</option>
-                                <option>Predictive Maintenance</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg w-100">Schedule Demo</button>
-                    </form>
+            <div class="col-lg-8 text-center">
+                <h2 class="mb-4">Ready to Transform Your Business?</h2>
+                <p class="lead mb-4">Schedule a demo to see how our AI solutions can drive your business forward.</p>
+                <div>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
+data-bs-consultation="AI">Schedule Demo</button>
                 </div>
             </div>
         </div>
