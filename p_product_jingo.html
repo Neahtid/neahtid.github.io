@@ -3,6 +3,8 @@ layout: page
 title: Jingo Store
 permalink: /products/jingo-store
 description: White Label Store - A complete e-commerce solution with advanced features, responsive design, and seamless payment integration
+custom_js:
+- /assets/js/custom/p_product_jingo.js
 ---
 <style>
     .hero-section {
@@ -202,44 +204,3 @@ description: White Label Store - A complete e-commerce solution with advanced fe
     </div>
 </section>
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-<script>
-    $(document).ready(function () {
-        // Smooth scrolling
-        $('a[href^="#"]').on('click', function (e) {
-            e.preventDefault();
-            var target = $(this.hash);
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top - 100
-                }, 1000);
-            }
-        });
-
-        // Active nav item handling
-        $(window).on('scroll', function () {
-            var scrollPosition = $(window).scrollTop();
-
-            // Check each section's position and update nav accordingly
-            $('section').each(function () {
-                var currentSection = $(this);
-                var sectionTop = currentSection.offset().top - 120;
-                var sectionBottom = sectionTop + currentSection.height();
-
-                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                    $('.nav-link').removeClass('active');
-                    $('a[href="#' + currentSection.attr('id') + '"]').addClass('active');
-                }
-            });
-        });
-
-        // Initialize tooltips
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        });
-    });
-</script>

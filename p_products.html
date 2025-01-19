@@ -3,6 +3,8 @@ layout: page
 title: Our Products
 permalink: /our-products
 description: Discover our cutting-edge demo products Jingo.store, zigna.app, and Progressive Web Applications
+custom_js:
+- /assets/js/custom/p_products.js
 ---
 <style>
     .hero-section {
@@ -193,39 +195,3 @@ description: Discover our cutting-edge demo products Jingo.store, zigna.app, and
         </div>
     </div>
 </div>
-
-<script>
-    $(document).ready(function () {
-        // Smooth scrolling for navigation links
-        $('a[href^="#"]').on('click', function (e) {
-            e.preventDefault();
-            var target = $(this.hash);
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top - 70
-                }, 1000);
-            }
-        });
-
-        // Form submission handling
-        $('#submitForm').on('click', function () {
-            if ($('#contactForm')[0].checkValidity()) {
-                // Here you would typically send the form data to your server
-                alert('Thank you for your interest! We will contact you soon.');
-                $('#contactModal').modal('hide');
-                $('#contactForm')[0].reset();
-            } else {
-                $('#contactForm')[0].reportValidity();
-            }
-        });
-
-        // Navbar background change on scroll
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 50) {
-                $('.navbar').addClass('bg-dark').removeClass('bg-transparent');
-            } else {
-                $('.navbar').removeClass('bg-dark').addClass('bg-transparent');
-            }
-        });
-    });
-</script>
