@@ -47,65 +47,65 @@ $('#contactForm').on('submit', function (e) {
 });
 const consultationOptions = {
 	WebApps: {
-	  label: 'Select Solution',
-	  options: [
-		'Advanced Web Applications',
-		'Advanced Computing Software',
-		'Google Sheets Integration Platform',
-		'Corporate Website Development',
-		'High-Impact Landing Pages',
-		'Research Simulation Software',
-		'Brand Identity & Web Design',
-		'Website Maintenance & Support'
-	  ]
+		label: 'Select Solution',
+		options: [
+			'Advanced Web Applications',
+			'Advanced Computing Software',
+			'Google Sheets Integration Platform',
+			'Corporate Website Development',
+			'High-Impact Landing Pages',
+			'Research Simulation Software',
+			'Brand Identity & Web Design',
+			'Website Maintenance & Support'
+		]
 	},
 	BI: {
-	  label: 'Select Solution',
-	  options: [
-		'Profit Analysis Dashboards',
-		'Advanced Financial Analytics',
-		'Revenue & Expense Platform',
-		'Excel & Spreadsheet Solutions'
-	  ]
+		label: 'Select Solution',
+		options: [
+			'Profit Analysis Dashboards',
+			'Advanced Financial Analytics',
+			'Revenue & Expense Platform',
+			'Excel & Spreadsheet Solutions'
+		]
 	},
 	AI: {
-	  label: 'Select Solution',
-	  options: [
-		'Intelligent Virtual Assistants',
-		'Process Automation Systems',
-		'Smart Maintenance Platform',
-		'Custom AI Development'
-	  ]
+		label: 'Select Solution',
+		options: [
+			'Intelligent Virtual Assistants',
+			'Process Automation Systems',
+			'Smart Maintenance Platform',
+			'Custom AI Development'
+		]
 	},
 	Cybersecurity: {
-	  label: 'Select Solution',
-	  options: [
-		'Enterprise Security Assessment',
-		'Advanced Encryption Services',
-		'Security Monitoring Platform',
-		'Compliance & Security Protocols'
-	  ]
+		label: 'Select Solution',
+		options: [
+			'Enterprise Security Assessment',
+			'Advanced Encryption Services',
+			'Security Monitoring Platform',
+			'Compliance & Security Protocols'
+		]
 	},
 	Hardware: {
-	  label: 'Select Solution',
-	  options: [
-		'Business Automation Hardware',
-		'Smart Security Infrastructure',
-		'Energy Management Systems',
-		'IoT & Robotics Integration'
-	  ]
+		label: 'Select Solution',
+		options: [
+			'Business Automation Hardware',
+			'Smart Security Infrastructure',
+			'Energy Management Systems',
+			'IoT & Robotics Integration'
+		]
 	},
 	eCommerce: {
-	  label: 'Select Service',
-	  options: [
-		'E-commerce Platform Development',
-		'White-Label Marketplace Solutions',
-		'Analytics Integration',
-		'Dropshipping Systems',
-		'Platform Maintenance'
-	  ]
+		label: 'Select Service',
+		options: [
+			'E-commerce Platform Development',
+			'White-Label Marketplace Solutions',
+			'Analytics Integration',
+			'Dropshipping Systems',
+			'Platform Maintenance'
+		]
 	}
-  };
+};
 
 // Get the modal element
 const contactModal = document.getElementById('contactModal');
