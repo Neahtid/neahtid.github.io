@@ -1,12 +1,13 @@
 <!-- Contact Modal -->
 <div class="modal fade" id="contactModal" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Schedule a <span id="data-consultation"></span> Consultation</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <form id="contactForm">
+  <form id="contactForm">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Schedule a <span id="data-consultation"></span> Consultation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
         <div class="modal-body">
           <div class="mb-3">
             <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
@@ -18,10 +19,6 @@
           <div class="mb-3">
             <select class="form-select form-select-lg" id="solutionSelect">
               <option selected>Select Solution</option>
-              <option>Business Automation</option>
-              <option>Security Systems</option>
-              <option>IoT Integration</option>
-              <option>Retail Hardware</option>
               <option>Other</option>
             </select>
           </div>
@@ -32,9 +29,9 @@
         <div class="modal-footer">
           <button type="submit" class="btn btn-primary w-100">Send</button>
         </div>
-      </form>
+      </div>
     </div>
-  </div>
+  </form>
 </div>
 <!-- Footer -->
 <footer class="bg-dark text-white py-4">
