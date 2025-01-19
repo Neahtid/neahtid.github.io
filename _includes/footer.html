@@ -1,3 +1,41 @@
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Schedule a <span id="data-consultation"></span> Consultation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <form id="contactForm">
+        <div class="modal-body">
+          <div class="mb-3">
+            <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+            <input type="text" class="form-control form-control-lg" name="consultation">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select form-select-lg" id="solutionSelect">
+              <option selected>Select Solution</option>
+              <option>Business Automation</option>
+              <option>Security Systems</option>
+              <option>IoT Integration</option>
+              <option>Retail Hardware</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control form-control-lg" rows="4" placeholder="Your Message"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary w-100">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 <!-- Footer -->
 <footer class="bg-dark text-white py-4">
   <div class="container">
@@ -14,7 +52,8 @@
         <!-- Services Navigation Menu -->
         <nav class="services-menu">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item p-0 {% if page.url == '/services/web-applications-and-software-solutions' %}active{% endif %}">
+            <li
+              class="list-group-item p-0 {% if page.url == '/services/web-applications-and-software-solutions' %}active{% endif %}">
               <a href="/services/web-applications-and-software-solutions"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Web Applications &amp; Digital Presence</span>
@@ -35,7 +74,8 @@
               </a>
             </li>
 
-            <li class="list-group-item p-0 {% if page.url == '/services/artificial-intelligence-and-automation' %}active{% endif %}">
+            <li
+              class="list-group-item p-0 {% if page.url == '/services/artificial-intelligence-and-automation' %}active{% endif %}">
               <a href="/services/artificial-intelligence-and-automation"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Artificial Intelligence &amp; Automation</span>
@@ -141,6 +181,9 @@
       <div class="col-md-4 order-2 order-md-3">
         <hr class="d-md-none">
         <div class="row">
+          <div class="col-sm-4">
+            <a href="/contact-us" class="text-light">Contact Us</a>
+          </div>
           <div class="col-6">
             <a href="/{{ site.lang }}/privacy-policy/" class="text-light me-3">
               Privacy Policy ({{ site.lang }})

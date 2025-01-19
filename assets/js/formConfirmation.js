@@ -7,27 +7,8 @@ function ValidateEmail(email) {
 	return false;
 }
 
-verify = new Object();
-verify.valid = false;
-verify.callback = function(response) {
-	console.log("verify.callback");
-	console.log(response);
-	this.valid = response;
-	if (response) {
-		$('#s_but').show();
-	}
-	console.log(this.valid);
-};
-var onloadCallback = function() {
-	grecaptcha.render('n-recaptcha', {
-		'sitekey': '6LfC2CUUAAAAAMB11iJYlS5QlDhoNRc80P0wvBiZ',
-		'callback': verify.callback,
-		'theme': 'light'
-	});
-};
 
 function postForm(form) {
-	var error = "Contact no valid! The form was not sent.";
 	if ($(form).hasClass("nea-contact")) {
 		var URL = "https://docs.google.com/forms/d/1CpamEupan42CHwtJN1VqJnjgoQGud8SI2WAb9XCVqPU/formResponse";
 		var thanks = "Thanks for contacting us. We will be in touch soon.";
@@ -63,13 +44,13 @@ function postForm(form) {
 		type: "POST",
 		dataType: "xml",
 		statusCode: {
-			0: function() {
+			0: function () {
 				$(form).html('<p class="nea-form-sent">' + thanks + '</p>');
 				console.warn("statusCode: 0");
 				$('button[type=submit]', form).disabled = false;
 				$('.fa-inactive', form).removeClass('fa-active');
 			},
-			200: function() {
+			200: function () {
 				$(form).html('<p class="nea-form-sent">' + thanks + '</p>');
 				$('button[type=submit]', form).disabled = false;
 				$('.fa-inactive', form).removeClass('fa-active');
