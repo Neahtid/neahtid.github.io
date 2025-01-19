@@ -139,33 +139,38 @@ if (contactModal) {
 		// Get the select element
 		const select = contactModal.querySelector('#solutionSelect');
 
-		// Clear existing options
-		select.innerHTML = '';
+		if (select) {
+			// Clear existing options
+			select.innerHTML = '';
 
-		// Add the default option
-		const defaultOption = document.createElement('option');
-		defaultOption.selected = true;
-		defaultOption.textContent = consultationOptions[consultationType].label;
-		select.appendChild(defaultOption);
+			// Add the default option
+			const defaultOption = document.createElement('option');
+			defaultOption.selected = true;
+			defaultOption.textContent = consultationOptions[consultationType].label;
+			select.appendChild(defaultOption);
 
-		// Add the specific options for this consultation type
-		consultationOptions[consultationType].options.forEach(optionText => {
-			const option = document.createElement('option');
-			option.textContent = optionText;
-			select.appendChild(option);
-		});
-
-		const modalBodyInput = contactModal.querySelector('.modal-body input[name="consultation"]');
-		const modalConsultationTtitle = contactModal.querySelector('#data-consultation');
-		modalBodyInput.value = consultationType;
-		if (modalConsultationTtitle){
-			modalConsultationTtitle.textContent = `${consultationType}`;
+			// Add the specific options for this consultation type
+			consultationOptions[consultationType].options.forEach(optionText => {
+				const option = document.createElement('option');
+				option.textContent = optionText;
+				select.appendChild(option);
+			});
 		}
 
+		const modalBodyInput = contactModal.querySelector('.modal-body input[name="consultation"]');
+		if (modalBodyInput) modalBodyInput.value = consultationType;
+
+		const modalConsultationTtitle = contactModal.querySelector('#data-consultation');
+		if (modalConsultationTtitle) modalConsultationTtitle.textContent = `${consultationType}`;
 
 		const modalTitle = contactModal.querySelector('.modal-title');
-
-
+		if (consultationOptions[consultationType].title) {
+			modalTitle.textContent = consultationOptions[consultationType].title;
+		}
+		if (consultationOptions[consultationType].submit) {
+			const submitButton = contactModal.querySelector('.modal-footer button[type="submit"]');
+			submitButton.textContent = consultationOptions[consultationType].submit;
+		}
 
 	});
 }
