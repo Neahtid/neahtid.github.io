@@ -12,6 +12,8 @@ custom_js:
         --primary-dark: #1a1f3c;
         --accent-color: #00ff9d;
         --text-glow: 0 0 10px rgba(0, 255, 157, 0.5);
+        --primary-color: #198754;
+        --secondary-color: #157347;
     }
 
     .hero-section {
@@ -31,6 +33,11 @@ custom_js:
         height: 100%;
         background: linear-gradient(45deg, transparent 45%, rgba(0, 255, 157, 0.1) 50%, transparent 55%);
         animation: scan 3s linear infinite;
+    }
+
+    .hero-section .btn {
+        border: 1px solid var(--primary-color);
+        z-index: 1000;
     }
 
     @keyframes scan {
@@ -89,6 +96,15 @@ custom_js:
 
     .threat-card:hover {
         transform: translateY(-5px);
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--secondary-color);
+    }
+    .btn-primary:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
     }
 </style>
 <!-- Hero Section -->

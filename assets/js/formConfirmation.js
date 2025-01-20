@@ -8,7 +8,7 @@ function ValidateEmail(email) {
 }
 
 
-function postForm(form) {
+function postForm(form, modal) {
 	if ($(form).hasClass("nea-contact")) {
 		var URL = "https://docs.google.com/forms/d/1CpamEupan42CHwtJN1VqJnjgoQGud8SI2WAb9XCVqPU/formResponse";
 		var thanks = "Thank you for your inquiry. Our team will contact you shortly.";
@@ -17,6 +17,8 @@ function postForm(form) {
 	var email = $("input#form-field-nea_email", form).val();
 	var name = $("input#form-field-nea_name", form).val();
 	var message = $("#form-field-nea_message", form).val();
+	var consultation = $("#form-field-nea_consultation", form).val();
+	var solutionSelect = $("#form-field-nea_solutionSelect", form).val();
 	var source = "neahtid.com";
 
 	if (email == "") {
@@ -33,6 +35,17 @@ function postForm(form) {
 	$('.fa-inactive', form).addClass('fa-active');
 	$('button[type=submit]', form).disabled = true;
 
+	if (consultation == undefined) {
+		consultation = "_";
+	}
+	if (solutionSelect == undefined) {
+		solutionSelect = "_";
+	}
+	message = `
+	<b>consultation</b>: ${consultation} <br>
+	<b>solution</b>: ${solutionSelect} <br>
+	<b>message</b>: ${message}
+	`;
 	$.ajax({
 		url: URL,
 		data: {

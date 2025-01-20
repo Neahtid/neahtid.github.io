@@ -324,15 +324,6 @@ body {
 				font-size: 14px;
 			}
 		}
-
-
-		/* section 6 */
-		.section-6 {
-			background-color: #F4F4F4;
-			text-align: center;
-			padding: 50px;
-			overflow: hidden;
-		}
 	}
 }
 
@@ -458,27 +449,6 @@ fieldset.attend input.radio {
 	margin: 2px 0 0 2px;
 }
 
-.section-6 button,
-.contact-2 button,
-.relations-modal button {
-	-webkit-transition: background-color .3s;
-	-o-transition: background-color .3s;
-	transition: background-color .3s;
-
-	cursor: pointer;
-	display: inline-block;
-	width: 100%;
-	min-height: 40px;
-	font-size: 15px;
-	padding: 12px 24px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	background-color: #818a91;
-	border: none;
-	box-sizing: border-box;
-	color: #fff;
-	margin-top: 10px;
-}
 
 .section-6 button:hover,
 .contact-2 button:hover,
@@ -780,9 +750,7 @@ fieldset.attend input.radio {
 		padding: 10px;
 	}
 
-	section.section-6 {
-		padding: 50px 20px;
-	}
+
 }
 
 /* Smartphones in Landscape (576px and below) */

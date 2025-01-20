@@ -31,7 +31,7 @@
   <!-- Animated elements -->
   <g>
     <!-- Flowing data streams -->
-    <g opacity="0.2">
+    <g opacity="0.52">
       <path d="M0,150 Q480,50 960,150 T1920,150" fill="none" stroke="#ffffff" stroke-width="2">
         <animate attributeName="d" dur="20s" repeatCount="indefinite" values="M0,150 Q480,50 960,150 T1920,150;
                          M0,150 Q480,250 960,150 T1920,150;
@@ -59,30 +59,30 @@
 
     <!-- Floating particles -->
     <g filter="url(#glow)">
-      <circle cx="300" cy="200" r="2" fill="#ffffff" opacity="0.6">
+      <circle cx="300" cy="200" r="2" fill="#ffffff" opacity="0.9">
         <animate attributeName="cy" values="200;180;200" dur="3s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="1600" cy="300" r="2" fill="#ffffff" opacity="0.6">
+      <circle cx="1600" cy="300" r="2" fill="#ffffff" opacity="0.9">
         <animate attributeName="cy" values="300;280;300" dur="4s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="800" cy="400" r="2" fill="#ffffff" opacity="0.6">
+      <circle cx="800" cy="400" r="2" fill="#ffffff" opacity="0.9">
         <animate attributeName="cy" values="400;380;400" dur="5s" repeatCount="indefinite"/>
       </circle>
     </g>
 
     <!-- Data connection lines -->
-    <g opacity="0.1">
-      <line x1="200" y1="100" x2="400" y2="300" stroke="#ffffff" stroke-width="1">
+    <g opacity="0.7">
+      <line x1="200" y1="100" x2="400" y2="300" stroke="#FFFFFF" stroke-width="1">
         <animate attributeName="x2" values="400;420;400" dur="6s" repeatCount="indefinite"/>
       </line>
-      <line x1="1500" y1="200" x2="1700" y2="400" stroke="#ffffff" stroke-width="1">
+      <line x1="1500" y1="200" x2="1700" y2="400" stroke="#FFFFFF" stroke-width="1">
         <animate attributeName="x2" values="1700;1720;1700" dur="7s" repeatCount="indefinite"/>
       </line>
     </g>
   </g>
 
   <!-- Abstract shapes -->
-  <g opacity="0.05">
+  <g opacity="0.06">
     <circle cx="1800" cy="100" r="150" fill="#ffffff"/>
     <circle cx="100" cy="500" r="100" fill="#ffffff"/>
   </g>

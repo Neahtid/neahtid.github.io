@@ -7,7 +7,8 @@ custom_js:
 ---
 <style>
     :root {
-        --primary-color: #2d3436;
+        --primary-color: #3f2b96;
+        --secondary-color: #6c5ce7;
         --accent-color: #6c5ce7;
         --gradient-start: #a8c0ff;
         --gradient-end: #3f2b96;
@@ -32,6 +33,7 @@ custom_js:
     }
 
     .feature-icon {
+        font-size: 24px;
         width: 80px;
         height: 80px;
         background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
@@ -76,6 +78,15 @@ custom_js:
         background: #f8f9fa;
         border-radius: 15px;
         padding: 2rem;
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--secondary-color);
+    }
+    .btn-primary:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
     }
 </style>
 
@@ -148,7 +159,7 @@ custom_js:
             <!-- PWA Card -->
             <div class="col-md-6 col-lg-4">
                 <div class="service-card h-100">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center px-1">
                         <div class="feature-icon">
                             <img src="/assets/svg/p_services_1_icon_pwa.svg" alt="PWA Icon">
                         </div>
@@ -166,7 +177,7 @@ custom_js:
             <!-- Automation Card -->
             <div class="col-md-6 col-lg-4">
                 <div class="service-card h-100">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center px-1">
                         <div class="feature-icon">
                             <img src="/assets/svg/p_services_1_icon_automation.svg" alt="Automation Icon">
                         </div>
@@ -184,7 +195,7 @@ custom_js:
             <!-- Website Development Card -->
             <div class="col-md-6 col-lg-4">
                 <div class="service-card h-100">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center px-1">
                         <div class="feature-icon">
                             <img src="/assets/svg/p_services_1_icon_website.svg" alt="Web Development Icon">
                         </div>
@@ -202,7 +213,7 @@ custom_js:
             <!-- Landing Pages Card -->
             <div class="col-md-6 col-lg-4">
                 <div class="service-card h-100">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center px-1">
                         <div class="feature-icon">
                             <img src="/assets/svg/p_services_1_icon_landing_page.svg" alt="Landing Page Icon">
                         </div>
@@ -220,7 +231,7 @@ custom_js:
             <!-- Corporate Identity Card -->
             <div class="col-md-6 col-lg-4">
                 <div class="service-card h-100">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center px-1">
                         <div class="feature-icon">
                             <img src="/assets/svg/p_services_1_icon_corporate_identity.svg"
                                 alt="Corporate Identity Icon">
@@ -239,7 +250,7 @@ custom_js:
             <!-- Digital Strategy Card -->
             <div class="col-md-6 col-lg-4">
                 <div class="service-card h-100">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center px-1">
                         <div class="feature-icon">
                             <img src="/assets/svg/p_services_1_icon_strategy.svg" alt="Strategy Icon">
                         </div>
@@ -262,28 +273,28 @@ custom_js:
     <div class="container">
         <h2 class="text-center mb-5">Our Development Process</h2>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 mb-3">
                 <div class="process-step text-center">
                     <div class="feature-icon">1</div>
                     <h3 class="h5">Discovery</h3>
-                    <p>Understanding your business needs and objectives</p>
+                    <p>Understanding your needs and objectives</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 mb-3">
                 <div class="process-step text-center">
                     <div class="feature-icon">2</div>
                     <h3 class="h5">Planning</h3>
                     <p>Strategic planning and solution design</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 mb-3">
                 <div class="process-step text-center">
                     <div class="feature-icon">3</div>
                     <h3 class="h5">Development</h3>
                     <p>Agile development and testing</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3 mb-3">
                 <div class="process-step text-center">
                     <div class="feature-icon">4</div>
                     <h3 class="h5">Launch</h3>

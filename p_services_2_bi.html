@@ -8,6 +8,10 @@ custom_js:
 ---
 
 <style>
+    :root {
+        --primary-color: #091C99;
+        --secondary-color: #2C3E50;
+    }
     .hero-section {
         background-image: url('/assets/svg/p_services_2_bi_background_hero.svg');
         background-size: cover;
@@ -29,7 +33,7 @@ custom_js:
 
     .feature-icon {
         font-size: 2.5rem;
-        color: #0a2463;
+        color: var(--primary-color);
         margin-bottom: 1rem;
     }
 
@@ -43,10 +47,19 @@ custom_js:
     }
 
     .stat-card {
-        border-left: 4px solid #0a2463;
+        border-left: 4px solid var(--primary-color);
         padding: 20px;
         background: white;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--secondary-color);
+    }
+    .btn-primary:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
     }
 </style>
 

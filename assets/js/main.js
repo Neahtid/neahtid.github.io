@@ -11,13 +11,24 @@ $(document).ready(function () {
 		repeat: false,
 	});
 	$('.nea-form').unbind('submit').bind('submit', function () {
-		postForm(this);
+		postForm(this, false);
 		return false;
 	});
 
 });
 
 /** Scroll */
+// Smooth scrolling
+/*$('a[href^="#"]').on('click', function (e) {
+	e.preventDefault();
+	var target = $(this.hash);
+	if (target.length) {
+		$('html, body').animate({
+			scrollTop: target.offset().top - 100
+		}, 1000);
+	}
+});*/
+
 function scrollto(el) {
 	window.scroll({
 		top: $(el).offset().top,
@@ -51,6 +62,9 @@ const consultationOptions = {
 		title: 'Start Your Digital Journey',
 		submit: 'Get Started',
 		options: [
+			'Marketing Landing Page',
+			'Progressive Web App',
+			'Custom Web Application',
 			'Advanced Web Applications',
 			'Advanced Computing Software',
 			'Google Sheets Integration Platform',
@@ -79,6 +93,9 @@ const consultationOptions = {
 		title: 'Request a Demo',
 		submit: 'Schedule Demo',
 		options: [
+			'AI Chatbots',
+			'Automated Reservations',
+			'Predictive Maintenance',
 			'Intelligent Virtual Assistants',
 			'Process Automation Systems',
 			'Smart Maintenance Platform',
@@ -91,6 +108,8 @@ const consultationOptions = {
 		title: 'Get Your Security Assessment',
 		submit: 'Request Assessment',
 		options: [
+			'Ethical Hacking',
+			'Penetration Testing',
 			'Enterprise Security Assessment',
 			'Advanced Encryption Services',
 			'Security Monitoring Platform',
@@ -137,7 +156,7 @@ if (contactModal) {
 		const consultationType = button.getAttribute('data-bs-consultation');
 
 		// Get the select element
-		const select = contactModal.querySelector('#solutionSelect');
+		const select = contactModal.querySelector('#form-field-nea_solutionSelect');
 
 		if (select) {
 			// Clear existing options
