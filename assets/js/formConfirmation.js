@@ -9,9 +9,10 @@ function ValidateEmail(email) {
 
 
 function postForm(form, modal) {
+	var thanks = "Thank you for your inquiry.";
 	if ($(form).hasClass("nea-contact")) {
 		var URL = "https://docs.google.com/forms/d/1CpamEupan42CHwtJN1VqJnjgoQGud8SI2WAb9XCVqPU/formResponse";
-		var thanks = "Thank you for your inquiry. Our team will contact you shortly.";
+		thanks = "Thank you for your contact. Our team will contact you shortly.";
 	}
 
 	var email = $("input#form-field-nea_email", form).val();
@@ -46,6 +47,7 @@ function postForm(form, modal) {
 	<b>solution</b>: ${solutionSelect} <br>
 	<b>message</b>: ${message}
 	`;
+
 	$.ajax({
 		url: URL,
 		data: {
@@ -58,16 +60,60 @@ function postForm(form, modal) {
 		dataType: "xml",
 		statusCode: {
 			0: function () {
-				$(form).html('<p class="nea-form-sent">' + thanks + '</p>');
-				console.warn("statusCode: 0");
-				$('button[type=submit]', form).disabled = false;
-				$('.fa-inactive', form).removeClass('fa-active');
+				if (modal){
+					formSaved = $(form).find(".modal-body").html();
+
+					$(form).find(".modal-body").html(`
+						<p class="alert alert-success">${thanks}</p>
+						<p class="mt-4 mb-0 text-center text-secondary">This window will close in a moment...</p>
+						`);
+					$(".modal-footer .modal-close", form).removeClass('d-none');
+					$(".modal-footer .btn-submit", form).hide();
+
+					setTimeout(function() {
+						$(form).find(".modal-body").html(formSaved);
+						$(".modal-footer .modal-close", form).addClass('d-none');
+						$(".modal-footer .btn-submit", form).show();
+						form.reset();
+						$('#contactModal').modal('hide');
+					}, 5000);
+				}
+				else {
+					$(form).html('<p class="alert alert-success">' + thanks + '</p>');
+					$('button[type=submit]', form).disabled = false;
+					$('.fa-inactive', form).removeClass('fa-active');
+				}
+				console.log(`statusCode: 0 ${modal}`);
 			},
 			200: function () {
-				$(form).html('<p class="nea-form-sent">' + thanks + '</p>');
-				$('button[type=submit]', form).disabled = false;
-				$('.fa-inactive', form).removeClass('fa-active');
+				if (modal){
+					formSaved = $(form).find(".modal-body").html();
+
+					$(form).find(".modal-body").html(`
+						<p class="alert alert-success">${thanks}</p>
+						<p class="mt-4 mb-0 text-center text-secondary">This window will close in a moment...</p>
+						`);
+					$(".modal-footer .modal-close", form).removeClass('d-none');
+					$(".modal-footer .btn-submit", form).hide();
+
+					setTimeout(function() {
+						$(form).find(".modal-body").html(formSaved);
+						$(".modal-footer .modal-close", form).addClass('d-none');
+						$(".modal-footer .btn-submit", form).show();
+						form.reset();
+						$('#contactModal').modal('hide');
+					}, 5000);
+				}
+				else {
+					$(form).html('<p class="alert alert-success">' + thanks + '</p>');
+					$('button[type=submit]', form).disabled = false;
+					$('.fa-inactive', form).removeClass('fa-active');
+				}
+
 			}
+		},
+		complete: function(xhr, textStatus) {
+		  console.log(`complete with status: ${xhr.status}`);
 		}
 	});
 }

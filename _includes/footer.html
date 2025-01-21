@@ -1,7 +1,6 @@
 <!-- Contact Modal -->
-<form id="contactForm">
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalTitle" aria-modal="true"
-  role="dialog">
+<form class="nea-contact nea-formModal">
+  <div class="modal" id="contactModal" tabindex="-1" aria-labelledby="contactModalTitle" role="dialog">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
@@ -10,28 +9,33 @@
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <input type="text" class="form-control form-control-lg" placeholder="Your Name" id="form-field-nea_name" required>
-            <input type="hidden" class="form-control form-control-lg" name="consultation" id="form-field-nea_consultation">
+            <input type="text" class="form-control form-control-lg" placeholder="Your Name" id="form-field-nea_name"
+              name="name" required>
+            <input type="hidden" class="form-control form-control-lg" name="consultation"
+              id="form-field-nea_consultation">
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control form-control-lg" placeholder="Your Email" id="form-field-nea_email" required>
+            <input type="email" class="form-control form-control-lg" placeholder="Your Email" id="form-field-nea_email"
+              name="email" required>
           </div>
           <div class="mb-3">
             <select class="form-select form-select-lg" name="solutionSelect" id="form-field-nea_solutionSelect">
-              <option selected>Select Solution</option>
-              <option>Other</option>
+              <option value="">Select Solution</option>
+              <option value="other">Other</option>
             </select>
           </div>
           <div class="mb-3">
-            <textarea class="form-control form-control-lg" rows="4" id="form-field-nea_message" placeholder="Your Message"></textarea>
+            <textarea class="form-control form-control-lg" rows="4" id="form-field-nea_message" name="message"
+              placeholder="Your Message"></textarea>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary w-100">Send</button>
+          <button type="button" class="btn btn-secondary modal-close w-100 d-none" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary btn-submit w-100">Send</button>
         </div>
       </div>
     </div>
-</div>
+  </div>
 </form>
 <!-- Footer -->
 <footer class="bg-dark text-white py-4">

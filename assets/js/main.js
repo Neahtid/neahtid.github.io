@@ -10,24 +10,17 @@ $(document).ready(function () {
 		offset: 0,
 		repeat: false,
 	});
+	/** ContactForms */
 	$('.nea-form').unbind('submit').bind('submit', function () {
 		postForm(this, false);
 		return false;
 	});
+	$('.nea-formModal').unbind('submit').bind('submit', function () {
+		postForm(this, true);
+		return false;
+	});
 
 });
-
-/** Scroll */
-// Smooth scrolling
-/*$('a[href^="#"]').on('click', function (e) {
-	e.preventDefault();
-	var target = $(this.hash);
-	if (target.length) {
-		$('html, body').animate({
-			scrollTop: target.offset().top - 100
-		}, 1000);
-	}
-});*/
 
 function scrollto(el) {
 	window.scroll({
@@ -46,16 +39,7 @@ window.onscroll = function () {
 	}
 };
 
-/** Contact */
 
-// Form submission
-$('#contactForm').on('submit', function (e) {
-	e.preventDefault();
-	// Add form handling logic here
-	alert('Thank you for your message. We will contact you soon!');
-	$('#contactModal').modal('hide');
-	this.reset();
-});
 const consultationOptions = {
 	WebApps: {
 		label: 'Select Solution',
