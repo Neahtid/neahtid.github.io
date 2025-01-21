@@ -131,6 +131,17 @@ const consultationOptions = {
 			'Platform Maintenance',
 			'Other'
 		]
+	},
+	products: {
+		label: 'Select a Product',
+		title: 'Request a Demo',
+		submit: 'Submit',
+		options: [
+			'jingo.store',
+			'zigna.app',
+			'Minions App',
+			'Other'
+		]
 	}
 };
 
