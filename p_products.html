@@ -7,21 +7,80 @@ custom_js:
 - /assets/js/custom/p_products.js
 ---
 <style>
-    .hero-section {
-        background: linear-gradient(135deg, #007bff 0%, #6610f2 100%);
-        padding: 100px 0;
-        color: white;
+    :root {
+        --primary-color: #091C99;
+        --secondary-color: #0A1F80;
+        --accent-color: #2196F3;
+        --text-color: #333;
     }
 
-    .feature-icon {
-        width: 64px;
-        height: 64px;
-        background-color: #f8f9fa;
+    /* Futuristic animations */
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.05);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Animated elements */
+    .tech-circle {
+        position: absolute;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        animation: float 6s ease-in-out infinite;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        position: relative;
+        overflow: hidden;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        padding: 80px 0;
     }
 
     .product-card {
@@ -32,25 +91,20 @@ custom_js:
     .product-card:hover {
         transform: translateY(-10px);
     }
-
-    .btn-demo {
-        background-color: #6610f2;
-        color: white;
-    }
-
-    .btn-demo:hover {
-        background-color: #520dc2;
-        color: white;
-    }
 </style>
 
 <!-- Hero Section -->
-<section class="hero-section">
-    <div class="container text-center">
+<section class="hero-section text-white d-flex align-items-center">
+    <div class="container hero-content text-center">
         <h1 class="display-4 fw-bold mb-4">Experience Our Demo Products</h1>
         <p class="lead mb-4">Discover the power of our enterprise-grade solutions through interactive demos</p>
         <a href="#products" class="btn btn-light btn-lg">Explore Demos</a>
     </div>
+    <!-- Animated background elements -->
+    <div class="tech-circle" style="width:200px;height:200px;top:10%;left:5%"></div>
+    <div class="tech-circle" style="width:300px;height:300px;bottom:20%;right:10%"></div>
+    <div class="tech-line" style="top:30%"></div>
+    <div class="tech-line" style="bottom:40%"></div>
 </section>
 
 <!-- Products Section -->
@@ -59,11 +113,11 @@ custom_js:
         <h2 class="text-center mb-5">Our Demo Products</h2>
         <div class="row g-4">
             <!-- Jingo.store -->
-            <div class="col-lg-4">
+            <div class="col-sm-6 col-md-4 animated-hidden">
                 <div class="card product-card shadow">
                     <div class="card-body">
-                        <a href="/products/jingo-store">
-                            <div class="feature-icon">
+                        <a href="/products/jingo-store" class="text-decoration-none text-dark">
+                            <div class="product-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                     class="bi bi-shop" viewBox="0 0 16 16">
                                     <path
@@ -74,7 +128,7 @@ custom_js:
                             <p class="card-text">Experience a fully-featured e-commerce solution with integrated payment
                                 methods, order tracking, and inventory management.</p>
                             <div class="mt-4 text-end">
-                                <a href="https://jingo.store" target="_blank" class="btn btn-demo me-2">
+                                <a href="https://jingo.store" target="_blank" class="btn btn-product-demo me-2">
                                     Live Demo
                                 </a>
                                 <a href="/products/jingo-store" class="btn btn-outline-primary">Learn More</a>
@@ -85,11 +139,11 @@ custom_js:
             </div>
 
             <!-- Zigna.app -->
-            <div class="col-lg-4">
+            <div class="col-sm-6 col-md-4 animated-hidden">
                 <div class="card product-card shadow">
                     <div class="card-body">
-                        <a href="/products/zigna-app">
-                            <div class="feature-icon">
+                        <a href="/products/zigna-app" class="text-decoration-none text-dark">
+                            <div class="product-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                     class="bi bi-graph-up" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -100,7 +154,7 @@ custom_js:
                             <p class="card-text">Get real-time stock trading recommendations from experienced traders
                                 through our subscription-based platform with advanced market analysis.</p>
                             <div class="mt-4 text-end">
-                                <a href="https://zigna.app" target="_blank" class="btn btn-demo me-2">
+                                <a href="https://zigna.app" target="_blank" class="btn btn-product-demo me-2">
                                     Live Demo
                                 </a>
                                 <a href="/products/zigna-app" class="btn btn-outline-primary">Learn More</a>
@@ -111,11 +165,11 @@ custom_js:
             </div>
 
             <!-- PWA.app -->
-            <div class="col-lg-4">
+            <div class="col-sm-6 col-md-4 animated-hidden">
                 <div class="card product-card shadow">
                     <div class="card-body">
-                        <a href="/products/pwa-demo">
-                            <div class="feature-icon">
+                        <a href="/products/pwa-demo" class="text-decoration-none text-dark">
+                            <div class="product-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                     class="bi bi-phone" viewBox="0 0 16 16">
                                     <path
@@ -123,11 +177,11 @@ custom_js:
                                     <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                                 </svg>
                             </div>
-                            <h3 class="card-title">PWA.app</h3>
+                            <h3 class="card-title">Minions App</h3>
                             <p class="card-text">Explore our white-label Progressive Web Application showcasing BI
                                 dashboards, secure authentication, data integration, and more.</p>
                             <div class="mt-4 text-end">
-                                <a href="https://minions.neahtid.com" target="_blank" class="btn btn-demo me-2">
+                                <a href="https://minions.neahtid.com" target="_blank" class="btn btn-product-demo me-2">
                                     Live Demo
                                 </a>
                                 <a href="/products/pwa-demo" class="btn btn-outline-primary">Learn More</a>

@@ -10,6 +10,11 @@ $(document).ready(function () {
 		offset: 0,
 		repeat: false,
 	});
+	$('.animated-hidden').viewportChecker({
+        classToAdd: 'animated-visible',
+        offset: 0,
+        repeat: false
+    });
 	/** ContactForms */
 	$('.nea-form').unbind('submit').bind('submit', function () {
 		postForm(this, false);
@@ -22,6 +27,7 @@ $(document).ready(function () {
 
 });
 
+// --- Scroll ---
 function scrollto(el) {
 	window.scroll({
 		top: $(el).offset().top,
@@ -39,7 +45,7 @@ window.onscroll = function () {
 	}
 };
 
-
+// --- Modal ---
 const consultationOptions = {
 	WebApps: {
 		label: 'Select Solution',

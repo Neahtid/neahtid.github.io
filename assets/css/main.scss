@@ -325,6 +325,26 @@ body {
 			}
 		}
 	}
+
+	.product-icon {
+        width: 64px;
+        height: 64px;
+        background-color: #f8f9fa;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+	.btn-product-demo {
+        background-color: #6610f2;
+        color: white;
+    }
+
+    .btn-product-demo:hover {
+        background-color: #520dc2;
+        color: white;
+    }
 }
 
 .flex-container {
