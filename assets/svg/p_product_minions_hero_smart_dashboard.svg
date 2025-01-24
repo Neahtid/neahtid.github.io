@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with gradient -->
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1a237e;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0d47a1;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="card-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.1" />
+            <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.05" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Main Dashboard Container -->
+    <rect x="50" y="50" width="700" height="500" rx="15" 
+          fill="url(#bg-gradient)" />
+    
+    <!-- Top Navigation Bar -->
+    <rect x="70" y="70" width="660" height="60" rx="10" 
+          fill="url(#card-gradient)" stroke="#ffffff" stroke-opacity="0.2" />
+    
+    <!-- Dashboard Cards -->
+    <g transform="translate(90,160)">
+        <!-- Analytics Card -->
+        <rect width="200" height="160" rx="10" 
+              fill="url(#card-gradient)" stroke="#ffffff" stroke-opacity="0.2" />
+        <path d="M 20 120 L 60 80 L 100 100 L 140 60 L 180 90" 
+              stroke="#4fc3f7" stroke-width="3" fill="none" />
+        
+        <!-- AI Assistant Card -->
+        <rect x="220" width="200" height="160" rx="10" 
+              fill="url(#card-gradient)" stroke="#ffffff" stroke-opacity="0.2" />
+        <circle cx="320" cy="80" r="30" fill="#4fc3f7" fill-opacity="0.3" />
+        <path d="M 300 80 Q 320 60 340 80 T 380 80" 
+              stroke="#4fc3f7" stroke-width="3" fill="none" />
+        
+        <!-- Security Card -->
+        <rect x="440" width="200" height="160" rx="10" 
+              fill="url(#card-gradient)" stroke="#ffffff" stroke-opacity="0.2" />
+        <path d="M 540 60 L 540 100 M 520 80 L 560 80" 
+              stroke="#4fc3f7" stroke-width="3" />
+    </g>
+    
+    <!-- Bottom Section -->
+    <g transform="translate(90,340)">
+        <!-- Data Table -->
+        <rect width="420" height="180" rx="10" 
+              fill="url(#card-gradient)" stroke="#ffffff" stroke-opacity="0.2" />
+        <g transform="translate(20,20)" fill="#ffffff" fill-opacity="0.7">
+            <rect width="380" height="1" />
+            <rect y="40" width="380" height="1" />
+            <rect y="80" width="380" height="1" />
+            <rect y="120" width="380" height="1" />
+        </g>
+        
+        <!-- Status Card -->
+        <rect x="440" width="200" height="180" rx="10" 
+              fill="url(#card-gradient)" stroke="#ffffff" stroke-opacity="0.2" />
+        <circle cx="540" cy="90" r="40" 
+                stroke="#4fc3f7" stroke-width="3" fill="none" />
+    </g>
+</svg>
