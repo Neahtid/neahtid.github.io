@@ -1,6 +1,11 @@
 ---
 layout: page
 title: Web Applications & Digital Presence Solutions
+description: Transform your business with cutting-edge web applications and advanced software solutions. Specializing in PWAs, research simulation software, and corporate solutions with integrated payment systems.
+keywords: web application development, custom software development, progressive web applications, enterprise software solutions, web platform development, application modernization, landing page optimization, cloud application development, software integration services
+alternate_hreflang_en: "/en/web-applications-and-software-solutions"
+alternate_hreflang_es: "/es/aplicaciones-web-y-soluciones-de-software"
+alternate_hreflang_pt: "/pt/aplicacoes-web-e-solucoes-de-software"
 permalink: /services/web-applications-and-software-solutions
 custom_js:
 - /assets/js/custom/p_services_1_web_apps.js
@@ -89,6 +94,29 @@ custom_js:
         border-color: var(--secondary-color);
     }
 </style>
+<!-- Structured Data -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Web Applications & Software Solutions",
+        "provider": {
+            "@type": "Organization",
+            "name": "Neahtid",
+            "description": "IT solutions provider specializing in web applications and software development"
+        },
+        "serviceType": "Software Development",
+        "areaServed": {
+            "@type": "Country",
+            "name": ["Brazil", "United States", "Spain"]
+        },
+        "description": "Advanced web applications and software solutions including PWAs, research simulation software, and enterprise solutions with integrated payment systems.",
+        "offers": {
+            "@type": "Offer",
+            "priceRange": "$15,000 - $120,000"
+        }
+    }
+</script>
 
 <!-- Hero Section -->
 <section class="hero-section text-white">
@@ -96,12 +124,12 @@ custom_js:
         <div class="row align-items-center">
             <div class="col-sm-6 mb-4">
                 <h1 class="display-4 fw-bold mb-4">Transform Your Digital Presence</h1>
-                <p class="lead mb-4">Elevate your brand with cutting-edge web applications and comprehensive digital
-                    solutions tailored for B2B success.</p>
+                <p class="lead mb-4">Elevate your business with cutting-edge web applications and comprehensive
+                    software solutions tailored for modern enterprise success.</p>
                 <div class="d-flex gap-3">
                     <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
-                    data-bs-consultation="WebApps">Get Started</button>
-                    <a href="#services" class="btn btn-outline-light btn-lg">Our Solutions</a>
+                        data-bs-consultation="WebApps">Get Started</button>
+                    <a href="#solutions" class="btn btn-outline-light btn-lg">Our Solutions</a>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -125,7 +153,6 @@ custom_js:
                             </div>
                         </div>
 
-                        <!-- Carousel controls -->
                         <button class="carousel-control-prev" type="button" data-bs-target="#dashboardCarousel"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -136,8 +163,6 @@ custom_js:
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
-
-                        <!-- Carousel indicators moved below caption -->
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -151,12 +176,12 @@ custom_js:
     </div>
 </section>
 
-<!-- Services Section -->
+<!-- Solutions Section -->
 <section id="services" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Our Digital Solutions</h2>
+        <h2 class="text-center mb-5">Advanced Digital Solutions</h2>
         <div class="row g-4">
-            <!-- PWA Card -->
+            <!-- Progressive Web Apps -->
             <div class="col-md-6 col-lg-4">
                 <div class="service-card h-100">
                     <div class="card-body text-center px-1">
@@ -176,19 +201,14 @@ custom_js:
 
             <!-- Automation Card -->
             <div class="col-md-6 col-lg-4">
-                <div class="service-card h-100">
-                    <div class="card-body text-center px-1">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_1_icon_automation.svg" alt="Automation Icon">
-                        </div>
-                        <h3 class="h4">Spreadsheet Automation</h3>
-                        <p>Custom Google Sheets automation solutions for streamlined business processes.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li>✓ Data Integration</li>
-                            <li>✓ Automated Reports</li>
-                            <li>✓ Custom Scripts</li>
-                        </ul>
-                    </div>
+                    <h3 class="h4 text-center">Google Sheets Integration</h3>
+                    <p class="text-center">Transform your business operations with smart applications that leverage
+                        Google Sheets for powerful automation.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li>✓ Automated Workflows</li>
+                        <li>✓ Data Integration</li>
+                        <li>✓ Custom Scripts</li>
+                    </ul>
                 </div>
             </div>
 
@@ -210,25 +230,16 @@ custom_js:
                 </div>
             </div>
 
-            <!-- Landing Pages Card -->
+            <!-- High-Impact Landing Pages -->
             <div class="col-md-6 col-lg-4">
-                <div class="service-card h-100">
-                    <div class="card-body text-center px-1">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_1_icon_landing_page.svg" alt="Landing Page Icon">
-                        </div>
-                        <h3 class="h4">Marketing Landing Pages</h3>
-                        <p>High-converting landing pages designed for marketing success.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li>✓ A/B Testing</li>
-                            <li>✓ Conversion Optimization</li>
-                            <li>✓ Analytics Integration</li>
-                        </ul>
-                    </div>
+                    <h3 class="h4 text-center">High-Impact Landing Pages</h3>
+                    <p class="text-center">Design conversion-focused landing pages using data-driven strategies and
+                        compelling visual elements.</p>
+                    <ul class="list-unstyled mt-3">
                 </div>
             </div>
 
-            <!-- Corporate Identity Card -->
+            <!-- Custom Web Applications -->
             <div class="col-md-6 col-lg-4">
                 <div class="service-card h-100">
                     <div class="card-body text-center px-1">
@@ -345,11 +356,11 @@ custom_js:
 
 
 <!-- CTA Section -->
-<section class="cta-section py-5 bg-white">
+<section class="py-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <h2 class="mb-4">Start Your Digital Journey</h2>
+                <h2 class="mb-4">Ready to Transform Your Business?</h2>
                 <p class="lead mb-4">Let's discuss how our solutions can enhance your operations.</p>
                 <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
                     data-bs-consultation="WebApps">Schedule a Consultation</button>
