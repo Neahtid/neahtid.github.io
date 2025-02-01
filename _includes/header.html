@@ -31,16 +31,16 @@
             <li>
               {% if page.namespace %}
               <a class="dropdown-item" data-lang="{{ lang }}" href="{% tl {{ page.namespace }} {{ lang }} %}">
-                {% t langs.{{ lang }} %}
+              {{ site.language_names[lang] }}
               </a>
               {% else %}
               {% if lang == site.default_lang and site.default_locale_in_subfolder != true %}
               <a class="dropdown-item" data-lang="{{ lang }}" href="{{ site.baseurl_root }}{{ page.url }}">
-                {% t langs.{{ lang }} %}
+              {{ site.language_names[lang] }}
               </a>
               {% else %}
               <a class="dropdown-item" data-lang="{{ lang }}" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">
-                {% t langs.{{ lang }} %}
+              {{ site.language_names[lang] }}
               </a>
               {% endif %}
               {% endif %}

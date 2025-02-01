@@ -3,7 +3,10 @@ layout: page
 title: Contact Us
 permalink: /contact-us
 ---
-
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
 <style>
 	.btn-primary{
 		background-color: #091C99;
@@ -50,10 +53,10 @@ permalink: /contact-us
 				</form>
 			</div>
 			<div class="col-12 col-md-4">
-				<a href="/our-products" class="contact-badge relations">
+				<a href="{{prefix}}/our-products" class="contact-badge relations">
 					<h2>Software Solutions</h2>
 				</a>
-				<a href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" class="contact-badge work">
+				<a href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank" class="contact-badge work">
 					<h2>Work with Us</h2>
 				</a>
 			</div>

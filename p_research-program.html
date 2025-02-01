@@ -3,7 +3,10 @@ layout: page
 title: Research Program
 permalink: /research-program
 ---
-<!-- first section -->
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
 <header class="headblock research-1">
 	<h1>Engineering, Science and Technology</h1>
 </header>

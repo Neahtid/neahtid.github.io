@@ -81,15 +81,12 @@
             Notificaremos você sobre alterações significativas publicando os Termos atualizados em nosso site ou entrando em contato diretamente.
             O uso contínuo dos Serviços após tais alterações constitui sua aceitação dos novos Termos.</p>
     </section>
-
+    {% assign prefix = '' %}
+    {% if site.lang != site.default_lang %}
+    {% assign prefix = "/" | append: site.lang %}
+    {% endif %}
     <section>
         <h2>Fale Conosco</h2>
-        <p>Se você tiver dúvidas ou preocupações sobre estes Termos, entre em contato conosco:</p>
-        <address>
-            Neahtid<br>
-            Email: <a href="mailto:support@canismajor.com">support@canismajor.com</a><br>
-            Telefone: +1 (123) 456-7890<br>
-            Endereço: 123 IT Solutions Blvd, San Francisco, CA, EUA
-        </address>
+        <p>Se você tiver dúvidas ou preocupações sobre estes Termos, <a href="{{prefix}}/contact-us">entre em contato conosco</a>.</p>
     </section>
 </main>

@@ -3,7 +3,7 @@ layout: post_sidebar
 title: Transformando Experiências dos Hóspedes, A Ascensão das Soluções de Hospitalidade Inteligente
 cover: cover.jpg
 date: 2024-10-11 13:06:00
-categories: pt posts
+categories: pt-br posts
 type: article
 ---
 <header class="entry-header">

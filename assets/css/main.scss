@@ -1,7 +1,7 @@
 --- 
 # Only the main Sass file needs front matter (the dashes are enough) 
 ---
-
+$main-color: #091C99;
 /* css */
 body {
 	color: #363636;
@@ -39,7 +39,7 @@ body {
 				position: absolute;
 				height: 3px;
 				top: 0;
-				background-color: #091C99;
+				background-color: $main-color;
 
 				-webkit-transition: .3s;
 				-o-transition: .3s;
@@ -55,7 +55,7 @@ body {
 
 			.navbar-light .navbar-nav .nav-link:hover,
 			.navbar-light .navbar-nav .nav-item.active .nav-link {
-				color: #091C99;
+				color: $main-color;
 			}
 
 			.navbar-light .navbar-nav .nav-link:hover:before,
@@ -68,6 +68,7 @@ body {
 
 		article.post {
 			padding-top: 60px;
+
 			.post-content {
 				color: black;
 				line-height: 1.8rem;
@@ -89,14 +90,17 @@ body {
 					.card-img-top {
 						max-height: 235px;
 					}
+
 					h3 {
 						min-height: 50px;
 					}
-					p { 
-						color : black;
+
+					p {
+						color: black;
 						text-decoration: none;
 					}
-					.text-end{
+
+					.text-end {
 						margin-top: 1em;
 					}
 				}
@@ -111,7 +115,7 @@ body {
 					padding: 0 50px;
 					/* Make space for outside controls */
 				}
-	
+
 				/* Position controls outside */
 				.carousel-control-prev {
 					left: -50px;
@@ -122,7 +126,7 @@ body {
 					height: 40px;
 					top: 45%;
 				}
-	
+
 				.carousel-control-next {
 					right: -50px;
 					width: 40px;
@@ -132,16 +136,16 @@ body {
 					height: 40px;
 					top: 45%;
 				}
-	
+
 				/* Style control icons */
 				.carousel-control-prev-icon {
 					background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
 				}
-	
+
 				.carousel-control-next-icon {
 					background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
 				}
-	
+
 				/* Style image caption */
 				.carousel-caption-below {
 					text-align: center;
@@ -149,14 +153,14 @@ body {
 					padding: 10px 0;
 					margin-bottom: 10px;
 				}
-	
+
 				/* Reposition indicators */
 				.carousel-indicators {
 					position: relative;
 					margin-top: 10px;
 					margin-bottom: 0;
 				}
-	
+
 				.carousel-indicators [data-bs-target] {
 					background-color: #FFF;
 					width: 10px;
@@ -182,14 +186,17 @@ body {
 				.card-img-top {
 					max-height: 235px;
 				}
+
 				h3 {
 					min-height: 50px;
 				}
-				p { 
-					color : black;
+
+				p {
+					color: black;
 					text-decoration: none;
 				}
-				.text-end{
+
+				.text-end {
 					margin-top: 1em;
 				}
 			}
@@ -203,12 +210,13 @@ body {
 			img {
 				height: 20px;
 			}
+
 			.section-arrow-react {
 				position: relative;
 				cursor: pointer;
 				padding: 20px;
 			}
-	
+
 			.section-arrow-react:hover {
 				-webkit-animation: arrows 1s ease-in;
 				-moz-animation: arrows 1s ease-in;
@@ -327,24 +335,87 @@ body {
 	}
 
 	.product-icon {
-        width: 64px;
-        height: 64px;
-        background-color: #f8f9fa;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-    }
-	.btn-product-demo {
-        background-color: #6610f2;
-        color: white;
-    }
+		width: 64px;
+		height: 64px;
+		background-color: #f8f9fa;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
 
-    .btn-product-demo:hover {
-        background-color: #520dc2;
-        color: white;
-    }
+	.btn-product-demo {
+		background-color: #6610f2;
+		color: white;
+	}
+
+	.btn-product-demo:hover {
+		background-color: #520dc2;
+		color: white;
+	}
+
+	footer {
+		border-top: 3px solid $main-color;
+
+		/* Base styles */
+		.services-menu .list-group-item {
+			transition: all 0.2s ease-in-out;
+			border-left: 4px solid transparent;
+		}
+
+		.services-menu .list-group-item a {
+			position: relative;
+			min-height: 3.5rem;
+		}
+
+		/* Hover state */
+		.services-menu .list-group-item:hover,
+		.services-menu .list-group-item:active {
+			background-color: rgba(var(--bs-primary-rgb), 0.03);
+		}
+
+		.services-menu .list-group-item:hover a {
+			color: var(--bs-primary) !important;
+		}
+
+		/* Active state */
+		.services-menu .list-group-item.active {
+			background-color: rgba(var(--bs-primary-rgb), 0.05);
+			border-left-color: var(--bs-primary);
+		}
+
+		.services-menu .list-group-item.active a {
+			color: var(--bs-primary) !important;
+			font-weight: 500;
+		}
+
+		.services-menu .list-group-item.active .menu-arrow {
+			color: var(--bs-primary);
+		}
+
+		/* Arrow styles */
+		.menu-arrow {
+			color: #6c757d;
+			flex-shrink: 0;
+			transition: transform 0.2s ease;
+		}
+
+		.services-menu .list-group-item:hover .menu-arrow {
+			transform: translateX(3px);
+		}
+
+		/* Mobile optimization */
+		@media (max-width: 768px) {
+			.services-menu .list-group-item {
+				border-left-width: 3px;
+			}
+
+			.services-menu .list-group-item a {
+				padding-left: calc(1rem - 3px);
+			}
+		}
+	}
 }
 
 .flex-container {
@@ -586,7 +657,7 @@ fieldset.attend input.radio {
 	display: inline-block;
 	padding: 18px 40px;
 	font-size: 17px;
-	background-color: #091C99;
+	background-color: $main-color;
 	color: #fff;
 	border-radius: 5px;
 	text-decoration: none;
@@ -670,6 +741,7 @@ fieldset.attend input.radio {
 	/* Your CSS styles for tablets */
 	body {
 		background-color: #f9ffff;
+
 		.hero-section {
 			padding-top: 90px;
 			padding-bottom: 60px;
@@ -753,7 +825,8 @@ fieldset.attend input.radio {
 	/* Your CSS styles for smartphones in landscape */
 	body {
 		background-color: #fffff9;
-		.wrapper{
+
+		.wrapper {
 			article.page {
 				section.hero-section {
 					padding-top: 60px;

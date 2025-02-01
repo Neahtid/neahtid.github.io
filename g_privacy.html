@@ -4,20 +4,5 @@ namespace: privacy-policy
 permalink: /privacy-policy/
 ---
 <div class="privacy-page">
-    <div class="language-selector">
-        <a href="/privacy-policy/" 
-            class="lang-link {% if site.lang == 'en' %}active{% endif %}" {% if site.lang == 'en' %}aria-current="true"{% endif %}>
-            {{ site.language_names['en'] }}
-        </a> |
-        <a href="/es/privacy-policy/" 
-            class="lang-link {% if site.lang == 'es' %}active{% endif %}" {% if site.lang == 'es' %}aria-current="true"{% endif %}>
-            {{ site.language_names['es'] }}
-        </a> |
-        <a href="/pt-br/privacy-policy/" 
-            class="lang-link {% if site.lang == 'pt-br' %}active{% endif %}" {% if site.lang == 'pt-br' %}aria-current="true"{% endif %}>
-            {{ site.language_names['pt-br'] }}
-        </a>
-    </div>
-
     {% tf privacy_policy.html %}
 </div>

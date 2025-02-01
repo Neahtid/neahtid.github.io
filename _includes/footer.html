@@ -38,7 +38,7 @@
   </div>
 </form>
 <!-- Footer -->
-<footer class="bg-dark text-white py-4">
+<footer class="bg-light py-4">
   <div class="container">
     <div class="row">
       <div class="col-md-3 order-3 order-md-1">
@@ -53,10 +53,14 @@
         <h5>Know Our Services</h5>
         <!-- Services Navigation Menu -->
         <nav class="services-menu">
+          {% assign prefix = '' %}
+          {% if site.lang != site.default_lang %}
+          {% assign prefix = "/" | append: site.lang %}
+          {% endif %}
           <ul class="list-group list-group-flush">
             <li
               class="list-group-item p-0 {% if page.url == '/services/web-applications-and-software-solutions' %}active{% endif %}">
-              <a href="/services/web-applications-and-software-solutions"
+              <a href="{{ prefix }}/services/web-applications-and-software-solutions"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Web Applications &amp; Digital Presence</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
@@ -67,7 +71,7 @@
 
             <li
               class="list-group-item p-0 {% if page.url == '/services/business-intelligence-and-data-analytics' %}active{% endif %}">
-              <a href="/services/business-intelligence-and-data-analytics"
+              <a href="{{ prefix }}/services/business-intelligence-and-data-analytics"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Business Intelligence &amp; Data Analytics</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
@@ -78,7 +82,7 @@
 
             <li
               class="list-group-item p-0 {% if page.url == '/services/artificial-intelligence-and-automation' %}active{% endif %}">
-              <a href="/services/artificial-intelligence-and-automation"
+              <a href="{{ prefix }}/services/artificial-intelligence-and-automation"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Artificial Intelligence &amp; Automation</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
@@ -88,7 +92,7 @@
             </li>
 
             <li class="list-group-item p-0 {% if page.url == '/services/cybersecurity-solutions' %}active{% endif %}">
-              <a href="/services/cybersecurity-solutions"
+              <a href="{{ prefix }}/services/cybersecurity-solutions"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Cybersecurity &amp; Advanced Software</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
@@ -98,7 +102,7 @@
             </li>
 
             <li class="list-group-item p-0 {% if page.url == '/services/hardware-solutions' %}active{% endif %}">
-              <a href="/services/hardware-solutions"
+              <a href="{{ prefix }}/services/hardware-solutions"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>Hardware Solutions</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
@@ -108,7 +112,7 @@
             </li>
 
             <li class="list-group-item p-0 {% if page.url == '/services/e-commerce-solutions' %}active{% endif %}">
-              <a href="/services/e-commerce-solutions"
+              <a href="{{ prefix }}/services/e-commerce-solutions"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
                 <span>E-Commerce Solutions</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
@@ -118,77 +122,48 @@
             </li>
           </ul>
         </nav>
-
-        <style>
-          /* Base styles */
-          .services-menu .list-group-item {
-            transition: all 0.2s ease-in-out;
-            border-left: 4px solid transparent;
-          }
-
-          .services-menu .list-group-item a {
-            position: relative;
-            min-height: 3.5rem;
-          }
-
-          /* Hover state */
-          .services-menu .list-group-item:hover,
-          .services-menu .list-group-item:active {
-            background-color: rgba(var(--bs-primary-rgb), 0.03);
-          }
-
-          .services-menu .list-group-item:hover a {
-            color: var(--bs-primary) !important;
-          }
-
-          /* Active state */
-          .services-menu .list-group-item.active {
-            background-color: rgba(var(--bs-primary-rgb), 0.05);
-            border-left-color: var(--bs-primary);
-          }
-
-          .services-menu .list-group-item.active a {
-            color: var(--bs-primary) !important;
-            font-weight: 500;
-          }
-
-          .services-menu .list-group-item.active .menu-arrow {
-            color: var(--bs-primary);
-          }
-
-          /* Arrow styles */
-          .menu-arrow {
-            color: #6c757d;
-            flex-shrink: 0;
-            transition: transform 0.2s ease;
-          }
-
-          .services-menu .list-group-item:hover .menu-arrow {
-            transform: translateX(3px);
-          }
-
-          /* Mobile optimization */
-          @media (max-width: 768px) {
-            .services-menu .list-group-item {
-              border-left-width: 3px;
-            }
-
-            .services-menu .list-group-item a {
-              padding-left: calc(1rem - 3px);
-            }
-          }
-        </style>
       </div>
       {% endif %}
       <div class="col-md-4 order-2 order-md-3">
+        <div class="d-block btn-group text-end">
+          <button class="btn btn-outline-secondary dropdown-toggle my-2" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            {% t global.tagline %}
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            {% for lang in site.languages %}
+            {% unless site.lang == lang %}
+            <li>
+              {% if page.namespace %}
+              <a class="dropdown-item" data-lang="{{ lang }}" href="{% tl {{ page.namespace }} {{ lang }} %}">
+              {{ site.language_names[lang] }}
+              </a>
+              {% else %}
+              {% if lang == site.default_lang and site.default_locale_in_subfolder != true %}
+              <a class="dropdown-item" data-lang="{{ lang }}" href="{{ site.baseurl_root }}{{ page.url }}">
+              {{ site.language_names[lang] }}
+              </a>
+              {% else %}
+              <a class="dropdown-item" data-lang="{{ lang }}" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">
+              {{ site.language_names[lang] }}
+              </a>
+              {% endif %}
+              {% endif %}
+            </li>
+            {% assign next = forloop.index | plus: 1 %}
+
+            {% endunless %}
+            {% endfor %}
+          </ul>
+        </div>
         <hr class="d-md-none">
         <div class="row">
           {% for navbottom in site.translations[site.lang].global.navbar_bottom %}
           <div class="col-sm-4 {% if page.url == navbottom.link %}active{% endif %}">
               {% if site.lang == site.default_lang %}
-              <a class="text-light" href="{{navbottom.link}}">{{ navbottom.title }}</a>
+              <a href="{{navbottom.link}}">{{ navbottom.title }}</a>
               {% else %}
-              <a class="text-light" href="/{{site.lang}}{{navbottom.link}}">{{ navbottom.title }}</a>
+              <a href="/{{site.lang}}{{navbottom.link}}">{{ navbottom.title }}</a>
               {% endif %}
           </div>
           {% endfor %}

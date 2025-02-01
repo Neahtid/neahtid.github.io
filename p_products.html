@@ -6,6 +6,10 @@ description: Discover our cutting-edge demo products Jingo.store, zigna.app, and
 custom_js:
 - /assets/js/custom/p_products.js
 ---
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
 <style>
     :root {
         --primary-color: #091C99;
@@ -116,7 +120,7 @@ custom_js:
             <div class="col-sm-6 col-md-4 animated-hidden">
                 <div class="card product-card shadow">
                     <div class="card-body">
-                        <a href="/products/jingo-store" class="text-decoration-none text-dark">
+                        <a href="{{prefix}}/products/jingo-store" class="text-decoration-none text-dark">
                             <div class="product-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                     class="bi bi-shop" viewBox="0 0 16 16">
@@ -131,7 +135,7 @@ custom_js:
                                 <a href="https://jingo.store" target="_blank" class="btn btn-product-demo me-2">
                                     Live Demo
                                 </a>
-                                <a href="/products/jingo-store" class="btn btn-outline-primary">Learn More</a>
+                                <a href="{{prefix}}/products/jingo-store" class="btn btn-outline-primary">Learn More</a>
                             </div>
                         </a>
                     </div>
@@ -142,7 +146,7 @@ custom_js:
             <div class="col-sm-6 col-md-4 animated-hidden">
                 <div class="card product-card shadow">
                     <div class="card-body">
-                        <a href="/products/zigna-app" class="text-decoration-none text-dark">
+                        <a href="{{prefix}}/products/zigna-app" class="text-decoration-none text-dark">
                             <div class="product-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                     class="bi bi-graph-up" viewBox="0 0 16 16">
@@ -157,7 +161,7 @@ custom_js:
                                 <a href="https://zigna.app" target="_blank" class="btn btn-product-demo me-2">
                                     Live Demo
                                 </a>
-                                <a href="/products/zigna-app" class="btn btn-outline-primary">Learn More</a>
+                                <a href="{{prefix}}/products/zigna-app" class="btn btn-outline-primary">Learn More</a>
                             </div>
                         </a>
                     </div>
@@ -168,7 +172,7 @@ custom_js:
             <div class="col-sm-6 col-md-4 animated-hidden">
                 <div class="card product-card shadow">
                     <div class="card-body">
-                        <a href="/products/pwa-demo" class="text-decoration-none text-dark">
+                        <a href="{{prefix}}/products/pwa-demo" class="text-decoration-none text-dark">
                             <div class="product-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                     class="bi bi-phone" viewBox="0 0 16 16">
@@ -184,7 +188,7 @@ custom_js:
                                 <a href="https://minions.neahtid.com" target="_blank" class="btn btn-product-demo me-2">
                                     Live Demo
                                 </a>
-                                <a href="/products/pwa-demo" class="btn btn-outline-primary">Learn More</a>
+                                <a href="{{prefix}}/products/pwa-demo" class="btn btn-outline-primary">Learn More</a>
                             </div>
                         </a>
                     </div>

@@ -89,15 +89,12 @@
             directly. Continued use of the Services after such changes constitutes your acceptance of the new Terms.
         </p>
     </section>
-
+    {% assign prefix = '' %}
+    {% if site.lang != site.default_lang %}
+    {% assign prefix = "/" | append: site.lang %}
+    {% endif %}
     <section>
         <h2>Contact Us</h2>
-        <p>If you have any questions or concerns about these Terms, please contact us at:</p>
-        <address>
-            Neahtid<br>
-            Email: <a href="mailto:support@canismajor.com">support@canismajor.com</a><br>
-            Phone: +1 (123) 456-7890<br>
-            Address: 123 IT Solutions Blvd, San Francisco, CA, USA
-        </address>
+        <p>If you have any questions or concerns about these Terms, please <a href="{{prefix}}/contact-us">contact us</a>.</p>
     </section>
 </main>

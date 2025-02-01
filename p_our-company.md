@@ -3,7 +3,10 @@ layout: page
 title: Our Company
 permalink: /our-company
 ---
-<!-- first section -->
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
 <header class="headblock company-1">
 	<h1>Our Company</h1>
 </header>
@@ -22,12 +25,12 @@ permalink: /our-company
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-4">
-				<a href="./research-program" class="contact-badge company-research">
+				<a href="{{prefix}}/research-program" class="contact-badge company-research">
 					<h2>Research Programs</h2>
 				</a>
 			</div>
 			<div class="col-12 col-md-4">
-				<a href="/our-products" class="contact-badge relations">
+				<a href="{{prefix}}/our-products" class="contact-badge relations">
 					<h2>Software Solutions</h2>
 				</a>
 			</div>
