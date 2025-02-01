@@ -45,7 +45,8 @@
         <hr class="d-md-none">
         <h3>Neahtid</h3>
         <p>{{ page.slogan | default: site.slogan | default: "en-US" }}</p>
-        <p>© 2025 All rights reserved.</p>
+        <p>&copy; {{ site.time | date: '%Y' }} All rights reserved.</p>
+        <p>{{ site.title }}</p>
       </div>
       {% if page.url != '/services' %}
       <div class="col-md-5 order-1 order-md-2">
@@ -182,18 +183,15 @@
       <div class="col-md-4 order-2 order-md-3">
         <hr class="d-md-none">
         <div class="row">
-          <div class="col-sm-4">
-            <a href="/contact-us" class="text-light">Contact Us</a>
+          {% for navbottom in site.translations[site.lang].global.navbar_bottom %}
+          <div class="col-sm-4 {% if page.url == navbottom.link %}active{% endif %}">
+              {% if site.lang == site.default_lang %}
+              <a class="text-light" href="{{navbottom.link}}">{{ navbottom.title }}</a>
+              {% else %}
+              <a class="text-light" href="/{{site.lang}}{{navbottom.link}}">{{ navbottom.title }}</a>
+              {% endif %}
           </div>
-          <div class="col-6">
-            <a href="/{{ site.lang }}/privacy-policy/" class="text-light me-3">
-              Privacy Policy ({{ site.lang }})
-            </a>
-            <a href="/{{ site.baseurl }}/privacy-policy/">Privacy Policy ({{ site.lang }})</a>
-          </div>
-          <div class="col-6">
-            <a href="#" class="text-light">Terms of Service</a>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>

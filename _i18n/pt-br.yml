@@ -1,29 +1,36 @@
 global:
   tagline: Português
+  navbar_top:
+    - title: Services
+      link: /services
+    - title: Products
+      link: /our-products
+    - title: Blog
+      link: /blog
+    - title: Contact Us
+      link: /contact-us
+    - title: Our Company
+      link: /our-company
+    - title: Research
+      link: /research-program
+  navbar_bottom:
+    - title: "Terms of Service"
+      link: /terms
+    - title: "Privacy Policy"
+      link: /privacy-policy
+    - title: Contact Us
+      link: /contact-us
 
 langs:
   pt: Português
   en: English
   es: Español
+
 pages:
   homeh1: Soluções de software e hardware que quebram barreiras tecnológicas
   homeh2: Ajudando nossos parceiros boutique desde 2001 a pesquisar e desenvolver aplicativos de hardware e software para infraestruturas de alta demanda.
   homecta: Reserve seu lugar
-
   precents: Postagens recentes
-
-titles:
-  pagination: Paginatura
-  next: Prossima
-  language: Idioma
-  contactus: Fale Conosco
-  ourcompany: Nossa Companhia
-  portfolio: Produtos
-  services: Services
-  research: Pesquisa
-  support: Suporte
-  researchPrograms: Programas de Pesquisa
-  softwareSolutions: Soluções de Software
 
 jekyll_timeago:
   today: 'hoje'

@@ -10,24 +10,15 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto d-flex align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="/services">{% t titles.services %}</a>
+          {% for navtop in site.translations[site.lang].global.navbar_top %}
+          <li class="nav-item {% if page.url == navtop.link %}active{% endif %}">
+              {% if site.lang == site.default_lang %}
+              <a class="nav-link" href="{{navtop.link}}">{{ navtop.title }}</a>
+              {% else %}
+              <a class="nav-link" href="/{{site.lang}}{{navtop.link}}">{{ navtop.title }}</a>
+              {% endif %}
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/our-products">{% t titles.portfolio %}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact-us">{% t titles.contactus %}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/our-company">{% t titles.ourcompany %}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/research-program">{% t titles.research %}</a>
-          </li>
+          {% endfor %}
         </ul>
         <div class="d-block btn-group text-end">
           <button class="btn btn-outline-secondary dropdown-toggle my-2" type="button" id="dropdownMenuButton1"

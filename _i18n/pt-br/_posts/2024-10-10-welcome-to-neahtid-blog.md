@@ -2,8 +2,8 @@
 layout: post_sidebar
 title: Bem-vindo(a) à Neahtid, Inovando o Futuro com Tecnologia
 cover: cover.jpg
-date:   2024-10-01 10:10:10
-categories: en posts
+date: 2024-10-01 10:10:10
+categories: pt-br posts
 type: article
 ---
 <header class="entry-header">

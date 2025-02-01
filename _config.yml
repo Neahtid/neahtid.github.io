@@ -27,24 +27,57 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
   - jekyll-timeago
+  - jekyll-seo-tag
+permalink: pretty
 
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 #permalink: /:categories/:year/:month/:day/:title:output_ext
 
 jekyll_timeago:
   depth: 2
   translations_path: "/_18n/*.yml"
-  default_locale: "pt"
+  default_locale: "en"
   fallbacks: true
   available_locales:
     - "en"
     - "es"
-    - "pt"
+    - "pt-br"
 
-# jekyll-multiple-languages-plugin settings
-languages: ["pt", "en", "es"]
-exclude_from_localizations:
+# Multilingual settings
+languages: ["en", "es", "pt-br"]
+default_lang: "en"
+exclude_from_localization:
   ["javascript", "images", "css", "scripts", "favicon.ico"]
+parallel_localization: true
+
+# Language names for UI
+language_names:
+  en: English
+  es: Español
+  pt-br: Português
+
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Exclude directories and files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - README.md
+  - LICENSE
 # Exclude from processing.
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.

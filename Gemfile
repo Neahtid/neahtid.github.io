@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.4"
-gem "jekyll-multiple-languages-plugin"
 gem "logger"
 gem "csv"
 gem "ostruct"
@@ -11,7 +10,9 @@ gem 'jekyll-timeago'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed"
+  gem "jekyll-multiple-languages-plugin"
+  gem "jekyll-seo-tag"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -1,0 +1,20 @@
+---
+layout: default
+namespace: terms
+permalink: /terms/
+---
+<div class="terms-page">
+    <div class="language-selector">
+        <a href="/terms/" class="lang-link {% if site.lang == 'en' %}active{% endif %}" {% if site.lang == 'en' %}aria-current="true"{% endif %}>
+            {{ site.language_names['en'] }}
+        </a> |
+        <a href="/es/terms/" class="lang-link {% if site.lang == 'es' %}active{% endif %}" {% if site.lang == 'es' %}aria-current="true"{% endif %}>
+            {{ site.language_names['es'] }}
+        </a> |
+        <a href="/pt-br/terms/" class="lang-link {% if site.lang == 'pt-br' %}active{% endif %}" {% if site.lang == 'pt-br' %}aria-current="true"{% endif %}>
+            {{ site.language_names['pt-br'] }}
+        </a>
+    </div>
+
+    {% tf terms_of_service.html %}
+</div>
