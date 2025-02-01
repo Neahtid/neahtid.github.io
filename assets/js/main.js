@@ -194,3 +194,22 @@ if (contactModal) {
 
 	});
 }
+
+// language
+const hasBeenRedirected = localStorage.getItem('hasBeenRedirected');
+const path = window.location.pathname;
+if (!hasBeenRedirected && path === "/") {
+	const userLanguage = navigator.language || navigator.userLanguage;
+	console.log(`${userLanguage} detected`);
+	let redirects = {
+		'pt': '/pt-br/',
+		'en': '/en/',
+		'es': '/es/'
+	}
+	let userLangDetected = userLanguage.substring(0, 2);
+	if (redirects[userLangDetected]) {
+		console.log(`redirecting ${userLangDetected} to ${redirects[userLangDetected]}`);
+		window.location.replace(redirects[userLangDetected]);
+		localStorage.setItem('hasBeenRedirected', true);
+	}
+}
