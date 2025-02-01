@@ -39,7 +39,7 @@
 </form>
 <!-- Footer -->
 <footer class="bg-light py-4">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-3 order-3 order-md-1">
         <hr class="d-md-none">
@@ -125,6 +125,7 @@
       </div>
       {% endif %}
       <div class="col-md-4 order-2 order-md-3">
+        <hr class="d-md-none">
         <div class="d-block btn-group text-end">
           <button class="btn btn-outline-secondary dropdown-toggle my-2" type="button" id="dropdownMenuButton1"
             data-bs-toggle="dropdown" aria-expanded="false">
@@ -156,7 +157,6 @@
             {% endfor %}
           </ul>
         </div>
-        <hr class="d-md-none">
         <div class="row">
           {% for navbottom in site.translations[site.lang].global.navbar_bottom %}
           <div class="col-sm-4 {% if page.url == navbottom.link %}active{% endif %}">
