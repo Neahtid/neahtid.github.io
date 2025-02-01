@@ -12,17 +12,63 @@ custom_js:
 ---
 <style>
     :root {
-        --primary-color: #3f2b96;
-        --secondary-color: #6c5ce7;
-        --accent-color: #6c5ce7;
+        --primary-color: #091C99;
+        --secondary-color: #2a3cc9;
+        --accent-color: #4f60e6;
         --gradient-start: #a8c0ff;
-        --gradient-end: #3f2b96;
+        --gradient-end: #091C99;
     }
 
+    /* Animation Keyframes */
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.05);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes slide-up {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Enhanced Styles */
     .hero-section {
         background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
         position: relative;
         overflow: hidden;
+    }
+
+    .hero-content {
+        animation: slide-up 1s ease-out;
     }
 
     .service-card {
@@ -30,6 +76,9 @@ custom_js:
         border-radius: 15px;
         transition: all 0.3s ease;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        background: white;
+        padding: 2rem;
+        animation: slide-up 0.5s ease-out;
     }
 
     .service-card:hover {
@@ -48,6 +97,7 @@ custom_js:
         justify-content: center;
         margin: 0 auto 1.5rem;
         color: white;
+        animation: pulse 2s infinite;
     }
 
     .process-step {
@@ -56,42 +106,21 @@ custom_js:
         background: white;
         border-radius: 15px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .process-step::after {
-        content: '';
-        position: absolute;
-        width: 2px;
-        height: 50px;
-        background: var(--accent-color);
-        bottom: -50px;
-        left: 50%;
-        display: none;
-    }
-
-    @media (min-width: 768px) {
-        .process-step::after {
-            display: block;
-        }
-
-        .process-step:last-child::after {
-            display: none;
-        }
-    }
-
-    .testimonial-card {
-        background: #f8f9fa;
-        border-radius: 15px;
-        padding: 2rem;
+        margin-bottom: 2rem;
+        animation: slide-up 0.7s ease-out;
     }
 
     .btn-primary {
         background-color: var(--primary-color);
         border-color: var(--secondary-color);
+        padding: 0.8rem 2rem;
+        transition: all 0.3s ease;
     }
+
     .btn-primary:hover {
         background-color: var(--secondary-color);
         border-color: var(--secondary-color);
+        transform: translateY(-2px);
     }
 </style>
 <!-- Structured Data -->
@@ -177,30 +206,33 @@ custom_js:
 </section>
 
 <!-- Solutions Section -->
-<section id="services" class="py-5">
+<section id="solutions" class="py-5">
     <div class="container">
         <h2 class="text-center mb-5">Advanced Digital Solutions</h2>
         <div class="row g-4">
             <!-- Progressive Web Apps -->
             <div class="col-md-6 col-lg-4">
-                <div class="service-card h-100">
-                    <div class="card-body text-center px-1">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_1_icon_pwa.svg" alt="PWA Icon">
-                        </div>
-                        <h3 class="h4">Progressive Web Apps</h3>
-                        <p>Advanced PWAs with seamless booking systems and secure payment integration.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li>✓ Offline Functionality</li>
-                            <li>✓ Fast Loading Speed</li>
-                            <li>✓ Secure Payments</li>
-                        </ul>
+                <div class="service-card">
+                    <div class="feature-icon">
+                        <img src="/assets/svg/p_services_1_icon_pwa.svg" alt="PWA Icon">
                     </div>
+                    <h3 class="h4 text-center">Progressive Web Apps</h3>
+                    <p class="text-center">Create lightning-fast, secure web applications with native capabilities
+                        and integrated payment solutions.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li>✓ Offline Functionality</li>
+                        <li>✓ Native-like Experience</li>
+                        <li>✓ Secure Payments</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Automation Card -->
+            <!-- Google Sheets Integration -->
             <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="feature-icon">
+                        <img src="/assets/svg/p_services_1_icon_sheets.svg" alt="Sheets Icon">
+                    </div>
                     <h3 class="h4 text-center">Google Sheets Integration</h3>
                     <p class="text-center">Transform your business operations with smart applications that leverage
                         Google Sheets for powerful automation.</p>
@@ -212,67 +244,121 @@ custom_js:
                 </div>
             </div>
 
-            <!-- Website Development Card -->
+            <!-- Corporate Websites -->
             <div class="col-md-6 col-lg-4">
-                <div class="service-card h-100">
-                    <div class="card-body text-center px-1">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_1_icon_website.svg" alt="Web Development Icon">
-                        </div>
-                        <h3 class="h4">Website Development</h3>
-                        <p>Professional websites that enhance brand visibility and drive engagement.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li>✓ Responsive Design</li>
-                            <li>✓ SEO Optimization</li>
-                            <li>✓ Content Management</li>
-                        </ul>
+                <div class="service-card">
+                    <div class="feature-icon">
+                        <img src="/assets/svg/p_services_1_icon_website.svg" alt="Website Icon">
                     </div>
+                    <h3 class="h4 text-center">Corporate Websites</h3>
+                    <p class="text-center">Build professional, responsive websites with integrated scheduling
+                        systems and optimized user journeys.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li>✓ Responsive Design</li>
+                        <li>✓ SEO Optimization</li>
+                        <li>✓ Content Management</li>
+                    </ul>
                 </div>
             </div>
 
             <!-- High-Impact Landing Pages -->
             <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="feature-icon">
+                        <img src="/assets/svg/p_services_1_icon_landing_page.svg" alt="Landing Page Icon">
+                    </div>
                     <h3 class="h4 text-center">High-Impact Landing Pages</h3>
                     <p class="text-center">Design conversion-focused landing pages using data-driven strategies and
                         compelling visual elements.</p>
                     <ul class="list-unstyled mt-3">
+                        <li>✓ A/B Testing</li>
+                        <li>✓ Conversion Optimization</li>
+                        <li>✓ Analytics Integration</li>
+                    </ul>
                 </div>
             </div>
 
             <!-- Custom Web Applications -->
             <div class="col-md-6 col-lg-4">
-                <div class="service-card h-100">
-                    <div class="card-body text-center px-1">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_1_icon_corporate_identity.svg"
-                                alt="Corporate Identity Icon">
-                        </div>
-                        <h3 class="h4">Corporate Identity</h3>
-                        <p>Comprehensive branding and web design solutions for businesses.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li>✓ Brand Guidelines</li>
-                            <li>✓ Visual Identity</li>
-                            <li>✓ Design Systems</li>
-                        </ul>
+                <div class="service-card">
+                    <div class="feature-icon">
+                        <img src="/assets/svg/p_services_1_icon_custom_app.svg" alt="Custom App Icon">
                     </div>
+                    <h3 class="h4 text-center">Custom Web Applications</h3>
+                    <p class="text-center">Develop tailored web-based solutions with secure authentication and
+                        real-time data processing.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li>✓ Secure Authentication</li>
+                        <li>✓ Real-time Processing</li>
+                        <li>✓ Third-party Integration</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Digital Strategy Card -->
+            <!-- Research Simulation -->
             <div class="col-md-6 col-lg-4">
-                <div class="service-card h-100">
-                    <div class="card-body text-center px-1">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_1_icon_strategy.svg" alt="Strategy Icon">
-                        </div>
-                        <h3 class="h4">Digital Strategy</h3>
-                        <p>Strategic digital presence planning and implementation.</p>
-                        <ul class="list-unstyled mt-3">
-                            <li>✓ Market Analysis</li>
-                            <li>✓ Growth Planning</li>
-                            <li>✓ Performance Tracking</li>
-                        </ul>
+                <div class="service-card">
+                    <div class="feature-icon">
+                        <img src="/assets/svg/p_services_1_icon_research.svg" alt="Research Icon">
                     </div>
+                    <h3 class="h4 text-center">Research Simulation</h3>
+                    <p class="text-center">Create custom simulation software for organizations requiring complex
+                        computational solutions.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li>✓ Advanced Computations</li>
+                        <li>✓ Data Analysis</li>
+                        <li>✓ Scientific Modeling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Brand Identity -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="feature-icon">
+                        <img src="/assets/svg/p_services_1_icon_corporate_identity.svg" alt="Brand Icon">
+                    </div>
+                    <h3 class="h4 text-center">Brand Identity & Web Design</h3>
+                    <p class="text-center">Create a cohesive digital brand presence with professional design
+                        services.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li>✓ Visual Identity</li>
+                        <li>✓ Design Systems</li>
+                        <li>✓ Brand Guidelines</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Website Maintenance -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="feature-icon">
+                        <img src="/assets/svg/p_services_1_icon_maintenance.svg" alt="Maintenance Icon">
+                    </div>
+                    <h3 class="h4 text-center">Website Maintenance</h3>
+                    <p class="text-center">Ensure your digital presence remains secure and optimized with proactive
+                        maintenance.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li>✓ Security Updates</li>
+                        <li>✓ Performance Optimization</li>
+                        <li>✓ Regular Backups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Marketing Landing Pages -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="feature-icon">
+                        <img src="/assets/svg/p_services_1_icon_marketing.svg" alt="Marketing Icon">
+                    </div>
+                    <h3 class="h4 text-center">Marketing Landing Pages</h3>
+                    <p class="text-center">Design high-converting landing pages optimized for lead generation.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li>✓ Lead Generation</li>
+                        <li>✓ Conversion Tracking</li>
+                        <li>✓ Industry-specific Elements</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -319,7 +405,7 @@ custom_js:
 <!-- Portfolio Section -->
 <section id="portfolio" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Featured Projects</h2>
+        <h2 class="text-center mb-5">Industry-Specific Solutions</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card">
@@ -353,7 +439,6 @@ custom_js:
         </div>
     </div>
 </section>
-
 
 <!-- CTA Section -->
 <section class="py-5">
