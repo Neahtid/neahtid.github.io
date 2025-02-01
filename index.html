@@ -4,6 +4,10 @@ description: Leading provider of innovative IT solutions including web applicati
 keywords: IT solutions, web development, business intelligence, artificial intelligence, cybersecurity services, hardware solutions, e-commerce platforms, digital transformation, software development, system integration
 permalink: /
 ---
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
 <style>
   .hero-section2 {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/earth-earth-at-night-night-lights-41949.jpeg');
@@ -218,7 +222,7 @@ permalink: /
         <!-- Web Applications & Software Solutions Card -->
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card service-card">
-            <a href="/services/web-applications-and-software-solutions" class="text-decoration-none text-dark">
+            <a href="{{prefix}}/services/web-applications-and-software-solutions" class="text-decoration-none text-dark">
               <img src="/assets/svg/p_services_1_hero_laptop.svg" class="img-fluid"
                 alt="Web Applications & Software Solutions">
               <div class="card-body">
@@ -238,7 +242,7 @@ permalink: /
         <!-- Business Intelligence & Data Analytics Card -->
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card service-card">
-            <a href="/services/business-intelligence-and-data-analytics" class="text-decoration-none text-dark">
+            <a href="{{prefix}}/services/business-intelligence-and-data-analytics" class="text-decoration-none text-dark">
               <img src="/assets/svg/p_services_2_hero_dashboard_profit.svg" class="img-fluid"
                 alt="Business Intelligence & Data Analytics Dashboard">
               <div class="card-body">
@@ -258,7 +262,7 @@ permalink: /
         <!-- Artificial Intelligence & Automation Card -->
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card service-card">
-            <a href="/services/artificial-intelligence-and-automation" class="text-decoration-none text-dark">
+            <a href="{{prefix}}/services/artificial-intelligence-and-automation" class="text-decoration-none text-dark">
               <img src="/assets/svg/p_services_3_hero_chatbot.svg" class="img-fluid"
                 alt="Artificial Intelligence & Automation Solutions">
               <div class="card-body">
@@ -278,7 +282,7 @@ permalink: /
         <!-- Cybersecurity Solutions Card -->
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card service-card">
-            <a href="/services/cybersecurity-solutions" class="text-decoration-none text-dark">
+            <a href="{{prefix}}/services/cybersecurity-solutions" class="text-decoration-none text-dark">
               <img src="/assets/svg/p_services_4_cyber_defense.svg" class="img-fluid" alt="Cybersecurity Solutions">
               <div class="card-body">
                 <h3 class="card-title h4">Cybersecurity Solutions</h3>
@@ -297,7 +301,7 @@ permalink: /
         <!-- Hardware Solutions Card -->
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card service-card">
-            <a href="/services/hardware-solutions" class="text-decoration-none text-dark">
+            <a href="{{prefix}}/services/hardware-solutions" class="text-decoration-none text-dark">
               <img src="/assets/svg/p_services_5_automation.svg" class="img-fluid" alt="Hardware Solutions">
               <div class="card-body">
                 <h3 class="card-title h4">Hardware Solutions</h3>
@@ -316,7 +320,7 @@ permalink: /
         <!-- E-Commerce Solutions Card -->
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card service-card">
-            <a href="/services/e-commerce-solutions" class="text-decoration-none text-dark">
+            <a href="{{prefix}}/services/e-commerce-solutions" class="text-decoration-none text-dark">
               <img src="/assets/svg/p_services_6_ecommerce_growth_metrics.svg" class="img-fluid"
                 alt="E-Commerce Solutions">
               <div class="card-body">
@@ -416,7 +420,7 @@ permalink: /
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card product-card">
             <div class="card-body">
-              <a href="/products/jingo-store" class="text-decoration-none text-dark">
+              <a href="{{prefix}}/products/jingo-store" class="text-decoration-none text-dark">
                 <div class="product-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-shop"
                     viewBox="0 0 16 16">
@@ -431,7 +435,7 @@ permalink: /
                   <a href="https://jingo.store" target="_blank" class="btn btn-product-demo me-2">
                     Live Demo
                   </a>
-                  <a href="/products/jingo-store" class="btn btn-outline-primary">Learn More</a>
+                  <a href="{{prefix}}/products/jingo-store" class="btn btn-outline-primary">Learn More</a>
                 </div>
               </a>
             </div>
@@ -442,7 +446,7 @@ permalink: /
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card product-card">
             <div class="card-body">
-              <a href="/products/zigna-app" class="text-decoration-none text-dark">
+              <a href="{{prefix}}/products/zigna-app" class="text-decoration-none text-dark">
                 <div class="product-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                     class="bi bi-graph-up" viewBox="0 0 16 16">
@@ -457,7 +461,7 @@ permalink: /
                   <a href="https://zigna.app" target="_blank" class="btn btn-product-demo me-2">
                     Live Demo
                   </a>
-                  <a href="/products/zigna-app" class="btn btn-outline-primary">Learn More</a>
+                  <a href="{{prefix}}/products/zigna-app" class="btn btn-outline-primary">Learn More</a>
                 </div>
               </a>
             </div>
@@ -468,7 +472,7 @@ permalink: /
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card product-card">
             <div class="card-body">
-              <a href="/products/pwa-demo" class="text-decoration-none text-dark">
+              <a href="{{prefix}}/products/pwa-demo" class="text-decoration-none text-dark">
                 <div class="product-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone"
                     viewBox="0 0 16 16">
@@ -484,7 +488,7 @@ permalink: /
                   <a href="https://minions.neahtid.com" target="_blank" class="btn btn-product-demo me-2">
                     Live Demo
                   </a>
-                  <a href="/products/pwa-demo" class="btn btn-outline-primary">Learn More</a>
+                  <a href="{{prefix}}/products/pwa-demo" class="btn btn-outline-primary">Learn More</a>
                 </div>
               </a>
             </div>
@@ -534,7 +538,7 @@ permalink: /
           </div>
           <p class="mb-0">Find answers</p>
           <p>
-            <a href="/contact-us">Help Center
+            <a href="{{prefix}}/contact-us">Help Center
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -554,7 +558,7 @@ permalink: /
           </div>
           <p class="mb-0">Apply your Knowledge</p>
           <p>
-            <a href="/research-program">Research Programs
+            <a href="{{prefix}}/research-program">Research Programs
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"

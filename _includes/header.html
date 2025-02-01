@@ -1,7 +1,11 @@
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/"><img src="/assets/img/neahtid_logo.png" alt="Neahtid" class="logo"></a>
+      <a class="navbar-brand" href="{{ prefix | default: '/#home' }}"><img src="/assets/img/neahtid_logo.png" alt="Neahtid" class="logo"></a>
 
       <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,11 +16,7 @@
         <ul class="navbar-nav ms-auto d-flex align-items-center">
           {% for navtop in site.translations[site.lang].global.navbar_top %}
           <li class="nav-item {% if page.url == navtop.link %}active{% endif %}">
-              {% if site.lang == site.default_lang %}
-              <a class="nav-link" href="{{navtop.link}}">{{ navtop.title }}</a>
-              {% else %}
-              <a class="nav-link" href="/{{site.lang}}{{navtop.link}}">{{ navtop.title }}</a>
-              {% endif %}
+            <a class="nav-link" href="{{prefix}}{{navtop.link}}">{{ navtop.title }}</a>
           </li>
           {% endfor %}
         </ul>

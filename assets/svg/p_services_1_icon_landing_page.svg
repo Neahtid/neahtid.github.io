@@ -1,5 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="120 0 40 40" width="40" height="40">
-    <circle cx="140" cy="20" r="18" fill="#a386ff" opacity="0.1"/>
-    <path d="M130 25 L140 12 L150 25" fill="none" stroke="#F2CBF8" stroke-width="2"/>
-    <line x1="135" y1="28" x2="145" y2="28" stroke="#F2CBF8" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 0 40 40" width="60" height="60">
+    <!-- Background circle -->
+    <circle cx="100" cy="20" r="18" fill="#a386ff" opacity="0.1"/>
+    
+    <!-- Split testing elements: A and B sides -->
+    <path d="M94 16 L97 16 L98 19 L95 19 Z" fill="#00FF99"/>
+    <path d="M103 16 L106 16 L105 19 L102 19 Z" fill="#00FF99"/>
+    
+    <!-- Divider line suggesting split -->
+    <line x1="100" y1="15" x2="100" y2="25" stroke="#00FF99" stroke-width="0.8" stroke-dasharray="2,1"/>
+    
+    <!-- Percentage indicators -->
+    <rect x="93" y="21" width="5" height="2" fill="#00FF99" rx="0.5"/>
+    <rect x="102" y="21" width="5" height="2" fill="#00FF99" rx="0.5"/>
+    
+    <!-- Container box -->
+    <rect x="90" y="12" width="20" height="16" fill="none" stroke="#00FF99" stroke-width="2" rx="2"/>
 </svg>
