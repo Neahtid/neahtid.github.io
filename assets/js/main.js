@@ -11,10 +11,10 @@ $(document).ready(function () {
 		repeat: false,
 	});
 	$('.animated-hidden').viewportChecker({
-        classToAdd: 'animated-visible',
-        offset: 0,
-        repeat: false
-    });
+		classToAdd: 'animated-visible',
+		offset: 0,
+		repeat: false
+	});
 	/** ContactForms */
 	$('.nea-form').unbind('submit').bind('submit', function () {
 		postForm(this, false);
@@ -52,17 +52,15 @@ const consultationOptions = {
 		title: 'Start Your Digital Journey',
 		submit: 'Get Started',
 		options: [
-			'Marketing Landing Page',
-			'Progressive Web App',
-			'Custom Web Application',
 			'Advanced Web Applications',
-			'Advanced Computing Software',
-			'Google Sheets Integration Platform',
+			'Custom Business Solutions',
 			'Corporate Website Development',
+			'Business Process Automation',
 			'High-Impact Landing Pages',
-			'Research Simulation Software',
-			'Brand Identity & Web Design',
-			'Website Maintenance & Support',
+			'Financial & Business Analytics Solutions',
+			'Digital Brand Experience',
+			'Website Maintenance & Security',
+			'Business Systems Integration',
 			'Other'
 		]
 	},
