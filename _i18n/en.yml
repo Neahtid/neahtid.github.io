@@ -34,9 +34,12 @@ pages:
   modal_select_other: "Other"
   rights: "All rights reserved"
   know_our_services: "Know Our Services"
-  button_send: "Send"
-  button_close: "Close"
-  button_learn_more: "Learn More"
+  our_products: "Our Products"
+  work_with_us: "Work with Us"
+  buttons:
+    send: "Send"
+    close: "Close"
+    learn_more: "Learn More"
 
 
 jekyll_timeago:
@@ -56,6 +59,16 @@ jekyll_timeago:
   week: 'week'
   days: 'days'
   day: 'day'
+
+contact:
+  hero: "We are here to help you!"
+  title: "Let us know how can we help you"
+  description: "Use the form below to send us your comments or report any problems you experienced finding information on our website. We read all feedback carefully."
+  fields:
+    name: "Name"
+    email: "Email"
+    message: "Message"
+
 
 services:
   hero:

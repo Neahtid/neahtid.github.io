@@ -34,9 +34,12 @@ pages:
   modal_select_other: "Otro"
   rights: "Todos los derechos reservados"
   know_our_services: "Conoce Nuestros Servicios"
-  button_send: "Enviar"
-  button_close: "Cerrar"
-  button_learn_more: "Más Información"
+  our_products: "Nuestros Productos"
+  work_with_us: "Trabaja con Nosotros"
+  buttons:
+    send: "Enviar"
+    close: "Cerrar"
+    learn_more: "Más Información"
 
 jekyll_timeago:
   today: 'hoy'
@@ -55,6 +58,15 @@ jekyll_timeago:
   week: 'semana'
   days: 'días'
   day: 'día'
+
+contact:
+  hero: "¡Estamos aquí para ayudarte!"
+  title: "Cuéntanos cómo podemos ayudarte"
+  description: "Utiliza el formulario a continuación para enviarnos tus comentarios o informar cualquier problema que hayas experimentado al buscar información en nuestro sitio web. Leemos todos los comentarios con atención."
+  fields:
+    name: "Nombre"
+    email: "Correo Electrónico"
+    message: "Mensaje"
 
 services:
   hero:

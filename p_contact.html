@@ -14,28 +14,27 @@ permalink: /contact-us
 </style>
 <!-- first section -->
 <header class="headblock contact-1">
-	<h1>We are here to help you!</h1>
+	<h1>{% t contact.hero %}</h1>
 </header>
 <section class="contact-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-8">
-				<h2>Let us know how can we help you</h2>
-				<p>Use the form below to send us your comments or report any problems you experienced finding
-					information on our website. We read all feedback carefully.</p>
+				<h2>{% t contact.title %}</h2>
+				<p>{% t contact.description %}</p>
 				<form class="nea-contact nea-form">
 					<div class="contact-input">
-						<label for="form-field-nea_name">Name</label>
-						<input placeholder="Name" type="text" id="form-field-nea_name" required>
+						<label for="form-field-nea_name">{% t contact.fields.name %}</label>
+						<input placeholder="{% t contact.fields.name %}" type="text" id="form-field-nea_name" required>
 					</div>
 					<div class="contact-input">
-						<label for="form-field-nea_email">Email</label>
-						<input placeholder="Email" type="text" id="form-field-nea_email" required>
+						<label for="form-field-nea_email">{% t contact.fields.email %}</label>
+						<input placeholder="{% t contact.fields.email %}" type="text" id="form-field-nea_email" required>
 					</div>
 					<div class="contact-input">
-						<label for="form-field-nea_message">Message</label>
+						<label for="form-field-nea_message">{% t contact.fields.message %}</label>
 						<div>
-							<textarea placeholder="Message" id="form-field-nea_message" rows="5" required></textarea>
+							<textarea placeholder="{% t contact.fields.message %}" id="form-field-nea_message" rows="5" required></textarea>
 						</div>
 					</div>
 					<div>
@@ -46,7 +45,7 @@ permalink: /contact-us
 									<path
 										d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
 								</svg>
-								{% t pages.button_send %}
+								{% t pages.buttons.send %}
 							</div>
 						</button>
 					</div>
@@ -54,10 +53,10 @@ permalink: /contact-us
 			</div>
 			<div class="col-12 col-md-4">
 				<a href="{{prefix}}/our-products" class="contact-badge relations">
-					<h2>Software Solutions</h2>
+					<h2>{% t pages.our_products %}</h2>
 				</a>
 				<a href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank" class="contact-badge work">
-					<h2>Work with Us</h2>
+					<h2>{% t pages.work_with_us %}</h2>
 				</a>
 			</div>
 		</div>
