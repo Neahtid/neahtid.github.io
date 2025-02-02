@@ -1,24 +1,24 @@
 global:
   tagline: Português
   navbar_top:
-    - title: Services
+    - title: Serviços
       link: /services
-    - title: Products
+    - title: Produtos
       link: /our-products
     - title: Blog
       link: /blog
-    - title: Contact Us
+    - title: Contato
       link: /contact-us
-    - title: Our Company
+    - title: Nossa Empresa
       link: /our-company
-    - title: Research
+    - title: Pesquisa
       link: /research-program
   navbar_bottom:
-    - title: "Terms of Service"
+    - title: "Termos de Serviço"
       link: /terms
-    - title: "Privacy Policy"
+    - title: "Política de Privacidade"
       link: /privacy-policy
-    - title: Contact Us
+    - title: Contato
       link: /contact-us
 
 langs:
@@ -27,10 +27,15 @@ langs:
   es: Español
 
 pages:
-  homeh1: Soluções de software e hardware que quebram barreiras tecnológicas
-  homeh2: Ajudando nossos parceiros boutique desde 2001 a pesquisar e desenvolver aplicativos de hardware e software para infraestruturas de alta demanda.
-  homecta: Reserve seu lugar
-  precents: Postagens recentes
+  precents: "Posts Recentes"
+  modal_t1: "Agende uma"
+  modal_t2: "Consulta"
+  modal_select: "Selecione a Solução"
+  modal_select_other: "Outro"
+  close: "Fechar"
+  send: "Enviar"
+  rights: "Todos os direitos reservados"
+  know_our_services: "Conheça Nossos Serviços"
 
 jekyll_timeago:
   today: 'hoje'
@@ -49,3 +54,89 @@ jekyll_timeago:
   week: 'semana'
   days: 'dias'
   day: 'dia'
+
+services:
+  web_applications:
+    title: "Aplicações Web e Soluções de Software"
+    description: "Eleve sua marca com aplicações web de ponta e soluções de software avançadas personalizadas para o sucesso do seu negócio."
+  business_intelligence:
+    title: "Business Intelligence e Análise de Dados"
+    description: "Transforme seus dados empresariais em insights lucrativos com rastreamento de despesas em tempo real e painéis de análise de receita"
+  ai_automation:
+    title: "Inteligência Artificial e Automação"
+    description: "Aumente a eficiência com chatbots e outras automações baseadas em IA que transformam o atendimento ao cliente e otimizam as operações."
+  cybersecurity:
+    title: "Soluções de Cibersegurança"
+    description: "Soluções de segurança de última geração incluindo testes de penetração, hacking ético, criptografia avançada e monitoramento abrangente de segurança."
+  hardware:
+    title: "Soluções de Hardware"
+    description: "Transforme suas operações empresariais com sistemas de automação personalizados, monitoramento por sensores/câmeras inteligentes e controles energeticamente eficientes para diversos setores."
+  ecommerce:
+    title: "Soluções de E-Commerce"
+    description: "Lance e escale seu negócio online com soluções white-label, sistemas de pagamento integrados e gestão automatizada de estoque."
+  
+products:
+  jingo_store:
+    title: "Jingo.store"
+    description: "Experimente uma solução de e-commerce completa com métodos de pagamento integrados, rastreamento de pedidos e gestão de estoque."
+  zigna_app:
+    title: "Zigna.app"
+    description: "Obtenha recomendações de negociação de ações em tempo real de traders experientes através de nossa plataforma por assinatura com análise avançada de mercado."
+  minions_app:
+    title: "Minions App"
+    description: "Explore nossa Aplicação Web Instalável white-label apresentando painéis de BI, autenticação segura, integração de dados e muito mais."
+
+index:
+  hero:
+    title: "Soluções de Software e Tecnologia de Última Geração"
+    description: "Transforme seu negócio com nossas aplicações web de ponta e soluções de software avançadas. De integrações seguras de pagamento a sistemas empresariais de alto desempenho, entregamos soluções personalizadas que impulsionam a inovação e eficiência."
+    cta_button: "Explore Nossos Serviços"
+
+  services:
+    title: "Nossos Serviços"
+    button_learn_more: "Saiba Mais"
+
+  value_proposition:
+    title: "Onde ideias se tornam realidade"
+    description: "Impulsionando a inovação com Pesquisa & Desenvolvimento de alto nível em software e hardware, respaldado pelos padrões de qualidade e segurança das Big Techs e experiência do setor financeiro."
+
+  expertise:
+    title: "Excelência em Engenharia Avançada"
+    description: "Nossa equipe de engenharia se destaca na criação de soluções sofisticadas que combinam software de ponta com recursos avançados de hardware. De Aplicações Web Progressivas com Sistemas de Pagamento Seguros a Infraestrutura Inteligente e Automação de Segurança inovadoras, entregamos tecnologia que define o futuro."
+    principles_title: "Nossos Princípios de Engenharia:"
+    principles:
+      - text: "Inovação Sustentável e Centrada no Usuário"
+      - text: "Design Arquitetônico à Prova do Futuro"
+      - text: "Capacidades de Integração Perfeita"
+      - text: "Padrões de Segurança Empresarial"
+
+  innovative:
+    title: "Soluções Inovadoras para seu Negócio"
+    description: "Capacitando seu negócio com soluções de software, hardware, e-commerce, business intelligence, cibersegurança e inteligência artificial."
+    cta_button: "Explore Nossos Produtos"
+
+  technology:
+    title: "Pioneirismo no Futuro da Tecnologia"
+    description: "Somos especializados no desenvolvimento de soluções avançadas de software e hardware que permitem às empresas liderarem em seus setores. Nossa experiência abrange desde aplicações empresariais até implementações sofisticadas de IoT, garantindo que nossos parceiros permaneçam à frente na jornada de transformação digital."
+
+  products:
+    title: "Nossos Produtos"
+    buttons:
+      demo: "Demo ao Vivo"
+      learn_more: "Saiba Mais"
+
+  cutting_edge:
+    title: "Na vanguarda da tecnologia"
+    description: "Abrangemos o desenvolvimento de software e hardware de produtos e aplicações altamente tecnológicos para ajudar parceiros boutique."
+
+  questions:
+    title: "Tem perguntas? Nós temos as respostas."
+    find_answers:
+      title: "Encontre respostas"
+      link: "Central de Ajuda"
+    apply_knowledge:
+      title: "Aplique seu Conhecimento"
+      link: "Programas de Pesquisa"
+    break_barriers:
+      title: "Quebre Barreiras Tecnológicas"
+      link: "Junte-se a Nós"

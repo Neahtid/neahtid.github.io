@@ -4,7 +4,7 @@
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title text-black">Schedule a <span id="data-consultation"></span> Consultation</h4>
+          <h4 class="modal-title text-black">{% t pages.modal_t1 %} <span id="data-consultation"></span> {% t pages.modal_t2 %}</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -20,8 +20,8 @@
           </div>
           <div class="mb-3">
             <select class="form-select form-select-lg" name="solutionSelect" id="form-field-nea_solutionSelect">
-              <option value="">Select Solution</option>
-              <option value="other">Other</option>
+              <option value="">{% t pages.modal_select %}</option>
+              <option value="other">{% t pages.modal_select_other %}</option>
             </select>
           </div>
           <div class="mb-3">
@@ -30,8 +30,8 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary modal-close w-100 d-none" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary btn-submit w-100">Send</button>
+          <button type="button" class="btn btn-secondary modal-close w-100 d-none" data-bs-dismiss="modal">{% t pages.close %}</button>
+          <button type="submit" class="btn btn-primary btn-submit w-100">{% t pages.send %}</button>
         </div>
       </div>
     </div>
@@ -45,12 +45,12 @@
         <hr class="d-md-none">
         <h3>Neahtid</h3>
         <p>{{ page.slogan | default: site.slogan | default: "en-US" }}</p>
-        <p>&copy; {{ site.time | date: '%Y' }} All rights reserved.</p>
+        <p>&copy; {{ site.time | date: '%Y' }} {% t pages.rights %}.</p>
         <p>{{ site.title }}</p>
       </div>
       {% if page.url != '/services' %}
       <div class="col-md-5 order-1 order-md-2">
-        <h5>Know Our Services</h5>
+        <h5>{% t pages.know_our_services %}</h5>
         <!-- Services Navigation Menu -->
         <nav class="services-menu">
           {% assign prefix = '' %}
@@ -62,7 +62,7 @@
               class="list-group-item p-0 {% if page.url == '/services/web-applications-and-software-solutions' %}active{% endif %}">
               <a href="{{ prefix }}/services/web-applications-and-software-solutions"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
-                <span>Web Applications &amp; Digital Presence</span>
+                <span>{% t services.web_applications.title %}</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
                   <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
@@ -73,7 +73,7 @@
               class="list-group-item p-0 {% if page.url == '/services/business-intelligence-and-data-analytics' %}active{% endif %}">
               <a href="{{ prefix }}/services/business-intelligence-and-data-analytics"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
-                <span>Business Intelligence &amp; Data Analytics</span>
+                <span>{% t services.business_intelligence.title %}</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
                   <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
@@ -84,7 +84,7 @@
               class="list-group-item p-0 {% if page.url == '/services/artificial-intelligence-and-automation' %}active{% endif %}">
               <a href="{{ prefix }}/services/artificial-intelligence-and-automation"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
-                <span>Artificial Intelligence &amp; Automation</span>
+                <span>{% t services.ai_automation.title %}</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
                   <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
@@ -94,7 +94,7 @@
             <li class="list-group-item p-0 {% if page.url == '/services/cybersecurity-solutions' %}active{% endif %}">
               <a href="{{ prefix }}/services/cybersecurity-solutions"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
-                <span>Cybersecurity &amp; Advanced Software</span>
+                <span>{% t services.cybersecurity.title %}</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
                   <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
@@ -104,7 +104,7 @@
             <li class="list-group-item p-0 {% if page.url == '/services/hardware-solutions' %}active{% endif %}">
               <a href="{{ prefix }}/services/hardware-solutions"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
-                <span>Hardware Solutions</span>
+                <span>{% t services.hardware.title %}</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
                   <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
@@ -114,7 +114,7 @@
             <li class="list-group-item p-0 {% if page.url == '/services/e-commerce-solutions' %}active{% endif %}">
               <a href="{{ prefix }}/services/e-commerce-solutions"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
-                <span>E-Commerce Solutions</span>
+                <span>{% t services.ecommerce.title %}</span>
                 <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
                   <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>

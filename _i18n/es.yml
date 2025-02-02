@@ -1,24 +1,24 @@
 global:
   tagline: Español
   navbar_top:
-    - title: Services
+    - title: Servicios
       link: /services
-    - title: Products
+    - title: Productos
       link: /our-products
     - title: Blog
       link: /blog
-    - title: Contact Us
+    - title: Contacto
       link: /contact-us
-    - title: Our Company
+    - title: Nuestra Empresa
       link: /our-company
-    - title: Research
+    - title: Investigación
       link: /research-program
   navbar_bottom:
-    - title: "Terms of Service"
+    - title: "Términos de Servicio"
       link: /terms
-    - title: "Privacy Policy"
+    - title: "Política de Privacidad"
       link: /privacy-policy
-    - title: Contact Us
+    - title: Contacto
       link: /contact-us
 
 langs:
@@ -27,10 +27,15 @@ langs:
   es: Español
 
 pages:
-  homeh1: Soluciones de Software y Hardware que rompen barreras tecnológicas
-  homeh2: Ayudamos a nuestros socios boutique desde 2001 a investigar y desarrollar aplicaciones de Hardware y Software para infraestructuras de alta demanda.
-  homecta: Reserve tu lugar
-  precents: Artículos recientes
+  precents: "Publicaciones Recientes"
+  modal_t1: "Agenda una"
+  modal_t2: "Consulta"
+  modal_select: "Selecciona una Solución"
+  modal_select_other: "Otro"
+  close: "Cerrar"
+  send: "Enviar"
+  rights: "Todos los derechos reservados"
+  know_our_services: "Conoce Nuestros Servicios"
 
 jekyll_timeago:
   today: 'hoy'
@@ -49,3 +54,89 @@ jekyll_timeago:
   week: 'semana'
   days: 'días'
   day: 'día'
+
+services:
+  web_applications:
+    title: "Aplicaciones Web y Soluciones de Software"
+    description: "Eleva tu marca con aplicaciones web de vanguardia y soluciones de software avanzadas adaptadas para el éxito de tu negocio."
+  business_intelligence:
+    title: "Business Intelligence y Análisis de Datos"
+    description: "Transforma los datos de tu negocio en información rentable con seguimiento de gastos en tiempo real y paneles de análisis de ingresos"
+  ai_automation:
+    title: "Inteligencia Artificial y Automatización"
+    description: "Aumenta la eficiencia con chatbots y otras automatizaciones impulsadas por IA que transforman el servicio al cliente y optimizan las operaciones."
+  cybersecurity:
+    title: "Soluciones de Ciberseguridad"
+    description: "Soluciones de seguridad de última generación que incluyen pruebas de penetración, hacking ético, encriptación avanzada y monitoreo integral de seguridad."
+  hardware:
+    title: "Soluciones de Hardware"
+    description: "Transforma tus operaciones empresariales con sistemas de automatización personalizados, monitoreo de sensores/cámaras inteligentes y controles energéticamente eficientes para diversas industrias."
+  ecommerce:
+    title: "Soluciones de Comercio Electrónico"
+    description: "Lanza y escala tu negocio en línea con soluciones white-label, sistemas de pago integrados y gestión automatizada de inventario."
+
+products:
+  jingo_store:
+    title: "Jingo.store"
+    description: "Experimenta una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario."
+  zigna_app:
+    title: "Zigna.app"
+    description: "Obtén recomendaciones de trading en tiempo real de traders experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
+  minions_app:
+    title: "Minions App"
+    description: "Explora nuestra Aplicación Web Instalable white-label que muestra paneles de BI, autenticación segura, integración de datos y más."
+
+index:
+  hero:
+    title: "Soluciones de Software y Tecnología de Nueva Generación"
+    description: "Transforma tu negocio con nuestras aplicaciones web de vanguardia y soluciones de software avanzadas. Desde integraciones seguras de pago hasta sistemas empresariales de alto rendimiento, entregamos soluciones personalizadas que impulsan la innovación y la eficiencia."
+    cta_button: "Explora Nuestros Servicios"
+
+  services:
+    title: "Nuestros Servicios"
+    button_learn_more: "Más Información"
+
+  value_proposition:
+    title: "Donde las ideas se hacen realidad"
+    description: "Impulsando la innovación con Investigación y Desarrollo de primer nivel en software y hardware, respaldado por los estándares de calidad y seguridad de las grandes empresas tecnológicas y la experiencia de la industria financiera."
+
+  expertise:
+    title: "Excelencia en Ingeniería Avanzada"
+    description: "Nuestro equipo de ingeniería sobresale en la creación de soluciones sofisticadas que fusionan software de vanguardia con potentes capacidades de hardware. Desde Aplicaciones Web Progresivas con Sistemas de Pago Seguros hasta Infraestructura Inteligente innovadora y Automatización de Seguridad, entregamos tecnología que define el futuro."
+    principles_title: "Nuestros Principios de Ingeniería:"
+    principles:
+      - text: "Innovación Sostenible y Centrada en el Usuario"
+      - text: "Diseño Arquitectónico a Prueba de Futuro"
+      - text: "Capacidades de Integración Perfecta"
+      - text: "Estándares de Seguridad Empresarial"
+
+  innovative:
+    title: "Soluciones Innovadoras para tu Negocio"
+    description: "Potenciando tu negocio con soluciones de software, hardware, comercio electrónico, business intelligence, ciberseguridad e inteligencia artificial."
+    cta_button: "Explora Nuestros Productos"
+
+  technology:
+    title: "Pioneros en el Futuro de la Tecnología"
+    description: "Nos especializamos en desarrollar soluciones avanzadas de software y hardware que permiten a las empresas liderar en sus industrias. Nuestra experiencia abarca desde aplicaciones empresariales hasta implementaciones sofisticadas de IoT, asegurando que nuestros socios se mantengan a la vanguardia en el viaje de transformación digital."
+
+  products:
+    title: "Nuestros Productos"
+    buttons:
+      demo: "Demo en Vivo"
+      learn_more: "Más Información"
+
+  cutting_edge:
+    title: "A la vanguardia de la tecnología"
+    description: "Cubrimos el desarrollo de software y hardware de productos y aplicaciones altamente tecnológicos para ayudar a socios boutique."
+
+  questions:
+    title: "¿Tienes preguntas? Tenemos las respuestas."
+    find_answers:
+      title: "Encuentra respuestas"
+      link: "Centro de Ayuda"
+    apply_knowledge:
+      title: "Aplica tu Conocimiento"
+      link: "Programas de Investigación"
+    break_barriers:
+      title: "Rompe Barreras Tecnológicas"
+      link: "Únete a Nosotros"

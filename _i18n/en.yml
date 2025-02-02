@@ -27,10 +27,16 @@ langs:
   es: Español
 
 pages:
-  homeh1: Software and Hardware solutions that break technology barriers
-  homeh2: Helping our boutique partners since 2001 to research and develop Hardware and Software applications for high demand infrastructures.
-  homecta: Book Your Spot
-  precents: Recent Posts
+  precents: "Recent Posts"
+  modal_t1: "Schedule a"
+  modal_t2: "Consultation"
+  modal_select: "Select Solution"
+  modal_select_other: "Other"
+  close: "Close"
+  send: "Send"
+  rights: "All rights reserved"
+  know_our_services: "Know Our Services"
+
 
 jekyll_timeago:
   today: 'today'
@@ -49,3 +55,89 @@ jekyll_timeago:
   week: 'week'
   days: 'days'
   day: 'day'
+
+services:
+  web_applications:
+    title: "Web Applications & Software Solutions"
+    description: "Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success."
+  business_intelligence:
+    title: "Business Intelligence & Data Analytics"
+    description: "Transform your business data into profit insights with real-time expense tracking and revenue analytics dashboards"
+  ai_automation:
+    title: "Artificial Intelligence & Automation"
+    description: "Boost efficiency with chatbots and other AI-powered automations that transforms customer service and streamlines operations."
+  cybersecurity:
+    title: "Cybersecurity Solutions"
+    description: "State-of-the-art security solutions including penetration testing, ethical hacking, advanced encryption, and comprehensive security monitoring."
+  hardware:
+    title: "Hardware Solutions"
+    description: "Transform your business operations with custom automation systems, smart sensors/cameras monitoring and energy-efficient controls for various industries."
+  ecommerce:
+    title: "E-Commerce Solutions"
+    description: "Launch and scale your online business with white-label solutions, integrated payment systems, and automated inventory management."
+
+products:
+  jingo_store:
+    title: "Jingo.store"
+    description: "Experience a fully-featured e-commerce solution with integrated payment methods, order tracking, and inventory management."
+  zigna_app:
+    title: "Zigna.app"
+    description: "Get real-time stock trading recommendations from experienced traders through our subscription-based platform with advanced market analysis."
+  minions_app:
+    title: "Minions App"
+    description: "Explore our white-label Installable Web Application showcasing BI dashboards, secure authentication, data integration, and more."
+
+index:
+  hero:
+    title: "Next-Generation Software & Technology Solutions"
+    description: "Transform your business with our cutting-edge web applications and advanced software solutions. From secure payment integrations to high-performance enterprise systems, we deliver tailored solutions that drive innovation and efficiency."
+    cta_button: "Explore Our Services"
+
+  services:
+    title: "Our Services"
+    button_learn_more: "Learn More"
+
+  value_proposition:
+    title: "Where ideas become reality"
+    description: "Empowering innovation with top-tier Research & Development in software and hardware, backed by the quality and security standards of Big Tech and the financial industry experience."
+
+  expertise:
+    title: "Advanced Engineering Excellence"
+    description: "Our engineering team excels in creating sophisticated solutions that merge cutting-edge software with powerful hardware capabilities. From Progressive Web Applications with Secure Payment Systems to innovative Smart Infrastructure and Security Automation, we deliver technology that defines the future."
+    principles_title: "Our Engineering Principles:"
+    principles:
+      - text: "Sustainable and User-Centric Innovation"
+      - text: "Future-Proof Architectural Design"
+      - text: "Seamless Integration Capabilities"
+      - text: "Enterprise-Grade Security Standards"
+
+  innovative:
+    title: "Innovative Solutions for Your Business"
+    description: "Empowering your business with cutting-edge software, hardware, e-commerce, business intelligence, cybersecurity, and AI powered solutions."
+    cta_button: "Explore Our Products"
+
+  technology:
+    title: "Pioneering the Future of Technology"
+    description: "We specialize in developing advanced software and hardware solutions that empower businesses to lead in their industries. Our expertise spans from enterprise-level applications to sophisticated IoT implementations, ensuring our partners stay ahead in the digital transformation journey."
+
+  products:
+    title: "Our Products"
+    buttons:
+      demo: "Live Demo"
+      learn_more: "Learn More"
+
+  cutting_edge:
+    title: "On the cutting edge of technology"
+    description: "We cover software and hardware development of highly technological products and applications to help boutique partners."
+
+  questions:
+    title: "Have questions? We've got answers."
+    find_answers:
+      title: "Find answers"
+      link: "Help Center"
+    apply_knowledge:
+      title: "Apply your Knowledge"
+      link: "Research Programs"
+    break_barriers:
+      title: "Break Technological Barriers"
+      link: "Join Us"
