@@ -399,3 +399,78 @@ service_3:
     title: "Ready to Transform Your Business?"
     subtitle: "Schedule a demo to see how our AI solutions can drive your business forward."
     button: "Schedule Demo"
+
+service_4:
+  hero:
+    title: "Secure Your Digital Future"
+    description: "Protect your business with state-of-the-art cybersecurity solutions and advanced software simulations. Our comprehensive approach ensures your digital assets remain safe from evolving threats."
+    buttons:
+      assessment: "Get Security Assessment"
+      explore: "Explore Solutions"
+    carousel:
+      slides:
+        digital_shield: "Digital Shield Services"
+        data_protection: "Data Protection Monitoring"
+        cyber_defense: "Cyber Defense Counseling"
+
+  solutions:
+    title: "Comprehensive Security Solutions"
+    cards:
+      testing:
+        title: "Enterprise Security Testing & Assessment"
+        description: "Protect your business with comprehensive security audits and ethical hacking. Our expert team identifies vulnerabilities before criminals do, ensuring your sensitive data stays secure."
+        features:
+          - "Advanced Penetration Testing"
+          - "Application Security Evaluation"
+          - "Infrastructure Risk Analysis"
+      compliance:
+        title: "Regulatory Compliance & Encryption"
+        description: "Meet industry regulations while protecting sensitive data. Our state-of-the-art encryption and compliance protocols safeguard your reputation and customer trust."
+        features:
+          - "Industry Standards Compliance"
+          - "Data Protection Framework"
+          - "Risk Management Solutions"
+      monitoring:
+        title: "24/7 Security Monitoring"
+        description: "Sleep better knowing our advanced AI monitors your systems round-the-clock, detecting and responding to threats in real-time before they impact your business."
+        features:
+          - "Real-time Threat Detection"
+          - "Continuous Network Scanning"
+          - "Automated Security Response"
+
+  threat_protection:
+    title: "Advanced Threat Protection"
+    cards:
+      monitoring:
+        title: "Real-time Monitoring"
+        description: "24/7 security monitoring and threat detection to protect your systems around the clock."
+      incident:
+        title: "Incident Response"
+        description: "Rapid response protocols to address and mitigate security incidents immediately."
+      data:
+        title: "Data Protection"
+        description: "Comprehensive data security measures including encryption and access control."
+      compliance:
+        title: "Compliance Management"
+        description: "Ensure compliance with industry standards and regulations (GDPR, HIPAA, PCI DSS)."
+
+  process:
+    title: "Our Security Process"
+    steps:
+      assessment:
+        title: "Assessment"
+        description: "Comprehensive evaluation of your current security posture."
+      planning:
+        title: "Planning"
+        description: "Developing tailored security strategies and protocols."
+      implementation:
+        title: "Implementation"
+        description: "Deploying security measures and solutions."
+      monitoring:
+        title: "Monitoring"
+        description: "Continuous security monitoring and improvements."
+
+  contact:
+    title: "Get Your Security Assessment"
+    description: "Schedule a demo to see how our AI solutions can drive your business forward."
+    button: "Request Assessment"

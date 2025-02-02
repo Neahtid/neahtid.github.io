@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cybersecurity & Advanced Software Solutions
+title: Cybersecurity Solutions
 permalink: /services/cybersecurity-solutions
 slogan: Your Trusted Cybersecurity Partner
 custom_js:
@@ -107,19 +107,115 @@ custom_js:
         border-color: var(--secondary-color);
     }
 </style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "{% t services.cybersecurity.title %}",
+      "description": "{% t services.cybersecurity.description %}",
+      "provider": {
+        "@type": "Organization",
+        "name": "{% t global.company.name %}",
+        "url": "{{site.url}}"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "{% t service_4.solutions.title %}",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_4.solutions.cards.testing.title %}",
+              "description": "{% t service_4.solutions.cards.testing.description %}",
+              "serviceOutput": [
+                {% for feature in service_4.solutions.cards.testing.features %}
+                "{% t feature %}"{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              ]
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_4.solutions.cards.compliance.title %}",
+              "description": "{% t service_4.solutions.cards.compliance.description %}",
+              "serviceOutput": [
+                {% for feature in service_4.solutions.cards.compliance.features %}
+                "{% t feature %}"{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              ]
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_4.solutions.cards.monitoring.title %}",
+              "description": "{% t service_4.solutions.cards.monitoring.description %}",
+              "serviceOutput": [
+                {% for feature in service_4.solutions.cards.monitoring.features %}
+                "{% t feature %}"{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              ]
+            }
+          }
+        ]
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "{% t service_4.threat_protection.cards.monitoring.title %}",
+          "value": "{% t service_4.threat_protection.cards.monitoring.description %}"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "{% t service_4.threat_protection.cards.incident.title %}",
+          "value": "{% t service_4.threat_protection.cards.incident.description %}"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "{% t service_4.threat_protection.cards.data.title %}",
+          "value": "{% t service_4.threat_protection.cards.data.description %}"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "{% t service_4.threat_protection.cards.compliance.title %}",
+          "value": "{% t service_4.threat_protection.cards.compliance.description %}"
+        }
+      ],
+      "serviceType": "Cybersecurity Solutions",
+      "category": [
+        "Information Technology",
+        "Cybersecurity",
+        "IT Security",
+        "Data Protection"
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": [
+          "Hotels",
+          "Finance Industry"
+        ]
+      }
+    }
+</script>
 <!-- Hero Section -->
 <section class="hero-section text-white">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-sm-6 mb-4">
-                <h1 class="display-4 fw-bold mb-4">Secure Your Digital Future</h1>
-                <p class="lead mb-4">Protect your business with state-of-the-art cybersecurity solutions and advanced
-                    software simulations. Our comprehensive approach ensures your digital assets remain safe from
-                    evolving threats.</p>
+                <h1 class="display-4 fw-bold mb-4">{% t service_4.hero.title %}</h1>
+                <p class="lead mb-4">{% t service_4.hero.description %}</p>
                 <div class="d-flex gap-3">
                     <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
-                        data-bs-consultation="Cybersecurity">Get Security Assessment</button>
-                    <a href="#solutions" class="btn btn-success btn-lg">Explore Solutions</a>
+                        data-bs-consultation="Cybersecurity">{% t service_4.hero.buttons.assessment %}</button>
+                    <a href="#solutions" class="btn btn-success btn-lg">{% t service_4.hero.buttons.explore %}</a>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -129,23 +225,23 @@ custom_js:
                         <div class="carousel-inner rounded shadow">
                             <div class="carousel-item active">
                                 <img src="/assets/svg/p_services_4_digital_shield.svg" class="d-block w-100"
-                                    alt="Digital Shield Services">
+                                    alt="{% t service_4.hero.carousel.slides.digital_shield %}">
                                 <div class="carousel-caption-below">
-                                    <p class="text-light fw-medium mb-0">Digital Shield Services</p>
+                                    <p class="text-light fw-medium mb-0">{% t service_4.hero.carousel.slides.digital_shield %}</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/svg/p_services_4_data_protection.svg" class="d-block w-100"
-                                    alt="Data Protection Monitoring">
+                                    alt="{% t service_4.hero.carousel.slides.data_protection %}">
                                 <div class="carousel-caption-below">
-                                    <p class="text-light fw-medium mb-0">Data Protection Monitoring</p>
+                                    <p class="text-light fw-medium mb-0">{% t service_4.hero.carousel.slides.data_protection %}</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/svg/p_services_4_cyber_defense.svg" class="d-block w-100"
-                                    alt="Cyber Defense Counseling">
+                                    alt="{% t service_4.hero.carousel.slides.cyber_defense %}">
                                 <div class="carousel-caption-below">
-                                    <p class="text-light fw-medium mb-0">Cyber Defense Counseling</p>
+                                    <p class="text-light fw-medium mb-0">{% t service_4.hero.carousel.slides.cyber_defense %}</p>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +258,7 @@ custom_js:
                             <span class="visually-hidden">{% t pages.buttons.next %}</span>
                         </button>
 
-                        <!-- Carousel indicators moved below caption -->
+                        <!-- Carousel indicators -->
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -178,25 +274,24 @@ custom_js:
     </div>
 </section>
 
-<!-- solutions Section -->
+<!-- Solutions Section -->
 <section id="solutions" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Comprehensive Security Services</h2>
+        <h2 class="text-center mb-5">{% t service_4.solutions.title %}</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card security-card text-white h-100">
                     <div class="card-body text-center">
                         <div class="feature-icon">
                             <img src="/assets/svg/p_services_5_cybersecurity_icon_penetration.svg"
-                                alt="Penetration Testing Icon">
+                                alt="{% t service_4.solutions.cards.testing.title %}">
                         </div>
-                        <h3 class="h4 accent-text">Penetration Testing</h3>
-                        <p>Thorough security assessments to identify and address vulnerabilities before they can be
-                            exploited.</p>
+                        <h3 class="h4 accent-text">{% t service_4.solutions.cards.testing.title %}</h3>
+                        <p>{% t service_4.solutions.cards.testing.description %}</p>
                         <ul class="list-unstyled mt-3">
-                            <li>✓ Network Security Testing</li>
-                            <li>✓ Application Security Assessment</li>
-                            <li>✓ Infrastructure Evaluation</li>
+                            {% for feature in service_4.solutions.cards.testing.features %}
+                                <li>✓ {% t feature %}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -205,16 +300,15 @@ custom_js:
                 <div class="card security-card text-white h-100">
                     <div class="card-body text-center">
                         <div class="feature-icon">
-                            <img src="/assets/svg/p_services_5_cybersecurity_icon_ethical.svg"
-                                alt="Ethical Hacking Icon">
+                            <img src="/assets/svg/p_services_5_cybersecurity_icon_compliance.svg"
+                                alt="{% t service_4.solutions.cards.compliance.title %}">
                         </div>
-                        <h3 class="h4 accent-text">Ethical Hacking</h3>
-                        <p>Professional ethical hacking services to discover and fix security weaknesses in your
-                            systems.</p>
+                        <h3 class="h4 accent-text">{% t service_4.solutions.cards.compliance.title %}</h3>
+                        <p>{% t service_4.solutions.cards.compliance.description %}</p>
                         <ul class="list-unstyled mt-3">
-                            <li>✓ Vulnerability Assessment</li>
-                            <li>✓ Security Auditing</li>
-                            <li>✓ Risk Mitigation</li>
+                            {% for feature in service_4.solutions.cards.compliance.features %}
+                                <li>✓ {% t feature %}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -223,15 +317,15 @@ custom_js:
                 <div class="card security-card text-white h-100">
                     <div class="card-body text-center">
                         <div class="feature-icon">
-                            <img src="/assets/svg/p_services_5_cybersecurity_icon_scientific.svg"
-                                alt="Software Simulation Icon">
+                            <img src="/assets/svg/p_services_5_cybersecurity_icon_monitoring.svg"
+                                alt="{% t service_4.solutions.cards.monitoring.title %}">
                         </div>
-                        <h3 class="h4 accent-text">Scientific Simulations</h3>
-                        <p>Advanced software solutions for complex scientific and engineering simulations.</p>
+                        <h3 class="h4 accent-text">{% t service_4.solutions.cards.monitoring.title %}</h3>
+                        <p>{% t service_4.solutions.cards.monitoring.description %}</p>
                         <ul class="list-unstyled mt-3">
-                            <li>✓ Physics-based Modeling</li>
-                            <li>✓ Data Analysis</li>
-                            <li>✓ Performance Optimization</li>
+                            {% for feature in service_4.solutions.cards.monitoring.features %}
+                                <li>✓ {% t feature %}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -243,30 +337,30 @@ custom_js:
 <!-- Threat Protection Section -->
 <section class="dark-section py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Advanced Threat Protection</h2>
+        <h2 class="text-center mb-5">{% t service_4.threat_protection.title %}</h2>
         <div class="row g-4">
             <div class="col-md-6">
                 <div class="threat-card p-4">
-                    <h3 class="h5 accent-text">Real-time Monitoring</h3>
-                    <p>24/7 security monitoring and threat detection to protect your systems around the clock.</p>
+                    <h3 class="h5 accent-text">{% t service_4.threat_protection.cards.monitoring.title %}</h3>
+                    <p>{% t service_4.threat_protection.cards.monitoring.description %}</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="threat-card p-4">
-                    <h3 class="h5 accent-text">Incident Response</h3>
-                    <p>Rapid response protocols to address and mitigate security incidents immediately.</p>
+                    <h3 class="h5 accent-text">{% t service_4.threat_protection.cards.incident.title %}</h3>
+                    <p>{% t service_4.threat_protection.cards.incident.description %}</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="threat-card p-4">
-                    <h3 class="h5 accent-text">Data Protection</h3>
-                    <p>Comprehensive data security measures including encryption and access control.</p>
+                    <h3 class="h5 accent-text">{% t service_4.threat_protection.cards.data.title %}</h3>
+                    <p>{% t service_4.threat_protection.cards.data.description %}</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="threat-card p-4">
-                    <h3 class="h5 accent-text">Compliance Management</h3>
-                    <p>Ensure compliance with industry standards and regulations (GDPR, HIPAA, PCI DSS).</p>
+                    <h3 class="h5 accent-text">{% t service_4.threat_protection.cards.compliance.title %}</h3>
+                    <p>{% t service_4.threat_protection.cards.compliance.description %}</p>
                 </div>
             </div>
         </div>
@@ -274,17 +368,17 @@ custom_js:
 </section>
 
 <!-- Solutions Process -->
-<section id="solutions" class="py-5">
+<section id="process" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Our Security Process</h2>
+        <h2 class="text-center mb-5">{% t service_4.process.title %}</h2>
         <div class="row g-4">
             <div class="col-md-3">
                 <div class="text-center">
                     <div class="feature-icon">
                         <span class="h4 mb-0">1</span>
                     </div>
-                    <h3 class="h5">Assessment</h3>
-                    <p>Comprehensive evaluation of your current security posture.</p>
+                    <h3 class="h5">{% t service_4.process.steps.assessment.title %}</h3>
+                    <p>{% t service_4.process.steps.assessment.description %}</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -292,8 +386,8 @@ custom_js:
                     <div class="feature-icon">
                         <span class="h4 mb-0">2</span>
                     </div>
-                    <h3 class="h5">Planning</h3>
-                    <p>Developing tailored security strategies and protocols.</p>
+                    <h3 class="h5">{% t service_4.process.steps.planning.title %}</h3>
+                    <p>{% t service_4.process.steps.planning.description %}</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -301,8 +395,8 @@ custom_js:
                     <div class="feature-icon">
                         <span class="h4 mb-0">3</span>
                     </div>
-                    <h3 class="h5">Implementation</h3>
-                    <p>Deploying advanced security measures and solutions.</p>
+                    <h3 class="h5">{% t service_4.process.steps.implementation.title %}</h3>
+                    <p>{% t service_4.process.steps.implementation.description %}</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -310,8 +404,8 @@ custom_js:
                     <div class="feature-icon">
                         <span class="h4 mb-0">4</span>
                     </div>
-                    <h3 class="h5">Monitoring</h3>
-                    <p>Continuous security monitoring and improvements.</p>
+                    <h3 class="h5">{% t service_4.process.steps.monitoring.title %}</h3>
+                    <p>{% t service_4.process.steps.monitoring.description %}</p>
                 </div>
             </div>
         </div>
@@ -325,12 +419,10 @@ custom_js:
             <div class="col-lg-8">
                 <div class="card shadow">
                     <div class="card-body p-5 text-center">
-                        <h2 class="text-center mb-4">Get Your Security Assessment</h2>
-                        <p class="lead mb-4">Schedule a demo to see how our AI solutions can drive your business
-                            forward.</p>
-
+                        <h2 class="text-center mb-4">{% t service_4.contact.title %}</h2>
+                        <p class="lead mb-4">{% t service_4.contact.description %}</p>
                         <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
-                            data-bs-consultation="Cybersecurity">Request Assessment</button>
+                            data-bs-consultation="Cybersecurity">{% t service_4.contact.button %}</button>
                     </div>
                 </div>
             </div>

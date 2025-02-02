@@ -396,3 +396,78 @@ service_3:
     title: "¿Listo para Transformar tu Negocio?"
     subtitle: "Agenda una demostración para ver cómo nuestras soluciones de IA pueden impulsar tu empresa."
     button: "Agendar Demostración"
+
+service_4:
+  hero:
+    title: "Protege tu Futuro Digital"
+    description: "Protege tu negocio con soluciones avanzadas de ciberseguridad y simulaciones de software de última generación. Nuestro enfoque integral garantiza que tus activos digitales permanezcan seguros frente a amenazas en constante evolución."
+    buttons:
+      assessment: "Solicitar Evaluación de Seguridad"
+      explore: "Explorar Soluciones"
+    carousel:
+      slides:
+        digital_shield: "Servicios de Protección Digital"
+        data_protection: "Monitoreo de Protección de Datos"
+        cyber_defense: "Asesoría en Defensa Cibernética"
+
+  solutions:
+    title: "Soluciones de Seguridad Integral"
+    cards:
+      testing:
+        title: "Pruebas de Seguridad y Evaluación Empresarial"
+        description: "Protege tu negocio con auditorías de seguridad completas y pruebas de penetración ética. Nuestro equipo de expertos identifica vulnerabilidades antes de que los ciberdelincuentes las exploten, garantizando la seguridad de tus datos sensibles."
+        features:
+          - "Pruebas Avanzadas de Penetración"
+          - "Evaluación de Seguridad de Aplicaciones"
+          - "Análisis de Riesgos de Infraestructura"
+      compliance:
+        title: "Cumplimiento Normativo y Cifrado"
+        description: "Cumple con las normativas del sector mientras proteges datos sensibles. Nuestros protocolos avanzados de cifrado y cumplimiento garantizan la seguridad de tu reputación y la confianza de los clientes."
+        features:
+          - "Cumplimiento de Normas del Sector"
+          - "Marco de Protección de Datos"
+          - "Soluciones de Gestión de Riesgos"
+      monitoring:
+        title: "Monitoreo de Seguridad 24/7"
+        description: "Duerme tranquilo sabiendo que nuestra IA avanzada monitorea tus sistemas las 24 horas, detectando y respondiendo a amenazas en tiempo real antes de que afecten tu negocio."
+        features:
+          - "Detección de Amenazas en Tiempo Real"
+          - "Escaneo Continuo de la Red"
+          - "Respuesta Automatizada a Incidentes"
+
+  threat_protection:
+    title: "Protección Avanzada contra Amenazas"
+    cards:
+      monitoring:
+        title: "Monitoreo en Tiempo Real"
+        description: "Monitoreo de seguridad 24/7 y detección de amenazas para proteger tus sistemas continuamente."
+      incident:
+        title: "Respuesta a Incidentes"
+        description: "Protocolos de respuesta rápida para abordar y mitigar incidentes de seguridad de inmediato."
+      data:
+        title: "Protección de Datos"
+        description: "Medidas integrales de seguridad de datos, incluyendo cifrado y control de acceso."
+      compliance:
+        title: "Gestión de Cumplimiento"
+        description: "Garantiza el cumplimiento de normas y regulaciones del sector (GDPR, HIPAA, PCI DSS)."
+
+  process:
+    title: "Nuestro Proceso de Seguridad"
+    steps:
+      assessment:
+        title: "Evaluación"
+        description: "Análisis integral de tu nivel actual de seguridad."
+      planning:
+        title: "Planificación"
+        description: "Desarrollo de estrategias y protocolos de seguridad personalizados."
+      implementation:
+        title: "Implementación"
+        description: "Despliegue de medidas y soluciones de seguridad."
+      monitoring:
+        title: "Monitoreo"
+        description: "Monitoreo continuo de seguridad y mejoras constantes."
+
+  contact:
+    title: "Solicita tu Evaluación de Seguridad"
+    description: "Agenda una demostración para ver cómo nuestras soluciones de IA pueden impulsar tu negocio."
+    button: "Solicitar Evaluación"
