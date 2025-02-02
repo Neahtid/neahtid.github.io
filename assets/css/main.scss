@@ -1,7 +1,15 @@
 --- 
 # Only the main Sass file needs front matter (the dashes are enough) 
 ---
-$main-color: #091C99;
+$primary-color: #091C99;
+
+:root {
+	--primary-color: #091C99;
+	--secondary-color: #0A1F80;
+	--accent-color: #2196F3;
+	--text-color: #333;
+}
+
 /* css */
 body {
 	color: #363636;
@@ -39,7 +47,7 @@ body {
 				position: absolute;
 				height: 3px;
 				top: 0;
-				background-color: $main-color;
+				background-color: $primary-color;
 
 				-webkit-transition: .3s;
 				-o-transition: .3s;
@@ -55,7 +63,7 @@ body {
 
 			.navbar-light .navbar-nav .nav-link:hover,
 			.navbar-light .navbar-nav .nav-item.active .nav-link {
-				color: $main-color;
+				color: $primary-color;
 			}
 
 			.navbar-light .navbar-nav .nav-link:hover:before,
@@ -355,8 +363,69 @@ body {
 		color: white;
 	}
 
+	.info-page {
+		/* Futuristic animations */
+		@keyframes float {
+			0% {
+				transform: translateY(0px);
+			}
+	
+			50% {
+				transform: translateY(-20px);
+			}
+	
+			100% {
+				transform: translateY(0px);
+			}
+		}
+	
+		@keyframes pulse {
+			0% {
+				transform: scale(1);
+			}
+	
+			50% {
+				transform: scale(1.05);
+			}
+	
+			100% {
+				transform: scale(1);
+			}
+		}
+	
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+	
+			50% {
+				background-position: 100% 50%;
+			}
+	
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+		header {
+			margin-top: 2.3rem;
+			background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+			background-size: 400% 400%;
+			animation: gradient 15s ease infinite;
+			position: relative;
+			overflow: hidden;
+			color: white;
+		}
+		/* Animated elements */
+		.tech-circle {
+			position: absolute;
+			border-radius: 50%;
+			border: 2px solid rgba(255, 255, 255, 0.1);
+			animation: float 6s ease-in-out infinite;
+		}
+	}
+
 	footer {
-		border-top: 3px solid $main-color;
+		border-top: 3px solid $primary-color;
 
 		/* Base styles */
 		.services-menu .list-group-item {
@@ -657,7 +726,7 @@ fieldset.attend input.radio {
 	display: inline-block;
 	padding: 18px 40px;
 	font-size: 17px;
-	background-color: $main-color;
+	background-color: $primary-color;
 	color: #fff;
 	border-radius: 5px;
 	text-decoration: none;
