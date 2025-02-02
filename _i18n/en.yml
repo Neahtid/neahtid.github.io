@@ -40,6 +40,8 @@ pages:
     send: "Send"
     close: "Close"
     learn_more: "Learn More"
+    previous: "Previous"
+    next: "Next"
 
 
 jekyll_timeago:
@@ -166,3 +168,136 @@ index:
     break_barriers:
       title: "Break Technological Barriers"
       link: "Join Us"
+
+service_1:
+  hero:
+    title: "Transform Your Digital Presence"
+    subtitle: "Elevate your business with cutting-edge web applications and comprehensive software solutions tailored for modern enterprise success."
+    button_get_started: "Get Started"
+    button_solutions: "Our Solutions"
+    carousel:
+      img_1_alt: "Digital Solutions"
+      img_2_alt: "Market Analysis Dashboard"
+      caption_1: "Digital Solutions"
+      caption_2: "Market Analysis Dashboard"
+
+  solutions:
+    title: "Advanced Digital Solutions"
+    cards:
+      web_apps:
+        icon_alt: "Custom App Icon"
+        title: "Advanced Web Applications"
+        description: "Transform your business with fast, secure, and scalable web solutions that work smoothly on any device - even without internet connection - complete with seamless payments."
+        features:
+          - "Offline Functionality"
+          - "Secure Payments"
+          - "Instant Data Synchronization"
+      
+      business_solutions:
+        icon_alt: "Website Icon"
+        title: "Custom Business Solutions"
+        description: "Build tailored web applications that solve your specific challenges, featuring real-time data processing and secure integrations with your existing systems."
+        features:
+          - "Custom Scripts"
+          - "Third-party Integration"
+          - "Smart System Connectivity"
+      
+      corporate_website:
+        icon_alt: "Sheets Icon"
+        title: "Corporate Website Development"
+        description: "Create professional, conversion-focused websites with optimized user journeys and integrated scheduling systems that drive business growth."
+        features:
+          - "Responsive Design"
+          - "SEO Optimization"
+          - "Content Management"
+      
+      process_automation:
+        icon_alt: "Landing Page Icon"
+        title: "Business Process Automation"
+        description: "Streamline operations with smart applications that integrate with tools like Google Sheets, automating routine tasks and boosting efficiency."
+        features:
+          - "Automated Workflows"
+          - "Cross-platform Data Flow"
+          - "Dynamic Process Monitoring"
+      
+      landing_pages:
+        icon_alt: "Marketing Icon"
+        title: "High-Impact Landing Pages"
+        description: "Convert visitors into customers with data-driven landing pages featuring industry-specific elements and continuous optimization through A/B testing."
+        features:
+          - "A/B Testing"
+          - "Conversion Optimization"
+          - "Lead Generation"
+      
+      analytics:
+        icon_alt: "Research Icon"
+        title: "Financial & Business Analytics Solutions"
+        description: "Leverage specialized applications for financial modeling, business intelligence, and market analysis to make data-driven decisions and identify growth opportunities."
+        features:
+          - "Advanced Computations"
+          - "Data Analysis"
+          - "Real-time Processing"
+      
+      brand_experience:
+        icon_alt: "Brand Icon"
+        title: "Digital Brand Experience"
+        description: "Establish a powerful online presence with cohesive brand identity and professional design that resonates with your target audience."
+        features:
+          - "Visual Identity"
+          - "Design Systems"
+          - "Brand Guidelines"
+      
+      maintenance:
+        icon_alt: "Maintenance Icon"
+        title: "Website Maintenance & Security"
+        description: "Protect your digital assets with proactive maintenance, regular updates, and comprehensive security monitoring."
+        features:
+          - "Security Updates"
+          - "Performance Optimization"
+          - "Regular Backups"
+      
+      integration:
+        icon_alt: "Marketing Icon"
+        title: "Business Systems Integration"
+        description: "Connect your essential business tools and systems seamlessly - from booking and payment systems to customer management - ensuring smooth data flow across your organization."
+        features:
+          - "Third-party Integration"
+          - "Seamless Platform Unification"
+          - "Secure Authentication"
+
+  process:
+    title: "Our Development Process"
+    steps:
+      discovery:
+        title: "Discovery"
+        description: "Understanding your needs and objectives"
+      planning:
+        title: "Planning"
+        description: "Strategic planning and solution design"
+      development:
+        title: "Development"
+        description: "Agile development and testing"
+      launch:
+        title: "Launch"
+        description: "Deployment (CD/CI) and ongoing support"
+
+  portfolio:
+    title: "Industry-Specific Solutions"
+    industries:
+      hospitality:
+        img_alt: "Project 1"
+        title: "Hospitality"
+        description: "Hotel management systems and booking platforms"
+      healthcare:
+        img_alt: "Project 2"
+        title: "Healthcare"
+        description: "Patient service portals and medical data management"
+      financial:
+        img_alt: "Project 3"
+        title: "Financial Services"
+        description: "Secure banking platforms and payment integration solutions"
+
+  cta:
+    title: "Ready to Transform Your Business?"
+    subtitle: "Let's discuss how our solutions can enhance your operations."
+    button: "Schedule a Consultation"

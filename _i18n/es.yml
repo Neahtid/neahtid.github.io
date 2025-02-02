@@ -40,6 +40,8 @@ pages:
     send: "Enviar"
     close: "Cerrar"
     learn_more: "Más Información"
+    previous: "Anterior"
+    next: "Siguiente"
 
 jekyll_timeago:
   today: 'hoy'
@@ -163,3 +165,136 @@ index:
     break_barriers:
       title: "Rompe Barreras Tecnológicas"
       link: "Únete a Nosotros"
+
+service_1:
+  hero:
+    title: "Transforma tu Presencia Digital"
+    subtitle: "Impulsa tu negocio con aplicaciones web innovadoras y soluciones de software completas, diseñadas para el éxito de las empresas modernas."
+    button_get_started: "Comenzar Ahora"
+    button_solutions: "Nuestras Soluciones"
+    carousel:
+      img_1_alt: "Soluciones Digitales"
+      img_2_alt: "Panel de Análisis de Mercado"
+      caption_1: "Soluciones Digitales"
+      caption_2: "Panel de Análisis de Mercado"
+
+  solutions:
+    title: "Soluciones Digitales Avanzadas"
+    cards:
+      web_apps:
+        icon_alt: "Ícono de Aplicación Personalizada"
+        title: "Aplicaciones Web Avanzadas"
+        description: "Transforma tu negocio con soluciones web rápidas, seguras y escalables que funcionan sin problemas en cualquier dispositivo, incluso sin conexión a internet, y con pagos integrados."
+        features:
+          - "Funcionalidad Offline"
+          - "Pagos Seguros"
+          - "Sincronización Instantánea de Datos"
+
+      business_solutions:
+        icon_alt: "Ícono de Sitio Web"
+        title: "Soluciones Empresariales Personalizadas"
+        description: "Desarrolla aplicaciones web a medida para resolver desafíos específicos, con procesamiento de datos en tiempo real e integraciones seguras con tus sistemas existentes."
+        features:
+          - "Scripts Personalizados"
+          - "Integración con Terceros"
+          - "Conectividad Inteligente"
+
+      corporate_website:
+        icon_alt: "Ícono de Hojas de Cálculo"
+        title: "Desarrollo de Sitios Web Corporativos"
+        description: "Crea sitios web profesionales y enfocados en la conversión, con experiencias optimizadas para el usuario y sistemas de programación integrados que impulsan el crecimiento empresarial."
+        features:
+          - "Diseño Responsivo"
+          - "Optimización SEO"
+          - "Gestión de Contenidos"
+
+      process_automation:
+        icon_alt: "Ícono de Página de Destino"
+        title: "Automatización de Procesos Empresariales"
+        description: "Optimiza operaciones con aplicaciones inteligentes que se integran con herramientas como Google Sheets, automatizando tareas rutinarias y mejorando la eficiencia."
+        features:
+          - "Flujos de Trabajo Automatizados"
+          - "Transferencia de Datos entre Plataformas"
+          - "Monitoreo Dinámico de Procesos"
+
+      landing_pages:
+        icon_alt: "Ícono de Marketing"
+        title: "Páginas de Destino de Alto Impacto"
+        description: "Convierte visitantes en clientes con páginas de destino basadas en datos, con elementos específicos de la industria y optimización continua mediante pruebas A/B."
+        features:
+          - "Pruebas A/B"
+          - "Optimización de Conversión"
+          - "Generación de Leads"
+
+      analytics:
+        icon_alt: "Ícono de Investigación"
+        title: "Soluciones de Análisis Financiero y Empresarial"
+        description: "Aprovecha aplicaciones especializadas para modelado financiero, inteligencia de negocios y análisis de mercado, permitiendo decisiones estratégicas basadas en datos."
+        features:
+          - "Cálculos Avanzados"
+          - "Análisis de Datos"
+          - "Procesamiento en Tiempo Real"
+
+      brand_experience:
+        icon_alt: "Ícono de Marca"
+        title: "Experiencia de Marca Digital"
+        description: "Construye una presencia en línea sólida con una identidad de marca coherente y un diseño profesional que resuene con tu público objetivo."
+        features:
+          - "Identidad Visual"
+          - "Sistemas de Diseño"
+          - "Guías de Marca"
+
+      maintenance:
+        icon_alt: "Ícono de Mantenimiento"
+        title: "Mantenimiento y Seguridad de Sitios Web"
+        description: "Protege tus activos digitales con mantenimiento proactivo, actualizaciones regulares y monitoreo de seguridad integral."
+        features:
+          - "Actualizaciones de Seguridad"
+          - "Optimización del Rendimiento"
+          - "Copias de Seguridad Regulares"
+
+      integration:
+        icon_alt: "Ícono de Marketing"
+        title: "Integración de Sistemas Empresariales"
+        description: "Conecta sin problemas tus herramientas y sistemas empresariales esenciales, desde plataformas de reservas y pagos hasta gestión de clientes, garantizando un flujo de datos eficiente."
+        features:
+          - "Integración con Terceros"
+          - "Unificación de Plataformas"
+          - "Autenticación Segura"
+
+  process:
+    title: "Nuestro Proceso de Desarrollo"
+    steps:
+      discovery:
+        title: "Descubrimiento"
+        description: "Comprendiendo tus necesidades y objetivos"
+      planning:
+        title: "Planificación"
+        description: "Planificación estratégica y diseño de la solución"
+      development:
+        title: "Desarrollo"
+        description: "Desarrollo ágil y pruebas"
+      launch:
+        title: "Lanzamiento"
+        description: "Implementación (CD/CI) y soporte continuo"
+
+  portfolio:
+    title: "Soluciones Específicas por Industria"
+    industries:
+      hospitality:
+        img_alt: "Proyecto 1"
+        title: "Hostelería"
+        description: "Sistemas de gestión hotelera y plataformas de reservas"
+      healthcare:
+        img_alt: "Proyecto 2"
+        title: "Salud"
+        description: "Portales de atención al paciente y gestión de datos médicos"
+      financial:
+        img_alt: "Proyecto 3"
+        title: "Servicios Financieros"
+        description: "Plataformas bancarias seguras y soluciones de integración de pagos"
+
+  cta:
+    title: "¿Listo para Transformar tu Negocio?"
+    subtitle: "Hablemos sobre cómo nuestras soluciones pueden optimizar tus operaciones."
+    button: "Agenda una Consulta"

@@ -102,7 +102,7 @@ custom_js:
 
     .process-step {
         position: relative;
-        padding: 2rem;
+        padding: 2rem 3px;
         background: white;
         border-radius: 15px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -126,24 +126,128 @@ custom_js:
 <!-- Structured Data -->
 <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Web Applications & Software Solutions",
-        "provider": {
-            "@type": "Organization",
-            "name": "Neahtid",
-            "description": "IT solutions provider specializing in web applications and software development"
-        },
-        "serviceType": "Software Development",
-        "areaServed": {
-            "@type": "Country",
-            "name": ["Brazil", "United States", "Spain"]
-        },
-        "description": "Advanced web applications and software solutions including PWAs, research simulation software, and enterprise solutions with integrated payment systems.",
-        "offers": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{% t service_1.hero.title %}",
+      "description": "{% t service_1.hero.subtitle %}",
+      "provider": {
+        "@type": "Organization",
+        "name": "Neahtid"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "offers": [
+          {
             "@type": "Offer",
-            "priceRange": "$15,000 - $120,000"
-        }
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_1.solutions.cards.web_apps.title %}",
+              "description": "{% t service_1.solutions.cards.web_apps.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_1.solutions.cards.business_solutions.title %}",
+              "description": "{% t service_1.solutions.cards.business_solutions.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_1.solutions.cards.corporate_website.title %}",
+              "description": "{% t service_1.solutions.cards.corporate_website.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_1.solutions.cards.process_automation.title %}",
+              "description": "{% t service_1.solutions.cards.process_automation.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_1.solutions.cards.landing_pages.title %}",
+              "description": "{% t service_1.solutions.cards.landing_pages.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_1.solutions.cards.analytics.title %}",
+              "description": "{% t service_1.solutions.cards.analytics.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_1.solutions.cards.brand_experience.title %}",
+              "description": "{% t service_1.solutions.cards.brand_experience.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_1.solutions.cards.maintenance.title %}",
+              "description": "{% t service_1.solutions.cards.maintenance.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_1.solutions.cards.integration.title %}",
+              "description": "{% t service_1.solutions.cards.integration.description %}"
+            }
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Service",
+              "name": "{% t service_1.portfolio.industries.hospitality.title %}",
+              "description": "{% t service_1.portfolio.industries.hospitality.description %}"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Service",
+              "name": "{% t service_1.portfolio.industries.healthcare.title %}",
+              "description": "{% t service_1.portfolio.industries.healthcare.description %}"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Service",
+              "name": "{% t service_1.portfolio.industries.financial.title %}",
+              "description": "{% t service_1.portfolio.industries.financial.description %}"
+            }
+          }
+        ]
+      },
+      "potentialAction": {
+        "@type": "ContactAction",
+        "name": "{% t service_1.cta.button %}",
+        "description": "{% t service_1.cta.subtitle %}"
+      }
     }
 </script>
 
@@ -152,13 +256,12 @@ custom_js:
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-sm-6 mb-4">
-                <h1 class="display-4 fw-bold mb-4">Transform Your Digital Presence</h1>
-                <p class="lead mb-4">Elevate your business with cutting-edge web applications and comprehensive
-                    software solutions tailored for modern enterprise success.</p>
+                <h1 class="display-4 fw-bold mb-4">{% t service_1.hero.title %}</h1>
+                <p class="lead mb-4">{% t service_1.hero.subtitle %}</p>
                 <div class="d-flex gap-3">
                     <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
-                        data-bs-consultation="WebApps">Get Started</button>
-                    <a href="#solutions" class="btn btn-outline-light btn-lg">Our Solutions</a>
+                        data-bs-consultation="WebApps">{% t service_1.hero.button_get_started %}</button>
+                    <a href="#solutions" class="btn btn-outline-light btn-lg">{% t service_1.hero.button_solutions %}</a>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -167,36 +270,29 @@ custom_js:
                         <!-- Carousel items -->
                         <div class="carousel-inner rounded shadow">
                             <div class="carousel-item active">
-                                <img src="/assets/svg/p_services_1_hero_laptop.svg" class="d-block w-100"
-                                    alt="Digital Solutions">
+                                <img src="/assets/svg/p_services_1_hero_laptop.svg" class="d-block w-100" alt="{% t service_1.hero.carousel.img_1_alt %}">
                                 <div class="carousel-caption-below">
-                                    <p class="text-light fw-medium mb-0">Digital Solutions</p>
+                                    <p class="text-light fw-medium mb-0">{% t service_1.hero.carousel.caption_1 %}</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="/assets/img/p_services_2_hero_dashboard_market.png" class="d-block w-100"
-                                    alt="Market Analysis Dashboard">
+                                <img src="/assets/img/p_services_2_hero_dashboard_market.png" class="d-block w-100" alt="{% t service_1.hero.carousel.img_2_alt %}">
                                 <div class="carousel-caption-below">
-                                    <p class="text-light fw-medium mb-0">Market Analysis Dashboard</p>
+                                    <p class="text-light fw-medium mb-0">{% t service_1.hero.carousel.caption_2 %}</p>
                                 </div>
                             </div>
                         </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#dashboardCarousel"
-                            data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dashboardCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="visually-hidden">{% t pages.buttons.previous %}</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#dashboardCarousel"
-                            data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#dashboardCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                            <span class="visually-hidden">{% t pages.buttons.next %}</span>
                         </button>
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
                     </div>
                 </div>
@@ -208,20 +304,20 @@ custom_js:
 <!-- Solutions Section -->
 <section id="solutions" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Advanced Digital Solutions</h2>
+        <h2 class="text-center mb-5">{% t service_1.solutions.title %}</h2>
         <div class="row g-4">
             <!-- 1. Advanced Web Applications -->
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="feature-icon">
-                        <img src="/assets/svg/p_services_1_icon_custom_app.svg" alt="Custom App Icon">
+                        <img src="/assets/svg/p_services_1_icon_custom_app.svg" alt="{% t service_1.solutions.cards.web_apps.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">Advanced Web Applications</h3>
-                    <p class="text-center">Transform your business with fast, secure, and scalable web solutions that work smoothly on any device - even without internet connection - complete with seamless payments.</p>
+                    <h3 class="h4 text-center">{% t service_1.solutions.cards.web_apps.title %}</h3>
+                    <p class="text-center">{% t service_1.solutions.cards.web_apps.description %}</p>
                     <ul class="list-unstyled mt-3">
-                        <li>✓ Offline Functionality</li>
-                        <li>✓ Secure Payments</li>
-                        <li>✓ Instant Data Synchronization</li>
+                        {% for feature in service_1.solutions.cards.web_apps.features %}
+                            <li>✓ {% t feature %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -230,14 +326,14 @@ custom_js:
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="feature-icon">
-                        <img src="/assets/svg/p_services_1_icon_website.svg" alt="Website Icon">
+                        <img src="/assets/svg/p_services_1_icon_website.svg" alt="{% t service_1.solutions.cards.business_solutions.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">Custom Business Solutions</h3>
-                    <p class="text-center">Build tailored web applications that solve your specific challenges, featuring real-time data processing and secure integrations with your existing systems.</p>
+                    <h3 class="h4 text-center">{% t service_1.solutions.cards.business_solutions.title %}</h3>
+                    <p class="text-center">{% t service_1.solutions.cards.business_solutions.description %}</p>
                     <ul class="list-unstyled mt-3">
-                        <li>✓ Custom Scripts</li>
-                        <li>✓ Third-party Integration</li>
-                        <li>✓ Smart System Connectivity</li>
+                        {% for feature in service_1.solutions.cards.business_solutions.features %}
+                            <li>✓ {% t feature %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -246,14 +342,14 @@ custom_js:
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="feature-icon">
-                        <img src="/assets/svg/p_services_1_icon_sheets.svg" alt="Sheets Icon">
+                        <img src="/assets/svg/p_services_1_icon_sheets.svg" alt="{% t service_1.solutions.cards.corporate_website.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">Corporate Website Development</h3>
-                    <p class="text-center">Create professional, conversion-focused websites with optimized user journeys and integrated scheduling systems that drive business growth.</p>
+                    <h3 class="h4 text-center">{% t service_1.solutions.cards.corporate_website.title %}</h3>
+                    <p class="text-center">{% t service_1.solutions.cards.corporate_website.description %}</p>
                     <ul class="list-unstyled mt-3">
-                        <li>✓ Responsive Design</li>
-                        <li>✓ SEO Optimization</li>
-                        <li>✓ Content Management</li>
+                        {% for feature in service_1.solutions.cards.corporate_website.features %}
+                            <li>✓ {% t feature %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -262,14 +358,14 @@ custom_js:
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="feature-icon">
-                        <img src="/assets/svg/p_services_1_icon_landing_page.svg" alt="Landing Page Icon">
+                        <img src="/assets/svg/p_services_1_icon_landing_page.svg" alt="{% t service_1.solutions.cards.process_automation.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">Business Process Automation</h3>
-                    <p class="text-center">Streamline operations with smart applications that integrate with tools like Google Sheets, automating routine tasks and boosting efficiency.</p>
+                    <h3 class="h4 text-center">{% t service_1.solutions.cards.process_automation.title %}</h3>
+                    <p class="text-center">{% t service_1.solutions.cards.process_automation.description %}</p>
                     <ul class="list-unstyled mt-3">
-                        <li>✓ Automated Workflows</li>
-                        <li>✓ Cross-platform Data Flow</li>
-                        <li>✓ Dynamic Process Monitoring</li>
+                        {% for feature in service_1.solutions.cards.process_automation.features %}
+                            <li>✓ {% t feature %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -278,14 +374,14 @@ custom_js:
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="feature-icon">
-                        <img src="/assets/svg/p_services_1_icon_marketing.svg" alt="Marketing Icon">
+                        <img src="/assets/svg/p_services_1_icon_marketing.svg" alt="{% t service_1.solutions.cards.landing_pages.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">High-Impact Landing Pages</h3>
-                    <p class="text-center">Convert visitors into customers with data-driven landing pages featuring industry-specific elements and continuous optimization through A/B testing.</p>
+                    <h3 class="h4 text-center">{% t service_1.solutions.cards.landing_pages.title %}</h3>
+                    <p class="text-center">{% t service_1.solutions.cards.landing_pages.description %}</p>
                     <ul class="list-unstyled mt-3">
-                        <li>✓ A/B Testing</li>
-                        <li>✓ Conversion Optimization</li>
-                        <li>✓ Lead Generation</li>
+                        {% for feature in service_1.solutions.cards.landing_pages.features %}
+                            <li>✓ {% t feature %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -294,14 +390,14 @@ custom_js:
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="feature-icon">
-                        <img src="/assets/svg/p_services_1_icon_research.svg" alt="Research Icon">
+                        <img src="/assets/svg/p_services_1_icon_research.svg" alt="{% t service_1.solutions.cards.analytics.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">Financial & Business Analytics Solutions</h3>
-                    <p class="text-center">Leverage specialized applications for financial modeling, business intelligence, and market analysis to make data-driven decisions and identify growth opportunities.</p>
+                    <h3 class="h4 text-center">{% t service_1.solutions.cards.analytics.title %}</h3>
+                    <p class="text-center">{% t service_1.solutions.cards.analytics.description %}</p>
                     <ul class="list-unstyled mt-3">
-                        <li>✓ Advanced Computations</li>
-                        <li>✓ Data Analysis</li>
-                        <li>✓ Real-time Processing</li>
+                        {% for feature in service_1.solutions.cards.analytics.features %}
+                            <li>✓ {% t feature %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -310,14 +406,14 @@ custom_js:
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="feature-icon">
-                        <img src="/assets/svg/p_services_1_icon_corporate_identity.svg" alt="Brand Icon">
+                        <img src="/assets/svg/p_services_1_icon_corporate_identity.svg" alt="{% t service_1.solutions.cards.brand_experience.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">Digital Brand Experience</h3>
-                    <p class="text-center">Establish a powerful online presence with cohesive brand identity and professional design that resonates with your target audience.</p>
+                    <h3 class="h4 text-center">{% t service_1.solutions.cards.brand_experience.title %}</h3>
+                    <p class="text-center">{% t service_1.solutions.cards.brand_experience.description %}</p>
                     <ul class="list-unstyled mt-3">
-                        <li>✓ Visual Identity</li>
-                        <li>✓ Design Systems</li>
-                        <li>✓ Brand Guidelines</li>
+                        {% for feature in service_1.solutions.cards.brand_experience.features %}
+                            <li>✓ {% t feature %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -326,14 +422,14 @@ custom_js:
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="feature-icon">
-                        <img src="/assets/svg/p_services_1_icon_maintenance.svg" alt="Maintenance Icon">
+                        <img src="/assets/svg/p_services_1_icon_maintenance.svg" alt="{% t service_1.solutions.cards.maintenance.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">Website Maintenance & Security</h3>
-                    <p class="text-center">Protect your digital assets with proactive maintenance, regular updates, and comprehensive security monitoring.</p>
+                    <h3 class="h4 text-center">{% t service_1.solutions.cards.maintenance.title %}</h3>
+                    <p class="text-center">{% t service_1.solutions.cards.maintenance.description %}</p>
                     <ul class="list-unstyled mt-3">
-                        <li>✓ Security Updates</li>
-                        <li>✓ Performance Optimization</li>
-                        <li>✓ Regular Backups</li>
+                        {% for feature in service_1.solutions.cards.maintenance.features %}
+                            <li>✓ {% t feature %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -342,14 +438,14 @@ custom_js:
             <div class="col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="feature-icon">
-                        <img src="/assets/svg/p_services_1_icon_marketing.svg" alt="Marketing Icon">
+                        <img src="/assets/svg/p_services_1_icon_marketing.svg" alt="{% t service_1.solutions.cards.integration.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">Business Systems Integration</h3>
-                    <p class="text-center">Connect your essential business tools and systems seamlessly - from booking and payment systems to customer management - ensuring smooth data flow across your organization.</p>
+                    <h3 class="h4 text-center">{% t service_1.solutions.cards.integration.title %}</h3>
+                    <p class="text-center">{% t service_1.solutions.cards.integration.description %}</p>
                     <ul class="list-unstyled mt-3">
-                        <li>✓ Third-party Integration</li>
-                        <li>✓ Seamless Platform Unification</li>
-                        <li>✓ Secure Authentication</li>
+                        {% for feature in service_1.solutions.cards.integration.features %}
+                            <li>✓ {% t feature %}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -360,34 +456,34 @@ custom_js:
 <!-- Process Section -->
 <section class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-5">Our Development Process</h2>
+        <h2 class="text-center mb-5">{% t service_1.process.title %}</h2>
         <div class="row">
             <div class="col-sm-6 col-md-3 mb-3">
                 <div class="process-step text-center">
                     <div class="feature-icon">1</div>
-                    <h3 class="h5">Discovery</h3>
-                    <p>Understanding your needs and objectives</p>
+                    <h3 class="h5">{% t service_1.process.steps.discovery.title %}</h3>
+                    <p>{% t service_1.process.steps.discovery.description %}</p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 mb-3">
                 <div class="process-step text-center">
                     <div class="feature-icon">2</div>
-                    <h3 class="h5">Planning</h3>
-                    <p>Strategic planning and solution design</p>
+                    <h3 class="h5">{% t service_1.process.steps.planning.title %}</h3>
+                    <p>{% t service_1.process.steps.planning.description %}</p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 mb-3">
                 <div class="process-step text-center">
                     <div class="feature-icon">3</div>
-                    <h3 class="h5">Development</h3>
-                    <p>Agile development and testing</p>
+                    <h3 class="h5">{% t service_1.process.steps.development.title %}</h3>
+                    <p>{% t service_1.process.steps.development.description %}</p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 mb-3">
                 <div class="process-step text-center">
                     <div class="feature-icon">4</div>
-                    <h3 class="h5">Launch</h3>
-                    <p>Deployment (CD/CI) and ongoing support</p>
+                    <h3 class="h5">{% t service_1.process.steps.launch.title %}</h3>
+                    <p>{% t service_1.process.steps.launch.description %}</p>
                 </div>
             </div>
         </div>
@@ -397,34 +493,32 @@ custom_js:
 <!-- Portfolio Section -->
 <section id="portfolio" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Industry-Specific Solutions</h2>
+        <h2 class="text-center mb-5">{% t service_1.portfolio.title %}</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="/assets/svg/p_services_1_portfolio_hotel_pwa.svg" class="card-img-top" alt="Project 1">
+                    <img src="/assets/svg/p_services_1_portfolio_hotel_pwa.svg" class="card-img-top" alt="{% t service_1.portfolio.industries.hospitality.img_alt %}">
                     <div class="card-body">
-                        <h3 class="h4">Hospitality</h3>
-                        <p>Hotel management systems and booking platforms</p>
+                        <h3 class="h4">{% t service_1.portfolio.industries.hospitality.title %}</h3>
+                        <p>{% t service_1.portfolio.industries.hospitality.description %}</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="/assets/svg/p_services_1_portfolio_corporate_site.svg" class="card-img-top"
-                        alt="Project 2">
+                    <img src="/assets/svg/p_services_1_portfolio_corporate_site.svg" class="card-img-top" alt="{% t service_1.portfolio.industries.healthcare.img_alt %}">
                     <div class="card-body">
-                        <h3 class="h4">Healthcare</h3>
-                        <p>Patient service portals and medical data management</p>
+                        <h3 class="h4">{% t service_1.portfolio.industries.healthcare.title %}</h3>
+                        <p>{% t service_1.portfolio.industries.healthcare.description %}</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="/assets/svg/p_services_1_portfolio_marketing_campaign.svg" class="card-img-top"
-                        alt="Project 3">
+                    <img src="/assets/svg/p_services_1_portfolio_marketing_campaign.svg" class="card-img-top" alt="{% t service_1.portfolio.industries.financial.img_alt %}">
                     <div class="card-body">
-                        <h3 class="h4">Financial Services</h3>
-                        <p>Secure banking platforms and payment integration solutions</p>
+                        <h3 class="h4">{% t service_1.portfolio.industries.financial.title %}</h3>
+                        <p>{% t service_1.portfolio.industries.financial.description %}</p>
                     </div>
                 </div>
             </div>
@@ -437,10 +531,9 @@ custom_js:
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <h2 class="mb-4">Ready to Transform Your Business?</h2>
-                <p class="lead mb-4">Let's discuss how our solutions can enhance your operations.</p>
-                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
-                    data-bs-consultation="WebApps">Schedule a Consultation</button>
+                <h2 class="mb-4">{% t service_1.cta.title %}</h2>
+                <p class="lead mb-4">{% t service_1.cta.subtitle %}</p>
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="WebApps">{% t service_1.cta.button %}</button>
             </div>
         </div>
     </div>
