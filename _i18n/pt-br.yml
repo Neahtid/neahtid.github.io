@@ -353,3 +353,46 @@ service_2:
     title: "Pronto para Transformar Seu Negócio?"
     subtitle: "Agende uma demonstração para ver como nossas soluções de BI podem impulsionar sua empresa."
     button: "Comece Agora"
+
+service_3:
+  hero:
+    title: "Transforme Seu Negócio com IA"
+    subtitle: "Aumente a eficiência com chatbots e outras automações baseadas em IA que transformam o atendimento ao cliente e otimizam operações."
+    buttons:
+      get_started: "Comece Agora"
+  carousel:
+    item1:
+      caption: "Chatbots e Assistentes de Voz com IA"
+    item2:
+      caption: "Automação de Processos de Reserva e Cancelamento"
+    item3:
+      caption: "Manutenção Preditiva de Instalações"
+  solutions:
+    title: "Nossas Soluções de IA"
+    cards:
+      assistant:
+        title: "Assistentes Virtuais com IA"
+        description: "Transforme o atendimento ao cliente com chatbots multilíngues 24/7 que gerenciam desde reservas até consultas, proporcionando experiências personalizadas e reduzindo custos operacionais."
+      automation:
+        title: "Automação Inteligente de Negócios"
+        description: "Simplifique suas operações com IA que gerencia reservas, pagamentos e fluxos de atendimento ao cliente - transformando processos complexos em eficiência lucrativa."
+      maintenance:
+        title: "Manutenção Inteligente Preditiva"
+        description: "Aproveite a IA para prever necessidades de manutenção e tendências de negócios, prevenindo paradas custosas e otimizando recursos antes que os problemas surjam."
+      custom:
+        title: "Soluções de IA Personalizadas"
+        description: "Desbloqueie o potencial do seu negócio com aplicações de IA sob medida que resolvem desafios exclusivos, desde avaliação de riscos até aprimoramento da experiência do cliente."
+  stats:
+    cost_reduction:
+      number: "30%"
+      text: "Redução nos Custos Operacionais"
+    support:
+      number: "24/7"
+      text: "Disponibilidade de Suporte ao Cliente"
+    response:
+      number: "50%"
+      text: "Respostas Mais Rápidas"
+  cta:
+    title: "Pronto para Transformar Seu Negócio?"
+    subtitle: "Agende uma demonstração para ver como nossas soluções de IA podem impulsionar seu negócio."
+    button: "Agendar Demonstração"

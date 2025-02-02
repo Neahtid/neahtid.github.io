@@ -69,10 +69,10 @@ const consultationOptions = {
 		title: '',
 		submit: 'Get Started',
 		options: [
-			'Profit Analysis Dashboards',
-			'Advanced Financial Analytics',
-			'Revenue & Expense Platform',
-			'Excel & Spreadsheet Solutions',
+			'Financial Performance Analytics',
+			'Smart Business Intelligence Dashboards',
+			'Automated Financial Management System',
+			'AI-Powered Business Analytics Platform',
 			'Other'
 		]
 	},
@@ -81,13 +81,10 @@ const consultationOptions = {
 		title: 'Request a Demo',
 		submit: 'Schedule Demo',
 		options: [
-			'AI Chatbots',
-			'Automated Reservations',
-			'Predictive Maintenance',
-			'Intelligent Virtual Assistants',
-			'Process Automation Systems',
-			'Smart Maintenance Platform',
-			'Custom AI Development',
+			'AI-Powered Virtual Assistants',
+			'Smart Business Automation',
+			'Predictive Intelligence Maintenance',
+			'Custom AI Solutions',
 			'Other'
 		]
 	},

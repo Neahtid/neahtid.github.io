@@ -89,19 +89,123 @@ custom_js:
         border-color: var(--secondary-color);
     }
 </style>
-
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{% t services.ai_automation.title %}",
+      "description": "{% t services.ai_automation.description %}",
+      "mainEntity": {
+        "@type": "Service",
+        "name": "{% t service_3.hero.title %}",
+        "description": "{% t service_3.hero.subtitle %}",
+        "offers": {
+          "@type": "AggregateOffer",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "{% t service_3.solutions.cards.assistant.title %}",
+              "description": "{% t service_3.solutions.cards.assistant.description %}"
+            },
+            {
+              "@type": "Offer",
+              "name": "{% t service_3.solutions.cards.automation.title %}",
+              "description": "{% t service_3.solutions.cards.automation.description %}"
+            },
+            {
+              "@type": "Offer",
+              "name": "{% t service_3.solutions.cards.maintenance.title %}",
+              "description": "{% t service_3.solutions.cards.maintenance.description %}"
+            },
+            {
+              "@type": "Offer",
+              "name": "{% t service_3.solutions.cards.custom.title %}",
+              "description": "{% t service_3.solutions.cards.custom.description %}"
+            }
+          ]
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "{% t service_3.solutions.title %}",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "{% t service_3.solutions.cards.assistant.title %}",
+                "description": "{% t service_3.solutions.cards.assistant.description %}"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "{% t service_3.solutions.cards.automation.title %}",
+                "description": "{% t service_3.solutions.cards.automation.description %}"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "{% t service_3.solutions.cards.maintenance.title %}",
+                "description": "{% t service_3.solutions.cards.maintenance.description %}"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "{% t service_3.solutions.cards.custom.title %}",
+                "description": "{% t service_3.solutions.cards.custom.description %}"
+              }
+            }
+          ]
+        },
+        "areaServed": "Worldwide",
+        "provider": {
+          "@type": "Organization",
+          "name": "{% t service_3.hero.title %}"
+        },
+        "termsOfService": "#",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "789"
+        },
+        "potentialAction": {
+          "@type": "ViewAction",
+          "target": [
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "#contact",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/IOSPlatform",
+                "http://schema.org/AndroidPlatform"
+              ]
+            }
+          ]
+        }
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "/assets/svg/p_services_3_hero_chatbot.svg",
+        "description": "{% t service_3.carousel.item1.caption %}"
+      }
+    }
+</script>
 <!-- Hero Section -->
 <section class="hero-section text-white">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-sm-6 mb-4">
-                <h1 class="display-4 fw-bold mb-4">Transform Your Business with AI</h1>
+                <h1 class="display-4 fw-bold mb-4">{% t service_3.hero.title %}</h1>
                 <p class="lead mb-4">
-                    Boost efficiency with chatbots and other AI-powered automations that transforms customer service and
-                    streamlines operations.
+                    {% t service_3.hero.subtitle %}
                 </p>
                 <button class="btn btn-light btn-lg me-3" data-bs-toggle="modal" data-bs-target="#contactModal"
-data-bs-consultation="AI">Get Started</button>
+data-bs-consultation="AI">{% t service_3.hero.buttons.get_started %}</button>
                 <a href="#solutions" class="btn btn-outline-light btn-lg">{% t pages.buttons.learn_more %}</a>
             </div>
             <div class="col-sm-6">
@@ -111,28 +215,28 @@ data-bs-consultation="AI">Get Started</button>
                         <div class="carousel-inner rounded shadow">
                             <div class="carousel-item active">
                                 <img src="/assets/svg/p_services_3_hero_chatbot.svg" class="d-block w-100"
-                                    alt="AI-Powered Chatbots and Voice Assistants">
+                                    alt="{% t service_3.carousel.item1.caption %}">
                                 <div class="carousel-caption-below">
                                     <p class="text-light fw-medium mb-0">
-                                        AI-Powered Chatbots and Voice Assistants
+                                        {% t service_3.carousel.item1.caption %}
                                     </p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/svg/p_services_3_hero_reservation.svg" class="d-block w-100"
-                                    alt="Automation of Reservation and Cancellation Processes">
+                                    alt="{% t service_3.carousel.item2.caption %}">
                                 <div class="carousel-caption-below">
                                     <p class="text-light fw-medium mb-0">
-                                        Automation of Reservation and Cancellation Processes
+                                        {% t service_3.carousel.item2.caption %}
                                     </p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/svg/p_services_3_hero_predictive.svg" class="d-block w-100"
-                                    alt="Predictive Facility Maintenance">
+                                    alt="{% t service_3.carousel.item3.caption %}">
                                 <div class="carousel-caption-below">
                                     <p class="text-light fw-medium mb-0">
-                                        Predictive Facility Maintenance
+                                        {% t service_3.carousel.item3.caption %}
                                     </p>
                                 </div>
                             </div>
@@ -169,41 +273,62 @@ data-bs-consultation="AI">Get Started</button>
 <!-- Solutions Section -->
 <section id="solutions" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Our AI Solutions</h2>
+        <h2 class="text-center mb-5">{% t service_3.solutions.title %}</h2>
         <div class="row g-4">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="solution-card card">
                     <div class="card-body text-center p-4">
                         <div class="feature-icon">
-                            <img src="/assets/svg/p_services_3_ai_icon_robots.svg" alt="AI-Powered Assistants">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16" style="fill: #FFFFFF;">
+                                <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+                                <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+                            </svg>
                         </div>
-                        <h3 class="h4 mb-3">AI-Powered Assistants</h3>
-                        <p>Intelligent chatbots and voice assistants providing 24/7 guest support, handling inquiries,
-                            and personalizing experiences.</p>
+                        <h3 class="h4 mb-3">{% t service_3.solutions.cards.assistant.title %}</h3>
+                        <p>{% t service_3.solutions.cards.assistant.description %}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="solution-card card">
                     <div class="card-body text-center p-4">
                         <div class="feature-icon">
-                            <img src="/assets/svg/p_services_3_ai_icon_calendar_check.svg" alt="Automated Reservations">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16" style="fill: #FFFFFF;">
+                                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg>
                         </div>
-                        <h3 class="h4 mb-3">Automated Reservations</h3>
-                        <p>Streamlined booking and cancellation processes that reduce staff workload and minimize
-                            errors.</p>
+                        <h3 class="h4 mb-3">{% t service_3.solutions.cards.automation.title %}</h3>
+                        <p>{% t service_3.solutions.cards.automation.description %}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="solution-card card">
                     <div class="card-body text-center p-4">
                         <div class="feature-icon">
-                            <img src="/assets/svg/p_services_3_ai_icon_tools.svg" alt="Predictive Maintenance">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16" style="fill: #FFFFFF;">
+                                <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+                            </svg>
                         </div>
-                        <h3 class="h4 mb-3">Predictive Maintenance</h3>
-                        <p>AI-driven facility maintenance that predicts and prevents equipment failures before they
-                            impact operations.</p>
+                        <h3 class="h4 mb-3">{% t service_3.solutions.cards.maintenance.title %}</h3>
+                        <p>{% t service_3.solutions.cards.maintenance.description %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="solution-card card">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16" style="fill: #FFFFFF;">
+                                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                <circle cx="11.5" cy="10.5" r="1.5"/>
+                                <path d="M8.5 2a.5.5 0 0 0-1 0v1h1z M6.5 2a.5.5 0 0 0-1 0v1h1z M10.5 2a.5.5 0 0 0-1 0v1h1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="h4 mb-3">{% t service_3.solutions.cards.custom.title %}</h3>
+                        <p>{% t service_3.solutions.cards.custom.description %}</p>
                     </div>
                 </div>
             </div>
@@ -217,37 +342,36 @@ data-bs-consultation="AI">Get Started</button>
         <div class="row">
             <div class="col-md-4">
                 <div class="stat-item">
-                    <div class="stat-number">30%</div>
-                    <p>Reduction in Operational Costs</p>
+                    <div class="stat-number">{% t service_3.stats.cost_reduction.number %}</div>
+                    <p>{% t service_3.stats.cost_reduction.text %}</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <p>Guest Support Availability</p>
+                    <div class="stat-number">{% t service_3.stats.support.number %}</div>
+                    <p>{% t service_3.stats.support.text %}</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="stat-item">
-                    <div class="stat-number">50%</div>
-                    <p>Faster Response Times</p>
+                    <div class="stat-number">{% t service_3.stats.response.number %}</div>
+                    <p>{% t service_3.stats.response.text %}</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
 <!-- CTA Section -->
 <section id="contact" class="cta-section bg-white py-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <h2 class="mb-4">Ready to Transform Your Business?</h2>
-                <p class="lead mb-4">Schedule a demo to see how our AI solutions can drive your business forward.</p>
+                <h2 class="mb-4">{% t service_3.cta.title %}</h2>
+                <p class="lead mb-4">{% t service_3.cta.subtitle %}</p>
                 <div>
                     <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
-data-bs-consultation="AI">Schedule Demo</button>
+data-bs-consultation="AI">{% t service_3.cta.button %}</button>
                 </div>
             </div>
         </div>

@@ -356,3 +356,46 @@ service_2:
     title: "Ready to Transform Your Business?"
     subtitle: "Schedule a demo to see how our BI solutions can drive your business forward."
     button: "Get Started"
+
+service_3:
+  hero:
+    title: "Transform Your Business with AI"
+    subtitle: "Boost efficiency with chatbots and other AI-powered automations that transforms customer service and streamlines operations."
+    buttons:
+      get_started: "Get Started"
+  carousel:
+    item1:
+      caption: "AI-Powered Chatbots and Voice Assistants"
+    item2:
+      caption: "Automation of Reservation and Cancellation Processes"
+    item3:
+      caption: "Predictive Facility Maintenance"
+  solutions:
+    title: "Our AI Solutions"
+    cards:
+      assistant:
+        title: "AI-Powered Virtual Assistants"
+        description: "Transform customer service with 24/7 multilingual chatbots that handle everything from bookings to inquiries, delivering personalized experiences while reducing operational costs."
+      automation:
+        title: "Smart Business Automation"
+        description: "Streamline your operations with AI that handles reservations, payments, and customer service workflows - turning complex processes into revenue-generating efficiency."
+      maintenance:
+        title: "Predictive Intelligence Maintenance"
+        description: "Leverage AI to forecast maintenance needs and business trends, preventing costly downtimes and optimizing resources before problems arise."
+      custom:
+        title: "Custom AI Solutions"
+        description: "Unlock your business potential with tailor-made AI applications that solve your unique challenges, from risk assessment to guest experience enhancement."
+  stats:
+    cost_reduction:
+      number: "30%"
+      text: "Reduction in Operational Costs"
+    support:
+      number: "24/7"
+      text: "Guest Support Availability"
+    response:
+      number: "50%"
+      text: "Faster Response Times"
+  cta:
+    title: "Ready to Transform Your Business?"
+    subtitle: "Schedule a demo to see how our AI solutions can drive your business forward."
+    button: "Schedule Demo"
