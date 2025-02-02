@@ -32,10 +32,11 @@ pages:
   modal_t2: "Consultation"
   modal_select: "Select Solution"
   modal_select_other: "Other"
-  close: "Close"
-  send: "Send"
   rights: "All rights reserved"
   know_our_services: "Know Our Services"
+  button_send: "Send"
+  button_close: "Close"
+  button_learn_more: "Learn More"
 
 
 jekyll_timeago:
@@ -95,7 +96,6 @@ index:
 
   services:
     title: "Our Services"
-    button_learn_more: "Learn More"
 
   value_proposition:
     title: "Where ideas become reality"
