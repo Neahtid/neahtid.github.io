@@ -82,6 +82,14 @@ services:
     description: "Launch and scale your online business with white-label solutions, integrated payment systems, and automated inventory management."
 
 products:
+  hero:
+    title: "Experience Our Demo Products"
+    description: "Discover the power of our enterprise-grade solutions through interactive demos"
+    cta_button: "Explore Demos"
+  title: "Our Demo Products"
+  ready: "Ready to Learn More?"
+  ready_description: "Contact us for a personalized demo of our products"
+  ready_button: "Request Demo"
   jingo_store:
     title: "Jingo.store"
     description: "Experience a fully-featured e-commerce solution with integrated payment methods, order tracking, and inventory management."

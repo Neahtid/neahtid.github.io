@@ -100,9 +100,9 @@ custom_js:
 <!-- Hero Section -->
 <section class="hero-section text-white d-flex align-items-center">
     <div class="container hero-content text-center">
-        <h1 class="display-4 fw-bold mb-4">Experience Our Demo Products</h1>
-        <p class="lead mb-4">Discover the power of our enterprise-grade solutions through interactive demos</p>
-        <a href="#products" class="btn btn-light btn-lg">Explore Demos</a>
+        <h1 class="display-4 fw-bold mb-4">{% t products.hero.title %}</h1>
+        <p class="lead mb-4">{% t products.hero.description %}</p>
+        <a href="#products" class="btn btn-light btn-lg">{% t products.hero.cta_button %}</a>
     </div>
     <!-- Animated background elements -->
     <div class="tech-circle" style="width:200px;height:200px;top:10%;left:5%"></div>
@@ -114,7 +114,7 @@ custom_js:
 <!-- Products Section -->
 <section id="products" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Our Demo Products</h2>
+        <h2 class="text-center mb-5">{% t products.title %}</h2>
         <div class="row g-4">
             <!-- Jingo.store -->
             <div class="col-sm-6 col-md-4 animated-hidden">
@@ -128,12 +128,11 @@ custom_js:
                                         d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
                                 </svg>
                             </div>
-                            <h3 class="card-title">Jingo.store</h3>
-                            <p class="card-text">Experience a fully-featured e-commerce solution with integrated payment
-                                methods, order tracking, and inventory management.</p>
+                            <h3 class="card-title">{% t products.jingo_store.title %}</h3>
+                            <p class="card-text">{% t products.jingo_store.description %}</p>
                             <div class="mt-4 text-end">
                                 <a href="https://jingo.store" target="_blank" class="btn btn-product-demo me-2">
-                                    Live Demo
+                                    {% t index.products.buttons.demo %}
                                 </a>
                                 <a href="{{prefix}}/products/jingo-store" class="btn btn-outline-primary">{% t pages.button_learn_more %}</a>
                             </div>
@@ -154,12 +153,11 @@ custom_js:
                                         d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z" />
                                 </svg>
                             </div>
-                            <h3 class="card-title">Zigna.app</h3>
-                            <p class="card-text">Get real-time stock trading recommendations from experienced traders
-                                through our subscription-based platform with advanced market analysis.</p>
+                            <h3 class="card-title">{% t products.zigna_app.title %}</h3>
+                            <p class="card-text">{% t products.zigna_app.description %}</p>
                             <div class="mt-4 text-end">
                                 <a href="https://zigna.app" target="_blank" class="btn btn-product-demo me-2">
-                                    Live Demo
+                                    {% t index.products.buttons.demo %}
                                 </a>
                                 <a href="{{prefix}}/products/zigna-app" class="btn btn-outline-primary">{% t pages.button_learn_more %}</a>
                             </div>
@@ -181,12 +179,11 @@ custom_js:
                                     <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                                 </svg>
                             </div>
-                            <h3 class="card-title">Minions App</h3>
-                            <p class="card-text">Explore our white-label Installable Web Application showcasing BI
-                                dashboards, secure authentication, data integration, and more.</p>
+                            <h3 class="card-title">{% t products.minions_app.title %}</h3>
+                            <p class="card-text">{% t products.minions_app.description %}</p>
                             <div class="mt-4 text-end">
                                 <a href="https://minions.neahtid.com" target="_blank" class="btn btn-product-demo me-2">
-                                    Live Demo
+                                    {% t index.products.buttons.demo %}
                                 </a>
                                 <a href="{{prefix}}/products/pwa-demo" class="btn btn-outline-primary">{% t pages.button_learn_more %}</a>
                             </div>
@@ -203,11 +200,11 @@ custom_js:
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
-                <h2 class="mb-4">Ready to Learn More?</h2>
-                <p class="mb-4">Contact us for a personalized demo of our products</p>
+                <h2 class="mb-4">{% t products.ready %}</h2>
+                <p class="mb-4">{% t products.ready_description %}</p>
                 <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
                     data-bs-consultation="products">
-                    Request Demo
+                    {% t products.ready_button %}
                 </button>
             </div>
         </div>

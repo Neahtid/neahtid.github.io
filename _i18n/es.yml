@@ -80,6 +80,14 @@ services:
     description: "Lanza y escala tu negocio en línea con soluciones white-label, sistemas de pago integrados y gestión automatizada de inventario."
 
 products:
+  hero:
+    title: "Experimenta Nuestros Productos de Demostración"
+    description: "Descubre el poder de nuestras soluciones empresariales a través de demostraciones interactivas"
+    cta_button: "Explorar Demos"
+  title: "Nuestros Productos de Demostración"
+  ready: "¿Listo para Saber Más?"
+  ready_description: "Contáctanos para una demostración personalizada de nuestros productos"
+  ready_button: "Solicitar Demostración"
   jingo_store:
     title: "Jingo.store"
     description: "Experimenta una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario."
