@@ -1,5 +1,12 @@
 global:
   tagline: English
+  company:
+    name: "Neahtid"
+    location: "Brasil"
+  urls:
+    contact_url: "/contact-us/"
+    terms_url: "/terms/"
+    privacy_url: "/privacy-policy/"
   navbar_top:
     - title: Services
       link: /services
@@ -301,3 +308,51 @@ service_1:
     title: "Ready to Transform Your Business?"
     subtitle: "Let's discuss how our solutions can enhance your operations."
     button: "Schedule a Consultation"
+
+service_2:
+  hero:
+    title: "Transform Your Business Data Into Actionable Insights"
+    subtitle: "Leverage advanced Business Intelligence and Analytics solutions to make data-driven decisions that drive growth and profitability."
+    buttons:
+      schedule_demo: "Schedule a Demo"
+      our_solutions: "Our Solutions"
+    carousel:
+      slides:
+        financial: "Financial Performance Analytics"
+        dashboard: "Smart Business Intelligence Dashboards"
+        automated: "Automated Financial Management System"
+        ai_powered: "AI-Powered Business Analytics Platform"
+  
+  solutions:
+    title: "Our Solutions"
+    cards:
+      financial:
+        title: "Financial Performance Analytics Suite"
+        description: "Monitor real-time insights into revenue streams, expense patterns, and profit margins with our intuitive dashboards that tracks costs, predicts revenue trends, and identifies opportunities for growth. Get instant visibility into your company's financial health."
+      dashboard:
+        title: "Smart Business Intelligence Dashboards"
+        description: "Transform complex data into clear, actionable insights with customizable, real-time dashboards. Track key performance indicators, market trends, and operational metrics from any device. Make faster, smarter decisions with automated reporting and analysis."
+      automated:
+        title: "Automated Financial Management System"
+        description: "Upgrade your financial operations beyond basic Excel with advanced automation and reporting. Save time with intelligent expense tracking, custom templates, and sophisticated modeling tools designed for your industry's specific needs."
+      ai:
+        title: "AI-Powered Business Analytics Platform"
+        description: "Discover hidden opportunities and predict market trends with artificial intelligence. Get automated recommendations and pattern recognition that puts you ahead of market changes. Transform data into strategic advantage."
+
+  benefits:
+    title: "Why Choose Our BI Solutions?"
+    cards:
+      decision:
+        title: "Enhanced Decision Making"
+        description: "Make informed decisions backed by real-time data and predictive analytics."
+      revenue:
+        title: "Revenue Optimization"
+        description: "Identify profit leaks and optimize revenue streams across channels."
+      competitive:
+        title: "Competitive Advantage"
+        description: "Stay ahead with AI-powered insights and predictive analytics."
+
+  cta:
+    title: "Ready to Transform Your Business?"
+    subtitle: "Schedule a demo to see how our BI solutions can drive your business forward."
+    button: "Get Started"

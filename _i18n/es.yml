@@ -1,5 +1,12 @@
 global:
   tagline: Español
+  company:
+    name: "Neahtid"
+    location: "Brasil"
+  urls:
+    contact_url: "/contact-us/"
+    terms_url: "/terms/"
+    privacy_url: "/privacy-policy/"
   navbar_top:
     - title: Servicios
       link: /services
@@ -298,3 +305,51 @@ service_1:
     title: "¿Listo para Transformar tu Negocio?"
     subtitle: "Hablemos sobre cómo nuestras soluciones pueden optimizar tus operaciones."
     button: "Agenda una Consulta"
+
+service_2:
+  hero:
+    title: "Transforma los Datos de tu Negocio en Información Accionable"
+    subtitle: "Aprovecha soluciones avanzadas de Business Intelligence y Analytics para tomar decisiones basadas en datos que impulsen el crecimiento y la rentabilidad."
+    buttons:
+      schedule_demo: "Agendar una Demostración"
+      our_solutions: "Nuestras Soluciones"
+    carousel:
+      slides:
+        financial: "Análisis del Desempeño Financiero"
+        dashboard: "Paneles Inteligentes de Business Intelligence"
+        automated: "Sistema Automatizado de Gestión Financiera"
+        ai_powered: "Plataforma de Análisis Empresarial con IA"
+  
+  solutions:
+    title: "Nuestras Soluciones"
+    cards:
+      financial:
+        title: "Suite de Análisis del Desempeño Financiero"
+        description: "Monitorea información en tiempo real sobre flujos de ingresos, patrones de gastos y márgenes de beneficio con nuestros paneles intuitivos. Rastrea costos, predice tendencias de ingresos e identifica oportunidades de crecimiento. Obtén visibilidad instantánea de la salud financiera de tu empresa."
+      dashboard:
+        title: "Paneles Inteligentes de Business Intelligence"
+        description: "Transforma datos complejos en información clara y accionable con paneles personalizables en tiempo real. Monitorea indicadores clave de desempeño, tendencias del mercado y métricas operativas desde cualquier dispositivo. Toma decisiones más rápidas e inteligentes con reportes y análisis automatizados."
+      automated:
+        title: "Sistema Automatizado de Gestión Financiera"
+        description: "Lleva tus operaciones financieras más allá del Excel básico con automatización avanzada y reportes inteligentes. Ahorra tiempo con seguimiento inteligente de gastos, plantillas personalizadas y herramientas de modelado sofisticadas diseñadas para las necesidades específicas de tu industria."
+      ai:
+        title: "Plataforma de Análisis Empresarial con IA"
+        description: "Descubre oportunidades ocultas y predice tendencias del mercado con inteligencia artificial. Obtén recomendaciones automatizadas y reconocimiento de patrones que te colocan por delante de los cambios del mercado. Transforma datos en una ventaja estratégica."
+
+  benefits:
+    title: "¿Por Qué Elegir Nuestras Soluciones de BI?"
+    cards:
+      decision:
+        title: "Mejor Toma de Decisiones"
+        description: "Toma decisiones informadas respaldadas por datos en tiempo real y análisis predictivos."
+      revenue:
+        title: "Optimización de Ingresos"
+        description: "Identifica fugas de ganancias y optimiza los flujos de ingresos en todos los canales."
+      competitive:
+        title: "Ventaja Competitiva"
+        description: "Mantente a la vanguardia con información basada en IA y análisis predictivo."
+
+  cta:
+    title: "¿Listo para Transformar tu Negocio?"
+    subtitle: "Agenda una demostración para ver cómo nuestras soluciones de BI pueden impulsar tu empresa."
+    button: "Comenzar Ahora"

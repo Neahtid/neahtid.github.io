@@ -6,7 +6,10 @@ description: Transform your business data into actionable insights with our adva
 custom_js:
 - /assets/js/custom/p_services_2_bi.js
 ---
-
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
 <style>
     :root {
         --primary-color: #091C99;
@@ -65,179 +68,352 @@ custom_js:
     }
 </style>
 
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "{% t services.business_intelligence.title %}",
+      "description": "{% t services.business_intelligence.description %}",
+      "provider": {
+        "@type": "Organization",
+        "name": "{% t global.company.name %}"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "{% t global.company.location %}"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "{% t service_2.solutions.title %}",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_2.solutions.cards.financial.title %}",
+              "description": "{% t service_2.solutions.cards.financial.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_2.solutions.cards.dashboard.title %}",
+              "description": "{% t service_2.solutions.cards.dashboard.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_2.solutions.cards.automated.title %}",
+              "description": "{% t service_2.solutions.cards.automated.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_2.solutions.cards.ai.title %}",
+              "description": "{% t service_2.solutions.cards.ai.description %}"
+            }
+          }
+        ]
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      },
+      "serviceType": "{% t services.business_intelligence.title %}",
+      "termsOfService": "{{site.url}}{{prefix}}{% t global.urls.terms_url %}",
+      "brand": {
+        "@type": "Brand",
+        "name": "{% t global.company.name %}"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "{{site.url}}{{prefix}}{% t global.urls.contact_url %}",
+          "inLanguage": "en",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "result": {
+          "@type": "Reservation",
+          "name": "{% t service_2.hero.buttons.schedule_demo %}"
+        }
+      }
+    }
+</script>
+
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-sm-6 mb-4">
-                <h1 class="display-4 fw-bold mb-4">Transform Your Business Data Into Actionable Insights</h1>
-                <p class="lead mb-4">Leverage advanced Business Intelligence and Analytics solutions to make data-driven
-                    decisions that drive growth and profitability.</p>
-                <div class="d-flex gap-3">
-                    <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
-                        data-bs-consultation="BI">Schedule a Demo</button>
-                    <a href="#solutions" class="btn btn-outline-light btn-lg">Our Solutions</a>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="carousel-wrapper">
-                    <div id="dashboardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-                        <!-- Carousel items -->
-                        <div class="carousel-inner rounded shadow">
-                            <div class="carousel-item active">
-                                <img src="/assets/svg/p_services_2_hero_dashboard_bi.svg" class="d-block w-100"
-                                    alt="Financial Performance Analytics">
-                                <div class="carousel-caption-below">
-                                    <p class="text-light fw-medium mb-0">Financial Performance Analytics</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/assets/img/p_services_2_hero_dashboard_market.png" class="d-block w-100"
-                                    alt="Smart Business Intelligence Dashboards">
-                                <div class="carousel-caption-below">
-                                    <p class="text-light fw-medium mb-0">Smart Business Intelligence Dashboards</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/assets/svg/p_services_2_hero_dashboard_profit.svg" class="d-block w-100"
-                                    alt="Automated Financial Management System">
-                                <div class="carousel-caption-below">
-                                    <p class="text-light fw-medium mb-0">Automated Financial Management System</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/assets/svg/p_services_2_hero_dashboard_realtime.svg" class="d-block w-100"
-                                    alt="AI-Powered Business Analytics Platform">
-                                <div class="carousel-caption-below">
-                                    <p class="text-light fw-medium mb-0">AI-Powered Business Analytics Platform</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Carousel controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#dashboardCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">{% t pages.buttons.previous %}</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#dashboardCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">{% t pages.buttons.next %}</span>
-                        </button>
-
-                        <!-- Carousel indicators moved below caption -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#dashboardCarousel" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="row align-items-center">
+        <div class="col-sm-6 mb-4">
+          <h1 class="display-4 fw-bold mb-4">
+            {% t service_2.hero.title %}
+          </h1>
+          <p class="lead mb-4">
+            {% t service_2.hero.subtitle %}
+          </p>
+          <div class="d-flex gap-3">
+            <button class="btn btn-light btn-lg" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#contactModal"
+                    data-bs-consultation="BI">
+              {% t service_2.hero.buttons.schedule_demo %}
+            </button>
+            <a href="#solutions" class="btn btn-outline-light btn-lg">
+              {% t service_2.hero.buttons.our_solutions %}
+            </a>
+          </div>
         </div>
+        
+        <div class="col-sm-6">
+          <div class="carousel-wrapper">
+            <div id="dashboardCarousel" 
+                 class="carousel slide" 
+                 data-bs-ride="carousel" 
+                 data-bs-interval="4000">
+              <!-- Carousel items -->
+              <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                  <img src="/assets/svg/p_services_2_hero_dashboard_bi.svg" 
+                       class="d-block w-100"
+                       alt="{% t service_2.hero.carousel.slides.financial %}">
+                  <div class="carousel-caption-below">
+                    <p class="text-light fw-medium mb-0">
+                      {% t service_2.hero.carousel.slides.financial %}
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <img src="/assets/img/p_services_2_hero_dashboard_market.png" 
+                       class="d-block w-100"
+                       alt="{% t service_2.hero.carousel.slides.dashboard %}">
+                  <div class="carousel-caption-below">
+                    <p class="text-light fw-medium mb-0">
+                      {% t service_2.hero.carousel.slides.dashboard %}
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <img src="/assets/svg/p_services_2_hero_dashboard_profit.svg" 
+                       class="d-block w-100"
+                       alt="{% t service_2.hero.carousel.slides.automated %}">
+                  <div class="carousel-caption-below">
+                    <p class="text-light fw-medium mb-0">
+                      {% t service_2.hero.carousel.slides.automated %}
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <img src="/assets/svg/p_services_2_hero_dashboard_realtime.svg" 
+                       class="d-block w-100"
+                       alt="{% t service_2.hero.carousel.slides.ai_powered %}">
+                  <div class="carousel-caption-below">
+                    <p class="text-light fw-medium mb-0">
+                      {% t service_2.hero.carousel.slides.ai_powered %}
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Carousel controls -->
+              <button class="carousel-control-prev" 
+                      type="button" 
+                      data-bs-target="#dashboardCarousel"
+                      data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">{% t pages.buttons.previous %}</span>
+              </button>
+              <button class="carousel-control-next" 
+                      type="button" 
+                      data-bs-target="#dashboardCarousel"
+                      data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">{% t pages.buttons.next %}</span>
+              </button>
+  
+              <!-- Carousel indicators -->
+              <div class="carousel-indicators">
+                <button type="button" 
+                        data-bs-target="#dashboardCarousel" 
+                        data-bs-slide-to="0"
+                        class="active" 
+                        aria-current="true" 
+                        aria-label="Slide 1"></button>
+                <button type="button" 
+                        data-bs-target="#dashboardCarousel" 
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" 
+                        data-bs-target="#dashboardCarousel" 
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                <button type="button" 
+                        data-bs-target="#dashboardCarousel" 
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-
-<!-- solutions Section -->
-<section id="solutions" class="py-5">
+  </section>
+  
+  <!-- Solutions Section -->
+  <section id="solutions" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Our Solutions</h2>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="feature-card card h-100">
-                    <div class="card-body text-center">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_2_bi_chart.svg"
-                                alt="Financial Performance Analytics Suite Icon">
-                        </div>
-                        <h3 class="h5">Financial Performance Analytics Suite</h3>
-                        <p>Monitor real-time insights into revenue streams, expense patterns, and profit margins with our intuitive dashboards that tracks costs, predicts revenue trends, and identifies opportunities for growth. Get instant visibility into your company's financial health.</p>
-                    </div>
-                </div>
+      <h2 class="text-center mb-5">
+        {% t service_2.solutions.title %}
+      </h2>
+      <div class="row g-4">
+        <!-- Financial Analytics Card -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card card h-100">
+            <div class="card-body text-center">
+              <div class="feature-icon">
+                <img src="/assets/svg/p_services_2_bi_chart.svg"
+                     alt="{% t service_2.solutions.cards.financial.title %} Icon">
+              </div>
+              <h3 class="h5">
+                {% t service_2.solutions.cards.financial.title %}
+              </h3>
+              <p>
+                {% t service_2.solutions.cards.financial.description %}
+              </p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="feature-card card h-100">
-                    <div class="card-body text-center">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_2_bi_brain.svg" alt="Smart Business Intelligence Dashboards Icon">
-                        </div>
-                        <h3 class="h5">Smart Business Intelligence Dashboards</h3>
-                        <p>Transform complex data into clear, actionable insights with customizable, real-time dashboards. Track key performance indicators, market trends, and operational metrics from any device. Make faster, smarter decisions with automated reporting and analysis.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="feature-card card h-100">
-                    <div class="card-body text-center">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_2_bi_money_bill_trend_up.svg"
-                                alt="Automated Financial Management System Icon">
-                        </div>
-                        <h3 class="h5">Automated Financial Management System</h3>
-                        <p>Upgrade your financial operations beyond basic Excel with advanced automation and reporting. Save time with intelligent expense tracking, custom templates, and sophisticated modeling tools designed for your industry's specific needs.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="feature-card card h-100">
-                    <div class="card-body text-center">
-                        <div class="feature-icon">
-                            <img src="/assets/svg/p_services_2_bi_gauge_high.svg" alt="Real-time Monitoring Icon">
-                        </div>
-                        <h3 class="h5">AI-Powered Business Analytics Platform</h3>
-                        <p>Discover hidden opportunities and predict market trends with artificial intelligence. Get automated recommendations and pattern recognition that puts you ahead of market changes. Transform data into strategic advantage.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+  
+        <!-- BI Dashboards Card -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card card h-100">
+            <div class="card-body text-center">
+              <div class="feature-icon">
+                <img src="/assets/svg/p_services_2_bi_brain.svg" 
+                     alt="{% t service_2.solutions.cards.dashboard.title %} Icon">
+              </div>
+              <h3 class="h5">
+                {% t service_2.solutions.cards.dashboard.title %}
+              </h3>
+              <p>
+                {% t service_2.solutions.cards.dashboard.description %}
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Automated Management Card -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card card h-100">
+            <div class="card-body text-center">
+              <div class="feature-icon">
+                <img src="/assets/svg/p_services_2_bi_money_bill_trend_up.svg"
+                     alt="{% t service_2.solutions.cards.automated.title %} Icon">
+              </div>
+              <h3 class="h5">
+                {% t service_2.solutions.cards.automated.title %}
+              </h3>
+              <p>
+                {% t service_2.solutions.cards.automated.description %}
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- AI Analytics Card -->
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card card h-100">
+            <div class="card-body text-center">
+              <div class="feature-icon">
+                <img src="/assets/svg/p_services_2_bi_gauge_high.svg" 
+                     alt="{% t service_2.solutions.cards.ai.title %} Icon">
+              </div>
+              <h3 class="h5">
+                {% t service_2.solutions.cards.ai.title %}
+              </h3>
+              <p>
+                {% t service_2.solutions.cards.ai.description %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-
-<!-- Benefits Section -->
-<section id="benefits" class="benefits-section bg-light">
+  </section>
+  
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits-section bg-light">
     <div class="container">
-        <h2 class="text-center mb-5">Why Choose Our BI Solutions?</h2>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="stat-card">
-                    <h3 class="h4">Enhanced Decision Making</h3>
-                    <p>Make informed decisions backed by real-time data and predictive analytics.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="stat-card">
-                    <h3 class="h4">Revenue Optimization</h3>
-                    <p>Identify profit leaks and optimize revenue streams across channels.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="stat-card">
-                    <h3 class="h4">Competitive Advantage</h3>
-                    <p>Stay ahead with AI-powered insights and predictive analytics.</p>
-                </div>
-            </div>
+      <h2 class="text-center mb-5">
+        {% t service_2.benefits.title %}
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="stat-card">
+            <h3 class="h4">
+              {% t service_2.benefits.cards.decision.title %}
+            </h3>
+            <p>
+              {% t service_2.benefits.cards.decision.description %}
+            </p>
+          </div>
         </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="stat-card">
+            <h3 class="h4">
+              {% t service_2.benefits.cards.revenue.title %}
+            </h3>
+            <p>
+              {% t service_2.benefits.cards.revenue.description %}
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="stat-card">
+            <h3 class="h4">
+              {% t service_2.benefits.cards.competitive.title %}
+            </h3>
+            <p>
+              {% t service_2.benefits.cards.competitive.description %}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-
-<!-- CTA Section -->
-<section id="contact" class="cta-section bg-white">
+  </section>
+  
+  <!-- CTA Section -->
+  <section id="contact" class="cta-section bg-white">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="mb-4">Ready to Transform Your Business?</h2>
-                <p class="lead mb-4">Schedule a demo to see how our BI solutions can drive your business forward.</p>
-                <div>
-                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
-                        data-bs-consultation="BI">Get Started</button>
-                </div>
-            </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mb-4">
+            {% t service_2.cta.title %}
+          </h2>
+          <p class="lead mb-4">
+            {% t service_2.cta.subtitle %}
+          </p>
+          <div>
+            <button class="btn btn-primary btn-lg" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#contactModal"
+                    data-bs-consultation="BI">
+              {% t service_2.cta.button %}
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
