@@ -58,6 +58,10 @@ jekyll_timeago:
   day: 'day'
 
 services:
+  hero:
+    title: "Professional Services"
+    description: "Empowering businesses with cutting-edge technology solutions for sustainable growth and
+          innovation."
   web_applications:
     title: "Web Applications & Software Solutions"
     description: "Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success."

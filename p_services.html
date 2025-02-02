@@ -176,9 +176,8 @@ custom_js:
   <div class="container-fluid hero-content">
     <div class="row align-items-center">
       <div class="col-sm-6">
-        <h1 class="display-4 fw-bold mb-4">Professional Services</h1>
-        <p class="lead mb-4">Empowering businesses with cutting-edge technology solutions for sustainable growth and
-          innovation.</p>
+        <h1 class="display-4 fw-bold mb-4">{% t services.hero.title %}</h1>
+        <p class="lead mb-4">{% t services.hero.description %}</p>
       </div>
       <div class="col-sm-6">
         <!-- Tech Illustration -->
@@ -323,12 +322,10 @@ custom_js:
         <div class="service-card p-4">
           <a href="{{prefix}}/services/web-applications-and-software-solutions" class="text-decoration-none text-dark">
             <div class="service-icon">
-              <img src="/assets/svg/p_services_1_icon.svg" alt="Web Applications & Software Solutions icon">
+              <img src="/assets/svg/p_services_1_icon.svg" alt="{% t services.web_applications.title %} icon">
             </div>
-            <h3>Web Applications & Software Solutions</h3>
-            <p class="text-secondary">Elevate your brand with cutting-edge web applications and advanced software
-              solutions tailored for your
-              business success.</p>
+            <h3>{% t services.web_applications.title %}</h3>
+            <p class="text-secondary">{% t services.web_applications.description %}</p>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
             </div>
@@ -341,11 +338,10 @@ custom_js:
         <div class="service-card p-4">
           <a href="{{prefix}}/services/business-intelligence-and-data-analytics" class="text-decoration-none text-dark">
             <div class="service-icon">
-              <img src="/assets/svg/p_services_2_icon.svg" alt="Web Applications & Software Solutions icon">
+              <img src="/assets/svg/p_services_2_icon.svg" alt="{% t services.business_intelligence.title %} icon">
             </div>
-            <h3>Business Intelligence & Data Analytics</h3>
-            <p class="text-secondary">Transform raw data into actionable insights with real-time dashboards for informed
-              decision-making.</p>
+            <h3>{% t services.business_intelligence.title %}</h3>
+            <p class="text-secondary">{% t services.business_intelligence.description %}</p>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
             </div>
@@ -358,12 +354,10 @@ custom_js:
         <div class="service-card p-4">
           <a href="{{prefix}}/services/artificial-intelligence-and-automation" class="text-decoration-none text-dark">
             <div class="service-icon">
-              <img src="/assets/svg/p_services_3_icon.svg" alt="Web Applications & Software Solutions icon">
+              <img src="/assets/svg/p_services_3_icon.svg" alt="{% t services.ai_automation.title %} icon">
             </div>
-            <h3>Artificial Intelligence & Automation</h3>
-            <p class="text-secondary">Boost efficiency with chatbots and AI-powered automations that transform customer
-              service and streamline
-              operations.</p>
+            <h3>{% t services.ai_automation.title %}</h3>
+            <p class="text-secondary">{% t services.ai_automation.description %}</p>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
             </div>
@@ -376,12 +370,10 @@ custom_js:
         <div class="service-card p-4">
           <a href="{{prefix}}/services/cybersecurity-solutions" class="text-decoration-none text-dark">
             <div class="service-icon">
-              <img src="/assets/svg/p_services_4_icon.svg" alt="Web Applications & Software Solutions icon">
+              <img src="/assets/svg/p_services_4_icon.svg" alt="{% t services.cybersecurity.title %} icon">
             </div>
-            <h3>Cybersecurity Solutions</h3>
-            <p class="text-secondary">State-of-the-art security solutions including penetration testing, ethical
-              hacking, and comprehensive
-              security monitoring.</p>
+            <h3>{% t services.cybersecurity.title %}</h3>
+            <p class="text-secondary">{% t services.cybersecurity.description %}</p>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
             </div>
@@ -394,12 +386,10 @@ custom_js:
         <div class="service-card p-4">
           <a href="{{prefix}}/services/hardware-solutions" class="text-decoration-none text-dark">
             <div class="service-icon">
-              <img src="/assets/svg/p_services_5_icon.svg" alt="Web Applications & Software Solutions icon">
+              <img src="/assets/svg/p_services_5_icon.svg" alt="{% t services.hardware.title %} icon">
             </div>
-            <h3>Hardware Solutions</h3>
-            <p class="text-secondary">Transform your business operations with custom automation systems, smart
-              sensors/cameras monitoring and
-              energy-efficient controls.</p>
+            <h3>{% t services.hardware.title %}</h3>
+            <p class="text-secondary">{% t services.hardware.description %}</p>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
             </div>
@@ -412,12 +402,10 @@ custom_js:
         <div class="service-card p-4">
           <a href="{{prefix}}/services/e-commerce-solutions" class="text-decoration-none text-dark">
             <div class="service-icon">
-              <img src="/assets/svg/p_services_6_icon.svg" alt="Web Applications & Software Solutions icon">
+              <img src="/assets/svg/p_services_6_icon.svg" alt="{% t services.ecommerce.title %} icon">
             </div>
-            <h3>E-Commerce Solutions</h3>
-            <p class="text-secondary">Launch and scale your online business with white-label e-commerce solutions
-              integrated with payment and
-              inventory management.</p>
+            <h3>{% t services.ecommerce.title %}</h3>
+            <p class="text-secondary">{% t services.ecommerce.description %}</p>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
             </div>
@@ -436,7 +424,7 @@ custom_js:
       <h2 class="accordion-header">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#webAppAccordion"
           aria-expanded="true" aria-controls="webAppAccordion">
-          Web Applications & Software Solutions
+          {% t services.web_applications.title %}
         </button>
       </h2>
       <div id="webAppAccordion" class="accordion-collapse collapse show" data-bs-parent="#servicesAccordion">
@@ -447,8 +435,7 @@ custom_js:
                 <img src="/assets/svg/p_services_1_icon.svg" alt="Web Apps icon" style="width: 81px;">
               </div>
               <p>
-                Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your
-                business success.
+                {% t services.web_applications.description %}
               </p>
             </div>
             <div class="text-end">
@@ -464,7 +451,7 @@ custom_js:
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#biAccordion"
           aria-expanded="false" aria-controls="biAccordion">
-          Business Intelligence & Data Analytics
+          {% t services.business_intelligence.title %}
         </button>
       </h2>
       <div id="biAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
@@ -474,7 +461,7 @@ custom_js:
               <div class="service-icon me-3">
                 <img src="/assets/svg/p_services_2_icon.svg" alt="BI icon" style="width: 81px;">
               </div>
-              <p>Transform raw data into actionable insights with real-time dashboards for informed decision-making.</p>
+              <p>{% t services.business_intelligence.description %}</p>
             </div>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
@@ -489,7 +476,7 @@ custom_js:
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aiAccordion"
           aria-expanded="false" aria-controls="aiAccordion">
-          Artificial Intelligence & Automation
+          {% t services.ai_automation.title %}
         </button>
       </h2>
       <div id="aiAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
@@ -499,9 +486,7 @@ custom_js:
               <div class="service-icon me-3">
                 <img src="/assets/svg/p_services_3_icon.svg" alt="AI icon" style="width: 81px;">
               </div>
-              <p>Boost efficiency with chatbots and AI-powered automations that transform customer service and
-                streamline
-                operations.</p>
+              <p>{% t services.ai_automation.description %}</p>
             </div>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
@@ -516,7 +501,7 @@ custom_js:
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#securityAccordion" aria-expanded="false" aria-controls="securityAccordion">
-          Cybersecurity Solutions
+          {% t services.cybersecurity.title %}
         </button>
       </h2>
       <div id="securityAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
@@ -526,8 +511,7 @@ custom_js:
               <div class="service-icon me-3">
                 <img src="/assets/svg/p_services_4_icon.svg" alt="Cybersecurity icon" style="width: 81px;">
               </div>
-              <p>State-of-the-art security solutions including penetration testing, ethical hacking, and comprehensive
-                security monitoring.</p>
+              <p>{% t services.cybersecurity.description %}</p>
             </div>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
@@ -542,7 +526,7 @@ custom_js:
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#hardwareAccordion" aria-expanded="false" aria-controls="hardwareAccordion">
-          Hardware Solutions
+          {% t services.hardware.title %}
         </button>
       </h2>
       <div id="hardwareAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
@@ -552,8 +536,7 @@ custom_js:
               <div class="service-icon me-3">
                 <img src="/assets/svg/p_services_5_icon.svg" alt="Hardware icon" style="width: 81px;">
               </div>
-              <p>Transform your business operations with custom automation systems, smart sensors/cameras monitoring and
-                energy-efficient controls.</p>
+              <p>{% t services.hardware.description %}</p>
             </div>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
@@ -568,7 +551,7 @@ custom_js:
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#ecommerceAccordion" aria-expanded="false" aria-controls="ecommerceAccordion">
-          E-Commerce Solutions
+          {% t services.ecommerce.title %}
         </button>
       </h2>
       <div id="ecommerceAccordion" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
@@ -578,8 +561,7 @@ custom_js:
               <div class="service-icon me-3">
                 <img src="/assets/svg/p_services_6_icon.svg" alt="E-Commerce icon" style="width: 81px;">
               </div>
-              <p>Launch and scale your online business with white-label e-commerce solutions integrated with payment and
-                inventory management.</p>
+              <p>{% t services.ecommerce.description %}</p>
             </div>
             <div class="text-end">
               <span class="cta-button">{% t pages.button_learn_more %}</span>
@@ -596,8 +578,8 @@ custom_js:
 {
 "@context": "https://schema.org",
 "@type": "WebPage",
-"name": "Professional IT Services",
-"description": "Comprehensive IT services including web development, business intelligence, AI solutions, cybersecurity, hardware solutions, and e-commerce platforms.",
+"name": "{% t services.hero.title %}",
+"description": "{% t services.hero.description %}",
 "provider": {
   "@type": "Organization",
   "name": "IT Company"
@@ -609,48 +591,48 @@ custom_js:
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Web Applications & Software Solutions",
-        "description": "Cutting-edge web applications and software solutions"
+        "name": "{% t services.web_applications.title %}",
+        "description": "{% t services.web_applications.description %}"
       }
     },
     {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Business Intelligence & Data Analytics",
-        "description": "Real-time dashboards and data analysis solutions"
+        "name": "{% t services.business_intelligence.title %}",
+        "description": "{% t services.business_intelligence.description %}"
       }
     },
     {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Artificial Intelligence & Automation",
-        "description": "AI-powered automation and chatbot solutions"
+        "name": "{% t services.ai_automation.title %}",
+        "description": "{% t services.ai_automation.description %}"
       }
     },
     {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Cybersecurity Solutions",
-        "description": "Comprehensive security and protection services"
+        "name": "{% t services.cybersecurity.title %}",
+        "description": "{% t services.cybersecurity.description %}"
       }
     },
     {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "Hardware Solutions",
-        "description": "Custom automation and monitoring systems"
+        "name": "{% t services.hardware.title %}",
+        "description": "{% t services.hardware.description %}"
       }
     },
     {
       "@type": "Offer",
       "itemOffered": {
         "@type": "Service",
-        "name": "E-Commerce Solutions",
-        "description": "Complete e-commerce and marketplace solutions"
+        "name": "{% t services.ecommerce.title %}",
+        "description": "{% t services.ecommerce.description %}"
       }
     }
   ]

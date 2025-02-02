@@ -57,6 +57,9 @@ jekyll_timeago:
   day: 'dia'
 
 services:
+  hero:
+    title: "Serviços Profissionais"
+    description: "Capacitando empresas com soluções tecnológicas inovadoras para um crescimento sustentável e inovação."
   web_applications:
     title: "Aplicações Web e Soluções de Software"
     description: "Eleve sua marca com aplicações web de ponta e soluções de software avançadas personalizadas para o sucesso do seu negócio."
