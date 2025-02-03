@@ -68,12 +68,11 @@ custom_js:
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h1 class="display-4 fw-bold mb-4">White Label Store Demo</h1>
-                <p class="lead mb-4">Experience a fully-featured e-commerce solution with everything you need to start
-                    selling online. Built as an installable Web App for optimal performance and user experience.</p>
+                <h1 class="display-4 fw-bold mb-4">{% t product_jingo.hero.title %}</h1>
+                <p class="lead mb-4">{% t product_jingo.hero.description %}</p>
                 <div class="d-flex gap-3">
-                    <a href="#demo" class="btn demo-cta">Try Live Demo</a>
-                    <a href="#features" class="btn btn-outline-light learnmore-cta">{% t pages.buttons.learn_more %}</a>
+                    <a href="#demo" class="btn demo-cta">{% t product_jingo.hero.buttons.demo %}</a>
+                    <a href="#features" class="btn btn-outline-light learnmore-cta">{% t product_jingo.hero.buttons.learn_more %}</a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -89,16 +88,16 @@ custom_js:
     <div class="container">
         <ul class="nav nav-pills justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#payments">Payments</a>
+                <a class="nav-link" href="#payments">{% t product_jingo.nav.payments %}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#inventory">Inventory</a>
+                <a class="nav-link" href="#inventory">{% t product_jingo.nav.inventory %}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#tracking">Tracking</a>
+                <a class="nav-link" href="#tracking">{% t product_jingo.nav.tracking %}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#pwa">PWA Features</a>
+                <a class="nav-link" href="#pwa">{% t product_jingo.nav.pwa %}</a>
             </li>
         </ul>
     </div>
@@ -110,13 +109,12 @@ custom_js:
         <!-- Payments Section -->
         <div id="payments" class="row align-items-center mb-5 py-5">
             <div class="col-lg-6">
-                <h2 class="mb-4">Secure Payment Integration</h2>
-                <p class="lead mb-4">Support multiple payment methods with enterprise-grade security.</p>
+                <h2 class="mb-4">{% t product_jingo.features.payments.title %}</h2>
+                <p class="lead mb-4">{% t product_jingo.features.payments.description %}</p>
                 <ul class="list-unstyled">
-                    <li class="mb-3">✓ Credit/Debit Cards</li>
-                    <li class="mb-3">✓ Digital Wallets</li>
-                    <li class="mb-3">✓ Bank Transfers</li>
-                    <li class="mb-3">✓ Cryptocurrency</li>
+                    {% for item in site.translations[site.lang].product_jingo.features.payments.items %}
+                    <li class="mb-3">✓ {{ item }}</li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="col-lg-6">
@@ -127,13 +125,12 @@ custom_js:
         <!-- Inventory Section -->
         <div id="inventory" class="row align-items-center mb-5 py-5">
             <div class="col-lg-6 order-lg-2">
-                <h2 class="mb-4">Smart Inventory Management</h2>
-                <p class="lead mb-4">Real-time stock tracking and automated reordering system.</p>
+                <h2 class="mb-4">{% t product_jingo.features.inventory.title %}</h2>
+                <p class="lead mb-4">{% t product_jingo.features.inventory.description %}</p>
                 <ul class="list-unstyled">
-                    <li class="mb-3">✓ Real-time Stock Updates</li>
-                    <li class="mb-3">✓ Automated Reordering</li>
-                    <li class="mb-3">✓ Multi-location Support</li>
-                    <li class="mb-3">✓ Batch Tracking</li>
+                    {% for item in site.translations[site.lang].product_jingo.features.inventory.items %}
+                    <li class="mb-3">✓ {{ item }}</li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -144,13 +141,12 @@ custom_js:
         <!-- Tracking Section -->
         <div id="tracking" class="row align-items-center mb-5 py-5">
             <div class="col-lg-6">
-                <h2 class="mb-4">Order Tracking System</h2>
-                <p class="lead mb-4">Keep customers informed with real-time order tracking.</p>
+                <h2 class="mb-4">{% t product_jingo.features.tracking.title %}</h2>
+                <p class="lead mb-4">{% t product_jingo.features.tracking.description %}</p>
                 <ul class="list-unstyled">
-                    <li class="mb-3">✓ Real-time Updates</li>
-                    <li class="mb-3">✓ Email Notifications</li>
-                    <li class="mb-3">✓ SMS Alerts</li>
-                    <li class="mb-3">✓ Shipment Mapping</li>
+                    {% for item in site.translations[site.lang].product_jingo.features.tracking.items %}
+                    <li class="mb-3">✓ {{ item }}</li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="col-lg-6">
@@ -161,13 +157,12 @@ custom_js:
         <!-- PWA Features Section -->
         <div id="pwa" class="row align-items-center py-5">
             <div class="col-lg-6 order-lg-2">
-                <h2 class="mb-4">Progressive Web App Features</h2>
-                <p class="lead mb-4">Modern web capabilities for an app-like experience.</p>
+                <h2 class="mb-4">{% t product_jingo.features.pwa.title %}</h2>
+                <p class="lead mb-4">{% t product_jingo.features.pwa.description %}</p>
                 <ul class="list-unstyled">
-                    <li class="mb-3">✓ Offline Support</li>
-                    <li class="mb-3">✓ Push Notifications</li>
-                    <li class="mb-3">✓ Home Screen Installation</li>
-                    <li class="mb-3">✓ Fast Loading Times</li>
+                    {% for item in site.translations[site.lang].product_jingo.features.pwa.items %}
+                    <li class="mb-3">✓ {{ item }}</li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -180,19 +175,19 @@ custom_js:
 <!-- Screenshots Section -->
 <section id="screenshots" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-5">Responsive Design Screenshots</h2>
+        <h2 class="text-center mb-5">{% t product_jingo.screenshots.title %}</h2>
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
                 <img src="/assets/img/p_product_jingo_mobile_view.png" alt="Mobile View" class="img-fluid screenshot">
-                <p class="text-center mt-3">Mobile View</p>
+                <p class="text-center mt-3">{% t product_jingo.screenshots.views.mobile %}</p>
             </div>
             <div class="col-md-6 col-lg-4">
                 <img src="/assets/img/p_product_jingo_tablet_view.png" alt="Tablet View" class="img-fluid screenshot">
-                <p class="text-center mt-3">Tablet View</p>
+                <p class="text-center mt-3">{% t product_jingo.screenshots.views.tablet %}</p>
             </div>
             <div class="col-md-6 col-lg-4">
                 <img src="/assets/img/p_product_jingo_desktop_view.png" alt="Desktop View" class="img-fluid screenshot">
-                <p class="text-center mt-3">Desktop View</p>
+                <p class="text-center mt-3">{% t product_jingo.screenshots.views.desktop %}</p>
             </div>
         </div>
     </div>
@@ -201,9 +196,8 @@ custom_js:
 <!-- Demo Section -->
 <section id="demo" class="py-5">
     <div class="container text-center">
-        <h2 class="mb-4">Ready to Try It Out?</h2>
-        <p class="lead mb-4">Experience our White Label Store demo with sample data and full functionality.</p>
-        <a href="https://jingo.store" target="_blank" class="btn demo-cta btn-lg">Launch Demo Store</a>
+        <h2 class="mb-4">{% t product_jingo.demo.title %}</h2>
+        <p class="lead mb-4">{% t product_jingo.demo.description %}</p>
+        <a href="https://jingo.store" target="_blank" class="btn demo-cta btn-lg">{% t product_jingo.demo.button %}</a>
     </div>
 </section>
-

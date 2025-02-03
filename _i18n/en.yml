@@ -605,3 +605,66 @@ service_6:
     title: "Start Your E-Commerce Journey"
     description: "Let's discuss how our e-commerce solutions can enhance your operations."
     cta: "Schedule an e-Commerce Consultation"
+
+product_jingo:
+  hero:
+    title: "White Label Store Demo"
+    description: "Experience a fully-featured e-commerce solution with everything you need to start selling online. Built as an installable Web App for optimal performance and user experience."
+    buttons:
+      demo: "Try Live Demo"
+      learn_more: "Learn More"
+  
+  nav:
+    payments: "Payments"
+    inventory: "Inventory"
+    tracking: "Tracking"
+    pwa: "PWA Features"
+  
+  features:
+    payments:
+      title: "Secure Payment Integration"
+      description: "Support multiple payment methods with enterprise-grade security."
+      items:
+        - "Credit/Debit Cards"
+        - "Digital Wallets"
+        - "Bank Transfers"
+        - "Cryptocurrency"
+    
+    inventory:
+      title: "Smart Inventory Management"
+      description: "Real-time stock tracking and automated reordering system."
+      items:
+        - "Real-time Stock Updates"
+        - "Automated Reordering"
+        - "Multi-location Support"
+        - "Batch Tracking"
+    
+    tracking:
+      title: "Order Tracking System"
+      description: "Keep customers informed with real-time order tracking."
+      items:
+        - "Real-time Updates"
+        - "Email Notifications"
+        - "SMS Alerts"
+        - "Shipment Mapping"
+    
+    pwa:
+      title: "Progressive Web App Features"
+      description: "Modern web capabilities for a multi-device installable Web App"
+      items:
+        - "Offline Support"
+        - "Push Notifications"
+        - "Home Screen Installation"
+        - "Fast Loading Times"
+  
+  screenshots:
+    title: "Responsive Design Screenshots"
+    views:
+      mobile: "Mobile View"
+      tablet: "Tablet View"
+      desktop: "Desktop View"
+  
+  demo:
+    title: "Ready to Try It Out?"
+    description: "Experience our White Label Store demo with sample data and full functionality."
+    button: "Launch Demo Store"

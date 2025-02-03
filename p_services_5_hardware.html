@@ -147,7 +147,7 @@ custom_js:
                         <h3 class="card-title h5">{% t service_5.solutions.cards.energy.title %}</h3>
                         <p class="card-text">{% t service_5.solutions.cards.energy.description %}</p>
                         <ul class="list-unstyled">
-                            {% for feature in site.translations.en.service_5.solutions.cards.energy.features %}
+                            {% for feature in site.translations[site.lang].service_5.solutions.cards.energy.features %}
                             <li>✓ {{ feature }}</li>
                             {% endfor %}
                         </ul>
@@ -163,7 +163,7 @@ custom_js:
                         <h3 class="card-title h5">{% t service_5.solutions.cards.automation.title %}</h3>
                         <p class="card-text">{% t service_5.solutions.cards.automation.description %}</p>
                         <ul class="list-unstyled">
-                            {% for feature in site.translations.en.service_5.solutions.cards.automation.features %}
+                            {% for feature in site.translations[site.lang].service_5.solutions.cards.automation.features %}
                             <li>✓ {{ feature }}</li>
                             {% endfor %}
                         </ul>
@@ -179,7 +179,7 @@ custom_js:
                         <h3 class="card-title h5">{% t service_5.solutions.cards.security.title %}</h3>
                         <p class="card-text">{% t service_5.solutions.cards.security.description %}</p>
                         <ul class="list-unstyled">
-                            {% for feature in site.translations.en.service_5.solutions.cards.security.features %}
+                            {% for feature in site.translations[site.lang].service_5.solutions.cards.security.features %}
                             <li>✓ {{ feature }}</li>
                             {% endfor %}
                         </ul>
@@ -195,7 +195,7 @@ custom_js:
                         <h3 class="card-title h5">{% t service_5.solutions.cards.hardware.title %}</h3>
                         <p class="card-text">{% t service_5.solutions.cards.hardware.description %}</p>
                         <ul class="list-unstyled">
-                            {% for feature in site.translations.en.service_5.solutions.cards.hardware.features %}
+                            {% for feature in site.translations[site.lang].service_5.solutions.cards.hardware.features %}
                             <li>✓ {{ feature }}</li>
                             {% endfor %}
                         </ul>

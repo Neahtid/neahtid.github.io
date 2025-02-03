@@ -602,3 +602,66 @@ service_6:
     title: "Inicie Sua Jornada no E-Commerce"
     description: "Vamos conversar sobre como nossas soluções de e-commerce podem impulsionar suas operações."
     cta: "Agendar uma Consulta de E-Commerce"
+
+product_jingo:
+  hero:
+    title: "Demo de Loja White Label"
+    description: "Experimente uma solução de e-commerce completa, com tudo o que você precisa para começar a vender online. Desenvolvida como um Aplicativo Web Instalável para desempenho e experiência do usuário ideais."
+    buttons:
+      demo: "Testar Demo Ao Vivo"
+      learn_more: "Saiba Mais"
+  
+  nav:
+    payments: "Pagamentos"
+    inventory: "Inventário"
+    tracking: "Rastreamento"
+    pwa: "Recursos PWA"
+  
+  features:
+    payments:
+      title: "Integração Segura de Pagamentos"
+      description: "Suporte a vários métodos de pagamento com segurança de nível empresarial."
+      items:
+        - "Cartões de Crédito/Débito"
+        - "Carteiras Digitais"
+        - "Transferências Bancárias"
+        - "Criptomoeda"
+    
+    inventory:
+      title: "Gestão Inteligente de Inventário"
+      description: "Rastreamento de estoque em tempo real e sistema automatizado de reposição."
+      items:
+        - "Atualizações de Estoque em Tempo Real"
+        - "Reposição Automatizada"
+        - "Suporte para Múltiplas Localizações"
+        - "Rastreamento de Lotes"
+    
+    tracking:
+      title: "Sistema de Rastreamento de Pedidos"
+      description: "Mantenha os clientes informados com rastreamento de pedidos em tempo real."
+      items:
+        - "Atualizações em Tempo Real"
+        - "Notificações por E-mail"
+        - "Alertas por SMS"
+        - "Mapeamento de Envio"
+    
+    pwa:
+      title: "Recursos de Aplicativo Web Progressivo (PWA)"
+      description: "Capacidades modernas para um Aplicativo Web Instalável em múltiplos dispositivos"  
+      items:
+        - "Suporte Offline"
+        - "Notificações Push"
+        - "Instalação na Tela Inicial"
+        - "Carregamento Rápido"
+  
+  screenshots:
+    title: "Capturas de Tela de Design Responsivo"
+    views:
+      mobile: "Visualização Mobile"
+      tablet: "Visualização para Tablet"
+      desktop: "Visualização para Desktop"
+  
+  demo:
+    title: "Pronto para Testar?"
+    description: "Experimente nossa demo da Loja White Label com dados de exemplo e funcionalidade completa."
+    button: "Iniciar Loja Demo"
