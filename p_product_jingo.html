@@ -61,7 +61,103 @@ custom_js:
         transform: translateY(-2px);
     }
 </style>
-
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "{% t products.jingo_store.title %}",
+      "description": "{% t products.jingo_store.description %}",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "category": [
+          {
+            "@type": "Service",
+            "name": "{% t product_jingo.features.payments.title %}",
+            "description": "{% t product_jingo.features.payments.description %}",
+            "offers": {
+              "@type": "Offer",
+              "itemOffered": [
+                {% for item in site.translations[site.lang].product_jingo.features.payments.items %}
+                {
+                    "@type": "Service",
+                    "name": "{{ item }}"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+                
+              ]
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "{% t product_jingo.features.inventory.title %}",
+            "description": "{% t product_jingo.features.inventory.description %}",
+            "offers": {
+              "@type": "Offer",
+              "itemOffered": [
+                {% for item in site.translations[site.lang].product_jingo.features.inventory.items %}
+                {
+                    "@type": "Service",
+                    "name": "{{ item }}"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              ]
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "{% t product_jingo.features.tracking.title %}",
+            "description": "{% t product_jingo.features.tracking.description %}",
+            "offers": {
+              "@type": "Offer",
+              "itemOffered": [
+                {% for item in site.translations[site.lang].product_jingo.features.tracking.items %}
+                {
+                    "@type": "Service",
+                    "name": "{{ item }}"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              ]
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "{% t product_jingo.features.pwa.title %}",
+            "description": "{% t product_jingo.features.pwa.description %}",
+            "offers": {
+              "@type": "Offer",
+              "itemOffered": [
+                {% for item in site.translations[site.lang].product_jingo.features.pwa.items %}
+                {
+                    "@type": "Service",
+                    "name": "{{ item }}"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              ]
+            }
+          }
+        ]
+      },
+      "screenshot": [
+        {
+          "@type": "ImageObject",
+          "caption": "{% t product_jingo.screenshots.views.mobile %}",
+          "thumbnailUrl": "/assets/img/p_product_jingo_mobile_view.png"
+        },
+        {
+          "@type": "ImageObject",
+          "caption": "{% t product_jingo.screenshots.views.tablet %}",
+          "thumbnailUrl": "/assets/img/p_product_jingo_tablet_view.png"
+        },
+        {
+          "@type": "ImageObject",
+          "caption": "{% t product_jingo.screenshots.views.desktop %}",
+          "thumbnailUrl": "/assets/img/p_product_jingo_desktop_view.png"
+        }
+      ]
+    }
+</script>
 
 <!-- Hero Section -->
 <section class="hero-section">
