@@ -94,7 +94,7 @@ custom_js:
           "priceCurrency": "USD",
           "description": [
             {% for feature in site.translations[site.lang].service_6.pricing.plans.starter.features %}
-            "{{ feature }}"{% unless forloop.last %},{% endunless %}
+            "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
             {% endfor %}
           ]
         },
@@ -105,7 +105,7 @@ custom_js:
           "priceCurrency": "USD",
           "description": [
             {% for feature in site.translations[site.lang].service_6.pricing.plans.professional.features %}
-            "{{ feature }}"{% unless forloop.last %},{% endunless %}
+            "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
             {% endfor %}
           ]
         },
@@ -114,7 +114,7 @@ custom_js:
           "name": "{% t service_6.pricing.plans.enterprise.title %}",
           "description": [
             {% for feature in site.translations[site.lang].service_6.pricing.plans.enterprise.features %}
-            "{{ feature }}"{% unless forloop.last %},{% endunless %}
+            "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
             {% endfor %}
           ]
         }
@@ -326,7 +326,7 @@ custom_js:
                         <div class="display-4 my-4">{% t service_6.pricing.plans.starter.price %}</div>
                         <ul class="list-unstyled">
                             {% for feature in site.translations[site.lang].service_6.pricing.plans.starter.features %}
-                            <li class="mb-2">✓ {{ feature }}</li>
+                            <li class="mb-2">✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                         <a href="#contact" class="btn btn-outline-warning">{% t service_6.pricing.plans.starter.cta %}</a>
@@ -342,7 +342,7 @@ custom_js:
                         <div class="display-4 my-4">{% t service_6.pricing.plans.professional.price %}</div>
                         <ul class="list-unstyled">
                             {% for feature in site.translations[site.lang].service_6.pricing.plans.professional.features %}
-                            <li class="mb-2">✓ {{ feature }}</li>
+                            <li class="mb-2">✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                         <a href="#contact" class="btn btn-primary">{% t service_6.pricing.plans.professional.cta %}</a>
@@ -358,7 +358,7 @@ custom_js:
                         <div class="display-4 my-4">{% t service_6.pricing.plans.enterprise.price %}</div>
                         <ul class="list-unstyled">
                             {% for feature in site.translations[site.lang].service_6.pricing.plans.enterprise.features %}
-                            <li class="mb-2">✓ {{ feature }}</li>
+                            <li class="mb-2">✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                         <a href="#contact" class="btn btn-outline-warning">{% t service_6.pricing.plans.enterprise.cta %}</a>

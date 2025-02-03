@@ -148,7 +148,7 @@ custom_js:
                         <p class="card-text">{% t service_5.solutions.cards.energy.description %}</p>
                         <ul class="list-unstyled">
                             {% for feature in site.translations[site.lang].service_5.solutions.cards.energy.features %}
-                            <li>✓ {{ feature }}</li>
+                            <li>✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -164,7 +164,7 @@ custom_js:
                         <p class="card-text">{% t service_5.solutions.cards.automation.description %}</p>
                         <ul class="list-unstyled">
                             {% for feature in site.translations[site.lang].service_5.solutions.cards.automation.features %}
-                            <li>✓ {{ feature }}</li>
+                            <li>✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -180,7 +180,7 @@ custom_js:
                         <p class="card-text">{% t service_5.solutions.cards.security.description %}</p>
                         <ul class="list-unstyled">
                             {% for feature in site.translations[site.lang].service_5.solutions.cards.security.features %}
-                            <li>✓ {{ feature }}</li>
+                            <li>✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -196,7 +196,7 @@ custom_js:
                         <p class="card-text">{% t service_5.solutions.cards.hardware.description %}</p>
                         <ul class="list-unstyled">
                             {% for feature in site.translations[site.lang].service_5.solutions.cards.hardware.features %}
-                            <li>✓ {{ feature }}</li>
+                            <li>✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                     </div>

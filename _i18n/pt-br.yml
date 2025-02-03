@@ -487,33 +487,33 @@ service_5:
         title: "Gestão de Energia"
         description: "Implemente sistemas inteligentes de controle de energia que otimizam o consumo e reduzem os custos operacionais."
         features:
-          - "Iluminação eficiente"
-          - "Alertas de consumo"
-          - "Coleta de dados"
+          - text: "Iluminação eficiente"
+          - text: "Alertas de consumo"
+          - text: "Coleta de dados"
 
       automation:
         title: "Automação Empresarial"
         description: "Sistemas de automação com controles integrados, sensores e monitoramento para reduzir os custos operacionais."
         features:
-          - "Automação de processos"
-          - "Controles inteligentes para edifícios"
-          - "Coleta de dados"
+          - text: "Automação de processos"
+          - text: "Controles inteligentes para edifícios"
+          - text: "Coleta de dados"
 
       security:
         title: "Segurança Inteligente"
         description: "Soluções completas de segurança, incluindo monitoramento com câmeras acessíveis via web, controle de acesso e monitoramento remoto."
         features:
-          - "Videomonitoramento"
-          - "Controle de acesso"
-          - "Monitoramento remoto"
+          - text: "Videomonitoramento"
+          - text: "Controle de acesso"
+          - text: "Monitoramento remoto"
 
       hardware:
         title: "Integração de Hardware e Robótica"
         description: "Dispositivos conectados personalizados e soluções robóticas que automatizam processos e melhoram a eficiência operacional."
         features:
-          - "Redes de sensores"
-          - "Rastreamento de estoque"
-          - "Análise de comportamento do cliente"
+          - text: "Redes de sensores"
+          - text: "Rastreamento de estoque"
+          - text: "Análise de comportamento do cliente"
 
   industries:
     title: "Indústrias que Atendemos"
@@ -574,28 +574,28 @@ service_6:
         title: "Starter"
         price: "R$99/mês"
         features:
-          - "Loja Online Básica"
-          - "Análises Padrão"
-          - "Suporte Básico"
-          - "Manutenção Mensal"
+          - text: "Loja Online Básica"
+          - text: "Análises Padrão"
+          - text: "Suporte Básico"
+          - text: "Manutenção Mensal"
         cta: "Começar Agora"
       professional:
         title: "Profissional"
         price: "R$199/mês"
         features:
-          - "Loja Online Avançada"
-          - "Painel de Business Intelligence"
-          - "Suporte Prioritário"
-          - "Manutenção Semanal"
+          - text: "Loja Online Avançada"
+          - text: "Painel de Business Intelligence"
+          - text: "Suporte Prioritário"
+          - text: "Manutenção Semanal"
         cta: "Começar Agora"
       enterprise:
         title: "Enterprise"
         price: "Sob Consulta"
         features:
-          - "Solução de E-Commerce Personalizada"
-          - "Integração Avançada com BI"
-          - "Suporte Dedicado 24/7"
-          - "Manutenção Diária"
+          - text: "Solução de E-Commerce Personalizada"
+          - text: "Integração Avançada com BI"
+          - text: "Suporte Dedicado 24/7"
+          - text: "Manutenção Diária"
         cta: "Entre em Contato"
   
   contact:

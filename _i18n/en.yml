@@ -490,33 +490,33 @@ service_5:
         title: "Energy Management"
         description: "Implement intelligent energy control systems that optimize consumption and reduce operational costs."
         features:
-          - "Energy-efficient lighting"
-          - "Threshold Alerts"
-          - "Data Collection"
+          - text: "Energy-efficient lighting"
+          - text: "Threshold Alerts"
+          - text: "Data Collection"
       
       automation:
         title: "Business Automation"
         description: "Automation systems with integrated controls, sensors and monitoring capabilities for reduced operational costs."
         features:
-          - "Process Automation"
-          - "Smart Building Controls"
-          - "Data Collection"
+          - text: "Process Automation"
+          - text: "Smart Building Controls"
+          - text: "Data Collection"
       
       security:
         title: "Smart Security"
         description: "Comprehensive security solutions including monitoring with web-accessible cameras access controls, and remote monitoring capabilities."
         features:
-          - "Video Surveillance"
-          - "Access Control"
-          - "Remote Monitoring"
+          - text: "Video Surveillance"
+          - text: "Access Control"
+          - text: "Remote Monitoring"
       
       hardware:
         title: "Hardware & Robotics Integration"
         description: "Custom connected devices and robotic solutions that automate processes and improve operational efficiency."
         features:
-          - "Sensor Networks"
-          - "Inventory Tracking"
-          - "Customer Analytics"
+          - text: "Sensor Networks"
+          - text: "Inventory Tracking"
+          - text: "Customer Analytics"
   
   industries:
     title: "Industries We Serve"
@@ -577,28 +577,28 @@ service_6:
         title: "Starter"
         price: "$99/mo"
         features:
-          - "Basic E-Commerce Store"
-          - "Standard Analytics"
-          - "Basic Support"
-          - "Monthly Maintenance"
+          - text: "Basic E-Commerce Store"
+          - text: "Standard Analytics"
+          - text: "Basic Support"
+          - text: "Monthly Maintenance"
         cta: "Get Started"
       professional:
         title: "Professional"
         price: "$199/mo"
         features:
-          - "Advanced E-Commerce Store"
-          - "Business Intelligence Dashboard"
-          - "Priority Support"
-          - "Weekly Maintenance"
+          - text: "Advanced E-Commerce Store"
+          - text: "Business Intelligence Dashboard"
+          - text: "Priority Support"
+          - text: "Weekly Maintenance"
         cta: "Get Started"
       enterprise:
         title: "Enterprise"
         price: "Custom"
         features:
-          - "Custom E-Commerce Solution"
-          - "Advanced BI Integration"
-          - "24/7 Dedicated Support"
-          - "Daily Maintenance"
+          - text: "Custom E-Commerce Solution"
+          - text: "Advanced BI Integration"
+          - text: "24/7 Dedicated Support"
+          - text: "Daily Maintenance"
         cta: "Contact Us"
   
   contact:
