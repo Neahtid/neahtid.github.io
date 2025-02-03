@@ -417,23 +417,23 @@ service_4:
         title: "Testes de Segurança e Avaliação Empresarial"
         description: "Proteja seu negócio com auditorias de segurança completas e testes de invasão ética. Nossa equipe especializada identifica vulnerabilidades antes que os criminosos as explorem, garantindo a segurança dos seus dados sensíveis."
         features:
-          - "Testes Avançados de Penetração"
-          - "Avaliação de Segurança de Aplicações"
-          - "Análise de Riscos de Infraestrutura"
+          - text: "Testes Avançados de Penetração"
+          - text: "Avaliação de Segurança de Aplicações"
+          - text: "Análise de Riscos de Infraestrutura"
       compliance:
         title: "Conformidade Regulatória e Criptografia"
         description: "Atenda às regulamentações do setor enquanto protege dados sensíveis. Nossos protocolos avançados de criptografia e conformidade garantem a segurança da sua reputação e a confiança dos clientes."
         features:
-          - "Conformidade com Normas do Setor"
-          - "Estrutura de Proteção de Dados"
-          - "Soluções de Gerenciamento de Riscos"
+          - text: "Conformidade com Normas do Setor"
+          - text: "Estrutura de Proteção de Dados"
+          - text: "Soluções de Gerenciamento de Riscos"
       monitoring:
         title: "Monitoramento de Segurança 24/7"
         description: "Durma tranquilo sabendo que nossa IA avançada monitora seus sistemas ininterruptamente, detectando e respondendo a ameaças em tempo real antes que impactem seu negócio."
         features:
-          - "Detecção de Ameaças em Tempo Real"
-          - "Escaneamento Contínuo da Rede"
-          - "Resposta Automatizada a Incidentes"
+          - text: "Detecção de Ameaças em Tempo Real"
+          - text: "Escaneamento Contínuo da Rede"
+          - text: "Resposta Automatizada a Incidentes"
 
   threat_protection:
     title: "Proteção Avançada contra Ameaças"

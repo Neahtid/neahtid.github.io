@@ -133,8 +133,8 @@ custom_js:
               "name": "{% t service_4.solutions.cards.testing.title %}",
               "description": "{% t service_4.solutions.cards.testing.description %}",
               "serviceOutput": [
-                {% for feature in service_4.solutions.cards.testing.features %}
-                "{% t feature %}"{% unless forloop.last %},{% endunless %}
+                {% for feature in site.translations[site.lang].service_4.solutions.cards.testing.features %}
+                "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
                 {% endfor %}
               ]
             }
@@ -146,8 +146,8 @@ custom_js:
               "name": "{% t service_4.solutions.cards.compliance.title %}",
               "description": "{% t service_4.solutions.cards.compliance.description %}",
               "serviceOutput": [
-                {% for feature in service_4.solutions.cards.compliance.features %}
-                "{% t feature %}"{% unless forloop.last %},{% endunless %}
+                {% for feature in site.translations[site.lang].service_4.solutions.cards.compliance.features %}
+                "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
                 {% endfor %}
               ]
             }
@@ -159,8 +159,8 @@ custom_js:
               "name": "{% t service_4.solutions.cards.monitoring.title %}",
               "description": "{% t service_4.solutions.cards.monitoring.description %}",
               "serviceOutput": [
-                {% for feature in service_4.solutions.cards.monitoring.features %}
-                "{% t feature %}"{% unless forloop.last %},{% endunless %}
+                {% for feature in site.translations[site.lang].service_4.solutions.cards.monitoring.features %}
+                "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
                 {% endfor %}
               ]
             }
@@ -290,8 +290,8 @@ custom_js:
                         <h3 class="h4 accent-text">{% t service_4.solutions.cards.testing.title %}</h3>
                         <p>{% t service_4.solutions.cards.testing.description %}</p>
                         <ul class="list-unstyled mt-3">
-                            {% for feature in service_4.solutions.cards.testing.features %}
-                                <li>✓ {% t feature %}</li>
+                            {% for feature in site.translations[site.lang].service_4.solutions.cards.testing.features %}
+                                <li>✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -307,8 +307,8 @@ custom_js:
                         <h3 class="h4 accent-text">{% t service_4.solutions.cards.compliance.title %}</h3>
                         <p>{% t service_4.solutions.cards.compliance.description %}</p>
                         <ul class="list-unstyled mt-3">
-                            {% for feature in service_4.solutions.cards.compliance.features %}
-                                <li>✓ {% t feature %}</li>
+                            {% for feature in site.translations[site.lang].service_4.solutions.cards.compliance.features %}
+                                <li>✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -324,8 +324,8 @@ custom_js:
                         <h3 class="h4 accent-text">{% t service_4.solutions.cards.monitoring.title %}</h3>
                         <p>{% t service_4.solutions.cards.monitoring.description %}</p>
                         <ul class="list-unstyled mt-3">
-                            {% for feature in service_4.solutions.cards.monitoring.features %}
-                                <li>✓ {% t feature %}</li>
+                            {% for feature in site.translations[site.lang].service_4.solutions.cards.monitoring.features %}
+                                <li>✓ {{ feature.text }}</li>
                             {% endfor %}
                         </ul>
                     </div>

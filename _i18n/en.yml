@@ -420,23 +420,23 @@ service_4:
         title: "Enterprise Security Testing & Assessment"
         description: "Protect your business with comprehensive security audits and ethical hacking. Our expert team identifies vulnerabilities before criminals do, ensuring your sensitive data stays secure."
         features:
-          - "Advanced Penetration Testing"
-          - "Application Security Evaluation"
-          - "Infrastructure Risk Analysis"
+          - text: "Advanced Penetration Testing"
+          - text: "Application Security Evaluation"
+          - text: "Infrastructure Risk Analysis"
       compliance:
         title: "Regulatory Compliance & Encryption"
         description: "Meet industry regulations while protecting sensitive data. Our state-of-the-art encryption and compliance protocols safeguard your reputation and customer trust."
         features:
-          - "Industry Standards Compliance"
-          - "Data Protection Framework"
-          - "Risk Management Solutions"
+          - text: "Industry Standards Compliance"
+          - text: "Data Protection Framework"
+          - text: "Risk Management Solutions"
       monitoring:
         title: "24/7 Security Monitoring"
         description: "Sleep better knowing our advanced AI monitors your systems round-the-clock, detecting and responding to threats in real-time before they impact your business."
         features:
-          - "Real-time Threat Detection"
-          - "Continuous Network Scanning"
-          - "Automated Security Response"
+          - text: "Real-time Threat Detection"
+          - text: "Continuous Network Scanning"
+          - text: "Automated Security Response"
 
   threat_protection:
     title: "Advanced Threat Protection"
