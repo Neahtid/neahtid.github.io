@@ -474,3 +474,64 @@ service_4:
     title: "Get Your Security Assessment"
     description: "Schedule a demo to see how our AI solutions can drive your business forward."
     button: "Request Assessment"
+
+service_5:
+  hero:
+    title: "Hardware Solutions for Modern Business"
+    subtitle: "We specialize in creating innovative hardware tailored to specific B2B markets. From hotels or manufacturing to retail or banking, our solutions drive efficiency and growth."
+    buttons:
+      get_started: "Get Started"
+      learn_more: "Learn More"
+  
+  solutions:
+    title: "Our Core Solutions"
+    cards:
+      energy:
+        title: "Energy Management"
+        description: "Implement intelligent energy control systems that optimize consumption and reduce operational costs."
+        features:
+          - "Energy-efficient lighting"
+          - "Threshold Alerts"
+          - "Data Collection"
+      
+      automation:
+        title: "Business Automation"
+        description: "Automation systems with integrated controls, sensors and monitoring capabilities for reduced operational costs."
+        features:
+          - "Process Automation"
+          - "Smart Building Controls"
+          - "Data Collection"
+      
+      security:
+        title: "Smart Security"
+        description: "Comprehensive security solutions including monitoring with web-accessible cameras access controls, and remote monitoring capabilities."
+        features:
+          - "Video Surveillance"
+          - "Access Control"
+          - "Remote Monitoring"
+      
+      hardware:
+        title: "Hardware & Robotics Integration"
+        description: "Custom connected devices and robotic solutions that automate processes and improve operational efficiency."
+        features:
+          - "Sensor Networks"
+          - "Inventory Tracking"
+          - "Customer Analytics"
+  
+  industries:
+    title: "Industries We Serve"
+    sectors:
+      hotels:
+        title: "Hotels"
+        description: "Solutions to modernize operations, control inventory and reduce operational costs."
+      manufacturing:
+        title: "Manufacturing"
+        description: "Streamline production with automated monitoring and control systems."
+      construction:
+        title: "Construction"
+        description: "Enhance site security and project management efficiency."
+  
+  cta:
+    title: "Ready to Transform Your Business?"
+    subtitle: "Let's discuss how our hardware solutions can enhance your operations."
+    button: "Schedule a Consultation"

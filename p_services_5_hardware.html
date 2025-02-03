@@ -33,20 +33,101 @@ custom_js:
         background-color: #f8f9fa;
     }
 </style>
-
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "{% t services.hardware.title %}",
+      "description": "{% t services.hardware.description %}",
+      "provider": {
+        "@type": "Organization",
+        "name": "{% t global.company.name %}",
+        "url": "{{site.url}}"
+      },
+      "areaServed": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Service",
+              "name": "{% t service_5.industries.sectors.manufacturing.title %}",
+              "description": "{% t service_5.industries.sectors.manufacturing.description %}"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Service",
+              "name": "{% t service_5.industries.sectors.construction.title %}",
+              "description": "{% t service_5.industries.sectors.construction.description %}"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Service",
+              "name": "{% t service_5.industries.sectors.retail.title %}",
+              "description": "{% t service_5.industries.sectors.retail.description %}"
+            }
+          }
+        ]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "{% t service_5.solutions.title %}",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_5.solutions.cards.energy.title %}",
+              "description": "{% t service_5.solutions.cards.energy.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_5.solutions.cards.automation.title %}",
+              "description": "{% t service_5.solutions.cards.automation.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_5.solutions.cards.security.title %}",
+              "description": "{% t service_5.solutions.cards.security.description %}"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "{% t service_5.solutions.cards.hardware.title %}",
+              "description": "{% t service_5.solutions.cards.hardware.description %}"
+            }
+          }
+        ]
+      }
+    }
+</script>
 <!-- Hero Section -->
 <section class="hero-section text-white">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-8">
-                <h1 class="display-4 fw-bold mb-4">Hardware Solutions for Modern Business</h1>
+                <h1 class="display-4 fw-bold mb-4">{% t service_5.hero.title %}</h1>
                 <p class="lead mb-4">
-                    We specialize in creating innovative hardware tailored to specific B2B markets. From manufacturing
-                    to retail, our solutions drive efficiency and growth.
+                    {% t service_5.hero.subtitle %}
                 </p>
                 <button class="btn btn-primary btn-lg me-3" data-bs-toggle="modal" data-bs-target="#contactModal"
-                    data-bs-consultation="Hardware">Get Started</button>
-                <a href="#solutions" class="btn btn-outline-light btn-lg">{% t pages.buttons.learn_more %}</a>
+                    data-bs-consultation="Hardware">{% t service_5.hero.buttons.get_started %}</button>
+                <a href="#solutions" class="btn btn-outline-light btn-lg">{% t service_5.hero.buttons.learn_more %}</a>
             </div>
         </div>
     </div>
@@ -55,20 +136,19 @@ custom_js:
 <!-- Core Solutions Section -->
 <section id="solutions" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Our Core Solutions</h2>
+        <h2 class="text-center mb-5">{% t service_5.solutions.title %}</h2>
         <div class="row g-4">
             <!-- Energy Management Card -->
             <div class="col-md-6 col-lg-3">
                 <div class="card feature-card h-100">
-                    <img src="/assets/svg/p_services_5_iot.svg" class="card-img-top" alt="Energy Management">
+                    <img src="/assets/svg/p_services_5_iot.svg" class="card-img-top" alt="{% t service_5.solutions.cards.energy.title %}">
                     <div class="card-body">
-                        <h3 class="card-title h5">Energy Management</h3>
-                        <p class="card-text">Implement intelligent energy control systems that optimize consumption and reduce operational costs.
-                        </p>
+                        <h3 class="card-title h5">{% t service_5.solutions.cards.energy.title %}</h3>
+                        <p class="card-text">{% t service_5.solutions.cards.energy.description %}</p>
                         <ul class="list-unstyled">
-                            <li>✓ Energy-efficient lighting</li>
-                            <li>✓ Threshold Alerts</li>
-                            <li>✓ Data Collection</li>
+                            {% for feature in site.translations.en.service_5.solutions.cards.energy.features %}
+                            <li>✓ {{ feature }}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -77,14 +157,14 @@ custom_js:
             <!-- Business Automation Card -->
             <div class="col-md-6 col-lg-3">
                 <div class="card feature-card h-100">
-                    <img src="/assets/svg/p_services_5_automation.svg" class="card-img-top" alt="Business Automation">
+                    <img src="/assets/svg/p_services_5_automation.svg" class="card-img-top" alt="{% t service_5.solutions.cards.automation.title %}">
                     <div class="card-body">
-                        <h3 class="card-title h5">Business Automation</h3>
-                        <p class="card-text">Automation systems with integrated controls, sensors and monitoring capabilities for reduced operational costs.</p>
+                        <h3 class="card-title h5">{% t service_5.solutions.cards.automation.title %}</h3>
+                        <p class="card-text">{% t service_5.solutions.cards.automation.description %}</p>
                         <ul class="list-unstyled">
-                            <li>✓ Process Automation</li>
-                            <li>✓ Smart Building Controls</li>
-                            <li>✓ Data Collection</li>
+                            {% for feature in site.translations.en.service_5.solutions.cards.automation.features %}
+                            <li>✓ {{ feature }}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -93,14 +173,14 @@ custom_js:
             <!-- Smart Security Card -->
             <div class="col-md-6 col-lg-3">
                 <div class="card feature-card h-100">
-                    <img src="/assets/svg/p_services_5_security.svg" class="card-img-top" alt="Smart Security">
+                    <img src="/assets/svg/p_services_5_security.svg" class="card-img-top" alt="{% t service_5.solutions.cards.security.title %}">
                     <div class="card-body">
-                        <h3 class="card-title h5">Smart Security</h3>
-                        <p class="card-text">Comprehensive security solutions including monitoring with web-accessible cameras access controls, and remote monitoring capabilities.</p>
+                        <h3 class="card-title h5">{% t service_5.solutions.cards.security.title %}</h3>
+                        <p class="card-text">{% t service_5.solutions.cards.security.description %}</p>
                         <ul class="list-unstyled">
-                            <li>✓ Video Surveillance</li>
-                            <li>✓ Access Control</li>
-                            <li>✓ Remote Monitoring</li>
+                            {% for feature in site.translations.en.service_5.solutions.cards.security.features %}
+                            <li>✓ {{ feature }}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -109,14 +189,14 @@ custom_js:
             <!-- Hardware & Robotics Integration Card -->
             <div class="col-md-6 col-lg-3">
                 <div class="card feature-card h-100">
-                    <img src="/assets/svg/p_services_5_retail.svg" class="card-img-top" alt="Hardware & Robotics Integration">
+                    <img src="/assets/svg/p_services_5_retail.svg" class="card-img-top" alt="{% t service_5.solutions.cards.hardware.title %}">
                     <div class="card-body">
-                        <h3 class="card-title h5">Hardware & Robotics Integration</h3>
-                        <p class="card-text">Custom connected devices and robotic solutions that automate processes and improve operational efficiency.</p>
+                        <h3 class="card-title h5">{% t service_5.solutions.cards.hardware.title %}</h3>
+                        <p class="card-text">{% t service_5.solutions.cards.hardware.description %}</p>
                         <ul class="list-unstyled">
-                            <li>✓ Sensor Networks</li>
-                            <li>✓ Inventory Tracking</li>
-                            <li>✓ Customer Analytics</li>
+                            {% for feature in site.translations.en.service_5.solutions.cards.hardware.features %}
+                            <li>✓ {{ feature }}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -128,28 +208,28 @@ custom_js:
 <!-- Industries Section -->
 <section id="industries" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-5">Industries We Serve</h2>
+        <h2 class="text-center mb-5">{% t service_5.industries.title %}</h2>
         <div class="row g-4 text-center">
             <div class="col-md-4">
                 <div class="p-4">
-                    <img src="/assets/svg/p_services_5_industry_manufacturing.svg" alt="Manufacturing Icon"
+                    <img src="/assets/svg/p_services_5_industry_retail.svg" alt="{% t service_5.industries.sectors.hotels.title %} Icon" class="mb-3">
+                    <h3 class="h4">{% t service_5.industries.sectors.hotels.title %}</h3>
+                    <p>{% t service_5.industries.sectors.hotels.description %}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4">
+                    <img src="/assets/svg/p_services_5_industry_manufacturing.svg" alt="{% t service_5.industries.sectors.manufacturing.title %} Icon"
                         class="mb-3">
-                    <h3 class="h4">Manufacturing</h3>
-                    <p>Streamline production with automated monitoring and control systems.</p>
+                    <h3 class="h4">{% t service_5.industries.sectors.manufacturing.title %}</h3>
+                    <p>{% t service_5.industries.sectors.manufacturing.description %}</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-4">
-                    <img src="/assets/svg/p_services_5_industry_construction.svg" alt="Construction Icon" class="mb-3">
-                    <h3 class="h4">Construction</h3>
-                    <p>Enhance site security and project management efficiency.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-4">
-                    <img src="/assets/svg/p_services_5_industry_retail.svg" alt="Retail Icon" class="mb-3">
-                    <h3 class="h4">Retail</h3>
-                    <p>Modernize operations with smart POS and inventory solutions.</p>
+                    <img src="/assets/svg/p_services_5_industry_construction.svg" alt="{% t service_5.industries.sectors.construction.title %} Icon" class="mb-3">
+                    <h3 class="h4">{% t service_5.industries.sectors.construction.title %}</h3>
+                    <p>{% t service_5.industries.sectors.construction.description %}</p>
                 </div>
             </div>
         </div>
@@ -161,10 +241,10 @@ custom_js:
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <h2 class="mb-4">Ready to Transform Your Business?</h2>
-                <p class="lead mb-4">Let's discuss how our hardware solutions can enhance your operations.</p>
+                <h2 class="mb-4">{% t service_5.cta.title %}</h2>
+                <p class="lead mb-4">{% t service_5.cta.subtitle %}</p>
                 <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
-                    data-bs-consultation="Hardware">Schedule a Consultation</button>
+                    data-bs-consultation="Hardware">{% t service_5.cta.button %}</button>
             </div>
         </div>
     </div>

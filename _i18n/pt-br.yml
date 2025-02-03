@@ -471,3 +471,64 @@ service_4:
     title: "Solicite sua Avaliação de Segurança"
     description: "Agende uma demonstração para ver como nossas soluções de IA podem impulsionar seu negócio."
     button: "Solicitar Avaliação"
+
+service_5:
+  hero:
+    title: "Soluções de Hardware para Negócios Modernos"
+    subtitle: "Somos especialistas na criação de hardware inovador adaptado para mercados B2B específicos. De hotéis e manufatura a varejo e bancos, nossas soluções impulsionam a eficiência e o crescimento."
+    buttons:
+      get_started: "Começar"
+      learn_more: "Saiba Mais"
+
+  solutions:
+    title: "Nossas Soluções Principais"
+    cards:
+      energy:
+        title: "Gestão de Energia"
+        description: "Implemente sistemas inteligentes de controle de energia que otimizam o consumo e reduzem os custos operacionais."
+        features:
+          - "Iluminação eficiente"
+          - "Alertas de consumo"
+          - "Coleta de dados"
+
+      automation:
+        title: "Automação Empresarial"
+        description: "Sistemas de automação com controles integrados, sensores e monitoramento para reduzir os custos operacionais."
+        features:
+          - "Automação de processos"
+          - "Controles inteligentes para edifícios"
+          - "Coleta de dados"
+
+      security:
+        title: "Segurança Inteligente"
+        description: "Soluções completas de segurança, incluindo monitoramento com câmeras acessíveis via web, controle de acesso e monitoramento remoto."
+        features:
+          - "Videomonitoramento"
+          - "Controle de acesso"
+          - "Monitoramento remoto"
+
+      hardware:
+        title: "Integração de Hardware e Robótica"
+        description: "Dispositivos conectados personalizados e soluções robóticas que automatizam processos e melhoram a eficiência operacional."
+        features:
+          - "Redes de sensores"
+          - "Rastreamento de estoque"
+          - "Análise de comportamento do cliente"
+
+  industries:
+    title: "Indústrias que Atendemos"
+    sectors:
+      hotels:
+        title: "Hotéis"
+        description: "Soluções para modernizar operações, controlar estoque e reduzir custos operacionais."
+      manufacturing:
+        title: "Manufatura"
+        description: "Otimize a produção com sistemas automatizados de monitoramento e controle."
+      construction:
+        title: "Construção"
+        description: "Aprimore a segurança do local e a eficiência do gerenciamento de projetos."
+
+  cta:
+    title: "Pronto para Transformar Seu Negócio?"
+    subtitle: "Vamos conversar sobre como nossas soluções de hardware podem melhorar suas operações."
+    button: "Agende uma Consulta"
