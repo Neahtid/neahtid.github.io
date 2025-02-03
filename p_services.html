@@ -161,6 +161,74 @@ custom_js:
     transform: translateY(-2px);
   }
 </style>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{% t services.hero.title %}",
+  "description": "{% t services.hero.description %}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{% t global.company.name %}",
+    "url": "{{site.url}}"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{% t services.web_applications.title %}",
+          "description": "{% t services.web_applications.description %}"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{% t services.business_intelligence.title %}",
+          "description": "{% t services.business_intelligence.description %}"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{% t services.ai_automation.title %}",
+          "description": "{% t services.ai_automation.description %}"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{% t services.cybersecurity.title %}",
+          "description": "{% t services.cybersecurity.description %}"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{% t services.hardware.title %}",
+          "description": "{% t services.hardware.description %}"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "{% t services.ecommerce.title %}",
+          "description": "{% t services.ecommerce.description %}"
+        }
+      }
+    ]
+  }
+  }
+  </script>
 <!-- Hero Section -->
 <section class="hero-section">
   <!-- Animated Background -->
@@ -572,70 +640,3 @@ custom_js:
     </div>
   </div>
 </section>
-
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "WebPage",
-"name": "{% t services.hero.title %}",
-"description": "{% t services.hero.description %}",
-"provider": {
-  "@type": "Organization",
-  "name": "IT Company"
-},
-"offers": {
-  "@type": "AggregateOffer",
-  "itemListElement": [
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "{% t services.web_applications.title %}",
-        "description": "{% t services.web_applications.description %}"
-      }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "{% t services.business_intelligence.title %}",
-        "description": "{% t services.business_intelligence.description %}"
-      }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "{% t services.ai_automation.title %}",
-        "description": "{% t services.ai_automation.description %}"
-      }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "{% t services.cybersecurity.title %}",
-        "description": "{% t services.cybersecurity.description %}"
-      }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "{% t services.hardware.title %}",
-        "description": "{% t services.hardware.description %}"
-      }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "{% t services.ecommerce.title %}",
-        "description": "{% t services.ecommerce.description %}"
-      }
-    }
-  ]
-}
-}
-</script>

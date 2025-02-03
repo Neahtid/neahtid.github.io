@@ -535,3 +535,73 @@ service_5:
     title: "Ready to Transform Your Business?"
     subtitle: "Let's discuss how our hardware solutions can enhance your operations."
     button: "Schedule a Consultation"
+
+service_6:
+  hero:
+    title: "Transform Your Business with E-Commerce Excellence"
+    description: "Our E-Commerce solutions seamlessly integrate with Business Intelligence dashboards, providing detailed insights into customer behavior and sales trends."
+    buttons:
+      request_demo: "Request Demo"
+      explore_solutions: "Explore Solutions"
+    carousel:
+      captions:
+        sales_dashboard: "Sales Analytics Dashboard"
+        insights_hub: "Customer Insights Hub"
+        growth_metrics: "Commerce Growth Metrics"
+  
+  stats:
+    satisfaction:
+      label: "Customer Satisfaction Rate"
+    stores:
+      label: "Online Stores Launched"
+    support:
+      label: "Technical Support"
+  
+  solutions:
+    title: "Comprehensive E-Commerce Solutions"
+    items:
+      store:
+        title: "Custom Online Stores"
+        description: "Transform your business with a custom online marketplace featuring secure payments, smart inventory tracking, and powerful customer insights."
+      commerce:
+        title: "Multi-vendor Commerce"
+        description: "Launch your branded digital marketplace with seamless supplier integration, automated order fulfillment, and real-time inventory sync across all channels."
+      performance:
+        title: "Performance Guardian"
+        description: "Ensure your e-commerce success with continuous platform optimization, advanced analytics, and proactive security monitoring that protects your revenue 24/7."
+  
+  pricing:
+    title: "Flexible Pricing Plans"
+    plans:
+      starter:
+        title: "Starter"
+        price: "$99/mo"
+        features:
+          - "Basic E-Commerce Store"
+          - "Standard Analytics"
+          - "Basic Support"
+          - "Monthly Maintenance"
+        cta: "Get Started"
+      professional:
+        title: "Professional"
+        price: "$199/mo"
+        features:
+          - "Advanced E-Commerce Store"
+          - "Business Intelligence Dashboard"
+          - "Priority Support"
+          - "Weekly Maintenance"
+        cta: "Get Started"
+      enterprise:
+        title: "Enterprise"
+        price: "Custom"
+        features:
+          - "Custom E-Commerce Solution"
+          - "Advanced BI Integration"
+          - "24/7 Dedicated Support"
+          - "Daily Maintenance"
+        cta: "Contact Us"
+  
+  contact:
+    title: "Start Your E-Commerce Journey"
+    description: "Let's discuss how our e-commerce solutions can enhance your operations."
+    cta: "Schedule an e-Commerce Consultation"

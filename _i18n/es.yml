@@ -532,3 +532,73 @@ service_5:
     title: "¿Listo para Transformar su Negocio?"
     subtitle: "Hablemos sobre cómo nuestras soluciones de hardware pueden mejorar sus operaciones."
     button: "Agendar una Consulta"
+
+service_6:
+  hero:
+    title: "Transforma Tu Negocio con Excelencia en E-Commerce"
+    description: "Nuestras soluciones de E-Commerce se integran perfectamente con paneles de Business Intelligence, proporcionando información detallada sobre el comportamiento del cliente y las tendencias de ventas."
+    buttons:
+      request_demo: "Solicitar Demo"
+      explore_solutions: "Explorar Soluciones"
+    carousel:
+      captions:
+        sales_dashboard: "Panel de Análisis de Ventas"
+        insights_hub: "Centro de Insights del Cliente"
+        growth_metrics: "Métricas de Crecimiento del Comercio"
+  
+  stats:
+    satisfaction:
+      label: "Tasa de Satisfacción del Cliente"
+    stores:
+      label: "Tiendas Online Lanzadas"
+    support:
+      label: "Soporte Técnico"
+
+  solutions:
+    title: "Soluciones Integrales para E-Commerce"
+    items:
+      store:
+        title: "Tiendas Online Personalizadas"
+        description: "Transforma tu negocio con un marketplace online personalizado, con pagos seguros, seguimiento inteligente de inventario y potentes insights sobre tus clientes."
+      commerce:
+        title: "Comercio Multi-Vendedor"
+        description: "Lanza tu marketplace digital con tu propia marca, integración perfecta con proveedores, automatización de pedidos y sincronización de inventario en tiempo real en todos los canales."
+      performance:
+        title: "Guardian de Rendimiento"
+        description: "Asegura el éxito de tu e-commerce con optimización continua de la plataforma, análisis avanzados y monitoreo de seguridad proactivo que protege tus ingresos 24/7."
+  
+  pricing:
+    title: "Planes de Precios Flexibles"
+    plans:
+      starter:
+        title: "Starter"
+        price: "$99/mes"
+        features:
+          - "Tienda Online Básica"
+          - "Análisis Estándar"
+          - "Soporte Básico"
+          - "Mantenimiento Mensual"
+        cta: "Comenzar Ahora"
+      professional:
+        title: "Profesional"
+        price: "$199/mes"
+        features:
+          - "Tienda Online Avanzada"
+          - "Panel de Business Intelligence"
+          - "Soporte Prioritario"
+          - "Mantenimiento Semanal"
+        cta: "Comenzar Ahora"
+      enterprise:
+        title: "Enterprise"
+        price: "Personalizado"
+        features:
+          - "Solución de E-Commerce Personalizada"
+          - "Integración Avanzada con BI"
+          - "Soporte Dedicado 24/7"
+          - "Mantenimiento Diario"
+        cta: "Contáctanos"
+  
+  contact:
+    title: "Inicia Tu Viaje en el E-Commerce"
+    description: "Hablemos sobre cómo nuestras soluciones de e-commerce pueden impulsar tus operaciones."
+    cta: "Agendar una Consulta de E-Commerce"
