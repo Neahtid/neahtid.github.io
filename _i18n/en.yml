@@ -196,81 +196,81 @@ service_1:
         title: "Advanced Web Applications"
         description: "Transform your business with fast, secure, and scalable web solutions that work smoothly on any device - even without internet connection - complete with seamless payments."
         features:
-          - "Offline Functionality"
-          - "Secure Payments"
-          - "Instant Data Synchronization"
+          - text: "Offline Functionality"
+          - text: "Secure Payments"
+          - text: "Instant Data Synchronization"
       
       business_solutions:
         icon_alt: "Website Icon"
         title: "Custom Business Solutions"
         description: "Build tailored web applications that solve your specific challenges, featuring real-time data processing and secure integrations with your existing systems."
         features:
-          - "Custom Scripts"
-          - "Third-party Integration"
-          - "Smart System Connectivity"
+          - text: "Custom Scripts"
+          - text: "Third-party Integration"
+          - text: "Smart System Connectivity"
       
       corporate_website:
         icon_alt: "Sheets Icon"
         title: "Corporate Website Development"
         description: "Create professional, conversion-focused websites with optimized user journeys and integrated scheduling systems that drive business growth."
         features:
-          - "Responsive Design"
-          - "SEO Optimization"
-          - "Content Management"
+          - text: "Responsive Design"
+          - text: "SEO Optimization"
+          - text: "Content Management"
       
       process_automation:
         icon_alt: "Landing Page Icon"
         title: "Business Process Automation"
         description: "Streamline operations with smart applications that integrate with tools like Google Sheets, automating routine tasks and boosting efficiency."
         features:
-          - "Automated Workflows"
-          - "Cross-platform Data Flow"
-          - "Dynamic Process Monitoring"
+          - text: "Automated Workflows"
+          - text: "Cross-platform Data Flow"
+          - text: "Dynamic Process Monitoring"
       
       landing_pages:
         icon_alt: "Marketing Icon"
         title: "High-Impact Landing Pages"
         description: "Convert visitors into customers with data-driven landing pages featuring industry-specific elements and continuous optimization through A/B testing."
         features:
-          - "A/B Testing"
-          - "Conversion Optimization"
-          - "Lead Generation"
+          - text: "A/B Testing"
+          - text: "Conversion Optimization"
+          - text: "Lead Generation"
       
       analytics:
         icon_alt: "Research Icon"
         title: "Financial & Business Analytics Solutions"
         description: "Leverage specialized applications for financial modeling, business intelligence, and market analysis to make data-driven decisions and identify growth opportunities."
         features:
-          - "Advanced Computations"
-          - "Data Analysis"
-          - "Real-time Processing"
+          - text: "Advanced Computations"
+          - text: "Data Analysis"
+          - text: "Real-time Processing"
       
       brand_experience:
         icon_alt: "Brand Icon"
         title: "Digital Brand Experience"
         description: "Establish a powerful online presence with cohesive brand identity and professional design that resonates with your target audience."
         features:
-          - "Visual Identity"
-          - "Design Systems"
-          - "Brand Guidelines"
+          - text: "Visual Identity"
+          - text: "Design Systems"
+          - text: "Brand Guidelines"
       
       maintenance:
         icon_alt: "Maintenance Icon"
         title: "Website Maintenance & Security"
         description: "Protect your digital assets with proactive maintenance, regular updates, and comprehensive security monitoring."
         features:
-          - "Security Updates"
-          - "Performance Optimization"
-          - "Regular Backups"
+          - text: "Security Updates"
+          - text: "Performance Optimization"
+          - text: "Regular Backups"
       
       integration:
         icon_alt: "Marketing Icon"
         title: "Business Systems Integration"
         description: "Connect your essential business tools and systems seamlessly - from booking and payment systems to customer management - ensuring smooth data flow across your organization."
         features:
-          - "Third-party Integration"
-          - "Seamless Platform Unification"
-          - "Secure Authentication"
+          - text: "Third-party Integration"
+          - text: "Seamless Platform Unification"
+          - text: "Secure Authentication"
 
   process:
     title: "Our Development Process"
@@ -668,3 +668,107 @@ product_jingo:
     title: "Ready to Try It Out?"
     description: "Experience our White Label Store demo with sample data and full functionality."
     button: "Launch Demo Store"
+  
+product_zigna:
+  hero:
+    title: "Expert Stock Trading Recommendations"
+    subtitle: "Get real-time trading insights from professional traders. Make informed decisions with our advanced market analysis and recommendation engine."
+    buttons:
+      free_trial: "Start Free Trial"
+      learn_more: "Learn More"
+  
+  stats:
+    accuracy:
+      value: "95%"
+      label: "Accuracy Rate"
+    users:
+      value: "50K+"
+      label: "Active Users"
+    experts:
+      value: "100+"
+      label: "Expert Traders"
+    coverage:
+      value: "24/7"
+      label: "Market Coverage"
+  
+  features:
+    title: "Platform Features"
+    realtime:
+      title: "Real-time Trading Recommendations"
+      subtitle: "Get instant notifications when our experts identify trading opportunities."
+      list:
+        - text: "Instant push notifications"
+        - text: "Detailed analysis reports"
+        - text: "Risk assessment metrics"
+        - text: "Entry and exit points"
+    
+    market_analysis:
+      title: "Advanced Market Analysis"
+      subtitle: "Comprehensive market analysis tools and insights."
+      list:
+        - text: "Technical indicators"
+        - text: "Market sentiment analysis"
+        - text: "Historical performance data"
+        - text: "Trend predictions"
+    
+    portfolio:
+      title: "Portfolio Management"
+      subtitle: "Track and manage your investments effectively."
+      list:
+        - text: "Performance tracking"
+        - text: "Risk management tools"
+        - text: "Diversification analysis"
+        - text: "Custom alerts"
+  
+  pricing:
+    title: "Subscription Plans"
+    basic:
+      name: "Basic"
+      price: "$29"
+      period: "/mo"
+      features:
+        - text: "Daily recommendations"
+        - text: "Basic market analysis"
+        - text: "Email alerts"
+        - text: "Expert consultation"
+      cta: "Get Started"
+    
+    premium:
+      name: "Premium"
+      price: "$99"
+      period: "/mo"
+      features:
+        - text: "Real-time recommendations"
+        - text: "Advanced analysis tools"
+        - text: "Priority alerts"
+        - text: "Monthly consultation"
+      cta: "Get Started"
+    
+    enterprise:
+      name: "Enterprise"
+      price: "$299"
+      period: "/mo"
+      features:
+        - text: "Custom recommendations"
+        - text: "Full analysis suite"
+        - text: "24/7 priority support"
+        - text: "Weekly consultations"
+      cta: "Contact Sales"
+  
+  testimonials:
+    title: "What Our Users Say"
+    items:
+      - quote: "The recommendations have been incredibly accurate. I've seen a significant improvement in my trading performance."
+        name: "John Smith"
+        position: "Professional Trader"
+      - quote: "The real-time alerts and analysis tools have transformed how I approach trading. Highly recommended!"
+        name: "Sarah Johnson"
+        position: "Investment Manager"
+      - quote: "Expert insights combined with user-friendly interface make this platform stand out from the competition."
+        name: "Michael Chen"
+        position: "Day Trader"
+  
+  demo:
+    title: "Start Your Free Trial Today"
+    subtitle: "Experience the power of professional trading recommendations risk-free for 14 days."
+    cta: "Launch Demo Platform"

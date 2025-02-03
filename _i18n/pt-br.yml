@@ -193,81 +193,81 @@ service_1:
         title: "Aplicações Web Avançadas"
         description: "Transforme seu negócio com soluções web rápidas, seguras e escaláveis que funcionam perfeitamente em qualquer dispositivo - até mesmo sem internet - e com pagamentos integrados."
         features:
-          - "Funcionalidade Offline"
-          - "Pagamentos Seguros"
-          - "Sincronização Instantânea de Dados"
+          - text: "Funcionalidade Offline"
+          - text: "Pagamentos Seguros"
+          - text: "Sincronização Instantânea de Dados"
 
       business_solutions:
         icon_alt: "Ícone de Website"
         title: "Soluções Empresariais Personalizadas"
         description: "Desenvolva aplicações web sob medida para resolver desafios específicos, com processamento de dados em tempo real e integrações seguras aos seus sistemas existentes."
         features:
-          - "Scripts Personalizados"
-          - "Integração com Terceiros"
-          - "Conectividade Inteligente"
+          - text: "Scripts Personalizados"
+          - text: "Integração com Terceiros"
+          - text: "Conectividade Inteligente"
 
       corporate_website:
         icon_alt: "Ícone de Planilhas"
         title: "Desenvolvimento de Sites Corporativos"
         description: "Crie sites profissionais e focados em conversão, com jornadas otimizadas para o usuário e sistemas de agendamento integrados para impulsionar o crescimento do seu negócio."
         features:
-          - "Design Responsivo"
-          - "Otimização para SEO"
-          - "Gerenciamento de Conteúdo"
+          - text: "Design Responsivo"
+          - text: "Otimização para SEO"
+          - text: "Gerenciamento de Conteúdo"
 
       process_automation:
         icon_alt: "Ícone de Landing Page"
         title: "Automação de Processos Empresariais"
         description: "Otimize operações com aplicativos inteligentes que se integram a ferramentas como Google Sheets, automatizando tarefas rotineiras e aumentando a eficiência."
         features:
-          - "Fluxos de Trabalho Automatizados"
-          - "Transferência de Dados entre Plataformas"
-          - "Monitoramento Dinâmico de Processos"
+          - text: "Fluxos de Trabalho Automatizados"
+          - text: "Transferência de Dados entre Plataformas"
+          - text: "Monitoramento Dinâmico de Processos"
 
       landing_pages:
         icon_alt: "Ícone de Marketing"
         title: "Landing Pages de Alto Impacto"
         description: "Converta visitantes em clientes com landing pages orientadas por dados, utilizando elementos específicos do setor e otimização contínua via testes A/B."
         features:
-          - "Testes A/B"
-          - "Otimização de Conversão"
-          - "Geração de Leads"
+          - text: "Testes A/B"
+          - text: "Otimização de Conversão"
+          - text: "Geração de Leads"
 
       analytics:
         icon_alt: "Ícone de Pesquisa"
         title: "Soluções de Análises Financeiras e Empresariais"
         description: "Aproveite aplicações especializadas para modelagem financeira, inteligência de negócios e análise de mercado, permitindo decisões estratégicas baseadas em dados."
         features:
-          - "Cálculos Avançados"
-          - "Análise de Dados"
-          - "Processamento em Tempo Real"
+          - text: "Cálculos Avançados"
+          - text: "Análise de Dados"
+          - text: "Processamento em Tempo Real"
 
       brand_experience:
         icon_alt: "Ícone de Marca"
         title: "Experiência de Marca Digital"
         description: "Construa uma presença online forte com identidade visual coesa e design profissional que ressoe com seu público-alvo."
         features:
-          - "Identidade Visual"
-          - "Sistemas de Design"
-          - "Diretrizes de Marca"
+          - text: "Identidade Visual"
+          - text: "Sistemas de Design"
+          - text: "Diretrizes de Marca"
 
       maintenance:
         icon_alt: "Ícone de Manutenção"
         title: "Manutenção e Segurança de Websites"
         description: "Proteja seus ativos digitais com manutenção proativa, atualizações regulares e monitoramento de segurança abrangente."
         features:
-          - "Atualizações de Segurança"
-          - "Otimização de Performance"
-          - "Backups Regulares"
+          - text: "Atualizações de Segurança"
+          - text: "Otimização de Performance"
+          - text: "Backups Regulares"
 
       integration:
         icon_alt: "Ícone de Marketing"
         title: "Integração de Sistemas Empresariais"
         description: "Conecte suas ferramentas e sistemas empresariais essenciais - desde plataformas de agendamento e pagamentos até gestão de clientes - garantindo um fluxo de dados contínuo e eficiente."
         features:
-          - "Integração com Terceiros"
-          - "Unificação de Plataformas"
-          - "Autenticação Segura"
+          - text: "Integração com Terceiros"
+          - text: "Unificação de Plataformas"
+          - text: "Autenticação Segura"
 
   process:
     title: "Nosso Processo de Desenvolvimento"
@@ -665,3 +665,107 @@ product_jingo:
     title: "Pronto para Testar?"
     description: "Experimente nossa demo da Loja White Label com dados de exemplo e funcionalidade completa."
     button: "Iniciar Loja Demo"
+
+product_zigna:
+  hero:
+    title: "Recomendações Especializadas para Negociação de Ações"
+    subtitle: "Obtenha insights de negociação em tempo real de traders profissionais. Tome decisões informadas com nossa análise de mercado avançada e mecanismo de recomendações."
+    buttons:
+      free_trial: "Iniciar Teste Gratuito"
+      learn_more: "Saiba Mais"
+  
+  stats:
+    accuracy:
+      value: "95%"
+      label: "Taxa de Precisão"
+    users:
+      value: "50K+"
+      label: "Usuários Ativos"
+    experts:
+      value: "100+"
+      label: "Traders Especializados"
+    coverage:
+      value: "24/7"
+      label: "Cobertura de Mercado"
+  
+  features:
+    title: "Recursos da Plataforma"
+    realtime:
+      title: "Recomendações de Negociação em Tempo Real"
+      subtitle: "Receba notificações instantâneas quando nossos especialistas identificarem oportunidades de negociação."
+      list:
+        - text: "Notificações push instantâneas"
+        - text: "Relatórios detalhados de análise"
+        - text: "Métricas de avaliação de risco"
+        - text: "Pontos de entrada e saída"
+    
+    market_analysis:
+      title: "Análise Avançada de Mercado"
+      subtitle: "Ferramentas abrangentes de análise de mercado e insights detalhados."
+      list:
+        - text: "Indicadores técnicos"
+        - text: "Análise de sentimento de mercado"
+        - text: "Dados históricos de desempenho"
+        - text: "Previsões de tendências"
+    
+    portfolio:
+      title: "Gestão de Portfólio"
+      subtitle: "Acompanhe e gerencie seus investimentos de forma eficaz."
+      list:
+        - text: "Monitoramento de desempenho"
+        - text: "Ferramentas de gerenciamento de risco"
+        - text: "Análise de diversificação"
+        - text: "Alertas personalizados"
+  
+  pricing:
+    title: "Planos de Assinatura"
+    basic:
+      name: "Básico"
+      price: "$29"
+      period: "/mês"
+      features:
+        - text: "Recomendações diárias"
+        - text: "Análise de mercado básica"
+        - text: "Alertas por e-mail"
+        - text: "Consulta com especialista"
+      cta: "Comece Agora"
+    
+    premium:
+      name: "Premium"
+      price: "$99"
+      period: "/mês"
+      features:
+        - text: "Recomendações em tempo real"
+        - text: "Ferramentas avançadas de análise"
+        - text: "Alertas prioritários"
+        - text: "Consulta mensal"
+      cta: "Comece Agora"
+    
+    enterprise:
+      name: "Enterprise"
+      price: "$299"
+      period: "/mês"
+      features:
+        - text: "Recomendações personalizadas"
+        - text: "Pacote completo de análise"
+        - text: "Suporte prioritário 24/7"
+        - text: "Consultas semanais"
+      cta: "Fale com Vendas"
+  
+  testimonials:
+    title: "O Que Nossos Usuários Dizem"
+    items:
+      - quote: "As recomendações têm sido incrivelmente precisas. Notei uma melhora significativa no meu desempenho de negociação."
+        name: "John Smith"
+        position: "Trader Profissional"
+      - quote: "Os alertas em tempo real e as ferramentas de análise transformaram minha abordagem ao trading. Altamente recomendado!"
+        name: "Sarah Johnson"
+        position: "Gerente de Investimentos"
+      - quote: "Insights de especialistas combinados com uma interface intuitiva fazem desta plataforma um diferencial no mercado."
+        name: "Michael Chen"
+        position: "Day Trader"
+  
+  demo:
+    title: "Comece Seu Teste Gratuito Hoje"
+    subtitle: "Experimente o poder das recomendações profissionais de trading sem riscos por 14 dias."
+    cta: "Acessar Plataforma Demo"
