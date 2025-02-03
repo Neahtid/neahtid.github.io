@@ -772,3 +772,121 @@ product_zigna:
     title: "Start Your Free Trial Today"
     subtitle: "Experience the power of professional trading recommendations risk-free for 14 days."
     cta: "Launch Demo Platform"
+
+product_minions:
+  # Hero Section
+  hero:
+    badge: "Enterprise-Grade Smart Web Platform"
+    title: "Transform Your Business with Smart Web Apps That Work Anywhere"
+    description: "Create powerful web applications that work like native apps, complete with smart dashboards, AI assistance, and seamless connection to your devices - all through your browser."
+    buttons:
+      demo: "Try Live Demo"
+      features: "Explore Features"
+    
+  # Navigation
+  nav:
+    bi_dashboards: "BI Dashboards"
+    ai_integration: "AI Integration"
+    hardware: "Hardware"
+    security: "Security"
+    
+  # Features Section
+  features:
+    # BI Dashboards
+    bi_dashboards:
+      title: "Smart Business Insights at Your Fingertips"
+      description: "See your business performance at a glance with easy-to-understand charts and reports."
+      benefits:
+        - "Live updates as your data changes"
+        - "Track what matters to your business"
+        - "Interactive reports you can explore"
+        - "Dig deeper into your numbers with one click"
+      badges:
+        - "Smart Reports"
+        - "Custom Views"
+        - "Easy Export"
+        
+    # AI Integration
+    ai_integration:
+      title: "Smart Assistant Features"
+      description: "Make your work easier with built-in smart assistants that help your team and customers."
+      benefits:
+        - "24/7 smart customer support chat"
+        - "Smart insights that spot trends before they happen"
+        - "Automatic understanding of customer messages"
+        - "Business insights that explain themselves"
+      badges:
+        - "Smart Chat"
+        - "Trend Spotting"
+        - "Voice Controls"
+        
+    # Hardware Integration
+    hardware:
+      title: "Works With Your Devices"
+      description: "Connect seamlessly with your workplace devices for a smoother experience."
+      benefits:
+        - "Use your device camera for scanning and photos"
+        - "Control smart locks and security systems"
+        - "Secure login with fingerprint or face recognition"
+        - "Smart location features for tracking and mapping"
+      badges:
+        - "Smart Device Ready"
+        - "Wireless Connect"
+        - "Tap-to-Use"
+        - "Bluetooth"
+        - "NFC"
+        
+    # Security Features
+    security:
+      title: "Bank-Grade Security"
+      description: "Keep your business data safe with the same security used by leading banks."
+      benefits:
+        - "Complete data protection from end to end"
+        - "Extra-secure login with multiple checks"
+        - "Custom access levels for different team members"
+        - "Full record of who accessed what and when"
+      badges:
+        - "Secure Login"
+        - "Privacy Certified"
+        - "Security Verified"
+        
+  # Integrations Section
+  integrations:
+    title: "Works With Your Favorite Tools"
+    business_data:
+      title: "Your Business Data"
+      description: "Easy connection to your existing business tools and files"
+      badges:
+        - "Databases"
+        - "Spreadsheets"
+        - "Web Tools"
+        - "APIs"
+    
+    smart_assistants:
+      title: "Smart Assistants"
+      description: "Works with leading AI tools to make your job easier"
+      badges:
+        - "Smart Chat"
+        - "Auto-Learn"
+        - "Custom Help"
+    
+    security_tools:
+      title: "Security Tools"
+      description: "Connects with your existing security systems"
+      badges:
+        - "Digital Locks"
+        - "Security Cameras"
+        - "ID Scanners"
+        
+  # Devices Section
+  devices:
+    title: "Works on All Your Devices"
+    phone: "Perfect for Your Phone"
+    tablet: "Great on Tablets"
+    computer: "Full Power on Computers"
+    
+  # Demo Section
+  demo:
+    title: "Try Minions App Today"
+    description: "See how our smart web platform can transform your business with our full-featured demo."
+    button: "Start Free Demo"

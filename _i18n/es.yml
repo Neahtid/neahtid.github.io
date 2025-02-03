@@ -769,3 +769,121 @@ product_zigna:
     title: "Comienza Tu Prueba Gratuita Hoy"
     subtitle: "Experimenta el poder de las recomendaciones de trading profesional sin riesgos durante 14 días."
     cta: "Acceder a Plataforma Demo"
+
+product_minions:
+  # Sección Hero
+  hero:
+    badge: "Plataforma Web Inteligente de Nivel Empresarial"
+    title: "Transforma Tu Negocio con Aplicaciones Web Inteligentes que Funcionan en Cualquier Lugar"
+    description: "Crea aplicaciones web potentes que funcionan como apps nativas, con paneles inteligentes, asistencia de IA y conexión perfecta con tus dispositivos, todo desde el navegador."
+    buttons:
+      demo: "Probar Demo en Vivo"
+      features: "Explorar Funciones"
+    
+  # Navegación
+  nav:
+    bi_dashboards: "Paneles BI"
+    ai_integration: "Integración con IA"
+    hardware: "Hardware"
+    security: "Seguridad"
+    
+  # Sección de Funciones
+  features:
+    # Paneles BI
+    bi_dashboards:
+      title: "Información Inteligente de Negocios al Alcance de Tu Mano"
+      description: "Consulta el rendimiento de tu negocio con gráficos y reportes fáciles de entender."
+      benefits:
+        - "Actualizaciones en vivo a medida que cambian tus datos"
+        - "Sigue lo que realmente importa para tu negocio"
+        - "Informes interactivos para explorar"
+        - "Profundiza en tus números con un solo clic"
+      badges:
+        - "Informes Inteligentes"
+        - "Vistas Personalizadas"
+        - "Exportación Fácil"
+        
+    # Integración con IA
+    ai_integration:
+      title: "Funciones de Asistente Inteligente"
+      description: "Facilita tu trabajo con asistentes inteligentes integrados que ayudan a tu equipo y clientes."
+      benefits:
+        - "Chat inteligente de atención al cliente 24/7"
+        - "Análisis de tendencias antes de que ocurran"
+        - "Comprensión automática de mensajes de clientes"
+        - "Información de negocios explicada automáticamente"
+      badges:
+        - "Chat Inteligente"
+        - "Detección de Tendencias"
+        - "Controles por Voz"
+        
+    # Integración con Hardware
+    hardware:
+      title: "Compatible con Tus Dispositivos"
+      description: "Conéctate sin problemas con los dispositivos de tu lugar de trabajo para una mejor experiencia."
+      benefits:
+        - "Usa la cámara de tu dispositivo para escaneo y fotos"
+        - "Controla cerraduras inteligentes y sistemas de seguridad"
+        - "Inicio de sesión seguro con reconocimiento facial o de huellas"
+        - "Funciones de ubicación inteligente para rastreo y mapeo"
+      badges:
+        - "Listo para Dispositivos Inteligentes"
+        - "Conexión Inalámbrica"
+        - "Toque para Usar"
+        - "Bluetooth"
+        - "NFC"
+        
+    # Funciones de Seguridad
+    security:
+      title: "Seguridad de Nivel Bancario"
+      description: "Mantén los datos de tu negocio seguros con la misma protección utilizada por los principales bancos."
+      benefits:
+        - "Protección de datos de extremo a extremo"
+        - "Inicio de sesión extra seguro con múltiples verificaciones"
+        - "Niveles de acceso personalizados para diferentes miembros del equipo"
+        - "Registro completo de accesos con detalles de quién, qué y cuándo"
+      badges:
+        - "Inicio de Sesión Seguro"
+        - "Privacidad Certificada"
+        - "Seguridad Verificada"
+        
+  # Sección de Integraciones
+  integrations:
+    title: "Compatible con Tus Herramientas Favoritas"
+    business_data:
+      title: "Tus Datos Empresariales"
+      description: "Conexión sencilla con tus herramientas y archivos de negocio existentes"
+      badges:
+        - "Bases de Datos"
+        - "Hojas de Cálculo"
+        - "Herramientas Web"
+        - "APIs"
+    
+    smart_assistants:
+      title: "Asistentes Inteligentes"
+      description: "Funciona con las principales herramientas de IA para facilitar tu trabajo"
+      badges:
+        - "Chat Inteligente"
+        - "Aprendizaje Automático"
+        - "Ayuda Personalizada"
+    
+    security_tools:
+      title: "Herramientas de Seguridad"
+      description: "Se conecta con tus sistemas de seguridad existentes"
+      badges:
+        - "Cerraduras Digitales"
+        - "Cámaras de Seguridad"
+        - "Escáneres de Identificación"
+        
+  # Sección de Dispositivos
+  devices:
+    title: "Funciona en Todos Tus Dispositivos"
+    phone: "Perfecto para tu Móvil"
+    tablet: "Ideal en Tablets"
+    computer: "Máximo Rendimiento en Computadoras"
+    
+  # Sección de Demo
+  demo:
+    title: "Prueba Minions App Hoy"
+    description: "Descubre cómo nuestra plataforma web inteligente puede transformar tu negocio con nuestra demo completa."
+    button: "Iniciar Demo Gratuita"

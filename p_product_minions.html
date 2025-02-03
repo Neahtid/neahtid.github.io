@@ -93,12 +93,12 @@ custom_js:
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <span class="badge bg-white text-primary mb-3">Enterprise-Grade Smart Web Platform</span>
-                <h1 class="display-4 fw-bold mb-4">Transform Your Business with Smart Web Apps That Work Anywhere</h1>
-                <p class="lead mb-4">Create powerful web applications that work like native apps, complete with smart dashboards, AI assistance, and seamless connection to your devices - all through your browser.</p>
+                <span class="badge bg-white text-primary mb-3">{% t product_minions.hero.badge %}</span>
+                <h1 class="display-4 fw-bold mb-4">{% t product_minions.hero.title %}</h1>
+                <p class="lead mb-4">{% t product_minions.hero.description %}</p>
                 <div class="d-flex gap-3">
-                    <a href="#demo" class="btn demo-cta">Try Live Demo</a>
-                    <a href="#features" class="btn btn-outline-light features-cta">Explore Features</a>
+                    <a href="#demo" class="btn demo-cta">{% t product_minions.hero.buttons.demo %}</a>
+                    <a href="#features" class="btn btn-outline-light features-cta">{% t product_minions.hero.buttons.features %}</a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -113,16 +113,16 @@ custom_js:
     <div class="container">
         <ul class="nav nav-pills justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#bi-dashboards">BI Dashboards</a>
+                <a class="nav-link" href="#bi-dashboards">{% t product_minions.nav.bi_dashboards %}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#ai-integration">AI Integration</a>
+                <a class="nav-link" href="#ai-integration">{% t product_minions.nav.ai_integration %}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#hardware">Hardware</a>
+                <a class="nav-link" href="#hardware">{% t product_minions.nav.hardware %}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#security">Security</a>
+                <a class="nav-link" href="#security">{% t product_minions.nav.security %}</a>
             </li>
         </ul>
     </div>
@@ -132,21 +132,19 @@ custom_js:
 <section id="features" class="py-5">
     <div class="container">
         <!-- BI Dashboards -->
-        <!-- Business Insights Dashboards -->
         <div id="bi-dashboards" class="row align-items-center mb-5 py-5">
             <div class="col-lg-6">
-                <h2 class="mb-4">Smart Business Insights at Your Fingertips</h2>
-                <p class="lead mb-4">See your business performance at a glance with easy-to-understand charts and reports.</p>
+                <h2 class="mb-4">{% t product_minions.features.bi_dashboards.title %}</h2>
+                <p class="lead mb-4">{% t product_minions.features.bi_dashboards.description %}</p>
                 <ul class="list-unstyled">
-                    <li class="mb-3">✓ Live updates as your data changes</li>
-                    <li class="mb-3">✓ Track what matters to your business</li>
-                    <li class="mb-3">✓ Interactive reports you can explore</li>
-                    <li class="mb-3">✓ Dig deeper into your numbers with one click</li>
+                    {% for benefit in site.translations[site.lang].product_minions.features.bi_dashboards.benefits %}
+                    <li class="mb-3">✓ {{ benefit }}</li>
+                    {% endfor %}
                 </ul>
                 <div class="mt-4">
-                    <span class="tech-badge">Smart Reports</span>
-                    <span class="tech-badge">Custom Views</span>
-                    <span class="tech-badge">Easy Export</span>
+                    {% for badge in site.translations[site.lang].product_minions.features.bi_dashboards.badges %}
+                    <span class="tech-badge">{{ badge }}</span>
+                    {% endfor %}
                 </div>
             </div>
             <div class="col-lg-6">
@@ -157,18 +155,17 @@ custom_js:
         <!-- AI Integration -->
         <div id="ai-integration" class="row align-items-center mb-5 py-5">
             <div class="col-lg-6 order-lg-2">
-                <h2 class="mb-4">Smart Assistant Features</h2>
-                <p class="lead mb-4">Make your work easier with built-in smart assistants that help your team and customers.</p>
+                <h2 class="mb-4">{% t product_minions.features.ai_integration.title %}</h2>
+                <p class="lead mb-4">{% t product_minions.features.ai_integration.description %}</p>
                 <ul class="list-unstyled">
-                    <li class="mb-3">✓ 24/7 smart customer support chat</li>
-                    <li class="mb-3">✓ Smart insights that spot trends before they happen</li>
-                    <li class="mb-3">✓ Automatic understanding of customer messages</li>
-                    <li class="mb-3">✓ Business insights that explain themselves</li>
+                    {% for benefit in site.translations[site.lang].product_minions.features.ai_integration.benefits %}
+                    <li class="mb-3">✓ {{ benefit }}</li>
+                    {% endfor %}
                 </ul>
                 <div class="mt-4">
-                    <span class="tech-badge">Smart Chat</span>
-                    <span class="tech-badge">Trend Spotting</span>
-                    <span class="tech-badge">Voice Controls</span>
+                    {% for badge in site.translations[site.lang].product_minions.features.ai_integration.badges %}
+                    <span class="tech-badge">{{ badge }}</span>
+                    {% endfor %}
                 </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -179,20 +176,17 @@ custom_js:
         <!-- Hardware Integration -->
         <div id="hardware" class="row align-items-center mb-5 py-5">
             <div class="col-lg-6">
-                <h2 class="mb-4">Works With Your Devices</h2>
-                <p class="lead mb-4">Connect seamlessly with your workplace devices for a smoother experience.</p>
+                <h2 class="mb-4">{% t product_minions.features.hardware.title %}</h2>
+                <p class="lead mb-4">{% t product_minions.features.hardware.description %}</p>
                 <ul class="list-unstyled">
-                    <li class="mb-3">✓ Use your device camera for scanning and photos</li>
-                    <li class="mb-3">✓ Control smart locks and security systems</li>
-                    <li class="mb-3">✓ Secure login with fingerprint or face recognition</li>
-                    <li class="mb-3">✓ Smart location features for tracking and mapping</li>
+                    {% for benefit in site.translations[site.lang].product_minions.features.hardware.benefits %}
+                    <li class="mb-3">✓ {{ benefit }}</li>
+                    {% endfor %}
                 </ul>
                 <div class="mt-4">
-                    <span class="tech-badge">Smart Device Ready</span>
-                    <span class="tech-badge">Wireless Connect</span>
-                    <span class="tech-badge">Tap-to-Use</span>
-                    <span class="tech-badge">Bluetooth</span>
-                    <span class="tech-badge">NFC</span>
+                    {% for badge in site.translations[site.lang].product_minions.features.hardware.badges %}
+                    <span class="tech-badge">{{ badge }}</span>
+                    {% endfor %}
                 </div>
             </div>
             <div class="col-lg-6">
@@ -203,18 +197,17 @@ custom_js:
         <!-- Security Features -->
         <div id="security" class="row align-items-center py-5">
             <div class="col-lg-6 order-lg-2">
-                <h2 class="mb-4">Bank-Grade Security</h2>
-                <p class="lead mb-4">Keep your business data safe with the same security used by leading banks.</p>
+                <h2 class="mb-4">{% t product_minions.features.security.title %}</h2>
+                <p class="lead mb-4">{% t product_minions.features.security.description %}</p>
                 <ul class="list-unstyled">
-                    <li class="mb-3">✓ Complete data protection from end to end</li>
-                    <li class="mb-3">✓ Extra-secure login with multiple checks</li>
-                    <li class="mb-3">✓ Custom access levels for different team members</li>
-                    <li class="mb-3">✓ Full record of who accessed what and when</li>
+                    {% for benefit in site.translations[site.lang].product_minions.features.security.benefits %}
+                    <li class="mb-3">✓ {{ benefit }}</li>
+                    {% endfor %}
                 </ul>
                 <div class="mt-4">
-                    <span class="tech-badge">Secure Login</span>
-                    <span class="tech-badge">Privacy Certified</span>
-                    <span class="tech-badge">Security Verified</span>
+                    {% for badge in site.translations[site.lang].product_minions.features.security.badges %}
+                    <span class="tech-badge">{{ badge }}</span>
+                    {% endfor %}
                 </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -227,19 +220,18 @@ custom_js:
 <!-- Integrations Section -->
 <section id="integrations" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-5">Works With Your Favorite Tools</h2>
+        <h2 class="text-center mb-5">{% t product_minions.integrations.title %}</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card feature-card h-100">
                     <div class="card-body text-center">
                         <div class="integration-icon">📊</div>
-                        <h4>Your Business Data</h4>
-                        <p>Easy connection to your existing business tools and files</p>
+                        <h4>{% t product_minions.integrations.business_data.title %}</h4>
+                        <p>{% t product_minions.integrations.business_data.description %}</p>
                         <div class="mt-3">
-                            <span class="tech-badge">Databases</span>
-                            <span class="tech-badge">Spreadsheets</span>
-                            <span class="tech-badge">Web Tools</span>
-                            <span class="tech-badge">APIs</span>
+                            {% for badge in site.translations[site.lang].product_minions.integrations.business_data.badges %}
+                            <span class="tech-badge">{{ badge }}</span>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -248,12 +240,12 @@ custom_js:
                 <div class="card feature-card h-100">
                     <div class="card-body text-center">
                         <div class="integration-icon">🤖</div>
-                        <h4>Smart Assistants</h4>
-                        <p>Works with leading AI tools to make your job easier</p>
+                        <h4>{% t product_minions.integrations.smart_assistants.title %}</h4>
+                        <p>{% t product_minions.integrations.smart_assistants.description %}</p>
                         <div class="mt-3">
-                            <span class="tech-badge">Smart Chat</span>
-                            <span class="tech-badge">Auto-Learn</span>
-                            <span class="tech-badge">Custom Help</span>
+                            {% for badge in site.translations[site.lang].product_minions.integrations.smart_assistants.badges %}
+                            <span class="tech-badge">{{ badge }}</span>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -262,12 +254,12 @@ custom_js:
                 <div class="card feature-card h-100">
                     <div class="card-body text-center">
                         <div class="integration-icon">🔒</div>
-                        <h4>Security Tools</h4>
-                        <p>Connects with your existing security systems</p>
+                        <h4>{% t product_minions.integrations.security_tools.title %}</h4>
+                        <p>{% t product_minions.integrations.security_tools.description %}</p>
                         <div class="mt-3">
-                            <span class="tech-badge">Digital Locks</span>
-                            <span class="tech-badge">Security Cameras</span>
-                            <span class="tech-badge">ID Scanners</span>
+                            {% for badge in site.translations[site.lang].product_minions.integrations.security_tools.badges %}
+                            <span class="tech-badge">{{ badge }}</span>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -279,19 +271,19 @@ custom_js:
 <!-- Screenshots Section -->
 <section class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Works on All Your Devices</h2>
+        <h2 class="text-center mb-5">{% t product_minions.devices.title %}</h2>
         <div class="row g-4">
             <div class="col-md-4">
-                <img src="/api/placeholder/400/800" alt="Phone View" class="img-fluid screenshot">
-                <p class="text-center mt-3">Perfect for Your Phone</p>
+                <img src="/assets/img/p_product_minions_phone_view.png" alt="Phone View" class="img-fluid screenshot">
+                <p class="text-center mt-3">{% t product_minions.devices.phone %}</p>
             </div>
             <div class="col-md-4">
-                <img src="/api/placeholder/400/800" alt="Tablet View" class="img-fluid screenshot">
-                <p class="text-center mt-3">Great on Tablets</p>
+                <img src="/assets/img/p_product_minions_tablet_view.png" alt="Tablet View" class="img-fluid screenshot">
+                <p class="text-center mt-3">{% t product_minions.devices.tablet %}</p>
             </div>
             <div class="col-md-4">
-                <img src="/api/placeholder/400/800" alt="Computer View" class="img-fluid screenshot">
-                <p class="text-center mt-3">Full Power on Computers</p>
+                <img src="/assets/img/p_product_minions_desktop_view.png" alt="Computer View" class="img-fluid screenshot">
+                <p class="text-center mt-3">{% t product_minions.devices.computer %}</p>
             </div>
         </div>
     </div>
@@ -300,8 +292,8 @@ custom_js:
 <!-- Demo Section -->
 <section id="demo" class="py-5 bg-light">
     <div class="container text-center">
-        <h2 class="mb-4">Try Minions App Today</h2>
-        <p class="lead mb-4">See how our smart web platform can transform your business with our full-featured demo.</p>
-        <a href="https://minions.neahtid.com" target="_blank" class="btn demo-cta btn-lg">Start Free Demo</a>
+        <h2 class="mb-4">{% t product_minions.demo.title %}</h2>
+        <p class="lead mb-4">{% t product_minions.demo.description %}</p>
+        <a href="https://minions.neahtid.com" target="_blank" class="btn demo-cta btn-lg">{% t product_minions.demo.button %}</a>
     </div>
 </section>
