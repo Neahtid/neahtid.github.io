@@ -84,6 +84,85 @@ custom_js:
         margin: 20px 0;
     }
 </style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Zigna",
+      "applicationCategory": "FinanceApplication",
+      "description": "{% t product_zigna.hero.subtitle %}",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "{% t product_zigna.pricing.basic.name %}",
+          "price": "29",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "29",
+            "priceCurrency": "USD",
+            "unitCode": "MON",
+            "unitText": "{% t product_zigna.pricing.basic.period %}"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "{% t product_zigna.pricing.premium.name %}",
+          "price": "99",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "99",
+            "priceCurrency": "USD",
+            "unitCode": "MON",
+            "unitText": "{% t product_zigna.pricing.premium.period %}"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "{% t product_zigna.pricing.enterprise.name %}",
+          "price": "299",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "299",
+            "priceCurrency": "USD",
+            "unitCode": "MON",
+            "unitText": "{% t product_zigna.pricing.enterprise.period %}"
+          }
+        }
+      ],
+      "featureList": [
+        "{% t product_zigna.features.realtime.title %}",
+        "{% t product_zigna.features.market_analysis.title %}",
+        "{% t product_zigna.features.portfolio.title %}"
+      ],
+      "review": [
+      {% for testimonial in site.translations[site.lang].product_zigna.testimonials.items %}
+        {
+          "@type": "Review",
+          "reviewBody": "{{ testimonial.quote }}",
+          "author": {
+            "@type": "Person",
+            "name": "{{ testimonial.name }}"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "{% t product_zigna.stats.users.value %}",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+</script>
 
 <!-- Hero Section -->
 <section class="hero-section">
@@ -243,12 +322,12 @@ custom_js:
     <div class="container">
         <h2 class="text-center mb-5">{% t product_zigna.testimonials.title %}</h2>
         <div class="row">
-            {% for testimonial in product_zigna.testimonials.items %}
+            {% for testimonial in site.translations[site.lang].product_zigna.testimonials.items %}
             <div class="col-md-4">
                 <div class="testimonial-card">
-                    <p class="mb-3">{% t testimonial.quote %}</p>
-                    <h5 class="mb-1">{% t testimonial.name %}</h5>
-                    <p class="text-muted">{% t testimonial.position %}</p>
+                    <p class="mb-3">{{ testimonial.quote }}</p>
+                    <h5 class="mb-1">{{ testimonial.name }}</h5>
+                    <p class="text-muted">{{ testimonial.position }}</p>
                 </div>
             </div>
             {% endfor %}
