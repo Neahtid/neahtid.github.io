@@ -60,7 +60,7 @@ permalink: /our-company
 			<div class="col-lg-6">
 				<h1 class="display-4 fw-bold mb-4">{% t our_company.hero_title %}</h1>
 				<p class="lead mb-4">{% t our_company.hero_description %}</p>
-				<button class="btn btn-light btn-lg">{% t our_company.hero_button %}</button>
+				<a href="{{prefix}}/services/" class="btn btn-light btn-lg">{% t our_company.hero_button %}</a>
 			</div>
 			<div class="col-lg-6">
 				<svg width="100%" height="400" viewBox="0 0 600 400">
@@ -69,7 +69,7 @@ permalink: /our-company
 					<path d="M150 200 L450 200" stroke="white" stroke-width="2"/>
 					<path d="M300 50 L300 350" stroke="white" stroke-width="2"/>
 					<circle cx="300" cy="200" r="50" fill="rgba(255,255,255,0.2)"/>
-					<text x="250" y="215" fill="white" font-family="Arial">R&D</text>
+					<text x="305" y="195" fill="white" font-family="Arial">{% t pages.r_and_d %}</text>
 				</svg>
 			</div>
 		</div>
@@ -155,7 +155,7 @@ permalink: /our-company
 	<div class="container text-center">
 		<h2 class="mb-4">{% t our_company.cta_title %}</h2>
 		<p class="lead mb-4">{% t our_company.cta_description %}</p>
-		<button class="btn btn-light btn-lg">{% t our_company.cta_button %}</button>
+		<a href="{{prefix}}/contact-us" class="btn btn-light btn-lg">{% t our_company.cta_button %}</a>
 	</div>
 </section>
 

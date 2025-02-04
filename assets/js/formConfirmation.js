@@ -42,11 +42,10 @@ function postForm(form, modal) {
 	if (solutionSelect == undefined) {
 		solutionSelect = "_";
 	}
-	message = `
-	<b>Language</b>: ${currentLang} <br>
-	<b>Consultation</b>: ${consultation} <br>
-	<b>Solution</b>: ${solutionSelect} <br>
-	<b>Message</b>: ${message}
+	message = ` ${message} <br><br><hr>
+	<b>**Language**</b>: ${currentLang} <br><br><hr>
+	<b>**Consultation**</b>: ${consultation} <br><br><hr>
+	<b>**Solution**</b>: ${solutionSelect} <br>
 	`;
 
 	$.ajax({

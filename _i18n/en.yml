@@ -40,8 +40,9 @@ pages:
   modal_select: "Select Solution"
   modal_select_other: "Other"
   rights: "All rights reserved"
-  know_our_services: "Know Our Services"
+  r_and_d: "R&D"
   research_programs: "Research Programs"
+  know_our_services: "Know Our Services"
   our_products: "Our Products"
   work_with_us: "Work with Us"
   forms:
