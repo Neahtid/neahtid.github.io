@@ -80,6 +80,9 @@ custom_js:
         padding: 1.2rem;
         animation: slide-up 0.5s ease-out;
     }
+    .service-card h3 {
+        min-height: 60px;
+    }
 
     .service-card:hover {
         transform: translateY(-10px);
@@ -313,7 +316,7 @@ custom_js:
                     <div class="feature-icon">
                         <img src="/assets/svg/p_services_1_icon_custom_app.svg" alt="{% t service_1.solutions.cards.web_apps.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">{% t service_1.solutions.cards.web_apps.title %}</h3>
+                    <h3 class="h4 text-center d-flex align-items-center justify-content-center">{% t service_1.solutions.cards.web_apps.title %}</h3>
                     <p class="text-center">{% t service_1.solutions.cards.web_apps.description %}</p>
                     <ul class="list-unstyled mt-3">
                         {% for feature in site.translations[site.lang].service_1.solutions.cards.web_apps.features %}
@@ -329,7 +332,7 @@ custom_js:
                     <div class="feature-icon">
                         <img src="/assets/svg/p_services_1_icon_website.svg" alt="{% t service_1.solutions.cards.business_solutions.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">{% t service_1.solutions.cards.business_solutions.title %}</h3>
+                    <h3 class="h4 text-center d-flex align-items-center justify-content-center">{% t service_1.solutions.cards.business_solutions.title %}</h3>
                     <p class="text-center">{% t service_1.solutions.cards.business_solutions.description %}</p>
                     <ul class="list-unstyled mt-3">
                         {% for feature in site.translations[site.lang].service_1.solutions.cards.business_solutions.features %}
@@ -345,7 +348,7 @@ custom_js:
                     <div class="feature-icon">
                         <img src="/assets/svg/p_services_1_icon_sheets.svg" alt="{% t service_1.solutions.cards.corporate_website.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">{% t service_1.solutions.cards.corporate_website.title %}</h3>
+                    <h3 class="h4 text-center d-flex align-items-center justify-content-center">{% t service_1.solutions.cards.corporate_website.title %}</h3>
                     <p class="text-center">{% t service_1.solutions.cards.corporate_website.description %}</p>
                     <ul class="list-unstyled mt-3">
                         {% for feature in site.translations[site.lang].service_1.solutions.cards.corporate_website.features %}
@@ -361,7 +364,7 @@ custom_js:
                     <div class="feature-icon">
                         <img src="/assets/svg/p_services_1_icon_landing_page.svg" alt="{% t service_1.solutions.cards.process_automation.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">{% t service_1.solutions.cards.process_automation.title %}</h3>
+                    <h3 class="h4 text-center d-flex align-items-center justify-content-center">{% t service_1.solutions.cards.process_automation.title %}</h3>
                     <p class="text-center">{% t service_1.solutions.cards.process_automation.description %}</p>
                     <ul class="list-unstyled mt-3">
                         {% for feature in site.translations[site.lang].service_1.solutions.cards.process_automation.features %}
@@ -377,7 +380,7 @@ custom_js:
                     <div class="feature-icon">
                         <img src="/assets/svg/p_services_1_icon_marketing.svg" alt="{% t service_1.solutions.cards.landing_pages.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">{% t service_1.solutions.cards.landing_pages.title %}</h3>
+                    <h3 class="h4 text-center d-flex align-items-center justify-content-center">{% t service_1.solutions.cards.landing_pages.title %}</h3>
                     <p class="text-center">{% t service_1.solutions.cards.landing_pages.description %}</p>
                     <ul class="list-unstyled mt-3">
                         {% for feature in site.translations[site.lang].service_1.solutions.cards.landing_pages.features %}
@@ -393,7 +396,7 @@ custom_js:
                     <div class="feature-icon">
                         <img src="/assets/svg/p_services_1_icon_research.svg" alt="{% t service_1.solutions.cards.analytics.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">{% t service_1.solutions.cards.analytics.title %}</h3>
+                    <h3 class="h4 text-center d-flex align-items-center justify-content-center">{% t service_1.solutions.cards.analytics.title %}</h3>
                     <p class="text-center">{% t service_1.solutions.cards.analytics.description %}</p>
                     <ul class="list-unstyled mt-3">
                         {% for feature in site.translations[site.lang].service_1.solutions.cards.analytics.features %}
@@ -409,7 +412,7 @@ custom_js:
                     <div class="feature-icon">
                         <img src="/assets/svg/p_services_1_icon_corporate_identity.svg" alt="{% t service_1.solutions.cards.brand_experience.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">{% t service_1.solutions.cards.brand_experience.title %}</h3>
+                    <h3 class="h4 text-center d-flex align-items-center justify-content-center">{% t service_1.solutions.cards.brand_experience.title %}</h3>
                     <p class="text-center">{% t service_1.solutions.cards.brand_experience.description %}</p>
                     <ul class="list-unstyled mt-3">
                         {% for feature in site.translations[site.lang].service_1.solutions.cards.brand_experience.features %}
@@ -425,7 +428,7 @@ custom_js:
                     <div class="feature-icon">
                         <img src="/assets/svg/p_services_1_icon_maintenance.svg" alt="{% t service_1.solutions.cards.maintenance.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">{% t service_1.solutions.cards.maintenance.title %}</h3>
+                    <h3 class="h4 text-center d-flex align-items-center justify-content-center">{% t service_1.solutions.cards.maintenance.title %}</h3>
                     <p class="text-center">{% t service_1.solutions.cards.maintenance.description %}</p>
                     <ul class="list-unstyled mt-3">
                         {% for feature in site.translations[site.lang].service_1.solutions.cards.maintenance.features %}
@@ -441,7 +444,7 @@ custom_js:
                     <div class="feature-icon">
                         <img src="/assets/svg/p_services_1_icon_marketing.svg" alt="{% t service_1.solutions.cards.integration.icon_alt %}">
                     </div>
-                    <h3 class="h4 text-center">{% t service_1.solutions.cards.integration.title %}</h3>
+                    <h3 class="h4 text-center d-flex align-items-center justify-content-center">{% t service_1.solutions.cards.integration.title %}</h3>
                     <p class="text-center">{% t service_1.solutions.cards.integration.description %}</p>
                     <ul class="list-unstyled mt-3">
                         {% for feature in site.translations[site.lang].service_1.solutions.cards.integration.features %}
@@ -458,30 +461,30 @@ custom_js:
 <section class="py-5 bg-light">
     <div class="container">
         <h2 class="text-center mb-5">{% t service_1.process.title %}</h2>
-        <div class="row">
-            <div class="col-sm-6 col-md-3 mb-3">
-                <div class="process-step text-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            <div class="col">
+                <div class="process-step text-center h-100">
                     <div class="feature-icon">1</div>
                     <h3 class="h5">{% t service_1.process.steps.discovery.title %}</h3>
                     <p>{% t service_1.process.steps.discovery.description %}</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-3">
-                <div class="process-step text-center">
+            <div class="col">
+                <div class="process-step text-center h-100">
                     <div class="feature-icon">2</div>
                     <h3 class="h5">{% t service_1.process.steps.planning.title %}</h3>
                     <p>{% t service_1.process.steps.planning.description %}</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-3">
-                <div class="process-step text-center">
+            <div class="col">
+                <div class="process-step text-center h-100">
                     <div class="feature-icon">3</div>
                     <h3 class="h5">{% t service_1.process.steps.development.title %}</h3>
                     <p>{% t service_1.process.steps.development.description %}</p>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3 mb-3">
-                <div class="process-step text-center">
+            <div class="col">
+                <div class="process-step text-center h-100">
                     <div class="feature-icon">4</div>
                     <h3 class="h5">{% t service_1.process.steps.launch.title %}</h3>
                     <p>{% t service_1.process.steps.launch.description %}</p>
