@@ -9,24 +9,24 @@ global:
     privacy_url: "/privacy-policy/"
   navbar_top:
     - title: Servicios
-      link: /services
+      link: /services/
     - title: Productos
-      link: /our-products
+      link: /our-products/
     - title: Blog
-      link: /blog
+      link: /blog/
     - title: Contacto
-      link: /contact-us
+      link: /contact-us/
     - title: Nuestra Empresa
-      link: /our-company
+      link: /our-company/
     - title: Investigación
-      link: /research-program
+      link: /research-programs/
   navbar_bottom:
     - title: "Términos de Servicio"
-      link: /terms
+      link: /terms/
     - title: "Política de Privacidad"
-      link: /privacy-policy
+      link: /privacy-policy/
     - title: Contacto
-      link: /contact-us
+      link: /contact-us/
 
 langs:
   pt: Português

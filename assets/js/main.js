@@ -83,7 +83,7 @@ const consultationOptions = {
 		]
 	}
 };
-
+/*
 // Fetch translations
 fetch('/assets/js/translations.json')
 	.then(response => response.json())
@@ -126,7 +126,7 @@ fetch('/assets/js/translations.json')
 
 	})
 	.catch(error => console.error('Error loading translations:', error));
-
+*/
 /** Ready */
 $(document).ready(function () {
 	$('#animated_home_1').viewportChecker({
@@ -177,6 +177,43 @@ window.onscroll = function () {
 // Get the modal element
 const contactModal = document.getElementById('contactModal');
 if (contactModal) {
+	// translations
+	// web_applications
+	consultationOptions.WebApps.title = translations.services.web_applications.form_title || consultationOptions.WebApps.title;
+	consultationOptions.WebApps.label = translations.services.web_applications.form_label || consultationOptions.WebApps.label;
+	consultationOptions.WebApps.submit = translations.services.web_applications.form_submit || consultationOptions.WebApps.submit;
+	consultationOptions.WebApps.options = translations.services.web_applications.form_options || consultationOptions.WebApps.options;
+	// business_intelligence
+	consultationOptions.BI.title = translations.services.business_intelligence.form_title || consultationOptions.BI.title;
+	consultationOptions.BI.label = translations.services.business_intelligence.form_label || consultationOptions.BI.label;
+	consultationOptions.BI.submit = translations.services.business_intelligence.form_submit || consultationOptions.BI.submit;
+	consultationOptions.BI.options = translations.services.business_intelligence.form_options || consultationOptions.BI.options;
+	// ai_automation
+	consultationOptions.AI.title = translations.services.ai_automation.form_title || consultationOptions.AI.title;
+	consultationOptions.AI.label = translations.services.ai_automation.form_label || consultationOptions.AI.label;
+	consultationOptions.AI.submit = translations.services.ai_automation.form_submit || consultationOptions.AI.submit;
+	consultationOptions.AI.options = translations.services.ai_automation.form_options || consultationOptions.AI.options;
+	// cybersecurity
+	consultationOptions.Cybersecurity.title = translations.services.cybersecurity.form_title || consultationOptions.Cybersecurity.title;
+	consultationOptions.Cybersecurity.label = translations.services.cybersecurity.form_label || consultationOptions.Cybersecurity.label;
+	consultationOptions.Cybersecurity.submit = translations.services.cybersecurity.form_submit || consultationOptions.Cybersecurity.submit;
+	consultationOptions.Cybersecurity.options = translations.services.cybersecurity.form_options || consultationOptions.Cybersecurity.options;
+	// hardware
+	consultationOptions.Hardware.title = translations.services.hardware.form_title || consultationOptions.Hardware.title;
+	consultationOptions.Hardware.label = translations.services.hardware.form_label || consultationOptions.Hardware.label;
+	consultationOptions.Hardware.submit = translations.services.hardware.form_submit || consultationOptions.Hardware.submit;
+	consultationOptions.Hardware.options = translations.services.hardware.form_options || consultationOptions.Hardware.options;
+	// ecommerce
+	consultationOptions.eCommerce.title = translations.services.ecommerce.form_title || consultationOptions.eCommerce.title;
+	consultationOptions.eCommerce.label = translations.services.ecommerce.form_label || consultationOptions.eCommerce.label;
+	consultationOptions.eCommerce.submit = translations.services.ecommerce.form_submit || consultationOptions.eCommerce.submit;
+	consultationOptions.eCommerce.options = translations.services.ecommerce.form_options || consultationOptions.eCommerce.options;
+	// products
+	consultationOptions.products.title = translations.products.form_title || consultationOptions.products.title;
+	consultationOptions.products.label = translations.products.form_label || consultationOptions.products.label;
+	consultationOptions.products.submit = translations.products.form_submit || consultationOptions.products.submit;
+	consultationOptions.products.options = translations.products.form_options || consultationOptions.products.options;
+	
 	// Add event listener for when the modal is about to be shown
 	contactModal.addEventListener('show.bs.modal', event => {
 		// Button that triggered the modal

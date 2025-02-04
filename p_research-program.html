@@ -1,84 +1,373 @@
 ---
 layout: page
 title: Research Program
-permalink: /research-program
+permalink: /research-programs/
+slogan: Leading research and development in technology and engineering solutions.
 ---
 {% assign prefix = '' %}
 {% if site.lang != site.default_lang %}
 {% assign prefix = "/" | append: site.lang %}
 {% endif %}
-<header class="headblock research-1">
-	<h1>Engineering, Science and Technology</h1>
-</header>
-<section class="research-2">
+<style>
+	:root {
+		--primary-color: #1a237e;
+		--secondary-color: #0d47a1;
+		--accent-color: #2962ff;
+		--highlight: #5c6bc0;
+	}
+
+	.hero-section {
+		background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+		color: white;
+		padding: 120px 0;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	}
+
+	.partnership-badge {
+		background: rgba(255, 255, 255, 0.1);
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		border-radius: 15px;
+		padding: 20px;
+		transition: transform 0.3s ease;
+	}
+
+	.partnership-badge:hover {
+		transform: translateY(-5px);
+	}
+
+	.research-area-card {
+		border: none;
+		border-radius: 15px;
+		transition: all 0.3s ease;
+		height: 100%;
+	}
+
+	.research-area-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+	}
+
+	.university-section {
+		background-color: #f8f9fa;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.university-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a237e' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	}
+
+	.collaboration-process {
+		position: relative;
+	}
+
+	.process-line {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background-color: var(--highlight);
+		z-index: 0;
+	}
+
+	.process-step {
+		background: white;
+		position: relative;
+		z-index: 1;
+	}
+
+	.step-number {
+		width: 40px;
+		height: 40px;
+		background: var(--primary-color);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 1rem;
+	}
+
+	.contact-form {
+		background: white;
+		border-radius: 15px;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	}
+</style>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary-color);">
 	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-6">
-				<p class="text-center">Neahtid is an R&D Company that builds new technologies, innovative products and
-					services by drawing up solutions with strong foundations in Science, Technology and Engineering.</p>
-				<div class="research-3">
-					<div class="row">
-						<div class="col-12 col-md-4 flex-container">
-							<img src="assets/img/neahtid-photo-992102.png" alt="Federico Santa Maria University">
+		<a class="navbar-brand" href="#">Research Programs</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#research-areas">Research Areas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#university-partnership">University Partnership</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-7">
+				<h1 class="display-4 fw-bold mb-4">Research Programs</h1>
+				<p class="lead mb-4">Join forces with us to build groundbreaking technologies and innovative solutions. Through collaborative research programs, we combine expertise in Science, Technology, and Engineering to create the future.</p>
+				<div class="partnership-badge p-4 mb-4">
+					<h3 class="h5 mb-3">Proud Research Partner of</h3>
+					<img src="/assets/img/neahtid-photo-992102.png" alt="Federico Santa Maria University Logo" class="img-fluid mb-2">
+					<p class="mb-0">Federico Santa Maria Technical University</p>
+					<small>Leading Engineering & Technology Research in Latin America</small>
+				</div>
+				<button class="btn btn-light btn-lg">Start Collaboration</button>
+			</div>
+			<div class="col-lg-5">
+				<svg viewBox="0 0 500 500" class="w-100">
+					<!-- Research Network Illustration -->
+					<circle cx="250" cy="250" r="200" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+					<circle cx="250" cy="250" r="150" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+					<circle cx="250" cy="250" r="100" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+					
+					<!-- Connection Points -->
+					<g fill="white">
+						<circle cx="250" cy="50" r="10"/>
+						<circle cx="450" cy="250" r="10"/>
+						<circle cx="250" cy="450" r="10"/>
+						<circle cx="50" cy="250" r="10"/>
+						
+						<!-- Center Node -->
+						<circle cx="250" cy="250" r="20"/>
+					</g>
+					
+					<!-- Connecting Lines -->
+					<g stroke="white" stroke-width="2">
+						<line x1="250" y1="70" x2="250" y2="230"/>
+						<line x1="430" y1="250" x2="270" y2="250"/>
+						<line x1="250" y1="430" x2="250" y2="270"/>
+						<line x1="70" y1="250" x2="230" y2="250"/>
+					</g>
+					
+					<!-- Animated Particles -->
+					<circle cx="250" cy="140" r="5" fill="white">
+						<animate attributeName="cy" values="70;230;70" dur="3s" repeatCount="indefinite"/>
+					</circle>
+					<circle cx="360" cy="250" r="5" fill="white">
+						<animate attributeName="cx" values="430;270;430" dur="3s" repeatCount="indefinite"/>
+					</circle>
+				</svg>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Research Areas -->
+<section class="py-5" id="research-areas">
+	<div class="container">
+		<h2 class="text-center mb-5">Research Focus Areas</h2>
+		<div class="row g-4">
+			<div class="col-md-4">
+				<div class="card research-area-card">
+					<div class="card-body">
+						<div class="text-primary mb-3">
+							<svg width="40" height="40" viewBox="0 0 40 40">
+								<circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+								<path d="M15 20 L25 20 M20 15 L20 25" stroke="currentColor" stroke-width="2"/>
+							</svg>
 						</div>
-						<div class="col-12 col-md-8 mt-3 text-center">
-							<a class="ha"
-								href="http://www.noticias.usm.cl/2017/08/07/acuerdo-entre-la-usm-y-empresa-neahtid-permitira-que-alumnos-desarrollen-tecnologias-inalambricas/"
-								target="_blank">Federico Santa Maria University Agreement</a>
-							<p>Federico Santa Maria University, one of the most prestigious University for Engineering,
-								Science and Technology in LatinAmerica and in the world has signed with Neahtid a
-								Collaboration Agreement.</p>
-							<p>This agreement has been fundamental in the development of our first investigations and
-								have highly trained professionals</p>
-						</div>
+						<h3 class="h4">Advanced Materials</h3>
+						<p>Development of novel materials with enhanced properties for industrial applications.</p>
+						<ul class="list-unstyled">
+							<li>• Nanomaterials</li>
+							<li>• Smart Materials</li>
+							<li>• Sustainable Materials</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 mt-3">
-				<div class="contact-badge research">
-					<h2>Research Programs</h2>
-				</div>
-				<div class="flex-btn-container container">
-					<div class="row">
-						<div class="col-12 col-md-6 text-center mt-1 mb-1">
-							<a class="btn btn-success" href="https://goo.gl/forms/KymqcRJKFebiGfaJ3"
-								target="_blank">Internship Application</a>
+			<div class="col-md-4">
+				<div class="card research-area-card">
+					<div class="card-body">
+						<div class="text-primary mb-3">
+							<svg width="40" height="40" viewBox="0 0 40 40">
+								<rect x="10" y="10" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"/>
+								<circle cx="20" cy="20" r="5" fill="currentColor"/>
+							</svg>
 						</div>
-						<div class="col-12 col-md-6 text-center mt-1 mb-1">
-							<a class="btn btn-info" href="https://goo.gl/forms/wJCzyBT6n0PDMShl1" target="_blank">
-								Full Time Application</a>
-						</div>
+						<h3 class="h4">AI & Robotics</h3>
+						<p>Cutting-edge research in artificial intelligence and robotic systems.</p>
+						<ul class="list-unstyled">
+							<li>• Machine Learning</li>
+							<li>• Computer Vision</li>
+							<li>• Autonomous Systems</li>
+						</ul>
 					</div>
 				</div>
-				<div class="container">
-					<h1>Applying to Neahtid</h1>
-					<p>Ready to apply for an internship or a full-time job at Neahtid? Here’s what you’ll need:</p>
-					<ul>
-						<li>An updated resume</li>
-						<li>A transcript from your university (unofficial is fine)</li>
-						<li>A cover letter, short essay, or additional information is optional</li>
+			</div>
+			<div class="col-md-4">
+				<div class="card research-area-card">
+					<div class="card-body">
+						<div class="text-primary mb-3">
+							<svg width="40" height="40" viewBox="0 0 40 40">
+								<path d="M10 30 L20 10 L30 30" fill="none" stroke="currentColor" stroke-width="2"/>
+								<circle cx="20" cy="10" r="3" fill="currentColor"/>
+							</svg>
+						</div>
+						<h3 class="h4">Sustainable Energy</h3>
+						<p>Research in renewable energy technologies and energy efficiency.</p>
+						<ul class="list-unstyled">
+							<li>• Solar Technology</li>
+							<li>• Energy Storage</li>
+							<li>• Smart Grids</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- University Partnership -->
+<section class="university-section py-5" id="university-partnership">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<h2 class="mb-4">Strategic University Partnership</h2>
+				<p class="lead">Our collaboration with Federico Santa Maria Technical University provides access to cutting-edge research facilities and top talent in Latin America.</p>
+				<div class="mb-4">
+					<h4>Partnership Benefits:</h4>
+					<ul class="list-unstyled">
+						<li class="mb-2">✓ Access to state-of-the-art laboratories</li>
+						<li class="mb-2">✓ Collaboration with leading researchers</li>
+						<li class="mb-2">✓ Joint research publications</li>
+						<li>✓ Technology transfer opportunities</li>
 					</ul>
-					<!--h2>Focus on your resume</h2>
-					<p>Your resume is the first piece of information we’ll see about you. Here’s how to highlight your achievements:</p>
-					<ul>
-						<li>Align your skills and experience with the internship or job description</li>
-						<li>Be specific about projects you’ve worked on or managed. What was the outcome? How did you measure success?</li>
-						<li>If you’ve had a leadership role in a volunteer organization or at a part-time job, tell us about it. How big was the team? What was the scope of your work?</li>
-						<li>Include your GPA, as well as school-related projects or coursework that demonstrate relevant skills and knowledge</li>
-						<li>Keep it short: Aim for one page. If there’s additional information we need during the hiring process, (like a portfolio), your recruiter will work with you to collect it</li>
-					</ul>
-					<h2>Prepare for the interview process</h2>
-					<ul>
-						<li>Next step is a series of interviews—which may be on the phone, via video conference, or in person</li>
-						<li>Structure your interview answers: It’s important to show how you arrive at a solution, so think out loud</li>
-					</ul>
-					<p>Helpful questions to think about as you prepare:</p>
-					<ul>
-						<li>How do you work best, both as an individual and as part of a team?</li>
-						<li>What challenges have you faced at school or at work and how did you overcome them?</li>
-						<li>Which of your skills or experiences would be assets in the role and why?</li>
-					</ul>
-					<p>If you don’t understand a question, ask your interviewers for clarification and take the time you need with responses.</p-->
+				</div>
+				<button class="btn btn-primary">Learn More About Partnership</button>
+			</div>
+			<div class="col-lg-6">
+				<img src="/assets/img/neahtid-photo-992102.png" alt="University Research Lab" class="img-fluid rounded shadow-lg">
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Collaboration Process -->
+<section class="py-5">
+	<div class="container">
+		<h2 class="text-center mb-5">Collaboration Process</h2>
+		<div class="collaboration-process">
+			<div class="process-line d-none d-md-block"></div>
+			<div class="row">
+				<div class="col-md-3 mb-4">
+					<div class="process-step text-center p-3">
+						<div class="step-number">1</div>
+						<h3 class="h5">Initial Contact</h3>
+						<p>Submit your research proposal or area of interest</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-4">
+					<div class="process-step text-center p-3">
+						<div class="step-number">2</div>
+						<h3 class="h5">Evaluation</h3>
+						<p>Assessment of research viability and alignment</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-4">
+					<div class="process-step text-center p-3">
+						<div class="step-number">3</div>
+						<h3 class="h5">Agreement</h3>
+						<p>Define scope, resources, and timeline</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-4">
+					<div class="process-step text-center p-3">
+						<div class="step-number">4</div>
+						<h3 class="h5">Execution</h3>
+						<p>Implementation and continuous collaboration</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5 bg-light" id="contact">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="text-center mb-5">
+					<h2>Start a Research Collaboration</h2>
+					<p class="lead">Interested in partnering with us? Fill out the form below and our research team will contact you.</p>
+				</div>
+				<div class="contact-form p-4">
+					<form id="research-contact-form">
+						<div class="row g-3">
+							<div class="col-md-6">
+								<label for="name" class="form-label">Name</label>
+								<input type="text" class="form-control" id="name" required>
+							</div>
+							<div class="col-md-6">
+								<label for="organization" class="form-label">Organization</label>
+								<input type="text" class="form-control" id="organization" required>
+							</div>
+							<div class="col-md-6">
+								<label for="email" class="form-label">Email</label>
+								<input type="email" class="form-control" id="email" required>
+							</div>
+							<div class="col-md-6">
+								<label for="phone" class="form-label">Phone</label>
+								<input type="tel" class="form-control" id="phone">
+							</div>
+							<div class="col-12">
+								<label for="research-area" class="form-label">Research Area of Interest</label>
+								<select class="form-select" id="research-area" required>
+									<option value="">Select an area</option>
+									<option value="materials">Advanced Materials</option>
+									<option value="ai-robotics">AI & Robotics</option>
+									<option value="energy">Sustainable Energy</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+							<div class="col-12">
+								<label for="message" class="form-label">Project Description</label>
+								<textarea class="form-control" id="message" rows="5" required></textarea>
+							</div>
+							<div class="col-12 text-center">
+								<button type="submit" class="btn btn-primary btn-lg">Submit Research Proposal</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

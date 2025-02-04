@@ -38,11 +38,11 @@ Nuestra pasión por la excelencia y la innovación nos impulsa a ofrecer solucio
 
 ## ¡Explore Nuestros Servicios!
 
-Estamos aquí para ayudarle a llevar su negocio al siguiente nivel. ¿Está listo para descubrir cómo nuestras soluciones pueden transformar su empresa? Visite nuestra [página de servicios](/services) para obtener más información sobre cómo podemos colaborar con usted.
+Estamos aquí para ayudarle a llevar su negocio al siguiente nivel. ¿Está listo para descubrir cómo nuestras soluciones pueden transformar su empresa? Visite nuestra [página de servicios](/es/services/) para obtener más información sobre cómo podemos colaborar con usted.
 
 ## ¡Hablemos!
 
-¿Tiene una pregunta o un desafío específico? Nuestro equipo está listo para ayudar. No dude en ponerse en contacto con nosotros a través de nuestra [página de contacto](/contact-us). Estamos a solo un clic de distancia para transformar su visión en realidad.
+¿Tiene una pregunta o un desafío específico? Nuestro equipo está listo para ayudar. No dude en ponerse en contacto con nosotros a través de nuestra [página de contacto](/es/contact-us/). Estamos a solo un clic de distancia para transformar su visión en realidad.
 
 Gracias por visitarnos, y esperamos que encuentre en este blog información valiosa que lo inspire a aprovechar todo el potencial de la tecnología en el sector B2B.
 
