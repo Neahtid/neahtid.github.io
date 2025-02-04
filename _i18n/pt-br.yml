@@ -1000,3 +1000,72 @@ our_company:
   cta_title: "Pronto para Inovar Juntos?"
   cta_description: "Vamos conversar sobre como nossa expertise em P&D pode ajudar a resolver seus desafios complexos."
   cta_button: "Entre em Contato"
+
+research_programs:
+  nav:
+    brand: "Programas de Pesquisa"
+    research_areas: "Áreas de Pesquisa"
+    university_partnership: "Parceria Universitária"
+    contact: "Contato"
+
+  hero:
+    title: "Programas de Pesquisa"
+    description: "Junte-se a nós para construir tecnologias inovadoras e soluções de ponta. Através de programas de pesquisa colaborativa, combinamos expertise em Ciência, Tecnologia e Engenharia para criar o futuro."
+    partner:
+      title: "Orgulhosos Parceiros de Pesquisa da"
+      university: "Universidade Técnica Federico Santa Maria"
+      subtitle: "Liderança em Pesquisa de Engenharia & Tecnologia na América Latina"
+    cta: "Iniciar Colaboração"
+
+  research_areas:
+    title: "Áreas de Foco em Pesquisa"
+    ai_robotics:
+      title: "IA & Robótica"
+      description: "Pesquisa de ponta em inteligência artificial e sistemas robóticos."
+      items:
+        - "Aprendizado de Máquina"
+        - "Visão Computacional"
+        - "Sistemas Autônomos"
+    ai_finance:
+      title: "IA em Finanças"
+      description: "Nossa pesquisa de ponta em finanças com IA promove soluções financeiras mais inteligentes, rápidas e seguras."
+      items:
+        - "Trading Algorítmico"
+        - "Detecção de Fraudes"
+        - "Finanças Descentralizadas (DeFi)"
+    sustainable_energy:
+      title: "Energia Sustentável"
+      description: "Pesquisa em tecnologias de energia renovável e eficiência energética."
+      items:
+        - "Tecnologia Solar"
+        - "Armazenamento de Energia"
+        - "Redes Inteligentes"
+
+  university_partnership:
+    title: "Parceria Universitária Estratégica"
+    description: "Nossa colaboração com a Universidade Técnica Federico Santa Maria oferece acesso a instalações de pesquisa de ponta e os melhores talentos da América Latina."
+    benefits:
+      title: "Benefícios da Parceria:"
+      items:
+        - "Acesso a laboratórios de última geração"
+        - "Colaboração com pesquisadores de renome"
+        - "Publicações conjuntas de pesquisa"
+        - "Oportunidades de transferência de tecnologia"
+    cta: "Saiba Mais Sobre a Parceria"
+
+  collaboration_process:
+    title: "Processo de Colaboração"
+    steps:
+      - title: "Contato Inicial"
+        description: "Envie sua proposta de pesquisa ou área de interesse"
+      - title: "Avaliação"
+        description: "Avaliação da viabilidade e alinhamento da pesquisa"
+      - title: "Acordo"
+        description: "Definição de escopo, recursos e cronograma"
+      - title: "Execução"
+        description: "Implementação e colaboração contínua"
+
+  contact:
+    title: "Iniciar uma Colaboração de Pesquisa"
+    description: "Interessado em se tornar nosso parceiro? Preencha o formulário abaixo e nossa equipe de pesquisa entrará em contato."
+    cta: "Enviar Proposta de Pesquisa"

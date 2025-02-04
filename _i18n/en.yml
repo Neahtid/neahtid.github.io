@@ -1003,3 +1003,72 @@ our_company:
   cta_title: "Ready to Innovate Together?"
   cta_description: "Let's discuss how our R&D expertise can help solve your complex challenges."
   cta_button: "Contact Us"
+
+research_programs:
+  nav:
+    brand: "Research Programs"
+    research_areas: "Research Areas"
+    university_partnership: "University Partnership"
+    contact: "Contact"
+
+  hero:
+    title: "Research Programs"
+    description: "Join forces with us to build groundbreaking technologies and innovative solutions. Through collaborative research programs, we combine expertise in Science, Technology, and Engineering to create the future."
+    partner:
+      title: "Proud Research Partner of"
+      university: "Federico Santa Maria Technical University"
+      subtitle: "Leading Engineering & Technology Research in Latin America"
+    cta: "Start Collaboration"
+
+  research_areas:
+    title: "Research Focus Areas"
+    ai_robotics:
+      title: "AI & Robotics"
+      description: "Cutting-edge research in artificial intelligence and robotic systems."
+      items:
+        - "Machine Learning"
+        - "Computer Vision"
+        - "Autonomous Systems"
+    ai_finance:
+      title: "AI in Finance"
+      description: "Our cutting-edge research in AI-powered finance drives smarter, faster, and more secure financial solutions."
+      items:
+        - "Algorithmic Trading"
+        - "Fraud Detection"
+        - "Decentralized Finance (DeFi)"
+    sustainable_energy:
+      title: "Sustainable Energy"
+      description: "Research in renewable energy technologies and energy efficiency."
+      items:
+        - "Solar Technology"
+        - "Energy Storage"
+        - "Smart Grids"
+
+  university_partnership:
+    title: "Strategic University Partnership"
+    description: "Our collaboration with Federico Santa Maria Technical University provides access to cutting-edge research facilities and top talent in Latin America."
+    benefits:
+      title: "Partnership Benefits:"
+      items:
+        - "Access to state-of-the-art laboratories"
+        - "Collaboration with leading researchers"
+        - "Joint research publications"
+        - "Technology transfer opportunities"
+    cta: "Learn More About Partnership"
+
+  collaboration_process:
+    title: "Collaboration Process"
+    steps:
+      - title: "Initial Contact"
+        description: "Submit your research proposal or area of interest"
+      - title: "Evaluation"
+        description: "Assessment of research viability and alignment"
+      - title: "Agreement"
+        description: "Define scope, resources, and timeline"
+      - title: "Execution"
+        description: "Implementation and continuous collaboration"
+
+  contact:
+    title: "Start a Research Collaboration"
+    description: "Interested in partnering with us? Fill out the form below and our research team will contact you."
+    cta: "Submit Research Proposal"

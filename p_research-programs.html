@@ -15,6 +15,9 @@ slogan: Leading research and development in technology and engineering solutions
 		--accent-color: #2962ff;
 		--highlight: #5c6bc0;
 	}
+	.navbar-dark {
+		margin-top: 2rem!important;
+	}
 
 	.hero-section {
 		background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -55,7 +58,7 @@ slogan: Leading research and development in technology and engineering solutions
 
 	.research-area-card:hover {
 		transform: translateY(-5px);
-		box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 	}
 
 	.university-section {
@@ -109,27 +112,27 @@ slogan: Leading research and development in technology and engineering solutions
 	.contact-form {
 		background: white;
 		border-radius: 15px;
-		box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	}
 </style>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary-color);">
 	<div class="container">
-		<a class="navbar-brand" href="#">Research Programs</a>
+		<a class="navbar-brand" href="#">{% t research_programs.nav.brand %}</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ms-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#research-areas">Research Areas</a>
+					<a class="nav-link" href="#research-areas">{% t research_programs.nav.research_areas %}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#university-partnership">University Partnership</a>
+					<a class="nav-link" href="#university-partnership">{% t research_programs.nav.university_partnership %}</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
+					<a class="nav-link" href="#contact">{% t research_programs.nav.contact %}</a>
 				</li>
 			</ul>
 		</div>
@@ -141,15 +144,16 @@ slogan: Leading research and development in technology and engineering solutions
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-lg-7">
-				<h1 class="display-4 fw-bold mb-4">Research Programs</h1>
-				<p class="lead mb-4">Join forces with us to build groundbreaking technologies and innovative solutions. Through collaborative research programs, we combine expertise in Science, Technology, and Engineering to create the future.</p>
+				<h1 class="display-4 fw-bold mb-4">{% t research_programs.hero.title %}</h1>
+				<p class="lead mb-4">{% t research_programs.hero.description %}</p>
 				<div class="partnership-badge p-4 mb-4">
-					<h3 class="h5 mb-3">Proud Research Partner of</h3>
-					<img src="/assets/img/escudo-usm-200x200.jpg" alt="Federico Santa Maria University Logo" class="img-fluid mb-2">
-					<p class="mb-0">Federico Santa Maria Technical University</p>
-					<small>Leading Engineering & Technology Research in Latin America</small>
+					<h3 class="h5 mb-3">{% t research_programs.hero.partner.title %}</h3>
+					<img src="/assets/img/escudo-usm-200x200.jpg" alt="Federico Santa Maria University Logo"
+						class="img-fluid mb-2">
+					<p class="mb-0">{% t research_programs.hero.partner.university %}</p>
+					<small>{% t research_programs.hero.partner.subtitle %}</small>
 				</div>
-				<a href="#contact" class="btn btn-light btn-lg" style="z-index: 1000;">Start Collaboration</a>
+				<!--a href="#contact" class="btn btn-light btn-lg" style="z-index: 1000;">{% t research_programs.hero.cta %}</a-->
 			</div>
 			<div class="col-lg-5">
 				<svg viewBox="0 0 500 500" class="w-100">
@@ -193,7 +197,7 @@ slogan: Leading research and development in technology and engineering solutions
 <!-- Research Areas -->
 <section class="py-5" id="research-areas">
 	<div class="container">
-		<h2 class="text-center mb-5">Research Focus Areas</h2>
+		<h2 class="text-center mb-5">{% t research_programs.research_areas.title %}</h2>
 		<div class="row g-4">
 			<div class="col-md-4">
 				<div class="card research-area-card">
@@ -204,12 +208,12 @@ slogan: Leading research and development in technology and engineering solutions
 								<circle cx="20" cy="20" r="5" fill="currentColor"/>
 							</svg>
 						</div>
-						<h3 class="h4">AI & Robotics</h3>
-						<p>Cutting-edge research in artificial intelligence and robotic systems.</p>
+						<h3 class="h4">{% t research_programs.research_areas.ai_robotics.title %}</h3>
+						<p>{% t research_programs.research_areas.ai_robotics.description %}</p>
 						<ul class="list-unstyled">
-							<li>• Machine Learning</li>
-							<li>• Computer Vision</li>
-							<li>• Autonomous Systems</li>
+							{% for item in site.translations[site.lang].research_programs.research_areas.ai_robotics.items %}
+							<li>• {{ item }}</li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
@@ -223,12 +227,12 @@ slogan: Leading research and development in technology and engineering solutions
 								<path d="M15 20 L25 20 M20 15 L20 25" stroke="currentColor" stroke-width="2"/>
 							</svg>
 						</div>
-						<h3 class="h4">AI in Finance</h3>
-						<p>Our cutting-edge research in AI-powered finance drives smarter, faster, and more secure financial solutions.</p>
+						<h3 class="h4">{% t research_programs.research_areas.ai_finance.title %}</h3>
+						<p>{% t research_programs.research_areas.ai_finance.description %}</p>
 						<ul class="list-unstyled">
-							<li>• Algorithmic Trading</li>
-							<li>• Fraud Detection</li>
-							<li>• Decentralized Finance (DeFi)</li>
+							{% for item in site.translations[site.lang].research_programs.research_areas.ai_finance.items %}
+							<li>• {{ item }}</li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
@@ -242,12 +246,12 @@ slogan: Leading research and development in technology and engineering solutions
 								<circle cx="20" cy="10" r="3" fill="currentColor"/>
 							</svg>
 						</div>
-						<h3 class="h4">Sustainable Energy</h3>
-						<p>Research in renewable energy technologies and energy efficiency.</p>
+						<h3 class="h4">{% t research_programs.research_areas.sustainable_energy.title %}</h3>
+						<p>{% t research_programs.research_areas.sustainable_energy.description %}</p>
 						<ul class="list-unstyled">
-							<li>• Solar Technology</li>
-							<li>• Energy Storage</li>
-							<li>• Smart Grids</li>
+							{% for item in site.translations[site.lang].research_programs.research_areas.sustainable_energy.items %}
+							<li>• {{ item }}</li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
@@ -261,21 +265,21 @@ slogan: Leading research and development in technology and engineering solutions
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-lg-6">
-				<h2 class="mb-4">Strategic University Partnership</h2>
-				<p class="lead">Our collaboration with Federico Santa Maria Technical University provides access to cutting-edge research facilities and top talent in Latin America.</p>
+				<h2 class="mb-4">{% t research_programs.university_partnership.title %}</h2>
+				<p class="lead">{% t research_programs.university_partnership.description %}</p>
 				<div class="mb-4">
-					<h4>Partnership Benefits:</h4>
+					<h4>{% t research_programs.university_partnership.benefits.title %}</h4>
 					<ul class="list-unstyled">
-						<li class="mb-2">✓ Access to state-of-the-art laboratories</li>
-						<li class="mb-2">✓ Collaboration with leading researchers</li>
-						<li class="mb-2">✓ Joint research publications</li>
-						<li>✓ Technology transfer opportunities</li>
+						{% for item in site.translations[site.lang].research_programs.university_partnership.benefits.items %}
+						<li class="mb-2">✓ {{ item }}</li>
+						{% endfor %}
 					</ul>
 				</div>
-				<button class="btn btn-primary">Learn More About Partnership</button>
+				<!--button class="btn btn-primary">{% t research_programs.university_partnership.cta %}</button-->
 			</div>
 			<div class="col-lg-6">
-				<img src="/assets/img/neahtid-photo-992102.png" alt="University Research Lab" class="img-fluid rounded shadow-lg">
+				<img src="/assets/img/neahtid-photo-992102.png" alt="University Research Lab"
+					class="img-fluid rounded shadow-lg">
 			</div>
 		</div>
 	</div>
@@ -284,38 +288,19 @@ slogan: Leading research and development in technology and engineering solutions
 <!-- Collaboration Process -->
 <section class="py-5">
 	<div class="container">
-		<h2 class="text-center mb-5">Collaboration Process</h2>
+		<h2 class="text-center mb-5">{% t research_programs.collaboration_process.title %}</h2>
 		<div class="collaboration-process">
 			<div class="process-line d-none d-md-block"></div>
 			<div class="row">
+				{% for step in site.translations[site.lang].research_programs.collaboration_process.steps %}
 				<div class="col-md-3 mb-4">
 					<div class="process-step text-center p-3">
-						<div class="step-number">1</div>
-						<h3 class="h5">Initial Contact</h3>
-						<p>Submit your research proposal or area of interest</p>
+						<div class="step-number">{{ forloop.index }}</div>
+						<h3 class="h5">{{ step.title }}</h3>
+						<p>{{ step.description }}</p>
 					</div>
 				</div>
-				<div class="col-md-3 mb-4">
-					<div class="process-step text-center p-3">
-						<div class="step-number">2</div>
-						<h3 class="h5">Evaluation</h3>
-						<p>Assessment of research viability and alignment</p>
-					</div>
-				</div>
-				<div class="col-md-3 mb-4">
-					<div class="process-step text-center p-3">
-						<div class="step-number">3</div>
-						<h3 class="h5">Agreement</h3>
-						<p>Define scope, resources, and timeline</p>
-					</div>
-				</div>
-				<div class="col-md-3 mb-4">
-					<div class="process-step text-center p-3">
-						<div class="step-number">4</div>
-						<h3 class="h5">Execution</h3>
-						<p>Implementation and continuous collaboration</p>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
@@ -327,15 +312,13 @@ slogan: Leading research and development in technology and engineering solutions
 		<div class="row justify-content-center">
 			<div class="col-lg-8">
 				<div class="text-center mb-5">
-					<h2>Start a Research Collaboration</h2>
-					<p class="lead">Interested in partnering with us? Fill out the form below and our research team will contact you.</p>
+					<h2>{% t research_programs.contact.title %}</h2>
+					<p class="lead">{% t research_programs.contact.description %}</p>
 				</div>
 				<div class="text-center">
-					<button class="btn btn-primary btn-lg" 
-							data-bs-toggle="modal" 
-							data-bs-target="#contactModal"
-							data-bs-consultation="research">
-							Submit Research Proposal
+					<button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
+						data-bs-consultation="research">
+						{% t research_programs.contact.cta %}
 					</button>
 				</div>
 			</div>

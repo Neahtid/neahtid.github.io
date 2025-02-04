@@ -1000,3 +1000,72 @@ our_company:
   cta_title: "¿Listos para Innovar Juntos?"
   cta_description: "Hablemos sobre cómo nuestra experiencia en I+D puede ayudar a resolver tus desafíos más complejos."
   cta_button: "Contáctanos"
+
+research_programs:
+  nav:
+    brand: "Programas de Investigación"
+    research_areas: "Áreas de Investigación"
+    university_partnership: "Alianza Universitaria"
+    contact: "Contacto"
+
+  hero:
+    title: "Programas de Investigación"
+    description: "Únete a nosotros para construir tecnologías innovadoras y soluciones de vanguardia. A través de programas de investigación colaborativa, combinamos experiencia en Ciencia, Tecnología e Ingeniería para crear el futuro."
+    partner:
+      title: "Orgullosos Socios de Investigación de"
+      university: "Universidad Técnica Federico Santa María"
+      subtitle: "Liderando la Investigación en Ingeniería y Tecnología en América Latina"
+    cta: "Iniciar Colaboración"
+
+  research_areas:
+    title: "Áreas de Investigación"
+    ai_robotics:
+      title: "IA & Robótica"
+      description: "Investigación de vanguardia en inteligencia artificial y sistemas robóticos."
+      items:
+        - "Aprendizaje Automático"
+        - "Visión Computacional"
+        - "Sistemas Autónomos"
+    ai_finance:
+      title: "IA en Finanzas"
+      description: "Nuestra investigación de vanguardia en finanzas impulsadas por IA ofrece soluciones financieras más inteligentes, rápidas y seguras."
+      items:
+        - "Comercio Algorítmico"
+        - "Detección de Fraude"
+        - "Finanzas Descentralizadas (DeFi)"
+    sustainable_energy:
+      title: "Energía Sostenible"
+      description: "Investigación en tecnologías de energía renovable y eficiencia energética."
+      items:
+        - "Tecnología Solar"
+        - "Almacenamiento de Energía"
+        - "Redes Inteligentes"
+
+  university_partnership:
+    title: "Alianza Universitaria Estratégica"
+    description: "Nuestra colaboración con la Universidad Técnica Federico Santa María ofrece acceso a instalaciones de investigación de última generación y a los mejores talentos en América Latina."
+    benefits:
+      title: "Beneficios de la Alianza:"
+      items:
+        - "Acceso a laboratorios de vanguardia"
+        - "Colaboración con investigadores líderes"
+        - "Publicaciones conjuntas de investigación"
+        - "Oportunidades de transferencia de tecnología"
+    cta: "Saber Más Sobre la Alianza"
+
+  collaboration_process:
+    title: "Proceso de Colaboración"
+    steps:
+      - title: "Contacto Inicial"
+        description: "Envía tu propuesta de investigación o área de interés"
+      - title: "Evaluación"
+        description: "Evaluación de la viabilidad y alineación de la investigación"
+      - title: "Acuerdo"
+        description: "Definición de alcance, recursos y cronograma"
+      - title: "Ejecución"
+        description: "Implementación y colaboración continua"
+
+  contact:
+    title: "Iniciar una Colaboración en Investigación"
+    description: "¿Interesado en asociarte con nosotros? Completa el formulario a continuación y nuestro equipo de investigación se pondrá en contacto contigo."
+    cta: "Enviar Propuesta de Investigación"
