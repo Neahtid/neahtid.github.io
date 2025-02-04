@@ -47,7 +47,13 @@ jekyll_timeago:
 languages: ["en", "es", "pt-br"]
 default_lang: "en"
 exclude_from_localization:
-  ["javascript", "images", "css", "scripts", "favicon.ico"]
+  - "images"
+  - "css"
+  - "scripts"
+  - "favicon.ico"
+  - "assets/js/translations.json"
+include:
+  - "assets/js/translations.json"
 parallel_localization: true
 
 # Language names for UI

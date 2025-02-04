@@ -43,6 +43,16 @@ pages:
   know_our_services: "Conoce Nuestros Servicios"
   our_products: "Nuestros Productos"
   work_with_us: "Trabaja con Nosotros"
+  forms:
+    name_placeholder: Su nombre
+    email_placeholder: Su Email
+    message_placeholder: Su Mensaje (Opcional)
+    email_novalid: "es una dirección de correo electrónico inválida. Por favor, ingresa una válida."  
+    email_empty: "Ingresa tu dirección de correo electrónico antes de enviar."  
+    general_novalid: "Algo salió mal... Por favor, inténtalo de nuevo más tarde."  
+    thanks_default: "Gracias por tu consulta."
+    thanks_response: "Gracias por tu contacto. Nuestro equipo se comunicará contigo en breve."  
+    will_close: "Esta ventana se cerrará en unos momentos..."
   buttons:
     send: "Enviar"
     close: "Cerrar"
@@ -84,21 +94,83 @@ services:
   web_applications:
     title: "Aplicaciones Web y Soluciones de Software"
     description: "Eleva tu marca con aplicaciones web de vanguardia y soluciones de software avanzadas adaptadas para el éxito de tu negocio."
+    form_label: "Seleccionar una Solución"
+    form_title: "Comienza Tu Viaje Digital"
+    form_submit: "Empezar"
+    form_options: 
+      - "Aplicaciones Web Avanzadas"
+      - "Soluciones Empresariales Personalizadas"
+      - "Desarrollo de Sitios Web Corporativos"
+      - "Automatización de Procesos Empresariales"
+      - "Páginas de Destino de Alto Impacto"
+      - "Soluciones de Análisis Financiero y Empresarial"
+      - "Experiencia de Marca Digital"
+      - "Mantenimiento y Seguridad de Sitios Web"
+      - "Integración de Sistemas Empresariales"
+      - "Otro"
   business_intelligence:
     title: "Business Intelligence y Análisis de Datos"
     description: "Transforma los datos de tu negocio en información rentable con seguimiento de gastos en tiempo real y paneles de análisis de ingresos"
+    form_title: "Solicita una Evaluación de Business Intelligence"
+    form_label: "Selecciona una Solución"
+    form_submit: "Comenzar"
+    form_options:
+      - "Análisis de Desempeño Financiero"
+      - "Paneles Inteligentes de Business Intelligence"
+      - "Sistema Automatizado de Gestión Financiera"
+      - "Plataforma de Análisis Empresarial con IA"
+      - "Otro"
   ai_automation:
     title: "Inteligencia Artificial y Automatización"
     description: "Aumenta la eficiencia con chatbots y otras automatizaciones impulsadas por IA que transforman el servicio al cliente y optimizan las operaciones."
+    form_title: "Solicita una Demostración"
+    form_label: "Selecciona una Solución"
+    form_submit: "Agendar Demostración"
+    form_options:
+      - "Asistentes Virtuales con IA"
+      - "Automatización Inteligente para Empresas"
+      - "Mantenimiento Predictivo con Inteligencia Artificial"
+      - "Soluciones Personalizadas de IA"
+      - "Otro"
   cybersecurity:
     title: "Soluciones de Ciberseguridad"
     description: "Soluciones de seguridad de última generación que incluyen pruebas de penetración, hacking ético, encriptación avanzada y monitoreo integral de seguridad."
+    form_title: "Solicita una Evaluación de Seguridad"
+    form_label: "Selecciona una Solución"
+    form_submit: "Solicitar Evaluación"
+    form_options: 
+      - "Hacking Ético"
+      - "Pruebas de Penetración"
+      - "Evaluación de Seguridad Empresarial"
+      - "Servicios Avanzados de Cifrado"
+      - "Plataforma de Monitoreo de Seguridad"
+      - "Protocolos de Cumplimiento y Seguridad"
+      - "Otro"
   hardware:
     title: "Soluciones de Hardware"
     description: "Transforma tus operaciones empresariales con sistemas de automatización personalizados, monitoreo de sensores/cámaras inteligentes y controles energéticamente eficientes para diversas industrias."
+    form_title: "Solicita una Evaluación de Hardware"
+    form_label: "Selecciona una Solución"
+    form_submit: ""
+    form_options:
+      - "Hardware para Automatización Empresarial"
+      - "Infraestructura de Seguridad Inteligente"
+      - "Sistemas de Gestión de Energía"
+      - "Integración de IoT y Robótica"
+      - "Otro"
   ecommerce:
     title: "Soluciones de Comercio Electrónico"
     description: "Lanza y escala tu negocio en línea con soluciones white-label, sistemas de pago integrados y gestión automatizada de inventario."
+    form_title: "Comienza Tu Viaje en el E-Commerce"
+    form_label: "Selecciona un Servicio"
+    form_submit: "Enviar Mensaje"
+    form_options:
+      - "Desarrollo de Plataforma de E-Commerce"
+      - "Soluciones de Marketplace White-Label"
+      - "Integración de Análisis"
+      - "Sistemas de Dropshipping"
+      - "Mantenimiento de Plataforma"
+      - "Otro"
 
 products:
   hero:
@@ -109,6 +181,14 @@ products:
   ready: "¿Listo para Saber Más?"
   ready_description: "Contáctanos para una demostración personalizada de nuestros productos"
   ready_button: "Solicitar Demostración"
+  form_title: "Solicitar una Demo"
+  form_label: "Seleccionar un Producto"
+  form_submit: "Enviar"
+  form_options:
+    - "jingo.store"
+    - "zigna.app"
+    - "Minions App"
+    - "Other"
   jingo_store:
     title: "Jingo.store"
     description: "Experimenta una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario."

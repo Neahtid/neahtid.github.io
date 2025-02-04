@@ -1,0 +1,8 @@
+---
+layout: null
+---
+{
+  "en": {{ site.translations.en | jsonify }},
+  "es": {{ site.translations.es | jsonify }},
+  "pt-br": {{ site.translations.pt-br | jsonify }}
+}

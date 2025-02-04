@@ -9,13 +9,13 @@
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <input type="text" class="form-control form-control-lg" placeholder="Your Name" id="form-field-nea_name"
+            <input type="text" class="form-control form-control-lg" placeholder="{% t pages.forms.name_placeholder %}" id="form-field-nea_name"
               name="name" required>
             <input type="hidden" class="form-control form-control-lg" name="consultation"
               id="form-field-nea_consultation">
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control form-control-lg" placeholder="Your Email" id="form-field-nea_email"
+            <input type="email" class="form-control form-control-lg" placeholder="{% t pages.forms.email_placeholder %}" id="form-field-nea_email"
               name="email" required>
           </div>
           <div class="mb-3">
@@ -26,7 +26,7 @@
           </div>
           <div class="mb-3">
             <textarea class="form-control form-control-lg" rows="4" id="form-field-nea_message" name="message"
-              placeholder="Your Message"></textarea>
+              placeholder="{% t pages.forms.message_placeholder %}"></textarea>
           </div>
         </div>
         <div class="modal-footer">

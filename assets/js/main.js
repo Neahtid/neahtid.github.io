@@ -1,3 +1,132 @@
+// --- Modal ---
+const consultationOptions = {
+	WebApps: {
+		title: 'Start Your Digital Journey',
+		label: 'Select a Solution',
+		submit: 'Get Started',
+		options: [
+
+		]
+	},
+	BI: {
+		title: '',
+		label: 'Select a Solution',
+		submit: 'Get Started',
+		options: [
+			'Financial Performance Analytics',
+			'Smart Business Intelligence Dashboards',
+			'Automated Financial Management System',
+			'AI-Powered Business Analytics Platform',
+			'Other'
+		]
+	},
+	AI: {
+		title: 'Request a Demo',
+		label: 'Select a Solution',
+		submit: 'Schedule Demo',
+		options: [
+			'AI-Powered Virtual Assistants',
+			'Smart Business Automation',
+			'Predictive Intelligence Maintenance',
+			'Custom AI Solutions',
+			'Other'
+		]
+	},
+	Cybersecurity: {
+		title: 'Get Your Security Assessment',
+		label: 'Select a Solution',
+		submit: 'Request Assessment',
+		options: [
+			'Ethical Hacking',
+			'Penetration Testing',
+			'Enterprise Security Assessment',
+			'Advanced Encryption Services',
+			'Security Monitoring Platform',
+			'Compliance & Security Protocols',
+			'Other'
+		]
+	},
+	Hardware: {
+		title: '',
+		label: 'Select a Solution',
+		submit: '',
+		options: [
+			'Business Automation Hardware',
+			'Smart Security Infrastructure',
+			'Energy Management Systems',
+			'IoT & Robotics Integration',
+			'Other'
+		]
+	},
+	eCommerce: {
+		title: 'Start Your E-Commerce Journey',
+		label: 'Select a Service',
+		submit: 'Send Message',
+		options: [
+			'E-commerce Platform Development',
+			'White-Label Marketplace Solutions',
+			'Analytics Integration',
+			'Dropshipping Systems',
+			'Platform Maintenance',
+			'Other'
+		]
+	},
+	products: {
+		title: 'Request a Demo',
+		label: 'Select a Product',
+		submit: 'Submit',
+		options: [
+			'jingo.store',
+			'zigna.app',
+			'Minions App',
+			'Other'
+		]
+	}
+};
+
+// Fetch translations
+fetch('/assets/js/translations.json')
+	.then(response => response.json())
+	.then(translations => {
+		// web_applications
+		consultationOptions.WebApps.title = translations[currentLang].services.web_applications.form_title || consultationOptions.WebApps.title;
+		consultationOptions.WebApps.label = translations[currentLang].services.web_applications.form_label || consultationOptions.WebApps.label;
+		consultationOptions.WebApps.submit = translations[currentLang].services.web_applications.form_submit || consultationOptions.WebApps.submit;
+		consultationOptions.WebApps.options = translations[currentLang].services.web_applications.form_options || consultationOptions.WebApps.options;
+		// business_intelligence
+		consultationOptions.BI.title = translations[currentLang].services.business_intelligence.form_title || consultationOptions.BI.title;
+		consultationOptions.BI.label = translations[currentLang].services.business_intelligence.form_label || consultationOptions.BI.label;
+		consultationOptions.BI.submit = translations[currentLang].services.business_intelligence.form_submit || consultationOptions.BI.submit;
+		consultationOptions.BI.options = translations[currentLang].services.business_intelligence.form_options || consultationOptions.BI.options;
+		// ai_automation
+		consultationOptions.AI.title = translations[currentLang].services.ai_automation.form_title || consultationOptions.AI.title;
+		consultationOptions.AI.label = translations[currentLang].services.ai_automation.form_label || consultationOptions.AI.label;
+		consultationOptions.AI.submit = translations[currentLang].services.ai_automation.form_submit || consultationOptions.AI.submit;
+		consultationOptions.AI.options = translations[currentLang].services.ai_automation.form_options || consultationOptions.AI.options;
+		// cybersecurity
+		consultationOptions.Cybersecurity.title = translations[currentLang].services.cybersecurity.form_title || consultationOptions.Cybersecurity.title;
+		consultationOptions.Cybersecurity.label = translations[currentLang].services.cybersecurity.form_label || consultationOptions.Cybersecurity.label;
+		consultationOptions.Cybersecurity.submit = translations[currentLang].services.cybersecurity.form_submit || consultationOptions.Cybersecurity.submit;
+		consultationOptions.Cybersecurity.options = translations[currentLang].services.cybersecurity.form_options || consultationOptions.Cybersecurity.options;
+		// hardware
+		consultationOptions.Hardware.title = translations[currentLang].services.hardware.form_title || consultationOptions.Hardware.title;
+		consultationOptions.Hardware.label = translations[currentLang].services.hardware.form_label || consultationOptions.Hardware.label;
+		consultationOptions.Hardware.submit = translations[currentLang].services.hardware.form_submit || consultationOptions.Hardware.submit;
+		consultationOptions.Hardware.options = translations[currentLang].services.hardware.form_options || consultationOptions.Hardware.options;
+		// ecommerce
+		consultationOptions.eCommerce.title = translations[currentLang].services.ecommerce.form_title || consultationOptions.eCommerce.title;
+		consultationOptions.eCommerce.label = translations[currentLang].services.ecommerce.form_label || consultationOptions.eCommerce.label;
+		consultationOptions.eCommerce.submit = translations[currentLang].services.ecommerce.form_submit || consultationOptions.eCommerce.submit;
+		consultationOptions.eCommerce.options = translations[currentLang].services.ecommerce.form_options || consultationOptions.eCommerce.options;
+		// products
+		consultationOptions.products.title = translations[currentLang].products.form_title || consultationOptions.products.title;
+		consultationOptions.products.label = translations[currentLang].products.form_label || consultationOptions.products.label;
+		consultationOptions.products.submit = translations[currentLang].products.form_submit || consultationOptions.products.submit;
+		consultationOptions.products.options = translations[currentLang].products.form_options || consultationOptions.products.options;
+
+	})
+	.catch(error => console.error('Error loading translations:', error));
+
 /** Ready */
 $(document).ready(function () {
 	$('#animated_home_1').viewportChecker({
@@ -42,101 +171,6 @@ window.onscroll = function () {
 		body.classList.add('scrolled');
 	} else {
 		body.classList.remove('scrolled');
-	}
-};
-
-// --- Modal ---
-const consultationOptions = {
-	WebApps: {
-		label: 'Select Solution',
-		title: 'Start Your Digital Journey',
-		submit: 'Get Started',
-		options: [
-			'Advanced Web Applications',
-			'Custom Business Solutions',
-			'Corporate Website Development',
-			'Business Process Automation',
-			'High-Impact Landing Pages',
-			'Financial & Business Analytics Solutions',
-			'Digital Brand Experience',
-			'Website Maintenance & Security',
-			'Business Systems Integration',
-			'Other'
-		]
-	},
-	BI: {
-		label: 'Select Solution',
-		title: '',
-		submit: 'Get Started',
-		options: [
-			'Financial Performance Analytics',
-			'Smart Business Intelligence Dashboards',
-			'Automated Financial Management System',
-			'AI-Powered Business Analytics Platform',
-			'Other'
-		]
-	},
-	AI: {
-		label: 'Select Solution',
-		title: 'Request a Demo',
-		submit: 'Schedule Demo',
-		options: [
-			'AI-Powered Virtual Assistants',
-			'Smart Business Automation',
-			'Predictive Intelligence Maintenance',
-			'Custom AI Solutions',
-			'Other'
-		]
-	},
-	Cybersecurity: {
-		label: 'Select Solution',
-		title: 'Get Your Security Assessment',
-		submit: 'Request Assessment',
-		options: [
-			'Ethical Hacking',
-			'Penetration Testing',
-			'Enterprise Security Assessment',
-			'Advanced Encryption Services',
-			'Security Monitoring Platform',
-			'Compliance & Security Protocols',
-			'Other'
-		]
-	},
-	Hardware: {
-		label: 'Select Solution',
-		title: '',
-		submit: '',
-		options: [
-			'Business Automation Hardware',
-			'Smart Security Infrastructure',
-			'Energy Management Systems',
-			'IoT & Robotics Integration',
-			'Other'
-		]
-	},
-	eCommerce: {
-		label: 'Select Service',
-		title: 'Start Your E-Commerce Journey',
-		submit: 'Send Message',
-		options: [
-			'E-commerce Platform Development',
-			'White-Label Marketplace Solutions',
-			'Analytics Integration',
-			'Dropshipping Systems',
-			'Platform Maintenance',
-			'Other'
-		]
-	},
-	products: {
-		label: 'Select a Product',
-		title: 'Request a Demo',
-		submit: 'Submit',
-		options: [
-			'jingo.store',
-			'zigna.app',
-			'Minions App',
-			'Other'
-		]
 	}
 };
 

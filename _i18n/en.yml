@@ -43,6 +43,16 @@ pages:
   know_our_services: "Know Our Services"
   our_products: "Our Products"
   work_with_us: "Work with Us"
+  forms:
+    name_placeholder: Your Name
+    email_placeholder: Your Email
+    message_placeholder: Your Message
+    email_novalid: " is an invalid email address! Plese insert a valid one."
+    email_empty: "Insert your email addrees before sending."
+    general_novalid: "There's something wrong... Please try again later."
+    thanks_default: "Thank you for your inquiry."
+    thanks_response: "Thank you for your contact. Our team will contact you shortly."
+    will_close: "This window will close in a moment..."
   buttons:
     send: "Send"
     close: "Close"
@@ -87,21 +97,83 @@ services:
   web_applications:
     title: "Web Applications & Software Solutions"
     description: "Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success."
+    form_title: "Start Your Digital Journey"
+    form_label: "Select a Solution"
+    form_submit: "Get Started"
+    form_options: 
+      - "Advanced Web Applications"
+      - "Custom Business Solutions"
+      - "Corporate Website Development"
+      - "Business Process Automation"
+      - "High-Impact Landing Pages"
+      - "Financial & Business Analytics Solutions"
+      - "Digital Brand Experience"
+      - "Website Maintenance & Security"
+      - "Business Systems Integration"
+      - "Other"
   business_intelligence:
     title: "Business Intelligence & Data Analytics"
     description: "Transform your business data into profit insights with real-time expense tracking and revenue analytics dashboards"
+    form_title: "Get a Business Intelligence Assessment"
+    form_label: "Select a Solution"
+    form_submit: "Get Started"
+    form_options:
+      - "Financial Performance Analytics"
+      - "Smart Business Intelligence Dashboards"
+      - "Automated Financial Management System"
+      - "AI-Powered Business Analytics Platform"
+      - "Other"
   ai_automation:
     title: "Artificial Intelligence & Automation"
     description: "Boost efficiency with chatbots and other AI-powered automations that transforms customer service and streamlines operations."
+    form_title: "Request a Demo"
+    form_label: "Select a Solution"
+    form_submit: "Schedule Demo"
+    form_options:
+      - "AI-Powered Virtual Assistants"
+      - "Smart Business Automation"
+      - "Predictive Intelligence Maintenance"
+      - "Custom AI Solutions"
+      - "Other"
   cybersecurity:
     title: "Cybersecurity Solutions"
     description: "State-of-the-art security solutions including penetration testing, ethical hacking, advanced encryption, and comprehensive security monitoring."
+    form_title: "Get a Security Assessment"
+    form_label: "Select a Solution"
+    form_submit: "Request Assessment"
+    form_options: 
+      - "Ethical Hacking"
+      - "Penetration Testing"
+      - "Enterprise Security Assessment"
+      - "Advanced Encryption Services"
+      - "Security Monitoring Platform"
+      - "Compliance & Security Protocols"
+      - "Other"
   hardware:
     title: "Hardware Solutions"
     description: "Transform your business operations with custom automation systems, smart sensors/cameras monitoring and energy-efficient controls for various industries."
+    form_title: "Get a Hardware Assessment"
+    form_label: "Select a Solution"
+    form_submit: ""
+    form_options:
+      - "Business Automation Hardware"
+      - "Smart Security Infrastructure"
+      - "Energy Management Systems"
+      - "IoT & Robotics Integration"
+      - "Other"
   ecommerce:
     title: "E-Commerce Solutions"
     description: "Launch and scale your online business with white-label solutions, integrated payment systems, and automated inventory management."
+    form_title: "Start Your E-Commerce Journey"
+    form_label: "Select a Service"
+    form_submit: "Send Message"
+    form_options:
+      - "E-commerce Platform Development"
+      - "White-Label Marketplace Solutions"
+      - "Analytics Integration"
+      - "Dropshipping Systems"
+      - "Platform Maintenance"
+      - "Other"
 
 products:
   hero:
@@ -112,6 +184,14 @@ products:
   ready: "Ready to Learn More?"
   ready_description: "Contact us for a personalized demo of our products"
   ready_button: "Request Demo"
+  form_title: "Request a Demo"
+  form_label: "Select a Product"
+  form_submit: "Submit"
+  form_options:
+    - "jingo.store"
+    - "zigna.app"
+    - "Minions App"
+    - "Other"
   jingo_store:
     title: "Jingo.store"
     description: "Experience a fully-featured e-commerce solution with integrated payment methods, order tracking, and inventory management."
