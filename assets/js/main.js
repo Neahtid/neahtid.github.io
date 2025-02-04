@@ -81,52 +81,20 @@ const consultationOptions = {
 			'Minions App',
 			'Other'
 		]
+	},
+	research: {
+		title: 'Start a Research Collaboration',
+		label: 'Research Area of Interest',
+		submit: 'Submit Research Proposal',
+		options: [
+			'AI & Robotics',
+			'Machine Learning',
+			'Sustainable Energy',
+			'Other'
+		]
 	}
 };
-/*
-// Fetch translations
-fetch('/assets/js/translations.json')
-	.then(response => response.json())
-	.then(translations => {
-		// web_applications
-		consultationOptions.WebApps.title = translations[currentLang].services.web_applications.form_title || consultationOptions.WebApps.title;
-		consultationOptions.WebApps.label = translations[currentLang].services.web_applications.form_label || consultationOptions.WebApps.label;
-		consultationOptions.WebApps.submit = translations[currentLang].services.web_applications.form_submit || consultationOptions.WebApps.submit;
-		consultationOptions.WebApps.options = translations[currentLang].services.web_applications.form_options || consultationOptions.WebApps.options;
-		// business_intelligence
-		consultationOptions.BI.title = translations[currentLang].services.business_intelligence.form_title || consultationOptions.BI.title;
-		consultationOptions.BI.label = translations[currentLang].services.business_intelligence.form_label || consultationOptions.BI.label;
-		consultationOptions.BI.submit = translations[currentLang].services.business_intelligence.form_submit || consultationOptions.BI.submit;
-		consultationOptions.BI.options = translations[currentLang].services.business_intelligence.form_options || consultationOptions.BI.options;
-		// ai_automation
-		consultationOptions.AI.title = translations[currentLang].services.ai_automation.form_title || consultationOptions.AI.title;
-		consultationOptions.AI.label = translations[currentLang].services.ai_automation.form_label || consultationOptions.AI.label;
-		consultationOptions.AI.submit = translations[currentLang].services.ai_automation.form_submit || consultationOptions.AI.submit;
-		consultationOptions.AI.options = translations[currentLang].services.ai_automation.form_options || consultationOptions.AI.options;
-		// cybersecurity
-		consultationOptions.Cybersecurity.title = translations[currentLang].services.cybersecurity.form_title || consultationOptions.Cybersecurity.title;
-		consultationOptions.Cybersecurity.label = translations[currentLang].services.cybersecurity.form_label || consultationOptions.Cybersecurity.label;
-		consultationOptions.Cybersecurity.submit = translations[currentLang].services.cybersecurity.form_submit || consultationOptions.Cybersecurity.submit;
-		consultationOptions.Cybersecurity.options = translations[currentLang].services.cybersecurity.form_options || consultationOptions.Cybersecurity.options;
-		// hardware
-		consultationOptions.Hardware.title = translations[currentLang].services.hardware.form_title || consultationOptions.Hardware.title;
-		consultationOptions.Hardware.label = translations[currentLang].services.hardware.form_label || consultationOptions.Hardware.label;
-		consultationOptions.Hardware.submit = translations[currentLang].services.hardware.form_submit || consultationOptions.Hardware.submit;
-		consultationOptions.Hardware.options = translations[currentLang].services.hardware.form_options || consultationOptions.Hardware.options;
-		// ecommerce
-		consultationOptions.eCommerce.title = translations[currentLang].services.ecommerce.form_title || consultationOptions.eCommerce.title;
-		consultationOptions.eCommerce.label = translations[currentLang].services.ecommerce.form_label || consultationOptions.eCommerce.label;
-		consultationOptions.eCommerce.submit = translations[currentLang].services.ecommerce.form_submit || consultationOptions.eCommerce.submit;
-		consultationOptions.eCommerce.options = translations[currentLang].services.ecommerce.form_options || consultationOptions.eCommerce.options;
-		// products
-		consultationOptions.products.title = translations[currentLang].products.form_title || consultationOptions.products.title;
-		consultationOptions.products.label = translations[currentLang].products.form_label || consultationOptions.products.label;
-		consultationOptions.products.submit = translations[currentLang].products.form_submit || consultationOptions.products.submit;
-		consultationOptions.products.options = translations[currentLang].products.form_options || consultationOptions.products.options;
 
-	})
-	.catch(error => console.error('Error loading translations:', error));
-*/
 /** Ready */
 $(document).ready(function () {
 	$('#animated_home_1').viewportChecker({
