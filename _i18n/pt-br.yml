@@ -967,3 +967,34 @@ product_minions:
     title: "Experimente o Minions App Hoje"
     description: "Veja como nossa plataforma web inteligente pode transformar seu negócio com nossa demo completa."
     button: "Iniciar Demo Gratuita"
+
+our_company:
+  hero_title: "Inovando a Tecnologia do Amanhã Hoje"
+  hero_description: "Neahtid é uma empresa de Pesquisa e Desenvolvimento especializada em soluções de software e hardware, dedicada a enfrentar desafios complexos de engenharia e fornecer tecnologia de ponta para diversas indústrias."
+  hero_button: "Descubra Nossas Soluções"
+
+  features_title: "Nossas Capacidades Principais"
+  feature_hardware_title: "Soluções de Hardware"
+  feature_hardware_description: "Design e prototipagem de hardware personalizados para dispositivos e sistemas de última geração."
+  feature_software_title: "Desenvolvimento de Software"
+  feature_software_description: "Soluções avançadas de software utilizando tecnologias e metodologias de ponta."
+  feature_research_title: "Pesquisa & Inovação"
+  feature_research_description: "Pesquisa pioneira em tecnologias emergentes e soluções inovadoras."
+
+  expertise_title: "Nossa Expertise"
+  expertise_hardware_title: "Desenvolvimento de Hardware"
+  expertise_hardware_list:
+    - "✓ Design de Circuitos & Prototipagem"
+    - "✓ Sistemas Embarcados"
+    - "✓ Soluções para IoT"
+    - "✓ Arquitetura de Hardware Personalizada"
+  expertise_software_title: "Inovação em Software"
+  expertise_software_list:
+    - "✓ Algoritmos Avançados"
+    - "✓ Aprendizado de Máquina"
+    - "✓ Sistemas em Tempo Real"
+    - "✓ Arquitetura em Nuvem"
+
+  cta_title: "Pronto para Inovar Juntos?"
+  cta_description: "Vamos conversar sobre como nossa expertise em P&D pode ajudar a resolver seus desafios complexos."
+  cta_button: "Entre em Contato"

@@ -41,6 +41,7 @@ pages:
   modal_select_other: "Other"
   rights: "All rights reserved"
   know_our_services: "Know Our Services"
+  research_programs: "Research Programs"
   our_products: "Our Products"
   work_with_us: "Work with Us"
   forms:
@@ -970,3 +971,34 @@ product_minions:
     title: "Try Minions App Today"
     description: "See how our smart web platform can transform your business with our full-featured demo."
     button: "Start Free Demo"
+
+our_company:
+  hero_title: "Innovating Tomorrow's Technology Today"
+  hero_description: "Neahtid is a Research and Development company specializing in both software and hardware solutions, dedicated to tackling complex engineering challenges and delivering cutting-edge technology across various industries."
+  hero_button: "Discover Our Solutions"
+
+  features_title: "Our Core Capabilities"
+  feature_hardware_title: "Hardware Solutions"
+  feature_hardware_description: "Custom hardware design and prototyping for next-generation devices and systems."
+  feature_software_title: "Software Development"
+  feature_software_description: "Advanced software solutions leveraging cutting-edge technologies and methodologies."
+  feature_research_title: "Research & Innovation"
+  feature_research_description: "Pioneering research in emerging technologies and innovative solutions."
+
+  expertise_title: "Our Expertise"
+  expertise_hardware_title: "Hardware Development"
+  expertise_hardware_list:
+    - "✓ Circuit Design & Prototyping"
+    - "✓ Embedded Systems"
+    - "✓ IoT Solutions"
+    - "✓ Custom Hardware Architecture"
+  expertise_software_title: "Software Innovation"
+  expertise_software_list:
+    - "✓ Advanced Algorithms"
+    - "✓ Machine Learning"
+    - "✓ Real-time Systems"
+    - "✓ Cloud Architecture"
+
+  cta_title: "Ready to Innovate Together?"
+  cta_description: "Let's discuss how our R&D expertise can help solve your complex challenges."
+  cta_button: "Contact Us"
