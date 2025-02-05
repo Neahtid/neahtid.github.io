@@ -316,6 +316,11 @@ permalink: /
 
   <!-- Value Proposition Section -->
   <section class="section-2">
+    <div class="section-arrow">
+      <div onClick="scrollto('#section-3')" class="section-arrow-react">
+        <img src="assets/img/arrow.png" alt="section-arrow">
+      </div>
+    </div>
     <div class="container">
       <h2 class="animated-hidden">{% t index.value_proposition.title %}</h2>
       <p class="animated-hidden">{% t index.value_proposition.description %}</p>
@@ -350,7 +355,7 @@ permalink: /
 
   <!-- Innovative Section -->
   <section id="innovative" class="hero-section2 text-white">
-    <div class="container">
+    <div class="container animated-hidden">
       <div class="row">
         <div class="col-lg-8" data-aos="fade-right">
           <h1 class="display-4 fw-bold mb-4">{% t index.innovative.title %}</h1>
@@ -362,7 +367,7 @@ permalink: /
   </section>
 
   <!-- Technology Leadership Section -->
-  <section class="section-4" id="section-4">
+  <section class="section-4 animated-hidden" id="section-4">
     <div class="container">
       <h2 class="mb-4 animated-hidden">{% t index.technology.title %}</h2>
       <p class="animated-hidden">{% t index.technology.description %}</p>
@@ -387,10 +392,10 @@ permalink: /
                 <h3 class="card-title">{% t products.jingo_store.title %}</h3>
                 <p class="card-text">{% t products.jingo_store.description %}</p>
                 <div class="mt-4 text-end">
-                  <a href="https://jingo.store" target="_blank" class="btn btn-product-demo me-2">
+                  <a href="https://jingo.store" target="_blank" class="btn btn-product-demo me-2 mb-2">
                     {% t index.products.buttons.demo %}
                   </a>
-                  <a href="{{prefix}}/products/jingo-store" class="btn btn-outline-primary">{% t index.products.buttons.learn_more %}</a>
+                  <a href="{{prefix}}/products/jingo-store" class="btn btn-outline-primary mb-2">{% t index.products.buttons.learn_more %}</a>
                 </div>
               </a>
             </div>
@@ -410,10 +415,10 @@ permalink: /
                 <h3 class="card-title">{% t products.zigna_app.title %}</h3>
                 <p class="card-text">{% t products.zigna_app.description %}</p>
                 <div class="mt-4 text-end">
-                  <a href="https://zigna.app" target="_blank" class="btn btn-product-demo me-2">
+                  <a href="https://zigna.app" target="_blank" class="btn btn-product-demo me-2 mb-2">
                     {% t index.products.buttons.demo %}
                   </a>
-                  <a href="{{prefix}}/products/zigna-app" class="btn btn-outline-primary">{% t index.products.buttons.learn_more %}</a>
+                  <a href="{{prefix}}/products/zigna-app" class="btn btn-outline-primary mb-2">{% t index.products.buttons.learn_more %}</a>
                 </div>
               </a>
             </div>
@@ -434,10 +439,10 @@ permalink: /
                 <h3 class="card-title">{% t products.minions_app.title %}</h3>
                 <p class="card-text">{% t products.minions_app.description %}</p>
                 <div class="mt-4 text-end">
-                  <a href="https://minions.neahtid.com" target="_blank" class="btn btn-product-demo me-2">
+                  <a href="https://minions.neahtid.com" target="_blank" class="btn btn-product-demo me-2 mb-2">
                     {% t index.products.buttons.demo %}
                   </a>
-                  <a href="{{prefix}}/products/pwa-demo" class="btn btn-outline-primary">{% t index.products.buttons.learn_more %}</a>
+                  <a href="{{prefix}}/products/pwa-demo" class="btn btn-outline-primary mb-2">{% t index.products.buttons.learn_more %}</a>
                 </div>
               </a>
             </div>
@@ -460,8 +465,8 @@ permalink: /
 
   <!-- Questions Section -->
   <section class="section-5" id="section-5">
-    <h2 class="mb-5">{% t index.questions.title %}</h2>
-    <div class="container badges">
+    <h2 class="mb-5 animated-hidden">{% t index.questions.title %}</h2>
+    <div class="container badges animated-hidden">
       <div class="row">
         <div class="col-12 col-sm-4">
           <div class="feature-icon">

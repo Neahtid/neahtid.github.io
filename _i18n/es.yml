@@ -190,7 +190,7 @@ products:
   title: "Nuestros Productos de Demostración"
   ready: "¿Listo para Saber Más?"
   ready_description: "Contáctanos para una demostración personalizada de nuestros productos"
-  ready_button: "Solicitar Demostración"
+  ready_button: "Solicitar una Demostración"
   form_title: "Solicitar una Demo"
   form_label: "Seleccionar un Producto"
   form_submit: "Enviar"
@@ -198,7 +198,7 @@ products:
     - "jingo.store"
     - "zigna.app"
     - "Minions App"
-    - "Other"
+    - "Otro"
   jingo_store:
     title: "Jingo.store"
     description: "Experimenta una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario."
