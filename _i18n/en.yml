@@ -176,6 +176,15 @@ services:
       - "Dropshipping Systems"
       - "Platform Maintenance"
       - "Other"
+  research_programs:
+    form_title: "Start a Research Collaboration"
+    form_label: "Research Area of Interest"
+    form_submit: "Submit Research Proposal"
+    form_options: 
+      - "AI & Robotics"
+      - "AI in Finance"
+      - "Sustainable Energy"
+      - "Other"
 
 products:
   hero:

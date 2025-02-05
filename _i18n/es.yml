@@ -173,7 +173,15 @@ services:
       - "Sistemas de Dropshipping"
       - "Mantenimiento de Plataforma"
       - "Otro"
-
+  research_programs:
+    form_title: "Iniciar una Colaboración de Investigación"
+    form_label: "Área de Interés en Investigación"
+    form_submit: "Enviar Propuesta de Investigación"
+    form_options: 
+      - "IA y Robótica"
+      - "IA en Finanzas"
+      - "Energía Sostenible"
+      - "Otro"
 products:
   hero:
     title: "Experimenta Nuestros Productos de Demostración"

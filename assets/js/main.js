@@ -82,7 +82,7 @@ const consultationOptions = {
 			'Other'
 		]
 	},
-	research: {
+	research_programs: {
 		title: 'Start a Research Collaboration',
 		label: 'Research Area of Interest',
 		submit: 'Submit Research Proposal',
@@ -181,6 +181,12 @@ if (contactModal) {
 	consultationOptions.products.label = translations.products.form_label || consultationOptions.products.label;
 	consultationOptions.products.submit = translations.products.form_submit || consultationOptions.products.submit;
 	consultationOptions.products.options = translations.products.form_options || consultationOptions.products.options;
+	// research_programs
+	consultationOptions.research_programs.title = translations.services.research_programs.form_title || consultationOptions.research_programs.title;
+	consultationOptions.research_programs.label = translations.services.research_programs.form_label || consultationOptions.research_programs.label;
+	consultationOptions.research_programs.submit = translations.services.research_programs.form_submit || consultationOptions.research_programs.submit;
+	consultationOptions.research_programs.options = translations.services.research_programs.form_options || consultationOptions.research_programs.options;
+
 	
 	// Add event listener for when the modal is about to be shown
 	contactModal.addEventListener('show.bs.modal', event => {
