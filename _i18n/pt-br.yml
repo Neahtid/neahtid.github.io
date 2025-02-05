@@ -393,13 +393,13 @@ service_1:
         description: "Plataformas bancárias seguras e soluções de integração de pagamentos"
 
   cta:
-    title: "Pronto para Transformar Seu Negócio?"
+    title: "Pronto para Transformar seu Negócio?"
     subtitle: "Vamos conversar sobre como nossas soluções podem otimizar suas operações."
     button: "Agende uma Consulta"
 
 service_2:
   hero:
-    title: "Transforme os Dados do Seu Negócio em Insights Acionáveis"
+    title: "Transforme os Dados do seu Negócio em Insights Acionáveis"
     subtitle: "Aproveite soluções avançadas de Business Intelligence e Analytics para tomar decisões baseadas em dados que impulsionam o crescimento e a lucratividade."
     buttons:
       schedule_demo: "Agendar uma Demonstração"
@@ -441,13 +441,13 @@ service_2:
         description: "Mantenha-se à frente com insights impulsionados por IA e análises preditivas."
 
   cta:
-    title: "Pronto para Transformar Seu Negócio?"
+    title: "Pronto para Transformar seu Negócio?"
     subtitle: "Agende uma demonstração para ver como nossas soluções de BI podem impulsionar sua empresa."
     button: "Comece Agora"
 
 service_3:
   hero:
-    title: "Transforme Seu Negócio com IA"
+    title: "Transforme seu Negócio com IA"
     subtitle: "Aumente a eficiência com chatbots e outras automações baseadas em IA que transformam o atendimento ao cliente e otimizam operações."
     buttons:
       get_started: "Comece Agora"
@@ -484,13 +484,13 @@ service_3:
       number: "50%"
       text: "Respostas Mais Rápidas"
   cta:
-    title: "Pronto para Transformar Seu Negócio?"
+    title: "Pronto para Transformar seu Negócio?"
     subtitle: "Agende uma demonstração para ver como nossas soluções de IA podem impulsionar seu negócio."
     button: "Agendar Demonstração"
 
 service_4:
   hero:
-    title: "Proteja Seu Futuro Digital"
+    title: "Proteja seu Futuro Digital"
     description: "Proteja seu negócio com soluções avançadas de cibersegurança e simulações de software de última geração. Nossa abordagem abrangente garante que seus ativos digitais permaneçam seguros contra ameaças em constante evolução."
     buttons:
       assessment: "Solicitar Avaliação de Segurança"
@@ -620,13 +620,13 @@ service_5:
         description: "Aprimore a segurança do local e a eficiência do gerenciamento de projetos."
 
   cta:
-    title: "Pronto para Transformar Seu Negócio?"
+    title: "Pronto para Transformar seu Negócio?"
     subtitle: "Vamos conversar sobre como nossas soluções de hardware podem melhorar suas operações."
     button: "Agende uma Consulta"
 
 service_6:
   hero:
-    title: "Transforme Seu Negócio com Excelência em E-Commerce"
+    title: "Transforme seu Negócio com Excelência em E-Commerce"
     description: "Nossas soluções de E-Commerce se integram perfeitamente com painéis de Business Intelligence, fornecendo insights detalhados sobre o comportamento do cliente e as tendências de vendas."
     buttons:
       request_demo: "Solicitar Demo"
@@ -857,7 +857,7 @@ product_zigna:
         position: "Day Trader"
   
   demo:
-    title: "Comece Seu Teste Gratuito Hoje"
+    title: "Comece seu Teste Gratuito Hoje"
     subtitle: "Experimente o poder das recomendações profissionais de trading sem riscos por 14 dias."
     cta: "Acessar Plataforma Demo"
 
@@ -865,7 +865,7 @@ product_minions:
   # Seção Hero
   hero:
     badge: "Plataforma Web Inteligente de Nível Empresarial"
-    title: "Transforme Seu Negócio com Aplicações Web Inteligentes que Funcionam em Qualquer Lugar"
+    title: "Transforme seu Negócio com Aplicações Web Inteligentes que Funcionam em Qualquer Lugar"
     description: "Crie aplicativos web poderosos que funcionam como apps nativos, com dashboards inteligentes, assistência de IA e conexão perfeita com seus dispositivos - tudo pelo navegador."
     buttons:
       demo: "Experimentar Demo ao Vivo"
@@ -882,7 +882,7 @@ product_minions:
   features:
     # Dashboards BI
     bi_dashboards:
-      title: "Insights Inteligentes de Negócios ao Seu Alcance"
+      title: "Insights Inteligentes de Negócios ao seu Alcance"
       description: "Veja o desempenho do seu negócio com gráficos e relatórios fáceis de entender."
       benefits:
         - "Atualizações em tempo real conforme seus dados mudam"
@@ -969,7 +969,7 @@ product_minions:
   # Seção de Dispositivos
   devices:
     title: "Funciona em Todos os Seus Dispositivos"
-    phone: "Perfeito para Seu Celular"
+    phone: "Perfeito para seu Celular"
     tablet: "Ótimo em Tablets"
     computer: "Potência Total em Computadores"
     

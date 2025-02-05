@@ -97,7 +97,7 @@ services:
     title: "Aplicaciones Web y Soluciones de Software"
     description: "Eleva tu marca con aplicaciones web de vanguardia y soluciones de software avanzadas adaptadas para el éxito de tu negocio."
     form_label: "Seleccionar una Solución"
-    form_title: "Comienza Tu Viaje Digital"
+    form_title: "Comienza tu Viaje Digital"
     form_submit: "Empezar"
     form_options: 
       - "Aplicaciones Web Avanzadas"
@@ -163,7 +163,7 @@ services:
   ecommerce:
     title: "Soluciones de Comercio Electrónico"
     description: "Lanza y escala tu negocio en línea con soluciones white-label, sistemas de pago integrados y gestión automatizada de inventario."
-    form_title: "Comienza Tu Viaje en el E-Commerce"
+    form_title: "Comienza tu Viaje en el E-Commerce"
     form_label: "Selecciona un Servicio"
     form_submit: "Enviar Mensaje"
     form_options:
@@ -625,7 +625,7 @@ service_5:
 
 service_6:
   hero:
-    title: "Transforma Tu Negocio con Excelencia en E-Commerce"
+    title: "Transforma tu Negocio con Excelencia en E-Commerce"
     description: "Nuestras soluciones de E-Commerce se integran perfectamente con paneles de Business Intelligence, proporcionando información detallada sobre el comportamiento del cliente y las tendencias de ventas."
     buttons:
       request_demo: "Solicitar Demo"
@@ -689,7 +689,7 @@ service_6:
         cta: "Contáctanos"
   
   contact:
-    title: "Inicia Tu Viaje en el E-Commerce"
+    title: "Inicia tu Viaje en el E-Commerce"
     description: "Hablemos sobre cómo nuestras soluciones de e-commerce pueden impulsar tus operaciones."
     cta: "Agendar una Consulta de E-Commerce"
 
@@ -856,7 +856,7 @@ product_zigna:
         position: "Day Trader"
   
   demo:
-    title: "Comienza Tu Prueba Gratuita Hoy"
+    title: "Comienza tu Prueba Gratuita Hoy"
     subtitle: "Experimenta el poder de las recomendaciones de trading profesional sin riesgos durante 14 días."
     cta: "Acceder a Plataforma Demo"
 
@@ -864,7 +864,7 @@ product_minions:
   # Sección Hero
   hero:
     badge: "Plataforma Web Inteligente de Nivel Empresarial"
-    title: "Transforma Tu Negocio con Aplicaciones Web Inteligentes que Funcionan en Cualquier Lugar"
+    title: "Transforma tu Negocio con Aplicaciones Web Inteligentes que Funcionan en Cualquier Lugar"
     description: "Crea aplicaciones web potentes que funcionan como apps nativas, con paneles inteligentes, asistencia de IA y conexión perfecta con tus dispositivos, todo desde el navegador."
     buttons:
       demo: "Probar Demo en Vivo"
@@ -881,7 +881,7 @@ product_minions:
   features:
     # Paneles BI
     bi_dashboards:
-      title: "Información Inteligente de Negocios al Alcance de Tu Mano"
+      title: "Información Inteligente de Negocios al Alcance de tu Mano"
       description: "Consulta el rendimiento de tu negocio con gráficos y reportes fáciles de entender."
       benefits:
         - "Actualizaciones en vivo a medida que cambian tus datos"
