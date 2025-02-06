@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+    <!-- Background -->
+    <rect width="400" height="300" fill="#f1f5f9"/>
+    
+    <!-- Analytics Graph -->
+    <rect x="50" y="50" width="300" height="200" fill="#ffffff" rx="10" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))"/>
+    
+    <!-- Graph Lines -->
+    <path d="M70 220 L70 80 M70 220 L330 220" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Data Line -->
+    <path d="M70 200 C120 180, 150 100, 200 130 S280 60, 320 60" 
+          fill="none" stroke="#091C99" stroke-width="3"/>
+    
+    <!-- Data Points -->
+    <circle cx="170" cy="125" r="6" fill="#091C99"/>
+    <circle cx="220" cy="135" r="6" fill="#091C99"/>
+    <circle cx="285" cy="80" r="6" fill="#091C99"/>
+    
+    <!-- Stats -->
+    <rect x="70" y="225" width="80" height="20" fill="#d8e5f9" rx="4"/>
+    <rect x="160" y="225" width="80" height="20" fill="#d8e5f9" rx="4"/>
+    <rect x="250" y="225" width="80" height="20" fill="#d8e5f9" rx="4"/>
+</svg>

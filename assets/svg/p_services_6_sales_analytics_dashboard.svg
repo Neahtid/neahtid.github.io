@@ -1,0 +1,54 @@
+<svg viewBox="0 0 600 400"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Gradient definitions -->
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="chartGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" style="stop-color:#0d6efd;stop-opacity:0.1" />
+            <stop offset="100%" style="stop-color:#0d6efd;stop-opacity:0.3" />
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="600" height="400" fill="url(#bgGradient)" rx="8"/>
+
+    <!-- Grid lines -->
+    <g stroke="#dee2e6" stroke-width="1">
+        <line x1="50" y1="50" x2="550" y2="50"/>
+        <line x1="50" y1="150" x2="550" y2="150"/>
+        <line x1="50" y1="250" x2="550" y2="250"/>
+        <line x1="50" y1="350" x2="550" y2="350"/>
+    </g>
+
+    <!-- Sales Chart -->
+    <g transform="translate(50, 50)">
+        <path d="M0,250 L100,200 L200,220 L300,150 L400,100 L500,50" fill="none" stroke="#0d6efd" stroke-width="3"/>
+        <path d="M0,250 L100,200 L200,220 L300,150 L400,100 L500,50 L500,300 L0,300 Z" fill="url(#chartGradient)"/>
+    </g>
+
+    <!-- Data Points -->
+    <g fill="#0d6efd">
+        <circle cx="150" cy="250" r="6"/>
+        <circle cx="250" cy="270" r="6"/>
+        <circle cx="350" cy="200" r="6"/>
+        <circle cx="450" cy="150" r="6"/>
+        <circle cx="550" cy="100" r="6"/>
+    </g>
+
+    <!-- Stats Boxes -->
+    <g fill="#ffffff" stroke="#dee2e6">
+        <rect x="50" y="300" width="120" height="80" rx="4"/>
+        <rect x="190" y="300" width="120" height="80" rx="4"/>
+        <rect x="330" y="300" width="120" height="80" rx="4"/>
+    </g>
+
+    <!-- Icons -->
+    <g fill="#0d6efd">
+        <path d="M80,320 h60 v40 h-60 z"/>
+        <path d="M220,320 l30,20 l30,-20"/>
+        <circle cx="390" cy="340" r="15"/>
+    </g>
+</svg>
