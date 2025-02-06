@@ -1,6 +1,6 @@
 ---
 layout: post_sidebar
-title: Transforming Guest Experiences, The Rise of Smart Hospitality Solutions
+title: "Transforming Guest Experiences: The Rise of Smart Hospitality Solutions"
 cover: cover.jpg
 date: 2024-10-11 13:06:00
 categories: en posts
@@ -10,6 +10,8 @@ type: article
 <header class="entry-header">
 In today's hyper-connected world, the hospitality industry is undergoing a digital revolution. The integration of smart technology, automation, and voice assistants is reshaping how hotels, resorts, and other hospitality venues cater to guests, streamlining operations while delivering personalized and seamless experiences. This article delves into how these innovations are driving the future of smart hospitality.
 </header>
+
+<img src="/assets/blog/2024-10-11-transforming-guest-experience.png" width="100%" />
 
 ## The Smart Hotel Revolution
 
