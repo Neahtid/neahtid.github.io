@@ -240,10 +240,9 @@ const hasBeenRedirected = localStorage.getItem('hasBeenRedirected');
 const path = window.location.pathname;
 if (!hasBeenRedirected && path === "/") {
 	const userLanguage = navigator.language || navigator.userLanguage;
-	console.log(`${userLanguage} detected`);
+	console.log(`userLanguage: ${userLanguage} detected`);
 	let redirects = {
 		'pt': '/pt-br/',
-		'en': '/en/',
 		'es': '/es/'
 	}
 	let userLangDetected = userLanguage.substring(0, 2);
