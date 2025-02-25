@@ -2,6 +2,6 @@
   "menu": [
     { "title": "Comprar", "link": "/comprar/" },
     { "title": "Fele Conosco", "link": "/contact/" },
-    { "title": "Outras Opçoes", "link": "/options/" }
+    { "title": "Outras Opções", "link": "/options/" }
   ]
 }
