@@ -1,6 +1,18 @@
 global:
   tagline: English
+  chat_inwhatsapp: "Chat on WhatsApp"
   chat: "Hello%2C%20can%20we%20talk%20about%20the%20services%20of%20https%3A%2F%2Fwww.neahtid.com"
+  chat_welcome: "Hello, it would be a pleasure to assist you today to make your reservations, purchase, clarify any doubts and provide support. We are here to help you. Write us a message or select any of the following options:"
+  chat_title: "Chat Support"
+  chat_placeholder: "Type your message..."
+  chat_thankyou: "Thank you for your message. Our team will respond shortly."
+  chat_options:
+    - title: Know Services
+      link: /services/
+    - title: Know Products
+      link: /our-products/
+    - title: Contact Sales
+      link: /contact-us/
   company:
     name: "Neahtid"
     location: "Brasil"
