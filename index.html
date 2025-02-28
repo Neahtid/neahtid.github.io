@@ -14,6 +14,7 @@ permalink: /
     --secondary-color: #0A1F80;
     --accent-color: #2196F3;
     --text-color: #333;
+    --glow-color: rgba(33, 150, 243, 0.5);
   }
 
   /* Futuristic animations */
@@ -81,8 +82,11 @@ permalink: /
   .tech-circle {
     position: absolute;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--glow-color);
     animation: float 6s ease-in-out infinite;
+    backdrop-filter: blur(3px);
+    box-shadow: inset 0 0 20px var(--glow-color),
+                0 0 30px var(--glow-color);
   }
 
   .animated-hidden {
@@ -226,7 +230,7 @@ permalink: /
     </div>
     <!-- Animated background elements -->
     <div class="tech-circle" style="width:200px;height:200px;top:10%;left:5%"></div>
-    <div class="tech-circle" style="width:300px;height:300px;bottom:20%;right:10%"></div>
+    <div class="tech-circle" style="width:300px;height:300px;bottom:20%;right:30%"></div>
     <div class="tech-line" style="top:30%"></div>
     <div class="tech-line" style="bottom:40%"></div>
   </section>
@@ -426,7 +430,7 @@ permalink: /
             </div>
           </div>
         </div>
-        
+
         <!-- Jingo.store -->
         <div class="col-sm-6 col-md-4 animated-hidden">
           <div class="card product-card">

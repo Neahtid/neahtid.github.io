@@ -45,7 +45,7 @@ permalink: /blog/
     <!-- Sidebar (List of Posts) -->
     <div class="col-md-4 bg-light">
       <aside class="sidebar">
-        <h3>{% t pages.posts_recents %}</h3>
+        <h4 class="py-2 my-0">{% t pages.posts_recents %}</h4>
         <ul class="list-group">
           {%- assign posts = site.posts | sort: 'date' | reverse -%}
           {%- for post in posts -%}
