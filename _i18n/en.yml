@@ -213,7 +213,7 @@ products:
     description: "Get real-time stock trading recommendations from experienced traders through our subscription-based platform with advanced market analysis."
   minions_app:
     title: "Minions App"
-    description: "Explore our white-label Installable Web Application showcasing BI dashboards, secure authentication, data integration, and more."
+    description: "Explore our white-label Installable Web Application showcasing Chatbots, AI Automation, BI dashboards, secure authentication, data integration, and more."
 
 index:
   hero:

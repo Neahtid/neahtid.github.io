@@ -209,7 +209,7 @@ products:
     description: "Obtén recomendaciones de trading en tiempo real de traders experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
   minions_app:
     title: "Minions App"
-    description: "Explora nuestra Aplicación Web Instalable white-label que muestra paneles de BI, autenticación segura, integración de datos y más."
+    description: "Explora nuestra Aplicación Web Instalable white-label que muestra Chatbots, automatización con IA, paneles de BI, autenticación segura, integración de datos y más."
 
 index:
   hero:
