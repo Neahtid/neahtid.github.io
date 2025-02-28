@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="64 0 64 64" width="64" height="64">
+    <!-- Construction Icon -->
+    <circle cx="96" cy="32" r="30" fill="#f59e0b" opacity="0.1"/>
+    <path d="M81 42 L111 42 M86 27 L106 27 L96 17 Z" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <path d="M96 27 L96 42" stroke="#f59e0b" stroke-width="2"/>
+</svg>
