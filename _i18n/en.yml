@@ -35,7 +35,8 @@ langs:
   es: Español
 
 pages:
-  precents: "Recent Posts"
+  posts_recents: "Recent Posts"
+  posts_latest: "Latest Posts"
   modal_t1: "Schedule a"
   modal_t2: "Consultation"
   modal_select: "Select Solution"

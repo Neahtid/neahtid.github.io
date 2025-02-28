@@ -195,7 +195,32 @@ permalink: /
         <div class="col-lg-8 animated-hidden" id="hero-content">
           <h1 class="display-4 fw-bold mb-4">{% t index.hero.title %}</h1>
           <p class="lead mb-4">{% t index.hero.description %}</p>
-          <a href="#services" class="btn btn-light btn-lg px-4">{% t index.hero.cta_button %}</a>
+          <a href="#services" class="btn btn-light btn-lg px-4 mb-4">{% t index.hero.cta_button %}</a>
+        </div>
+        <div class="col-lg-4">
+          <div class="sidebar">
+            <h5>{% t pages.posts_latest %}</h5>
+            <ul class="list-group">
+            {%- assign posts = site.posts | sort: 'date' | reverse -%}
+            {%- for post in posts -%}
+            <li class="list-group-item">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title | escape }}
+                </a>
+                <br>
+                <small class="text-secondary">
+                {%- assign date_format = site.minima.date_format | default: "%a %-d-%b-%Y %I:%M %p" -%}
+                {%- assign mdate = post.date | date_to_xmlschema -%}
+                {% if site.lang == site.default_lang %}
+                {{ post.date |  default: "%a %-d-%b-%YY" | timeago }}
+                {% else %}
+                {{ mdate | date: date_format }}
+                {% endif %}
+                </small>
+            </li>
+            {%- endfor -%}
+            </ul>
+        </div>
         </div>
       </div>
     </div>
@@ -205,6 +230,9 @@ permalink: /
     <div class="tech-line" style="top:30%"></div>
     <div class="tech-line" style="bottom:40%"></div>
   </section>
+
+  
+
 
   <!-- Services Section -->
   <section id="services" class="py-5">

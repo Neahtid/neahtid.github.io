@@ -35,7 +35,8 @@ langs:
   es: Español
 
 pages:
-  precents: "Publicaciones Recientes"
+  posts_recents: "Publicaciones Recientes"
+  posts_latest: "Últimas Publicaciones"
   modal_t1: "Agenda una"
   modal_t2: "Consulta"
   modal_select: "Selecciona una Solución"
