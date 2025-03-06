@@ -33,17 +33,16 @@
   {% endfor %}
   {% endif %}
   <!-- Chat Button -->
-  <button class="chat-button" id="chatButton">
+  <!-- <button class="chat-button" id="chatButton">
     <i class="bi bi-chat-dots-fill" style="font-size: 24px;"></i>
-  </button>
+  </button> -->
   <!-- Chat Modal -->
-  <div class="chat-modal" id="chatModal">
+  <!-- <div class="chat-modal" id="chatModal">
     <div class="chat-header">
       <h5 class="m-0">{% t global.chat_title %}</h5>
       <button type="button" class="btn-close btn-close-white" id="closeChat" aria-label="Close"></button>
     </div>
     <div class="chat-body" id="chatBody">
-      <!-- Chat messages will appear here -->
     </div>
     <div class="chat-input-area">
       <input type="text" id="messageInput" class="form-control" placeholder="{% t global.chat_placeholder %}">
@@ -51,8 +50,23 @@
         <i class="bi bi-send-fill"></i>
       </button>
     </div>
-  </div>
+  </div> -->
   <script>
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '67c8c7715e08501c94ef8b93' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production', 
+          voice: { 
+            url: "https://runtime-api.voiceflow.com" 
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+/*
     $(document).ready(function () {
       // Function to generate a UUID of 15 characters
       function generateUUID(length) {
@@ -159,6 +173,7 @@
         }
       });
     });
+    */
   </script>
 </body>
 
