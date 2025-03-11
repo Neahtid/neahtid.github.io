@@ -10,7 +10,7 @@ global:
     - title: Conocer Servicios
       link: /services/
     - title: Conocer Productos
-      link: /our-products/
+      link: /our-customers/
     - title: Contactar Ventas
       link: /contact-us/
   company:
@@ -23,8 +23,8 @@ global:
   navbar_top:
     - title: Servicios
       link: /services/
-    - title: Productos
-      link: /our-products/
+    - title: Clientes
+      link: /our-customers/
     - title: Blog
       link: /blog/
     - title: Contacto
@@ -218,7 +218,7 @@ products:
     description: "Experimenta una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario."
   zigna_app:
     title: "Zigna.app"
-    description: "Obtén recomendaciones de trading en tiempo real de traders experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
+    description: "Obtén recomendaciones de trading en tiempo real de Inteligencia Artificial General y traders experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
   minions_app:
     title: "Minions App"
     description: "Explora nuestra Aplicación Web Instalable white-label que muestra Chatbots, automatización con IA, paneles de BI, autenticación segura, integración de datos y más."
@@ -464,6 +464,7 @@ service_3:
     subtitle: "Aumenta la eficiencia con chatbots y otras automatizaciones impulsadas por IA que transforman el servicio al cliente y optimizan las operaciones."
     buttons:
       get_started: "Comenzar Ahora"
+      chatbots: "Chatbots"
   carousel:
     item1:
       caption: "Chatbots y Asistentes de Voz con IA"

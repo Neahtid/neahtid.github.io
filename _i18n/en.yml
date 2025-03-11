@@ -10,7 +10,7 @@ global:
     - title: Know Services
       link: /services/
     - title: Know Products
-      link: /our-products/
+      link: /our-customers/
     - title: Contact Sales
       link: /contact-us/
   company:
@@ -23,8 +23,8 @@ global:
   navbar_top:
     - title: Services
       link: /services/
-    - title: Products
-      link: /our-products/
+    - title: Customers
+      link: /our-customers/
     - title: Blog
       link: /blog/
     - title: Contact Us
@@ -222,7 +222,7 @@ products:
     description: "Experience a fully-featured e-commerce solution with integrated payment methods, order tracking, and inventory management."
   zigna_app:
     title: "Zigna.app"
-    description: "Get real-time stock trading recommendations from experienced traders through our subscription-based platform with advanced market analysis."
+    description: "Get real-time stock trading recommendations from AI Generated /AGI and experienced traders through our subscription-based platform with advanced market analysis."
   minions_app:
     title: "Minions App"
     description: "Explore our white-label Installable Web Application showcasing Chatbots, AI Automation, BI dashboards, secure authentication, data integration, and more."
@@ -468,6 +468,7 @@ service_3:
     subtitle: "Boost efficiency with chatbots and other AI-powered automations that transforms customer service and streamlines operations."
     buttons:
       get_started: "Get Started"
+      chatbots: "Chatbots"
   carousel:
     item1:
       caption: "AI-Powered Chatbots and Voice Assistants"
