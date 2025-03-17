@@ -59,6 +59,9 @@ pages:
   know_our_services: "Know Our Services"
   our_products: "Our Products"
   work_with_us: "Work with Us"
+  demo_schedule: "Schedule Demo"
+  demo_ask: "Request Demo"
+  demo_ask_long: "Request a personalized demo"
   forms:
     name_placeholder: Your Name
     email_placeholder: Your Email

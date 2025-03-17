@@ -59,6 +59,9 @@ pages:
   know_our_services: "Conheça Nossos Serviços"
   our_products: "Nossos Produtos"
   work_with_us: "Trabalhe Conosco"
+  demo_schedule: "Agendar Demo"
+  demo_ask: "Solicitar demonstração"
+  demo_ask_long: "Solicite uma demonstração personalizada"
   forms:
     name_placeholder: Seu Nome
     email_placeholder: Seu E-mail

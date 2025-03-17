@@ -1,0 +1,486 @@
+---
+layout: page
+title: Customer Services and Sales Chatbots 
+permalink: /services/artificial-intelligence-and-automation/chatbots/
+description: Neahtid ofrece chatbots con IA avanzada para atención al cliente 24/7, automatización de ventas y soporte técnico. Mejora la experiencia de tus clientes con respuestas inmediatas y conversaciones naturales.
+keywords: chatbots, IA, inteligencia artificial, atención al cliente, automatización de ventas, soporte técnico, chatbot ventas, asistente virtual, bot conversacional, procesamiento lenguaje natural, customer service, chatbot 24/7
+ 
+custom_js:
+- /assets/js/custom/p_services_3_ai.js
+---
+
+<style>
+    :root {
+        --primary-color: #091C99;
+        --secondary-color: #0A84FF;
+        --light-color: #f8f9fa;
+        --dark-color: #212529;
+    }
+    
+    .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+    
+    .btn-primary:hover {
+        background-color: #070f66;
+        border-color: #070f66;
+    }
+    
+    .bg-primary {
+        background-color: var(--primary-color) !important;
+    }
+    
+    .text-primary {
+        color: var(--primary-color) !important;
+    }
+    
+    .hero-section {
+        position: relative;
+        background: linear-gradient(rgba(9, 28, 153, 0.8), rgba(9, 28, 153, 0.9)), url('/api/placeholder/1920/1080') center/cover no-repeat;
+        padding: 100px 0;
+        color: white;
+    }
+    
+    .feature-icon {
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
+    
+    .cta-section {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 80px 0;
+    }
+    
+    .testimonial-card {
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .floating-chat {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: var(--primary-color);
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+    
+    .floating-chat:hover {
+        transform: scale(1.1);
+    }
+    
+    .chatbot-demo {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Chat demo animation */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    .typing {
+        overflow: hidden;
+
+        animation: 
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+    }
+    
+
+ 
+</style>
+<!-- Structured Data (JSON-LD) for SEO -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{% t global.company.name %}",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/assets/img/neahtid-image.png",
+    "description": "Chatbots con IA avanzada para atención al cliente 24/7, automatización de ventas y soporte técnico.",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": ["Spanish", "English", "Portuguese"]
+    },
+    "sameAs": [
+        "https://www.facebook.com/neahtid",
+        "https://twitter.com/neahtid",
+        "https://www.linkedin.com/company/neahtid",
+        "https://www.instagram.com/neahtid"
+    ],
+    "offers": {
+        "@type": "Offer",
+        "description": "Chatbots con IA para soporte y ventas",
+        "url": "https://neahtid.com/servicios"
+    }
+}
+</script>
+
+
+<!-- Hero Section with Carousel -->
+<section id="inicio" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h1 class="display-4 fw-bold mb-4">Revoluciona tu atención al cliente con Chatbots IA</h1>
+                <p class="lead mb-4">Automatiza tu soporte y potencia tus ventas con chatbots inteligentes que entienden a tus clientes y resuelven sus necesidades 24/7.</p>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-light btn-lg rounded-pill px-4 me-3" data-bs-toggle="modal" data-bs-target="#contactModal"
+data-bs-consultation="AI">{% t pages.demo_schedule %}</button>
+                    <a href="#beneficios" class="btn btn-outline-light btn-lg rounded-pill px-4">Conoce más</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <i class="fas fa-clock"></i>
+                            <h3>Atención 24/7</h3>
+                            <p>Ofrece soporte continuo a tus clientes sin importar la hora del día o la ubicación geográfica.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Incrementa tus ventas</h3>
+                            <p>Nuestros chatbots pueden identificar oportunidades de venta y guiar a los clientes hacia la conversión.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fas fa-comments"></i>
+                            <h3>Conversaciones naturales</h3>
+                            <p>La IA avanzada permite mantener conversaciones fluidas y naturales que mejoran la experiencia del usuario.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Respuestas inmediatas</h3>
+                            <p>Reduce los tiempos de espera con respuestas instantáneas a las consultas más frecuentes.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section id="beneficios" class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase">Por qué elegirnos</h6>
+            <h2 class="display-5 fw-bold">Beneficios de nuestros Chatbots IA</h2>
+            <p class="lead">Mejora la experiencia de tus clientes y optimiza tus recursos con nuestra tecnología de vanguardia</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-box bg-white">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4 class="mb-3">IA Avanzada</h4>
+                    <p>Nuestros chatbots utilizan los modelos de lenguaje más avanzados para entender y responder a las consultas de manera natural.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-box bg-white">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4 class="mb-3">Fácil integración</h4>
+                    <p>Integración sencilla con tu sitio web, Facebook, WhatsApp, y otras plataformas de comunicación.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-box bg-white">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4 class="mb-3">Aprendizaje continuo</h4>
+                    <p>Nuestros chatbots aprenden de cada interacción, mejorando constantemente sus respuestas y eficacia.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-box bg-white">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h4 class="mb-3">Analítica detallada</h4>
+                    <p>Obtén insights valiosos sobre las conversaciones, comportamiento del usuario y oportunidades de mejora.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-box bg-white">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="mb-3">Personalización avanzada</h4>
+                    <p>Adapta tu chatbot a tu marca, sector y necesidades específicas de tus clientes.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-box bg-white">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h4 class="mb-3">Reducción de costos</h4>
+                    <p>Disminuye tus gastos operativos al automatizar tareas repetitivas y optimizar recursos humanos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Demo Section -->
+<section id="demo" class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h6 class="text-primary fw-bold text-uppercase">Experiencia inmersiva</h6>
+                <h2 class="display-5 fw-bold mb-4">Observa cómo nuestros Chatbots IA transforman la interacción con tus clientes</h2>
+                <p class="lead mb-4">Un asistente virtual que entiende necesidades, responde preguntas complejas y guía conversaciones hacia objetivos comerciales concretos.</p>
+                <div class="mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary rounded-circle p-2 me-3">
+                            <i class="fas fa-check text-white"></i>
+                        </div>
+                        <p class="mb-0">Respuestas precisas adaptadas a tu negocio</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary rounded-circle p-2 me-3">
+                            <i class="fas fa-check text-white"></i>
+                        </div>
+                        <p class="mb-0">Transferencia inteligente a agentes humanos cuando es necesario</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary rounded-circle p-2 me-3">
+                            <i class="fas fa-check text-white"></i>
+                        </div>
+                        <p class="mb-0">Personalización de conversaciones según el perfil del cliente</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="AI">
+                    {% t pages.demo_ask_long %}
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <div class="chatbot-demo bg-white">
+                    <div class="bg-primary text-white p-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-robot me-2"></i>
+                            <h5 class="mb-0">Neahtid Bot</h5>
+                        </div>
+                    </div>
+                    <div class="p-4" style="height: 400px; overflow-y: auto;">
+                        <div class="d-flex mb-3">
+                            <div class="bg-info rounded-circle p-2 me-2 align-self-start">
+                                <i class="fas fa-robot text-white"></i>
+                            </div>
+                            <div class="bg-light p-3 rounded-3 shadow-sm">
+                                <p class="mb-0">¡Hola! Soy el asistente virtual de Neahtid IT. ¿En qué puedo ayudarte hoy?</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mb-3">
+                            <div class="bg-info bg-opacity-10 p-3 rounded-3 shadow-sm">
+                                <p class="mb-0">Hola, estoy interesado en implementar un chatbot para mi tienda online</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="bg-info rounded-circle p-2 me-2 align-self-start">
+                                <i class="fas fa-robot text-white"></i>
+                            </div>
+                            <div class="bg-light p-3 rounded-3 shadow-sm">
+                                <p class="mb-0 typing">¡Excelente! Nuestros chatbots para e-commerce pueden ayudarte a aumentar ventas y mejorar el servicio al cliente. ¿Te gustaría conocer nuestros planes o tienes alguna pregunta específica?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 border-top">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Escribe tu mensaje...">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="funcionalidades" class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase">Características</h6>
+            <h2 class="display-5 fw-bold">Funcionalidades avanzadas</h2>
+            <p class="lead">Nuestros chatbots están equipados con tecnología de punta para maximizar resultados</p>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                <img src="/assets/img/chatbot_concept.jpg" alt="Funcionalidades del chatbot" class="img-fluid rounded-3 shadow">
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="accordion" id="accordionFeatures">
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-brain text-primary me-2"></i> Procesamiento de Lenguaje Natural
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFeatures">
+                            <div class="accordion-body">
+                                Nuestros chatbots utilizan tecnología avanzada de NLP para entender el contexto, intención y sentimiento de cada mensaje, permitiendo conversaciones más naturales y humanas.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fas fa-exchange-alt text-primary me-2"></i> Integración Omnicanal
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFeatures">
+                            <div class="accordion-body">
+                                Integra tu chatbot en múltiples plataformas: tu sitio web, aplicaciones móviles, WhatsApp, Facebook Messenger, Instagram y más, manteniendo conversaciones coherentes a través de todos los canales.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fas fa-shopping-cart text-primary me-2"></i> Automatización de Ventas
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFeatures">
+                            <div class="accordion-body">
+                                Nuestros chatbots pueden gestionar el proceso de ventas completo: presentar productos, responder preguntas, ofrecer recomendaciones personalizadas y facilitar el proceso de compra.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fas fa-chart-bar text-primary me-2"></i> Análisis y Reportes
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFeatures">
+                            <div class="accordion-body">
+                                Panel de control intuitivo con métricas clave sobre el rendimiento de tu chatbot, patrones de conversación, temas frecuentes y oportunidades de mejora para optimizar continuamente.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonios" class="py-5">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase">Casos de éxito</h6>
+            <h2 class="display-5 fw-bold">Lo que dicen nuestros clientes</h2>
+            <p class="lead">Empresas que están transformado su negocio con nuestros chatbots IA</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card bg-white">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="/api/placeholder/60/60" alt="Avatar" class="rounded-circle me-3">
+                        <div>
+                            <h5 class="mb-0">Zigna</h5>
+                            <p class="text-muted mb-0">Trading Buy/Sell Signals</p>
+                        </div>
+                    </div>
+                    <p class="mb-3">"Implementación de canal de atención al trader y ventas de señales de Compra y Venta"</p>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card bg-white">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="/api/placeholder/60/60" alt="Avatar" class="rounded-circle me-3">
+                        <div>
+                            <h5 class="mb-0">PortaJoiaJeri</h5>
+                            <p class="text-muted mb-0">Soporte y Canal de Ventas Online</p>
+                        </div>
+                    </div>
+                    <p class="mb-3">"Implementamos el chatbot para reducir la carga del equipo de ventas online. Ahora resuelve el 50% de las consultas sin intervención humana, lo que nos ha permitido mejorar y reentrenar los modelos continuamente."</p>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card bg-white">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="/api/placeholder/60/60" alt="Avatar" class="rounded-circle me-3">
+                        <div>
+                            <h5 class="mb-0">LivingWorkspace</h5>
+                            <p class="text-muted mb-0">Reservas Espacios de Trabajo</p>
+                        </div>
+                    </div>
+                    <p class="mb-3">"Sin vacantes disponibles temporalmente. La calidad de concretar reservas nos tiene sin disponibilidad temporalmente. Esto ha elevado enormemente la experiencia del cliente."</p>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section" id="contacto">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2 class="display-5 fw-bold mb-3">¿Listo para transformar tu negocio?</h2>
+                <p class="lead mb-0">Implementa nuestro chatbot IA en menos de 48 horas y comienza a ver resultados inmediatos.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="#" class="btn btn-light btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="AI">
+                    {% t pages.demo_ask %}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
