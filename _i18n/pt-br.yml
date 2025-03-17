@@ -1096,3 +1096,92 @@ research_programs:
     title: "Iniciar uma Colaboração de Pesquisa"
     description: "Interessado em se tornar nosso parceiro? Preencha o formulário abaixo e nossa equipe de pesquisa entrará em contato."
     cta: "Enviar Proposta de Pesquisa"
+
+chatbots:
+  # Hero Section
+  hero_title: "Revolucione seu atendimento ao cliente com Chatbots IA"
+  hero_description: "Automatize seu suporte e potencialize suas vendas com chatbots inteligentes que entendem seus clientes e resolvem suas necessidades 24/7."
+  hero_btn_more: "Saiba mais"
+  
+  # Carousel items
+  carousel_item1_title: "Atendimento 24/7"
+  carousel_item1_description: "Ofereça suporte contínuo aos seus clientes, independentemente da hora do dia ou localização geográfica."
+  carousel_item2_title: "Aumente suas vendas"
+  carousel_item2_description: "Nossos chatbots podem identificar oportunidades de venda e guiar os clientes em direção à conversão."
+  carousel_item3_title: "Conversas naturais"
+  carousel_item3_description: "A IA avançada permite manter conversas fluidas e naturais que melhoram a experiência do usuário."
+  carousel_item4_title: "Respostas imediatas"
+  carousel_item4_description: "Reduza os tempos de espera com respostas instantâneas às consultas mais frequentes."
+  carousel_prev: "Anterior"
+  carousel_next: "Próximo"
+  
+  # Benefits Section
+  benefits_subtitle: "Por que nos escolher"
+  benefits_title: "Benefícios dos nossos Chatbots IA"
+  benefits_description: "Melhore a experiência dos seus clientes e otimize seus recursos com nossa tecnologia de ponta"
+  
+  # Feature Boxes
+  feature1_title: "IA Avançada"
+  feature1_description: "Nossos chatbots utilizam os modelos de linguagem mais avançados para entender e responder às consultas de maneira natural."
+  feature2_title: "Fácil integração"
+  feature2_description: "Integração simples com seu site, Facebook, WhatsApp e outras plataformas de comunicação."
+  feature3_title: "Aprendizado contínuo"
+  feature3_description: "Nossos chatbots aprendem com cada interação, melhorando constantemente suas respostas e eficácia."
+  feature4_title: "Análise detalhada"
+  feature4_description: "Obtenha insights valiosos sobre conversas, comportamento do usuário e oportunidades de melhoria."
+  feature5_title: "Personalização avançada"
+  feature5_description: "Adapte seu chatbot à sua marca, setor e necessidades específicas dos seus clientes."
+  feature6_title: "Redução de custos"
+  feature6_description: "Diminua seus gastos operacionais ao automatizar tarefas repetitivas e otimizar recursos humanos."
+  
+  # Demo Section
+  demo_subtitle: "Experiência imersiva"
+  demo_title: "Observe como nossos Chatbots IA transformam a interação com seus clientes"
+  demo_description: "Um assistente virtual que entende necessidades, responde perguntas complexas e orienta conversas para objetivos comerciais concretos."
+  demo_feature1: "Respostas precisas adaptadas ao seu negócio"
+  demo_feature2: "Transferência inteligente para agentes humanos quando necessário"
+  demo_feature3: "Personalização de conversas segundo o perfil do cliente"
+  
+  # Chatbot Demo
+  chatbot_name: "Neahtid Bot"
+  chatbot_greeting: "Olá! Sou o assistente virtual da Neahtid IT. Como posso ajudá-lo hoje?"
+  chatbot_user_message: "Olá, estou interessado em implementar um chatbot para minha loja online"
+  chatbot_response: "Excelente! Nossos chatbots para e-commerce podem ajudá-lo a aumentar vendas e melhorar o atendimento ao cliente. Gostaria de conhecer nossos planos ou tem alguma pergunta específica?"
+  chatbot_input_placeholder: "Escreva sua mensagem..."
+  
+  # Features Section
+  features_subtitle: "Características"
+  features_title: "Funcionalidades avançadas"
+  features_description: "Nossos chatbots estão equipados com tecnologia de ponta para maximizar resultados"
+  features_img_alt: "Funcionalidades do chatbot"
+  
+  # Accordion Features
+  accordion1_title: "Processamento de Linguagem Natural"
+  accordion1_content: "Nossos chatbots utilizam tecnologia avançada de PLN para entender o contexto, intenção e sentimento de cada mensagem, permitindo conversas mais naturais e humanas."
+  accordion2_title: "Integração Omnichannel"
+  accordion2_content: "Integre seu chatbot em múltiplas plataformas: seu site, aplicativos móveis, WhatsApp, Facebook Messenger, Instagram e mais, mantendo conversas coerentes através de todos os canais."
+  accordion3_title: "Automatização de Vendas"
+  accordion3_content: "Nossos chatbots podem gerenciar o processo de vendas completo: apresentar produtos, responder perguntas, oferecer recomendações personalizadas e facilitar o processo de compra."
+  accordion4_title: "Análise e Relatórios"
+  accordion4_content: "Painel de controle intuitivo com métricas-chave sobre o desempenho do seu chatbot, padrões de conversa, temas frequentes e oportunidades de melhoria para otimizar continuamente."
+  
+  # Testimonials Section
+  testimonials_subtitle: "Casos de sucesso"
+  testimonials_title: "O que dizem nossos clientes"
+  testimonials_description: "Empresas que estão transformando seu negócio com nossos chatbots IA"
+  
+  # Testimonial Cards
+  testimonial1_name: "Zigna"
+  testimonial1_company: "Trading Buy/Sell Signals"
+  testimonial1_text: "\"Implementação de canal de atendimento ao trader e vendas de sinais de Compra e Venda\""
+  testimonial2_name: "PortaJoiaJeri"
+  testimonial2_company: "Suporte e Canal de Vendas Online"
+  testimonial2_text: "\"Implementamos o chatbot para reduzir a carga da equipe de vendas online. Agora resolve 50% das consultas sem intervenção humana, o que nos permitiu melhorar e retreinar os modelos continuamente.\""
+  testimonial3_name: "LivingWorkspace"
+  testimonial3_company: "Reservas de Espaços de Trabalho"
+  testimonial3_text: "\"Sem vagas disponíveis temporariamente. A qualidade de concretizar reservas nos deixou sem disponibilidade temporariamente. Isso elevou enormemente a experiência do cliente.\""
+  avatar_alt: "Avatar"
+  
+  # CTA Section
+  cta_title: "Pronto para transformar seu negócio?"
+  cta_description: "Implemente nosso chatbot IA em menos de 48 horas e comece a ver resultados imediatos."
