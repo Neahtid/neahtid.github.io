@@ -71,9 +71,9 @@ const consultationOptions = {
 			'Other'
 		]
 	},
-	products: {
-		title: 'Request a Demo',
-		label: 'Select a Product',
+	customers: {
+		title: 'Book a Demo',
+		label: 'Select a Demo',
 		submit: 'Submit',
 		options: [
 			'jingo.store',
@@ -177,10 +177,10 @@ if (contactModal) {
 	consultationOptions.eCommerce.submit = translations.services.ecommerce.form_submit || consultationOptions.eCommerce.submit;
 	consultationOptions.eCommerce.options = translations.services.ecommerce.form_options || consultationOptions.eCommerce.options;
 	// products
-	consultationOptions.products.title = translations.products.form_title || consultationOptions.products.title;
-	consultationOptions.products.label = translations.products.form_label || consultationOptions.products.label;
-	consultationOptions.products.submit = translations.products.form_submit || consultationOptions.products.submit;
-	consultationOptions.products.options = translations.products.form_options || consultationOptions.products.options;
+	consultationOptions.customers.title = translations.customers.form_title || consultationOptions.customers.title;
+	consultationOptions.customers.label = translations.customers.form_label || consultationOptions.customers.label;
+	consultationOptions.customers.submit = translations.customers.form_submit || consultationOptions.customers.submit;
+	consultationOptions.customers.options = translations.customers.form_options || consultationOptions.customers.options;
 	// research_programs
 	consultationOptions.research_programs.title = translations.services.research_programs.form_title || consultationOptions.research_programs.title;
 	consultationOptions.research_programs.label = translations.services.research_programs.form_label || consultationOptions.research_programs.label;

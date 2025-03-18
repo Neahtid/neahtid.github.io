@@ -199,16 +199,16 @@ services:
       - "IA en Finanzas"
       - "Energía Sostenible"
       - "Otro"
-products:
+customers:
   hero:
-    title: "Experimenta Nuestros Productos de Demostración"
-    description: "Descubre el poder de nuestras soluciones empresariales a través de demostraciones interactivas"
-    cta_button: "Explorar Demos"
-  title: "Nuestros Productos de Demostración"
-  ready: "¿Listo para Saber Más?"
+    title: "Nuestras Historias de Éxito"
+    description: "Descubre cómo las soluciones de IA Chatbots y Automatización de Neahtid están transformando empresas en todas las industrias."
+    cta_button: "Conoce Nuestros Clientes Destacados"
+  title: "Clientes Destacados"
+  ready: "¿Listo para Aprender Más?"
   ready_description: "Contáctanos para una demostración personalizada de nuestros productos"
-  ready_button: "Solicitar una Demostración"
-  form_title: "Solicitar una Demo"
+  ready_button: "Solicitar Demo"
+  form_title: "Solicitar una Demostración"
   form_label: "Seleccionar un Producto"
   form_submit: "Enviar"
   form_options:
@@ -221,10 +221,10 @@ products:
     description: "Experimenta una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario."
   zigna_app:
     title: "Zigna.app"
-    description: "Obtén recomendaciones de trading en tiempo real de Inteligencia Artificial General y traders experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
+    description: "Recomendaciones de trading de acciones en tiempo real generadas por IA/AGI y comerciantes experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
   minions_app:
     title: "Minions App"
-    description: "Explora nuestra Aplicación Web Instalable white-label que muestra Chatbots, automatización con IA, paneles de BI, autenticación segura, integración de datos y más."
+    description: "Aplicación Web de marca blanca instalable que muestra Chatbots, Automatización con IA, paneles de BI, autenticación segura, integración de datos y más."
 
 index:
   hero:
@@ -261,7 +261,7 @@ index:
   products:
     title: "Nuestros Productos"
     buttons:
-      demo: "Demo en Vivo"
+      demo: "Agedar Demo"
       learn_more: "Más Información"
 
   cutting_edge:

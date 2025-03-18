@@ -200,16 +200,16 @@ services:
       - "Energia Sustentável"
       - "Outro"
 
-products:
+customers:
   hero:
-    title: "Experimente Nossos Produtos de Demonstração"
-    description: "Descubra o poder das nossas soluções de nível empresarial por meio de demonstrações interativas"
-    cta_button: "Explorar Demos"
-  title: "Nossos Produtos de Demonstração"
+    title: "Nossas Histórias de Sucesso"
+    description: "Descubra como as soluções de Chatbots de IA e Automação da Neahtid estão transformando empresas em diversos setores."
+    cta_button: "Conheça Nossos Clientes em Destaque"
+  title: "Clientes em Destaque"
   ready: "Pronto para Saber Mais?"
-  ready_description: "Entre em contato conosco para uma demonstração personalizada de nossos produtos"
-  ready_button: "Solicitar Demonstração"
-  form_title: "Solicite uma Demonstração"
+  ready_description: "Entre em contato para uma demonstração personalizada de nossos produtos"
+  ready_button: "Solicitar Demo"
+  form_title: "Solicitar uma Demonstração"
   form_label: "Selecione um Produto"
   form_submit: "Enviar"
   form_options:
@@ -219,13 +219,13 @@ products:
     - "Outro"
   jingo_store:
     title: "Jingo.store"
-    description: "Experimente uma solução de e-commerce completa com métodos de pagamento integrados, rastreamento de pedidos e gestão de estoque."
+    description: "Experimente uma solução de e-commerce completa com métodos de pagamento integrados, rastreamento de pedidos e gerenciamento de estoque."
   zigna_app:
     title: "Zigna.app"
-    description: "Obtenha recomendações de negociação de ações em tempo real de AI, AGI e traders experientes através de nossa plataforma por assinatura com análise avançada de mercado."
+    description: "Recomendações de negociação de ações em tempo real geradas por IA/AGI e traders experientes através da nossa plataforma por assinatura com análise avançada de mercado."
   minions_app:
     title: "Minions App"
-    description: "Explore nossa Aplicação Web Instalável white-label apresentando Chatbots, automação de IA, painéis de BI, autenticação segura, integração de dados e muito mais."
+    description: "Aplicativo Web white-label instalável apresentando Chatbots, Automação com IA, painéis de BI, autenticação segura, integração de dados e muito mais."
 
 index:
   hero:
@@ -262,7 +262,7 @@ index:
   products:
     title: "Nossos Produtos"
     buttons:
-      demo: "Demo ao Vivo"
+      demo: "Agende uma Demo"
       learn_more: "Saiba Mais"
 
   cutting_edge:

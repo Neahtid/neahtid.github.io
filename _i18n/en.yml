@@ -203,12 +203,12 @@ services:
       - "Sustainable Energy"
       - "Other"
 
-products:
+customers:
   hero:
-    title: "Experience Our Demo Products"
-    description: "Discover the power of our enterprise-grade solutions through interactive demos"
-    cta_button: "Explore Demos"
-  title: "Our Demo Products"
+    title: "Our Success Stories"
+    description: "Discover how Neahtid's AI Chatbots and Automation solutions are transforming businesses across industries."
+    cta_button: "Know Our Featured Customers"
+  title: "Featured Customers"
   ready: "Ready to Learn More?"
   ready_description: "Contact us for a personalized demo of our products"
   ready_button: "Request Demo"
@@ -225,10 +225,10 @@ products:
     description: "Experience a fully-featured e-commerce solution with integrated payment methods, order tracking, and inventory management."
   zigna_app:
     title: "Zigna.app"
-    description: "Get real-time stock trading recommendations from AI Generated /AGI and experienced traders through our subscription-based platform with advanced market analysis."
+    description: "Real-time stock trading recommendations from AI Generated /AGI and experienced traders through our subscription-based platform with advanced market analysis."
   minions_app:
     title: "Minions App"
-    description: "Explore our white-label Installable Web Application showcasing Chatbots, AI Automation, BI dashboards, secure authentication, data integration, and more."
+    description: "Installable white-label Web Application showcasing Chatbots, AI Automation, BI dashboards, secure authentication, data integration, and more."
 
 index:
   hero:
@@ -265,7 +265,7 @@ index:
   products:
     title: "Our Products"
     buttons:
-      demo: "Live Demo"
+      demo: "Book a Demo"
       learn_more: "Learn More"
 
   cutting_edge:
