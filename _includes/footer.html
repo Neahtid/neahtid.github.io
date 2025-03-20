@@ -59,6 +59,17 @@
           {% endif %}
           <ul class="list-group list-group-flush">
             <li
+              class="list-group-item p-0 {% if page.url == '/services/artificial-intelligence-and-automation/chatbots/' %}active{% endif %}">
+              <a href="{{ prefix }}/services/artificial-intelligence-and-automation/chatbots/"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>{% t chatbots.title %}</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+
+            <li
               class="list-group-item p-0 {% if page.url == '/services/web-applications-and-software-solutions/' %}active{% endif %}">
               <a href="{{ prefix }}/services/web-applications-and-software-solutions/"
                 class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">

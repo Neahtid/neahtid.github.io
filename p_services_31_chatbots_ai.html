@@ -417,63 +417,25 @@ data-bs-consultation="AI">{% t pages.demo_schedule %}</button>
             <p class="lead">{% t chatbots.testimonials_description %}</p>
         </div>
         <div class="row g-4">
+            {% for cust in site.translations[site.lang].customers.customer_list %}
+
+            {% if cust.ourvalue != "" and cust.ourvalue != nil %}
             <div class="col-md-6 col-lg-4">
                 <div class="testimonial-card bg-white h-100">
                     <div class="d-flex align-items-center mb-4">
-                        <img src="/assets/img/icon_zigna_192x192.png" width="100" alt="{% t chatbots.avatar_alt %}" class="rounded-circle me-3">
+                        <img src="{{ cust.logo }}" width="100" alt="{% t chatbots.avatar_alt %}" class="rounded-circle me-3">
                         <div>
-                            <h5 class="mb-0">{% t chatbots.testimonial1_name %}</h5>
-                            <p class="text-muted mb-0">{% t chatbots.testimonial1_company %}</p>
+                            <h5 class="mb-0">{{ cust.name }}</h5>
+                            <p class="text-muted mb-0">{{ cust.business }}</p>
                         </div>
                     </div>
-                    <p class="mb-3">{% t chatbots.testimonial1_text %}</p>
-                    <div class="text-warning">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
+                    <p class="mb-3">{{ cust.ourvalue }}</p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="testimonial-card bg-white h-100">
-                    <div class="d-flex align-items-center mb-4">
-                        <img src="/assets/img/icon_portajoiajeri.jpg" width="100" alt="{% t chatbots.avatar_alt %}" class="rounded-circle me-3">
-                        <div>
-                            <h5 class="mb-0">{% t chatbots.testimonial2_name %}</h5>
-                            <p class="text-muted mb-0">{% t chatbots.testimonial2_company %}</p>
-                        </div>
-                    </div>
-                    <p class="mb-3">{% t chatbots.testimonial2_text %}</p>
-                    <div class="text-warning">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="testimonial-card bg-white h-100">
-                    <div class="d-flex align-items-center mb-4">
-                        <img src="/assets/img/icon_livingorkspace-192x192.png" width="100" alt="{% t chatbots.avatar_alt %}" class="rounded-circle me-3">
-                        <div>
-                            <h5 class="mb-0">{% t chatbots.testimonial3_name %}</h5>
-                            <p class="text-muted mb-0">{% t chatbots.testimonial3_company %}</p>
-                        </div>
-                    </div>
-                    <p class="mb-3">{% t chatbots.testimonial3_text %}</p>
-                    <div class="text-warning">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </div>
+            {% endif %}
+            
+            {% endfor %}
+
         </div>
     </div>
 </section>

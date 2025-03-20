@@ -57,7 +57,7 @@ pages:
   r_and_d: "I+D"
   research_programs: "Programas de Investigación"
   know_our_services: "Conoce Nuestros Servicios"
-  our_products: "Nuestros Productos"
+  our_customers: "Nuestros Clientes"
   work_with_us: "Trabaja con Nosotros"
   demo_schedule: "Agendar una Demo"
   demo_ask: "Solicitar Demostración"
@@ -213,19 +213,48 @@ customers:
   form_label: "Seleccionar un Producto"
   form_submit: "Enviar"
   form_options:
-    - "jingo.store"
-    - "zigna.app"
+    - "Jingo Store"
+    - "Zigna App"
+    - "Porta Joia Jeri"
+    - "Living Workspace"
     - "Minions App"
     - "Otro"
-  jingo_store:
-    title: "Jingo.store"
-    description: "Experimenta una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario."
-  zigna_app:
-    title: "Zigna.app"
-    description: "Recomendaciones de trading de acciones en tiempo real generadas por IA/AGI y comerciantes experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
-  minions_app:
-    title: "Minions App"
-    description: "Aplicación Web de marca blanca instalable que muestra Chatbots, Automatización con IA, paneles de BI, autenticación segura, integración de datos y más."
+  customer_list:
+    - name: "Jingo Store"
+      logo: "/assets/img/icon_jingo_192x192.png"
+      site: "https://jingo.store"
+      link: "/customers/jingo-store"
+      business: "Comercio electrónico con ventas y automatizaciones de IA"
+      description: "Experimente una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario"
+      ourvalue: 
+    - name: "Zigna App"
+      logo: "/assets/img/icon_zigna_192x192.png"
+      site: "https://zigna.app"
+      link: "/customers/zigna-app"
+      business: "Señales de compra/venta para trading"
+      description: "Recomendaciones de trading de acciones en tiempo real generadas por IA (Inteligencia Artificial Global) y operadores experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
+      ourvalue: "\"Implementación de un canal de servicio para operadores y venta de señales de compra y venta.\""
+    - name: "PortaJoiaJeri"
+      logo: "/assets/img/icon_portajoiajeri.jpg"
+      link:
+      site: "https://www.instagram.com/portajoiajeri/"
+      business: "Soporte y canal de ventas online"
+      description: "Joyería que ha logrado llegar a clientes online a través de nuestras soluciones de comercio electrónico"
+      ourvalue: "\"Implementamos el chatbot para reducir la carga de trabajo del equipo de ventas online. Ahora resuelve el 50 % de las consultas sin intervención humana, lo que nos ha permitido mejorar y capacitar continuamente a los modelos.\""
+    - name: "LivingWorkspace"
+      logo: "/assets/img/icon_livingorkspace-192x192.png"
+      site: "https://livingworkspace.neahtid.com"
+      link:
+      business: "Reservas de espacios de trabajo"
+      description: "Espacio de trabajo ininterrumpido con privacidad, seguridad y comodidad para freelancers, estudiantes, startups y teletrabajadores."
+      ourvalue: "\"Temporalmente no hay plazas disponibles. La calidad de la confirmación de reservas nos ha dejado temporalmente sin disponibilidad. Esto ha mejorado enormemente la experiencia del cliente."
+    - name: "Minions App"
+      logo:
+      site: "https://minions.neahtid.com"
+      link: "/customers/pwa-demo"
+      business: "Aplicación de demostración"
+      description: "Aplicación web instalable de marca blanca que incluye chatbots, automatización de IA, paneles de inteligencia empresarial (BI), autenticación segura, integración de datos y mucho más."
+      ourvalue: 
 
 index:
   hero:
@@ -713,6 +742,9 @@ service_6:
     cta: "Agendar una Consulta de E-Commerce"
 
 product_jingo:
+  title: "Jingo Store"
+  description: "Experimenta una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario."
+  # Sección Hero
   hero:
     title: "Demostración de Tienda White Label"
     description: "Experimenta una solución de comercio electrónico completa con todo lo que necesitas para comenzar a vender en línea. Desarrollada como una Aplicación Web Instalable para un rendimiento y experiencia de usuario óptimos."
@@ -776,6 +808,9 @@ product_jingo:
     button: "Iniciar Tienda Demo"
 
 product_zigna:
+  title: "Zigna App"
+  description: "Recomendaciones de trading de acciones en tiempo real generadas por IA/AGI y comerciantes experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
+  # Sección Hero
   hero:
     title: "Recomendaciones Expertas para el Trading de Acciones"
     subtitle: "Obtén información de trading en tiempo real de traders profesionales. Toma decisiones informadas con nuestro avanzado análisis de mercado y motor de recomendaciones."
@@ -880,6 +915,8 @@ product_zigna:
     cta: "Acceder a Plataforma Demo"
 
 product_minions:
+  title: "Minions App"
+  description: "Aplicación Web de marca blanca instalable que muestra Chatbots, Automatización con IA, paneles de BI, autenticación segura, integración de datos y más."
   # Sección Hero
   hero:
     badge: "Plataforma Web Inteligente de Nivel Empresarial"
@@ -1098,6 +1135,7 @@ research_programs:
     cta: "Enviar Propuesta de Investigación"
 
 chatbots:
+  title: "Chatbots y asistentes de voz con IA"
   # Hero Section
   hero_title: "Revoluciona tu atención al cliente con Chatbots IA"
   hero_description: "Automatiza tu soporte y potencia tus ventas con chatbots inteligentes que entienden a tus clientes y resuelven sus necesidades 24/7."
@@ -1167,7 +1205,7 @@ chatbots:
   
   # Testimonials Section
   testimonials_subtitle: "Casos de éxito"
-  testimonials_title: "Lo que dicen nuestros clientes"
+  testimonials_title: "Lo que nuestros clientes han conseguido"
   testimonials_description: "Empresas que están transformado su negocio con nuestros chatbots IA"
   
   # Testimonial Cards

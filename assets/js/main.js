@@ -77,8 +77,10 @@ const consultationOptions = {
 		label: 'Select a Demo',
 		submit: 'Submit',
 		options: [
-			'jingo.store',
-			'zigna.app',
+			'Jingo Store',
+			'Zigna App',
+			'Porta Joia Jeri',
+			'Living Workspace',
 			'Minions App',
 			'Other'
 		]
