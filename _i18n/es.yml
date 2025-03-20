@@ -59,7 +59,7 @@ pages:
   know_our_services: "Conoce Nuestros Servicios"
   our_products: "Nuestros Productos"
   work_with_us: "Trabaja con Nosotros"
-  demo_schedule: "Agendar Demo"
+  demo_schedule: "Agendar una Demo"
   demo_ask: "Solicitar Demostración"
   demo_ask_long: "Solicitar una demostración personalizada"
   forms:
@@ -146,6 +146,7 @@ services:
     form_label: "Selecciona una Solución"
     form_submit: "Agendar Demostración"
     form_options:
+      - "Chatbots impulsados ​​por IA"
       - "Asistentes Virtuales con IA"
       - "Automatización Inteligente para Empresas"
       - "Mantenimiento Predictivo con Inteligencia Artificial"

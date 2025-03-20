@@ -25,6 +25,7 @@ const consultationOptions = {
 		label: 'Select a Solution',
 		submit: 'Schedule Demo',
 		options: [
+			'Chatbots AI',
 			'AI-Powered Virtual Assistants',
 			'Smart Business Automation',
 			'Predictive Intelligence Maintenance',

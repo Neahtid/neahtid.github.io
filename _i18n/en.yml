@@ -60,7 +60,7 @@ pages:
   our_products: "Our Products"
   work_with_us: "Work with Us"
   demo_schedule: "Schedule Demo"
-  demo_ask: "Request Demo"
+  demo_ask: "Book a Demo"
   demo_ask_long: "Request a personalized demo"
   forms:
     name_placeholder: Your Name
@@ -149,6 +149,7 @@ services:
     form_label: "Select a Solution"
     form_submit: "Schedule Demo"
     form_options:
+      - "AI-Powered Chatbots"
       - "AI-Powered Virtual Assistants"
       - "Smart Business Automation"
       - "Predictive Intelligence Maintenance"
