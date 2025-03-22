@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+    <!-- Background -->
+    <rect width="600" height="400" fill="#f8fafc" rx="10"/>
+
+    <!-- Dashboard Container -->
+    <rect x="40" y="30" width="520" height="340" fill="white" rx="12" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))"/>
+
+    <!-- Header -->
+    <rect x="40" y="30" width="520" height="60" fill="#1e3a8a" rx="12 12 0 0"/>
+    <text x="60" y="65" font-family="Arial" font-size="18" fill="white" font-weight="bold">Profit Analysis</text>
+    <text x="60" y="80" font-family="Arial" font-size="12" fill="#cbd5e1">Last 6 Months Performance</text>
+
+    <!-- Chart Area Background -->
+    <rect x="60" y="110" width="480" height="240" fill="#f8fafc" rx="8"/>
+
+    <!-- Y-axis -->
+    <line x1="100" y1="140" x2="100" y2="320" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="60" y="150" font-family="Arial" font-size="12" fill="#64748b">$100K</text>
+    <text x="60" y="200" font-family="Arial" font-size="12" fill="#64748b">$75K</text>
+    <text x="60" y="250" font-family="Arial" font-size="12" fill="#64748b">$50K</text>
+    <text x="60" y="300" font-family="Arial" font-size="12" fill="#64748b">$25K</text>
+
+    <!-- X-axis -->
+    <line x1="100" y1="320" x2="520" y2="320" stroke="#cbd5e1" stroke-width="1"/>
+
+    <!-- Month Labels -->
+    <text x="130" y="335" font-family="Arial" font-size="12" fill="#64748b">Jul</text>
+    <text x="200" y="335" font-family="Arial" font-size="12" fill="#64748b">Aug</text>
+    <text x="270" y="335" font-family="Arial" font-size="12" fill="#64748b">Sep</text>
+    <text x="340" y="335" font-family="Arial" font-size="12" fill="#64748b">Oct</text>
+    <text x="410" y="335" font-family="Arial" font-size="12" fill="#64748b">Nov</text>
+    <text x="480" y="335" font-family="Arial" font-size="12" fill="#64748b">Dec</text>
+
+    <!-- Revenue Bars -->
+    <rect x="120" y="160" width="20" height="160" fill="#3b82f6" rx="2" opacity="0.9"/>
+    <rect x="190" y="140" width="20" height="180" fill="#3b82f6" rx="2" opacity="0.9"/>
+    <rect x="260" y="170" width="20" height="150" fill="#3b82f6" rx="2" opacity="0.9"/>
+    <rect x="330" y="130" width="20" height="190" fill="#3b82f6" rx="2" opacity="0.9"/>
+    <rect x="400" y="150" width="20" height="170" fill="#3b82f6" rx="2" opacity="0.9"/>
+    <rect x="470" y="120" width="20" height="200" fill="#3b82f6" rx="2" opacity="0.9"/>
+
+    <!-- Expense Bars -->
+    <rect x="145" y="200" width="20" height="120" fill="#ef4444" rx="2" opacity="0.8"/>
+    <rect x="215" y="180" width="20" height="140" fill="#ef4444" rx="2" opacity="0.8"/>
+    <rect x="285" y="190" width="20" height="130" fill="#ef4444" rx="2" opacity="0.8"/>
+    <rect x="355" y="170" width="20" height="150" fill="#ef4444" rx="2" opacity="0.8"/>
+    <rect x="425" y="185" width="20" height="135" fill="#ef4444" rx="2" opacity="0.8"/>
+    <rect x="495" y="160" width="20" height="160" fill="#ef4444" rx="2" opacity="0.8"/>
+
+    <!-- Legend -->
+    <rect x="380" y="100" width="12" height="12" fill="#3b82f6" rx="2"/>
+    <text x="400" y="110" font-family="Arial" font-size="12" fill="#64748b">Revenue</text>
+    <rect x="460" y="100" width="12" height="12" fill="#ef4444" rx="2"/>
+    <text x="480" y="110" font-family="Arial" font-size="12" fill="#64748b">Expenses</text>
+
+    <!-- Summary Stats -->
+    <rect x="60" y="110" width="140" height="20" fill="#dbeafe" rx="4"/>
+    <text x="70" y="124" font-family="Arial" font-size="12" fill="#1e3a8a">Total Profit: $245,000</text>
+</svg>

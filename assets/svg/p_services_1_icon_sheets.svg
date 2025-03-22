@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 0 40 40" width="60" height="60">
+    <!-- Background circle -->
+    <circle cx="100" cy="20" r="18" fill="#a386ff" opacity="0.1"/>
+    
+    <!-- Grid lines vertical -->
+    <line x1="95" y1="12" x2="95" y2="29" stroke="#81F554" stroke-width="0.5"/>
+    <line x1="100" y1="12" x2="100" y2="29" stroke="#81F554" stroke-width="0.5"/>
+    <line x1="105" y1="12" x2="105" y2="29" stroke="#81F554" stroke-width="0.5"/>
+    
+    <!-- Grid lines horizontal -->
+    <line x1="90" y1="16" x2="110" y2="16" stroke="#81F554" stroke-width="0.6"/>
+    <line x1="90" y1="20" x2="110" y2="20" stroke="#81F554" stroke-width="0.6"/>
+    <line x1="90" y1="24" x2="110" y2="24" stroke="#81F554" stroke-width="0.6"/>
+    
+    <!-- Original rectangle -->
+    <rect x="90" y="12" width="20" height="16" fill="none" stroke="#81F554" stroke-width="2" rx="2"/>
+    
+</svg>
