@@ -100,7 +100,7 @@ custom_js:
         "name": "{% t service_3.hero.title %}",
         "description": "{% t service_3.hero.subtitle %}",
         "offers": {
-          "@type": "AggregateOffer",
+          "@type": "SoftwareApplication",
           "offers": [
             {
               "@type": "Offer",
@@ -168,7 +168,7 @@ custom_js:
             "name": "{% t global.company.name %}",
             "url": "{{site.url}}"
           },
-        "termsOfService": "#",
+        "termsOfService": "{{site.url}}{{prefix}}{% t global.urls.terms_url %}",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.8",
