@@ -112,6 +112,15 @@ custom_js:
         {
           "@type": "Offer",
           "name": "{% t service_6.pricing.plans.enterprise.title %}",
+          "price": "0",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "0",
+            "priceCurrency": "USD",
+            "valueAddedTaxIncluded": "false"
+          },
+          "availability": "https://schema.org/InStock",
           "description": [
             {% for feature in site.translations[site.lang].service_6.pricing.plans.enterprise.features %}
             "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
