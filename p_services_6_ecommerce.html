@@ -93,28 +93,74 @@ custom_js:
           "name": "{% t service_6.pricing.plans.starter.title %}",
           "price": "99",
           "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
           "description": [
             {% for feature in site.translations[site.lang].service_6.pricing.plans.starter.features %}
             "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
             {% endfor %}
-          ]
+          ],
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "0",
+                "maxValue": "1",
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "0",
+                "maxValue": "0",
+                "unitCode": "DAY"
+              }
+            }
+          }
         },
         {
           "@type": "Offer",
           "name": "{% t service_6.pricing.plans.professional.title %}",
           "price": "199",
           "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
           "description": [
             {% for feature in site.translations[site.lang].service_6.pricing.plans.professional.features %}
             "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
             {% endfor %}
-          ]
+          ],
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "0",
+                "maxValue": "1",
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "0",
+                "maxValue": "0",
+                "unitCode": "DAY"
+              }
+            }
+          }
         },
         {
           "@type": "Offer",
           "name": "{% t service_6.pricing.plans.enterprise.title %}",
-          "price": "0",
-          "priceCurrency": "USD",
           "priceSpecification": {
             "@type": "PriceSpecification",
             "price": "0",
@@ -126,7 +172,30 @@ custom_js:
             {% for feature in site.translations[site.lang].service_6.pricing.plans.enterprise.features %}
             "{{ feature.text }}"{% unless forloop.last %},{% endunless %}
             {% endfor %}
-          ]
+          ],
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "0",
+                "maxValue": "1",
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "0",
+                "maxValue": "0",
+                "unitCode": "DAY"
+              }
+            }
+          }
         }
       ],
       "hasOfferCatalog": {
@@ -184,6 +253,13 @@ custom_js:
         "serviceLocation": {
           "@type": "VirtualLocation"
         }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
       }
     }
 </script>
