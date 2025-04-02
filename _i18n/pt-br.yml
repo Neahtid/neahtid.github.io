@@ -11,7 +11,7 @@ global:
       link: /services/
     - title: Conhecer produtos
       link: /our-customers/
-    - title: Contato de vendas
+    - title: Contato
       link: /contact-us/
   company:
     name: "Neahtid"

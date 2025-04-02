@@ -294,6 +294,9 @@ custom_js:
     <div class="container text-center">
         <h2 class="mb-4">{% t product_jingo.demo.title %}</h2>
         <p class="lead mb-4">{% t product_jingo.demo.description %}</p>
-        <a href="https://jingo.store" target="_blank" class="btn demo-cta btn-lg">{% t product_jingo.demo.button %}</a>
+        <button class="btn demo-cta btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal"
+            data-bs-consultation="customers">
+            {% t pages.demo_ask %}
+        </button>
     </div>
 </section>
