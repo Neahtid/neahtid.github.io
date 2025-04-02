@@ -501,9 +501,9 @@ service_3:
       chatbots: "Chatbots"
   carousel:
     item1:
-      caption: "Chatbots e Assistentes de Voz com IA"
+      caption: "Chatbots e Assistentes com treinamento de IA e modelo proprietário"
     item2:
-      caption: "Automação de Processos de Reserva e Cancelamento"
+      caption: "Automatização de processos de Reservas, Pagamentos, Cancelamentos, Planilhas, entre outros"
     item3:
       caption: "Manutenção Preditiva de Instalações"
   solutions:

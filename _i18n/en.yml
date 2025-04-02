@@ -504,9 +504,9 @@ service_3:
       chatbots: "Chatbots"
   carousel:
     item1:
-      caption: "AI-Powered Chatbots and Voice Assistants"
+      caption: "AI-Powered Chatbots and Assistants"
     item2:
-      caption: "Automation of Reservation and Cancellation Processes"
+      caption: "Automations Processes for Spreadsheets,  Reservation, Payments, Cancellation, and others"
     item3:
       caption: "Predictive Facility Maintenance"
   solutions:
