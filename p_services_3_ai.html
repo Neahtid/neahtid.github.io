@@ -95,6 +95,11 @@ custom_js:
       "@type": "WebPage",
       "name": "{% t services.ai_automation.title %}",
       "description": "{% t services.ai_automation.description %}",
+      "author": {
+        "@type": "Organization",
+        "name": "{% t global.company.name %}",
+        "url": "{{site.url}}"
+      },
       "mainEntity": {
         "@type": "Service",
         "name": "{% t service_3.hero.title %}",
@@ -192,6 +197,10 @@ custom_js:
           "reviewRating": {
             "@type": "Rating",
             "ratingValue": "4.8"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Cliente Satisfecho"
           }
         },
         "aggregateRating": {
