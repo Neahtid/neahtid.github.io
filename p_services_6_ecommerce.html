@@ -106,6 +106,10 @@ custom_js:
               "value": "0",
               "currency": "USD"
             },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "*"
+            },
             "deliveryTime": {
               "@type": "ShippingDeliveryTime",
               "handlingTime": {
@@ -140,6 +144,10 @@ custom_js:
               "@type": "MonetaryAmount",
               "value": "0",
               "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "*"
             },
             "deliveryTime": {
               "@type": "ShippingDeliveryTime",
@@ -179,6 +187,10 @@ custom_js:
               "@type": "MonetaryAmount",
               "value": "0",
               "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "*"
             },
             "deliveryTime": {
               "@type": "ShippingDeliveryTime",
@@ -240,16 +252,13 @@ custom_js:
         "name": "{% t global.company.name %}",
         "url": "{{site.url}}"
       },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Worldwide"
-      },
+      "areaServed": "Worldwide",
       "availableChannel": {
         "@type": "ServiceChannel",
         "serviceType": "Customer support",
         "availableLanguage": ["en"],
         "processingTime": "PT24H",
-        "serviceUrl": "{{ site.url }}{{ page.url }}#contact",
+        "serviceUrl": "https://www.neahtid.com/services/e-commerce-solutions/#contact",
         "serviceLocation": {
           "@type": "VirtualLocation"
         }
