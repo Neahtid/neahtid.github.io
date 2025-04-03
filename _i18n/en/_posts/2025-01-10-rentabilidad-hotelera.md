@@ -6,10 +6,12 @@ date: 2025-01-10 21:24:00
 categories: en posts
 type: article
 ---
+
 {% assign prefix = '' %}
 {% if site.lang != site.default_lang %}
 {% assign prefix = "/" | append: site.lang %}
 {% endif %}
+
 <header class="entry-header">
 In today's competitive hospitality landscape, hotels are increasingly turning to data-driven solutions to optimize their operations and maximize profitability. The integration of business intelligence dashboards has become a game-changer, offering unprecedented insights into performance metrics and operational efficiency.
 </header>

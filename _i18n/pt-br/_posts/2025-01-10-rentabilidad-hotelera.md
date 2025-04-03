@@ -6,16 +6,17 @@ date: 2025-01-10 21:24:00
 categories: pt-br posts
 type: article
 ---
+
 {% assign prefix = '' %}
 {% if site.lang != site.default_lang %}
 {% assign prefix = "/" | append: site.lang %}
 {% endif %}
+
 <header class="entry-header">
 No cenário competitivo da hotelaria, os hotéis estão adotando soluções baseadas em dados para otimizar operações e aumentar a rentabilidade. A integração de dashboards de inteligência de negócios tem se mostrado um divisor de águas, oferecendo insights em tempo real para melhorar o desempenho e a eficiência operacional.
 </header>
 
 <img alt="imagen rentabilidad hotelera" src="/assets/blog/2025-01-10-rentabilidad-hotelera.png" width="100%" />
-
 
 Estudos recentes do setor mostram que hotéis que utilizam visualização avançada de dados e painéis de análise de rentabilidade observam uma melhoria média de 15-20% na otimização de receita. Essa transformação não se trata apenas de coletar dados – trata-se de torná-los acionáveis e acessíveis em tempo real.
 

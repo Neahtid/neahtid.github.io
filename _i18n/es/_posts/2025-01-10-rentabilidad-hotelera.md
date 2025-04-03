@@ -6,10 +6,12 @@ date: 2025-01-10 21:24:00
 categories: es posts
 type: article
 ---
+
 {% assign prefix = '' %}
 {% if site.lang != site.default_lang %}
 {% assign prefix = "/" | append: site.lang %}
 {% endif %}
+
 <header class="entry-header">
 En el competitivo panorama hotelero actual, los establecimientos están recurriendo cada vez más a soluciones basadas en datos para optimizar sus operaciones y maximizar la rentabilidad. La integración de dashboards de inteligencia empresarial se ha convertido en un elemento transformador, ofreciendo una visión sin precedentes de las métricas de rendimiento y la eficiencia operativa.
 </header>

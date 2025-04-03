@@ -100,17 +100,17 @@ generator: https://www.xml-sitemaps.com/
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/customers/jingo-store</loc>
+    <loc>{{ site.url }}/customers/jingo-store/</loc>
     <lastmod>2025-03-22T13:04:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/customers/zigna-app</loc>
+    <loc>{{ site.url }}/customers/zigna-app/</loc>
     <lastmod>2025-03-22T13:04:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/customers/pwa-demo</loc>
+    <loc>{{ site.url }}/customers/pwa-demo/</loc>
     <lastmod>2025-03-22T13:04:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -240,17 +240,17 @@ generator: https://www.xml-sitemaps.com/
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/es/customers/jingo-store</loc>
+    <loc>{{ site.url }}/es/customers/jingo-store/</loc>
     <lastmod>2025-03-22T13:04:14+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/es/customers/zigna-app</loc>
+    <loc>{{ site.url }}/es/customers/zigna-app/</loc>
     <lastmod>2025-03-22T13:04:14+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/es/customers/pwa-demo</loc>
+    <loc>{{ site.url }}/es/customers/pwa-demo/</loc>
     <lastmod>2025-03-22T13:04:14+00:00</lastmod>
     <priority>0.64</priority>
   </url>
@@ -320,17 +320,17 @@ generator: https://www.xml-sitemaps.com/
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/pt-br/customers/jingo-store</loc>
+    <loc>{{ site.url }}/pt-br/customers/jingo-store/</loc>
     <lastmod>2025-03-22T13:04:14+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/pt-br/customers/zigna-app</loc>
+    <loc>{{ site.url }}/pt-br/customers/zigna-app/</loc>
     <lastmod>2025-03-22T13:04:14+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/pt-br/customers/pwa-demo</loc>
+    <loc>{{ site.url }}/pt-br/customers/pwa-demo/</loc>
     <lastmod>2025-03-22T13:04:14+00:00</lastmod>
     <priority>0.64</priority>
   </url>

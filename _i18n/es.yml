@@ -223,14 +223,14 @@ customers:
     - name: "Jingo Store"
       logo: "/assets/img/icon_jingo_192x192.png"
       site: "https://jingo.store"
-      link: "/customers/jingo-store"
+      link: "/customers/jingo-store/"
       business: "Comercio electrónico con ventas y automatizaciones de IA"
       description: "Experimente una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario"
       ourvalue: 
     - name: "Zigna App"
       logo: "/assets/img/icon_zigna_192x192.png"
       site: "https://zigna.app"
-      link: "/customers/zigna-app"
+      link: "/customers/zigna-app/"
       business: "Señales de compra/venta para trading"
       description: "Recomendaciones de trading de acciones en tiempo real generadas por IA (Inteligencia Artificial Global) y operadores experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
       ourvalue: "\"Implementación de un canal de servicio para operadores y venta de señales de compra y venta.\""
@@ -251,7 +251,7 @@ customers:
     - name: "Minions App"
       logo:
       site: "https://minions.neahtid.com"
-      link: "/customers/pwa-demo"
+      link: "/customers/pwa-demo/"
       business: "Aplicación de demostración"
       description: "Aplicación web instalable de marca blanca que incluye chatbots, automatización de IA, paneles de inteligencia empresarial (BI), autenticación segura, integración de datos y mucho más."
       ourvalue: 

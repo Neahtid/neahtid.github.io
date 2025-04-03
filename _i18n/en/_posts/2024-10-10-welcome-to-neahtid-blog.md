@@ -6,6 +6,12 @@ date: 2024-10-01 10:10:10
 categories: en posts
 type: article
 ---
+
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
+
 <header class="entry-header">
 Welcome to the official blog of  <strong>Neahtid</strong>! We are thrilled to have you here in this space where we will explore the latest trends, innovations, and technological strategies transforming the world. As market leaders, our mission is to empower businesses with technological solutions that drive efficiency, security, and growth.
 </header>
@@ -38,11 +44,11 @@ Our passion for excellence and innovation drives us to deliver personalized solu
 
 ## Explore Our Services!
 
-We’re here to help you take your business to the next level. Ready to discover how our solutions can transform your company? Visit our [services page](/services/) to learn more about how we can collaborate with you.
+We’re here to help you take your business to the next level. Ready to discover how our solutions can transform your company? Visit our [services page]({{prefix}}/services/) to learn more about how we can collaborate with you.
 
 ## Let’s Talk!
 
-Have a question or a specific challenge? Our team is ready to help. Don’t hesitate to reach out to us through our [contact page](/contact-us/). We’re just a click away from turning your vision into reality.
+Have a question or a specific challenge? Our team is ready to help. Don’t hesitate to reach out to us through our [contact page]({{prefix}}/contact-us/). We’re just a click away from turning your vision into reality.
 
 Thank you for visiting, and we hope you find valuable information here that inspires you to harness the full potential of technology in the B2B sector.
 

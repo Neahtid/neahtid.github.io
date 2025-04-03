@@ -6,11 +6,17 @@ date: 2024-10-11 13:06:00
 categories: pt-br posts
 type: article
 ---
+
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
+
 <header class="entry-header">
 No mundo hiperconectado de hoje, a indústria da hospitalidade está passando por uma revolução digital. A integração de tecnologias inteligentes, automação e assistentes de voz está remodelando a forma como hotéis, resorts e outros locais de hospitalidade atendem os hóspedes, otimizando as operações e oferecendo experiências personalizadas e sem interrupções. Este artigo explora como essas inovações estão moldando o futuro da hospitalidade inteligente.
 </header>
 
-<img src="/assets/blog/2024-10-11-transforming-guest-experience.png" width="100%" />
+<img src="/assets/blog/2024-10-11-transforming-guest-experience.png" alt="Soluções de Hospitalidade Inteligente" width="100%" />
 
 ## A Revolução dos Hotéis Inteligentes
 

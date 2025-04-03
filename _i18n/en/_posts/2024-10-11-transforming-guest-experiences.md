@@ -7,11 +7,16 @@ categories: en posts
 type: article
 ---
 
+{% assign prefix = '' %}
+{% if site.lang != site.default_lang %}
+{% assign prefix = "/" | append: site.lang %}
+{% endif %}
+
 <header class="entry-header">
 In today's hyper-connected world, the hospitality industry is undergoing a digital revolution. The integration of smart technology, automation, and voice assistants is reshaping how hotels, resorts, and other hospitality venues cater to guests, streamlining operations while delivering personalized and seamless experiences. This article delves into how these innovations are driving the future of smart hospitality.
 </header>
 
-<img src="/assets/blog/2024-10-11-transforming-guest-experience.png" width="100%" />
+<img src="/assets/blog/2024-10-11-transforming-guest-experience.png" alt="Smart Hospitality Solutions" width="100%" />
 
 ## The Smart Hotel Revolution
 
