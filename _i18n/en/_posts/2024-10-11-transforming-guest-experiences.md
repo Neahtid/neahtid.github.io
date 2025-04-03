@@ -70,4 +70,7 @@ In conclusion, smart hospitality solutions powered by automation and voice assis
 
 ---
 
-To book your space or find out more, [Reserve your Spot](/en/#register) and discover how the right environment can take your productivity to new heights.
+To book your space or find out more, <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="AI">
+    Reserve your Spot
+</a>
+and discover how the right environment can take your productivity to new heights.

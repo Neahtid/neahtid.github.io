@@ -67,3 +67,9 @@ La adopción de soluciones de hospitalidad inteligente está destinada a crecer 
 Para las empresas del sector de la hospitalidad, adoptar tecnologías inteligentes ya no es un lujo, sino una necesidad. Al hacerlo, no solo cumplen, sino que superan las expectativas de los huéspedes, fomentando la fidelidad en un mercado cada vez más competitivo.
 
 En conclusión, las soluciones de hospitalidad inteligente impulsadas por automatización y asistentes de voz representan la próxima frontera en la innovación de la experiencia de los huéspedes. A medida que estas tecnologías evolucionen, prometen hacer que cada estancia sea memorable, personalizada y sin complicaciones.
+
+---
+
+Para reservar tu espacio o saber más, <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="AI">
+    reserva tu lugar
+</a> y descubre cómo el entorno adecuado puede llevar tu productividad a nuevas alturas.

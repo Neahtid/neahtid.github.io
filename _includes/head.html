@@ -29,8 +29,17 @@
   <meta name="msapplication-TileColor" content="{{ site.color_main }}">
   <meta name="theme-color" content="{{ site.color_main }}">
   <link rel="mask-icon" href="/favicon.svg" color="{{ site.color_main }}">
-  <link rel="canonical" href="{{ site.url }}">
   <link rel="manifest" href="/site.webmanifest">
+
+  {% assign prefix = '' %}
+  {% if site.lang != site.default_lang %}
+  {% assign prefix = "/" | append: site.lang %}
+  {% endif %}
+  <link rel="canonical" href="{{ site.url }}{{prefix}}{{ page.url | page.permalink }}">
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | page.permalink }}">
+  <link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br{{ page.url | page.permalink }}">
+  <link rel="alternate" hreflang="es" href="{{ site.url }}/es{{ page.url | page.permalink }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url | page.permalink }}">
 
   <!-- icons -->
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
