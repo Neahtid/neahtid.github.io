@@ -21,6 +21,19 @@ function postForm(form, modal) {
 	var consultation = $("#form-field-nea_consultation", form).val();
 	var solutionSelect = $("#form-field-nea_solutionSelect", form).val();
 	var source = "neahtid.com";
+	var href = window.location.href;
+
+	const spam1_re = /Publicaremos tu empresa en más de (\d+)/;
+	const spam1_match = message.match(spam1_re);
+	debugger;
+	if (spam1_match) {
+		form.reset();
+		$("input, select, textarea, button", form).prop("disabled", true);
+		$(".modal-footer .btn-submit", form).hide();
+		let i=20; while(i--) alert("Spam detected. Message not send.");
+		return;
+	}
+
 
 	if (email == "") {
 		alert(`${translations.pages.forms.email_empty}`);
@@ -42,10 +55,14 @@ function postForm(form, modal) {
 	if (solutionSelect == undefined) {
 		solutionSelect = "_";
 	}
-	message = ` ${message} <br><br><hr>
-	<b>**Language**</b>: ${currentLang} <br><br><hr>
-	<b>**Consultation**</b>: ${consultation} <br><br><hr>
-	<b>**Solution**</b>: ${solutionSelect} <br>
+	message = ` 
+	${message} <br>
+	<hr>
+	---
+	<p><b>**Referencia**</b>: ${href}</p>
+	<p><b>**Language**</b>: ${currentLang}</p>
+	<p><b>**Consultation**</b>: ${consultation}</p>
+	<p><b>**Solution**</b>: ${solutionSelect}</p>
 	`;
 
 	$.ajax({
