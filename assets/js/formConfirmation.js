@@ -25,7 +25,6 @@ function postForm(form, modal) {
 
 	const spam1_re = /Publicaremos tu empresa en más de (\d+)/;
 	const spam1_match = message.match(spam1_re);
-	debugger;
 	if (spam1_match) {
 		form.reset();
 		$("input, select, textarea, button", form).prop("disabled", true);
