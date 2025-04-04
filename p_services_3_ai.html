@@ -100,100 +100,102 @@ custom_js:
         "name": "{% t global.company.name %}",
         "url": "{{site.url}}"
       },
-      "mainEntity": {
-        "@type": "Service",
-        "name": "{% t service_3.hero.title %}",
-        "description": "{% t service_3.hero.subtitle %}",
-        "offers": {
-          "@type": "SoftwareApplication",
-          "offers": [
-            {
-              "@type": "Offer",
-              "name": "{% t service_3.solutions.cards.assistant.title %}",
-              "description": "{% t service_3.solutions.cards.assistant.description %}"
-            },
-            {
-              "@type": "Offer",
-              "name": "{% t service_3.solutions.cards.automation.title %}",
-              "description": "{% t service_3.solutions.cards.automation.description %}"
-            },
-            {
-              "@type": "Offer",
-              "name": "{% t service_3.solutions.cards.maintenance.title %}",
-              "description": "{% t service_3.solutions.cards.maintenance.description %}"
-            },
-            {
-              "@type": "Offer",
-              "name": "{% t service_3.solutions.cards.custom.title %}",
-              "description": "{% t service_3.solutions.cards.custom.description %}"
-            }
-          ]
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "{% t service_3.solutions.title %}",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
+      "mainEntity": [
+        {
+          "@type": "Service",
+          "name": "{% t service_3.hero.title %}",
+          "description": "{% t service_3.hero.subtitle %}",
+          "offers": {
+            "@type": "AggregateOffer",
+            "offers": [
+              {
+                "@type": "Offer",
                 "name": "{% t service_3.solutions.cards.assistant.title %}",
                 "description": "{% t service_3.solutions.cards.assistant.description %}"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
+              },
+              {
+                "@type": "Offer",
                 "name": "{% t service_3.solutions.cards.automation.title %}",
                 "description": "{% t service_3.solutions.cards.automation.description %}"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
+              },
+              {
+                "@type": "Offer",
                 "name": "{% t service_3.solutions.cards.maintenance.title %}",
                 "description": "{% t service_3.solutions.cards.maintenance.description %}"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
+              },
+              {
+                "@type": "Offer",
                 "name": "{% t service_3.solutions.cards.custom.title %}",
                 "description": "{% t service_3.solutions.cards.custom.description %}"
               }
-            }
-          ]
-        },
-        "areaServed": "Worldwide",
-        "provider": {
-            "@type": "Organization",
-            "name": "{% t global.company.name %}",
-            "url": "{{site.url}}"
+            ]
           },
-        "termsOfService": "{{site.url}}{{prefix}}{% t global.urls.terms_url %}",
-        "potentialAction": {
-          "@type": "ViewAction",
-          "target": [
-            {
-              "@type": "EntryPoint",
-              "urlTemplate": "#contact",
-              "actionPlatform": [
-                "http://schema.org/DesktopWebPlatform",
-                "http://schema.org/IOSPlatform",
-                "http://schema.org/AndroidPlatform"
-              ]
-            }
-          ]
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "789"
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "{% t service_3.solutions.title %}",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "{% t service_3.solutions.cards.assistant.title %}",
+                  "description": "{% t service_3.solutions.cards.assistant.description %}"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "{% t service_3.solutions.cards.automation.title %}",
+                  "description": "{% t service_3.solutions.cards.automation.description %}"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "{% t service_3.solutions.cards.maintenance.title %}",
+                  "description": "{% t service_3.solutions.cards.maintenance.description %}"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "{% t service_3.solutions.cards.custom.title %}",
+                  "description": "{% t service_3.solutions.cards.custom.description %}"
+                }
+              }
+            ]
+          },
+          "areaServed": "Worldwide",
+          "provider": {
+              "@type": "Organization",
+              "name": "{% t global.company.name %}",
+              "url": "{{site.url}}"
+          },
+          "termsOfService": "{{site.url}}{{prefix}}{% t global.urls.terms_url %}",
+          "potentialAction": {
+            "@type": "ViewAction",
+            "target": [
+              {
+                "@type": "EntryPoint",
+                "urlTemplate": "#contact",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/IOSPlatform",
+                  "http://schema.org/AndroidPlatform"
+                ]
+              }
+            ]
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "789"
+          }
         }
-      },
+      ],
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "contentUrl": "/assets/svg/p_services_3_hero_chatbot.svg",
