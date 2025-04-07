@@ -6,348 +6,210 @@ generator: https://www.xml-sitemaps.com/
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>{{ site.url }}/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/"/>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>{{ site.url }}/services/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/our-customers/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/our-customers/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/our-customers/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/our-customers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/our-customers/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/blog/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/blog/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/contact-us/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/contact-us/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/contact-us/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/contact-us/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/contact-us/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/our-company/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/our-company/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/our-company/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/our-company/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/our-company/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/research-programs/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/research-programs/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/research-programs/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/research-programs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/research-programs/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/posts/2025/03/11/chatbots/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/posts/2025/03/11/chatbots/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/posts/2025/03/11/chatbots/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/posts/2025/03/11/chatbots/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/posts/2025/03/11/chatbots/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/posts/2025/01/10/rentabilidad-hotelera/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/posts/2025/01/10/rentabilidad-hotelera/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/posts/2025/01/10/rentabilidad-hotelera/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/posts/2025/01/10/rentabilidad-hotelera/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/posts/2025/01/10/rentabilidad-hotelera/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/posts/2024/10/11/transforming-guest-experiences/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/posts/2024/10/11/transforming-guest-experiences/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/posts/2024/10/11/transforming-guest-experiences/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/posts/2024/10/11/transforming-guest-experiences/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/posts/2024/10/11/transforming-guest-experiences/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/posts/2024/10/01/welcome-to-neahtid-blog/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/posts/2024/10/01/welcome-to-neahtid-blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/posts/2024/10/01/welcome-to-neahtid-blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/posts/2024/10/01/welcome-to-neahtid-blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/posts/2024/10/01/welcome-to-neahtid-blog/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/services/web-applications-and-software-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/web-applications-and-software-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/services/web-applications-and-software-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/services/web-applications-and-software-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/web-applications-and-software-solutions/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/services/business-intelligence-and-data-analytics/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/services/artificial-intelligence-and-automation/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/services/cybersecurity-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/services/hardware-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/services/e-commerce-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/customers/jingo-store/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/customers/zigna-app/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/customers/pwa-demo/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/business-intelligence-and-data-analytics/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/services/business-intelligence-and-data-analytics/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/services/business-intelligence-and-data-analytics/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/business-intelligence-and-data-analytics/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/services/artificial-intelligence-and-automation/chatbots/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/artificial-intelligence-and-automation/chatbots/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/services/artificial-intelligence-and-automation/chatbots/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/services/artificial-intelligence-and-automation/chatbots/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/artificial-intelligence-and-automation/chatbots/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/services/artificial-intelligence-and-automation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/artificial-intelligence-and-automation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/services/artificial-intelligence-and-automation/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/services/artificial-intelligence-and-automation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/artificial-intelligence-and-automation/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/services/cybersecurity-solutions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/cybersecurity-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/services/cybersecurity-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/services/cybersecurity-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/cybersecurity-solutions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/services/hardware-solutions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/hardware-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/services/hardware-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/services/hardware-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/hardware-solutions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/services/e-commerce-solutions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/services/e-commerce-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/services/e-commerce-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/services/e-commerce-solutions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/services/e-commerce-solutions/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/customers/jingo-store/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/customers/jingo-store/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/customers/jingo-store/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/customers/jingo-store/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/customers/jingo-store/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/customers/zigna-app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/customers/zigna-app/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/customers/zigna-app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/customers/zigna-app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/customers/zigna-app/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/customers/pwa-demo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/customers/pwa-demo/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/customers/pwa-demo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/customers/pwa-demo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/customers/pwa-demo/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/terms/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/terms/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>{{ site.url }}/privacy-policy/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="{{ site.url }}/pt-br/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}/es/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/privacy-policy/"/>
+    <changefreq>weekly</changefreq>
     <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/services/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/services/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/our-customers/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/our-customers/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/blog/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/blog/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/contact-us/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/contact-us/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/our-company/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/our-company/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/research-programs/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/research-programs/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/posts/2025/03/11/chatbots/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/posts/2025/01/10/rentabilidad-hotelera/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/posts/2024/10/11/transforming-guest-experiences/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/posts/2024/10/01/welcome-to-neahtid-blog/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/services/web-applications-and-software-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/services/business-intelligence-and-data-analytics/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/services/artificial-intelligence-and-automation/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/services/cybersecurity-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/services/hardware-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/services/e-commerce-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/customers/jingo-store/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/customers/zigna-app/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/customers/pwa-demo/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/services/artificial-intelligence-and-automation/chatbots/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/terms/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/es/privacy-policy/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/posts/2025/03/11/chatbots/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/posts/2025/01/10/rentabilidad-hotelera/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/posts/2024/10/11/transforming-guest-experiences/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/posts/2024/10/01/welcome-to-neahtid-blog/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/services/web-applications-and-software-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/services/business-intelligence-and-data-analytics/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/services/artificial-intelligence-and-automation/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/services/cybersecurity-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/services/hardware-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/services/e-commerce-solutions/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/customers/jingo-store/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/customers/zigna-app/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/customers/pwa-demo/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/services/artificial-intelligence-and-automation/chatbots/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/terms/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/pt-br/privacy-policy/</loc>
-    <lastmod>2025-03-22T13:04:14+00:00</lastmod>
-    <priority>0.64</priority>
   </url>
 
 </urlset>
