@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+    <!-- Background -->
+    <rect width="400" height="300" fill="#f8fafc"/>
+    
+    <!-- Browser Window -->
+    <rect x="40" y="30" width="320" height="240" fill="#ffffff" rx="8" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))"/>
+    <rect x="40" y="30" width="320" height="30" fill="#e2e8f0" rx="8 8 0 0"/>
+    <circle cx="60" cy="45" r="5" fill="#ef4444"/>
+    <circle cx="80" cy="45" r="5" fill="#f59e0b"/>
+    <circle cx="100" cy="45" r="5" fill="#10b981"/>
+    
+    <!-- Website Content -->
+    <rect x="60" y="80" width="180" height="30" fill="#f1f5f9" rx="4"/>
+    <rect x="60" y="120" width="280" height="10" fill="#e2e8f0" rx="2"/>
+    <rect x="60" y="140" width="240" height="10" fill="#e2e8f0" rx="2"/>
+    <rect x="60" y="180" width="120" height="40" fill="#091C99" rx="6"/>
+</svg>
