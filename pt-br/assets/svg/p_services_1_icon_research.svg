@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 0 40 40" width="60" height="60">
+    <!-- Background circle -->
+    <circle cx="100" cy="20" r="18" fill="#a386ff" opacity="0.1"/>
+    
+    <!-- Microscope/research elements -->
+    <circle cx="97" cy="17" r="3" fill="none" stroke="#FF00FF" stroke-width="1.5"/>
+    <line x1="99" y1="19" x2="106" y2="26" stroke="#FF00FF" stroke-width="2"/>
+    
+    <!-- Container box -->
+    <rect x="90" y="12" width="20" height="16" fill="none" stroke="#FF00FF" stroke-width="2" rx="2"/>
+    
+    <!-- Decorative elements suggesting measurement lines -->
+    <line x1="93" y1="23" x2="96" y2="23" stroke="#FF00FF" stroke-width="0.5"/>
+    <line x1="93" y1="25" x2="95" y2="25" stroke="#FF00FF" stroke-width="0.5"/>
+</svg>
