@@ -1,4 +1,5 @@
 global:
+  avatar_alt: "Avatar"
   tagline: English
   chat_inwhatsapp: "Chat on WhatsApp"
   chat: "Hello%2C%20can%20we%20talk%20about%20the%20services%20of%20https%3A%2F%2Fwww.neahtid.com"
@@ -1137,93 +1138,3 @@ research_programs:
     title: "Start a Research Collaboration"
     description: "Interested in partnering with us? Fill out the form below and our research team will contact you."
     cta: "Submit Research Proposal"
-
-chatbots:
-  title: "AI-Powered Chatbots and Voice Assistants"
-  # Hero Section
-  hero_title: "Revolutionize your customer service with AI Chatbots"
-  hero_description: "Automate your support and boost your sales with intelligent chatbots that understand your customers and solve their needs 24/7."
-  hero_btn_more: "Learn more"
-  
-  # Carousel items
-  carousel_item1_title: "24/7 Service"
-  carousel_item1_description: "Offer continuous support to your customers regardless of the time of day or geographical location."
-  carousel_item2_title: "Increase your sales"
-  carousel_item2_description: "Our chatbots can identify sales opportunities and guide customers toward conversion."
-  carousel_item3_title: "Natural conversations"
-  carousel_item3_description: "Advanced AI enables fluid and natural conversations that improve the user experience."
-  carousel_item4_title: "Immediate responses"
-  carousel_item4_description: "Reduce waiting times with instant answers to the most frequent queries."
-  carousel_prev: "Previous"
-  carousel_next: "Next"
-  
-  # Benefits Section
-  benefits_subtitle: "Why choose us"
-  benefits_title: "Benefits of our AI Chatbots"
-  benefits_description: "Improve your customers' experience and optimize your resources with our cutting-edge technology"
-  
-  # Feature Boxes
-  feature1_title: "Advanced AI"
-  feature1_description: "Our chatbots use the most advanced language models to understand and respond to queries naturally."
-  feature2_title: "Easy integration"
-  feature2_description: "Simple integration with your website, Facebook, WhatsApp, and other communication platforms."
-  feature3_title: "Continuous learning"
-  feature3_description: "Our chatbots learn from each interaction, constantly improving their responses and effectiveness."
-  feature4_title: "Detailed analytics"
-  feature4_description: "Gain valuable insights about conversations, user behavior, and opportunities for improvement."
-  feature5_title: "Advanced customization"
-  feature5_description: "Adapt your chatbot to your brand, sector, and specific customer needs."
-  feature6_title: "Cost reduction"
-  feature6_description: "Decrease your operational expenses by automating repetitive tasks and optimizing human resources."
-  
-  # Demo Section
-  demo_subtitle: "Immersive experience"
-  demo_title: "See how our AI Chatbots transform customer interaction"
-  demo_description: "A virtual assistant that understands needs, answers complex questions, and guides conversations toward concrete business objectives."
-  demo_feature1: "Precise responses tailored to your business"
-  demo_feature2: "Intelligent transfer to human agents when necessary"
-  demo_feature3: "Conversation personalization based on customer profile"
-  
-  # Chatbot Demo
-  chatbot_name: "Neahtid Bot"
-  chatbot_greeting: "Hello! I'm the virtual assistant for Neahtid IT. How can I help you today?"
-  chatbot_user_message: "Hi, I'm interested in implementing a chatbot for my online store"
-  chatbot_response: "Excellent! Our e-commerce chatbots can help you increase sales and improve customer service. Would you like to learn about our plans or do you have any specific questions?"
-  chatbot_input_placeholder: "Type your message..."
-  
-  # Features Section
-  features_subtitle: "Features"
-  features_title: "Advanced functionalities"
-  features_description: "Our chatbots are equipped with cutting-edge technology to maximize results"
-  features_img_alt: "Chatbot functionalities"
-  
-  # Accordion Features
-  accordion1_title: "Natural Language Processing"
-  accordion1_content: "Our chatbots use advanced NLP technology to understand the context, intention, and sentiment of each message, enabling more natural and human-like conversations."
-  accordion2_title: "Omnichannel Integration"
-  accordion2_content: "Integrate your chatbot across multiple platforms: your website, mobile apps, WhatsApp, Facebook Messenger, Instagram, and more, maintaining coherent conversations across all channels."
-  accordion3_title: "Sales Automation"
-  accordion3_content: "Our chatbots can manage the complete sales process: presenting products, answering questions, offering personalized recommendations, and facilitating the purchase process."
-  accordion4_title: "Analysis and Reports"
-  accordion4_content: "Intuitive dashboard with key metrics on your chatbot's performance, conversation patterns, frequent topics, and improvement opportunities for continuous optimization."
-  
-  # Testimonials Section
-  testimonials_subtitle: "Success stories"
-  testimonials_title: "What our clients have achieved"
-  testimonials_description: "Companies that are transforming their business with our AI chatbots"
-  
-  # Testimonial Cards
-  testimonial1_name: "Zigna"
-  testimonial1_company: "Trading Buy/Sell Signals"
-  testimonial1_text: "\"Implementation of a service channel for traders and sales of Buy and Sell signals\""
-  testimonial2_name: "PortaJoiaJeri"
-  testimonial2_company: "Support and Online Sales Channel"
-  testimonial2_text: "\"We implemented the chatbot to reduce the workload of the online sales team. It now resolves 50% of inquiries without human intervention, which has allowed us to continuously improve and retrain the models.\""
-  testimonial3_name: "LivingWorkspace"
-  testimonial3_company: "Workspace Reservations"
-  testimonial3_text: "\"Temporarily no vacancies available. The quality of confirming reservations has left us temporarily without availability. This has greatly elevated the customer experience.\""
-  avatar_alt: "Avatar"
-  
-  # CTA Section
-  cta_title: "Ready to transform your business?"
-  cta_description: "Implement our AI chatbot in less than 48 hours and start seeing immediate results."

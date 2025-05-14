@@ -1,4 +1,5 @@
 global:
+  avatar_alt: "Avatar"
   tagline: Español
   chat_inwhatsapp: "Conversemos en WhatsApp"
   chat: "Hola%2C%20%C2%BFpodemos%20hablar%20de%20los%20servicios%20de%20https%3A%2F%2Fwww.neahtid.com%3F"
@@ -1133,93 +1134,3 @@ research_programs:
     title: "Iniciar una Colaboración en Investigación"
     description: "¿Interesado en asociarte con nosotros? Completa el formulario a continuación y nuestro equipo de investigación se pondrá en contacto contigo."
     cta: "Enviar Propuesta de Investigación"
-
-chatbots:
-  title: "Chatbots y asistentes de voz con IA"
-  # Hero Section
-  hero_title: "Revoluciona tu atención al cliente con Chatbots IA"
-  hero_description: "Automatiza tu soporte y potencia tus ventas con chatbots inteligentes que entienden a tus clientes y resuelven sus necesidades 24/7."
-  hero_btn_more: "Conoce más"
-  
-  # Carousel items
-  carousel_item1_title: "Atención 24/7"
-  carousel_item1_description: "Ofrece soporte continuo a tus clientes sin importar la hora del día o la ubicación geográfica."
-  carousel_item2_title: "Incrementa tus ventas"
-  carousel_item2_description: "Nuestros chatbots pueden identificar oportunidades de venta y guiar a los clientes hacia la conversión."
-  carousel_item3_title: "Conversaciones naturales"
-  carousel_item3_description: "La IA avanzada permite mantener conversaciones fluidas y naturales que mejoran la experiencia del usuario."
-  carousel_item4_title: "Respuestas inmediatas"
-  carousel_item4_description: "Reduce los tiempos de espera con respuestas instantáneas a las consultas más frecuentes."
-  carousel_prev: "Anterior"
-  carousel_next: "Siguiente"
-  
-  # Benefits Section
-  benefits_subtitle: "Por qué elegirnos"
-  benefits_title: "Beneficios de nuestros Chatbots IA"
-  benefits_description: "Mejora la experiencia de tus clientes y optimiza tus recursos con nuestra tecnología de vanguardia"
-  
-  # Feature Boxes
-  feature1_title: "IA Avanzada"
-  feature1_description: "Nuestros chatbots utilizan los modelos de lenguaje más avanzados para entender y responder a las consultas de manera natural."
-  feature2_title: "Fácil integración"
-  feature2_description: "Integración sencilla con tu sitio web, Facebook, WhatsApp, y otras plataformas de comunicación."
-  feature3_title: "Aprendizaje continuo"
-  feature3_description: "Nuestros chatbots aprenden de cada interacción, mejorando constantemente sus respuestas y eficacia."
-  feature4_title: "Analítica detallada"
-  feature4_description: "Obtén insights valiosos sobre las conversaciones, comportamiento del usuario y oportunidades de mejora."
-  feature5_title: "Personalización avanzada"
-  feature5_description: "Adapta tu chatbot a tu marca, sector y necesidades específicas de tus clientes."
-  feature6_title: "Reducción de costos"
-  feature6_description: "Disminuye tus gastos operativos al automatizar tareas repetitivas y optimizar recursos humanos."
-  
-  # Demo Section
-  demo_subtitle: "Experiencia inmersiva"
-  demo_title: "Observa cómo nuestros Chatbots IA transforman la interacción con tus clientes"
-  demo_description: "Un asistente virtual que entiende necesidades, responde preguntas complejas y guía conversaciones hacia objetivos comerciales concretos."
-  demo_feature1: "Respuestas precisas adaptadas a tu negocio"
-  demo_feature2: "Transferencia inteligente a agentes humanos cuando es necesario"
-  demo_feature3: "Personalización de conversaciones según el perfil del cliente"
-  
-  # Chatbot Demo
-  chatbot_name: "Neahtid Bot"
-  chatbot_greeting: "¡Hola! Soy el asistente virtual de Neahtid IT. ¿En qué puedo ayudarte hoy?"
-  chatbot_user_message: "Hola, estoy interesado en implementar un chatbot para mi tienda online"
-  chatbot_response: "¡Excelente! Nuestros chatbots para e-commerce pueden ayudarte a aumentar ventas y mejorar el servicio al cliente. ¿Te gustaría conocer nuestros planes o tienes alguna pregunta específica?"
-  chatbot_input_placeholder: "Escribe tu mensaje..."
-  
-  # Features Section
-  features_subtitle: "Características"
-  features_title: "Funcionalidades avanzadas"
-  features_description: "Nuestros chatbots están equipados con tecnología de punta para maximizar resultados"
-  features_img_alt: "Funcionalidades del chatbot"
-  
-  # Accordion Features
-  accordion1_title: "Procesamiento de Lenguaje Natural"
-  accordion1_content: "Nuestros chatbots utilizan tecnología avanzada de NLP para entender el contexto, intención y sentimiento de cada mensaje, permitiendo conversaciones más naturales y humanas."
-  accordion2_title: "Integración Omnicanal"
-  accordion2_content: "Integra tu chatbot en múltiples plataformas: tu sitio web, aplicaciones móviles, WhatsApp, Facebook Messenger, Instagram y más, manteniendo conversaciones coherentes a través de todos los canales."
-  accordion3_title: "Automatización de Ventas"
-  accordion3_content: "Nuestros chatbots pueden gestionar el proceso de ventas completo: presentar productos, responder preguntas, ofrecer recomendaciones personalizadas y facilitar el proceso de compra."
-  accordion4_title: "Análisis y Reportes"
-  accordion4_content: "Panel de control intuitivo con métricas clave sobre el rendimiento de tu chatbot, patrones de conversación, temas frecuentes y oportunidades de mejora para optimizar continuamente."
-  
-  # Testimonials Section
-  testimonials_subtitle: "Casos de éxito"
-  testimonials_title: "Lo que nuestros clientes han conseguido"
-  testimonials_description: "Empresas que están transformado su negocio con nuestros chatbots IA"
-  
-  # Testimonial Cards
-  testimonial1_name: "Zigna"
-  testimonial1_company: "Trading Buy/Sell Signals"
-  testimonial1_text: "\"Implementación de canal de atención al trader y ventas de señales de Compra y Venta\""
-  testimonial2_name: "PortaJoiaJeri"
-  testimonial2_company: "Soporte y Canal de Ventas Online"
-  testimonial2_text: "\"Implementamos el chatbot para reducir la carga del equipo de ventas online. Ahora resuelve el 50% de las consultas sin intervención humana, lo que nos ha permitido mejorar y reentrenar los modelos continuamente.\""
-  testimonial3_name: "LivingWorkspace"
-  testimonial3_company: "Reservas Espacios de Trabajo"
-  testimonial3_text: "\"Sin vacantes disponibles temporalmente. La calidad de concretar reservas nos tiene sin disponibilidad temporalmente. Esto ha elevado enormemente la experiencia del cliente.\""
-  avatar_alt: "Avatar"
-  
-  # CTA Section
-  cta_title: "¿Listo para transformar tu negocio?"
-  cta_description: "Implementa nuestro chatbot IA en menos de 48 horas y comienza a ver resultados inmediatos."
