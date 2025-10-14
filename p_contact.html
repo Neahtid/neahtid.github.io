@@ -22,7 +22,7 @@ permalink: /contact-us/
 			<div class="col-12 col-md-8">
 				<h2>{% t contact.title %}</h2>
 				<p>{% t contact.description %}</p>
-				<form class="nea-contact nea-form">
+				<form class="nea-contact nea-form" id="contact-form" data-recaptcha-sitekey="6LfC2CUUAAAAAMB11iJYlS5QlDhoNRc80P0wvBiZ">
 					<div class="contact-input">
 						<label for="form-field-nea_name">{% t contact.fields.name %}</label>
 						<input placeholder="{% t contact.fields.name %}" type="text" id="form-field-nea_name" required>
@@ -37,6 +37,8 @@ permalink: /contact-us/
 							<textarea placeholder="{% t contact.fields.message %}" id="form-field-nea_message" rows="5" required></textarea>
 						</div>
 					</div>
+					<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" value="">
+					<div id="recaptcha-container" style="display: none;"></div>
 					<div>
 						<button type="submit" class="btn btn-primary w-100 my-3">
 							<div class="feature-icon">

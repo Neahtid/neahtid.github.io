@@ -10,8 +10,11 @@ function ValidateEmail(email) {
 
 function postForm(form, modal) {
 	var thanks = `${translations.pages.forms.thanks_default}`;
+	var URL = "";
+	var useBackendVerification = false; // Set to true when backend endpoint is ready
+	
 	if ($(form).hasClass("nea-contact")) {
-		var URL = "https://docs.google.com/forms/d/1CpamEupan42CHwtJN1VqJnjgoQGud8SI2WAb9XCVqPU/formResponse";
+		URL = "https://docs.google.com/forms/d/1CpamEupan42CHwtJN1VqJnjgoQGud8SI2WAb9XCVqPU/formResponse";
 		thanks = `${translations.pages.forms.thanks_response}`;
 	}
 
@@ -20,8 +23,42 @@ function postForm(form, modal) {
 	var message = $("#form-field-nea_message", form).val();
 	var consultation = $("#form-field-nea_consultation", form).val();
 	var solutionSelect = $("#form-field-nea_solutionSelect", form).val();
+	var recaptchaToken = $("#g-recaptcha-response", form).val();
 	var source = "neahtid.com";
 	var href = window.location.href;
+
+	// Helper function to restore button state on validation error
+	function restoreButtonState() {
+		var button = $('button[type=submit]', form);
+		
+		// ALWAYS restore original HTML first (most important!)
+		var originalHtml = button.data('original-html');
+		if (originalHtml) {
+			button.html(originalHtml);
+		}
+		
+		// Then re-enable button and remove loading classes
+		button.prop('disabled', false);
+		$('.fa-inactive', form).removeClass('fa-active');
+		var icon = button.find('.feature-icon');
+		if (icon.length) {
+			icon.removeClass('fa-active');
+		}
+		
+		// Reset reCAPTCHA widget so it can be used again
+		if (typeof grecaptcha !== 'undefined') {
+			try {
+				var isModal = $(form).hasClass('nea-formModal');
+				var widgetId = isModal ? window.recaptchaModalWidgetId : window.recaptchaWidgetId;
+				
+				if (widgetId !== null && widgetId !== undefined) {
+					grecaptcha.reset(widgetId);
+				}
+			} catch(e) {
+				// Silent fail - user may need to refresh
+			}
+		}
+	}
 
 	const spam1_re = /Publicaremos tu empresa en más de (\d+)/;
 	const spam1_match = message.match(spam1_re);
@@ -36,12 +73,16 @@ function postForm(form, modal) {
 
 	if (email == "") {
 		alert(`${translations.pages.forms.email_empty}`);
-
+		restoreButtonState();
 		return false;
 	}
-	if (!ValidateEmail(email)) return false;
+	if (!ValidateEmail(email)) {
+		restoreButtonState();
+		return false;
+	}
 	if (URL == "") {
 		alert(`${translations.pages.forms.general_novalid}`);
+		restoreButtonState();
 		return false;
 	}
 
@@ -64,17 +105,50 @@ function postForm(form, modal) {
 	<p><b>**Solution**</b>: ${solutionSelect}</p>
 	`;
 
-	$.ajax({
-		url: URL,
-		data: {
-			"entry.1155430950": email,
-			"entry.545860963": name,
-			"entry.1997542075": message,
-			"entry.26006045": source
+	// If backend verification is enabled, verify reCAPTCHA first
+	if (useBackendVerification && recaptchaToken) {
+		// Verify reCAPTCHA token through backend endpoint
+		$.ajax({
+			url: '/api/verify-recaptcha', // Backend endpoint for verification
+			method: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify({
+				token: recaptchaToken,
+				email: email,
+				name: name,
+				message: message,
+				source: source
+			}),
+		success: function(response) {
+			if (response.success && response.score >= 0.5) {
+				submitToGoogleForms();
+			} else {
+				restoreButtonState();
+				alert('Security verification failed. Please try again.');
+			}
 		},
-		type: "POST",
-		dataType: "xml",
-		statusCode: {
+		error: function(xhr, status, error) {
+			submitToGoogleForms();
+		}
+		});
+	} else {
+		// Direct submission without backend verification
+		submitToGoogleForms();
+	}
+	
+	// Function to submit to Google Forms
+	function submitToGoogleForms() {
+		$.ajax({
+			url: URL,
+			data: {
+				"entry.1155430950": email,
+				"entry.545860963": name,
+				"entry.1997542075": message,
+				"entry.26006045": source
+			},
+			type: "POST",
+			dataType: "xml",
+			statusCode: {
 			0: function () {
 				if (modal){
 					formSaved = $(form).find(".modal-body").html();
@@ -99,7 +173,6 @@ function postForm(form, modal) {
 					$('button[type=submit]', form).disabled = false;
 					$('.fa-inactive', form).removeClass('fa-active');
 				}
-				console.log(`statusCode: 0 ${modal}`);
 			},
 			200: function () {
 				if (modal){
@@ -127,9 +200,13 @@ function postForm(form, modal) {
 				}
 
 			}
-		},
-		complete: function(xhr, textStatus) {
-		  console.log(`completed with status: ${xhr.status}`);
-		}
+	},
+	complete: function(xhr, textStatus) {
+	  // Form submission complete
+	},
+	error: function(xhr, status, error) {
+	  restoreButtonState();
+	}
 	});
+	}
 }

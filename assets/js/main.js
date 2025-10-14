@@ -115,13 +115,193 @@ $(document).ready(function () {
 		offset: 0,
 		repeat: false
 	});
-	/** ContactForms */
-	$('.nea-form').unbind('submit').bind('submit', function () {
-		postForm(this, false);
+	/** ContactForms with reCAPTCHA v2 Invisible - Programmatic Binding */
+	// Make recaptchaWidgetId global so it can be reset on validation errors
+	window.recaptchaWidgetId = null;
+	var recaptchaWidgetId = null;
+	
+	$('.nea-form').unbind('submit').bind('submit', function (e) {
+		e.preventDefault();
+		const form = this;
+		const $form = $(form);
+		const button = $form.find('button[type="submit"]');
+		const sitekey = $form.data('recaptcha-sitekey');
+		
+		// Validate form first
+		if (!form.checkValidity()) {
+			form.reportValidity();
+			return false;
+		}
+		
+		// Store original button HTML to restore later if needed
+		if (!button.data('original-html')) {
+			button.data('original-html', button.html());
+		}
+		
+		// Disable button during submission
+		button.prop('disabled', true);
+		const icon = button.find('.feature-icon');
+		if (icon.length) {
+			icon.addClass('fa-inactive fa-active');
+		}
+		
+		// If reCAPTCHA is configured and loaded
+		if (sitekey && typeof grecaptcha !== 'undefined' && grecaptcha.ready) {
+			try {
+				grecaptcha.ready(function() {
+					try {
+						// Render reCAPTCHA widget only once
+						if (window.recaptchaWidgetId === null) {
+							const container = document.getElementById('recaptcha-container');
+							if (container) {
+								window.recaptchaWidgetId = grecaptcha.render(container, {
+									'sitekey': sitekey,
+									'size': 'invisible',
+									'callback': function(token) {
+										// Store token in hidden field
+										$('#g-recaptcha-response', form).val(token);
+										console.log('reCAPTCHA verified successfully');
+										
+										// Submit form with token
+										postForm(form, false);
+									},
+									'error-callback': function() {
+										console.error('reCAPTCHA error');
+										button.prop('disabled', false);
+										if (icon.length) {
+											icon.removeClass('fa-active');
+										}
+										alert('reCAPTCHA verification failed. Please refresh and try again.');
+									}
+								});
+								recaptchaWidgetId = window.recaptchaWidgetId;
+							}
+						}
+						
+						// Execute the reCAPTCHA
+						if (window.recaptchaWidgetId !== null) {
+							grecaptcha.execute(window.recaptchaWidgetId);
+						} else {
+							throw new Error('reCAPTCHA widget not initialized');
+						}
+					} catch (error) {
+						console.error('reCAPTCHA execution error:', error);
+						console.warn('Falling back to form submission without verification');
+						button.prop('disabled', false);
+						if (icon.length) {
+							icon.removeClass('fa-active');
+						}
+						postForm(form, false);
+					}
+				});
+			} catch (error) {
+				console.error('reCAPTCHA ready error:', error);
+				console.warn('Submitting without reCAPTCHA verification');
+				button.prop('disabled', false);
+				if (icon.length) {
+					icon.removeClass('fa-active');
+				}
+				postForm(form, false);
+			}
+		} else {
+			// Fallback: submit without reCAPTCHA if not configured
+			console.warn('reCAPTCHA not configured or loaded, submitting without verification');
+			postForm(form, false);
+		}
+		
 		return false;
 	});
-	$('.nea-formModal').unbind('submit').bind('submit', function () {
-		postForm(this, true);
+	
+	// Make modal widget ID global too
+	window.recaptchaModalWidgetId = null;
+	var recaptchaModalWidgetId = null;
+	
+	$('.nea-formModal').unbind('submit').bind('submit', function (e) {
+		e.preventDefault();
+		const form = this;
+		const $form = $(form);
+		const button = $form.find('button[type="submit"]');
+		const sitekey = $form.data('recaptcha-sitekey');
+		
+		// Validate form first
+		if (!form.checkValidity()) {
+			form.reportValidity();
+			return false;
+		}
+		
+		// Store original button HTML to restore later if needed
+		if (!button.data('original-html')) {
+			button.data('original-html', button.html());
+		}
+		
+		// Disable button during submission
+		button.prop('disabled', true);
+		
+		// If reCAPTCHA is configured and loaded
+		if (sitekey && typeof grecaptcha !== 'undefined' && grecaptcha.ready) {
+			try {
+				grecaptcha.ready(function() {
+					try {
+						// Create container if it doesn't exist
+						if (!$form.find('#recaptcha-modal-container').length) {
+							$form.append('<div id="recaptcha-modal-container" style="display: none;"></div>');
+						}
+						
+						// Render reCAPTCHA widget only once
+						if (window.recaptchaModalWidgetId === null) {
+							const container = $form.find('#recaptcha-modal-container')[0];
+							if (container) {
+								window.recaptchaModalWidgetId = grecaptcha.render(container, {
+									'sitekey': sitekey,
+									'size': 'invisible',
+									'callback': function(token) {
+										// Store token in hidden field or add to form
+										let tokenInput = $form.find('#g-recaptcha-response');
+										if (tokenInput.length === 0) {
+											$form.append('<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" value="">');
+											tokenInput = $form.find('#g-recaptcha-response');
+										}
+										tokenInput.val(token);
+										console.log('reCAPTCHA verified successfully (modal)');
+										
+										// Submit form with token
+										postForm(form, true);
+									},
+									'error-callback': function() {
+										console.error('reCAPTCHA error (modal)');
+										button.prop('disabled', false);
+										alert('reCAPTCHA verification failed. Please refresh and try again.');
+									}
+								});
+								recaptchaModalWidgetId = window.recaptchaModalWidgetId;
+							}
+						}
+						
+						// Execute the reCAPTCHA
+						if (window.recaptchaModalWidgetId !== null) {
+							grecaptcha.execute(window.recaptchaModalWidgetId);
+						} else {
+							throw new Error('reCAPTCHA widget not initialized');
+						}
+					} catch (error) {
+						console.error('reCAPTCHA execution error (modal):', error);
+						console.warn('Falling back to form submission without verification');
+						button.prop('disabled', false);
+						postForm(form, true);
+					}
+				});
+			} catch (error) {
+				console.error('reCAPTCHA ready error (modal):', error);
+				console.warn('Submitting without reCAPTCHA verification');
+				button.prop('disabled', false);
+				postForm(form, true);
+			}
+		} else {
+			// Fallback: submit without reCAPTCHA if not configured
+			console.warn('reCAPTCHA not configured or loaded, submitting without verification');
+			postForm(form, true);
+		}
+		
 		return false;
 	});
 
