@@ -23,11 +23,6 @@ google_analytics: "G-GPW5FKMJWZ"
 twitter_username: neahtid
 
 # ---- Jekyll settings ----
-plugins:
-  - jekyll-feed
-  - jekyll-multiple-languages-plugin
-  - jekyll-timeago
-  - jekyll-seo-tag
 permalink: pretty
 
 # permalink: /:categories/:title/
@@ -62,7 +57,6 @@ language_names:
   es: Español
   pt-br: Português
 
-
 collections:
   pages:
     output: true
@@ -84,18 +78,12 @@ exclude:
   - .gitignore
   - README.md
   - LICENSE
-# Exclude from processing.
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .bundle/
+  - .github/
+  - _site/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
