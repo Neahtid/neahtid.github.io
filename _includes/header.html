@@ -5,17 +5,25 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{{ prefix | default: '/#home' }}"><img src="/assets/img/neahtid_logo.png" alt="Neahtid" class="logo"></a>
+      <a class="navbar-brand" href="{{ prefix | default: '/#home' }}"><img src="/assets/img/neahtid_logo.png"
+          alt="Neahtid" class="logo"></a>
 
-      <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto d-flex align-items-center">
           {% for navtop in site.translations[site.lang].global.navbar_top %}
-          <li class="nav-item {% if page.url == navtop.link %}active{% endif %}">
+          {% assign is_active = false %}
+          {% if page.url == navtop.link %}
+          {% assign is_active = true %}
+          {% elsif navtop.link == '/blog/' and page.url contains '/posts/' %}
+          {% assign is_active = true %}
+          {% endif %}
+          <li class="nav-item {% if is_active %}active{% endif %}">
             <a class="nav-link" href="{{prefix}}{{navtop.link}}">{{ navtop.title }}</a>
           </li>
           {% endfor %}
@@ -31,16 +39,16 @@
             <li>
               {% if page.namespace %}
               <a class="dropdown-item" data-lang="{{ lang }}" href="{% tl {{ page.namespace }} {{ lang }} %}">
-              {{ site.language_names[lang] }}
+                {{ site.language_names[lang] }}
               </a>
               {% else %}
               {% if lang == site.default_lang and site.default_locale_in_subfolder != true %}
               <a class="dropdown-item" data-lang="{{ lang }}" href="{{ site.baseurl_root }}{{ page.url }}">
-              {{ site.language_names[lang] }}
+                {{ site.language_names[lang] }}
               </a>
               {% else %}
               <a class="dropdown-item" data-lang="{{ lang }}" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">
-              {{ site.language_names[lang] }}
+                {{ site.language_names[lang] }}
               </a>
               {% endif %}
               {% endif %}
