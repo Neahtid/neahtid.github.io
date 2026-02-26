@@ -67,11 +67,11 @@ pages:
     name_placeholder: Su nombre
     email_placeholder: Su Email
     message_placeholder: Su Mensaje (Opcional)
-    email_novalid: "es una dirección de correo electrónico inválida. Por favor, ingresa una válida."  
-    email_empty: "Ingresa tu dirección de correo electrónico antes de enviar."  
-    general_novalid: "Algo salió mal... Por favor, inténtalo de nuevo más tarde."  
+    email_novalid: "es una dirección de correo electrónico inválida. Por favor, ingresa una válida."
+    email_empty: "Ingresa tu dirección de correo electrónico antes de enviar."
+    general_novalid: "Algo salió mal... Por favor, inténtalo de nuevo más tarde."
     thanks_default: "Gracias por tu consulta."
-    thanks_response: "Gracias por tu contacto. Nuestro equipo se comunicará contigo en breve."  
+    thanks_response: "Gracias por tu contacto. Nuestro equipo se comunicará contigo en breve."
     will_close: "Esta ventana se cerrará en unos momentos..."
   buttons:
     send: "Enviar"
@@ -81,22 +81,22 @@ pages:
     next: "Siguiente"
 
 jekyll_timeago:
-  today: 'hoy'
-  yesterday: 'ayer'
-  tomorrow: 'mañana'
-  and: 'y'
-  suffix: 'atrás'
-  prefix: ''
-  suffix_future: 'en'
-  prefix_future: ''
-  years: 'años'
-  year: 'año'
-  months: 'meses'
-  month: 'mes'
-  weeks: 'semanas'
-  week: 'semana'
-  days: 'días'
-  day: 'día'
+  today: "hoy"
+  yesterday: "ayer"
+  tomorrow: "mañana"
+  and: "y"
+  suffix: "atrás"
+  prefix: ""
+  suffix_future: "en"
+  prefix_future: ""
+  years: "años"
+  year: "año"
+  months: "meses"
+  month: "mes"
+  weeks: "semanas"
+  week: "semana"
+  days: "días"
+  day: "día"
 
 contact:
   hero: "¡Estamos aquí para ayudarte!"
@@ -117,7 +117,7 @@ services:
     form_label: "Seleccionar una Solución"
     form_title: "Comienza tu Viaje Digital"
     form_submit: "Empezar"
-    form_options: 
+    form_options:
       - "Aplicaciones Web Avanzadas"
       - "Soluciones Empresariales Personalizadas"
       - "Desarrollo de Sitios Web Corporativos"
@@ -159,7 +159,7 @@ services:
     form_title: "Solicita una Evaluación de Seguridad"
     form_label: "Selecciona una Solución"
     form_submit: "Solicitar Evaluación"
-    form_options: 
+    form_options:
       - "Hacking Ético"
       - "Pruebas de Penetración"
       - "Evaluación de Seguridad Empresarial"
@@ -196,7 +196,7 @@ services:
     form_title: "Iniciar una Colaboración de Investigación"
     form_label: "Área de Interés en Investigación"
     form_submit: "Enviar Propuesta de Investigación"
-    form_options: 
+    form_options:
       - "IA y Robótica"
       - "IA en Finanzas"
       - "Energía Sostenible"
@@ -227,35 +227,21 @@ customers:
       link: "/customers/jingo-store/"
       business: "Comercio electrónico con ventas y automatizaciones de IA"
       description: "Experimente una solución de comercio electrónico completa con métodos de pago integrados, seguimiento de pedidos y gestión de inventario"
-      ourvalue: 
+      ourvalue:
     - name: "Zigna App"
       logo: "/assets/img/icon_zigna_192x192.png"
       site: "https://zigna.app"
       link: "/customers/zigna-app/"
       business: "Señales de compra/venta para trading"
       description: "Recomendaciones de trading de acciones en tiempo real generadas por IA (Inteligencia Artificial Global) y operadores experimentados a través de nuestra plataforma de suscripción con análisis avanzado de mercado."
-      ourvalue: "\"Implementación de un canal de servicio para operadores y venta de señales de compra y venta.\""
-    - name: "PortaJoiaJeri"
-      logo: "/assets/img/icon_portajoiajeri.jpg"
-      link:
-      site: "https://www.instagram.com/portajoiajeri/"
-      business: "Soporte y canal de ventas online"
-      description: "Joyería que ha logrado llegar a clientes online a través de nuestras soluciones de comercio electrónico"
-      ourvalue: "\"Implementamos el chatbot para reducir la carga de trabajo del equipo de ventas online. Ahora resuelve el 50 % de las consultas sin intervención humana, lo que nos ha permitido mejorar y capacitar continuamente a los modelos.\""
-    - name: "LivingWorkspace"
-      logo: "/assets/img/icon_livingorkspace-192x192.png"
-      site: "https://livingworkspace.neahtid.com"
-      link:
-      business: "Reservas de espacios de trabajo"
-      description: "Espacio de trabajo ininterrumpido con privacidad, seguridad y comodidad para freelancers, estudiantes, startups y teletrabajadores."
-      ourvalue: "\"Temporalmente no hay plazas disponibles. La calidad de la confirmación de reservas nos ha dejado temporalmente sin disponibilidad. Esto ha mejorado enormemente la experiencia del cliente."
+      ourvalue: '"Implementación de un canal de servicio para operadores y venta de señales de compra y venta."'
     - name: "Minions App"
       logo:
       site: "https://minions.neahtid.com"
       link: "/customers/pwa-demo/"
       business: "Aplicación de demostración"
       description: "Aplicación web instalable de marca blanca que incluye chatbots, automatización de IA, paneles de inteligencia empresarial (BI), autenticación segura, integración de datos y mucho más."
-      ourvalue: 
+      ourvalue:
 
 index:
   hero:
@@ -457,7 +443,7 @@ service_2:
         dashboard: "Paneles Inteligentes de Business Intelligence"
         automated: "Sistema Automatizado de Gestión Financiera"
         ai_powered: "Plataforma de Análisis Empresarial con IA"
-  
+
   solutions:
     title: "Nuestras Soluciones"
     cards:
@@ -684,7 +670,7 @@ service_6:
         sales_dashboard: "Panel de Análisis de Ventas"
         insights_hub: "Centro de Insights del Cliente"
         growth_metrics: "Métricas de Crecimiento del Comercio"
-  
+
   stats:
     satisfaction:
       label: "Tasa de Satisfacción del Cliente"
@@ -705,7 +691,7 @@ service_6:
       performance:
         title: "Guardian de Rendimiento"
         description: "Asegura el éxito de tu e-commerce con optimización continua de la plataforma, análisis avanzados y monitoreo de seguridad proactivo que protege tus ingresos 24/7."
-  
+
   pricing:
     title: "Planes de Precios Flexibles"
     plans:
@@ -736,7 +722,7 @@ service_6:
           - text: "Soporte Dedicado 24/7"
           - text: "Mantenimiento Diario"
         cta: "Contáctanos"
-  
+
   contact:
     title: "Inicia tu Viaje en el E-Commerce"
     description: "Hablemos sobre cómo nuestras soluciones de e-commerce pueden impulsar tus operaciones."
@@ -752,13 +738,13 @@ product_jingo:
     buttons:
       demo: "Probar Demo en Vivo"
       learn_more: "Saber Más"
-  
+
   nav:
     payments: "Pagos"
     inventory: "Inventario"
     tracking: "Seguimiento"
     pwa: "Funciones PWA"
-  
+
   features:
     payments:
       title: "Integración Segura de Pagos"
@@ -768,7 +754,7 @@ product_jingo:
         - "Carteras Digitales"
         - "Transferencias Bancarias"
         - "Criptomonedas"
-    
+
     inventory:
       title: "Gestión Inteligente de Inventario"
       description: "Seguimiento de stock en tiempo real y sistema automatizado de reposición."
@@ -777,7 +763,7 @@ product_jingo:
         - "Reposición Automatizada"
         - "Soporte para Múltiples Ubicaciones"
         - "Seguimiento por Lotes"
-    
+
     tracking:
       title: "Sistema de Seguimiento de Pedidos"
       description: "Mantén a los clientes informados con el seguimiento de pedidos en tiempo real."
@@ -786,23 +772,23 @@ product_jingo:
         - "Notificaciones por Correo Electrónico"
         - "Alertas por SMS"
         - "Mapeo de Envíos"
-    
+
     pwa:
       title: "Funciones de Aplicación Web Progresiva (PWA)"
-      description: "Capacidades web modernas para una Aplicación Web Instalable en múltiples dispositivos"  
+      description: "Capacidades web modernas para una Aplicación Web Instalable en múltiples dispositivos"
       items:
         - "Soporte Offline"
         - "Notificaciones Push"
         - "Instalación en Pantalla de Inicio"
         - "Carga Rápida"
-  
+
   screenshots:
     title: "Capturas de Pantalla de Diseño Responsivo"
     views:
       mobile: "Vista Móvil"
       tablet: "Vista para Tableta"
       desktop: "Vista para Escritorio"
-  
+
   demo:
     title: "¿Listo para Probarlo?"
     description: "Experimenta nuestra demo de Tienda White Label con datos de ejemplo y funcionalidad completa."
@@ -818,7 +804,7 @@ product_zigna:
     buttons:
       free_trial: "Iniciar Prueba Gratuita"
       learn_more: "Saber Más"
-  
+
   stats:
     accuracy:
       value: "95%"
@@ -832,7 +818,7 @@ product_zigna:
     coverage:
       value: "24/7"
       label: "Cobertura del Mercado"
-  
+
   features:
     title: "Características de la Plataforma"
     realtime:
@@ -843,7 +829,7 @@ product_zigna:
         - text: "Informes de análisis detallados"
         - text: "Métricas de evaluación de riesgos"
         - text: "Puntos de entrada y salida"
-    
+
     market_analysis:
       title: "Análisis Avanzado del Mercado"
       subtitle: "Herramientas de análisis de mercado completas e información detallada."
@@ -852,7 +838,7 @@ product_zigna:
         - text: "Análisis del sentimiento del mercado"
         - text: "Datos históricos de rendimiento"
         - text: "Predicciones de tendencias"
-    
+
     portfolio:
       title: "Gestión de Portafolio"
       subtitle: "Monitorea y administra tus inversiones de manera efectiva."
@@ -861,7 +847,7 @@ product_zigna:
         - text: "Herramientas de gestión de riesgos"
         - text: "Análisis de diversificación"
         - text: "Alertas personalizadas"
-  
+
   pricing:
     title: "Planes de Suscripción"
     basic:
@@ -874,7 +860,7 @@ product_zigna:
         - text: "Alertas por correo electrónico"
         - text: "Consulta con experto"
       cta: "Comenzar Ahora"
-    
+
     premium:
       name: "Premium"
       price: "$99"
@@ -885,7 +871,7 @@ product_zigna:
         - text: "Alertas prioritarias"
         - text: "Consulta mensual"
       cta: "Comenzar Ahora"
-    
+
     enterprise:
       name: "Enterprise"
       price: "$299"
@@ -896,7 +882,7 @@ product_zigna:
         - text: "Soporte prioritario 24/7"
         - text: "Consultas semanales"
       cta: "Contactar Ventas"
-  
+
   testimonials:
     title: "Lo Que Dicen Nuestros Usuarios"
     items:
@@ -909,7 +895,7 @@ product_zigna:
       - quote: "Los conocimientos de los expertos combinados con una interfaz fácil de usar hacen que esta plataforma se destaque de la competencia."
         name: "Michael Chen"
         position: "Day Trader"
-  
+
   demo:
     title: "Comienza tu Prueba Gratuita Hoy"
     subtitle: "Experimenta el poder de las recomendaciones de trading profesional sin riesgos durante 14 días."
@@ -926,14 +912,14 @@ product_minions:
     buttons:
       demo: "Probar Demo en Vivo"
       features: "Explorar Funciones"
-    
+
   # Navegación
   nav:
     bi_dashboards: "Paneles BI"
     ai_integration: "Integración con IA"
     hardware: "Hardware"
     security: "Seguridad"
-    
+
   # Sección de Funciones
   features:
     # Paneles BI
@@ -949,7 +935,7 @@ product_minions:
         - "Informes Inteligentes"
         - "Vistas Personalizadas"
         - "Exportación Fácil"
-        
+
     # Integración con IA
     ai_integration:
       title: "Funciones de Asistente Inteligente"
@@ -963,7 +949,7 @@ product_minions:
         - "Chat Inteligente"
         - "Detección de Tendencias"
         - "Controles por Voz"
-        
+
     # Integración con Hardware
     hardware:
       title: "Compatible con Tus Dispositivos"
@@ -979,7 +965,7 @@ product_minions:
         - "Toque para Usar"
         - "Bluetooth"
         - "NFC"
-        
+
     # Funciones de Seguridad
     security:
       title: "Seguridad de Nivel Bancario"
@@ -993,7 +979,7 @@ product_minions:
         - "Inicio de Sesión Seguro"
         - "Privacidad Certificada"
         - "Seguridad Verificada"
-        
+
   # Sección de Integraciones
   integrations:
     title: "Compatible con Tus Herramientas Favoritas"
@@ -1005,7 +991,7 @@ product_minions:
         - "Hojas de Cálculo"
         - "Herramientas Web"
         - "APIs"
-    
+
     smart_assistants:
       title: "Asistentes Inteligentes"
       description: "Funciona con las principales herramientas de IA para facilitar tu trabajo"
@@ -1013,7 +999,7 @@ product_minions:
         - "Chat Inteligente"
         - "Aprendizaje Automático"
         - "Ayuda Personalizada"
-    
+
     security_tools:
       title: "Herramientas de Seguridad"
       description: "Se conecta con tus sistemas de seguridad existentes"
@@ -1021,14 +1007,14 @@ product_minions:
         - "Cerraduras Digitales"
         - "Cámaras de Seguridad"
         - "Escáneres de Identificación"
-        
+
   # Sección de Dispositivos
   devices:
     title: "Funciona en Todos Tus Dispositivos"
     phone: "Perfecto para tu Móvil"
     tablet: "Ideal en Tablets"
     computer: "Máximo Rendimiento en Computadoras"
-    
+
   # Sección de Demo
   demo:
     title: "Prueba Minions App Hoy"

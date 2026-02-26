@@ -41,7 +41,7 @@ global:
       link: /privacy-policy/
     - title: Contact Us
       link: /contact-us/
-  
+
 langs:
   pt: Português
   en: English
@@ -80,24 +80,23 @@ pages:
     previous: "Previous"
     next: "Next"
 
-
 jekyll_timeago:
-  today: 'today'
-  yesterday: 'yesterday'
-  tomorrow: 'tomorrow'
-  and: 'and'
-  suffix: 'ago'
-  prefix: ''
-  suffix_future: 'in'
-  prefix_future: ''
-  years: 'years'
-  year: 'year'
-  months: 'months'
-  month: 'month'
-  weeks: 'weeks'
-  week: 'week'
-  days: 'days'
-  day: 'day'
+  today: "today"
+  yesterday: "yesterday"
+  tomorrow: "tomorrow"
+  and: "and"
+  suffix: "ago"
+  prefix: ""
+  suffix_future: "in"
+  prefix_future: ""
+  years: "years"
+  year: "year"
+  months: "months"
+  month: "month"
+  weeks: "weeks"
+  week: "week"
+  days: "days"
+  day: "day"
 
 contact:
   hero: "We are here to help you!"
@@ -108,19 +107,19 @@ contact:
     email: "Email"
     message: "Message"
 
-
 services:
   hero:
     title: "Professional Services"
-    description: "Empowering businesses with cutting-edge technology solutions for sustainable growth and
-          innovation."
+    description:
+      "Empowering businesses with cutting-edge technology solutions for sustainable growth and
+      innovation."
   web_applications:
     title: "Web Applications & Software Solutions"
     description: "Elevate your brand with cutting-edge web applications and advanced software solutions tailored for your business success."
     form_title: "Start Your Digital Journey"
     form_label: "Select a Solution"
     form_submit: "Get Started"
-    form_options: 
+    form_options:
       - "Advanced Web Applications"
       - "Custom Business Solutions"
       - "Corporate Website Development"
@@ -162,7 +161,7 @@ services:
     form_title: "Get a Security Assessment"
     form_label: "Select a Solution"
     form_submit: "Request Assessment"
-    form_options: 
+    form_options:
       - "Ethical Hacking"
       - "Penetration Testing"
       - "Enterprise Security Assessment"
@@ -199,7 +198,7 @@ services:
     form_title: "Start a Research Collaboration"
     form_label: "Research Area of Interest"
     form_submit: "Submit Research Proposal"
-    form_options: 
+    form_options:
       - "AI & Robotics"
       - "AI in Finance"
       - "Sustainable Energy"
@@ -231,35 +230,21 @@ customers:
       link: "/customers/jingo-store/"
       business: "E-Commerce with AI Sales and Automations"
       description: "Experience a fully-featured e-commerce solution with integrated payment methods, order tracking, and inventory management."
-      ourvalue: 
+      ourvalue:
     - name: "Zigna App"
       logo: "/assets/img/icon_zigna_192x192.png"
       site: "https://zigna.app"
       link: "/customers/zigna-app/"
       business: "Trading Buy/Sell Signals"
       description: "Real-time stock trading recommendations from AI Generated /AGI and experienced traders through our subscription-based platform with advanced market analysis."
-      ourvalue: "\"Implementation of a service channel for traders and sales of Buy and Sell signals\""
-    - name: "PortaJoiaJeri"
-      logo: "/assets/img/icon_portajoiajeri.jpg"
-      link:
-      site: "https://www.instagram.com/portajoiajeri/"
-      business: "Support and Online Sales Channel"
-      description: "Jewelry that has managed to reach online customers through our e-commerce solutions"
-      ourvalue: "\"We implemented the chatbot to reduce the workload of the online sales team. It now resolves 50% of inquiries without human intervention, which has allowed us to continuously improve and retrain the models.\""
-    - name: "LivingWorkspace"
-      logo: "/assets/img/icon_livingorkspace-192x192.png"
-      site: "https://livingworkspace.neahtid.com"
-      link:
-      business: "Workspace Reservations"
-      description: "Uninterrupted workspace with privacy, safety, and comfort for freelancers, students, startups, and remote workers."
-      ourvalue: "\"Temporarily no vacancies available. The quality of confirming reservations has left us temporarily without availability. This has greatly elevated the customer experience.\""
+      ourvalue: '"Implementation of a service channel for traders and sales of Buy and Sell signals"'
     - name: "Minions App"
       logo:
       site: "https://minions.neahtid.com"
       link: "/customers/pwa-demo/"
       business: "Demo Application"
       description: "Installable white-label Web Application showcasing Chatbots, AI Automation, BI dashboards, secure authentication, data integration, and more."
-      ourvalue: 
+      ourvalue:
 
 index:
   hero:
@@ -338,7 +323,7 @@ service_1:
           - text: "Offline Functionality"
           - text: "Secure Payments"
           - text: "Instant Data Synchronization"
-      
+
       business_solutions:
         icon_alt: "Website Icon"
         title: "Custom Business Solutions"
@@ -347,7 +332,7 @@ service_1:
           - text: "Custom Scripts"
           - text: "Third-party Integration"
           - text: "Smart System Connectivity"
-      
+
       corporate_website:
         icon_alt: "Sheets Icon"
         title: "Corporate Website Development"
@@ -356,7 +341,7 @@ service_1:
           - text: "Responsive Design"
           - text: "SEO Optimization"
           - text: "Content Management"
-      
+
       process_automation:
         icon_alt: "Landing Page Icon"
         title: "Business Process Automation"
@@ -365,7 +350,7 @@ service_1:
           - text: "Automated Workflows"
           - text: "Cross-platform Data Flow"
           - text: "Dynamic Process Monitoring"
-      
+
       landing_pages:
         icon_alt: "Marketing Icon"
         title: "High-Impact Landing Pages"
@@ -374,7 +359,7 @@ service_1:
           - text: "A/B Testing"
           - text: "Conversion Optimization"
           - text: "Lead Generation"
-      
+
       analytics:
         icon_alt: "Research Icon"
         title: "Financial & Business Analytics Solutions"
@@ -383,7 +368,7 @@ service_1:
           - text: "Advanced Computations"
           - text: "Data Analysis"
           - text: "Real-time Processing"
-      
+
       brand_experience:
         icon_alt: "Brand Icon"
         title: "Digital Brand Experience"
@@ -392,7 +377,7 @@ service_1:
           - text: "Visual Identity"
           - text: "Design Systems"
           - text: "Brand Guidelines"
-      
+
       maintenance:
         icon_alt: "Maintenance Icon"
         title: "Website Maintenance & Security"
@@ -401,7 +386,7 @@ service_1:
           - text: "Security Updates"
           - text: "Performance Optimization"
           - text: "Regular Backups"
-      
+
       integration:
         icon_alt: "Marketing Icon"
         title: "Business Systems Integration"
@@ -461,7 +446,7 @@ service_2:
         dashboard: "Smart Business Intelligence Dashboards"
         automated: "Automated Financial Management System"
         ai_powered: "AI-Powered Business Analytics Platform"
-  
+
   solutions:
     title: "Our Solutions"
     cards:
@@ -622,7 +607,7 @@ service_5:
     buttons:
       get_started: "Get Started"
       learn_more: "Learn More"
-  
+
   solutions:
     title: "Our Core Solutions"
     cards:
@@ -633,7 +618,7 @@ service_5:
           - text: "Energy-efficient lighting"
           - text: "Threshold Alerts"
           - text: "Data Collection"
-      
+
       automation:
         title: "Business Automation"
         description: "Automation systems with integrated controls, sensors and monitoring capabilities for reduced operational costs."
@@ -641,7 +626,7 @@ service_5:
           - text: "Process Automation"
           - text: "Smart Building Controls"
           - text: "Data Collection"
-      
+
       security:
         title: "Smart Security"
         description: "Comprehensive security solutions including monitoring with web-accessible cameras access controls, and remote monitoring capabilities."
@@ -649,7 +634,7 @@ service_5:
           - text: "Video Surveillance"
           - text: "Access Control"
           - text: "Remote Monitoring"
-      
+
       hardware:
         title: "Hardware & Robotics Integration"
         description: "Custom connected devices and robotic solutions that automate processes and improve operational efficiency."
@@ -657,7 +642,7 @@ service_5:
           - text: "Sensor Networks"
           - text: "Inventory Tracking"
           - text: "Customer Analytics"
-  
+
   industries:
     title: "Industries We Serve"
     sectors:
@@ -670,7 +655,7 @@ service_5:
       construction:
         title: "Construction"
         description: "Enhance site security and project management efficiency."
-  
+
   cta:
     title: "Ready to Transform Your Business?"
     subtitle: "Let's discuss how our hardware solutions can enhance your operations."
@@ -688,7 +673,7 @@ service_6:
         sales_dashboard: "Sales Analytics Dashboard"
         insights_hub: "Customer Insights Hub"
         growth_metrics: "Commerce Growth Metrics"
-  
+
   stats:
     satisfaction:
       label: "Customer Satisfaction Rate"
@@ -696,7 +681,7 @@ service_6:
       label: "Online Stores Launched"
     support:
       label: "Technical Support"
-  
+
   solutions:
     title: "Comprehensive E-Commerce Solutions"
     items:
@@ -709,7 +694,7 @@ service_6:
       performance:
         title: "Performance Guardian"
         description: "Ensure your e-commerce success with continuous platform optimization, advanced analytics, and proactive security monitoring that protects your revenue 24/7."
-  
+
   pricing:
     title: "Flexible Pricing Plans"
     plans:
@@ -740,7 +725,7 @@ service_6:
           - text: "24/7 Dedicated Support"
           - text: "Daily Maintenance"
         cta: "Contact Us"
-  
+
   contact:
     title: "Start Your E-Commerce Journey"
     description: "Let's discuss how our e-commerce solutions can enhance your operations."
@@ -756,13 +741,13 @@ product_jingo:
     buttons:
       demo: "Try Live Demo"
       learn_more: "Learn More"
-  
+
   nav:
     payments: "Payments"
     inventory: "Inventory"
     tracking: "Tracking"
     pwa: "PWA Features"
-  
+
   features:
     payments:
       title: "Secure Payment Integration"
@@ -772,7 +757,7 @@ product_jingo:
         - "Digital Wallets"
         - "Bank Transfers"
         - "Cryptocurrency"
-    
+
     inventory:
       title: "Smart Inventory Management"
       description: "Real-time stock tracking and automated reordering system."
@@ -781,7 +766,7 @@ product_jingo:
         - "Automated Reordering"
         - "Multi-location Support"
         - "Batch Tracking"
-    
+
     tracking:
       title: "Order Tracking System"
       description: "Keep customers informed with real-time order tracking."
@@ -790,7 +775,7 @@ product_jingo:
         - "Email Notifications"
         - "SMS Alerts"
         - "Shipment Mapping"
-    
+
     pwa:
       title: "Progressive Web App Features"
       description: "Modern web capabilities for a multi-device installable Web App"
@@ -799,19 +784,19 @@ product_jingo:
         - "Push Notifications"
         - "Home Screen Installation"
         - "Fast Loading Times"
-  
+
   screenshots:
     title: "Responsive Design Screenshots"
     views:
       mobile: "Mobile View"
       tablet: "Tablet View"
       desktop: "Desktop View"
-  
+
   demo:
     title: "Ready to Try It Out?"
     description: "Experience our White Label Store demo with sample data and full functionality."
     button: "Launch Demo Store"
-  
+
 product_zigna:
   title: "Zigna App"
   description: "Real-time stock trading recommendations from AI Generated /AGI and experienced traders through our subscription-based platform with advanced market analysis."
@@ -822,7 +807,7 @@ product_zigna:
     buttons:
       free_trial: "Start Free Trial"
       learn_more: "Learn More"
-  
+
   stats:
     accuracy:
       value: "95%"
@@ -836,7 +821,7 @@ product_zigna:
     coverage:
       value: "24/7"
       label: "Market Coverage"
-  
+
   features:
     title: "Platform Features"
     realtime:
@@ -847,7 +832,7 @@ product_zigna:
         - text: "Detailed analysis reports"
         - text: "Risk assessment metrics"
         - text: "Entry and exit points"
-    
+
     market_analysis:
       title: "Advanced Market Analysis"
       subtitle: "Comprehensive market analysis tools and insights."
@@ -856,7 +841,7 @@ product_zigna:
         - text: "Market sentiment analysis"
         - text: "Historical performance data"
         - text: "Trend predictions"
-    
+
     portfolio:
       title: "Portfolio Management"
       subtitle: "Track and manage your investments effectively."
@@ -865,7 +850,7 @@ product_zigna:
         - text: "Risk management tools"
         - text: "Diversification analysis"
         - text: "Custom alerts"
-  
+
   pricing:
     title: "Subscription Plans"
     basic:
@@ -878,7 +863,7 @@ product_zigna:
         - text: "Email alerts"
         - text: "Expert consultation"
       cta: "Get Started"
-    
+
     premium:
       name: "Premium"
       price: "$99"
@@ -889,7 +874,7 @@ product_zigna:
         - text: "Priority alerts"
         - text: "Monthly consultation"
       cta: "Get Started"
-    
+
     enterprise:
       name: "Enterprise"
       price: "$299"
@@ -900,7 +885,7 @@ product_zigna:
         - text: "24/7 priority support"
         - text: "Weekly consultations"
       cta: "Contact Sales"
-  
+
   testimonials:
     title: "What Our Users Say"
     items:
@@ -913,7 +898,7 @@ product_zigna:
       - quote: "Expert insights combined with user-friendly interface make this platform stand out from the competition."
         name: "Michael Chen"
         position: "Day Trader"
-  
+
   demo:
     title: "Start Your Free Trial Today"
     subtitle: "Experience the power of professional trading recommendations risk-free for 14 days."
@@ -930,14 +915,14 @@ product_minions:
     buttons:
       demo: "Try Live Demo"
       features: "Explore Features"
-    
+
   # Navigation
   nav:
     bi_dashboards: "BI Dashboards"
     ai_integration: "AI Integration"
     hardware: "Hardware"
     security: "Security"
-    
+
   # Features Section
   features:
     # BI Dashboards
@@ -953,7 +938,7 @@ product_minions:
         - "Smart Reports"
         - "Custom Views"
         - "Easy Export"
-        
+
     # AI Integration
     ai_integration:
       title: "Smart Assistant Features"
@@ -967,7 +952,7 @@ product_minions:
         - "Smart Chat"
         - "Trend Spotting"
         - "Voice Controls"
-        
+
     # Hardware Integration
     hardware:
       title: "Works With Your Devices"
@@ -983,7 +968,7 @@ product_minions:
         - "Tap-to-Use"
         - "Bluetooth"
         - "NFC"
-        
+
     # Security Features
     security:
       title: "Bank-Grade Security"
@@ -997,7 +982,7 @@ product_minions:
         - "Secure Login"
         - "Privacy Certified"
         - "Security Verified"
-        
+
   # Integrations Section
   integrations:
     title: "Works With Your Favorite Tools"
@@ -1009,7 +994,7 @@ product_minions:
         - "Spreadsheets"
         - "Web Tools"
         - "APIs"
-    
+
     smart_assistants:
       title: "Smart Assistants"
       description: "Works with leading AI tools to make your job easier"
@@ -1017,7 +1002,7 @@ product_minions:
         - "Smart Chat"
         - "Auto-Learn"
         - "Custom Help"
-    
+
     security_tools:
       title: "Security Tools"
       description: "Connects with your existing security systems"
@@ -1025,14 +1010,14 @@ product_minions:
         - "Digital Locks"
         - "Security Cameras"
         - "ID Scanners"
-        
+
   # Devices Section
   devices:
     title: "Works on All Your Devices"
     phone: "Perfect for Your Phone"
     tablet: "Great on Tablets"
     computer: "Full Power on Computers"
-    
+
   # Demo Section
   demo:
     title: "Try Minions App Today"
