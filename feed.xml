@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://www.neahtid.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.neahtid.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-02-26T17:14:59+00:00</updated><id>https://www.neahtid.com/feed.xml</id><title type="html">Solutions tailored to help your business grow</title><subtitle>Leading provider of innovative IT solutions including web applications,  business intelligence, AI automation, cybersecurity, hardware solutions,  and e-commerce platforms. Empowering businesses with cutting-edge technology.</subtitle><author><name>Rodrigo Cancino (Coto)</name></author><entry><title type="html">The Chatbot Revolution: Transforming Customer Service and Boosting Sales</title><link href="https://www.neahtid.com/posts/2025/03/11/chatbots/" rel="alternate" type="text/html" title="The Chatbot Revolution: Transforming Customer Service and Boosting Sales" /><published>2025-03-11T17:46:00+00:00</published><updated>2025-03-11T17:46:00+00:00</updated><id>https://www.neahtid.com/posts/2025/03/11/chatbots</id><content type="html" xml:base="https://www.neahtid.com/posts/2025/03/11/chatbots/"><![CDATA[<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+</style>
+
+<p>In a world where seconds make the difference in purchasing decisions, chatbots have emerged as the new silent heroes of the corporate world.</p>
+
+<h2 id="the-chatbot-boom-in-numbers">The Chatbot Boom in Numbers</h2>
+
+<ul>
+  <li>Chatbot market: US$2.9 billion (2023) → US$10.5 billion (2028), annual growth of 29.3%</li>
+  <li>7 out of 10 customer interactions in 2023 already involved these technologies (Gartner)</li>
+</ul>
+
+<h2 id="key-advantages">Key Advantages</h2>
+
+<p><strong>Total Availability:</strong> H&amp;M reduced response time from 24h to 5min (+60% in satisfaction)</p>
+
+<p><strong>Significant Savings:</strong> Average reduction of 30% in support costs. Bank of America saves US$30 million annually with its virtual assistant Erica.</p>
+
+<p><strong>Scalability:</strong> Amazon manages service peaks during Black Friday, even with a 400% increase in inquiries.</p>
+
+<h2 id="impact-by-sector">Impact by Sector</h2>
+
+<h3 id="e-commerce">E-commerce</h3>
+
+<ul>
+  <li>Sephora: +11% in conversion rate with personalized recommendations</li>
+  <li>Domino’s: +28% in online sales with DOM chatbot</li>
+  <li>Whole Foods: +266% in engagement and +20% in cross-selling</li>
+</ul>
+
+<h3 id="finance">Finance</h3>
+
+<ul>
+  <li>Bradesco: 12 million monthly interactions via BIA</li>
+  <li>Nubank: -80% in problem resolution time</li>
+  <li>Lemonade: processing claims in 3min (vs. 30-45min industry standard)</li>
+</ul>
+
+<h3 id="healthcare">Healthcare</h3>
+
+<ul>
+  <li>Babylon Health: eliminated 27% of unnecessary in-person consultations</li>
+  <li>Cleveland Clinic: -70% in appointment scheduling time</li>
+  <li>WHO: handled 4.5 million inquiries about COVID-19</li>
+</ul>
+
+<h2 id="transformative-metrics">Transformative Metrics</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>What Changes</th>
+      <th>How Much It Changes</th>
+      <th>Real Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Response Time</td>
+      <td>⬇️ 80%</td>
+      <td>KLM: from 1h to 5min</td>
+    </tr>
+    <tr>
+      <td>First Contact Resolution</td>
+      <td>⬆️ 25%</td>
+      <td>Vodafone: from 65% to 81%</td>
+    </tr>
+    <tr>
+      <td>Customer Satisfaction</td>
+      <td>⬆️ 20-35%</td>
+      <td>Dell: +29% in positive reviews</td>
+    </tr>
+    <tr>
+      <td>Cost per Service</td>
+      <td>⬇️ 30-50%</td>
+      <td>IBM: from US$15-20 to US$5-7</td>
+    </tr>
+    <tr>
+      <td>Sales Volume</td>
+      <td>⬆️ 15-30%</td>
+      <td>Sephora: +25% in online sales</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="innovative-experiences">Innovative Experiences</h2>
+
+<ul>
+  <li>Starbucks: “My Barista” increased the average order value by 20%</li>
+  <li>Disney: omnichannel system generated +45% in engagement</li>
+  <li>Airbnb: real-time feedback reduced post-stay complaints by 28%</li>
+</ul>
+
+<h2 id="long-term-benefits">Long-Term Benefits</h2>
+
+<ul>
+  <li>Zappos: built a knowledge base that reduced human inquiries by 37%</li>
+  <li>Unilever: identified emerging trends, increasing launch success by 15%</li>
+  <li>Mastercard: evolved the system to detect fraud and offer financial advice (+18% in loyalty)</li>
+</ul>
+
+<h2 id="challenges">Challenges</h2>
+
+<ul>
+  <li>Balance between automation and human touch is essential</li>
+  <li>Proper personalization aligned with brand identity is necessary</li>
+  <li>Privacy remains a concern for 65% of consumers</li>
+</ul>
+
+<h2 id="transform-your-business-with-neahtids-chatbot-solutions">Transform Your Business with Neahtid’s Chatbot Solutions</h2>
+
+<p>At Neahtid, we understand that each business is unique and deserves customized artificial intelligence and automation solutions. Our specialists transform advanced technologies into real competitive advantages for your business.</p>
+
+<p><a href="/services/artificial-intelligence-and-automation/chatbots/">Visit Our Intelligent Chatbot Solutions</a> and discover how Neahtid can help your company to:</p>
+
+<ul>
+  <li>Reduce operational costs by up to 50%</li>
+  <li>Increase customer satisfaction by more than 30%</li>
+  <li>Boost your sales with 24/7 personalized service</li>
+  <li>Create an unforgettable brand experience</li>
+</ul>
+
+<p>Don’t let your competitors win over your customers with superior experiences. The best time for your company to be part of this revolution is now.</p>
+
+<div class="text-center">
+    <a href="#" class="btn btn-primary btn-lg rounded-pill my-3" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="AI">
+        Book a Demo
+    </a>
+</div>]]></content><author><name>Rodrigo Cancino (Coto)</name></author><category term="posts" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Transforming Hotel Profitability with Smart Analytics: The Power of Real-Time Dashboards</title><link href="https://www.neahtid.com/posts/2025/01/10/rentabilidad-hotelera/" rel="alternate" type="text/html" title="Transforming Hotel Profitability with Smart Analytics: The Power of Real-Time Dashboards" /><published>2025-01-10T21:24:00+00:00</published><updated>2025-01-10T21:24:00+00:00</updated><id>https://www.neahtid.com/posts/2025/01/10/rentabilidad-hotelera</id><content type="html" xml:base="https://www.neahtid.com/posts/2025/01/10/rentabilidad-hotelera/"><![CDATA[<header class="entry-header">
+In today's competitive hospitality landscape, hotels are increasingly turning to data-driven solutions to optimize their operations and maximize profitability. The integration of business intelligence dashboards has become a game-changer, offering unprecedented insights into performance metrics and operational efficiency.
+</header>
+
+<p><img alt="image hotel profitability" src="/assets/blog/2025-01-10-rentabilidad-hotelera.png" width="100%" /></p>
+
+<p>Recent industry studies show that hotels leveraging advanced data visualization and profit analysis dashboards see an average 15-20% improvement in revenue optimization. This transformation isn’t just about collecting data – it’s about making it actionable and accessible in real-time.</p>
+
+<p>At <strong>Neahtid</strong>, we understand that every minute counts in hospitality management. Our <a href="/services/business-intelligence-and-data-analytics/">business intelligence and analytics service</a> empowers hoteliers with automated data analysis tools specifically designed for the unique challenges of the hotel industry. The solution transforms complex data streams into clear, actionable insights through intuitive dashboards.</p>
+
+<p>Consider the daily operations of a typical hotel: from room occupancy and revenue per available room (RevPAR) to food and beverage sales and staff productivity. Traditional reporting methods often leave managers waiting days or weeks for critical insights. However, with real-time business analytics dashboards, decision-makers can access vital information instantly, enabling rapid response to market changes and operational challenges.</p>
+
+<p>Our hospitality business intelligence solutions go beyond basic reporting. The smart, automated system integrates data from multiple sources – property management systems, point of sale, customer relationship management, and more – creating a comprehensive view of your hotel’s performance. This integration enables hoteliers to:</p>
+
+<ul>
+  <li>Monitor real-time revenue streams and cost centers</li>
+  <li>Identify trends and patterns in guest behavior</li>
+  <li>Optimize pricing strategies based on market demand</li>
+  <li>Track and improve operational efficiency</li>
+  <li>Enhance guest satisfaction through data-driven service improvements</li>
+</ul>
+
+<p>The business data analysis capabilities of our platform are particularly powerful when it comes to profit optimization. By analyzing historical data alongside real-time metrics, hotels can make informed decisions about everything from staffing levels to inventory management. This proactive approach to management has helped our clients achieve significant improvements in their bottom line.</p>
+
+<p>What sets our solution apart is its focus on usability and automation. The system continuously learns from your hotel’s unique patterns and automatically flags anomalies or opportunities, ensuring that no potential for optimization goes unnoticed. Whether you’re managing a boutique hotel or overseeing a chain of properties, our scalable platform adapts to your specific needs.</p>
+
+<p>Ready to transform your hotel’s approach to data analytics? Learn more about <a href="/services/business-intelligence-and-data-analytics/">our comprehensive business intelligence and analytics service</a> and discover how <strong>Neahtid</strong> can help you unlock the full potential of your hospitality business through smart, data-driven decision-making.</p>
+
+<p>In today’s digital age, staying competitive means staying informed. With the right business intelligence tools, your hotel can turn data into profit, ensuring sustainable growth in an ever-evolving industry.</p>]]></content><author><name>Rodrigo Cancino (Coto)</name></author><category term="posts" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Transforming Guest Experiences: The Rise of Smart Hospitality Solutions</title><link href="https://www.neahtid.com/posts/2024/10/11/transforming-guest-experiences/" rel="alternate" type="text/html" title="Transforming Guest Experiences: The Rise of Smart Hospitality Solutions" /><published>2024-10-11T13:06:00+00:00</published><updated>2024-10-11T13:06:00+00:00</updated><id>https://www.neahtid.com/posts/2024/10/11/transforming-guest-experiences</id><content type="html" xml:base="https://www.neahtid.com/posts/2024/10/11/transforming-guest-experiences/"><![CDATA[<header class="entry-header">
+In today's hyper-connected world, the hospitality industry is undergoing a digital revolution. The integration of smart technology, automation, and voice assistants is reshaping how hotels, resorts, and other hospitality venues cater to guests, streamlining operations while delivering personalized and seamless experiences. This article delves into how these innovations are driving the future of smart hospitality.
+</header>
+
+<p><img src="/assets/blog/2024-10-11-transforming-guest-experience.png" alt="Smart Hospitality Solutions" width="100%" /></p>
+
+<h2 id="the-smart-hotel-revolution">The Smart Hotel Revolution</h2>
+
+<p>Smart hospitality solutions leverage technology to enhance efficiency, convenience, and guest satisfaction. At the heart of this transformation are Internet of Things (IoT) devices, AI-driven automation, and voice-activated assistants. Together, they create an ecosystem where technology anticipates and meets the needs of guests, often before they even articulate them.</p>
+
+<h3 id="key-benefits-of-smart-hospitality-solutions">Key Benefits of Smart Hospitality Solutions</h3>
+
+<ol>
+  <li>
+    <p><strong>Enhanced Guest Experience</strong>: Automation and voice assistants enable highly personalized interactions. Smart rooms, for instance, allow guests to control lighting, temperature, and entertainment systems using voice commands or mobile apps. This level of customization enhances comfort and convenience.</p>
+  </li>
+  <li>
+    <p><strong>Operational Efficiency</strong>: Automation reduces the workload on staff by handling repetitive tasks such as check-ins, room service requests, and maintenance alerts. This allows staff to focus on delivering exceptional service and addressing complex guest needs.</p>
+  </li>
+  <li>
+    <p><strong>Cost Savings</strong>: Smart energy management systems use IoT sensors to monitor occupancy and adjust heating, cooling, and lighting accordingly. This reduces energy consumption and operational costs while maintaining guest comfort.</p>
+  </li>
+  <li>
+    <p><strong>Improved Safety and Hygiene</strong>: In the post-pandemic era, touchless solutions have become critical. Automated check-ins, keyless room entry, and voice-controlled devices minimize physical contact, ensuring guest safety.</p>
+  </li>
+</ol>
+
+<h3 id="voice-assistants-a-game-changer-in-hospitality">Voice Assistants: A Game-Changer in Hospitality</h3>
+
+<p>Voice assistants, such as Amazon Alexa for Hospitality or Google Assistant, are rapidly becoming central to smart hospitality strategies. These AI-powered tools deliver:</p>
+
+<ul>
+  <li>
+    <p><strong>Effortless Control</strong>: Guests can use voice commands to request room service, book spa appointments, or even ask for local recommendations, eliminating the need to call the front desk.</p>
+  </li>
+  <li>
+    <p><strong>Multilingual Support</strong>: Breaking language barriers, voice assistants cater to a global audience, making international travelers feel at home.</p>
+  </li>
+  <li>
+    <p><strong>Integration with Hotel Services</strong>: Voice assistants can be connected to property management systems, enabling real-time updates on room availability, housekeeping requests, and more.</p>
+  </li>
+</ul>
+
+<h3 id="real-world-applications">Real-World Applications</h3>
+
+<ol>
+  <li>
+    <p><strong>Marriott International</strong>: Marriott has partnered with Amazon Alexa to offer in-room voice assistants that provide concierge services, control room settings, and streamline guest communications.</p>
+  </li>
+  <li>
+    <p><strong>Hilton’s Connected Room</strong>: Hilton’s smart rooms allow guests to use the Hilton Honors app to personalize room settings, from selecting preferred TV channels to setting the thermostat.</p>
+  </li>
+  <li>
+    <p><strong>CitizenM Hotels</strong>: This chain integrates IoT and voice control to enable guests to manage their stay via tablets or their smartphones, delivering a tech-savvy experience.</p>
+  </li>
+</ol>
+
+<h2 id="challenges-and-considerations">Challenges and Considerations</h2>
+
+<p>While smart hospitality solutions offer numerous advantages, they come with challenges:</p>
+
+<ul>
+  <li>
+    <p><strong>Privacy Concerns</strong>: Guests may feel uneasy about data collection and the potential misuse of personal information. Transparency and robust data security measures are essential.</p>
+  </li>
+  <li>
+    <p><strong>Integration Costs</strong>: Upfront investments in smart technologies can be significant, making it crucial for hospitality businesses to weigh long-term benefits against initial costs.</p>
+  </li>
+  <li>
+    <p><strong>Staff Training</strong>: Equipping staff to work alongside advanced technologies requires ongoing training to ensure they can troubleshoot issues and maximize the system’s potential.</p>
+  </li>
+</ul>
+
+<h2 id="the-road-ahead">The Road Ahead</h2>
+
+<p>The adoption of smart hospitality solutions is set to grow as technology becomes more sophisticated and affordable. The future may include AI-driven concierge bots that anticipate guest preferences based on previous stays, augmented reality (AR) for immersive experiences, and deeper integrations between wearables and hotel systems.</p>
+
+<p>For businesses in the hospitality sector, embracing smart technologies is no longer a luxury—it’s a necessity. By doing so, they can not only meet but exceed guest expectations, fostering loyalty in an increasingly competitive landscape.</p>
+
+<p>In conclusion, smart hospitality solutions powered by automation and voice assistants represent the next frontier in guest experience innovation. As these technologies evolve, they promise to make every stay memorable, personalized, and hassle-free.</p>
+
+<hr />
+
+<p>To book your space or find out more, <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="AI">
+    Reserve your Spot
+</a>
+and discover how the right environment can take your productivity to new heights.</p>]]></content><author><name>Rodrigo Cancino (Coto)</name></author><category term="posts" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Welcome to Neahtid, Innovating the Future with Technology</title><link href="https://www.neahtid.com/posts/2024/10/01/welcome-to-neahtid-blog/" rel="alternate" type="text/html" title="Welcome to Neahtid, Innovating the Future with Technology" /><published>2024-10-01T10:10:10+00:00</published><updated>2024-10-01T10:10:10+00:00</updated><id>https://www.neahtid.com/posts/2024/10/01/welcome-to-neahtid-blog</id><content type="html" xml:base="https://www.neahtid.com/posts/2024/10/01/welcome-to-neahtid-blog/"><![CDATA[<header class="entry-header">
+Welcome to the official blog of  <strong>Neahtid</strong>! We are thrilled to have you here in this space where we will explore the latest trends, innovations, and technological strategies transforming the world. As market leaders, our mission is to empower businesses with technological solutions that drive efficiency, security, and growth.
+</header>
+
+<h2 id="our-value-proposition">Our Value Proposition</h2>
+
+<p>At <strong>Neahtid</strong>, we believe technology should not only solve problems but also open new opportunities. That’s why we offer a comprehensive range of services designed to meet the specific needs of our business clients:</p>
+
+<ol>
+  <li>
+    <p><strong>Web Applications and Digital Presence</strong>:
+We transform ideas into impactful digital experiences. From corporate websites to complex platforms, we create solutions tailored to your objectives.</p>
+  </li>
+  <li>
+    <p><strong>Business Intelligence and Data Analytics</strong>:
+Turn data into strategic decisions. Our Business Intelligence tools help identify key opportunities and optimize resources.</p>
+  </li>
+  <li>
+    <p><strong>Artificial Intelligence and Automation</strong>:
+We take efficiency to the next level with AI-based solutions that automate processes and improve real-time productivity.</p>
+  </li>
+  <li>
+    <p><strong>Hardware Solutions</strong>:
+We provide cutting-edge equipment to ensure your technical infrastructure is reliable and scalable.</p>
+  </li>
+  <li>
+    <p><strong>E-Commerce Solutions</strong>:
+From small online stores to large marketplaces, we develop e-commerce platforms that maximize sales and enhance the customer experience.</p>
+  </li>
+  <li>
+    <p><strong>Cybersecurity and Advanced Software</strong>:
+We protect what matters. We design robust security strategies to safeguard your data and systems from emerging threats.</p>
+  </li>
+</ol>
+
+<h2 id="why-choose-us">Why Choose Us?</h2>
+
+<p>Our passion for excellence and innovation drives us to deliver personalized solutions that not only meet expectations but exceed them. We work closely with each client to understand their specific needs and develop strategies that generate tangible results.</p>
+
+<h2 id="explore-our-services">Explore Our Services!</h2>
+
+<p>We’re here to help you take your business to the next level. Ready to discover how our solutions can transform your company? Visit our <a href="/services/">services page</a> to learn more about how we can collaborate with you.</p>
+
+<h2 id="lets-talk">Let’s Talk!</h2>
+
+<p>Have a question or a specific challenge? Our team is ready to help. Don’t hesitate to reach out to us through our <a href="/contact-us/">contact page</a>. We’re just a click away from turning your vision into reality.</p>
+
+<p>Thank you for visiting, and we hope you find valuable information here that inspires you to harness the full potential of technology in the B2B sector.</p>
+
+<p>Let’s build the future together!</p>]]></content><author><name>Rodrigo Cancino (Coto)</name></author><category term="posts" /><summary type="html"><![CDATA[]]></summary></entry></feed>

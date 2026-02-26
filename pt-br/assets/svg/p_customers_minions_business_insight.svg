@@ -1,0 +1,57 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="chart-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#2196f3;stop-opacity:0.8" />
+            <stop offset="100%" style="stop-color:#2196f3;stop-opacity:0.1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Main Container -->
+    <rect x="50" y="50" width="700" height="500" rx="15" fill="#ffffff" stroke="#e0e0e0" />
+    
+    <!-- Header Section -->
+    <g transform="translate(70,70)">
+        <text x="0" y="30" fill="#1a237e" font-size="24" font-weight="bold">Business Performance</text>
+        
+        <!-- Time Period Selector -->
+        <rect x="500" y="10" width="160" height="40" rx="20" fill="#f5f5f5" />
+        <text x="520" y="35" fill="#616161" font-size="14">Last 30 Days ▼</text>
+    </g>
+
+    <!-- Main Chart -->
+    <g transform="translate(70,140)">
+        <!-- Chart Background -->
+        <rect width="660" height="200" fill="#f8f9fa" rx="10" />
+        
+        <!-- Chart Grid -->
+        <g stroke="#e0e0e0" stroke-width="1">
+            <line x1="0" y1="50" x2="660" y2="50" />
+            <line x1="0" y1="100" x2="660" y2="100" />
+            <line x1="0" y1="150" x2="660" y2="150" />
+        </g>
+
+        <!-- Chart Line -->
+        <path d="M 50 150 L 200 80 L 350 120 L 500 60 L 650 90" 
+              stroke="#2196f3" stroke-width="3" fill="none" />
+        <path d="M 50 150 L 200 80 L 350 120 L 500 60 L 650 90 L 650 200 L 50 200 Z" 
+              fill="url(#chart-gradient)" />
+    </g>
+
+    <!-- KPI Cards -->
+    <g transform="translate(70,380)">
+        <!-- Revenue Card -->
+        <rect width="200" height="120" rx="10" fill="#f8f9fa" />
+        <text x="20" y="40" fill="#616161" font-size="14">Revenue</text>
+        <text x="20" y="80" fill="#1a237e" font-size="24" font-weight="bold">$842,453</text>
+
+        <!-- Growth Card -->
+        <rect x="230" width="200" height="120" rx="10" fill="#f8f9fa" />
+        <text x="250" y="40" fill="#616161" font-size="14">Growth</text>
+        <text x="250" y="80" fill="#4caf50" font-size="24" font-weight="bold">+24.8%</text>
+
+        <!-- Users Card -->
+        <rect x="460" width="200" height="120" rx="10" fill="#f8f9fa" />
+        <text x="480" y="40" fill="#616161" font-size="14">Active Users</text>
+        <text x="480" y="80" fill="#1a237e" font-size="24" font-weight="bold">13,849</text>
+    </g>
+</svg>

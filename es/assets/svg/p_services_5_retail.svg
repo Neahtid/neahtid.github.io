@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+    <!-- Background -->
+    <rect width="400" height="300" fill="#f8fafc"/>
+    
+    <!-- POS System -->
+    <rect x="100" y="80" width="200" height="140" fill="#1e40af" rx="10"/>
+    <rect x="110" y="90" width="180" height="100" fill="#ffffff" rx="5"/>
+    
+    <!-- Receipt Printer -->
+    <rect x="320" y="100" width="60" height="80" fill="#3b82f6" rx="8"/>
+    <rect x="330" y="110" width="40" height="20" fill="#ffffff"/>
+    <path d="M340 130 L360 130 M340 140 L360 140" stroke="#3b82f6" stroke-width="2"/>
+    
+    <!-- Card Reader -->
+    <rect x="30" y="100" width="50" height="80" fill="#3b82f6" rx="8"/>
+    <rect x="40" y="110" width="30" height="10" fill="#000000" opacity="0.8"/>
+    
+    <!-- Scanner -->
+    <path d="M150 240 L250 240 L270 260 L130 260 Z" fill="#2563eb"/>
+    <rect x="180" y="250" width="40" height="10" fill="#ffffff"/>
+    
+    <!-- Display Elements -->
+    <rect x="130" y="110" width="140" height="20" fill="#e2e8f0" rx="4"/>
+    <rect x="130" y="140" width="100" height="30" fill="#2563eb" rx="4"/>
+</svg>

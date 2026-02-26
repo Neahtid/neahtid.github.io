@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600">
+  <!-- Definitions -->
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2B4865;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#256D85;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shopping cart icon -->
+    <symbol id="cart" viewBox="0 0 24 24">
+      <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 3h4l2.7 12h9.7l2.3-9H6" 
+            fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    </symbol>
+    
+    <!-- Device icon -->
+    <symbol id="device" viewBox="0 0 24 24">
+      <rect x="2" y="3" width="20" height="14" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <path d="M8 21h8M12 17v4" stroke="#ffffff" stroke-width="1.5"/>
+    </symbol>
+    
+    <!-- Graph icon -->
+    <symbol id="graph" viewBox="0 0 24 24">
+      <path d="M3 20h18M5 14l4-4 4 4 6-6" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    </symbol>
+  </defs>
+
+  <!-- Main background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- Floating e-commerce elements pattern -->
+  <g opacity="0.08">
+    <!-- Shopping carts -->
+    <use href="#cart" x="100" y="100" width="60" height="60"/>
+    <use href="#cart" x="500" y="200" width="40" height="40"/>
+    <use href="#cart" x="900" y="150" width="50" height="50"/>
+    <use href="#cart" x="1300" y="300" width="45" height="45"/>
+    <use href="#cart" x="1700" y="180" width="55" height="55"/>
+    
+    <!-- Devices -->
+    <use href="#device" x="300" y="250" width="50" height="50"/>
+    <use href="#device" x="700" y="150" width="45" height="45"/>
+    <use href="#device" x="1100" y="200" width="60" height="60"/>
+    <use href="#device" x="1500" y="250" width="40" height="40"/>
+    
+    <!-- Graphs -->
+    <use href="#graph" x="200" y="350" width="55" height="55"/>
+    <use href="#graph" x="600" y="280" width="50" height="50"/>
+    <use href="#graph" x="1000" y="320" width="45" height="45"/>
+    <use href="#graph" x="1400" y="180" width="60" height="60"/>
+    <use href="#graph" x="1800" y="280" width="40" height="40"/>
+  </g>
+  
+  <!-- Connected lines -->
+  <g opacity="0.05">
+    <path d="M150 130 L350 275 L750 175 L1150 230 L1550 275" 
+          fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M230 380 L630 305 L1030 345 L1430 205 L1820 305" 
+          fill="none" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  
+  <!-- Subtle overlay pattern -->
+  <pattern id="gridPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <rect width="40" height="40" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.03"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#gridPattern)"/>
+</svg>

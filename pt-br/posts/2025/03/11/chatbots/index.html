@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang='pt-br'><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>A Revolução dos Chatbots: Transformando o Atendimento ao Cliente e Impulsionando Vendas - Neahtid</title><meta name="description" content="Leading provider of innovative IT solutions including web applications,  business intelligence, AI automation, cybersecurity, hardware solutions,  and e-commerce platforms. Empowering businesses with cutting-edge technology.">
+  <meta name="keywords" content="IT solutions, web development, business intelligence, artificial intelligence,  cybersecurity services, hardware solutions, e-commerce platforms, digital transformation,  software development, system integration">
+
+  <!--meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; font-src https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://cdn.voiceflow.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://cdn.voiceflow.com; img-src 'self' data: image https://cdn.voiceflow.com; frame-src https://www.google.com https://www.gstatic.com; connect-src 'self' https://www.google-analytics.com https://docs.google.com https://general-runtime.voiceflow.com;"-->
+
+  <!-- styles -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/main.css" type="text/css"><link type="application/atom+xml" rel="alternate" href="https://www.neahtid.com/feed.xml" title="Solutions tailored to help your business grow" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GPW5FKMJWZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GPW5FKMJWZ');
+</script>
+
+  
+<meta name="apple-mobile-web-app-title" content="Neahtid">
+  <meta name="msapplication-TileImage" content="/assets/img/icon-192x192.png">
+  <meta name="msapplication-TileColor" content="#091C99">
+  <meta name="theme-color" content="#091C99">
+  <link rel="mask-icon" href="/favicon.svg" color="#091C99">
+  <link rel="manifest" href="/site.webmanifest">
+
+  
+  
+  <link rel="canonical" href="https://www.neahtid.com/pt-br/posts/2025/03/11/chatbots/">
+  <link rel="alternate" hreflang="en" href="https://www.neahtid.com/posts/2025/03/11/chatbots/">
+  <link rel="alternate" hreflang="pt-br" href="https://www.neahtid.com/pt-br/posts/2025/03/11/chatbots/">
+  <link rel="alternate" hreflang="es" href="https://www.neahtid.com/es/posts/2025/03/11/chatbots/">
+  <link rel="alternate" hreflang="x-default" href="https://www.neahtid.com/posts/2025/03/11/chatbots/">
+
+  <!-- icons -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" href="/assets/img/icon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/assets/img/icon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/img/icon-192x192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icon-180x180.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/icon-180x180.png">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="pt-br">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="A Revolução dos Chatbots: Transformando o Atendimento ao Cliente e Impulsionando Vendas - Neahtid">
+  <meta property="og:description" content="Leading provider of innovative IT solutions including web applications,  business intelligence, AI automation, cybersecurity, hardware solutions,  and e-commerce platforms. Empowering businesses with cutting-edge technology.">
+  <meta property="og:url" content="https://www.neahtid.com">
+  <meta property="og:image" content="https://www.neahtid.com/assets/img/neahtid-image.png">
+  <meta property="og:site_name" content="Neahtid">
+
+  <!-- twitter card --><meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A Revolução dos Chatbots: Transformando o Atendimento ao Cliente e Impulsionando Vendas - Neahtid">
+  <meta name="twitter:description" content="Leading provider of innovative IT solutions including web applications,  business intelligence, AI automation, cybersecurity, hardware solutions,  and e-commerce platforms. Empowering businesses with cutting-edge technology.">
+  <meta name="twitter:site" content="neahtid">
+  <meta name="twitter:image" content="https://www.neahtid.com/assets/img/neahtid-image.png">
+  <meta name="twitter:creator" content="neahtid"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <style>
+    /* Custom styles for the chat button and modal */
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      /* transition: transform 0.3s ease; */
+    }
+
+    .chat-button:hover {
+      background-color: #1DA851;
+      transform: scale(1.1);
+    }
+
+    .chat-modal {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 350px;
+      height: 450px;
+      border-radius: 10px;
+      overflow: hidden;
+      z-index: 1001;
+      display: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+    }
+
+    .chat-header {
+      background-color: #25D366;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chat-body {
+      padding: 15px;
+      height: calc(100% - 120px);
+      overflow-y: auto;
+    }
+
+    .chat-message {
+      background-color: #f0f2f5;
+      border-radius: 18px;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      max-width: 85%;
+    }
+
+    .user-message {
+      background-color: #0d6efd;
+      color: white;
+      margin-left: auto;
+    }
+
+    .chat-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .chat-input-area {
+      display: flex;
+      padding: 10px 15px;
+      background-color: #f0f2f5;
+      border-top: 1px solid #ddd;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      gap: 10px;
+    }
+
+    /* Responsive styles for smaller screens */
+    @media (max-width: 576px) {
+      header img.logo {
+        height: 45px;
+      }
+
+      .chat-modal {
+        width: 100%;
+        height: 93%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+      }
+
+      .chat-body {
+        height: calc(100% - 120px);
+      }
+    }
+  </style>
+</head><body>
+  <div class="wrapper">
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/pt-br"><img src="/assets/img/neahtid_logo.png" alt="Neahtid" class="logo"></a>
+
+      <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto d-flex align-items-center">
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="/pt-br/services/">Serviços</a>
+          </li>
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="/pt-br/our-customers/">Clientes</a>
+          </li>
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="/pt-br/blog/">Blog</a>
+          </li>
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="/pt-br/contact-us/">Contato</a>
+          </li>
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="/pt-br/our-company/">Nossa Empresa</a>
+          </li>
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="/pt-br/research-programs/">Pesquisa</a>
+          </li>
+          
+        </ul>
+        <div class="d-block btn-group text-end">
+          <button class="btn btn-outline-secondary dropdown-toggle my-2" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Português
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            
+            
+            <li>
+              
+              
+              <a class="dropdown-item" data-lang="en" href="/posts/2025/03/11/chatbots/">
+              English
+              </a>
+              
+              
+            </li>
+            
+
+            
+            
+            
+            <li>
+              
+              
+              <a class="dropdown-item" data-lang="es" href="/es/posts/2025/03/11/chatbots/">
+              Español
+              </a>
+              
+              
+            </li>
+            
+
+            
+            
+            
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header><article class="container my-3 post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="row">
+    <!-- Main Content (Post) -->
+    <div class="col-md-8">
+      <header class="post-header">
+        <h1 class="post-title p-name py-3" itemprop="name headline">A Revolução dos Chatbots: Transformando o Atendimento ao Cliente e Impulsionando Vendas</h1>
+        <p class="post-meta"><time class="dt-published" datetime="2025-03-11T17:46:00+00:00" itemprop="datePublished">
+            Tue 11-Mar-2025 05:46 PM
+          </time></p>
+      </header>
+
+      <!-- Post Content -->
+      <div class="post-content" itemprop="articleBody">
+        
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+</style>
+
+<p>Em um mundo onde segundos fazem diferença na decisão de compra, os chatbots emergiram como os novos heróis silenciosos do mundo corporativo.</p>
+
+<h2 id="o-boom-dos-chatbots-em-números">O Boom dos Chatbots em Números</h2>
+
+<ul>
+  <li>Mercado de chatbots: US$ 2,9 bilhões (2023) → US$ 10,5 bilhões (2028), crescimento anual de 29,3%</li>
+  <li>7 em cada 10 interações com clientes em 2023 já envolviam estas tecnologias (Gartner)</li>
+</ul>
+
+<h2 id="vantagens-principais">Vantagens Principais</h2>
+
+<p><strong>Disponibilidade Total:</strong> H&amp;M reduziu tempo de resposta de 24h para 5min (+60% na satisfação)</p>
+
+<p><strong>Economia Significativa:</strong> Redução média de 30% nos custos de suporte. Bank of America economiza US$ 30 milhões anuais com sua assistente virtual Erica.</p>
+
+<p><strong>Escalabilidade:</strong> Amazon gerencia picos de atendimento na Black Friday, mesmo com aumento de 400% nas consultas.</p>
+
+<h2 id="impacto-por-setor">Impacto por Setor</h2>
+
+<h3 id="e-commerce">E-commerce</h3>
+
+<ul>
+  <li>Sephora: +11% na taxa de conversão com recomendações personalizadas</li>
+  <li>Domino’s: +28% nas vendas online com chatbot DOM</li>
+  <li>Whole Foods: +266% no engajamento e +20% em vendas cruzadas</li>
+</ul>
+
+<h3 id="finanças">Finanças</h3>
+
+<ul>
+  <li>Bradesco: 12 milhões de interações mensais via BIA</li>
+  <li>Nubank: -80% no tempo de resolução de problemas</li>
+  <li>Lemonade: processamento de reclamações em 3min (vs. 30-45min do setor)</li>
+</ul>
+
+<h3 id="saúde">Saúde</h3>
+
+<ul>
+  <li>Babylon Health: eliminou 27% das consultas presenciais desnecessárias</li>
+  <li>Cleveland Clinic: -70% no tempo de marcação de consultas</li>
+  <li>OMS: atendeu 4,5 milhões de consultas sobre COVID-19</li>
+</ul>
+
+<h2 id="métricas-transformadoras">Métricas Transformadoras</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>O Que Muda</th>
+      <th>Quanto Muda</th>
+      <th>Exemplo Real</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tempo de Resposta</td>
+      <td>⬇️ 80%</td>
+      <td>KLM: de 1h para 5min</td>
+    </tr>
+    <tr>
+      <td>Resolução no Primeiro Contato</td>
+      <td>⬆️ 25%</td>
+      <td>Vodafone: de 65% para 81%</td>
+    </tr>
+    <tr>
+      <td>Satisfação do Cliente</td>
+      <td>⬆️ 20-35%</td>
+      <td>Dell: +29% em avaliações positivas</td>
+    </tr>
+    <tr>
+      <td>Custo por Atendimento</td>
+      <td>⬇️ 30-50%</td>
+      <td>IBM: de US$ 15-20 para US$ 5-7</td>
+    </tr>
+    <tr>
+      <td>Volume de Vendas</td>
+      <td>⬆️ 15-30%</td>
+      <td>Sephora: +25% nas vendas online</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="experiências-inovadoras">Experiências Inovadoras</h2>
+
+<ul>
+  <li>Starbucks: “My Barista” aumentou em 20% o valor médio dos pedidos</li>
+  <li>Disney: sistema omnichannel gerou +45% no engajamento</li>
+  <li>Airbnb: feedback em tempo real reduziu queixas pós-estadia em 28%</li>
+</ul>
+
+<h2 id="benefícios-de-longo-prazo">Benefícios de Longo Prazo</h2>
+
+<ul>
+  <li>Zappos: construiu base de conhecimento que reduziu consultas humanas em 37%</li>
+  <li>Unilever: identificou tendências antecipadas, aumentando sucesso de lançamentos em 15%</li>
+  <li>Mastercard: evoluiu sistema para detectar fraudes e oferecer conselhos financeiros (+18% na fidelidade)</li>
+</ul>
+
+<h2 id="desafios">Desafios</h2>
+
+<ul>
+  <li>Equilíbrio entre automação e toque humano é essencial</li>
+  <li>Personalização adequada à identidade da marca é necessária</li>
+  <li>Privacidade continua sendo preocupação para 65% dos consumidores</li>
+</ul>
+
+<h2 id="transforme-seu-negócio-com-as-soluções-de-chatbot-da-neahtid">Transforme Seu Negócio com as Soluções de Chatbot da Neahtid</h2>
+
+<p>Na Neahtid, entendemos que cada negócio é único e merece soluções personalizadas de inteligência artificial e automação. Nossos especialistas transformam tecnologias avançadas em vantagens competitivas reais para o seu negócio.</p>
+
+<p><a href="/pt-br/services/artificial-intelligence-and-automation/chatbots/">Visite Nossas Soluções de Chatbots Inteligentes</a> e descubra como Neahtid podde ajudar sua empresa a:</p>
+
+<ul>
+  <li>Reduzir custos operacionais em até 50%</li>
+  <li>Aumentar a satisfação do cliente em mais de 30%</li>
+  <li>Impulsionar suas vendas com atendimento personalizado 24/7</li>
+  <li>Criar uma experiência de marca inesquecível</li>
+</ul>
+
+<p>Não deixe seus concorrentes conquistarem seus clientes com experiências superiores. O melhor momento para sua empresa fazer parte desta revolução é agora.</p>
+
+<div class="text-center">
+    <a href="#" class="btn btn-primary btn-lg rounded-pill my-3" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="AI">
+        Solicitar demonstração
+    </a>
+</div>
+
+      </div>
+    </div>
+
+    <!-- Sidebar (List of Posts) -->
+    <div class="col-md-4 bg-light">
+      <aside class="sidebar">
+        <h3>Postagens Recentes</h3>
+        <ul class="list-group"><li class="list-group-item">
+            <small class="text-secondary">
+                Tue 11-Mar-2025 05:46 PM
+              
+            </small>
+            <br>
+          
+            <span class="fw-bold">A Revolução dos Chatbots: Transformando o Atendimento ao Cliente e Impulsionando Vendas </span>
+          
+          </li><li class="list-group-item">
+            <small class="text-secondary">
+                Fri 10-Jan-2025 09:24 PM
+              
+            </small>
+            <br>
+          
+            <a href="/pt-br/posts/2025/01/10/rentabilidad-hotelera/" class="fw-bold">
+              Transformando a Rentabilidade Hoteleira com Analytics Inteligente: O Poder dos Dashboards em Tempo Real 
+            </a>
+          
+          </li><li class="list-group-item">
+            <small class="text-secondary">
+                Fri 11-Oct-2024 01:06 PM
+              
+            </small>
+            <br>
+          
+            <a href="/pt-br/posts/2024/10/11/transforming-guest-experiences/" class="fw-bold">
+              Transformando Experiências dos Hóspedes: A Ascensão das Soluções de Hospitalidade Inteligente 
+            </a>
+          
+          </li><li class="list-group-item">
+            <small class="text-secondary">
+                Tue 1-Oct-2024 10:10 AM
+              
+            </small>
+            <br>
+          
+            <a href="/pt-br/posts/2024/10/01/welcome-to-neahtid-blog/" class="fw-bold">
+              Bem-vindo(a) à Neahtid, Inovando o Futuro com Tecnologia 
+            </a>
+          
+          </li></ul>
+      </aside>
+    </div>
+  </div>
+</article><!-- Contact Modal -->
+<form class="nea-contact nea-formModal" data-recaptcha-sitekey="6LfC2CUUAAAAAMB11iJYlS5QlDhoNRc80P0wvBiZ">
+  <div class="modal" id="contactModal" tabindex="-1" aria-labelledby="contactModalTitle" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-black">Agende uma <span id="data-consultation"></span> Consulta</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <input type="text" class="form-control form-control-lg" placeholder="Seu Nome" id="form-field-nea_name"
+              name="name" required>
+            <input type="hidden" class="form-control form-control-lg" name="consultation"
+              id="form-field-nea_consultation">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control form-control-lg" placeholder="Seu E-mail" id="form-field-nea_email"
+              name="email" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select form-select-lg" name="solutionSelect" id="form-field-nea_solutionSelect">
+              <option value="">Selecione a Solução</option>
+              <option value="other">Outro</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control form-control-lg" rows="4" id="form-field-nea_message" name="message"
+              placeholder="Sua mensagem (opcional)"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary modal-close w-100 d-none" data-bs-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary btn-submit w-100">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<!-- Footer -->
+<footer class="bg-light py-4">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 order-3 order-md-1">
+        <hr class="d-md-none">
+        <h3>Neahtid</h3>
+        <p>Empowering innovation</p>
+        <p>&copy; 2026 Todos os direitos reservados.</p>
+        <p>Solutions tailored to help your business grow</p>
+      </div>
+      
+      <div class="col-md-5 order-1 order-md-2">
+        <h5>Conheça Nossos Serviços</h5>
+        <!-- Services Navigation Menu -->
+        <nav class="services-menu">
+          
+          
+          <ul class="list-group list-group-flush">
+            <li
+              class="list-group-item p-0 ">
+              <a href="/pt-br/services/web-applications-and-software-solutions/"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Aplicações Web e Soluções de Software</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+
+            <li
+              class="list-group-item p-0 ">
+              <a href="/pt-br/services/business-intelligence-and-data-analytics/"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Business Intelligence e Análise de Dados</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+
+            <li
+              class="list-group-item p-0 ">
+              <a href="/pt-br/services/artificial-intelligence-and-automation/"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Inteligência Artificial e Automação</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="list-group-item p-0 ">
+              <a href="/pt-br/services/cybersecurity-solutions/"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Soluções de Cibersegurança</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="list-group-item p-0 ">
+              <a href="/pt-br/services/hardware-solutions/"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Soluções de Hardware</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="list-group-item p-0 ">
+              <a href="/pt-br/services/e-commerce-solutions/"
+                class="d-flex align-items-center justify-content-between p-3 text-decoration-none text-dark">
+                <span>Soluções de E-Commerce</span>
+                <svg class="menu-arrow" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M5 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="col-md-4 order-2 order-md-3">
+        <hr class="d-md-none">
+        <div class="d-block btn-group text-end">
+          <button class="btn btn-outline-secondary dropdown-toggle my-2" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Português
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            
+            
+            <li>
+              
+              
+              <a class="dropdown-item" data-lang="en" href="/posts/2025/03/11/chatbots/">
+              English
+              </a>
+              
+              
+            </li>
+            
+
+            
+            
+            
+            <li>
+              
+              
+              <a class="dropdown-item" data-lang="es" href="/es/posts/2025/03/11/chatbots/">
+              Español
+              </a>
+              
+              
+            </li>
+            
+
+            
+            
+            
+            
+          </ul>
+        </div>
+        <div class="row footer-links">
+          
+          <div class="col-sm-4 ">
+              
+              <a href="/pt-br/terms/">Termos de Serviço</a>
+              
+          </div>
+          
+          <div class="col-sm-4 ">
+              
+              <a href="/pt-br/privacy-policy/">Política de Privacidade</a>
+              
+          </div>
+          
+          <div class="col-sm-4 ">
+              
+              <a href="/pt-br/contact-us/">Contato</a>
+              
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer></div>
+
+  <!-- scripts -->
+  <script>
+    window.siteTranslations = {
+      "pt-br": {"global":{"avatar_alt":"Avatar","tagline":"Português","chat_inwhatsapp":"Conversar no WhatsApp","chat":"Ol%C3%A1%2C%20podemos%20falar%20dos%20servi%C3%A7os%20de%20https%3A%2F%2Fwww.neahtid.com","chat_welcome":"Olá, será um prazer atendê-lo hoje para fazer suas reservas, compras, esclarecer dúvidas e dar suporte. Estamos à disposição para ajudá-lo. Escreva-nos uma mensagem ou selecione qualquer uma das seguintes opções:","chat_title":"Chat do Suporte","chat_placeholder":"Digite sua mensagem...","chat_thankyou":"Obrigado pela sua mensagem. Nossa equipe responderá em breve.","chat_options":[{"title":"Conhecer serviços","link":"/services/"},{"title":"Conhecer produtos","link":"/our-customers/"},{"title":"Contato","link":"/contact-us/"}],"company":{"name":"Neahtid","location":"Brasil"},"urls":{"contact_url":"/contact-us/","terms_url":"/terms/","privacy_url":"/privacy-policy/"},"navbar_top":[{"title":"Serviços","link":"/services/"},{"title":"Clientes","link":"/our-customers/"},{"title":"Blog","link":"/blog/"},{"title":"Contato","link":"/contact-us/"},{"title":"Nossa Empresa","link":"/our-company/"},{"title":"Pesquisa","link":"/research-programs/"}],"navbar_bottom":[{"title":"Termos de Serviço","link":"/terms/"},{"title":"Política de Privacidade","link":"/privacy-policy/"},{"title":"Contato","link":"/contact-us/"}]},"langs":{"pt":"Português","en":"English","es":"Español"},"pages":{"posts_recents":"Postagens Recentes","posts_latest":"Últimas postagens","modal_t1":"Agende uma","modal_t2":"Consulta","modal_select":"Selecione a Solução","modal_select_other":"Outro","rights":"Todos os direitos reservados","r_and_d":"P&D","research_programs":"Programas de Pesquisa","know_our_services":"Conheça Nossos Serviços","our_customers":"Nossos Clientes","work_with_us":"Trabalhe Conosco","demo_schedule":"Agendar uma Demo","demo_ask":"Solicitar demonstração","demo_ask_long":"Solicite uma demonstração personalizada","forms":{"name_placeholder":"Seu Nome","email_placeholder":"Seu E-mail","message_placeholder":"Sua mensagem (opcional)","email_novalid":"é um endereço de e-mail inválido! Por favor, insira um válido.","email_empty":"Insira seu endereço de e-mail antes de enviar.","general_novalid":"Algo deu errado... Por favor, tente novamente mais tarde.","thanks_default":"Obrigado pela sua consulta.","thanks_response":"Obrigado pelo seu contato. Nossa equipe entrará em contato em breve.","will_close":"Esta janela será fechada em instantes..."},"buttons":{"send":"Enviar","close":"Fechar","learn_more":"Saiba Mais","previous":"Anterior","next":"Próximo"}},"jekyll_timeago":{"today":"hoje","yesterday":"ontem","tomorrow":"amanhã","and":"e","suffix":"atrás","prefix":"","suffix_future":"em","prefix_future":"","years":"anos","year":"ano","months":"meses","month":"mês","weeks":"semanas","week":"semana","days":"dias","day":"dia"},"contact":{"hero":"Estamos aqui para ajudá-lo!","title":"Diga-nos como podemos ajudar você","description":"Use o formulário abaixo para nos enviar seus comentários ou relatar qualquer problema que tenha encontrado ao buscar informações em nosso site. Lemos todos os feedbacks com atenção.","fields":{"name":"Nome","email":"E-mail","message":"Mensagem"}},"services":{"hero":{"title":"Serviços Profissionais","description":"Capacitando empresas com soluções tecnológicas inovadoras para um crescimento sustentável e inovação."},"web_applications":{"title":"Aplicações Web e Soluções de Software","description":"Eleve sua marca com aplicações web de ponta e soluções de software avançadas personalizadas para o sucesso do seu negócio.","form_title":"Comece Sua Jornada Digital","form_label":"Selecionar uma Solução","form_submit":"Começar","form_options":["Aplicações Web Avançadas","Soluções Empresariais Personalizadas","Desenvolvimento de Sites Corporativos","Automação de Processos Empresariais","Páginas de Destino de Alto Impacto","Soluções de Análises Financeiras e Empresariais","Experiência de Marca Digital","Manutenção e Segurança de Sites","Integração de Sistemas Empresariais","Outro"]},"business_intelligence":{"title":"Business Intelligence e Análise de Dados","description":"Transforme seus dados empresariais em insights lucrativos com rastreamento de despesas em tempo real e painéis de análise de receita","form_title":"Solicite uma Avaliação de Business Intelligence","form_label":"Selecione uma Solução","form_submit":"Começar","form_options":["Análises de Desempenho Financeiro","Painéis Inteligentes de Business Intelligence","Sistema Automatizado de Gestão Financeira","Plataforma de Análises Empresariais com IA","Outro"]},"ai_automation":{"title":"Inteligência Artificial e Automação","description":"Aumente a eficiência com chatbots e outras automações baseadas em IA que transformam o atendimento ao cliente e otimizam as operações.","form_title":"Solicite uma Demonstração","form_label":"Selecione uma Solução","form_submit":"Agendar Demonstração","form_options":["Chatbots com tecnologia de IA","Assistentes Virtuais com IA","Automação Inteligente para Negócios","Manutenção Preditiva com Inteligência Artificial","Soluções Personalizadas de IA","Outro"]},"cybersecurity":{"title":"Soluções de Cibersegurança","description":"Soluções de segurança de última geração incluindo testes de penetração, hacking ético, criptografia avançada e monitoramento abrangente de segurança.","form_title":"Solicite uma Avaliação de Segurança","form_label":"Selecione uma Solução","form_submit":"Solicitar Avaliação","form_options":["Hacking Ético","Testes de Penetração","Avaliação de Segurança Empresarial","Serviços Avançados de Criptografia","Plataforma de Monitoramento de Segurança","Protocolos de Conformidade e Segurança","Outro"]},"hardware":{"title":"Soluções de Hardware","description":"Transforme suas operações empresariais com sistemas de automação personalizados, monitoramento por sensores/câmeras inteligentes e controles energeticamente eficientes para diversos setores.","form_title":"Solicite uma Avaliação de Hardware","form_label":"Selecione uma Solução","form_submit":"","form_options":["Hardware para Automação Empresarial","Infraestrutura de Segurança Inteligente","Sistemas de Gestão de Energia","Integração de IoT e Robótica","Outro"]},"ecommerce":{"title":"Soluções de E-Commerce","description":"Lance e escale seu negócio online com soluções white-label, sistemas de pagamento integrados e gestão automatizada de estoque.","form_title":"Comece Sua Jornada no E-Commerce","form_label":"Selecione um Serviço","form_submit":"Enviar Mensagem","form_options":["Desenvolvimento de Plataforma de E-Commerce","Soluções de Marketplace White-Label","Integração de Análises","Sistemas de Dropshipping","Manutenção de Plataforma","Outro"]},"research_programs":{"form_title":"Iniciar uma Colaboração de Pesquisa","form_label":"Área de Interesse em Pesquisa","form_submit":"Enviar Proposta de Pesquisa","form_options":["IA & Robótica","IA em Finanças","Energia Sustentável","Outro"]}},"customers":{"hero":{"title":"Nossas Histórias de Sucesso","description":"Descubra como as soluções de Chatbots de IA e Automação da Neahtid estão transformando empresas em diversos setores.","cta_button":"Conheça Nossos Clientes em Destaque"},"title":"Clientes em Destaque","ready":"Pronto para Saber Mais?","ready_description":"Entre em contato para uma demonstração personalizada de nossos produtos","ready_button":"Solicitar Demo","form_title":"Solicitar uma Demonstração","form_label":"Selecione um Produto","form_submit":"Enviar","form_options":["Jingo Store","Zigna App","Porta Joia Jeri","Living Workspace","Minions App","Outro"],"customer_list":[{"name":"Jingo Store","logo":"/assets/img/icon_jingo_192x192.png","site":"https://jingo.store","link":"/customers/jingo-store/","business":"E-Commerce com vendas e automações de IA","description":"Experimente uma solução de e-commerce completa com métodos de pagamento integrados, rastreamento de pedidos e gerenciamento de estoque.","ourvalue":null},{"name":"Zigna App","logo":"/assets/img/icon_zigna_192x192.png","site":"https://zigna.app","link":"/customers/zigna-app/","business":"Sinais de compra/venda de negociação","description":"Recomendações de negociação de ações em tempo real de traders experientes e gerados por IA/AGI por meio de nossa plataforma baseada em assinatura com análise avançada de mercado.","ourvalue":"\"Implementação de um canal de serviço para traders e vendas de sinais de compra e venda\""},{"name":"Minions App","logo":null,"site":"https://minions.neahtid.com","link":"/customers/pwa-demo/","business":"Aplicativo de demonstração","description":"Aplicativo Web de marca branca instalável que apresenta chatbots, automação de IA, painéis de BI, autenticação segura, integração de dados e muito mais.","ourvalue":null}]},"index":{"hero":{"title":"Soluções de Software e Tecnologia de Última Geração","description":"Transforme seu negócio com nossas aplicações web de ponta e soluções de software avançadas. De integrações seguras de pagamento a sistemas empresariais de alto desempenho, entregamos soluções personalizadas que impulsionam a inovação e eficiência.","cta_button":"Explore Nossos Serviços"},"services":{"title":"Nossos Serviços"},"value_proposition":{"title":"Onde ideias se tornam realidade","description":"Impulsionando a inovação com Pesquisa & Desenvolvimento de alto nível em software e hardware, respaldado pelos padrões de qualidade e segurança das Big Techs e experiência do setor financeiro."},"expertise":{"title":"Excelência em Engenharia Avançada","description":"Nossa equipe de engenharia se destaca na criação de soluções sofisticadas que combinam software de ponta com recursos avançados de hardware. De Aplicações Web Progressivas com Sistemas de Pagamento Seguros a Infraestrutura Inteligente e Automação de Segurança inovadoras, entregamos tecnologia que define o futuro.","principles_title":"Nossos Princípios de Engenharia:","principles":[{"text":"Inovação Sustentável e Centrada no Usuário"},{"text":"Design Arquitetônico à Prova do Futuro"},{"text":"Capacidades de Integração Perfeita"},{"text":"Padrões de Segurança Empresarial"}]},"innovative":{"title":"Soluções Inovadoras para seu Negócio","description":"Capacitando seu negócio com soluções de software, hardware, e-commerce, business intelligence, cibersegurança e inteligência artificial.","cta_button":"Explore Nossos Produtos"},"technology":{"title":"Pioneirismo no Futuro da Tecnologia","description":"Somos especializados no desenvolvimento de soluções avançadas de software e hardware que permitem às empresas liderarem em seus setores. Nossa experiência abrange desde aplicações empresariais até implementações sofisticadas de IoT, garantindo que nossos parceiros permaneçam à frente na jornada de transformação digital."},"products":{"title":"Nossos Produtos","buttons":{"demo":"Agende uma Demo","learn_more":"Saiba Mais"}},"cutting_edge":{"title":"Na vanguarda da tecnologia","description":"Abrangemos o desenvolvimento de software e hardware de produtos e aplicações altamente tecnológicos para ajudar parceiros boutique."},"questions":{"title":"Tem perguntas? Nós temos as respostas.","find_answers":{"title":"Encontre respostas","link":"Central de Ajuda"},"apply_knowledge":{"title":"Aplique seu Conhecimento","link":"Programas de Pesquisa"},"break_barriers":{"title":"Quebre Barreiras Tecnológicas","link":"Junte-se a Nós"}}},"service_1":{"hero":{"title":"Transforme Sua Presença Digital","subtitle":"Eleve o seu negócio com aplicações web inovadoras e soluções de software completas, projetadas para o sucesso das empresas modernas.","button_get_started":"Comece Agora","button_solutions":"Nossas Soluções","carousel":{"img_1_alt":"Soluções Digitais","img_2_alt":"Painel de Análise de Mercado","caption_1":"Soluções Digitais","caption_2":"Painel de Análise de Mercado"}},"solutions":{"title":"Soluções Digitais Avançadas","cards":{"web_apps":{"icon_alt":"Ícone de Aplicativo Personalizado","title":"Aplicações Web Avançadas","description":"Transforme seu negócio com soluções web rápidas, seguras e escaláveis que funcionam perfeitamente em qualquer dispositivo - até mesmo sem internet - e com pagamentos integrados.","features":[{"text":"Funcionalidade Offline"},{"text":"Pagamentos Seguros"},{"text":"Sincronização Instantânea de Dados"}]},"business_solutions":{"icon_alt":"Ícone de Website","title":"Soluções Empresariais Personalizadas","description":"Desenvolva aplicações web sob medida para resolver desafios específicos, com processamento de dados em tempo real e integrações seguras aos seus sistemas existentes.","features":[{"text":"Scripts Personalizados"},{"text":"Integração com Terceiros"},{"text":"Conectividade Inteligente"}]},"corporate_website":{"icon_alt":"Ícone de Planilhas","title":"Desenvolvimento de Sites Corporativos","description":"Crie sites profissionais e focados em conversão, com jornadas otimizadas para o usuário e sistemas de agendamento integrados para impulsionar o crescimento do seu negócio.","features":[{"text":"Design Responsivo"},{"text":"Otimização para SEO"},{"text":"Gerenciamento de Conteúdo"}]},"process_automation":{"icon_alt":"Ícone de Landing Page","title":"Automação de Processos Empresariais","description":"Otimize operações com aplicativos inteligentes que se integram a ferramentas como Google Sheets, automatizando tarefas rotineiras e aumentando a eficiência.","features":[{"text":"Fluxos de Trabalho Automatizados"},{"text":"Transferência de Dados entre Plataformas"},{"text":"Monitoramento Dinâmico de Processos"}]},"landing_pages":{"icon_alt":"Ícone de Marketing","title":"Landing Pages de Alto Impacto","description":"Converta visitantes em clientes com landing pages orientadas por dados, utilizando elementos específicos do setor e otimização contínua via testes A/B.","features":[{"text":"Testes A/B"},{"text":"Otimização de Conversão"},{"text":"Geração de Leads"}]},"analytics":{"icon_alt":"Ícone de Pesquisa","title":"Soluções de Análises Financeiras e Empresariais","description":"Aproveite aplicações especializadas para modelagem financeira, inteligência de negócios e análise de mercado, permitindo decisões estratégicas baseadas em dados.","features":[{"text":"Cálculos Avançados"},{"text":"Análise de Dados"},{"text":"Processamento em Tempo Real"}]},"brand_experience":{"icon_alt":"Ícone de Marca","title":"Experiência de Marca Digital","description":"Construa uma presença online forte com identidade visual coesa e design profissional que ressoe com seu público-alvo.","features":[{"text":"Identidade Visual"},{"text":"Sistemas de Design"},{"text":"Diretrizes de Marca"}]},"maintenance":{"icon_alt":"Ícone de Manutenção","title":"Manutenção e Segurança de Websites","description":"Proteja seus ativos digitais com manutenção proativa, atualizações regulares e monitoramento de segurança abrangente.","features":[{"text":"Atualizações de Segurança"},{"text":"Otimização de Performance"},{"text":"Backups Regulares"}]},"integration":{"icon_alt":"Ícone de Marketing","title":"Integração de Sistemas Empresariais","description":"Conecte suas ferramentas e sistemas empresariais essenciais - desde plataformas de agendamento e pagamentos até gestão de clientes - garantindo um fluxo de dados contínuo e eficiente.","features":[{"text":"Integração com Terceiros"},{"text":"Unificação de Plataformas"},{"text":"Autenticação Segura"}]}}},"process":{"title":"Nosso Processo de Desenvolvimento","steps":{"discovery":{"title":"Descoberta","description":"Compreendendo suas necessidades e objetivos"},"planning":{"title":"Planejamento","description":"Planejamento estratégico e design da solução"},"development":{"title":"Desenvolvimento","description":"Desenvolvimento ágil e testes"},"launch":{"title":"Lançamento","description":"Implantação (CD/CI) e suporte contínuo"}}},"portfolio":{"title":"Soluções Específicas para Setores","industries":{"hospitality":{"img_alt":"Projeto 1","title":"Hospitalidade","description":"Sistemas de gestão hoteleira e plataformas de reservas"},"healthcare":{"img_alt":"Projeto 2","title":"Saúde","description":"Portais de atendimento ao paciente e gerenciamento de dados médicos"},"financial":{"img_alt":"Projeto 3","title":"Serviços Financeiros","description":"Plataformas bancárias seguras e soluções de integração de pagamentos"}}},"cta":{"title":"Pronto para Transformar seu Negócio?","subtitle":"Vamos conversar sobre como nossas soluções podem otimizar suas operações.","button":"Agende uma Consulta"}},"service_2":{"hero":{"title":"Transforme os Dados do seu Negócio em Insights Acionáveis","subtitle":"Aproveite soluções avançadas de Business Intelligence e Analytics para tomar decisões baseadas em dados que impulsionam o crescimento e a lucratividade.","buttons":{"schedule_demo":"Agendar uma Demonstração","our_solutions":"Nossas Soluções"},"carousel":{"slides":{"financial":"Análise de Desempenho Financeiro","dashboard":"Painéis Inteligentes de Business Intelligence","automated":"Sistema Automatizado de Gestão Financeira","ai_powered":"Plataforma de Análises Empresariais com IA"}}},"solutions":{"title":"Nossas Soluções","cards":{"financial":{"title":"Suite de Análise de Desempenho Financeiro","description":"Monitore insights em tempo real sobre receitas, padrões de despesas e margens de lucro com nossos painéis intuitivos. Acompanhe custos, preveja tendências de receita e identifique oportunidades de crescimento. Tenha visibilidade instantânea da saúde financeira da sua empresa."},"dashboard":{"title":"Painéis Inteligentes de Business Intelligence","description":"Transforme dados complexos em insights claros e acionáveis com painéis personalizáveis em tempo real. Acompanhe indicadores-chave de desempenho, tendências de mercado e métricas operacionais de qualquer dispositivo. Tome decisões mais rápidas e inteligentes com relatórios e análises automatizadas."},"automated":{"title":"Sistema Automatizado de Gestão Financeira","description":"Atualize suas operações financeiras para além do Excel básico com automação avançada e relatórios inteligentes. Economize tempo com rastreamento inteligente de despesas, modelos personalizados e ferramentas de modelagem sofisticadas desenvolvidas para as necessidades específicas do seu setor."},"ai":{"title":"Plataforma de Análises Empresariais com IA","description":"Descubra oportunidades ocultas e antecipe tendências de mercado com inteligência artificial. Obtenha recomendações automatizadas e reconhecimento de padrões que colocam você à frente das mudanças do mercado. Transforme dados em vantagem estratégica."}}},"benefits":{"title":"Por Que Escolher Nossas Soluções de BI?","cards":{"decision":{"title":"Tomada de Decisão Aprimorada","description":"Tome decisões informadas com base em dados em tempo real e análises preditivas."},"revenue":{"title":"Otimização de Receita","description":"Identifique perdas de lucro e otimize fluxos de receita em diferentes canais."},"competitive":{"title":"Vantagem Competitiva","description":"Mantenha-se à frente com insights impulsionados por IA e análises preditivas."}}},"cta":{"title":"Pronto para Transformar seu Negócio?","subtitle":"Agende uma demonstração para ver como nossas soluções de BI podem impulsionar sua empresa.","button":"Comece Agora"}},"service_3":{"hero":{"title":"Transforme seu Negócio com IA","subtitle":"Aumente a eficiência com chatbots e outras automações baseadas em IA que transformam o atendimento ao cliente e otimizam operações.","buttons":{"get_started":"Comece Agora","chatbots":"Chatbots"}},"carousel":{"item1":{"caption":"Chatbots e Assistentes com treinamento de IA e modelo proprietário"},"item2":{"caption":"Automatização de processos de Reservas, Pagamentos, Cancelamentos, Planilhas, entre outros"},"item3":{"caption":"Manutenção Preditiva de Instalações"}},"solutions":{"title":"Nossas Soluções de IA","cards":{"assistant":{"title":"Assistentes Virtuais com IA","description":"Transforme o atendimento ao cliente com chatbots multilíngues 24/7 que gerenciam desde reservas até consultas, proporcionando experiências personalizadas e reduzindo custos operacionais."},"automation":{"title":"Automação Inteligente de Negócios","description":"Simplifique suas operações com IA que gerencia reservas, pagamentos e fluxos de atendimento ao cliente - transformando processos complexos em eficiência lucrativa."},"maintenance":{"title":"Manutenção Inteligente Preditiva","description":"Aproveite a IA para prever necessidades de manutenção e tendências de negócios, prevenindo paradas custosas e otimizando recursos antes que os problemas surjam."},"custom":{"title":"Soluções de IA Personalizadas","description":"Desbloqueie o potencial do seu negócio com aplicações de IA sob medida que resolvem desafios exclusivos, desde avaliação de riscos até aprimoramento da experiência do cliente."}}},"stats":{"cost_reduction":{"number":"30%","text":"Redução nos Custos Operacionais"},"support":{"number":"24/7","text":"Disponibilidade de Suporte ao Cliente"},"response":{"number":"50%","text":"Respostas Mais Rápidas"}},"cta":{"title":"Pronto para Transformar seu Negócio?","subtitle":"Agende uma demonstração para ver como nossas soluções de IA podem impulsionar seu negócio.","button":"Agendar Demonstração"}},"service_4":{"hero":{"title":"Proteja seu Futuro Digital","description":"Proteja seu negócio com soluções avançadas de cibersegurança e simulações de software de última geração. Nossa abordagem abrangente garante que seus ativos digitais permaneçam seguros contra ameaças em constante evolução.","buttons":{"assessment":"Solicitar Avaliação de Segurança","explore":"Explorar Soluções"},"carousel":{"slides":{"digital_shield":"Serviços de Proteção Digital","data_protection":"Monitoramento de Proteção de Dados","cyber_defense":"Consultoria em Defesa Cibernética"}}},"solutions":{"title":"Soluções de Segurança Abrangentes","cards":{"testing":{"title":"Testes de Segurança e Avaliação Empresarial","description":"Proteja seu negócio com auditorias de segurança completas e testes de invasão ética. Nossa equipe especializada identifica vulnerabilidades antes que os criminosos as explorem, garantindo a segurança dos seus dados sensíveis.","features":[{"text":"Testes Avançados de Penetração"},{"text":"Avaliação de Segurança de Aplicações"},{"text":"Análise de Riscos de Infraestrutura"}]},"compliance":{"title":"Conformidade Regulatória e Criptografia","description":"Atenda às regulamentações do setor enquanto protege dados sensíveis. Nossos protocolos avançados de criptografia e conformidade garantem a segurança da sua reputação e a confiança dos clientes.","features":[{"text":"Conformidade com Normas do Setor"},{"text":"Estrutura de Proteção de Dados"},{"text":"Soluções de Gerenciamento de Riscos"}]},"monitoring":{"title":"Monitoramento de Segurança 24/7","description":"Durma tranquilo sabendo que nossa IA avançada monitora seus sistemas ininterruptamente, detectando e respondendo a ameaças em tempo real antes que impactem seu negócio.","features":[{"text":"Detecção de Ameaças em Tempo Real"},{"text":"Escaneamento Contínuo da Rede"},{"text":"Resposta Automatizada a Incidentes"}]}}},"threat_protection":{"title":"Proteção Avançada contra Ameaças","cards":{"monitoring":{"title":"Monitoramento em Tempo Real","description":"Monitoramento de segurança 24/7 e detecção de ameaças para proteger seus sistemas continuamente."},"incident":{"title":"Resposta a Incidentes","description":"Protocolos de resposta rápida para lidar com incidentes de segurança imediatamente."},"data":{"title":"Proteção de Dados","description":"Medidas abrangentes de segurança de dados, incluindo criptografia e controle de acesso."},"compliance":{"title":"Gestão de Conformidade","description":"Garanta conformidade com normas e regulamentações do setor (GDPR, HIPAA, PCI DSS)."}}},"process":{"title":"Nosso Processo de Segurança","steps":{"assessment":{"title":"Avaliação","description":"Análise abrangente do seu nível atual de segurança."},"planning":{"title":"Planejamento","description":"Desenvolvimento de estratégias e protocolos de segurança personalizados."},"implementation":{"title":"Implementação","description":"Implantação de medidas e soluções de segurança."},"monitoring":{"title":"Monitoramento","description":"Monitoramento contínuo de segurança e melhorias constantes."}}},"contact":{"title":"Solicite sua Avaliação de Segurança","description":"Agende uma demonstração para ver como nossas soluções de IA podem impulsionar seu negócio.","button":"Solicitar Avaliação"}},"service_5":{"hero":{"title":"Soluções de Hardware para Negócios Modernos","subtitle":"Somos especialistas na criação de hardware inovador adaptado para mercados B2B específicos. De hotéis e manufatura a varejo e bancos, nossas soluções impulsionam a eficiência e o crescimento.","buttons":{"get_started":"Começar","learn_more":"Saiba Mais"}},"solutions":{"title":"Nossas Soluções Principais","cards":{"energy":{"title":"Gestão de Energia","description":"Implemente sistemas inteligentes de controle de energia que otimizam o consumo e reduzem os custos operacionais.","features":[{"text":"Iluminação eficiente"},{"text":"Alertas de consumo"},{"text":"Coleta de dados"}]},"automation":{"title":"Automação Empresarial","description":"Sistemas de automação com controles integrados, sensores e monitoramento para reduzir os custos operacionais.","features":[{"text":"Automação de processos"},{"text":"Controles inteligentes para edifícios"},{"text":"Coleta de dados"}]},"security":{"title":"Segurança Inteligente","description":"Soluções completas de segurança, incluindo monitoramento com câmeras acessíveis via web, controle de acesso e monitoramento remoto.","features":[{"text":"Videomonitoramento"},{"text":"Controle de acesso"},{"text":"Monitoramento remoto"}]},"hardware":{"title":"Integração de Hardware e Robótica","description":"Dispositivos conectados personalizados e soluções robóticas que automatizam processos e melhoram a eficiência operacional.","features":[{"text":"Redes de sensores"},{"text":"Rastreamento de estoque"},{"text":"Análise de comportamento do cliente"}]}}},"industries":{"title":"Indústrias que Atendemos","sectors":{"hotels":{"title":"Hotéis","description":"Soluções para modernizar operações, controlar estoque e reduzir custos operacionais."},"manufacturing":{"title":"Manufatura","description":"Otimize a produção com sistemas automatizados de monitoramento e controle."},"construction":{"title":"Construção","description":"Aprimore a segurança do local e a eficiência do gerenciamento de projetos."}}},"cta":{"title":"Pronto para Transformar seu Negócio?","subtitle":"Vamos conversar sobre como nossas soluções de hardware podem melhorar suas operações.","button":"Agende uma Consulta"}},"service_6":{"hero":{"title":"Transforme seu Negócio com Excelência em E-Commerce","description":"Nossas soluções de E-Commerce se integram perfeitamente com painéis de Business Intelligence, fornecendo insights detalhados sobre o comportamento do cliente e as tendências de vendas.","buttons":{"request_demo":"Solicitar Demo","explore_solutions":"Explorar Soluções"},"carousel":{"captions":{"sales_dashboard":"Painel de Análise de Vendas","insights_hub":"Central de Insights do Cliente","growth_metrics":"Métricas de Crescimento do Comércio"}}},"stats":{"satisfaction":{"label":"Taxa de Satisfação do Cliente"},"stores":{"label":"Lojas Online Lançadas"},"support":{"label":"Suporte Técnico"}},"solutions":{"title":"Soluções Completas para E-Commerce","items":{"store":{"title":"Lojas Online Personalizadas","description":"Transforme seu negócio com um marketplace online personalizado, com pagamentos seguros, rastreamento inteligente de estoque e insights poderosos sobre seus clientes."},"commerce":{"title":"Comércio Multi-vendedor","description":"Lance seu marketplace digital com sua marca, integração perfeita com fornecedores, automação de pedidos e sincronização de estoque em tempo real em todos os canais."},"performance":{"title":"Guardiã de Performance","description":"Garanta o sucesso do seu e-commerce com otimização contínua da plataforma, análise avançada e monitoramento de segurança proativo que protege sua receita 24/7."}}},"pricing":{"title":"Planos de Preços Flexíveis","plans":{"starter":{"title":"Starter","price":"R$99/mês","features":[{"text":"Loja Online Básica"},{"text":"Análises Padrão"},{"text":"Suporte Básico"},{"text":"Manutenção Mensal"}],"cta":"Começar Agora"},"professional":{"title":"Profissional","price":"R$199/mês","features":[{"text":"Loja Online Avançada"},{"text":"Painel de Business Intelligence"},{"text":"Suporte Prioritário"},{"text":"Manutenção Semanal"}],"cta":"Começar Agora"},"enterprise":{"title":"Enterprise","price":"Sob Consulta","features":[{"text":"Solução de E-Commerce Personalizada"},{"text":"Integração Avançada com BI"},{"text":"Suporte Dedicado 24/7"},{"text":"Manutenção Diária"}],"cta":"Entre em Contato"}}},"contact":{"title":"Inicie Sua Jornada no E-Commerce","description":"Vamos conversar sobre como nossas soluções de e-commerce podem impulsionar suas operações.","cta":"Agendar uma Consulta de E-Commerce"}},"product_jingo":{"title":"Jingo.store","description":"Experimente uma solução de e-commerce completa com métodos de pagamento integrados, rastreamento de pedidos e gerenciamento de estoque.","hero":{"title":"Demo de Loja White Label","description":"Experimente uma solução de e-commerce completa, com tudo o que você precisa para começar a vender online. Desenvolvida como um Aplicativo Web Instalável para desempenho e experiência do usuário ideais.","buttons":{"demo":"Testar Demo Ao Vivo","learn_more":"Saiba Mais"}},"nav":{"payments":"Pagamentos","inventory":"Inventário","tracking":"Rastreamento","pwa":"Recursos PWA"},"features":{"payments":{"title":"Integração Segura de Pagamentos","description":"Suporte a vários métodos de pagamento com segurança de nível empresarial.","items":["Cartões de Crédito/Débito","Carteiras Digitais","Transferências Bancárias","Criptomoeda"]},"inventory":{"title":"Gestão Inteligente de Inventário","description":"Rastreamento de estoque em tempo real e sistema automatizado de reposição.","items":["Atualizações de Estoque em Tempo Real","Reposição Automatizada","Suporte para Múltiplas Localizações","Rastreamento de Lotes"]},"tracking":{"title":"Sistema de Rastreamento de Pedidos","description":"Mantenha os clientes informados com rastreamento de pedidos em tempo real.","items":["Atualizações em Tempo Real","Notificações por E-mail","Alertas por SMS","Mapeamento de Envio"]},"pwa":{"title":"Recursos de Aplicativo Web Progressivo (PWA)","description":"Capacidades modernas para um Aplicativo Web Instalável em múltiplos dispositivos","items":["Suporte Offline","Notificações Push","Instalação na Tela Inicial","Carregamento Rápido"]}},"screenshots":{"title":"Capturas de Tela de Design Responsivo","views":{"mobile":"Visualização Mobile","tablet":"Visualização para Tablet","desktop":"Visualização para Desktop"}},"demo":{"title":"Pronto para Testar?","description":"Experimente nossa demo da Loja White Label com dados de exemplo e funcionalidade completa.","button":"Iniciar Loja Demo"}},"product_zigna":{"title":"Zigna.app","description":"Recomendações de negociação de ações em tempo real geradas por IA/AGI e traders experientes através da nossa plataforma por assinatura com análise avançada de mercado.","hero":{"title":"Recomendações Especializadas para Negociação de Ações","subtitle":"Obtenha insights de negociação em tempo real de traders profissionais. Tome decisões informadas com nossa análise de mercado avançada e mecanismo de recomendações.","buttons":{"free_trial":"Iniciar Teste Gratuito","learn_more":"Saiba Mais"}},"stats":{"accuracy":{"value":"95%","label":"Taxa de Precisão"},"users":{"value":"50K+","label":"Usuários Ativos"},"experts":{"value":"100+","label":"Traders Especializados"},"coverage":{"value":"24/7","label":"Cobertura de Mercado"}},"features":{"title":"Recursos da Plataforma","realtime":{"title":"Recomendações de Negociação em Tempo Real","subtitle":"Receba notificações instantâneas quando nossos especialistas identificarem oportunidades de negociação.","list":[{"text":"Notificações push instantâneas"},{"text":"Relatórios detalhados de análise"},{"text":"Métricas de avaliação de risco"},{"text":"Pontos de entrada e saída"}]},"market_analysis":{"title":"Análise Avançada de Mercado","subtitle":"Ferramentas abrangentes de análise de mercado e insights detalhados.","list":[{"text":"Indicadores técnicos"},{"text":"Análise de sentimento de mercado"},{"text":"Dados históricos de desempenho"},{"text":"Previsões de tendências"}]},"portfolio":{"title":"Gestão de Portfólio","subtitle":"Acompanhe e gerencie seus investimentos de forma eficaz.","list":[{"text":"Monitoramento de desempenho"},{"text":"Ferramentas de gerenciamento de risco"},{"text":"Análise de diversificação"},{"text":"Alertas personalizados"}]}},"pricing":{"title":"Planos de Assinatura","basic":{"name":"Básico","price":"$29","period":"/mês","features":[{"text":"Recomendações diárias"},{"text":"Análise de mercado básica"},{"text":"Alertas por e-mail"},{"text":"Consulta com especialista"}],"cta":"Comece Agora"},"premium":{"name":"Premium","price":"$99","period":"/mês","features":[{"text":"Recomendações em tempo real"},{"text":"Ferramentas avançadas de análise"},{"text":"Alertas prioritários"},{"text":"Consulta mensal"}],"cta":"Comece Agora"},"enterprise":{"name":"Enterprise","price":"$299","period":"/mês","features":[{"text":"Recomendações personalizadas"},{"text":"Pacote completo de análise"},{"text":"Suporte prioritário 24/7"},{"text":"Consultas semanais"}],"cta":"Fale com Vendas"}},"testimonials":{"title":"O Que Nossos Usuários Dizem","items":[{"quote":"As recomendações têm sido incrivelmente precisas. Notei uma melhora significativa no meu desempenho de negociação.","name":"John Smith","position":"Trader Profissional"},{"quote":"Os alertas em tempo real e as ferramentas de análise transformaram minha abordagem ao trading. Altamente recomendado!","name":"Sarah Johnson","position":"Gerente de Investimentos"},{"quote":"Insights de especialistas combinados com uma interface intuitiva fazem desta plataforma um diferencial no mercado.","name":"Michael Chen","position":"Day Trader"}]},"demo":{"title":"Comece seu Teste Gratuito Hoje","subtitle":"Experimente o poder das recomendações profissionais de trading sem riscos por 14 dias.","cta":"Acessar Plataforma Demo"}},"product_minions":{"title":"Minions App","description":"Aplicativo Web white-label instalável apresentando Chatbots, Automação com IA, painéis de BI, autenticação segura, integração de dados e muito mais.","hero":{"badge":"Plataforma Web Inteligente de Nível Empresarial","title":"Transforme seu Negócio com Aplicações Web Inteligentes que Funcionam em Qualquer Lugar","description":"Crie aplicativos web poderosos que funcionam como apps nativos, com dashboards inteligentes, assistência de IA e conexão perfeita com seus dispositivos - tudo pelo navegador.","buttons":{"demo":"Experimentar Demo ao Vivo","features":"Explorar Recursos"}},"nav":{"bi_dashboards":"Dashboards BI","ai_integration":"Integração com IA","hardware":"Hardware","security":"Segurança"},"features":{"bi_dashboards":{"title":"Insights Inteligentes de Negócios ao seu Alcance","description":"Veja o desempenho do seu negócio com gráficos e relatórios fáceis de entender.","benefits":["Atualizações em tempo real conforme seus dados mudam","Acompanhe o que é importante para o seu negócio","Relatórios interativos para explorar","Aprofunde-se nos seus números com um clique"],"badges":["Relatórios Inteligentes","Visões Personalizadas","Exportação Fácil"]},"ai_integration":{"title":"Recursos de Assistente Inteligente","description":"Facilite seu trabalho com assistentes inteligentes integrados que ajudam sua equipe e clientes.","benefits":["Atendimento ao cliente inteligente 24/7","Insights que detectam tendências antes que aconteçam","Compreensão automática das mensagens dos clientes","Explicações automáticas sobre insights de negócios"],"badges":["Chat Inteligente","Detecção de Tendências","Comandos de Voz"]},"hardware":{"title":"Compatível com Seus Dispositivos","description":"Conecte-se perfeitamente aos dispositivos do seu ambiente de trabalho para uma experiência mais fluida.","benefits":["Use a câmera do seu dispositivo para digitalização e fotos","Controle fechaduras inteligentes e sistemas de segurança","Login seguro com reconhecimento facial ou digital","Recursos inteligentes de localização para rastreamento e mapeamento"],"badges":["Pronto para Dispositivos Inteligentes","Conexão Sem Fio","Toque para Usar","Bluetooth","NFC"]},"security":{"title":"Segurança de Nível Bancário","description":"Mantenha os dados do seu negócio seguros com a mesma segurança utilizada pelos principais bancos.","benefits":["Proteção completa de dados de ponta a ponta","Login extra seguro com múltiplas verificações","Níveis de acesso personalizados para diferentes membros da equipe","Registro completo de quem acessou o quê e quando"],"badges":["Login Seguro","Privacidade Certificada","Segurança Verificada"]}},"integrations":{"title":"Compatível com Suas Ferramentas Favoritas","business_data":{"title":"Seus Dados Empresariais","description":"Conexão fácil com suas ferramentas e arquivos empresariais existentes","badges":["Bancos de Dados","Planilhas","Ferramentas Web","APIs"]},"smart_assistants":{"title":"Assistentes Inteligentes","description":"Funciona com as principais ferramentas de IA para facilitar o seu trabalho","badges":["Chat Inteligente","Aprendizado Automático","Ajuda Personalizada"]},"security_tools":{"title":"Ferramentas de Segurança","description":"Conecta-se com seus sistemas de segurança existentes","badges":["Fechaduras Digitais","Câmeras de Segurança","Scanners de ID"]}},"devices":{"title":"Funciona em Todos os Seus Dispositivos","phone":"Perfeito para seu Celular","tablet":"Ótimo em Tablets","computer":"Potência Total em Computadores"},"demo":{"title":"Experimente o Minions App Hoje","description":"Veja como nossa plataforma web inteligente pode transformar seu negócio com nossa demo completa.","button":"Iniciar Demo Gratuita"}},"our_company":{"hero_title":"Inovando a Tecnologia do Amanhã Hoje","hero_description":"Neahtid é uma empresa de Pesquisa e Desenvolvimento especializada em soluções de software e hardware, dedicada a enfrentar desafios complexos de engenharia e fornecer tecnologia de ponta para diversas indústrias.","hero_button":"Descubra Nossas Soluções","features_title":"Nossas Capacidades Principais","feature_hardware_title":"Soluções de Hardware","feature_hardware_description":"Design e prototipagem de hardware personalizados para dispositivos e sistemas de última geração.","feature_software_title":"Desenvolvimento de Software","feature_software_description":"Soluções avançadas de software utilizando tecnologias e metodologias de ponta.","feature_research_title":"Pesquisa & Inovação","feature_research_description":"Pesquisa pioneira em tecnologias emergentes e soluções inovadoras.","expertise_title":"Nossa Expertise","expertise_hardware_title":"Desenvolvimento de Hardware","expertise_hardware_list":["✓ Design de Circuitos & Prototipagem","✓ Sistemas Embarcados","✓ Soluções para IoT","✓ Arquitetura de Hardware Personalizada"],"expertise_software_title":"Inovação em Software","expertise_software_list":["✓ Algoritmos Avançados","✓ Aprendizado de Máquina","✓ Sistemas em Tempo Real","✓ Arquitetura em Nuvem"],"cta_title":"Pronto para Inovar Juntos?","cta_description":"Vamos conversar sobre como nossa expertise em P&D pode ajudar a resolver seus desafios complexos.","cta_button":"Entre em Contato"},"research_programs":{"nav":{"brand":"Programas de Pesquisa","research_areas":"Áreas de Pesquisa","university_partnership":"Parceria Universitária","contact":"Contato"},"hero":{"title":"Programas de Pesquisa","description":"Junte-se a nós para construir tecnologias inovadoras e soluções de ponta. Através de programas de pesquisa colaborativa, combinamos expertise em Ciência, Tecnologia e Engenharia para criar o futuro.","partner":{"title":"Orgulhosos Parceiros de Pesquisa da","university":"Universidade Técnica Federico Santa Maria","subtitle":"Liderança em Pesquisa de Engenharia & Tecnologia na América Latina"},"cta":"Iniciar Colaboração"},"research_areas":{"title":"Áreas de Foco em Pesquisa","ai_robotics":{"title":"IA & Robótica","description":"Pesquisa de ponta em inteligência artificial e sistemas robóticos.","items":["Aprendizado de Máquina","Visão Computacional","Sistemas Autônomos"]},"ai_finance":{"title":"IA em Finanças","description":"Nossa pesquisa de ponta em finanças com IA promove soluções financeiras mais inteligentes, rápidas e seguras.","items":["Trading Algorítmico","Detecção de Fraudes","Finanças Descentralizadas (DeFi)"]},"sustainable_energy":{"title":"Energia Sustentável","description":"Pesquisa em tecnologias de energia renovável e eficiência energética.","items":["Tecnologia Solar","Armazenamento de Energia","Redes Inteligentes"]}},"university_partnership":{"title":"Parceria Universitária Estratégica","description":"Nossa colaboração com a Universidade Técnica Federico Santa Maria oferece acesso a instalações de pesquisa de ponta e os melhores talentos da América Latina.","benefits":{"title":"Benefícios da Parceria:","items":["Acesso a laboratórios de última geração","Colaboração com pesquisadores de renome","Publicações conjuntas de pesquisa","Oportunidades de transferência de tecnologia"]},"cta":"Saiba Mais Sobre a Parceria"},"collaboration_process":{"title":"Processo de Colaboração","steps":[{"title":"Contato Inicial","description":"Envie sua proposta de pesquisa ou área de interesse"},{"title":"Avaliação","description":"Avaliação da viabilidade e alinhamento da pesquisa"},{"title":"Acordo","description":"Definição de escopo, recursos e cronograma"},{"title":"Execução","description":"Implementação e colaboração contínua"}]},"contact":{"title":"Iniciar uma Colaboração de Pesquisa","description":"Interessado em se tornar nosso parceiro? Preencha o formulário abaixo e nossa equipe de pesquisa entrará em contato.","cta":"Enviar Proposta de Pesquisa"}}}
+      };
+    const currentLang = document.documentElement.lang || 'en';
+    const translations = window.siteTranslations[currentLang];
+  </script>
+  <script src="/assets/js/jquery-3.7.1.min.js"></script>
+  <script src="/assets/js/jquery.viewportchecker.min.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/formConfirmation.js"></script>
+  <script src="/assets/js/main.js"></script>
+
+  <!-- custom scripts -->
+  
+  <!-- Chat Button -->
+  <!-- <button class="chat-button" id="chatButton">
+    <i class="bi bi-chat-dots-fill" style="font-size: 24px;"></i>
+  </button> -->
+  <!-- Chat Modal -->
+  <!-- <div class="chat-modal" id="chatModal">
+    <div class="chat-header">
+      <h5 class="m-0">Chat do Suporte</h5>
+      <button type="button" class="btn-close btn-close-white" id="closeChat" aria-label="Close"></button>
+    </div>
+    <div class="chat-body" id="chatBody">
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="messageInput" class="form-control" placeholder="Digite sua mensagem...">
+      <button id="sendMessage" class="btn btn-primary">
+        <i class="bi bi-send-fill"></i>
+      </button>
+    </div>
+  </div> -->
+  <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '67c9e1730672b80b31d940f8' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+/*
+    $(document).ready(function () {
+      // Function to generate a UUID of 15 characters
+      function generateUUID(length) {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let result = '';
+        for (let i = 0; i < length; i++) {
+          result += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        return result;
+      }
+
+      // Get or create UUID
+      function getOrCreateUUID() {
+        // Check if UUID exists in localStorage
+        let uuid = localStorage.getItem('chatUUID');
+
+        // If not, create a new one and store it
+        if (!uuid) {
+          uuid = generateUUID(15);
+          localStorage.setItem('chatUUID', uuid);
+        }
+
+        return uuid;
+      }
+      // Welcome message template
+      let uuid = getOrCreateUUID();
+
+      const welcomeMessage = `
+            <div class="chat-message">
+                <p>Olá, será um prazer atendê-lo hoje para fazer suas reservas, compras, esclarecer dúvidas e dar suporte. Estamos à disposição para ajudá-lo. Escreva-nos uma mensagem ou selecione qualquer uma das seguintes opções:</p>
+                <p>your ticket is <b class="ticket-code">${uuid}</b></p>
+                <div class="chat-options">
+                
+                  <a class="btn btn-primary" href="/pt-br/services/">Conhecer serviços</a>
+                
+                  <a class="btn btn-primary" href="/pt-br/our-customers/">Conhecer produtos</a>
+                
+                  <a class="btn btn-primary" href="/pt-br/contact-us/">Contato</a>
+                
+                    <a href="https://api.whatsapp.com/send?phone=558892559163&text=Ol%C3%A1%2C%20podemos%20falar%20dos%20servi%C3%A7os%20de%20https%3A%2F%2Fwww.neahtid.com" target="_blank" 
+                      class="btn btn-success align-items-center">
+                      <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="me-2" style="width: 20px; height: 20px;">
+                        <path fill="#FFFFFF" d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z" />
+
+                      </svg> Conversar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        `;
+
+      // Open chat modal
+      $("#chatButton").click(function () {
+        $("#chatModal").fadeIn(300);
+        let uuid = getOrCreateUUID();
+
+        // Only append welcome message if it's not already there
+        if ($("#chatBody").children().length === 0) {
+          $("#chatBody").html(welcomeMessage);
+        }
+      });
+
+      // Close chat modal
+      $("#closeChat").click(function () {
+        $("#chatModal").fadeOut(300);
+      });
+
+      // Send message function
+      function sendMessage() {
+        const messageText = $("#messageInput").val().trim();
+        if (messageText !== "") {
+          // Add user message to chat
+          $("#chatBody").append(`
+                    <div class="chat-message user-message">
+                        ${messageText}
+                    </div>
+                `);
+
+          // Clear input field
+          $("#messageInput").val("");
+
+          // Auto-scroll to bottom
+          $("#chatBody").scrollTop($("#chatBody")[0].scrollHeight);
+
+          // Here you would typically send the message to your backend
+          // For demo purposes, you could add a simulated response
+          setTimeout(function () {
+            $("#chatBody").append(`
+                        <div class="chat-message">
+                            Obrigado pela sua mensagem. Nossa equipe responderá em breve.
+                        </div>
+                    `);
+            // Auto-scroll to bottom again
+            $("#chatBody").scrollTop($("#chatBody")[0].scrollHeight);
+          }, 1000);
+        }
+      }
+
+      // Send message on button click
+      $("#sendMessage").click(function () {
+        sendMessage();
+      });
+
+      // Send message on Enter key
+      $("#messageInput").keypress(function (e) {
+        if (e.which === 13) {
+          sendMessage();
+          return false;
+        }
+      });
+    });
+    */
+  </script>
+</body>
+
+</html>

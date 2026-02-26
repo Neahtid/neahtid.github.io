@@ -1,0 +1,42 @@
+<svg viewBox="0 0 600 400"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Background with matrix effect -->
+    <defs>
+        <linearGradient id="matrixBg" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#001a0f;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#003366;stop-opacity:1" />
+        </linearGradient>
+        <filter id="matrixGlow">
+            <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="600" height="400" fill="url(#matrixBg)"/>
+
+    <!-- Matrix rain effect -->
+    <g fill="#00ff88" opacity="0.15" font-family="monospace">
+        <text x="100" y="50">10110101</text>
+        <text x="200" y="150">01001010</text>
+        <text x="300" y="250">11100111</text>
+        <text x="400" y="350">00110110</text>
+        <text x="500" y="200">10011001</text>
+    </g>
+
+    <!-- Central lock icon -->
+    <g transform="translate(250,150)" fill="none" stroke="#4CAF50" stroke-width="2" filter="url(#matrixGlow)">
+        <rect x="0" y="20" width="100" height="80" rx="10"/>
+        <path d="M20,20 L20,0 Q50,-20 80,0 L80,20"/>
+    </g>
+
+    <!-- Protective hexagon grid -->
+    <g stroke="#00ff88" stroke-width="1" opacity="0.2">
+        <path d="M50,100 L150,100 L200,186.6 L150,273.2 L50,273.2 L0,186.6 Z"/>
+        <path d="M250,100 L350,100 L400,186.6 L350,273.2 L250,273.2 L200,186.6 Z"/>
+        <path d="M450,100 L550,100 L600,186.6 L550,273.2 L450,273.2 L400,186.6 Z"/>
+    </g>
+</svg>

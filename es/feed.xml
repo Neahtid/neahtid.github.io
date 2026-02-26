@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://www.neahtid.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.neahtid.com/" rel="alternate" type="text/html" hreflang="es" /><updated>2026-02-26T17:14:59+00:00</updated><id>https://www.neahtid.com/feed.xml</id><title type="html">Solutions tailored to help your business grow</title><subtitle>Leading provider of innovative IT solutions including web applications,  business intelligence, AI automation, cybersecurity, hardware solutions,  and e-commerce platforms. Empowering businesses with cutting-edge technology.</subtitle><author><name>Rodrigo Cancino (Coto)</name></author><entry><title type="html">La Revolución de los Chatbots: Transformando la Atención al Cliente e Impulsando las Ventas</title><link href="https://www.neahtid.com/posts/2025/03/11/chatbots/" rel="alternate" type="text/html" title="La Revolución de los Chatbots: Transformando la Atención al Cliente e Impulsando las Ventas" /><published>2025-03-11T17:46:00+00:00</published><updated>2025-03-11T17:46:00+00:00</updated><id>https://www.neahtid.com/posts/2025/03/11/chatbots</id><content type="html" xml:base="https://www.neahtid.com/posts/2025/03/11/chatbots/"><![CDATA[<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+</style>
+
+<p>En un mundo donde los segundos marcan la diferencia en la decisión de compra, los chatbots han emergido como los nuevos héroes silenciosos del mundo corporativo.</p>
+
+<h2 id="el-boom-de-los-chatbots-en-números">El Boom de los Chatbots en Números</h2>
+
+<ul>
+  <li>Mercado de chatbots: US$ 2,9 mil millones (2023) → US$ 10,5 mil millones (2028), crecimiento anual del 29,3%</li>
+  <li>7 de cada 10 interacciones con clientes en 2023 ya involucraban estas tecnologías (Gartner)</li>
+</ul>
+
+<h2 id="ventajas-principales">Ventajas Principales</h2>
+
+<p><strong>Disponibilidad Total:</strong> H&amp;M redujo el tiempo de respuesta de 24h a 5min (+60% en satisfacción)</p>
+
+<p><strong>Economía Significativa:</strong> Reducción media del 30% en los costos de soporte. Bank of America ahorra US$ 30 millones anuales con su asistente virtual Erica.</p>
+
+<p><strong>Escalabilidad:</strong> Amazon gestiona picos de atención en Black Friday, incluso con un aumento del 400% en las consultas.</p>
+
+<h2 id="impacto-por-sector">Impacto por Sector</h2>
+
+<h3 id="e-commerce">E-commerce</h3>
+
+<ul>
+  <li>Sephora: +11% en la tasa de conversión con recomendaciones personalizadas</li>
+  <li>Domino’s: +28% en ventas online con el chatbot DOM</li>
+  <li>Whole Foods: +266% en engagement y +20% en ventas cruzadas</li>
+</ul>
+
+<h3 id="finanzas">Finanzas</h3>
+
+<ul>
+  <li>Bradesco: 12 millones de interacciones mensuales vía BIA</li>
+  <li>Nubank: -80% en el tiempo de resolución de problemas</li>
+  <li>Lemonade: procesamiento de reclamaciones en 3min (vs. 30-45min del sector)</li>
+</ul>
+
+<h3 id="salud">Salud</h3>
+
+<ul>
+  <li>Babylon Health: eliminó el 27% de las consultas presenciales innecesarias</li>
+  <li>Cleveland Clinic: -70% en el tiempo de programación de citas</li>
+  <li>OMS: atendió 4,5 millones de consultas sobre COVID-19</li>
+</ul>
+
+<h2 id="métricas-transformadoras">Métricas Transformadoras</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lo Que Cambia</th>
+      <th>Cuánto Cambia</th>
+      <th>Ejemplo Real</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tiempo de Respuesta</td>
+      <td>⬇️ 80%</td>
+      <td>KLM: de 1h a 5min</td>
+    </tr>
+    <tr>
+      <td>Resolución en el Primer Contacto</td>
+      <td>⬆️ 25%</td>
+      <td>Vodafone: del 65% al 81%</td>
+    </tr>
+    <tr>
+      <td>Satisfacción del Cliente</td>
+      <td>⬆️ 20-35%</td>
+      <td>Dell: +29% en evaluaciones positivas</td>
+    </tr>
+    <tr>
+      <td>Costo por Atención</td>
+      <td>⬇️ 30-50%</td>
+      <td>IBM: de US$ 15-20 a US$ 5-7</td>
+    </tr>
+    <tr>
+      <td>Volumen de Ventas</td>
+      <td>⬆️ 15-30%</td>
+      <td>Sephora: +25% en ventas online</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="experiencias-innovadoras">Experiencias Innovadoras</h2>
+
+<ul>
+  <li>Starbucks: “My Barista” aumentó en un 20% el valor medio de los pedidos</li>
+  <li>Disney: sistema omnicanal generó +45% en engagement</li>
+  <li>Airbnb: feedback en tiempo real redujo quejas post-estancia en un 28%</li>
+</ul>
+
+<h2 id="beneficios-a-largo-plazo">Beneficios a Largo Plazo</h2>
+
+<ul>
+  <li>Zappos: construyó una base de conocimiento que redujo consultas humanas en un 37%</li>
+  <li>Unilever: identificó tendencias anticipadas, aumentando el éxito de lanzamientos en un 15%</li>
+  <li>Mastercard: evolucionó el sistema para detectar fraudes y ofrecer consejos financieros (+18% en fidelidad)</li>
+</ul>
+
+<h2 id="desafíos">Desafíos</h2>
+
+<ul>
+  <li>El equilibrio entre automatización y toque humano es esencial</li>
+  <li>La personalización adecuada a la identidad de la marca es necesaria</li>
+  <li>La privacidad sigue siendo una preocupación para el 65% de los consumidores</li>
+</ul>
+
+<h2 id="transforme-su-negocio-con-las-soluciones-de-chatbot-de-neahtid">Transforme Su Negocio con las Soluciones de Chatbot de Neahtid</h2>
+
+<p>En Neahtid, entendemos que cada negocio es único y merece soluciones personalizadas de inteligencia artificial y automatización. Nuestros especialistas transforman tecnologías avanzadas en ventajas competitivas reales para su negocio.</p>
+
+<p><a href="/es/services/artificial-intelligence-and-automation/chatbots/">Visite Nuestras Soluciones de Chatbots Inteligentes</a> y descubra cómo Neahtid puede ayudar a su empresa a:</p>
+
+<ul>
+  <li>Reducir costos operativos hasta en un 50%</li>
+  <li>Aumentar la satisfacción del cliente en más de un 30%</li>
+  <li>Impulsar sus ventas con atención personalizada 24/7</li>
+  <li>Crear una experiencia de marca inolvidable</li>
+</ul>
+
+<p>No deje que sus competidores conquisten a sus clientes con experiencias superiores. El mejor momento para que su empresa forme parte de esta revolución es ahora.</p>
+
+<div class="text-center">
+    <a href="#" class="btn btn-primary btn-lg rounded-pill my-3" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="AI">
+        Solicitar Demostración
+    </a>
+</div>]]></content><author><name>Rodrigo Cancino (Coto)</name></author><category term="posts" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Transformando la Rentabilidad Hotelera con Analítica Inteligente: El Poder de los Dashboards en Tiempo Real</title><link href="https://www.neahtid.com/posts/2025/01/10/rentabilidad-hotelera/" rel="alternate" type="text/html" title="Transformando la Rentabilidad Hotelera con Analítica Inteligente: El Poder de los Dashboards en Tiempo Real" /><published>2025-01-10T21:24:00+00:00</published><updated>2025-01-10T21:24:00+00:00</updated><id>https://www.neahtid.com/posts/2025/01/10/rentabilidad-hotelera</id><content type="html" xml:base="https://www.neahtid.com/posts/2025/01/10/rentabilidad-hotelera/"><![CDATA[<header class="entry-header">
+En el competitivo panorama hotelero actual, los establecimientos están recurriendo cada vez más a soluciones basadas en datos para optimizar sus operaciones y maximizar la rentabilidad. La integración de dashboards de inteligencia empresarial se ha convertido en un elemento transformador, ofreciendo una visión sin precedentes de las métricas de rendimiento y la eficiencia operativa.
+</header>
+
+<p><img alt="imagen rentabilidad hotelera" src="/assets/blog/2025-01-10-rentabilidad-hotelera.png" width="100%" /></p>
+
+<p>Estudios recientes del sector muestran que los hoteles que aprovechan la visualización avanzada de datos y los paneles de análisis de rentabilidad experimentan una mejora promedio del 15-20% en la optimización de ingresos. Esta transformación no se trata solo de recopilar datos, sino de hacerlos procesables y accesibles en tiempo real.</p>
+
+<p>En <strong>Neahtid</strong>, entendemos que cada minuto cuenta en la gestión hotelera. <a href="/es/services/business-intelligence-and-data-analytics/">Nuestro servicio de inteligencia empresarial y análisis</a> capacita a los hoteleros con herramientas de análisis de datos automatizadas, específicamente diseñadas para los desafíos únicos de la industria hotelera. La solución transforma flujos de datos complejos en información clara y procesable a través de dashboards intuitivos.</p>
+
+<p>Consideremos las operaciones diarias de un hotel típico: desde la ocupación de habitaciones y los ingresos por habitación disponible (RevPAR) hasta las ventas de alimentos y bebidas y la productividad del personal. Los métodos tradicionales de informes a menudo hacen que los gerentes esperen días o semanas para obtener información crítica. Sin embargo, con dashboards de análisis empresarial en tiempo real, los responsables de la toma de decisiones pueden acceder a información vital instantáneamente, permitiendo una respuesta rápida a los cambios del mercado y los desafíos operativos.</p>
+
+<p>Nuestras soluciones de inteligencia empresarial hotelera van más allá de los informes básicos. El sistema inteligente y automatizado integra datos de múltiples fuentes – sistemas de gestión de propiedades, punto de venta, gestión de relaciones con clientes y más – creando una visión integral del rendimiento de su hotel. Esta integración permite a los hoteleros:</p>
+
+<ul>
+  <li>Monitorear flujos de ingresos y centros de costos en tiempo real</li>
+  <li>Identificar tendencias y patrones en el comportamiento de los huéspedes</li>
+  <li>Optimizar estrategias de precios basadas en la demanda del mercado</li>
+  <li>Seguir y mejorar la eficiencia operativa</li>
+  <li>Mejorar la satisfacción del huésped mediante servicios basados en datos</li>
+</ul>
+
+<p>Las capacidades de análisis de datos empresariales de nuestra plataforma son particularmente poderosas cuando se trata de optimización de beneficios. Al analizar datos históricos junto con métricas en tiempo real, los hoteles pueden tomar decisiones informadas sobre todo, desde los niveles de personal hasta la gestión de inventario. Este enfoque proactivo de la gestión ha ayudado a nuestros clientes a lograr mejoras significativas en sus resultados.</p>
+
+<p>Lo que distingue a nuestra solución es su enfoque en la usabilidad y la automatización. El sistema aprende continuamente de los patrones únicos de su hotel y marca automáticamente anomalías u oportunidades, asegurando que ningún potencial de optimización pase desapercibido. Ya sea que administre un hotel boutique o supervise una cadena de propiedades, nuestra plataforma escalable se adapta a sus necesidades específicas.</p>
+
+<p>¿Listo para transformar el enfoque de análisis de datos de su hotel? Conozca más sobre nuestro completo <a href="/es/services/business-intelligence-and-data-analytics/">servicio de inteligencia empresarial y análisis</a> y descubra cómo <strong>Neahtid</strong> puede ayudarlo a desbloquear todo el potencial de su negocio hotelero a través de la toma de decisiones inteligente basada en datos.</p>
+
+<p>En la era digital actual, mantenerse competitivo significa mantenerse informado. Con las herramientas de inteligencia empresarial adecuadas, su hotel puede convertir los datos en beneficios, asegurando un crecimiento sostenible en una industria en constante evolución.</p>]]></content><author><name>Rodrigo Cancino (Coto)</name></author><category term="posts" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Transformando Experiencias de los Huéspedes: El Auge de las Soluciones de Hospitalidad Inteligente</title><link href="https://www.neahtid.com/posts/2024/10/11/transforming-guest-experiences/" rel="alternate" type="text/html" title="Transformando Experiencias de los Huéspedes: El Auge de las Soluciones de Hospitalidad Inteligente" /><published>2024-10-11T13:06:00+00:00</published><updated>2024-10-11T13:06:00+00:00</updated><id>https://www.neahtid.com/posts/2024/10/11/transforming-guest-experiences</id><content type="html" xml:base="https://www.neahtid.com/posts/2024/10/11/transforming-guest-experiences/"><![CDATA[<header class="entry-header">
+En el mundo hiperconectado de hoy, la industria de la hospitalidad está atravesando una revolución digital. La integración de tecnologías inteligentes, automatización y asistentes de voz está remodelando la forma en que hoteles, resorts y otros lugares de hospitalidad atienden a los huéspedes, optimizando las operaciones y ofreciendo experiencias personalizadas y sin interrupciones. Este artículo explora cómo estas innovaciones están moldeando el futuro de la hospitalidad inteligente.
+</header>
+
+<p><img src="/assets/blog/2024-10-11-transforming-guest-experience.png" alt="Soluciones de Hospitalidad Inteligente" width="100%" /></p>
+
+<h2 id="la-revolución-de-los-hoteles-inteligentes">La Revolución de los Hoteles Inteligentes</h2>
+
+<p>Las soluciones de hospitalidad inteligente utilizan tecnología para mejorar la eficiencia, la conveniencia y la satisfacción de los huéspedes. En el corazón de esta transformación están los dispositivos de Internet de las Cosas (IoT), la automatización impulsada por IA y los asistentes activados por voz. Juntos, crean un ecosistema donde la tecnología anticipa y satisface las necesidades de los huéspedes, muchas veces antes de que se expresen.</p>
+
+<h3 id="beneficios-principales-de-las-soluciones-de-hospitalidad-inteligente">Beneficios Principales de las Soluciones de Hospitalidad Inteligente</h3>
+
+<p>Mejora en la Experiencia de los Huéspedes: La automatización y los asistentes de voz permiten interacciones altamente personalizadas. Las habitaciones inteligentes, por ejemplo, permiten a los huéspedes controlar la iluminación, la temperatura y los sistemas de entretenimiento mediante comandos de voz o aplicaciones móviles. Este nivel de personalización mejora la comodidad y la conveniencia.</p>
+
+<ol>
+  <li>
+    <p><strong>Eficiencia Operativa</strong>: La automatización reduce la carga de trabajo del personal al manejar tareas repetitivas, como check-ins, pedidos de servicio a la habitación y alertas de mantenimiento. Esto permite que el personal se concentre en ofrecer un servicio excepcional y atender necesidades más complejas de los huéspedes.</p>
+  </li>
+  <li>
+    <p><strong>Reducción de Costos</strong>: Los sistemas inteligentes de gestión de energía utilizan sensores IoT para monitorear la ocupación y ajustar la calefacción, la refrigeración y la iluminación según sea necesario. Esto reduce el consumo de energía y los costos operativos, manteniendo la comodidad de los huéspedes.</p>
+  </li>
+  <li>
+    <p><strong>Seguridad e Higiene Mejoradas</strong>: En el escenario pospandemia, las soluciones sin contacto se han vuelto esenciales. Los check-ins automatizados, el acceso sin llave a las habitaciones y los dispositivos controlados por voz minimizan el contacto físico, garantizando la seguridad de los huéspedes.</p>
+  </li>
+</ol>
+
+<h3 id="asistentes-de-voz-un-hito-en-la-hospitalidad">Asistentes de Voz: Un Hito en la Hospitalidad</h3>
+
+<p>Los asistentes de voz, como Amazon Alexa para Hospitalidad o Google Assistant, están rápidamente convirtiéndose en elementos centrales de las estrategias de hospitalidad inteligente. Estas herramientas basadas en IA ofrecen:</p>
+
+<ul>
+  <li>
+    <p><strong>Control Simplificado</strong>: Los huéspedes pueden usar comandos de voz para solicitar servicio a la habitación, programar citas en el spa o incluso pedir recomendaciones locales, eliminando la necesidad de llamar a la recepción.</p>
+  </li>
+  <li>
+    <p><strong>Soporte Multilingüe</strong>: Rompiendo barreras idiomáticas, los asistentes de voz atienden a un público global, haciendo que los viajeros internacionales se sientan como en casa.</p>
+  </li>
+  <li>
+    <p><strong>Integración con Servicios del Hotel</strong>: Los asistentes de voz pueden conectarse a sistemas de gestión de propiedades, permitiendo actualizaciones en tiempo real sobre disponibilidad de habitaciones, pedidos de limpieza y más.</p>
+  </li>
+</ul>
+
+<h3 id="aplicaciones-en-el-mundo-real">Aplicaciones en el Mundo Real</h3>
+
+<ol>
+  <li>
+    <p><strong>Marriott International</strong>: Marriott se ha asociado con Amazon Alexa para ofrecer asistentes de voz en las habitaciones, que brindan servicios de conserjería, controlan configuraciones de las habitaciones y facilitan la comunicación con los huéspedes.</p>
+  </li>
+  <li>
+    <p><strong>Hilton’s Connected Room</strong>: Las habitaciones inteligentes de Hilton permiten que los huéspedes utilicen la aplicación Hilton Honors para personalizar las configuraciones de las habitaciones, desde la selección de canales de televisión preferidos hasta el ajuste del termostato.</p>
+  </li>
+  <li>
+    <p><strong>CitizenM Hotels</strong>: Esta cadena integra IoT y control por voz para permitir que los huéspedes gestionen su estancia a través de tabletas o smartphones, ofreciendo una experiencia orientada a la tecnología.</p>
+  </li>
+</ol>
+
+<h3 id="desafíos-y-consideraciones">Desafíos y Consideraciones</h3>
+
+<p>Aunque las soluciones de hospitalidad inteligente ofrecen numerosas ventajas, también presentan desafíos:</p>
+
+<ul>
+  <li>
+    <p><strong>Cuestiones de Privacidad</strong>: Los huéspedes pueden sentirse incómodos con la recopilación de datos y el uso indebido de información personal. La transparencia y las medidas robustas de seguridad de datos son esenciales.</p>
+  </li>
+  <li>
+    <p><strong>Costos de Integración</strong>: Las inversiones iniciales en tecnologías inteligentes pueden ser significativas, por lo que es crucial que las empresas de hospitalidad evalúen los beneficios a largo plazo frente a los costos iniciales.</p>
+  </li>
+  <li>
+    <p><strong>Capacitación del Personal</strong>: Equipar al personal para trabajar con tecnologías avanzadas requiere capacitación continua para garantizar que puedan resolver problemas y maximizar el potencial del sistema.</p>
+  </li>
+</ul>
+
+<h2 id="el-camino-por-delante">El Camino por Delante</h2>
+
+<p>La adopción de soluciones de hospitalidad inteligente está destinada a crecer a medida que la tecnología se vuelva más sofisticada y accesible. El futuro podría incluir bots de conserjería impulsados por IA que anticipen las preferencias de los huéspedes basándose en estancias anteriores, realidad aumentada (AR) para experiencias inmersivas e integraciones más profundas entre dispositivos portátiles y sistemas hoteleros.</p>
+
+<p>Para las empresas del sector de la hospitalidad, adoptar tecnologías inteligentes ya no es un lujo, sino una necesidad. Al hacerlo, no solo cumplen, sino que superan las expectativas de los huéspedes, fomentando la fidelidad en un mercado cada vez más competitivo.</p>
+
+<p>En conclusión, las soluciones de hospitalidad inteligente impulsadas por automatización y asistentes de voz representan la próxima frontera en la innovación de la experiencia de los huéspedes. A medida que estas tecnologías evolucionen, prometen hacer que cada estancia sea memorable, personalizada y sin complicaciones.</p>
+
+<hr />
+
+<p>Para reservar tu espacio o saber más, <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-consultation="AI">
+    reserva tu lugar
+</a> y descubre cómo el entorno adecuado puede llevar tu productividad a nuevas alturas.</p>]]></content><author><name>Rodrigo Cancino (Coto)</name></author><category term="posts" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Bienvenidos a Neahtid, Innovando el Futuro con Tecnología</title><link href="https://www.neahtid.com/posts/2024/10/01/welcome-to-neahtid-blog/" rel="alternate" type="text/html" title="Bienvenidos a Neahtid, Innovando el Futuro con Tecnología" /><published>2024-10-01T10:10:10+00:00</published><updated>2024-10-01T10:10:10+00:00</updated><id>https://www.neahtid.com/posts/2024/10/01/welcome-to-neahtid-blog</id><content type="html" xml:base="https://www.neahtid.com/posts/2024/10/01/welcome-to-neahtid-blog/"><![CDATA[<header class="entry-header">
+¡Bienvenidos al blog oficial de <b>Neahtid</b>! Estamos encantados de tenerlos aquí, en este espacio donde exploraremos las últimas tendencias, innovaciones y estrategias tecnológicas que están transformando el mundo. Como líderes en el mercado, nuestra misión es empoderar a las empresas con soluciones tecnológicas que impulsen la eficiencia, la seguridad y el crecimiento.
+</header>
+
+<h2 id="nuestra-propuesta-de-valor">Nuestra Propuesta de Valor</h2>
+
+<p>En <strong>Neahtid</strong>, creemos que la tecnología no solo debe resolver problemas, sino también abrir nuevas oportunidades. Es por eso que ofrecemos una gama completa de servicios diseñados para satisfacer las necesidades específicas de nuestros clientes empresariales:</p>
+
+<ol>
+  <li>
+    <p><strong>Aplicaciones Web y Presencia Digital</strong>:
+Transformamos ideas en experiencias digitales impactantes. Desde sitios web empresariales hasta plataformas complejas, creamos soluciones adaptadas a sus objetivos.</p>
+  </li>
+  <li>
+    <p><strong>Inteligencia de Negocios y Análisis de Datos</strong>:
+Convierta datos en decisiones estratégicas. Nuestras herramientas de Business Intelligence ayudan a identificar oportunidades clave y optimizar recursos.</p>
+  </li>
+  <li>
+    <p><strong>Inteligencia Artificial y Automatización</strong>:
+Llevamos la eficiencia a otro nivel con soluciones basadas en IA que automatizan procesos y mejoran la productividad en tiempo real.</p>
+  </li>
+  <li>
+    <p><strong>Soluciones de Hardware</strong>:
+Ofrecemos equipos de última generación para garantizar que su infraestructura técnica sea confiable y escalable.</p>
+  </li>
+  <li>
+    <p><strong>Soluciones de Comercio Electrónico</strong>:
+Desde pequeñas tiendas en línea hasta grandes marketplaces, desarrollamos plataformas de e-commerce que maximizan ventas y mejoran la experiencia del cliente.</p>
+  </li>
+  <li>
+    <p><strong>Ciberseguridad y Software Avanzado</strong>:
+Protegemos lo que importa. Diseñamos estrategias de seguridad robustas para salvaguardar sus datos y sistemas de amenazas emergentes.</p>
+  </li>
+</ol>
+
+<h2 id="por-qué-elegirnos">¿Por Qué Elegirnos?</h2>
+
+<p>Nuestra pasión por la excelencia y la innovación nos impulsa a ofrecer soluciones personalizadas que no solo cumplen con las expectativas, sino que las superan. Trabajamos estrechamente con cada cliente para entender sus necesidades específicas y desarrollar estrategias que impulsen resultados tangibles.</p>
+
+<h2 id="explore-nuestros-servicios">¡Explore Nuestros Servicios!</h2>
+
+<p>Estamos aquí para ayudarle a llevar su negocio al siguiente nivel. ¿Está listo para descubrir cómo nuestras soluciones pueden transformar su empresa? Visite nuestra <a href="/es/services/">página de servicios</a> para obtener más información sobre cómo podemos colaborar con usted.</p>
+
+<h2 id="hablemos">¡Hablemos!</h2>
+
+<p>¿Tiene una pregunta o un desafío específico? Nuestro equipo está listo para ayudar. No dude en ponerse en contacto con nosotros a través de nuestra <a href="/es/contact-us/">página de contacto</a>. Estamos a solo un clic de distancia para transformar su visión en realidad.</p>
+
+<p>Gracias por visitarnos, y esperamos que encuentre en este blog información valiosa que lo inspire a aprovechar todo el potencial de la tecnología en el sector B2B.</p>
+
+<p>¡Sigamos construyendo el futuro juntos!</p>]]></content><author><name>Rodrigo Cancino (Coto)</name></author><category term="posts" /><summary type="html"><![CDATA[]]></summary></entry></feed>

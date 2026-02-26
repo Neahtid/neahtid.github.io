@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" class="img-fluid rounded shadow">
+    <!-- Background -->
+    <rect width="600" height="400" fill="#f8f9fa" rx="10" />
+
+    <!-- Dashboard Container -->
+    <rect x="40" y="30" width="520" height="340" fill="white" rx="8" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+
+    <!-- Top Bar -->
+    <rect x="40" y="30" width="520" height="50" fill="#4a90e2" rx="8 8 0 0" />
+
+    <!-- Menu Icons in Top Bar -->
+    <circle cx="70" cy="55" r="6" fill="white" opacity="0.9" />
+    <circle cx="95" cy="55" r="6" fill="white" opacity="0.9" />
+    <circle cx="120" cy="55" r="6" fill="white" opacity="0.9" />
+
+    <!-- Charts Section -->
+    <!-- Line Chart -->
+    <rect x="60" y="100" width="230" height="125" fill="#ffffff" rx="6" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.05))" />
+    <path d="M70 180 Q120 140, 170 160 T270 140" stroke="#2ecc71" fill="none" stroke-width="3" />
+    <text x="80" y="215" font-family="Arial" font-size="12" fill="#666">Revenue Growth</text>
+
+    <!-- Bar Chart -->
+    <rect x="310" y="100" width="230" height="125" fill="#ffffff" rx="6" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.05))" />
+    <rect x="330" y="160" width="30" height="40" fill="#3498db" rx="2" />
+    <rect x="370" y="140" width="30" height="60" fill="#3498db" rx="2" />
+    <rect x="410" y="120" width="30" height="80" fill="#3498db" rx="2" />
+    <rect x="450" y="150" width="30" height="50" fill="#3498db" rx="2" />
+    <text x="330" y="215" font-family="Arial" font-size="12" fill="#666">Sales Performance</text>
+
+    <!-- KPI Cards -->
+    <rect x="60" y="240" width="150" height="100" fill="#ffffff" rx="6" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.05))" />
+    <text x="80" y="270" font-family="Arial" font-size="14" fill="#666">Total Revenue</text>
+    <text x="80" y="300" font-family="Arial" font-size="20" font-weight="bold" fill="#2ecc71">$1.2M</text>
+
+    <rect x="230" y="240" width="150" height="100" fill="#ffffff" rx="6" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.05))" />
+    <text x="250" y="270" font-family="Arial" font-size="14" fill="#666">Active Users</text>
+    <text x="250" y="300" font-family="Arial" font-size="20" font-weight="bold" fill="#3498db">8.5K</text>
+
+    <rect x="400" y="240" width="150" height="100" fill="#ffffff" rx="6" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.05))" />
+    <text x="420" y="270" font-family="Arial" font-size="14" fill="#666">Growth Rate</text>
+    <text x="420" y="300" font-family="Arial" font-size="20" font-weight="bold" fill="#e74c3c">+24%</text>
+</svg>

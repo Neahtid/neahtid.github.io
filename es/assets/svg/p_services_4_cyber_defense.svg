@@ -1,0 +1,48 @@
+<svg viewBox="0 0 600 400"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Modern UI gradient background -->
+    <defs>
+        <linearGradient id="uiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1a237e;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0d47a1;stop-opacity:1" />
+        </linearGradient>
+        <filter id="uiGlow">
+            <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="600" height="400" fill="url(#uiGradient)"/>
+
+    <!-- UI Elements -->
+    <g fill="none" stroke="#29B6F6" stroke-width="2" opacity="0.8">
+        <!-- Radar screen -->
+        <circle cx="300" cy="200" r="120" filter="url(#uiGlow)"/>
+        <line x1="180" y1="200" x2="420" y2="200"/>
+        <line x1="300" y1="80" x2="300" y2="320"/>
+
+        <!-- Scanning line -->
+        <path d="M300,200 L420,200" transform="rotate(45,300,200)">
+            <animateTransform attributeName="transform" type="rotate" from="0 300 200" to="360 300 200" dur="4s" repeatCount="indefinite"/>
+        </path>
+    </g>
+
+    <!-- Data visualization elements -->
+    <g fill="#29B6F6" opacity="0.6">
+        <rect x="450" y="100" width="100" height="20" rx="5"/>
+        <rect x="450" y="140" width="80" height="20" rx="5"/>
+        <rect x="450" y="180" width="120" height="20" rx="5"/>
+        <rect x="450" y="220" width="90" height="20" rx="5"/>
+    </g>
+
+    <!-- Status indicators -->
+    <g fill="#4CAF50">
+        <circle cx="50" cy="50" r="5"/>
+        <circle cx="50" cy="70" r="5"/>
+        <circle cx="50" cy="90" r="5"/>
+    </g>
+</svg>

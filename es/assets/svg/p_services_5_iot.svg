@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+    <!-- Background -->
+    <rect width="400" height="300" fill="#f8fafc"/>
+
+    <!-- Central Hub -->
+    <circle cx="200" cy="150" r="50" fill="#2563eb"/>
+    <circle cx="200" cy="150" r="40" fill="#ffffff"/>
+    <path d="M180 150 L220 150 M200 130 L200 170" stroke="#2563eb" stroke-width="4"/>
+
+    <!-- Connected Devices -->
+    <!-- Smart Home -->
+    <rect x="50" y="50" width="60" height="60" fill="#3b82f6" rx="8"/>
+    <path d="M60 80 L100 80 M80 60 L80 100" stroke="#ffffff" stroke-width="2"/>
+
+    <!-- Factory -->
+    <rect x="290" y="50" width="60" height="60" fill="#3b82f6" rx="8"/>
+    <path d="M300 80 L340 80" stroke="#ffffff" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Sensors -->
+    <circle cx="80" cy="220" r="30" fill="#3b82f6"/>
+    <path d="M65 220 L95 220" stroke="#ffffff" stroke-width="2"/>
+
+    <!-- Mobile -->
+    <rect x="290" y="190" width="40" height="60" fill="#3b82f6" rx="8"/>
+    <rect x="295" y="195" width="30" height="40" fill="#ffffff" rx="4"/>
+
+    <!-- Connection Lines -->
+    <path d="M110 80 Q200 80, 290 80" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+    <path d="M110 220 Q200 220, 290 220" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+    <path d="M80 110 Q80 150, 150 150" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+    <path d="M320 110 Q320 150, 250 150" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,4"/>
+</svg>

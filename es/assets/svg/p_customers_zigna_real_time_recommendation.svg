@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="chart-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#091C99;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#091C99;stop-opacity:0"/>
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main Container -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Trading Chart -->
+  <g transform="translate(50,50)">
+    <!-- Chart Background -->
+    <path d="M0,400 L100,350 L200,380 L300,320 L400,340 L500,260 L600,200 L700,150 L700,400 L0,400 Z" 
+          fill="url(#chart-gradient)"/>
+    
+    <!-- Chart Line -->
+    <path d="M0,400 L100,350 L200,380 L300,320 L400,340 L500,260 L600,200 L700,150" 
+          fill="none" 
+          stroke="#091C99" 
+          stroke-width="3"
+          class="glowing-line"/>
+    
+    <!-- Data Points -->
+    <g class="data-points">
+      <circle cx="100" cy="350" r="6" fill="#091C99"/>
+      <circle cx="200" cy="380" r="6" fill="#091C99"/>
+      <circle cx="300" cy="320" r="6" fill="#091C99"/>
+      <circle cx="400" cy="340" r="6" fill="#091C99"/>
+      <circle cx="500" cy="260" r="6" fill="#091C99"/>
+      <circle cx="600" cy="200" r="6" fill="#091C99"/>
+      <circle cx="700" cy="150" r="6" fill="#091C99"/>
+    </g>
+    
+    <!-- Floating Analysis Windows -->
+    <g class="floating-1">
+      <rect x="450" y="100" width="200" height="100" rx="10" 
+            fill="white" stroke="#091C99" stroke-width="2"/>
+      <text x="470" y="130" fill="#091C99" font-size="14" font-family="Arial">TRADING SIGNAL</text>
+      <text x="470" y="160" fill="#27ae60" font-size="18" font-family="Arial">BUY • $247.50</text>
+      <circle cx="640" cy="110" r="8" fill="#27ae60"/>
+      <path d="M636,110 l8,0 M640,106 l0,8" stroke="white" stroke-width="2"/>
+    </g>
+    
+    <!-- Moving Average Lines -->
+    <path d="M0,380 Q350,360 700,200" 
+          stroke="#091C99" 
+          stroke-width="2" 
+          stroke-dasharray="5,5" 
+          fill="none"
+          opacity="0.5"/>
+          
+    <!-- Volume Bars -->
+    <g transform="translate(0,420)">
+      <rect x="50" width="30" height="40" fill="#091C99" opacity="0.2"/>
+      <rect x="150" width="30" height="30" fill="#091C99" opacity="0.2"/>
+      <rect x="250" width="30" height="50" fill="#091C99" opacity="0.2"/>
+      <rect x="350" width="30" height="35" fill="#091C99" opacity="0.2"/>
+      <rect x="450" width="30" height="45" fill="#091C99" opacity="0.2"/>
+      <rect x="550" width="30" height="60" fill="#091C99" opacity="0.2"/>
+      <rect x="650" width="30" height="55" fill="#091C99" opacity="0.2"/>
+    </g>
+  </g>
+
+  <!-- Floating Indicators -->
+  <g class="floating-2" transform="translate(100,150)">
+    <rect width="120" height="60" rx="8" fill="white" stroke="#091C99" stroke-width="2"/>
+    <text x="20" y="25" font-size="12" fill="#091C99" font-family="Arial">RSI</text>
+    <text x="20" y="45" font-size="16" fill="#091C99" font-family="Arial">64.5</text>
+  </g>
+
+  <g class="floating-3" transform="translate(600,300)">
+    <rect width="120" height="60" rx="8" fill="white" stroke="#091C99" stroke-width="2"/>
+    <text x="20" y="25" font-size="12" fill="#091C99" font-family="Arial">MACD</text>
+    <text x="20" y="45" font-size="16" fill="#091C99" font-family="Arial">+0.255</text>
+  </g>
+
+  <style>
+    @keyframes float-1 {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes float-2 {
+      0% { transform: translate(100px, 150px); }
+      50% { transform: translate(100px, 140px); }
+      100% { transform: translate(100px, 150px); }
+    }
+    @keyframes float-3 {
+      0% { transform: translate(600px, 300px); }
+      50% { transform: translate(600px, 290px); }
+      100% { transform: translate(600px, 300px); }
+    }
+    .floating-1 {
+      animation: float-1 4s ease-in-out infinite;
+    }
+    .floating-2 {
+      animation: float-2 3s ease-in-out infinite;
+    }
+    .floating-3 {
+      animation: float-3 5s ease-in-out infinite;
+    }
+    .glowing-line {
+      filter: url(#glow);
+    }
+    .data-points circle {
+      filter: url(#glow);
+    }
+  </style>
+</svg>
