@@ -1,6 +1,6 @@
-# neahtid site
+# Neahtid site
 name: Neahtid
-author: Rodrigo Cancino (Coto)
+author: Rodrigo (Coto) Augosto Cancino
 
 # ---- Main settings ----
 title: Solutions tailored to help your business grow
@@ -38,7 +38,7 @@ jekyll_timeago:
     - "es"
     - "pt-br"
 
-# Multilingual settings
+# ---- Multi-Language Settings ----
 languages: ["en", "es", "pt-br"]
 default_lang: "en"
 exclude_from_localization:
