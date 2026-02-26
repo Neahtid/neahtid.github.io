@@ -37,30 +37,112 @@ layout: default
     </div>
 
     <!-- Sidebar (List of Posts) -->
-    <div class="col-md-4 bg-light">
-      <aside class="sidebar">
-        <h3>{% t pages.posts_recents %}</h3>
-        <ul class="list-group">
+    <div class="col-md-4">
+      <style>
+        .recent-posts-sidebar {
+          border: 1px solid #dee2e6;
+          border-radius: 1.25rem;
+          padding: 1.5rem;
+          background-color: transparent;
+        }
+
+        .recent-posts-sidebar h3 {
+          text-decoration: none !important;
+          margin-bottom: 0;
+          font-size: 1.5rem;
+        }
+
+        .recent-posts-list {
+          list-style: none;
+          padding-left: 0;
+          margin-bottom: 0;
+        }
+
+        .recent-posts-item {
+          padding: 1.25rem 0;
+          border-bottom: 1px solid #dee2e6;
+          position: relative;
+        }
+
+        .recent-posts-item:first-child {
+          padding-top: 0;
+        }
+
+        .recent-posts-item:first-child.active::before {
+          top: 0;
+        }
+
+        .recent-posts-item:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+
+        .recent-posts-item:last-child.active::before {
+          bottom: 0;
+        }
+
+        .recent-posts-item.active {
+          padding-left: 18px;
+        }
+
+        .recent-posts-item.active::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 1.25rem;
+          bottom: 1.25rem;
+          width: 4px;
+          background-color: var(--primary-color, #0d6efd);
+          border-radius: 4px;
+        }
+
+        .recent-posts-item.active .post-title-link {
+          color: var(--primary-color, #0d6efd) !important;
+        }
+
+        .rss-icon-link {
+          color: #f5a623;
+        }
+
+        .rss-icon-link svg {
+          fill: currentColor;
+          width: 18px;
+          height: 18px;
+        }
+      </style>
+      <aside class="recent-posts-sidebar">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="fw-bold">{% t pages.posts_recents %}</h3>
+          <a target="_blank" rel="noreferrer" href="{{ site.baseurl }}/feed.xml" class="rss-icon-link"
+            aria-label="RSS Feed">
+            <svg class="svg-icon m-0 p-0" viewBox="0 0 16 16">
+              <use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#rss"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="recent-posts-list">
           {%- assign posts = site.posts | sort: 'date' | reverse -%}
           {%- for post in posts -%}
-          <li class="list-group-item">
-            <small class="text-secondary">
+          <li class="recent-posts-item {% if page.url == post.url %}active{% endif %}">
+            {% if page.url == post.url %}
+            <span class="d-block fw-bold post-title-link"
+              style="font-size: 1.1rem; line-height: 1.3; margin-bottom: 0.25rem;">{{ post.title | escape }}</span>
+            {% else %}
+            <a href="{{ site.baseurl }}{{ post.url }}"
+              class="d-block fw-bold text-reset text-decoration-none post-title-link"
+              style="font-size: 1.1rem; line-height: 1.3; margin-bottom: 0.25rem;">
+              {{ post.title | escape }}
+            </a>
+            {% endif %}
+            <small class="text-secondary" style="font-size: 0.9rem;">
               {%- assign date_format = site.minima.date_format | default: "%a %-d-%b-%Y %I:%M %p" -%}
               {%- assign mdate = post.date | date_to_xmlschema -%}
               {% if site.lang == site.default_lang %}
-                {{ post.date | timeago }}
+              {{ post.date | timeago }}
               {% else %}
-                {{ mdate | date: date_format }}
+              {{ mdate | date: date_format }}
               {% endif %}
             </small>
-            <br>
-          {% if page.url == post.url %}
-            <span class="fw-bold">{{ post.title | escape }} </span>
-          {% else %}
-            <a href="{{ site.baseurl }}{{ post.url }}" class="fw-bold">
-              {{ post.title | escape }} 
-            </a>
-          {% endif %}
           </li>
           {%- endfor -%}
         </ul>
