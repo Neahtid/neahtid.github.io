@@ -79,6 +79,17 @@ pages:
     learn_more: "Más Información"
     previous: "Anterior"
     next: "Siguiente"
+  rss_modal:
+    title: "Mantente al día"
+    email_label: "Recibe noticias en tu email"
+    email_placeholder: "tu@email.com"
+    subscribe_btn: "Suscribirme"
+    rss_label: "Para usuarios avanzados (RSS)"
+    copy_btn: "Copiar Enlace"
+    or: "O"
+    copied: "¡Copiado!"
+    tooltip: "Suscribirse vía RSS"
+    success_toast: "¡Ya estás suscrito! Gracias por sumarte a nuestra comunidad. 🚀"
 
 jekyll_timeago:
   today: "hoy"

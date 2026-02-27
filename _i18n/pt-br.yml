@@ -79,6 +79,17 @@ pages:
     learn_more: "Saiba Mais"
     previous: "Anterior"
     next: "Próximo"
+  rss_modal:
+    title: "Mantenha-se atualizado"
+    email_label: "Receba novidades no seu email"
+    email_placeholder: "seu@email.com"
+    subscribe_btn: "Inscrever-me"
+    rss_label: "Para usuários avançados (RSS)"
+    copy_btn: "Copiar Link"
+    copied: "Copiado!"
+    or: "OU"
+    tooltip: "Inscrever-se via RSS"
+    success_toast: "Tudo pronto! Obrigado por se inscrever na nossa newsletter. 🚀"
 
 jekyll_timeago:
   today: "hoje"

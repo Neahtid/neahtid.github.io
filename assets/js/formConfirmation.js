@@ -12,7 +12,7 @@ function postForm(form, modal) {
 	var thanks = `${translations.pages.forms.thanks_default}`;
 	var URL = "";
 	var useBackendVerification = false; // Set to true when backend endpoint is ready
-	
+
 	if ($(form).hasClass("nea-contact")) {
 		URL = "https://docs.google.com/forms/d/1CpamEupan42CHwtJN1VqJnjgoQGud8SI2WAb9XCVqPU/formResponse";
 		thanks = `${translations.pages.forms.thanks_response}`;
@@ -30,13 +30,13 @@ function postForm(form, modal) {
 	// Helper function to restore button state on validation error
 	function restoreButtonState() {
 		var button = $('button[type=submit]', form);
-		
+
 		// ALWAYS restore original HTML first (most important!)
 		var originalHtml = button.data('original-html');
 		if (originalHtml) {
 			button.html(originalHtml);
 		}
-		
+
 		// Then re-enable button and remove loading classes
 		button.prop('disabled', false);
 		$('.fa-inactive', form).removeClass('fa-active');
@@ -44,17 +44,16 @@ function postForm(form, modal) {
 		if (icon.length) {
 			icon.removeClass('fa-active');
 		}
-		
+
 		// Reset reCAPTCHA widget so it can be used again
 		if (typeof grecaptcha !== 'undefined') {
 			try {
-				var isModal = $(form).hasClass('nea-formModal');
-				var widgetId = isModal ? window.recaptchaModalWidgetId : window.recaptchaWidgetId;
-				
+				var widgetId = $(form).data('recaptcha-widget-id');
+
 				if (widgetId !== null && widgetId !== undefined) {
 					grecaptcha.reset(widgetId);
 				}
-			} catch(e) {
+			} catch (e) {
 				// Silent fail - user may need to refresh
 			}
 		}
@@ -66,7 +65,7 @@ function postForm(form, modal) {
 		form.reset();
 		$("input, select, textarea, button", form).prop("disabled", true);
 		$(".modal-footer .btn-submit", form).hide();
-		let i=20; while(i--) alert("Spam detected. Message not send.");
+		let i = 20; while (i--) alert("Spam detected. Message not send.");
 		return;
 	}
 
@@ -99,7 +98,7 @@ function postForm(form, modal) {
 	${message} <br>
 	<hr>
 	---
-	<p><b>**Referencia**</b>: ${href}</p>
+	<p><b>**Reference**</b>: ${href}</p>
 	<p><b>**Language**</b>: ${currentLang}</p>
 	<p><b>**Consultation**</b>: ${consultation}</p>
 	<p><b>**Solution**</b>: ${solutionSelect}</p>
@@ -119,23 +118,23 @@ function postForm(form, modal) {
 				message: message,
 				source: source
 			}),
-		success: function(response) {
-			if (response.success && response.score >= 0.5) {
+			success: function (response) {
+				if (response.success && response.score >= 0.5) {
+					submitToGoogleForms();
+				} else {
+					restoreButtonState();
+					alert('Security verification failed. Please try again.');
+				}
+			},
+			error: function (xhr, status, error) {
 				submitToGoogleForms();
-			} else {
-				restoreButtonState();
-				alert('Security verification failed. Please try again.');
 			}
-		},
-		error: function(xhr, status, error) {
-			submitToGoogleForms();
-		}
 		});
 	} else {
 		// Direct submission without backend verification
 		submitToGoogleForms();
 	}
-	
+
 	// Function to submit to Google Forms
 	function submitToGoogleForms() {
 		$.ajax({
@@ -149,64 +148,52 @@ function postForm(form, modal) {
 			type: "POST",
 			dataType: "xml",
 			statusCode: {
-			0: function () {
-				if (modal){
-					formSaved = $(form).find(".modal-body").html();
-
-					$(form).find(".modal-body").html(`
-						<p class="alert alert-success">${thanks}</p>
-						<p class="mt-4 mb-0 text-center text-secondary">${translations.pages.forms.will_close}</p>
-						`);
-					$(".modal-footer .modal-close", form).removeClass('d-none');
-					$(".modal-footer .btn-submit", form).hide();
-
-					setTimeout(function() {
-						$(form).find(".modal-body").html(formSaved);
-						$(".modal-footer .modal-close", form).addClass('d-none');
-						$(".modal-footer .btn-submit", form).show();
-						form.reset();
-						$('#contactModal').modal('hide');
-					}, 5000);
-				}
-				else {
-					$(form).html('<p class="alert alert-success">' + thanks + '</p>');
-					$('button[type=submit]', form).disabled = false;
-					$('.fa-inactive', form).removeClass('fa-active');
+				0: function () {
+					handleSuccess();
+				},
+				200: function () {
+					handleSuccess();
 				}
 			},
-			200: function () {
-				if (modal){
-					formSaved = $(form).find(".modal-body").html();
-
-					$(form).find(".modal-body").html(`
-						<p class="alert alert-success">${thanks}</p>
-						<p class="mt-4 mb-0 text-center text-secondary">${translations.pages.forms.will_close}</p>
-						`);
-					$(".modal-footer .modal-close", form).removeClass('d-none');
-					$(".modal-footer .btn-submit", form).hide();
-
-					setTimeout(function() {
-						$(form).find(".modal-body").html(formSaved);
-						$(".modal-footer .modal-close", form).addClass('d-none');
-						$(".modal-footer .btn-submit", form).show();
-						form.reset();
-						$('#contactModal').modal('hide');
-					}, 5000);
-				}
-				else {
-					$(form).html('<p class="alert alert-success">' + thanks + '</p>');
-					$('button[type=submit]', form).disabled = false;
-					$('.fa-inactive', form).removeClass('fa-active');
-				}
-
+			error: function () {
+				// Google Forms often returns error block even on success due to CORS
+				handleSuccess();
 			}
-	},
-	complete: function(xhr, textStatus) {
-	  // Form submission complete
-	},
-	error: function(xhr, status, error) {
-	  restoreButtonState();
-	}
-	});
+		});
+
+		function handleSuccess() {
+			if (modal) {
+				var formSaved = $(form).find(".modal-body").html();
+
+				$(form).find(".modal-body").html(`
+				<p class="alert alert-success">${thanks}</p>
+				<p class="mt-4 mb-0 text-center text-secondary">${translations.pages.forms.will_close}</p>
+				`);
+				$(".modal-footer .modal-close", form).removeClass('d-none');
+				$(".modal-footer .btn-submit", form).hide();
+
+				// Special toast for RSS subscription
+				if (form.id === 'rss-email-form') {
+					const successToast = document.getElementById('successToast');
+					if (successToast) {
+						var toast = new bootstrap.Toast(successToast);
+						toast.show();
+					}
+				}
+
+				setTimeout(function () {
+					$(form).find(".modal-body").html(formSaved);
+					$(".modal-footer .modal-close", form).addClass('d-none');
+					$(".modal-footer .btn-submit", form).show();
+					form.reset();
+					$(form).closest('.modal').modal('hide');
+					restoreButtonState();
+				}, 3000);
+			}
+			else {
+				$(form).html('<p class="alert alert-success">' + thanks + '</p>');
+				restoreButtonState();
+			}
+		}
 	}
 }

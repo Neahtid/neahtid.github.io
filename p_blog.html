@@ -118,9 +118,9 @@ permalink: /blog/
       </style>
       <aside class="recent-posts-sidebar">
         <div class="d-flex justify-content-between align-items-center mb-4">
-          <h4 class="fw-bold my-0">{% t pages.posts_recents %}</h4>
-          <a target="_blank" rel="noreferrer" href="{{ site.baseurl }}/feed.xml" class="rss-icon-link"
-            aria-label="RSS Feed">
+          <h4 class="fw-bold my-0">{% t pages.posts_latest %}</h4>
+          <a href="{{ site.baseurl }}/feed.xml" class="rss-icon-link" aria-label="RSS Feed" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="{% t pages.rss_modal.tooltip %}">
             <svg class="svg-icon m-0 p-0" viewBox="0 0 16 16">
               <use xlink:href="{{ site.baseurl }}/assets/minima-social-icons.svg#rss"></use>
             </svg>

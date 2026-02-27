@@ -79,6 +79,17 @@ pages:
     learn_more: "Learn More"
     previous: "Previous"
     next: "Next"
+  rss_modal:
+    title: "Stay Updated"
+    email_label: "Get insights in your inbox"
+    email_placeholder: "your@email.com"
+    subscribe_btn: "Subscribe"
+    rss_label: "For Power Users (RSS)"
+    copy_btn: "Copy Link"
+    copied: "Copied!"
+    or: "OR"
+    tooltip: "Subscribe via RSS"
+    success_toast: "You're all set! Thanks for joining our newsletter. 🚀"
 
 jekyll_timeago:
   today: "today"

@@ -52,9 +52,9 @@
     </div>
   </div> -->
   <script type="text/javascript">
-  (function(d, t) {
+    (function (d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
+      v.onload = function () {
         window.voiceflow.chat.load({
           verify: { projectID: '67c9e1730672b80b31d940f8' },
           url: 'https://general-runtime.voiceflow.com',
@@ -65,116 +65,186 @@
         });
       }
       v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-  })(document, 'script');
-/*
-    $(document).ready(function () {
-      // Function to generate a UUID of 15 characters
-      function generateUUID(length) {
-        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        let result = '';
-        for (let i = 0; i < length; i++) {
-          result += characters.charAt(Math.floor(Math.random() * characters.length));
-        }
-        return result;
-      }
-
-      // Get or create UUID
-      function getOrCreateUUID() {
-        // Check if UUID exists in localStorage
-        let uuid = localStorage.getItem('chatUUID');
-
-        // If not, create a new one and store it
-        if (!uuid) {
-          uuid = generateUUID(15);
-          localStorage.setItem('chatUUID', uuid);
-        }
-
-        return uuid;
-      }
-      // Welcome message template
-      let uuid = getOrCreateUUID();
-
-      const welcomeMessage = `
-            <div class="chat-message">
-                <p>{% t global.chat_welcome %}</p>
-                <p>your ticket is <b class="ticket-code">${uuid}</b></p>
-                <div class="chat-options">
-                {% for chatopt in site.translations[site.lang].global.chat_options %}
-                  <a class="btn btn-primary" href="{{prefix}}{{chatopt.link}}">{{ chatopt.title }}</a>
-                {% endfor %}
-                    <a href="https://api.whatsapp.com/send?phone=558892559163&text={% t global.chat %}" target="_blank" 
-                      class="btn btn-success align-items-center">
-                      <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="me-2" style="width: 20px; height: 20px;">
-                        <path fill="#FFFFFF" d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z" />
-
-                      </svg> {% t global.chat_inwhatsapp %}
-                    </a>
-                </div>
-            </div>
-        `;
-
-      // Open chat modal
-      $("#chatButton").click(function () {
-        $("#chatModal").fadeIn(300);
-        let uuid = getOrCreateUUID();
-
-        // Only append welcome message if it's not already there
-        if ($("#chatBody").children().length === 0) {
-          $("#chatBody").html(welcomeMessage);
-        }
-      });
-
-      // Close chat modal
-      $("#closeChat").click(function () {
-        $("#chatModal").fadeOut(300);
-      });
-
-      // Send message function
-      function sendMessage() {
-        const messageText = $("#messageInput").val().trim();
-        if (messageText !== "") {
-          // Add user message to chat
-          $("#chatBody").append(`
-                    <div class="chat-message user-message">
-                        ${messageText}
+    })(document, 'script');
+    /*
+        $(document).ready(function () {
+          // Function to generate a UUID of 15 characters
+          function generateUUID(length) {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let result = '';
+            for (let i = 0; i < length; i++) {
+              result += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return result;
+          }
+    
+          // Get or create UUID
+          function getOrCreateUUID() {
+            // Check if UUID exists in localStorage
+            let uuid = localStorage.getItem('chatUUID');
+    
+            // If not, create a new one and store it
+            if (!uuid) {
+              uuid = generateUUID(15);
+              localStorage.setItem('chatUUID', uuid);
+            }
+    
+            return uuid;
+          }
+          // Welcome message template
+          let uuid = getOrCreateUUID();
+    
+          const welcomeMessage = `
+                <div class="chat-message">
+                    <p>{% t global.chat_welcome %}</p>
+                    <p>your ticket is <b class="ticket-code">${uuid}</b></p>
+                    <div class="chat-options">
+                    {% for chatopt in site.translations[site.lang].global.chat_options %}
+                      <a class="btn btn-primary" href="{{prefix}}{{chatopt.link}}">{{ chatopt.title }}</a>
+                    {% endfor %}
+                        <a href="https://api.whatsapp.com/send?phone=558892559163&text={% t global.chat %}" target="_blank" 
+                          class="btn btn-success align-items-center">
+                          <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="me-2" style="width: 20px; height: 20px;">
+                            <path fill="#FFFFFF" d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z" />
+    
+                          </svg> {% t global.chat_inwhatsapp %}
+                        </a>
                     </div>
-                `);
-
-          // Clear input field
-          $("#messageInput").val("");
-
-          // Auto-scroll to bottom
-          $("#chatBody").scrollTop($("#chatBody")[0].scrollHeight);
-
-          // Here you would typically send the message to your backend
-          // For demo purposes, you could add a simulated response
-          setTimeout(function () {
-            $("#chatBody").append(`
-                        <div class="chat-message">
-                            {% t global.chat_thankyou %}
+                </div>
+            `;
+    
+          // Open chat modal
+          $("#chatButton").click(function () {
+            $("#chatModal").fadeIn(300);
+            let uuid = getOrCreateUUID();
+    
+            // Only append welcome message if it's not already there
+            if ($("#chatBody").children().length === 0) {
+              $("#chatBody").html(welcomeMessage);
+            }
+          });
+    
+          // Close chat modal
+          $("#closeChat").click(function () {
+            $("#chatModal").fadeOut(300);
+          });
+    
+          // Send message function
+          function sendMessage() {
+            const messageText = $("#messageInput").val().trim();
+            if (messageText !== "") {
+              // Add user message to chat
+              $("#chatBody").append(`
+                        <div class="chat-message user-message">
+                            ${messageText}
                         </div>
                     `);
-            // Auto-scroll to bottom again
-            $("#chatBody").scrollTop($("#chatBody")[0].scrollHeight);
-          }, 1000);
-        }
-      }
-
-      // Send message on button click
-      $("#sendMessage").click(function () {
-        sendMessage();
-      });
-
-      // Send message on Enter key
-      $("#messageInput").keypress(function (e) {
-        if (e.which === 13) {
-          sendMessage();
-          return false;
-        }
-      });
-    });
-    */
+    
+              // Clear input field
+              $("#messageInput").val("");
+    
+              // Auto-scroll to bottom
+              $("#chatBody").scrollTop($("#chatBody")[0].scrollHeight);
+    
+              // Here you would typically send the message to your backend
+              // For demo purposes, you could add a simulated response
+              setTimeout(function () {
+                $("#chatBody").append(`
+                            <div class="chat-message">
+                                {% t global.chat_thankyou %}
+                            </div>
+                        `);
+                // Auto-scroll to bottom again
+                $("#chatBody").scrollTop($("#chatBody")[0].scrollHeight);
+              }, 1000);
+            }
+          }
+    
+          // Send message on button click
+          $("#sendMessage").click(function () {
+            sendMessage();
+          });
+    
+          // Send message on Enter key
+          $("#messageInput").keypress(function (e) {
+            if (e.which === 13) {
+              sendMessage();
+              return false;
+            }
+          });
+        });
+        */
   </script>
+
+  <!-- RSS Modal -->
+  <div class="modal fade" id="rssModal" tabindex="-1" aria-labelledby="rssModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow" style="border-radius: 1.25rem;">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold text-black" id="rssModalLabel">{% t pages.rss_modal.title %}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <!-- Email Subscription -->
+          <div class="mb-4">
+            <label class="form-label fw-bold mb-2 text-black">{% t pages.rss_modal.email_label %}</label>
+            <form id="rss-email-form" class="nea-formModal nea-contact"
+              data-recaptcha-sitekey="6LfC2CUUAAAAAMB11iJYlS5QlDhoNRc80P0wvBiZ">
+              <div class="input-group">
+                <input type="email" id="form-field-nea_email" class="form-control"
+                  placeholder="{% t pages.rss_modal.email_placeholder %}" required
+                  style="border-radius: 0.75rem 0 0 0.75rem;">
+                <button type="submit" class="btn btn-primary px-4"
+                  style="border-radius: 0 0.75rem 0.75rem 0; background-color: #091C99; border-color: #091C99;">
+                  <span class="feature-icon d-none"><i class="bi bi-arrow-repeat fa-spin"></i></span>
+                  {% t pages.rss_modal.subscribe_btn %}
+                </button>
+              </div>
+              <!-- Hidden fields for RSS subscriber logic -->
+              <input type="hidden" id="form-field-nea_name" value="RSS subscriber">
+              <input type="hidden" id="form-field-nea_message" value="RSS subscriber">
+              <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" value="">
+            </form>
+          </div>
+
+          <div class="text-center my-3 text-secondary">
+            <hr class="w-100">
+            <span class="bg-white px-2 text-black" style="position: relative; top: -1.9rem;">
+              {% t pages.rss_modal.or %}
+            </span>
+          </div>
+
+          <!-- RSS Copy -->
+          <div>
+            <label class="form-label fw-bold mb-2 text-black">{% t pages.rss_modal.rss_label %}</label>
+            <div class="input-group">
+              <input type="text" id="rss-url-input" class="form-control bg-light"
+                value="https://www.neahtid.com/feed.xml" readonly style="border-radius: 0.75rem 0 0 0.75rem;">
+              <button class="btn btn-outline-primary px-4" id="copy-rss-btn" type="button"
+                style="border-radius: 0 0.75rem 0.75rem 0;">
+                <span id="copy-btn-text">{% t pages.rss_modal.copy_btn %}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="recaptcha-container" style="display: none;"></div>
+  <!-- Success Toast -->
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1060;">
+    <div id="successToast" class="toast border-0 shadow" role="alert" aria-live="assertive" aria-atomic="true"
+      style="border-radius: 1rem; background-color: #091C99; color: white;">
+      <div class="d-flex align-items-center p-3">
+        <div class="toast-body">
+          <i class="bi bi-check-circle-fill me-2"></i>
+          {% t pages.rss_modal.success_toast %}
+        </div>
+        <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast"
+          aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
