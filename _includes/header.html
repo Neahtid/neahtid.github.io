@@ -2,6 +2,12 @@
 {% if site.lang != site.default_lang %}
 {% assign prefix = "/" | append: site.lang %}
 {% endif %}
+<style>
+  .dropdown-menu .dropdown-item {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+</style>
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
