@@ -1,15 +1,17 @@
 {
-  "default": true,
+  "MD001": false,
+  "MD003": false,
   "MD004": {
     "style": "dash"
   },
   "MD007": {
     "indent": 2
   },
-  "MD010": false,
   "MD013": false,
-  "MD026": false,
-  "MD041": false,
+  "MD022": false,
+  "MD024": false,
+  "MD029": false,
+  "MD032": false,
   "MD033": {
     "allowed_elements": [
       "style",
@@ -44,5 +46,9 @@
       "embed"
     ]
   },
-  "no-hard-tabs": false
+  "MD036": false,
+  "MD040": false,
+  "MD041": false,
+  "MD045": false,
+  "MD060": false
 }
