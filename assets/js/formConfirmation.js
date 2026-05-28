@@ -1,3 +1,17 @@
+let clientIp = 'Pending';
+fetch('https://api64.ipify.org?format=json')
+  .then(res => {
+    if (res.ok) return res.json();
+    throw new Error('api64 failed');
+  })
+  .then(data => { clientIp = data.ip; })
+  .catch(err => {
+    fetch('https://api.ipify.org?format=json')
+      .then(res => res.json())
+      .then(data => { clientIp = data.ip; })
+      .catch(() => { clientIp = 'Unavailable'; });
+  });
+
 function ValidateEmail(email) {
 	if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
 		return (true)
@@ -94,6 +108,11 @@ function postForm(form, modal) {
 	if (solutionSelect == undefined) {
 		solutionSelect = "_";
 	}
+	const screenRes = `${window.screen.width}x${window.screen.height}`;
+	const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown';
+	const clientLang = navigator.language || 'Unknown';
+	const clientTime = new Date().toLocaleString();
+
 	message = ` 
 	${message} <br>
 	<hr>
@@ -102,6 +121,12 @@ function postForm(form, modal) {
 	<p><b>**Language**</b>: ${currentLang}</p>
 	<p><b>**Consultation**</b>: ${consultation}</p>
 	<p><b>**Solution**</b>: ${solutionSelect}</p>
+	<p><b>**Client Lang**</b>: ${clientLang}</p>
+	<p><b>**IP**</b>: ${clientIp}</p>
+	<p><b>**Timezone**</b>: ${userTimeZone}</p>
+	<p><b>**Screen**</b>: ${screenRes}</p>
+	<p><b>**Submitted**</b>: ${clientTime}</p>
+	<p><b>**UA**</b>: ${navigator.userAgent}</p>
 	`;
 
 	// If backend verification is enabled, verify reCAPTCHA first
