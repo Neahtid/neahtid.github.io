@@ -237,7 +237,6 @@ customers:
   customer_list:
     - name: "Jingo Store"
       logo: "/assets/img/icon_jingo_192x192.png"
-      site: "https://jingo.store"
       link: "/customers/jingo-store/"
       business: "E-Commerce with AI Sales and Automations"
       description: "Experience a fully-featured e-commerce solution with integrated payment methods, order tracking, and inventory management."
