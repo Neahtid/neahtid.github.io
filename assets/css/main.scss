@@ -3,11 +3,34 @@
 ---
 $primary-color: #091C99;
 
-:root {
+:root,
+[data-bs-theme="light"],
+[data-bs-theme="dark"] {
 	--primary-color: #091C99;
 	--secondary-color: #0A1F80;
 	--accent-color: #2196F3;
 	--text-color: #333;
+	--bs-border-radius: 12px;
+}
+
+// Buttons & Interactive Elements
+button,
+.btn,
+.button,
+a.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.dropdown-toggle {
+	border-radius: 12px;
+}
+
+.dropdown-menu {
+	border-radius: 12px;
+}
+
+.btn-close {
+	border-radius: 12px;
 }
 
 /* css */

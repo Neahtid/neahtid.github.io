@@ -100,21 +100,25 @@ const consultationOptions = {
 
 /** Ready */
 $(document).ready(function () {
-	$('#animated_home_1').viewportChecker({
-		classToAdd: 'animated-visible',
-		offset: 0,
-		repeat: false,
-	});
-	$('#animated_home_2').viewportChecker({
-		classToAdd: 'animated-visible',
-		offset: 0,
-		repeat: false,
-	});
-	$('.animated-hidden').viewportChecker({
-		classToAdd: 'animated-visible',
-		offset: 0,
-		repeat: false
-	});
+	if ($.fn && $.fn.viewportChecker) {
+		$('#animated_home_1').viewportChecker({
+			classToAdd: 'animated-visible',
+			offset: 0,
+			repeat: false,
+		});
+		$('#animated_home_2').viewportChecker({
+			classToAdd: 'animated-visible',
+			offset: 0,
+			repeat: false,
+		});
+		$('.animated-hidden').viewportChecker({
+			classToAdd: 'animated-visible',
+			offset: 0,
+			repeat: false
+		});
+	} else {
+		$('#animated_home_1, #animated_home_2, .animated-hidden').addClass('animated-visible');
+	}
 	/** ContactForms with reCAPTCHA v2 Invisible - Programmatic Binding */
 	// Make recaptchaWidgetId global so it can be reset on validation errors
 	window.recaptchaWidgetId = null;
