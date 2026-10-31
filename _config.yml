@@ -49,6 +49,7 @@ exclude_from_localization:
   - "assets/js/translations.json"
 include:
   - "assets/js/translations.json"
+  - ".well-known"
 parallel_localization: true
 
 # Language names for UI
